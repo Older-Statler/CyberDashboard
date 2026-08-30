@@ -88,6 +88,44 @@
       </div>
     </section>
 
+    <!-- Geo/ASN context: hidden entirely until data/geo_summary.json has data. -->
+    <section class="feed-section geo-section" id="geo-section" hidden>
+      <div class="feed-header">
+        <h2>Attack Source Geography</h2>
+        <p class="geo-meta">
+          <span id="geo-total">0</span> IPs geotagged so far &middot; last updated <span id="geo-generated-at">&mdash;</span>
+          &middot; coverage builds gradually (permanent cache, ~500 new IPs/day)
+        </p>
+      </div>
+      <div class="geo-grid">
+        <div>
+          <div class="geo-map-wrap" id="world-map-container" role="img" aria-label="World map showing geotagged attack-source IP density by country"></div>
+          <div class="geo-legend">
+            <span>fewer</span>
+            <span class="geo-legend-ramp"><span></span><span></span><span></span><span></span><span></span></span>
+            <span>more</span>
+            <span class="geo-legend-zero" title="No geotagged IPs"></span>
+            <span>no data</span>
+          </div>
+        </div>
+        <div class="geo-tables">
+          <div class="geo-table-card">
+            <h3>Top 10 source countries</h3>
+            <div class="geo-bars" id="geo-bars"></div>
+          </div>
+          <div class="geo-table-card">
+            <h3>Top 10 ASNs / hosting providers</h3>
+            <div class="table-wrap" style="max-height: 260px;">
+              <table>
+                <thead><tr><th>#</th><th>ASN</th><th>Name</th><th>Count</th></tr></thead>
+                <tbody id="geo-asns-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Cross-feed correlation: IOCs independently seen in 2+ feeds. -->
     <section class="feed-section" id="section-correlated">
       <div class="feed-header">
@@ -189,44 +227,6 @@
       </div>
       <div class="table-wrap"><table id="table-blocklistde"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-blocklistde" hidden>No data yet.</p>
-    </section>
-
-    <!-- Geo/ASN context: hidden entirely until data/geo_summary.json has data. -->
-    <section class="feed-section geo-section" id="geo-section" hidden>
-      <div class="feed-header">
-        <h2>Attack Source Geography</h2>
-        <p class="geo-meta">
-          <span id="geo-total">0</span> IPs geotagged so far &middot; last updated <span id="geo-generated-at">&mdash;</span>
-          &middot; coverage builds gradually (permanent cache, ~500 new IPs/day)
-        </p>
-      </div>
-      <div class="geo-grid">
-        <div>
-          <div class="geo-map-wrap" id="world-map-container" role="img" aria-label="World map showing geotagged attack-source IP density by country"></div>
-          <div class="geo-legend">
-            <span>fewer</span>
-            <span class="geo-legend-ramp"><span></span><span></span><span></span><span></span><span></span></span>
-            <span>more</span>
-            <span class="geo-legend-zero" title="No geotagged IPs"></span>
-            <span>no data</span>
-          </div>
-        </div>
-        <div class="geo-tables">
-          <div class="geo-table-card">
-            <h3>Top 10 source countries</h3>
-            <div class="geo-bars" id="geo-bars"></div>
-          </div>
-          <div class="geo-table-card">
-            <h3>Top 10 ASNs / hosting providers</h3>
-            <div class="table-wrap" style="max-height: 260px;">
-              <table>
-                <thead><tr><th>#</th><th>ASN</th><th>Name</th><th>Count</th></tr></thead>
-                <tbody id="geo-asns-tbody"></tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer class="footer">
