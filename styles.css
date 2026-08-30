@@ -247,6 +247,10 @@ body {
 
 .table-wrap {
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 828px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 table {
