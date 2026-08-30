@@ -16,6 +16,12 @@ from common import write_raw
 
 FEED = "urlhaus"
 
+# abuse.ch comments out the header line too (e.g. "# id,dateadded,url,...")
+# so it gets stripped along with the real comment lines below, and can't be
+# parsed from the response. This is the documented, stable column order for
+# the recent.csv export instead.
+FIELDNAMES = ["id", "dateadded", "url", "url_status", "threat", "tags", "urlhaus_link", "reporter"]
+
 
 def main():
     auth_key = os.environ.get("URLHAUS_AUTH_KEY")
@@ -35,14 +41,12 @@ def main():
             return
 
         reader = csv.reader(lines, quotechar='"', delimiter=",")
-        rows = list(reader)
-        header = [h.strip() for h in rows[0]]
 
         items = []
-        for row in rows[1:]:
-            if len(row) != len(header):
+        for row in reader:
+            if len(row) != len(FIELDNAMES):
                 continue
-            record = dict(zip(header, row))
+            record = dict(zip(FIELDNAMES, row))
             items.append(
                 {
                     "id": record.get("id"),
