@@ -1,11 +1,27 @@
 {
-  "generated_at": "2026-08-30T14:11:45Z",
+  "generated_at": "2026-08-30T14:21:00Z",
   "feeds": {
     "threatfox": {
       "status": "ok",
-      "fetched_at": "2026-08-30T14:11:40Z",
+      "fetched_at": "2026-08-30T14:20:54Z",
       "count": 2164,
       "items": [
+        {
+          "id": "1891473",
+          "ioc": "45.142.30.152:3000",
+          "ioc_type": "ip:port",
+          "malware_printable": "Unknown malware",
+          "confidence_level": 100,
+          "first_seen": "2026-08-30 14:17:40 UTC",
+          "tags": [
+            "angel-panel",
+            "Clipper",
+            "multiablo",
+            "stealer",
+            "telegram"
+          ],
+          "reporter": "devmihaylov"
+        },
         {
           "id": "1891472",
           "ioc": "yvjqs79906.workers.dev",
@@ -29268,24 +29284,12 @@
             "ClearFake"
           ],
           "reporter": "threatcat_ch"
-        },
-        {
-          "id": "1889299",
-          "ioc": "expce.directoryindustry.com",
-          "ioc_type": "domain",
-          "malware_printable": "FAKEUPDATES",
-          "confidence_level": 100,
-          "first_seen": "2026-08-27 14:13:20 UTC",
-          "tags": [
-            "SocGholish"
-          ],
-          "reporter": "monitorsg"
         }
       ]
     },
     "urlhaus": {
       "status": "ok",
-      "fetched_at": "2026-08-30T14:11:42Z",
+      "fetched_at": "2026-08-30T14:20:57Z",
       "count": 15625,
       "items": [
         {
@@ -185542,8 +185546,8 @@
     },
     "malwarebazaar": {
       "status": "ok",
-      "fetched_at": "2026-08-30T14:11:43Z",
-      "count": 235,
+      "fetched_at": "2026-08-30T14:20:59Z",
+      "count": 228,
       "items": [
         {
           "sha256_hash": "c06a85f0ad8b1fca254994fc3a0953f903aa28027f165d79214bbe3363332939",
@@ -187368,68 +187372,12 @@
           "first_seen": "2026-08-29 14:22:57 UTC",
           "last_seen": null,
           "tags": []
-        },
-        {
-          "sha256_hash": "67f0b5b79bd72d991813a80efadeb70c136e0e33531615385f71b34c9c5fa6a0",
-          "file_name": "main.sparcv8",
-          "signature": "Gafgyt",
-          "first_seen": "2026-08-29 14:18:36 UTC",
-          "last_seen": null,
-          "tags": []
-        },
-        {
-          "sha256_hash": "8ae5df9b6e67b60c19a55793d8ba1b614c6fa4d42e75582697a6db2d3eda150b",
-          "file_name": "main.armv5",
-          "signature": "Mirai",
-          "first_seen": "2026-08-29 14:12:53 UTC",
-          "last_seen": null,
-          "tags": []
-        },
-        {
-          "sha256_hash": "5a7d9a315fe17368661441f71de7b98e9cd94c37b644ccd229f3f74d83336a78",
-          "file_name": "main.mipsel",
-          "signature": "Mirai",
-          "first_seen": "2026-08-29 14:12:52 UTC",
-          "last_seen": null,
-          "tags": []
-        },
-        {
-          "sha256_hash": "e4451d8970323bd258f4e55ea1118a63928479661ad8f11c8a6a0e9b2330bf46",
-          "file_name": "main.sh4",
-          "signature": "Mirai",
-          "first_seen": "2026-08-29 14:12:50 UTC",
-          "last_seen": null,
-          "tags": []
-        },
-        {
-          "sha256_hash": "6f0d008c2a5d92ab9e3d0c48e4e9710e48c417be1d214cb29749cd60c06797c9",
-          "file_name": "main.armv7-eabihf",
-          "signature": "Mirai",
-          "first_seen": "2026-08-29 14:12:48 UTC",
-          "last_seen": null,
-          "tags": []
-        },
-        {
-          "sha256_hash": "53821552bb5b719180d1b92e934ec73f59d50aae86275dc9ef75b78bb9c4cf5c",
-          "file_name": "main.armv4tl",
-          "signature": "Mirai",
-          "first_seen": "2026-08-29 14:12:45 UTC",
-          "last_seen": null,
-          "tags": []
-        },
-        {
-          "sha256_hash": "fddd30af24855228d62c0985b7c5aeb7f5b487d6fdb347db03cb297601d0a4f3",
-          "file_name": "main.s390x",
-          "signature": "Mirai",
-          "first_seen": "2026-08-29 14:12:42 UTC",
-          "last_seen": null,
-          "tags": []
         }
       ]
     },
     "cisa_kev": {
       "status": "ok",
-      "fetched_at": "2026-08-30T14:11:44Z",
+      "fetched_at": "2026-08-30T14:20:59Z",
       "count": 1685,
       "items": [
         {
@@ -205977,8 +205925,8 @@
     },
     "blocklistde": {
       "status": "ok",
-      "fetched_at": "2026-08-30T14:11:44Z",
-      "count": 21553,
+      "fetched_at": "2026-08-30T14:21:00Z",
+      "count": 21545,
       "items": [
         {
           "ip": "1.0.164.165",
@@ -252590,6 +252538,13 @@
           ]
         },
         {
+          "ip": "136.116.75.157",
+          "lists": [
+            "apache",
+            "bruteforcelogin"
+          ]
+        },
+        {
           "ip": "136.117.98.28",
           "lists": [
             "apache",
@@ -253074,6 +253029,13 @@
         },
         {
           "ip": "152.42.243.248",
+          "lists": [
+            "apache",
+            "bruteforcelogin"
+          ]
+        },
+        {
+          "ip": "152.59.178.103",
           "lists": [
             "apache",
             "bruteforcelogin"
@@ -255467,13 +255429,6 @@
           ]
         },
         {
-          "ip": "2409:40c2:3114:13e8:7c8a:4ad6:95dc:41cd",
-          "lists": [
-            "apache",
-            "bruteforcelogin"
-          ]
-        },
-        {
           "ip": "2409:40c4:11cd:91fd:4040:5924:affa:c718",
           "lists": [
             "apache",
@@ -256119,27 +256074,6 @@
         },
         {
           "ip": "31.167.17.31",
-          "lists": [
-            "apache",
-            "bruteforcelogin"
-          ]
-        },
-        {
-          "ip": "31.171.130.103",
-          "lists": [
-            "apache",
-            "bruteforcelogin"
-          ]
-        },
-        {
-          "ip": "31.171.130.105",
-          "lists": [
-            "apache",
-            "bruteforcelogin"
-          ]
-        },
-        {
-          "ip": "31.171.130.59",
           "lists": [
             "apache",
             "bruteforcelogin"
@@ -257266,6 +257200,13 @@
           ]
         },
         {
+          "ip": "35.196.40.38",
+          "lists": [
+            "apache",
+            "bruteforcelogin"
+          ]
+        },
+        {
           "ip": "35.197.27.1",
           "lists": [
             "apache",
@@ -257533,6 +257474,27 @@
         },
         {
           "ip": "36.69.56.146",
+          "lists": [
+            "apache",
+            "bruteforcelogin"
+          ]
+        },
+        {
+          "ip": "37.140.223.165",
+          "lists": [
+            "apache",
+            "bruteforcelogin"
+          ]
+        },
+        {
+          "ip": "37.140.223.167",
+          "lists": [
+            "apache",
+            "bruteforcelogin"
+          ]
+        },
+        {
+          "ip": "37.140.223.186",
           "lists": [
             "apache",
             "bruteforcelogin"
@@ -259065,13 +259027,6 @@
           ]
         },
         {
-          "ip": "49.43.118.166",
-          "lists": [
-            "apache",
-            "bruteforcelogin"
-          ]
-        },
-        {
           "ip": "49.47.218.59",
           "lists": [
             "apache",
@@ -259766,13 +259721,6 @@
         },
         {
           "ip": "82.223.118.166",
-          "lists": [
-            "apache",
-            "bruteforcelogin"
-          ]
-        },
-        {
-          "ip": "83.98.89.47",
           "lists": [
             "apache",
             "bruteforcelogin"
@@ -260498,12 +260446,6 @@
           ]
         },
         {
-          "ip": "136.108.60.166",
-          "lists": [
-            "apache"
-          ]
-        },
-        {
           "ip": "136.108.90.97",
           "lists": [
             "apache"
@@ -260541,12 +260483,6 @@
         },
         {
           "ip": "136.111.142.127",
-          "lists": [
-            "apache"
-          ]
-        },
-        {
-          "ip": "136.111.172.8",
           "lists": [
             "apache"
           ]
@@ -261225,12 +261161,6 @@
         },
         {
           "ip": "202.155.94.200",
-          "lists": [
-            "apache"
-          ]
-        },
-        {
-          "ip": "204.12.253.222",
           "lists": [
             "apache"
           ]
@@ -262191,12 +262121,6 @@
         },
         {
           "ip": "34.23.87.169",
-          "lists": [
-            "apache"
-          ]
-        },
-        {
-          "ip": "34.24.127.101",
           "lists": [
             "apache"
           ]
@@ -263463,12 +263387,6 @@
         },
         {
           "ip": "5.175.206.118",
-          "lists": [
-            "apache"
-          ]
-        },
-        {
-          "ip": "5.250.249.154",
           "lists": [
             "apache"
           ]
@@ -320089,12 +320007,6 @@
           ]
         },
         {
-          "ip": "102.64.45.37",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "102.66.146.12",
           "lists": [
             "mail"
@@ -320558,12 +320470,6 @@
         },
         {
           "ip": "103.29.185.162",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
-          "ip": "103.30.83.190",
           "lists": [
             "mail"
           ]
@@ -321307,6 +321213,12 @@
           ]
         },
         {
+          "ip": "111.26.62.44",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
           "ip": "111.26.62.46",
           "lists": [
             "mail"
@@ -321362,6 +321274,12 @@
         },
         {
           "ip": "111.31.134.95",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "111.31.166.135",
           "lists": [
             "mail"
           ]
@@ -322369,12 +322287,6 @@
           ]
         },
         {
-          "ip": "113.121.109.18",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "113.140.95.2",
           "lists": [
             "mail"
@@ -322538,6 +322450,12 @@
         },
         {
           "ip": "114.219.8.98",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "114.220.203.47",
           "lists": [
             "mail"
           ]
@@ -322868,12 +322786,6 @@
         },
         {
           "ip": "116.7.248.50",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
-          "ip": "116.72.9.151",
           "lists": [
             "mail"
           ]
@@ -328015,12 +327927,6 @@
           ]
         },
         {
-          "ip": "176.103.5.104",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "176.103.6.132",
           "lists": [
             "mail"
@@ -328094,12 +328000,6 @@
         },
         {
           "ip": "176.204.246.18",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
-          "ip": "176.204.246.30",
           "lists": [
             "mail"
           ]
@@ -329575,12 +329475,6 @@
           ]
         },
         {
-          "ip": "183.196.144.45",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "183.207.0.126",
           "lists": [
             "mail"
@@ -329846,12 +329740,6 @@
         },
         {
           "ip": "185.139.48.166",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
-          "ip": "185.15.169.132",
           "lists": [
             "mail"
           ]
@@ -331255,12 +331143,6 @@
           ]
         },
         {
-          "ip": "194.44.140.31",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "194.44.78.56",
           "lists": [
             "mail"
@@ -331400,12 +331282,6 @@
         },
         {
           "ip": "195.64.250.154",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
-          "ip": "195.88.115.189",
           "lists": [
             "mail"
           ]
@@ -332935,6 +332811,12 @@
           ]
         },
         {
+          "ip": "209.14.85.115",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
           "ip": "209.14.89.110",
           "lists": [
             "mail"
@@ -333110,6 +332992,12 @@
         },
         {
           "ip": "210.204.124.253",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "210.204.125.148",
           "lists": [
             "mail"
           ]
@@ -333806,12 +333694,6 @@
         },
         {
           "ip": "213.176.26.166",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
-          "ip": "213.176.26.186",
           "lists": [
             "mail"
           ]
@@ -335077,6 +334959,12 @@
           ]
         },
         {
+          "ip": "220.80.116.151",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
           "ip": "220.80.219.163",
           "lists": [
             "mail"
@@ -335792,6 +335680,12 @@
         },
         {
           "ip": "223.220.92.105",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "223.233.85.9",
           "lists": [
             "mail"
           ]
@@ -338341,6 +338235,12 @@
           ]
         },
         {
+          "ip": "49.124.149.50",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
           "ip": "49.124.149.53",
           "lists": [
             "mail"
@@ -339463,12 +339363,6 @@
           ]
         },
         {
-          "ip": "59.46.193.187",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "59.48.39.222",
           "lists": [
             "mail"
@@ -339548,6 +339442,12 @@
         },
         {
           "ip": "59.8.41.171",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "59.8.43.184",
           "lists": [
             "mail"
           ]
@@ -340795,12 +340695,6 @@
           ]
         },
         {
-          "ip": "66.132.195.51",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "66.132.195.57",
           "lists": [
             "mail"
@@ -340892,6 +340786,12 @@
         },
         {
           "ip": "68.10.53.113",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "68.10.53.125",
           "lists": [
             "mail"
           ]
@@ -341803,12 +341703,6 @@
           ]
         },
         {
-          "ip": "72.215.33.52",
-          "lists": [
-            "mail"
-          ]
-        },
-        {
           "ip": "72.215.33.71",
           "lists": [
             "mail"
@@ -342530,6 +342424,12 @@
         },
         {
           "ip": "80.95.38.14",
+          "lists": [
+            "mail"
+          ]
+        },
+        {
+          "ip": "81.10.98.82",
           "lists": [
             "mail"
           ]
