@@ -19,9 +19,15 @@
     enrichment: null,
     trends: null,
     geoSummary: null,
+    epss: null,
+    internetdb: null,
+    abuseipdb: null,
+    spamhausDrop: null,
+    dropRangesParsed: [],
+    ransomwareVictims: null,
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
     correlated: [],
-    triage: { ransomwareKev: [], maliciousIps: [], topCorrelated: [] },
+    triage: { ransomwareKev: [], epssCriticalKev: [], maliciousIps: [], topCorrelated: [], recentVictims: [] },
     watchlistText: "",
     watchlistMatches: [],
     watchlistMatchKeys: new Set(),
@@ -203,15 +209,25 @@
       return;
     }
 
-    const [enrichment, trends, geoSummary] = await Promise.all([
+    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims] = await Promise.all([
       fetchJsonBestEffort("data/enrichment.json"),
       fetchJsonBestEffort("data/trends.json"),
       fetchJsonBestEffort("data/geo_summary.json"),
+      fetchJsonBestEffort("data/epss.json"),
+      fetchJsonBestEffort("data/internetdb.json"),
+      fetchJsonBestEffort("data/abuseipdb.json"),
+      fetchJsonBestEffort("data/spamhaus_drop.json"),
+      fetchJsonBestEffort("data/ransomware_victims.json"),
       loadWorldMapSvg(),
     ]);
     state.enrichment = enrichment;
     state.trends = trends;
     state.geoSummary = geoSummary;
+    state.epss = epss;
+    state.internetdb = internetdb;
+    state.abuseipdb = abuseipdb;
+    state.spamhausDrop = spamhausDrop;
+    state.ransomwareVictims = ransomwareVictims;
 
     render();
   }
@@ -259,6 +275,9 @@
     $("kpi-errors").textContent = errorFeeds.toLocaleString();
     $("kpi-errors-card").classList.toggle("has-errors", errorFeeds > 0);
 
+    const dropCount = countIpsInDrop(feeds);
+    $("kpi-drop-count").textContent = dropCount.toLocaleString();
+
     const errorPanel = $("error-panel");
     const errorList = $("error-list");
     const errors = state.snapshot.errors || [];
@@ -273,7 +292,8 @@
   }
 
   function renderFeedStatus(feed) {
-    const info = state.snapshot.feeds?.[feed];
+    const def = FEED_DEFS[feed];
+    const info = def && def.getItems ? def.getItems() : state.snapshot.feeds?.[feed];
     const el = $(`status-${feed}`);
     if (!info || !el) return;
     el.textContent = info.status;
@@ -316,6 +336,85 @@
     $("quota-fill").style.width = `${pct}%`;
     $("quota-label").textContent = `GreyNoise: ${count} / ${GREYNOISE_WEEKLY_CAP} this week`;
     el.classList.toggle("quota-warn", count >= GREYNOISE_WEEKLY_CAP * 0.8);
+  }
+
+  // ---------- Spamhaus DROP (reuses the watchlist's CIDR-match helpers) ----------
+
+  function buildDropRanges() {
+    const ranges = state.spamhausDrop?.ranges || [];
+    state.dropRangesParsed = ranges
+      .map((r) => {
+        const cidr = parseCidr(r.cidr);
+        return cidr ? { ...cidr, sbl_id: r.sbl_id, raw: r.cidr } : null;
+      })
+      .filter(Boolean);
+  }
+
+  function isIpInDrop(ip) {
+    if (!ip || !state.dropRangesParsed.length) return null;
+    return state.dropRangesParsed.find((r) => ipInCidr(ip, r)) || null;
+  }
+
+  function countIpsInDrop(feeds) {
+    const entries = extractCorrelationEntries(feeds);
+    const ips = new Set(entries.filter((e) => e.norm.type === "ip").map((e) => e.norm.value));
+    let count = 0;
+    for (const ip of ips) {
+      if (isIpInDrop(ip)) count++;
+    }
+    return count;
+  }
+
+  // ---------- EPSS / InternetDB / AbuseIPDB / DROP badges ----------
+
+  function epssFor(cveId) {
+    return state.epss?.scores?.[cveId] || null;
+  }
+
+  function internetdbBadge(ip) {
+    const entry = state.internetdb?.entries?.[ip];
+    if (!entry || entry.no_data) return "";
+    const portCount = (entry.ports || []).length;
+    const vulnCount = (entry.vulns || []).length;
+    if (!portCount && !vulnCount) return "";
+    const tooltipParts = [
+      portCount ? `Ports: ${entry.ports.join(", ")}` : "",
+      vulnCount ? `CVEs: ${entry.vulns.join(", ")}` : "",
+      (entry.hostnames || []).length ? `Hostnames: ${entry.hostnames.join(", ")}` : "",
+    ].filter(Boolean);
+    const label = `${portCount} port${portCount === 1 ? "" : "s"}${vulnCount ? `, ${vulnCount} CVE${vulnCount === 1 ? "" : "s"}` : ""}`;
+    return ` <span class="badge badge-info" title="InternetDB — ${escapeHtml(tooltipParts.join(" | "))}">${escapeHtml(label)}</span>`;
+  }
+
+  function abuseipdbBadge(ip) {
+    const entry = state.abuseipdb?.entries?.[ip];
+    const score = entry?.abuseConfidenceScore;
+    if (score === undefined || score === null) return "";
+    let cls = "badge-abuse-ok";
+    let label = "fine";
+    if (score >= 75) {
+      cls = "badge-abuse-severe";
+      label = "severe";
+    } else if (score >= 50) {
+      cls = "badge-abuse-concerning";
+      label = "concerning";
+    } else if (score >= 25) {
+      cls = "badge-abuse-caution";
+      label = "caution";
+    }
+    const tooltip = `AbuseIPDB — ${entry.totalReports || 0} reports, ISP: ${entry.isp || "unknown"}`;
+    return ` <span class="badge ${cls}" title="${escapeHtml(tooltip)}">AbuseIPDB ${score} (${label})</span>`;
+  }
+
+  function dropBadge(ip) {
+    const match = isIpInDrop(ip);
+    if (!match) return "";
+    const tooltip = `Spamhaus DROP: ${match.raw}${match.sbl_id ? ` (${match.sbl_id})` : ""}`;
+    return ` <span class="badge badge-drop" title="${escapeHtml(tooltip)}">netblock flagged</span>`;
+  }
+
+  function ipBadges(ip) {
+    return greynoiseBadge(ip) + internetdbBadge(ip) + abuseipdbBadge(ip) + dropBadge(ip);
   }
 
   // ---------- Correlation ----------
@@ -379,6 +478,43 @@
     return entries;
   }
 
+  // A correlated IOC's "signal count" combines raw multi-feed overlap with
+  // enrichment corroboration, so a single-feed IP independently confirmed
+  // by e.g. AbuseIPDB + Spamhaus DROP ranks alongside one seen in 2 feeds,
+  // rather than requiring 2+ raw feeds to appear in this panel at all.
+  function computeSignalCount(type, value, feedsSeen) {
+    let count = 0;
+    const breakdown = [];
+
+    if (feedsSeen.length >= 2) {
+      count += 1;
+      breakdown.push("2+ feeds");
+    }
+
+    if (type === "ip") {
+      if (state.enrichment?.lookups?.[value]?.classification === "malicious") {
+        count += 1;
+        breakdown.push("GreyNoise malicious");
+      }
+      const abuse = state.abuseipdb?.entries?.[value];
+      if (abuse && abuse.abuseConfidenceScore >= 75) {
+        count += 1;
+        breakdown.push("AbuseIPDB ≥ 75");
+      }
+      if (isIpInDrop(value)) {
+        count += 1;
+        breakdown.push("Spamhaus DROP");
+      }
+      const idb = state.internetdb?.entries?.[value];
+      if (idb && (idb.vulns || []).length > 0) {
+        count += 1;
+        breakdown.push("InternetDB CVE");
+      }
+    }
+
+    return { count, breakdown };
+  }
+
   function buildCorrelation() {
     const feeds = state.snapshot.feeds || {};
     const entries = extractCorrelationEntries(feeds);
@@ -393,8 +529,9 @@
     const correlated = [];
     for (const [key, list] of map.entries()) {
       const feedsSeen = Array.from(new Set(list.map((e) => e.feed)));
-      if (feedsSeen.length < 2) continue;
       const [type, value] = key.split("|");
+      const { count, breakdown } = computeSignalCount(type, value, feedsSeen);
+      if (count < 1) continue;
       const mostRecent = list.reduce((latest, e) => {
         const t = e.seenAt ? new Date(e.seenAt).getTime() : 0;
         return !isNaN(t) && t > latest ? t : latest;
@@ -405,11 +542,13 @@
         feeds: feedsSeen,
         labels: Array.from(new Set(list.map((e) => e.label).filter(Boolean))),
         mostRecent,
+        signalCount: count,
+        signalBreakdown: breakdown,
       });
     }
 
     correlated.sort((a, b) => {
-      if (b.feeds.length !== a.feeds.length) return b.feeds.length - a.feeds.length;
+      if (b.signalCount !== a.signalCount) return b.signalCount - a.signalCount;
       return b.mostRecent - a.mostRecent;
     });
 
@@ -431,17 +570,19 @@
     emptyNote.hidden = true;
 
     table.querySelector("thead").innerHTML =
-      "<tr><th>IOC</th><th>Feeds</th><th>Malware / Threat</th><th>Most Recent</th></tr>";
+      "<tr><th>IOC</th><th>Feeds</th><th>Signals</th><th>Malware / Threat</th><th>Most Recent</th></tr>";
 
     const rows = list.slice(0, 300);
     tbody.innerHTML = rows
       .map((c, idx) => {
         const feedTags = c.feeds.map((f) => `<span class="tag feed-tag">${escapeHtml(FEED_LABELS[f] || f)}</span>`).join("");
+        const signalBadge = `<span class="badge badge-info" title="${escapeHtml(c.signalBreakdown.join(", "))}">${c.signalCount} signal${c.signalCount === 1 ? "" : "s"}</span>`;
         const labels = c.labels.slice(0, 3).map((l) => escapeHtml(l)).join(", ");
         const recent = c.mostRecent ? fmtDate(new Date(c.mostRecent).toISOString()) : "&mdash;";
         return `<tr class="correlated-row" data-idx="${idx}">
           <td><span class="mono">${escapeHtml(c.value)}</span></td>
-          <td>${feedTags}</td>
+          <td>${feedTags || "&mdash;"}</td>
+          <td>${signalBadge}</td>
           <td>${labels || "&mdash;"}</td>
           <td>${recent}</td>
         </tr>`;
@@ -496,6 +637,13 @@
       .sort((a, b) => (b.date_added || "").localeCompare(a.date_added || ""))
       .slice(0, 5);
 
+    const epssCriticalKev = kevItems
+      .filter((v) => v.known_ransomware_campaign_use === "Known")
+      .map((v) => ({ item: v, epss: epssFor(v.cve_id) }))
+      .filter((x) => x.epss && x.epss.percentile >= 0.9)
+      .sort((a, b) => b.epss.percentile - a.epss.percentile)
+      .slice(0, 5);
+
     const lookups = state.enrichment?.lookups || {};
     const maliciousIps = Object.entries(lookups)
       .filter(([, v]) => v.classification === "malicious")
@@ -505,13 +653,19 @@
 
     const topCorrelated = (state.correlated || []).slice(0, 5);
 
-    state.triage = { ransomwareKev, maliciousIps, topCorrelated };
+    const recentVictims = (state.ransomwareVictims?.victims || [])
+      .slice()
+      .sort((a, b) => (b.published || "").localeCompare(a.published || ""))
+      .slice(0, 5);
+
+    state.triage = { ransomwareKev, epssCriticalKev, maliciousIps, topCorrelated, recentVictims };
   }
 
   function renderTriage() {
     const panel = $("triage-panel");
     const t = state.triage;
-    const hasAny = t.ransomwareKev.length || t.maliciousIps.length || t.topCorrelated.length;
+    const hasAny =
+      t.ransomwareKev.length || t.epssCriticalKev.length || t.maliciousIps.length || t.topCorrelated.length || t.recentVictims.length;
     panel.hidden = !hasAny;
     if (!hasAny) return;
 
@@ -521,6 +675,24 @@
       .map(
         (v) =>
           `<li><a href="#section-cisa_kev" class="triage-link" data-feed="cisa_kev" data-q="${escapeHtml(v.cve_id)}">${escapeHtml(v.cve_id)}</a> — ${escapeHtml(v.vendor_project)} / ${escapeHtml(v.product)}<span class="triage-date">${escapeHtml(v.date_added)}</span></li>`
+      )
+      .join("");
+
+    const epssCard = $("triage-epss-critical").closest(".triage-card");
+    epssCard.hidden = !t.epssCriticalKev.length;
+    $("triage-epss-critical").innerHTML = t.epssCriticalKev
+      .map(
+        (x) =>
+          `<li><a href="#section-cisa_kev" class="triage-link" data-feed="cisa_kev" data-q="${escapeHtml(x.item.cve_id)}">${escapeHtml(x.item.cve_id)}</a> — ${escapeHtml(x.item.vendor_project)} / ${escapeHtml(x.item.product)}<span class="triage-date">${(x.epss.percentile * 100).toFixed(1)}th pct</span></li>`
+      )
+      .join("");
+
+    const victimsCard = $("triage-victims").closest(".triage-card");
+    victimsCard.hidden = !t.recentVictims.length;
+    $("triage-victims").innerHTML = t.recentVictims
+      .map(
+        (v) =>
+          `<li><a href="#" class="triage-link" data-feed="ransomware_victims" data-q="${escapeHtml(v.victim || "")}">${escapeHtml(v.victim || "Unknown")}</a> — ${escapeHtml(v.group || "unknown group")}<span class="triage-date">${escapeHtml(v.country || "")}</span></li>`
       )
       .join("");
 
@@ -786,8 +958,16 @@
     if (format === "json") {
       downloadBlob(JSON.stringify(rows, null, 2), `correlated-${stamp}.json`, "application/json");
     } else {
-      const headers = ["Value", "Type", "Feeds", "Labels", "Most Recent"];
-      const toCsvRow = (c) => [c.value, c.type, c.feeds.join(";"), c.labels.join(";"), c.mostRecent ? new Date(c.mostRecent).toISOString() : ""];
+      const headers = ["Value", "Type", "Feeds", "Signal Count", "Signals", "Labels", "Most Recent"];
+      const toCsvRow = (c) => [
+        c.value,
+        c.type,
+        c.feeds.join(";"),
+        c.signalCount,
+        c.signalBreakdown.join(";"),
+        c.labels.join(";"),
+        c.mostRecent ? new Date(c.mostRecent).toISOString() : "",
+      ];
       downloadBlob(toCsv(headers, rows, toCsvRow), `correlated-${stamp}.csv`, "text/csv");
     }
   }
@@ -935,8 +1115,8 @@
 
   // ---------- Generic sortable/searchable table ----------
 
-  function renderTable(feed, columns, searchFn, defaultSort) {
-    const info = state.snapshot.feeds?.[feed];
+  function renderTable(feed, columns, searchFn, defaultSort, getItems) {
+    const info = getItems ? getItems() : state.snapshot.feeds?.[feed];
     const items = info?.items || [];
     const emptyNote = $(`empty-${feed}`);
     const table = $(`table-${feed}`);
@@ -1047,7 +1227,7 @@
           sortValue: (i) => (i.ioc || "").toLowerCase(),
           render: (i) => {
             const ip = extractIpFromIoc(i.ioc, i.ioc_type);
-            return `<span class="mono">${escapeHtml(i.ioc)}</span>${ip ? greynoiseBadge(ip) : ""}`;
+            return `<span class="mono">${escapeHtml(i.ioc)}</span>${ip ? ipBadges(ip) : ""}`;
           },
         },
         { key: "ioc_type", label: "Type", sortValue: (i) => i.ioc_type || "", render: (i) => escapeHtml(i.ioc_type) },
@@ -1147,12 +1327,48 @@
               ? `<span class="ransomware-yes">Known</span>`
               : escapeHtml(i.known_ransomware_campaign_use || "—"),
         },
+        {
+          key: "epss_score",
+          label: "EPSS",
+          sortValue: (i) => epssFor(i.cve_id)?.epss ?? -1,
+          render: (i) => {
+            const e = epssFor(i.cve_id);
+            if (!e) return "—";
+            const pct = `${(e.epss * 100).toFixed(1)}%`;
+            return e.percentile >= 0.9 ? `<span class="epss-high">${pct}</span>` : pct;
+          },
+        },
+        {
+          key: "epss_percentile",
+          label: "EPSS %ile",
+          sortValue: (i) => epssFor(i.cve_id)?.percentile ?? -1,
+          render: (i) => {
+            const e = epssFor(i.cve_id);
+            if (!e) return "—";
+            const pct = `${(e.percentile * 100).toFixed(1)}%`;
+            return e.percentile >= 0.9 ? `<span class="epss-high">${pct}</span>` : pct;
+          },
+        },
       ],
       searchFn: (i) => `${i.cve_id || ""} ${i.vendor_project || ""} ${i.product || ""} ${i.vulnerability_name || ""}`,
       defaultSort: { key: "date_added", dir: "desc" },
       rowKey: (i) => i.cve_id,
-      csvHeaders: ["CVE ID", "Vendor", "Product", "Name", "Date Added", "Due Date", "Ransomware Use", "Description"],
-      toCsvRow: (i) => [i.cve_id, i.vendor_project, i.product, i.vulnerability_name, i.date_added, i.due_date, i.known_ransomware_campaign_use, i.short_description],
+      csvHeaders: ["CVE ID", "Vendor", "Product", "Name", "Date Added", "Due Date", "Ransomware Use", "EPSS Score", "EPSS Percentile", "Description"],
+      toCsvRow: (i) => {
+        const e = epssFor(i.cve_id);
+        return [
+          i.cve_id,
+          i.vendor_project,
+          i.product,
+          i.vulnerability_name,
+          i.date_added,
+          i.due_date,
+          i.known_ransomware_campaign_use,
+          e?.epss ?? "",
+          e?.percentile ?? "",
+          i.short_description,
+        ];
+      },
     },
 
     otx: {
@@ -1185,7 +1401,7 @@
           key: "ip",
           label: "IP",
           sortValue: (i) => i.ip || "",
-          render: (i) => `<span class="mono">${escapeHtml(i.ip)}</span>${greynoiseBadge(i.ip)}`,
+          render: (i) => `<span class="mono">${escapeHtml(i.ip)}</span>${ipBadges(i.ip)}`,
         },
         {
           key: "lists",
@@ -1200,18 +1416,41 @@
       csvHeaders: ["IP", "Seen On"],
       toCsvRow: (i) => [i.ip, (i.lists || []).join(";")],
     },
+
+    ransomware_victims: {
+      columns: [
+        { key: "group", label: "Group", sortValue: (i) => (i.group || "").toLowerCase(), render: (i) => escapeHtml(i.group || "—") },
+        { key: "victim", label: "Victim", sortValue: (i) => (i.victim || "").toLowerCase(), render: (i) => escapeHtml(i.victim || "—") },
+        { key: "sector", label: "Sector", sortValue: (i) => (i.sector || "").toLowerCase(), render: (i) => escapeHtml(i.sector || "—") },
+        { key: "country", label: "Country", sortValue: (i) => i.country || "", render: (i) => escapeHtml(i.country || "—") },
+        { key: "published", label: "Published", sortValue: (i) => i.published || "", render: (i) => fmtDate(i.published) },
+      ],
+      searchFn: (i) => `${i.group || ""} ${i.victim || ""} ${i.sector || ""} ${i.country || ""} ${i.domain || ""}`,
+      defaultSort: { key: "published", dir: "desc" },
+      rowKey: (i) => i.url || i.victim,
+      csvHeaders: ["Group", "Victim", "Sector", "Country", "Published", "Domain", "URL"],
+      toCsvRow: (i) => [i.group, i.victim, i.sector, i.country, i.published, i.domain, i.url],
+      // Not one of data/latest.json's feeds — sourced from its own file
+      // (data/ransomware_victims.json), so renderTable/renderFeedStatus
+      // pull items via this instead of state.snapshot.feeds[feed].
+      getItems: () =>
+        state.ransomwareVictims
+          ? { status: "ok", items: state.ransomwareVictims.victims || [] }
+          : { status: "pending", items: [] },
+    },
   };
 
   function renderFeed(feed) {
     const def = FEED_DEFS[feed];
     if (!def) return;
     renderFeedStatus(feed);
-    renderTable(feed, def.columns, def.searchFn, def.defaultSort);
+    renderTable(feed, def.columns, def.searchFn, def.defaultSort, def.getItems);
     renderSparkline(feed);
   }
 
   function render() {
     renderHeader();
+    buildDropRanges();
     renderKpis();
     renderQuotaMeter();
     buildCorrelation();

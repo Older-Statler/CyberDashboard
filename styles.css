@@ -26,6 +26,8 @@
   --geo-ramp-2: #4f89c9;
   --geo-ramp-3: #7fb2e8;
   --geo-ramp-4: #bfe0ff;
+  --info-bg: rgba(99, 179, 237, 0.14);
+  --info: #63b3ed;
 }
 
 html[data-theme="light"] {
@@ -54,6 +56,8 @@ html[data-theme="light"] {
   --geo-ramp-2: #2a78d6;
   --geo-ramp-3: #184f95;
   --geo-ramp-4: #0d366b;
+  --info-bg: rgba(43, 108, 176, 0.08);
+  --info: #2b6cb0;
 }
 
 * {
@@ -155,7 +159,7 @@ body {
 
 .kpi-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
   margin-bottom: 20px;
 }
@@ -378,7 +382,45 @@ a:hover {
   color: var(--warning);
 }
 
+.badge-info {
+  background: var(--info-bg);
+  color: var(--info);
+}
+
+.badge-abuse-ok {
+  background: rgba(104, 211, 145, 0.15);
+  color: var(--ok);
+}
+
+.badge-abuse-caution,
+.badge-abuse-concerning {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.badge-abuse-severe {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.badge-drop {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.ip-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
 .ransomware-yes {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.epss-high {
   color: var(--danger);
   font-weight: 700;
 }
@@ -397,9 +439,6 @@ a:hover {
 }
 
 @media (max-width: 860px) {
-  .kpi-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .search-box {
     min-width: 0;
     flex: 1 1 auto;
@@ -426,7 +465,7 @@ a:hover {
 
 .triage-panel {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 14px;
   margin-bottom: 20px;
 }

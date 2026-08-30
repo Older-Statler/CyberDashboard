@@ -13,6 +13,10 @@ the reliable primary signal for "how much of the weekly quota is used" —
 GreyNoise's exact rate-limit header/body field isn't documented, so any
 rate-limit info found in a response is stored as a bonus under
 usage.api_reported, not relied on.
+
+Candidate IPs come from the shared lib.extract_ips helper (v3 refactor) —
+this drops the earlier per-run "prioritize IPs seen in 2+ feeds first"
+ordering in favor of one shared extraction path across all enrichers.
 """
 
 import datetime
@@ -24,6 +28,7 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import load_json
+from lib.extract_ips import get_ips_from_snapshot
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LATEST_PATH = os.path.join(BASE, "data", "latest.json")
@@ -50,30 +55,6 @@ def parse_iso(ts):
         return datetime.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
     except (TypeError, ValueError):
         return None
-
-
-def extract_ip(ioc, ioc_type):
-    if not ioc or not ioc_type or "ip" not in ioc_type:
-        return None
-    return ioc.split(":")[0] if ":" in ioc else ioc
-
-
-def collect_candidate_ips(latest):
-    """Count how many feeds each IP appears in, to prioritize multi-feed IPs."""
-    counts = {}
-    feeds = latest.get("feeds", {})
-
-    for item in feeds.get("threatfox", {}).get("items", []):
-        ip = extract_ip(item.get("ioc"), item.get("ioc_type"))
-        if ip:
-            counts[ip] = counts.get(ip, 0) + 1
-
-    for item in feeds.get("blocklistde", {}).get("items", []):
-        ip = item.get("ip")
-        if ip:
-            counts[ip] = counts.get(ip, 0) + 1
-
-    return counts
 
 
 def extract_rate_limit_info(resp):
@@ -110,12 +91,11 @@ def main():
     usage = enrichment.get("usage", {})
     recent_lookups = usage.get("recent_lookups", [])
 
-    candidates = collect_candidate_ips(latest)
-    ordered = sorted(candidates.items(), key=lambda kv: kv[1], reverse=True)
+    candidates = get_ips_from_snapshot(latest)
 
     cutoff = now() - datetime.timedelta(days=CACHE_TTL_DAYS)
     to_check = []
-    for ip, _count in ordered:
+    for ip in candidates:
         cached = lookups.get(ip)
         if cached:
             checked_dt = parse_iso(cached.get("checked_at"))

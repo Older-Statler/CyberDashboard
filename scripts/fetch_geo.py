@@ -17,12 +17,12 @@ import json
 import os
 import sys
 import time
-from urllib.parse import urlparse
 
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import load_json
+from lib.extract_ips import get_ips_from_snapshot
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LATEST_PATH = os.path.join(BASE, "data", "latest.json")
@@ -36,62 +36,6 @@ MAX_NEW_IPS_PER_RUN = 500
 
 def now_iso():
     return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
-
-def normalize_ip(raw):
-    if not raw:
-        return None
-    raw = raw.strip()
-    if raw.count(":") == 1:
-        raw = raw.split(":")[0]
-    parts = raw.split(".")
-    if len(parts) != 4:
-        return None
-    try:
-        if all(0 <= int(p) <= 255 for p in parts):
-            return raw
-    except ValueError:
-        return None
-    return None
-
-
-def extract_host(url):
-    if not url:
-        return None
-    try:
-        return urlparse(url).hostname
-    except Exception:
-        return None
-
-
-def collect_candidate_ips(latest):
-    ips = set()
-    feeds = latest.get("feeds", {})
-
-    for item in feeds.get("threatfox", {}).get("items", []):
-        if "ip" in (item.get("ioc_type") or ""):
-            ip = normalize_ip(item.get("ioc"))
-            if ip:
-                ips.add(ip)
-
-    for item in feeds.get("urlhaus", {}).get("items", []):
-        ip = normalize_ip(extract_host(item.get("url")))
-        if ip:
-            ips.add(ip)
-
-    for item in feeds.get("blocklistde", {}).get("items", []):
-        ip = normalize_ip(item.get("ip"))
-        if ip:
-            ips.add(ip)
-
-    for item in feeds.get("otx", {}).get("items", []):
-        for ind in item.get("indicators", []):
-            if (ind.get("type") or "").lower() in ("ipv4", "ipv6"):
-                ip = normalize_ip(ind.get("indicator"))
-                if ip:
-                    ips.add(ip)
-
-    return ips
 
 
 def fetch_batch(ips):
@@ -137,7 +81,7 @@ def main():
 
     geo_cache = load_json(GEO_PATH, default={}) or {}
 
-    candidates = collect_candidate_ips(latest)
+    candidates = get_ips_from_snapshot(latest)
     new_ips = [ip for ip in candidates if ip not in geo_cache]
     to_fetch = new_ips[:MAX_NEW_IPS_PER_RUN]
 

@@ -47,6 +47,10 @@
         <div class="kpi-value" id="kpi-errors">&mdash;</div>
         <div class="kpi-label">Feeds in error state</div>
       </div>
+      <div class="kpi-card kpi-card-danger">
+        <div class="kpi-value" id="kpi-drop-count">&mdash;</div>
+        <div class="kpi-label">IPs within a Spamhaus DROP range</div>
+      </div>
     </section>
 
     <div id="error-panel" class="error-panel" hidden>
@@ -54,21 +58,31 @@
       <ul id="error-list"></ul>
     </div>
 
-    <!-- Triage / digest panel: top 5 each of ransomware KEV, GreyNoise-confirmed
-         malicious IPs, and top correlated IOCs. Each card hides itself if its
-         input data is empty/missing (see renderTriage in app.js). -->
+    <!-- Triage / digest panel: top 5 each of ransomware KEV, ransomware KEV
+         also in EPSS's top 10% by exploit probability, GreyNoise-confirmed
+         malicious IPs, top correlated/high-confidence IOCs, and recent
+         ransomware.live victims. Each card hides itself independently if
+         its input data is empty/missing (see renderTriage in app.js). -->
     <section id="triage-panel" class="triage-panel" aria-label="Triage digest" hidden>
       <div class="triage-card">
         <h3>Ransomware-tied KEV (recent)</h3>
         <ul id="triage-kev"></ul>
       </div>
       <div class="triage-card">
+        <h3>Ransomware KEV + EPSS &ge; 90th pct</h3>
+        <ul id="triage-epss-critical"></ul>
+      </div>
+      <div class="triage-card">
         <h3>GreyNoise-confirmed malicious IPs</h3>
         <ul id="triage-malicious"></ul>
       </div>
       <div class="triage-card">
-        <h3>Top correlated IOCs</h3>
+        <h3>Top correlated / high-confidence IOCs</h3>
         <ul id="triage-correlated"></ul>
+      </div>
+      <div class="triage-card">
+        <h3>Recent ransomware victims</h3>
+        <ul id="triage-victims"></ul>
       </div>
     </section>
 
@@ -141,17 +155,36 @@
       <p class="empty-note" id="empty-cisa_kev" hidden>No data yet.</p>
     </section>
 
-    <!-- Cross-feed correlation: IOCs independently seen in 2+ feeds. -->
+    <!-- Ransomware.live: organizational/contextual data, not an IOC list. -->
+    <section class="feed-section" id="section-ransomware_victims">
+      <div class="feed-header">
+        <h2>Ransomware Activity <span class="feed-status" id="status-ransomware_victims"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="ransomware_victims" placeholder="Search group, victim, sector, country&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="ransomware_victims" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="ransomware_victims" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="table-ransomware_victims"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-ransomware_victims" hidden>No data yet.</p>
+    </section>
+
+    <!-- Cross-feed / cross-source correlation: an IOC's "signal count" combines
+         raw multi-feed overlap with enrichment corroboration (GreyNoise,
+         AbuseIPDB, Spamhaus DROP, InternetDB) — see buildCorrelation in app.js. -->
     <section class="feed-section" id="section-correlated">
       <div class="feed-header">
-        <h2>Correlated IOCs <span class="feed-status" id="status-correlated" title="Computed client-side from loaded feeds">seen in 2+ feeds</span></h2>
+        <h2>Correlated / High-Confidence IOCs <span class="feed-status" id="status-correlated" title="Computed client-side from loaded feeds + enrichment sources">signal count &ge; 1</span></h2>
         <div class="export-buttons">
           <button class="export-btn" data-feed="correlated" data-format="csv" type="button">Export CSV</button>
           <button class="export-btn" data-feed="correlated" data-format="json" type="button">Export JSON</button>
         </div>
       </div>
+      <p class="geo-meta">Ranked by total corroborating signals: raw multi-feed overlap, GreyNoise, AbuseIPDB, Spamhaus DROP, and InternetDB each contribute.</p>
       <div class="table-wrap"><table id="table-correlated"><thead></thead><tbody id="correlated-tbody"></tbody></table></div>
-      <p class="empty-note" id="correlated-empty" hidden>No IOCs currently overlap across 2+ feeds.</p>
+      <p class="empty-note" id="correlated-empty" hidden>No IOCs currently have any corroborating signal.</p>
     </section>
 
     <section class="feed-section" id="section-threatfox">

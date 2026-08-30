@@ -20,8 +20,9 @@ Browser
    -> renders everything client-side
 ```
 
-A second workflow (`fetch-enrichment.yml`) runs once a day and does three things, all
-committed as small JSON files the frontend reads the same way it reads `latest.json`:
+A second workflow (`daily-intel.yml`) runs once a day and pulls eight more sources, each
+as its own independently-fault-tolerant step, all committed as small JSON files the
+frontend reads the same way it reads `latest.json`:
 
 - annotates IPs seen across the feeds with GreyNoise Community classifications
   (`data/enrichment.json`) — separate from the main cron because GreyNoise's free tier is
@@ -29,15 +30,22 @@ committed as small JSON files the frontend reads the same way it reads `latest.j
 - geolocates + ASN-tags IPs via ip-api.com's free batch endpoint, building a permanent
   cache (`data/geo.json`) and a recomputed aggregate (`data/geo_summary.json`) for the
   world map / top-countries / top-ASNs view.
+- scores every KEV CVE's exploit probability via FIRST.org's EPSS API (`data/epss.json`).
+- looks up what's actually exposed on IPs via Shodan InternetDB (`data/internetdb.json`).
+- looks up crowd-sourced abuse reports via AbuseIPDB (`data/abuseipdb.json`) — optional,
+  needs a free key.
+- fetches Spamhaus DROP's criminal-controlled netblocks (`data/spamhaus_drop.json`).
+- fetches recent ransomware victims from ransomware.live (`data/ransomware_victims.json`).
 - appends today's per-feed item counts to a small rolling history (`data/trends.json`,
   capped at 90 days) that drives the sparklines in each feed's header.
 
 Feeds are not called directly from the browser because none of them serve permissive
 CORS headers, and several require an API key that can't be safely shipped in client-side
 JS. Doing the fetch inside GitHub Actions keeps keys server-side (as encrypted secrets)
-while keeping the actual dashboard 100% static. Everything added in this second phase
-(correlation, triage digest, watchlist, export) follows the same rule and runs entirely
-client-side from data already loaded — no new external calls from the browser at all.
+while keeping the actual dashboard 100% static. Everything added in phases 2 and 3
+(correlation, triage digest, watchlist, export, the extended signal-count scoring) follows
+the same rule and runs entirely client-side from data already loaded — no new external
+calls from the browser at all.
 
 ## Feature tour (phase 2)
 
@@ -72,24 +80,64 @@ client-side from data already loaded — no new external calls from the browser 
   Blocklist.de's ~21,500 unique IPs takes roughly a few weeks of daily runs. This is
   expected, not a bug.
 
+## Feature tour (phase 3)
+
+- **EPSS scores** — every CISA KEV entry gets an EPSS score + percentile column (sortable)
+  from FIRST.org, showing the probability a CVE gets exploited in the next 30 days —
+  CISA KEV tells you it *has* been exploited, EPSS tells you how likely it is to be
+  exploited *again*. The triage panel adds a card for KEV entries that are both
+  ransomware-tagged and in EPSS's top 10th percentile — about as urgent as this data gets.
+- **Shodan InternetDB** — a badge on any IP with exposed ports/CVEs/hostnames on record
+  ("3 ports, 1 CVE"), hover for the detail. Entries are re-checked after 30 days since
+  exposure changes over time, unlike the permanent geo cache.
+- **AbuseIPDB** — a color-coded badge (reusing the dashboard's existing ok/warning/danger
+  colors, never color alone) by abuse-confidence-score band. Optional — needs a free
+  `ABUSEIPDB_API_KEY`; badges simply don't appear without one.
+- **Spamhaus DROP** — criminal-controlled netblocks, one level up from individual IPs. Any
+  IP inside a DROP range gets a "netblock flagged" badge, plus its own KPI tile. Reuses the
+  same CIDR-matching helper originally built for the watchlist.
+- **Ransomware Activity** — a new section listing recent ransomware.live victim
+  disclosures (group, victim, sector, country, date) — the organizational complement to
+  the ransomware-tagged KEV entries: one says "this vulnerability is used by ransomware
+  operators," this says "and here's who they've hit lately." The 5 most recent surface in
+  the triage panel too. Intentionally *not* cross-referenced against the IOC feeds —
+  victim data isn't shaped for that kind of matching.
+- **Extended correlation scoring** — "Correlated IOCs" is now "Correlated / High-Confidence
+  IOCs," ranked by total *signal count* rather than raw feed-count alone: appearing in 2+
+  feeds is one signal, and GreyNoise `malicious`, AbuseIPDB ≥ 75, a Spamhaus DROP match,
+  and an InternetDB CVE each add one more. A single-feed IP corroborated by two enrichment
+  sources now ranks alongside one seen in two raw feeds, instead of being excluded
+  entirely as it was in phase 2.
+- **Shared IP-extraction helper** (`scripts/lib/extract_ips.py`) — the "which IPs appear
+  across the bulk feeds" logic used to be duplicated in the GreyNoise and geo scripts;
+  now every per-IP enricher (GreyNoise, geo, InternetDB, AbuseIPDB) imports one function.
+
 ## Repository structure
 
 ```
 .github/workflows/
   fetch-feeds.yml        # main cron: all 6 bulk feeds, every 30 min
-  fetch-enrichment.yml   # GreyNoise + geo/ASN + trend rollup, once daily
+  daily-intel.yml        # GreyNoise, geo/ASN, EPSS, InternetDB, AbuseIPDB, Spamhaus
+                          # DROP, ransomware.live, trend rollup — once daily
 assets/
   world-map.svg           # ISO-tagged world map for the choropleth (CC BY-SA 3.0)
 scripts/
   common.py                       # shared write_raw()/load_json() helpers
+  lib/
+    extract_ips.py                # shared "unique IPs across the bulk feeds" helper
   fetch_threatfox.py
   fetch_urlhaus.py
   fetch_malwarebazaar.py
   fetch_kev.py
   fetch_otx.py
   fetch_blocklistde.py
-  fetch_greynoise_enrichment.py   # + usage/quota tracking
-  fetch_geo.py                    # ip-api.com geolocation + ASN, permanent cache
+  fetch_greynoise_enrichment.py   # + usage/quota tracking; uses lib/extract_ips.py
+  fetch_geo.py                    # ip-api.com geolocation + ASN, permanent cache; uses lib/extract_ips.py
+  fetch_epss.py                   # FIRST.org EPSS scores for every KEV CVE
+  fetch_internetdb.py             # Shodan InternetDB per-IP exposure, 30-day TTL cache
+  fetch_abuseipdb.py              # AbuseIPDB per-IP abuse reports, 14-day TTL cache
+  fetch_spamhaus_drop.py          # Spamhaus DROP netblocks, full refresh daily
+  fetch_ransomware_live.py        # ransomware.live recent victims
   append_trend.py                 # daily per-feed count rollup, capped at 90 entries
   build_snapshot.py               # merges data/raw/*.json -> data/latest.json
 data/
@@ -97,6 +145,11 @@ data/
   enrichment.json         # overwritten every enrichment run; adds a "usage" block
   geo.json                # permanent IP -> country/ASN cache, grows over time
   geo_summary.json        # aggregated counts for the map, rebuilt every run
+  epss.json               # full refresh every run — one entry per KEV CVE
+  internetdb.json         # IP -> exposure cache, 30-day TTL
+  abuseipdb.json          # IP -> abuse report cache, 14-day TTL
+  spamhaus_drop.json      # full refresh every run — CIDR ranges + SBL IDs
+  ransomware_victims.json # full refresh every run — ~100 most recent victims
   trends.json             # daily per-feed count rollup, capped at 90 entries
   raw/                    # per-feed intermediate output, gitignored
 index.html / styles.css / app.js  # the dashboard itself
@@ -109,7 +162,10 @@ index.html / styles.css / app.js  # the dashboard itself
      from the same abuse.ch Authentication Portal (`auth.abuse.ch`), free account.
    - `OTX_API_KEY` — free account at otx.alienvault.com, key from account settings.
    - `GREYNOISE_API_KEY` (optional) — free Community key from greynoise.io. If omitted,
-     the enrichment workflow no-ops and the dashboard simply shows no GreyNoise badges.
+     that step no-ops and the dashboard simply shows no GreyNoise badges.
+   - `ABUSEIPDB_API_KEY` (optional) — free key from abuseipdb.com. If omitted, that step
+     no-ops and the dashboard simply shows no AbuseIPDB badges. EPSS, Shodan InternetDB,
+     Spamhaus DROP, and ransomware.live need no key at all.
 
 2. **Subscribe to some OTX pulses.** The default endpoint
    (`/api/v1/pulses/subscribed`) only returns pulses the account is subscribed to. Before
@@ -148,6 +204,20 @@ index.html / styles.css / app.js  # the dashboard itself
 - **No client-side keys, ever.** All API keys live only in GitHub Actions secrets and
   are used server-side inside the workflow runs. The shipped frontend (`index.html`,
   `app.js`, `styles.css`) makes no calls to any external threat-intel API.
+- **ransomware.live is rate-limited to 1 request/minute per endpoint.** `fetch_ransomware_live.py`
+  only calls one endpoint (`/recentvictims`) once per run, so this is trivially respected —
+  but if a second endpoint is ever added there, the calls need to be spaced 60+ seconds apart.
+- **Shodan InternetDB has no documented rate limit**, so `fetch_internetdb.py` self-imposes
+  one anyway: 300 new/re-checked IPs per run with a ~200ms delay between requests, out of
+  courtesy to a free public service.
+- **AbuseIPDB's free tier is 1,000 checks/day**; `fetch_abuseipdb.py` self-caps at 500/day,
+  leaving real headroom rather than brushing the ceiling.
+- **EPSS chunking.** ~1,700 KEV CVEs would make an unreasonably long URL in one request, so
+  `fetch_epss.py` batches in chunks of 100 CVE IDs per call.
+- Considered and **excluded**: abuse.ch's Feodo Tracker. Its datasets are currently empty
+  (attributed to law-enforcement takedowns — Emotet 2021, Operation Endgame 2024), not
+  worth building against right now. If botnet C2 tracking is wanted later, abuse.ch's own
+  FAQ points to Spamhaus's Botnet Controller List as the modern replacement.
 
 ## Out of scope (by design)
 
@@ -159,3 +229,9 @@ index.html / styles.css / app.js  # the dashboard itself
   to "no persistence": daily *counts* only (capped at 90 entries, a few KB), not a growing
   database of individual IOCs.
 - User accounts/authentication, and writing data back to any feed.
+- Feodo Tracker / botnet C2 tracking (dataset currently empty — revisit if abuse.ch or
+  Spamhaus's Botnet Controller List becomes relevant later).
+- Cross-referencing ransomware.live victim data against the IOC feeds (different data
+  shape, not a clean match — see Ransomware Activity above).
+- A second map layer for ransomware-victims-by-country (the ranked table covers it for
+  now; revisit if the existing choropleth should support a toggleable second dataset).

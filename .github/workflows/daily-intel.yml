@@ -1,4 +1,4 @@
-name: Daily Enrichment
+name: Daily Intel
 
 on:
   schedule:
@@ -37,6 +37,28 @@ jobs:
         run: python scripts/fetch_geo.py
         continue-on-error: true
 
+      - name: Fetch EPSS scores
+        run: python scripts/fetch_epss.py
+        continue-on-error: true
+
+      - name: Fetch Shodan InternetDB data
+        run: python scripts/fetch_internetdb.py
+        continue-on-error: true
+
+      - name: Fetch AbuseIPDB reports
+        env:
+          ABUSEIPDB_API_KEY: ${{ secrets.ABUSEIPDB_API_KEY }}
+        run: python scripts/fetch_abuseipdb.py
+        continue-on-error: true
+
+      - name: Fetch Spamhaus DROP
+        run: python scripts/fetch_spamhaus_drop.py
+        continue-on-error: true
+
+      - name: Fetch ransomware.live recent victims
+        run: python scripts/fetch_ransomware_live.py
+        continue-on-error: true
+
       - name: Append today's trend counts
         run: python scripts/append_trend.py
         continue-on-error: true
@@ -45,10 +67,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/enrichment.json data/geo.json data/geo_summary.json data/trends.json
+          git add data/enrichment.json data/geo.json data/geo_summary.json data/trends.json \
+                  data/epss.json data/internetdb.json data/abuseipdb.json \
+                  data/spamhaus_drop.json data/ransomware_victims.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update enrichment, geo, and trend data [skip ci]"
+            git commit -m "Update daily intel data [skip ci]"
             git push
           fi
