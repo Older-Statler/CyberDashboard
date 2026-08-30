@@ -1,4 +1,5005 @@
 {
-  "generated_at": null,
-  "entries": {}
+  "generated_at": "2026-08-30T18:53:45Z",
+  "entries": {
+    "124.153.189.92": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 583,
+      "countryCode": "KR",
+      "isp": "Seokyung Cable Television Co.. Ltd.",
+      "domain": "iscs.co.kr",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:37Z"
+    },
+    "111.61.177.188": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 430,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Corporation",
+      "domain": "chinamobile.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "219.248.4.146": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1378,
+      "countryCode": "KR",
+      "isp": "SK Broadband Co Ltd",
+      "domain": "skbroadband.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "106.15.10.2": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "178.178.222.57": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1551,
+      "countryCode": "RU",
+      "isp": "PJSC MegaFon",
+      "domain": "megafon.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "94.112.254.202": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 80,
+      "countryCode": "CZ",
+      "isp": "PROJEKTIL ARCHITEKTI s.r.o.",
+      "domain": "projektil.cz",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "192.251.226.28": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "42.55.212.26": {
+      "abuseConfidenceScore": 16,
+      "totalReports": 5,
+      "countryCode": "CN",
+      "isp": "UNICOM Liaoning Province Network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "45.66.153.66": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 29,
+      "countryCode": "ID",
+      "isp": "PT. INDUSTRI KREATIF DIGITAL",
+      "domain": "soundkreatif.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:38Z"
+    },
+    "222.107.156.227": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5182,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:39Z"
+    },
+    "84.17.60.251": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1198,
+      "countryCode": "FR",
+      "isp": "Datacamp Limited",
+      "domain": "datacamp.co.uk",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:39Z"
+    },
+    "27.206.185.202": {
+      "abuseConfidenceScore": 42,
+      "totalReports": 7,
+      "countryCode": "CN",
+      "isp": "China Unicom Shandong province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:39Z"
+    },
+    "182.122.234.134": {
+      "abuseConfidenceScore": 9,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:39Z"
+    },
+    "154.95.25.135": {
+      "abuseConfidenceScore": 53,
+      "totalReports": 21,
+      "countryCode": "VE",
+      "isp": "AXICABLE COMPANY INC",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:39Z"
+    },
+    "95.141.17.59": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "GB",
+      "isp": "GNC Realisations 2026 Limited",
+      "domain": "g.network",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:40Z"
+    },
+    "61.52.138.43": {
+      "abuseConfidenceScore": 22,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:40Z"
+    },
+    "182.115.68.225": {
+      "abuseConfidenceScore": 22,
+      "totalReports": 5,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:40Z"
+    },
+    "80.66.66.68": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1261,
+      "countryCode": "BG",
+      "isp": "SOLDATOV ALEXEY VALEREVICH",
+      "domain": "hostup.kz",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:40Z"
+    },
+    "5.167.67.155": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:41Z"
+    },
+    "203.192.232.180": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 6295,
+      "countryCode": "IN",
+      "isp": "Indusind Media And Communication Ltd.",
+      "domain": "indigital.co.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:41Z"
+    },
+    "175.146.54.164": {
+      "abuseConfidenceScore": 80,
+      "totalReports": 26,
+      "countryCode": "CN",
+      "isp": "CHINA UNICOM Liaoning province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:42Z"
+    },
+    "188.143.232.18": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:42Z"
+    },
+    "115.74.7.119": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 174,
+      "countryCode": "VN",
+      "isp": "Viettel Group",
+      "domain": "viettel.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:42Z"
+    },
+    "123.14.176.45": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:43Z"
+    },
+    "5.167.69.31": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:43Z"
+    },
+    "159.89.99.205": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 71,
+      "countryCode": "DE",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:43Z"
+    },
+    "190.6.32.107": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 3297,
+      "countryCode": "VE",
+      "isp": "Net Uno, C.A.",
+      "domain": "net-uno.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:43Z"
+    },
+    "5.167.66.26": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:44Z"
+    },
+    "167.99.82.126": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 191,
+      "countryCode": "GB",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:44Z"
+    },
+    "42.228.47.42": {
+      "abuseConfidenceScore": 25,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:44Z"
+    },
+    "113.212.69.185": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:51:44Z"
+    },
+    "47.254.254.124": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 32,
+      "countryCode": "MY",
+      "isp": "Alibaba Cloud - MY",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:44Z"
+    },
+    "173.234.226.85": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:44Z"
+    },
+    "89.23.107.5": {
+      "abuseConfidenceScore": 35,
+      "totalReports": 13,
+      "countryCode": "NL",
+      "isp": "GLOBAL CONNECTIVITY SOLUTIONS LLP",
+      "domain": "globconnex.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:45Z"
+    },
+    "93.123.109.164": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1484,
+      "countryCode": "NL",
+      "isp": "TECHOFF SRV LIMITED",
+      "domain": "dmzhost.co",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:45Z"
+    },
+    "108.62.57.70": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:46Z"
+    },
+    "103.107.143.82": {
+      "abuseConfidenceScore": 62,
+      "totalReports": 24,
+      "countryCode": "IN",
+      "isp": "HiPOINT Connect Private Limited",
+      "domain": "hipointinc.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:46Z"
+    },
+    "5.167.65.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:46Z"
+    },
+    "5.167.70.216": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:47Z"
+    },
+    "115.49.0.112": {
+      "abuseConfidenceScore": 34,
+      "totalReports": 13,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:47Z"
+    },
+    "36.150.116.194": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 108,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Corporation",
+      "domain": "chinamobile.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "92.207.4.157": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5611,
+      "countryCode": "GB",
+      "isp": "Gamma Telecom Limited",
+      "domain": "gamma.co.uk",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "85.195.9.20": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1625,
+      "countryCode": "SE",
+      "isp": "Bng; gbg",
+      "domain": "netatonce.se",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "152.32.128.214": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1832,
+      "countryCode": "HK",
+      "isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+      "domain": "ucloud.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "51.75.255.200": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1769,
+      "countryCode": "FR",
+      "isp": "OVH SAS",
+      "domain": "ovh.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "94.158.60.102": {
+      "abuseConfidenceScore": 62,
+      "totalReports": 13,
+      "countryCode": "UZ",
+      "isp": "IPLUS LLC",
+      "domain": "comnet.uz",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "87.236.176.163": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 274,
+      "countryCode": "GB",
+      "isp": "Driftnet Ltd",
+      "domain": "driftnet.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:48Z"
+    },
+    "182.126.80.129": {
+      "abuseConfidenceScore": 9,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:49Z"
+    },
+    "108.62.57.168": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:49Z"
+    },
+    "113.199.221.193": {
+      "abuseConfidenceScore": 18,
+      "totalReports": 3,
+      "countryCode": "NP",
+      "isp": "Nepal Telecommunications Corporation",
+      "domain": "ntc.net.np",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:49Z"
+    },
+    "108.62.63.191": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:50Z"
+    },
+    "109.207.35.139": {
+      "abuseConfidenceScore": 36,
+      "totalReports": 15,
+      "countryCode": "RS",
+      "isp": "TRUF d.o.o.",
+      "domain": "kbcnet.rs",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:50Z"
+    },
+    "103.229.53.84": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "VN",
+      "isp": "CLOUD VIET ONE MEMBER COMPANY LIMITED",
+      "domain": "cloudextra.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:50Z"
+    },
+    "108.62.57.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:50Z"
+    },
+    "185.138.167.146": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 240,
+      "countryCode": "NO",
+      "isp": "ONIT AS",
+      "domain": "teamviewer.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:51:50Z"
+    },
+    "182.117.2.57": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:50Z"
+    },
+    "108.62.61.98": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:51Z"
+    },
+    "186.209.77.236": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 105,
+      "countryCode": "BR",
+      "isp": "Desktop Sigmanet Comunicação Multimídia SA",
+      "domain": "desktop.com.br",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:51Z"
+    },
+    "42.224.29.91": {
+      "abuseConfidenceScore": 4,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:51Z"
+    },
+    "182.121.153.255": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:52Z"
+    },
+    "23.253.174.94": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 58,
+      "countryCode": "US",
+      "isp": "Rackspace Hosting",
+      "domain": "rackspace.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:52Z"
+    },
+    "111.70.32.6": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1242,
+      "countryCode": "TW",
+      "isp": "CHT-Mobile business Group,Chunghwa",
+      "domain": "cht.com.tw",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:51:52Z"
+    },
+    "123.14.73.174": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:52Z"
+    },
+    "64.89.160.222": {
+      "abuseConfidenceScore": 11,
+      "totalReports": 74,
+      "countryCode": "LU",
+      "isp": "Ghosty Networks LLC",
+      "domain": "ghostynetworks.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:53Z"
+    },
+    "190.185.228.11": {
+      "abuseConfidenceScore": 67,
+      "totalReports": 30,
+      "countryCode": "AR",
+      "isp": "Meridiano83 TV",
+      "domain": "ridsa.com.ar",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:53Z"
+    },
+    "5.167.70.199": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:53Z"
+    },
+    "108.62.60.134": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:53Z"
+    },
+    "125.43.41.147": {
+      "abuseConfidenceScore": 44,
+      "totalReports": 9,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:54Z"
+    },
+    "5.167.69.96": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:54Z"
+    },
+    "143.198.152.129": {
+      "abuseConfidenceScore": 27,
+      "totalReports": 4,
+      "countryCode": "US",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:54Z"
+    },
+    "108.62.61.139": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:54Z"
+    },
+    "108.62.61.161": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:55Z"
+    },
+    "182.127.162.162": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:55Z"
+    },
+    "5.167.70.176": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:56Z"
+    },
+    "108.62.62.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:56Z"
+    },
+    "181.54.70.40": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1366,
+      "countryCode": "CO",
+      "isp": "Telmex Colombia S.A.",
+      "domain": "telmexla.net.co",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:56Z"
+    },
+    "5.167.65.22": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:56Z"
+    },
+    "112.48.16.186": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 275,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Corporation",
+      "domain": "chinamobile.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:56Z"
+    },
+    "5.167.67.238": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:57Z"
+    },
+    "54.255.246.185": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 73,
+      "countryCode": "SG",
+      "isp": "Amazon Data Services Japan",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:57Z"
+    },
+    "95.141.17.92": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "GB",
+      "isp": "GNC Realisations 2026 Limited",
+      "domain": "g.network",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:57Z"
+    },
+    "161.35.179.218": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1905,
+      "countryCode": "US",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:57Z"
+    },
+    "108.62.58.33": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:57Z"
+    },
+    "175.151.83.137": {
+      "abuseConfidenceScore": 22,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "CHINA UNICOM Liaoning province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:58Z"
+    },
+    "188.143.233.24": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "myspacehosting.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:58Z"
+    },
+    "108.62.57.170": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:58Z"
+    },
+    "5.167.70.245": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:51:59Z"
+    },
+    "193.232.117.204": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 24,
+      "countryCode": "RU",
+      "isp": "LTD Operating Company Ticket House",
+      "domain": "vipservice.ru",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:51:59Z"
+    },
+    "108.62.62.98": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:59Z"
+    },
+    "108.62.59.233": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:51:59Z"
+    },
+    "5.167.71.250": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "115.114.95.98": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 71,
+      "countryCode": "IN",
+      "isp": "Internet Service Provider",
+      "domain": "tatacommunications.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "219.157.249.227": {
+      "abuseConfidenceScore": 55,
+      "totalReports": 10,
+      "countryCode": "CN",
+      "isp": "China Unicom IP network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "195.137.245.219": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "SE",
+      "isp": "South Park Networks LLC",
+      "domain": "spnet.work",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "156.225.14.74": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 446,
+      "countryCode": "HK",
+      "isp": "Liasail Global HongKong Limited",
+      "domain": "liasail.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "113.212.70.166": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "113.161.39.122": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2610,
+      "countryCode": "VN",
+      "isp": "Vietnam Posts and Telecommunications Group",
+      "domain": "vnpt.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:00Z"
+    },
+    "108.62.59.73": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:01Z"
+    },
+    "188.143.232.138": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:01Z"
+    },
+    "61.54.43.5": {
+      "abuseConfidenceScore": 22,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:02Z"
+    },
+    "5.167.64.11": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:02Z"
+    },
+    "216.151.137.0": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:52:02Z"
+    },
+    "188.143.233.20": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "myspacehosting.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:02Z"
+    },
+    "216.152.249.239": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Beamspeed LLC",
+      "domain": "beamspeed.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:02Z"
+    },
+    "45.114.125.22": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 987,
+      "countryCode": "HK",
+      "isp": "HKDAPU",
+      "domain": "hanming.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:03Z"
+    },
+    "35.203.210.67": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 3531,
+      "countryCode": "GB",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:03Z"
+    },
+    "108.62.56.169": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:03Z"
+    },
+    "115.63.231.224": {
+      "abuseConfidenceScore": 14,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:04Z"
+    },
+    "201.17.146.173": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 3505,
+      "countryCode": "BR",
+      "isp": "Claro NXT Telecomunicacoes Ltda",
+      "domain": "claro.com.br",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:04Z"
+    },
+    "189.135.101.88": {
+      "abuseConfidenceScore": 39,
+      "totalReports": 27,
+      "countryCode": "MX",
+      "isp": "Gestión de direccionamiento UniNet",
+      "domain": "uninet.net.mx",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:04Z"
+    },
+    "192.251.226.161": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:04Z"
+    },
+    "5.167.70.0": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:05Z"
+    },
+    "115.55.9.97": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:05Z"
+    },
+    "117.247.193.27": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 969,
+      "countryCode": "IN",
+      "isp": "Broadband Multiplay Project, O/o DGM BB, NOC BSNL Bangalore",
+      "domain": "bsnl.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:06Z"
+    },
+    "95.155.151.113": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 313,
+      "countryCode": "NL",
+      "isp": "Trixit Holding B.V.",
+      "domain": "trixit.nl",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:06Z"
+    },
+    "172.104.210.105": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2860,
+      "countryCode": "US",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:06Z"
+    },
+    "67.85.40.144": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 52,
+      "countryCode": "US",
+      "isp": "Optimum Online (Cablevision Systems)",
+      "domain": "optimum.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:06Z"
+    },
+    "173.234.226.236": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:06Z"
+    },
+    "69.5.21.194": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 901,
+      "countryCode": "ID",
+      "isp": "BYTEPLUS",
+      "domain": "bytedance.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:07Z"
+    },
+    "108.62.60.181": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:07Z"
+    },
+    "103.59.163.134": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5646,
+      "countryCode": "MM",
+      "isp": "GOLDEN DRAGON 2000 COMPANY LIMITED t/a Dragon Net",
+      "domain": "goldendragon2000.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:07Z"
+    },
+    "8.219.169.170": {
+      "abuseConfidenceScore": 34,
+      "totalReports": 17,
+      "countryCode": "SG",
+      "isp": "Alibaba Cloud (Singapore) Private Limited",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:07Z"
+    },
+    "216.151.137.135": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:52:07Z"
+    },
+    "5.167.71.169": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:08Z"
+    },
+    "160.30.181.254": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 47,
+      "countryCode": "NP",
+      "isp": "Udaya Cable Network Pvt. Ltd.",
+      "domain": "udayacable.com.np",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:08Z"
+    },
+    "106.12.128.30": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2054,
+      "countryCode": "CN",
+      "isp": "Beijing Baidu Netcom Science and Technology Co., Ltd.",
+      "domain": "baidu.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:08Z"
+    },
+    "108.62.59.154": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:08Z"
+    },
+    "197.219.228.246": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2077,
+      "countryCode": "MZ",
+      "isp": "Movitel, SA",
+      "domain": "movitel.co.mz",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:08Z"
+    },
+    "216.151.138.75": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:52:09Z"
+    },
+    "187.234.88.124": {
+      "abuseConfidenceScore": 50,
+      "totalReports": 26,
+      "countryCode": "MX",
+      "isp": "Uninet S.A. de C.V.",
+      "domain": "uninet.net.mx",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:09Z"
+    },
+    "178.137.16.193": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "UA",
+      "isp": "Kyivstar GSM",
+      "domain": "kyivstar.ua",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:09Z"
+    },
+    "171.244.39.95": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5998,
+      "countryCode": "VN",
+      "isp": "Viettel Group",
+      "domain": "viettel.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:11Z"
+    },
+    "115.48.160.122": {
+      "abuseConfidenceScore": 16,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:12Z"
+    },
+    "94.153.137.45": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 25,
+      "countryCode": "UA",
+      "isp": "Kyivstar GSM",
+      "domain": "kyivstar.ua",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:12Z"
+    },
+    "5.167.70.117": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:12Z"
+    },
+    "173.234.227.108": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:13Z"
+    },
+    "203.76.121.42": {
+      "abuseConfidenceScore": 65,
+      "totalReports": 10,
+      "countryCode": "BD",
+      "isp": "Link3-Technologies-Ltd",
+      "domain": "link3.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:13Z"
+    },
+    "103.187.146.90": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4022,
+      "countryCode": "SG",
+      "isp": "Cloud Host Pte Ltd",
+      "domain": "cloudhost.asia",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:13Z"
+    },
+    "216.152.249.170": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Beamspeed LLC",
+      "domain": "beamspeed.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:13Z"
+    },
+    "44.192.93.227": {
+      "abuseConfidenceScore": 14,
+      "totalReports": 2,
+      "countryCode": "US",
+      "isp": "Amazon Data Services Northern Virginia",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:13Z"
+    },
+    "159.65.27.19": {
+      "abuseConfidenceScore": 31,
+      "totalReports": 8,
+      "countryCode": "GB",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:13Z"
+    },
+    "115.55.55.135": {
+      "abuseConfidenceScore": 5,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:14Z"
+    },
+    "102.215.33.189": {
+      "abuseConfidenceScore": 75,
+      "totalReports": 18,
+      "countryCode": "KE",
+      "isp": "Mymanga Networks",
+      "domain": "mymanga.co.ke",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:14Z"
+    },
+    "35.254.253.236": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 63,
+      "countryCode": "US",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:14Z"
+    },
+    "121.40.213.105": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 36,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:14Z"
+    },
+    "108.62.60.45": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:14Z"
+    },
+    "185.198.240.49": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 88,
+      "countryCode": "US",
+      "isp": "VPN Consumer New Jersey, United States of America",
+      "domain": "vpnconsumer.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:15Z"
+    },
+    "108.62.62.120": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:15Z"
+    },
+    "88.84.209.146": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1696,
+      "countryCode": "RU",
+      "isp": "Flex network in Moscow region",
+      "domain": "flex.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:15Z"
+    },
+    "5.167.68.56": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:15Z"
+    },
+    "59.97.253.39": {
+      "abuseConfidenceScore": 12,
+      "totalReports": 3,
+      "countryCode": "IN",
+      "isp": "Broadband Multiplay Project, O/o DGM BB, NOC BSNL Bangalore",
+      "domain": "bsnl.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:15Z"
+    },
+    "14.55.144.22": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4883,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:16Z"
+    },
+    "5.167.67.13": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:16Z"
+    },
+    "111.6.236.38": {
+      "abuseConfidenceScore": 71,
+      "totalReports": 13,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Corporation",
+      "domain": "chinamobile.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:16Z"
+    },
+    "108.62.62.130": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:16Z"
+    },
+    "168.167.228.123": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5686,
+      "countryCode": "BW",
+      "isp": "Botswana Telecommunications Corporation",
+      "domain": "btc.bw",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:17Z"
+    },
+    "185.19.40.39": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 96,
+      "countryCode": "DE",
+      "isp": "1337 Services GmbH",
+      "domain": "as210558.net",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:52:17Z"
+    },
+    "176.9.219.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:17Z"
+    },
+    "173.234.227.206": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:17Z"
+    },
+    "5.167.70.203": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:18Z"
+    },
+    "103.234.200.252": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 72,
+      "countryCode": "BD",
+      "isp": "ADN Telecom Ltd",
+      "domain": "adntel.com.bd",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:18Z"
+    },
+    "5.167.71.131": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:18Z"
+    },
+    "182.76.42.142": {
+      "abuseConfidenceScore": 24,
+      "totalReports": 3,
+      "countryCode": "IN",
+      "isp": "ARB TRAVEL AND TOURS",
+      "domain": "arbtravels.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:19Z"
+    },
+    "192.251.226.144": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:19Z"
+    },
+    "108.62.58.254": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:19Z"
+    },
+    "113.212.70.212": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:52:19Z"
+    },
+    "2.187.39.131": {
+      "abuseConfidenceScore": 43,
+      "totalReports": 53,
+      "countryCode": "IR",
+      "isp": "Iran Information Technology Company PJSC",
+      "domain": "dci.co.ir",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:19Z"
+    },
+    "128.199.118.234": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1761,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:19Z"
+    },
+    "194.99.85.15": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "CU Networks GmbH",
+      "domain": "cu-networks.de",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:20Z"
+    },
+    "89.35.125.156": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 422,
+      "countryCode": "KZ",
+      "isp": "Hoster.KZ",
+      "domain": "hoster.kz",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:20Z"
+    },
+    "43.161.232.248": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 23,
+      "countryCode": "HK",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:20Z"
+    },
+    "120.28.217.71": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 59,
+      "countryCode": "PH",
+      "isp": "GBB VISAYAS",
+      "domain": "globe.com.ph",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:20Z"
+    },
+    "14.116.189.74": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 3722,
+      "countryCode": "CN",
+      "isp": "CHINANET Guangdong province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:21Z"
+    },
+    "45.26.184.5": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 443,
+      "countryCode": "US",
+      "isp": "AT&T Enterprises, LLC",
+      "domain": "att.com",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:52:21Z"
+    },
+    "116.125.120.27": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2612,
+      "countryCode": "KR",
+      "isp": "SK Broadband Co Ltd",
+      "domain": "skbroadband.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:22Z"
+    },
+    "194.87.214.222": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 50,
+      "countryCode": "RU",
+      "isp": "JSC Mediasoft ekspert",
+      "domain": "mtw.ru",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:22Z"
+    },
+    "175.203.199.118": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1420,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:22Z"
+    },
+    "175.148.201.94": {
+      "abuseConfidenceScore": 26,
+      "totalReports": 6,
+      "countryCode": "CN",
+      "isp": "CHINA UNICOM Liaoning province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:23Z"
+    },
+    "108.62.56.212": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:24Z"
+    },
+    "216.152.252.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Beamspeed LLC",
+      "domain": "beamspeed.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:24Z"
+    },
+    "183.153.126.58": {
+      "abuseConfidenceScore": 85,
+      "totalReports": 40,
+      "countryCode": "CN",
+      "isp": "CHINANET-ZJ Taizhou node network",
+      "domain": "hz.zj.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:24Z"
+    },
+    "193.163.125.245": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2463,
+      "countryCode": "GB",
+      "isp": "Driftnet Ltd",
+      "domain": "driftnet.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:24Z"
+    },
+    "123.5.146.90": {
+      "abuseConfidenceScore": 20,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:25Z"
+    },
+    "115.55.236.175": {
+      "abuseConfidenceScore": 4,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:25Z"
+    },
+    "110.37.14.156": {
+      "abuseConfidenceScore": 48,
+      "totalReports": 60,
+      "countryCode": "PK",
+      "isp": "National Wimax/IMS environment",
+      "domain": "wateen.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:26Z"
+    },
+    "105.96.13.6": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4521,
+      "countryCode": "DZ",
+      "isp": "Telecom Algeria",
+      "domain": "algerietelecom.dz",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:26Z"
+    },
+    "184.75.208.210": {
+      "abuseConfidenceScore": 47,
+      "totalReports": 16,
+      "countryCode": "CA",
+      "isp": "Amanah Tech Inc.",
+      "domain": "amanah.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:27Z"
+    },
+    "188.143.233.23": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "myspacehosting.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:27Z"
+    },
+    "173.234.227.219": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:27Z"
+    },
+    "173.234.225.16": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:27Z"
+    },
+    "103.28.38.183": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 55,
+      "countryCode": "VN",
+      "isp": "NhanHoa Software Company",
+      "domain": "nhanhoa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:28Z"
+    },
+    "103.87.54.249": {
+      "abuseConfidenceScore": 36,
+      "totalReports": 5,
+      "countryCode": "IN",
+      "isp": "Zess Networks Private Limited",
+      "domain": "zessnetworks.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:28Z"
+    },
+    "178.137.16.255": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "UA",
+      "isp": "Kyivstar GSM",
+      "domain": "kyivstar.ua",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:28Z"
+    },
+    "108.62.59.203": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:28Z"
+    },
+    "201.223.247.82": {
+      "abuseConfidenceScore": 34,
+      "totalReports": 5,
+      "countryCode": "CL",
+      "isp": "TELEFÓNICA CHILE S.A.",
+      "domain": "telefonicachile.cl",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:28Z"
+    },
+    "116.66.204.203": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 251,
+      "countryCode": "ID",
+      "isp": "PT Cyber Network Indonesia",
+      "domain": "cni.net.id",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "82.165.202.90": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "IONOS SE",
+      "domain": "ionos.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "188.143.232.79": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "39.89.242.234": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "China Unicom Shandong province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "119.138.108.48": {
+      "abuseConfidenceScore": 26,
+      "totalReports": 8,
+      "countryCode": "CN",
+      "isp": "CHINANET Guangdong province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "5.167.68.57": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "148.216.28.11": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1327,
+      "countryCode": "MX",
+      "isp": "Universidad Michoacana de San Nicolas de Hidalgo",
+      "domain": "umich.mx",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "176.10.202.13": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 283,
+      "countryCode": "SE",
+      "isp": "Bahnhof AB",
+      "domain": "bahnhof.se",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "188.40.108.81": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 350,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:29Z"
+    },
+    "113.212.70.197": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:52:30Z"
+    },
+    "222.117.176.58": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 847,
+      "countryCode": "KR",
+      "isp": "Sudogwongangnambonbu",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:30Z"
+    },
+    "111.70.23.236": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1190,
+      "countryCode": "TW",
+      "isp": "CHT-Mobile business Group,Chunghwa",
+      "domain": "cht.com.tw",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:52:30Z"
+    },
+    "192.251.226.151": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:30Z"
+    },
+    "216.45.75.104": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1278,
+      "countryCode": "US",
+      "isp": "GVEC.NET, INC.",
+      "domain": "gvec.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:30Z"
+    },
+    "108.62.58.186": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:30Z"
+    },
+    "112.248.191.246": {
+      "abuseConfidenceScore": 32,
+      "totalReports": 20,
+      "countryCode": "CN",
+      "isp": "China Unicom Shandong province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:33Z"
+    },
+    "5.167.64.139": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:33Z"
+    },
+    "131.161.252.58": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 45,
+      "countryCode": "PY",
+      "isp": "EVEREST INGENIERIA S.R.L.",
+      "domain": "teisa.com.py",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:33Z"
+    },
+    "216.151.137.226": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:52:33Z"
+    },
+    "42.235.173.127": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:34Z"
+    },
+    "115.55.55.83": {
+      "abuseConfidenceScore": 38,
+      "totalReports": 7,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:34Z"
+    },
+    "123.12.29.17": {
+      "abuseConfidenceScore": 20,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:35Z"
+    },
+    "43.225.141.165": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 169,
+      "countryCode": "TH",
+      "isp": "Huawei-Cloud-TH",
+      "domain": "huawei.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:35Z"
+    },
+    "59.8.109.37": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 90,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:35Z"
+    },
+    "94.141.16.152": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 54,
+      "countryCode": "IT",
+      "isp": "Retelit Digital Services S.p.A.",
+      "domain": "retelit.it",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:36Z"
+    },
+    "5.167.66.154": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:36Z"
+    },
+    "27.34.70.249": {
+      "abuseConfidenceScore": 42,
+      "totalReports": 8,
+      "countryCode": "NP",
+      "isp": "WorldLink Communications",
+      "domain": "worldlink.com.np",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:36Z"
+    },
+    "31.77.129.56": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 131,
+      "countryCode": "DE",
+      "isp": "play2go.cloud - Cheap and reliable hosting",
+      "domain": "play2go.cloud",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:36Z"
+    },
+    "14.170.114.17": {
+      "abuseConfidenceScore": 28,
+      "totalReports": 18,
+      "countryCode": "VN",
+      "isp": "Vietnam Posts and Telecommunications Group",
+      "domain": "vnpt.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:38Z"
+    },
+    "78.192.21.78": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 463,
+      "countryCode": "FR",
+      "isp": "Proxad / Free SAS",
+      "domain": "free.fr",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:38Z"
+    },
+    "103.77.175.15": {
+      "abuseConfidenceScore": 65,
+      "totalReports": 350,
+      "countryCode": "VN",
+      "isp": "HD TECHNICAL INFRASTRUCTURE CONSTRUCTION COMPANY LIMITED",
+      "domain": "vnnic.vn",
+      "isTor": false,
+      "usageType": "Government",
+      "checked_at": "2026-08-30T18:52:38Z"
+    },
+    "216.151.138.195": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:52:39Z"
+    },
+    "108.62.60.9": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:39Z"
+    },
+    "195.218.159.123": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 848,
+      "countryCode": "RU",
+      "isp": "PJSC Vimpelcom",
+      "domain": "co.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:39Z"
+    },
+    "95.70.88.167": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 30,
+      "countryCode": "RU",
+      "isp": "PJSC Rostelecom",
+      "domain": "rt.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:39Z"
+    },
+    "188.143.233.216": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "myspacehosting.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:40Z"
+    },
+    "54.37.192.129": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 22,
+      "countryCode": "DE",
+      "isp": "Crelativity LTD",
+      "domain": "crelativity.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:40Z"
+    },
+    "42.54.65.215": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "UNICOM Liaoning Province Network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:41Z"
+    },
+    "113.183.142.8": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "VN",
+      "isp": "Vietnam Posts and Telecommunications Group",
+      "domain": "vnpt.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:42Z"
+    },
+    "108.62.62.5": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:42Z"
+    },
+    "217.60.241.237": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Pfcloud",
+      "domain": "pfcloud.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:42Z"
+    },
+    "5.167.65.139": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:42Z"
+    },
+    "5.167.66.244": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:42Z"
+    },
+    "98.80.4.52": {
+      "abuseConfidenceScore": 64,
+      "totalReports": 37,
+      "countryCode": "US",
+      "isp": "Amazon Data Services Northern Virginia",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:43Z"
+    },
+    "5.167.70.65": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:43Z"
+    },
+    "91.108.27.91": {
+      "abuseConfidenceScore": 15,
+      "totalReports": 3,
+      "countryCode": "RU",
+      "isp": "AO ElectronTelecom",
+      "domain": "etelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:43Z"
+    },
+    "123.12.225.30": {
+      "abuseConfidenceScore": 15,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:44Z"
+    },
+    "103.168.168.221": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 32,
+      "countryCode": "ID",
+      "isp": "PT Pelayaran Caraka Tirta Perkasa",
+      "domain": "ctp-line.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:44Z"
+    },
+    "130.195.240.9": {
+      "abuseConfidenceScore": 54,
+      "totalReports": 12,
+      "countryCode": "RO",
+      "isp": "M247 Europe Chisinau Infrastructure",
+      "domain": "m247global.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:44Z"
+    },
+    "117.2.163.143": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 572,
+      "countryCode": "VN",
+      "isp": "Viettel Group",
+      "domain": "viettel.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:45Z"
+    },
+    "182.8.182.152": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 55,
+      "countryCode": "ID",
+      "isp": "PT. Telekomunikasi Selular (Telkomsel) Indonesia",
+      "domain": "telkomsel.co.id",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:45Z"
+    },
+    "91.185.209.73": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 56,
+      "countryCode": "SI",
+      "isp": "Broadband Network Services",
+      "domain": "telemach.si",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:45Z"
+    },
+    "64.62.197.107": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2193,
+      "countryCode": "US",
+      "isp": "The Shadowserver Foundation, Inc.",
+      "domain": "shadowserver.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:46Z"
+    },
+    "194.110.247.198": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 868,
+      "countryCode": "MD",
+      "isp": "ALEXHOST SRL",
+      "domain": "alexhost.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:46Z"
+    },
+    "89.153.150.90": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 168,
+      "countryCode": "PT",
+      "isp": "NOS COMUNICACOES S.A.",
+      "domain": "nos.pt",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:46Z"
+    },
+    "216.152.252.117": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Beamspeed LLC",
+      "domain": "beamspeed.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:46Z"
+    },
+    "123.16.233.146": {
+      "abuseConfidenceScore": 97,
+      "totalReports": 20,
+      "countryCode": "VN",
+      "isp": "Vietnam Posts and Telecommunications Group",
+      "domain": "vnpt.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:48Z"
+    },
+    "103.147.186.96": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 21,
+      "countryCode": "VN",
+      "isp": "Cloud Viet Technology Company Limited",
+      "domain": "vnnic.vn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:48Z"
+    },
+    "61.156.59.146": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 603,
+      "countryCode": "CN",
+      "isp": "China Unicom IP network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:49Z"
+    },
+    "110.37.116.78": {
+      "abuseConfidenceScore": 22,
+      "totalReports": 10,
+      "countryCode": "PK",
+      "isp": "National Wimax/IMS environment",
+      "domain": "wateen.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:50Z"
+    },
+    "83.142.164.94": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 31,
+      "countryCode": "RU",
+      "isp": "Intersvyaz-2 JSC",
+      "domain": "is74.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:50Z"
+    },
+    "176.88.12.145": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 53,
+      "countryCode": "TR",
+      "isp": "PLEKSUS BILISIM TEK.DAN.TEM.YAY.VE ORG.A.S.",
+      "domain": "pleksus.com.tr",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "218.201.250.120": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 773,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Corporation - guizhou",
+      "domain": "chinamobile.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "189.165.67.105": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 706,
+      "countryCode": "MX",
+      "isp": "Gestión de direccionamiento UniNet",
+      "domain": "uninet.net.mx",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "149.102.245.75": {
+      "abuseConfidenceScore": 66,
+      "totalReports": 24,
+      "countryCode": "FR",
+      "isp": "Datacamp Limited",
+      "domain": "datacamp.co.uk",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "5.99.196.202": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5813,
+      "countryCode": "IT",
+      "isp": "Telecom Italia S.p.A.",
+      "domain": "telecomitalia.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "5.167.71.163": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "173.234.225.40": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:51Z"
+    },
+    "70.98.79.18": {
+      "abuseConfidenceScore": 70,
+      "totalReports": 14,
+      "countryCode": "US",
+      "isp": "Lanset America Corporation",
+      "domain": "lanset.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:52Z"
+    },
+    "108.62.58.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:52Z"
+    },
+    "152.200.205.179": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4380,
+      "countryCode": "CO",
+      "isp": "COLOMBIA TELECOMUNICACIONES S.A. ESP BIC",
+      "domain": "telecom.com.co",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:52:52Z"
+    },
+    "143.244.186.174": {
+      "abuseConfidenceScore": 47,
+      "totalReports": 8,
+      "countryCode": "US",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:52Z"
+    },
+    "216.152.249.87": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Beamspeed LLC",
+      "domain": "beamspeed.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:52Z"
+    },
+    "108.62.57.26": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "185.177.72.53": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 3379,
+      "countryCode": "FR",
+      "isp": "FBW NETWORKS SAS",
+      "domain": "fiberway.fr",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "116.99.170.115": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 631,
+      "countryCode": "VN",
+      "isp": "Viettel Group",
+      "domain": "viettel.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "5.167.66.138": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "61.137.198.130": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Liaoning province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "104.249.10.76": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Stellar Group SAS",
+      "domain": "stellar-group.fr",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "43.173.71.5": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1247,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:53Z"
+    },
+    "31.76.93.29": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Great Flower",
+      "domain": "greatflowerstudio.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:54Z"
+    },
+    "115.190.225.133": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 943,
+      "countryCode": "CN",
+      "isp": "Beijing Volcano Engine Technology Co., Ltd.",
+      "domain": "gwbn.net.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:54Z"
+    },
+    "43.166.242.149": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2777,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:54Z"
+    },
+    "91.92.241.57": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 567,
+      "countryCode": "NL",
+      "isp": "OMEGATECH",
+      "domain": "omegatech.sc",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:54Z"
+    },
+    "27.215.176.113": {
+      "abuseConfidenceScore": 9,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Shandong province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:54Z"
+    },
+    "188.143.232.167": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:54Z"
+    },
+    "125.44.220.239": {
+      "abuseConfidenceScore": 15,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:55Z"
+    },
+    "108.62.56.55": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:55Z"
+    },
+    "118.37.255.140": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 173,
+      "countryCode": "KR",
+      "isp": "Sudogwonseobubonbu",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:56Z"
+    },
+    "124.123.125.62": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1804,
+      "countryCode": "IN",
+      "isp": "ACT HYD",
+      "domain": "actcorp.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:58Z"
+    },
+    "108.62.56.32": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:58Z"
+    },
+    "108.62.62.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:59Z"
+    },
+    "42.234.235.243": {
+      "abuseConfidenceScore": 9,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:52:59Z"
+    },
+    "173.234.226.102": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:52:59Z"
+    },
+    "213.64.163.27": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 283,
+      "countryCode": "SE",
+      "isp": "Telia Network services",
+      "domain": "telia.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:00Z"
+    },
+    "45.205.1.246": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 14634,
+      "countryCode": "BR",
+      "isp": "VPSVAULT.HOST LTD",
+      "domain": "vpsvault.host",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:00Z"
+    },
+    "125.42.76.153": {
+      "abuseConfidenceScore": 13,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:00Z"
+    },
+    "5.167.70.201": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:00Z"
+    },
+    "173.234.227.156": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:00Z"
+    },
+    "94.154.43.85": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "Storm Industries LLC",
+      "domain": "stormindustries.llc",
+      "isTor": false,
+      "usageType": "Content Delivery Network",
+      "checked_at": "2026-08-30T18:53:00Z"
+    },
+    "5.167.67.255": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:01Z"
+    },
+    "85.229.6.228": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 320,
+      "countryCode": "SE",
+      "isp": "Telenor Sverige AB",
+      "domain": "telenor.se",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:01Z"
+    },
+    "113.212.69.31": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:53:01Z"
+    },
+    "218.149.228.159": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 403,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:01Z"
+    },
+    "5.167.67.253": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:01Z"
+    },
+    "136.108.37.37": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 59,
+      "countryCode": "US",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:01Z"
+    },
+    "175.165.76.134": {
+      "abuseConfidenceScore": 30,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "CHINA UNICOM Liaoning province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:02Z"
+    },
+    "188.143.232.3": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:02Z"
+    },
+    "173.234.227.26": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:02Z"
+    },
+    "216.151.138.23": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:53:02Z"
+    },
+    "173.234.226.247": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:02Z"
+    },
+    "121.200.54.19": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 441,
+      "countryCode": "IN",
+      "isp": "Wireless Solution India Pvt Ltd.",
+      "domain": "wls.net.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:03Z"
+    },
+    "110.138.134.69": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "PT TELKOM INDONESIA",
+      "domain": "telkom.co.id",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:03Z"
+    },
+    "37.26.83.166": {
+      "abuseConfidenceScore": 86,
+      "totalReports": 30,
+      "countryCode": "AL",
+      "isp": "ATU Network",
+      "domain": "atu.al",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:04Z"
+    },
+    "108.62.63.230": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:04Z"
+    },
+    "180.115.74.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Chinanet Jiangsu Province Network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:04Z"
+    },
+    "103.25.128.160": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 86,
+      "countryCode": "IN",
+      "isp": "i2k2 Networks Pvt Ltd",
+      "domain": "i2k2.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:04Z"
+    },
+    "188.143.232.191": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:04Z"
+    },
+    "5.167.67.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:05Z"
+    },
+    "114.235.174.131": {
+      "abuseConfidenceScore": 11,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "Chinanet Jiangsu Province Network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:05Z"
+    },
+    "38.68.180.70": {
+      "abuseConfidenceScore": 74,
+      "totalReports": 25,
+      "countryCode": "VE",
+      "isp": "BOOM SOLUTIONS C.A.",
+      "domain": "boomsolutionspr.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:05Z"
+    },
+    "4.71.41.185": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 265,
+      "countryCode": "US",
+      "isp": "Level 3 Parent, LLC",
+      "domain": "lumen.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:05Z"
+    },
+    "203.81.236.199": {
+      "abuseConfidenceScore": 23,
+      "totalReports": 3,
+      "countryCode": "PK",
+      "isp": "SCO Scloud",
+      "domain": "sco.gov.pk",
+      "isTor": false,
+      "usageType": "Government",
+      "checked_at": "2026-08-30T18:53:05Z"
+    },
+    "141.101.95.81": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 57,
+      "countryCode": "FR",
+      "isp": "CloudFlare CDN network",
+      "domain": "cloudflare.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:05Z"
+    },
+    "188.219.104.210": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2245,
+      "countryCode": "IT",
+      "isp": "Vodafone Italia S.p.A.",
+      "domain": "vodafone.it",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:06Z"
+    },
+    "160.187.23.222": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 172,
+      "countryCode": "IN",
+      "isp": "LHY TECHNOLOGIES PRIVATE LIMITED",
+      "domain": "lhytechnologies.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:06Z"
+    },
+    "115.63.54.54": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:07Z"
+    },
+    "152.32.128.85": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1810,
+      "countryCode": "HK",
+      "isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+      "domain": "ucloud.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:07Z"
+    },
+    "5.167.64.1": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:07Z"
+    },
+    "95.141.17.253": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "GB",
+      "isp": "GNC Realisations 2026 Limited",
+      "domain": "g.network",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:07Z"
+    },
+    "113.211.213.201": {
+      "abuseConfidenceScore": 39,
+      "totalReports": 25,
+      "countryCode": "MY",
+      "isp": "Maxis Broadband Sdn Bhd",
+      "domain": "maxis.com.my",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:07Z"
+    },
+    "61.53.107.97": {
+      "abuseConfidenceScore": 19,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:08Z"
+    },
+    "37.98.253.231": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 585,
+      "countryCode": "RU",
+      "isp": "LLC KomTehCentr",
+      "domain": "itmh.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:08Z"
+    },
+    "58.47.120.31": {
+      "abuseConfidenceScore": 4,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "CHINANET Hunan province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:08Z"
+    },
+    "112.226.227.21": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 618,
+      "countryCode": "CN",
+      "isp": "China Unicom Shandong province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:08Z"
+    },
+    "213.192.87.252": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 245,
+      "countryCode": "PL",
+      "isp": "TASK Academic Computer Centre",
+      "domain": "gda.pl",
+      "isTor": false,
+      "usageType": "University/College/School",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "102.220.173.146": {
+      "abuseConfidenceScore": 92,
+      "totalReports": 29,
+      "countryCode": "NG",
+      "isp": "De Choicetech Integrated Ltd",
+      "domain": "choice2mobiletech.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "188.143.232.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "31.77.227.121": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 504,
+      "countryCode": "FR",
+      "isp": "ROCKET & MARINICA LTD",
+      "domain": "rocket-cloud.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "5.167.64.137": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "114.104.153.51": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1405,
+      "countryCode": "CN",
+      "isp": "CHINANET Anhui PROVINCE NETWORK",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "181.110.191.83": {
+      "abuseConfidenceScore": 90,
+      "totalReports": 40,
+      "countryCode": "AR",
+      "isp": "Telecom Argentina S.A.",
+      "domain": "personal.com.ar",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "194.5.152.236": {
+      "abuseConfidenceScore": 48,
+      "totalReports": 7,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "96.47.224.42": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ES",
+      "isp": "HostPapa",
+      "domain": "hostpapa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:09Z"
+    },
+    "108.62.62.125": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:10Z"
+    },
+    "42.57.201.222": {
+      "abuseConfidenceScore": 47,
+      "totalReports": 12,
+      "countryCode": "CN",
+      "isp": "UNICOM Liaoning Province Network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:10Z"
+    },
+    "91.92.42.126": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5582,
+      "countryCode": "NL",
+      "isp": "TechTies Inc.",
+      "domain": "tech-ties.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:10Z"
+    },
+    "213.74.119.222": {
+      "abuseConfidenceScore": 72,
+      "totalReports": 15,
+      "countryCode": "TR",
+      "isp": "GARANTI IPLIK SANAYIVE TIC. A.S.",
+      "domain": "garanti-iplik.com.tr",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:10Z"
+    },
+    "202.142.165.178": {
+      "abuseConfidenceScore": 37,
+      "totalReports": 12,
+      "countryCode": "PK",
+      "isp": "Multinet Pakistan Pvt. Ltd.",
+      "domain": "multinet.com.pk",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:10Z"
+    },
+    "190.2.122.27": {
+      "abuseConfidenceScore": 44,
+      "totalReports": 25,
+      "countryCode": "AR",
+      "isp": "Teledifusora S.A.",
+      "domain": "express.com.ar",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:11Z"
+    },
+    "157.66.146.183": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 202,
+      "countryCode": "IN",
+      "isp": "INFINITYLINK COMMUNICATIONS PRIVATE LIMITED",
+      "domain": "infinitylink.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:11Z"
+    },
+    "118.39.219.45": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4224,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:11Z"
+    },
+    "108.62.63.58": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:12Z"
+    },
+    "71.6.146.186": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1151,
+      "countryCode": "US",
+      "isp": "CariNet, Inc.",
+      "domain": "cari.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:12Z"
+    },
+    "116.139.106.9": {
+      "abuseConfidenceScore": 36,
+      "totalReports": 6,
+      "countryCode": "CN",
+      "isp": "China United Network Communications Corporation Limited",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:12Z"
+    },
+    "113.212.69.91": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:53:12Z"
+    },
+    "73.172.245.248": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 64,
+      "countryCode": "US",
+      "isp": "Comcast IP Services, L.L.C.",
+      "domain": "comcast.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:12Z"
+    },
+    "188.143.232.158": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:12Z"
+    },
+    "216.152.249.43": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Beamspeed LLC",
+      "domain": "beamspeed.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:13Z"
+    },
+    "196.189.124.229": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1809,
+      "countryCode": "ET",
+      "isp": "Ethio Telecom",
+      "domain": "ethiotelecom.et",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:14Z"
+    },
+    "52.202.49.233": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 92,
+      "countryCode": "US",
+      "isp": "Amazon Technologies Inc.",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:14Z"
+    },
+    "117.247.23.131": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4556,
+      "countryCode": "IN",
+      "isp": "Broadband Multiplay Project, O/o DGM BB, NOC BSNL Bangalore",
+      "domain": "bsnl.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:15Z"
+    },
+    "173.234.226.218": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:15Z"
+    },
+    "179.237.76.69": {
+      "abuseConfidenceScore": 43,
+      "totalReports": 8,
+      "countryCode": "CH",
+      "isp": "Infomaniak Network SA",
+      "domain": "infomaniak.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:15Z"
+    },
+    "120.84.212.190": {
+      "abuseConfidenceScore": 38,
+      "totalReports": 8,
+      "countryCode": "CN",
+      "isp": "China Unicom Guangdong province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:16Z"
+    },
+    "159.69.240.255": {
+      "abuseConfidenceScore": 98,
+      "totalReports": 22,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:16Z"
+    },
+    "192.251.226.140": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:16Z"
+    },
+    "108.62.63.121": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:16Z"
+    },
+    "108.62.59.123": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:16Z"
+    },
+    "188.143.232.143": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "221.120.73.24": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1244,
+      "countryCode": "TW",
+      "isp": "CHT-Mobile Business Group,Chunghwa",
+      "domain": "cht.com.tw",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "121.46.239.199": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 776,
+      "countryCode": "CN",
+      "isp": "shanghai wexchange network technology Co. Ltd.",
+      "domain": "wexchange.com.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "189.158.157.28": {
+      "abuseConfidenceScore": 22,
+      "totalReports": 21,
+      "countryCode": "MX",
+      "isp": "Gestión de direccionamiento UniNet",
+      "domain": "uninet.net.mx",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "98.43.29.1": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 78,
+      "countryCode": "US",
+      "isp": "Comcast Cable Communications, LLC",
+      "domain": "comcast.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "113.160.209.29": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 546,
+      "countryCode": "VN",
+      "isp": "Vietnam Posts and Telecommunications Group",
+      "domain": "vnpt.com.vn",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "195.96.139.98": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 307,
+      "countryCode": "GB",
+      "isp": "Driftnet Ltd",
+      "domain": "driftnet.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:17Z"
+    },
+    "115.50.20.6": {
+      "abuseConfidenceScore": 11,
+      "totalReports": 2,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:18Z"
+    },
+    "66.132.172.136": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 3051,
+      "countryCode": "US",
+      "isp": "Censys, Inc.",
+      "domain": "censys.io",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:53:18Z"
+    },
+    "178.178.222.59": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1569,
+      "countryCode": "RU",
+      "isp": "PJSC MegaFon",
+      "domain": "megafon.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:18Z"
+    },
+    "220.202.64.84": {
+      "abuseConfidenceScore": 24,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:18Z"
+    },
+    "177.8.162.18": {
+      "abuseConfidenceScore": 85,
+      "totalReports": 17,
+      "countryCode": "BR",
+      "isp": "GRUPOHOST COMUNICACAO MULTIMIDIA LTDA",
+      "domain": "grupohost.com.br",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:18Z"
+    },
+    "108.62.59.173": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:19Z"
+    },
+    "117.69.255.239": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1473,
+      "countryCode": "CN",
+      "isp": "CHINANET anhui province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:19Z"
+    },
+    "108.62.63.54": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:19Z"
+    },
+    "125.39.148.106": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1560,
+      "countryCode": "CN",
+      "isp": "Tianjin Youji Science Technology Co., Ltd.",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:19Z"
+    },
+    "192.251.226.202": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:20Z"
+    },
+    "191.210.133.134": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2263,
+      "countryCode": "BR",
+      "isp": "TELEFÔNICA BRASIL S.A",
+      "domain": "telefonica.com.br",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:20Z"
+    },
+    "175.151.224.238": {
+      "abuseConfidenceScore": 57,
+      "totalReports": 12,
+      "countryCode": "CN",
+      "isp": "CHINA UNICOM Liaoning province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:20Z"
+    },
+    "173.234.227.123": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:20Z"
+    },
+    "35.236.213.216": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 56,
+      "countryCode": "US",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:20Z"
+    },
+    "108.62.57.118": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:20Z"
+    },
+    "5.167.69.233": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "45.84.107.47": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 649,
+      "countryCode": "SE",
+      "isp": "QuxLabs AB",
+      "domain": "quxlabs.com",
+      "isTor": true,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "117.32.132.170": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 868,
+      "countryCode": "CN",
+      "isp": "CHINANET Shanxi(SN) province network",
+      "domain": "xa.sn.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "178.178.194.136": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1439,
+      "countryCode": "RU",
+      "isp": "Metropolitan branch of PJSC MegaFon",
+      "domain": "megafon.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "43.252.41.246": {
+      "abuseConfidenceScore": 76,
+      "totalReports": 16,
+      "countryCode": "HK",
+      "isp": "CommuniLink Internet Ltd.",
+      "domain": "communilink.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "188.143.233.70": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "myspacehosting.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "85.217.149.58": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 7354,
+      "countryCode": "CA",
+      "isp": "NL MODAT",
+      "domain": "modat.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:21Z"
+    },
+    "108.62.62.56": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:22Z"
+    },
+    "120.28.139.212": {
+      "abuseConfidenceScore": 11,
+      "totalReports": 33,
+      "countryCode": "PH",
+      "isp": "GBB MAKATI",
+      "domain": "globe.com.ph",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:22Z"
+    },
+    "210.16.90.26": {
+      "abuseConfidenceScore": 71,
+      "totalReports": 15,
+      "countryCode": "IN",
+      "isp": "SP INTERNET TECHNOLOGIES PRIVATE LTD",
+      "domain": "spit.co.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "180.247.59.176": {
+      "abuseConfidenceScore": 20,
+      "totalReports": 24,
+      "countryCode": "ID",
+      "isp": "PT TELKOM INDONESIA",
+      "domain": "telkom.co.id",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "165.0.45.185": {
+      "abuseConfidenceScore": 64,
+      "totalReports": 16,
+      "countryCode": "ZA",
+      "isp": "RSAWEB (PTY) LTD",
+      "domain": "rsaweb.co.za",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "113.212.70.150": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "103.215.74.26": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1551,
+      "countryCode": "US",
+      "isp": "SoloRDP.com",
+      "domain": "solordp.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "5.167.67.196": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "182.78.112.174": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1627,
+      "countryCode": "IN",
+      "isp": "BHARTI-AIRTEL",
+      "domain": "airtel.in",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "15.237.210.7": {
+      "abuseConfidenceScore": 14,
+      "totalReports": 2,
+      "countryCode": "FR",
+      "isp": "Amazon Data Services France",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:23Z"
+    },
+    "5.167.68.95": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:24Z"
+    },
+    "65.21.201.26": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 67,
+      "countryCode": "FI",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:24Z"
+    },
+    "5.167.67.35": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:24Z"
+    },
+    "5.167.69.69": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:24Z"
+    },
+    "102.220.160.173": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 31,
+      "countryCode": "SI",
+      "isp": "Internet",
+      "domain": "flashwisp.com.ng",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "90.226.192.193": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 197,
+      "countryCode": "SE",
+      "isp": "Telia Network Services",
+      "domain": "telia.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "182.121.67.105": {
+      "abuseConfidenceScore": 24,
+      "totalReports": 3,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "150.95.111.184": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 132,
+      "countryCode": "VN",
+      "isp": "GMO-Z.com Runsystem Joint Stock Company",
+      "domain": "gmo-z.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "107.173.248.142": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 324,
+      "countryCode": "US",
+      "isp": "RackNerd LLC",
+      "domain": "racknerd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "37.202.15.14": {
+      "abuseConfidenceScore": 85,
+      "totalReports": 15,
+      "countryCode": "RU",
+      "isp": "LIMITED LIABILITY COMPANY RELCOM-SPB",
+      "domain": "faitid.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "216.151.138.219": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:53:25Z"
+    },
+    "71.228.159.206": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 64,
+      "countryCode": "US",
+      "isp": "Comcast Cable Communications, Inc.",
+      "domain": "comcast.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:26Z"
+    },
+    "108.62.63.152": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:26Z"
+    },
+    "34.239.130.59": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 471,
+      "countryCode": "US",
+      "isp": "Amazon Technologies Inc.",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:26Z"
+    },
+    "119.179.254.223": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Shandong Province Network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:26Z"
+    },
+    "108.62.61.47": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:26Z"
+    },
+    "5.167.68.13": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "34.165.21.136": {
+      "abuseConfidenceScore": 94,
+      "totalReports": 21,
+      "countryCode": "IL",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "182.117.79.50": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "222.127.49.161": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 67,
+      "countryCode": "PH",
+      "isp": "Globe Telecom/Innove Communication",
+      "domain": "globe.com.ph",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "82.67.175.124": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 305,
+      "countryCode": "FR",
+      "isp": "Proxad / Free SAS",
+      "domain": "free.fr",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "144.91.95.235": {
+      "abuseConfidenceScore": 56,
+      "totalReports": 6,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "72.210.6.207": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 348,
+      "countryCode": "US",
+      "isp": "Cox Communications Inc.",
+      "domain": "cox.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "92.118.39.71": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 39695,
+      "countryCode": "RO",
+      "isp": "DMZHOST",
+      "domain": "dmzhost.co",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:27Z"
+    },
+    "110.37.61.44": {
+      "abuseConfidenceScore": 19,
+      "totalReports": 10,
+      "countryCode": "PK",
+      "isp": "National Wimax/IMS environment",
+      "domain": "wateen.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:29Z"
+    },
+    "216.151.130.179": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:53:29Z"
+    },
+    "121.66.63.189": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 526,
+      "countryCode": "KR",
+      "isp": "LG Uplus",
+      "domain": "lguplus.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:29Z"
+    },
+    "211.115.191.123": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 34,
+      "countryCode": "KR",
+      "isp": "Korea Telecom",
+      "domain": "kt.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:29Z"
+    },
+    "37.59.38.148": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 808,
+      "countryCode": "FR",
+      "isp": "OVHCloud.com",
+      "domain": "ovh.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:29Z"
+    },
+    "157.100.61.115": {
+      "abuseConfidenceScore": 57,
+      "totalReports": 9,
+      "countryCode": "EC",
+      "isp": "NEGOCIOS Y TELEFONIA NEDETEL S.A.",
+      "domain": "nedetel.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:30Z"
+    },
+    "45.135.193.217": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Pfcloud UG",
+      "domain": "pfcloud.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:30Z"
+    },
+    "49.77.39.121": {
+      "abuseConfidenceScore": 96,
+      "totalReports": 19,
+      "countryCode": "CN",
+      "isp": "CHINANET jiangsu province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:30Z"
+    },
+    "103.194.243.199": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 4776,
+      "countryCode": "IN",
+      "isp": "Airdesign Broadcast Media Pvt Ltd",
+      "domain": "airdesign.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:30Z"
+    },
+    "173.234.226.186": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:30Z"
+    },
+    "108.62.57.234": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:31Z"
+    },
+    "60.174.35.18": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1461,
+      "countryCode": "CN",
+      "isp": "CHINANET anhui province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:31Z"
+    },
+    "172.245.155.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 6,
+      "countryCode": "US",
+      "isp": "HostPapa",
+      "domain": "hostpapa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:31Z"
+    },
+    "213.230.78.238": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 49,
+      "countryCode": "UZ",
+      "isp": "Uzbektelekom Joint Stock Company",
+      "domain": "bkm.uz",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:31Z"
+    },
+    "108.62.59.135": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:31Z"
+    },
+    "5.167.64.193": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:32Z"
+    },
+    "161.49.89.39": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 5135,
+      "countryCode": "PH",
+      "isp": "CONVERGE INFORMATION AND COMMUNICATIONS TECHNOLOGY SOLUTIONS, INC",
+      "domain": "convergeict.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:32Z"
+    },
+    "188.143.232.65": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "net for dedicated server client",
+      "domain": "dash-hosting.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:32Z"
+    },
+    "115.148.236.155": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "CHINANET JIANGXI PROVINCE NETWORK",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:32Z"
+    },
+    "5.167.66.153": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:32Z"
+    },
+    "108.62.59.64": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:33Z"
+    },
+    "119.51.237.217": {
+      "abuseConfidenceScore": 55,
+      "totalReports": 9,
+      "countryCode": "CN",
+      "isp": "China Unicom Jilin province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:33Z"
+    },
+    "106.13.124.251": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 434,
+      "countryCode": "CN",
+      "isp": "Beijing Baidu Netcom Science and Technology Co., Ltd.",
+      "domain": "baidu.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:33Z"
+    },
+    "45.187.210.249": {
+      "abuseConfidenceScore": 57,
+      "totalReports": 37,
+      "countryCode": "SV",
+      "isp": "BLUE FUSION, S.A. DE C.V",
+      "domain": "blue.net.gt",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:33Z"
+    },
+    "217.217.97.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Stellar Group SAS",
+      "domain": "stellar-group.fr",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:34Z"
+    },
+    "93.115.137.227": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 21,
+      "countryCode": "MD",
+      "isp": "JSC Moldtelecom S.A.",
+      "domain": "moldtelecom.md",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:34Z"
+    },
+    "79.57.94.57": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 184,
+      "countryCode": "IT",
+      "isp": "Telecom Italia S.p.A.",
+      "domain": "telecomitalia.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:34Z"
+    },
+    "192.251.226.253": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:34Z"
+    },
+    "182.117.48.159": {
+      "abuseConfidenceScore": 41,
+      "totalReports": 12,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:34Z"
+    },
+    "220.246.66.209": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1320,
+      "countryCode": "HK",
+      "isp": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
+      "domain": "netvigator.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:34Z"
+    },
+    "113.212.70.184": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "ID",
+      "isp": "PT Data Utama Dinamika",
+      "domain": "datautama.net.id",
+      "isTor": false,
+      "usageType": null,
+      "checked_at": "2026-08-30T18:53:35Z"
+    },
+    "108.62.59.245": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:35Z"
+    },
+    "95.141.17.145": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "GB",
+      "isp": "GNC Realisations 2026 Limited",
+      "domain": "g.network",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:35Z"
+    },
+    "117.223.152.94": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 838,
+      "countryCode": "IN",
+      "isp": "Broadband Multiplay Project, O/o DGM BB, NOC BSNL Bangalore",
+      "domain": "bsnl.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:35Z"
+    },
+    "125.20.230.46": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 953,
+      "countryCode": "IN",
+      "isp": "Bharti Televentures Limited A/c ABTS MP",
+      "domain": "airtel.in",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:36Z"
+    },
+    "211.152.57.206": {
+      "abuseConfidenceScore": 30,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "Entrust Network Inc.",
+      "domain": "21viacloud.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:38Z"
+    },
+    "123.121.141.57": {
+      "abuseConfidenceScore": 68,
+      "totalReports": 20,
+      "countryCode": "CN",
+      "isp": "China Unicom Beijing province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:38Z"
+    },
+    "221.15.187.214": {
+      "abuseConfidenceScore": 18,
+      "totalReports": 7,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan Province Network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:39Z"
+    },
+    "201.116.96.82": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 36,
+      "countryCode": "MX",
+      "isp": "Gestión de direccionamiento UniNet",
+      "domain": "uninet.net.mx",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:39Z"
+    },
+    "42.237.59.222": {
+      "abuseConfidenceScore": 25,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:39Z"
+    },
+    "103.75.189.141": {
+      "abuseConfidenceScore": 27,
+      "totalReports": 12,
+      "countryCode": "MY",
+      "isp": "VPSMALAYSIA.COM.MY",
+      "domain": "vpsmalaysia.com.my",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:39Z"
+    },
+    "108.62.63.29": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:39Z"
+    },
+    "173.234.227.81": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Leaseweb USA, Inc.",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:40Z"
+    },
+    "95.141.17.155": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "GB",
+      "isp": "GNC Realisations 2026 Limited",
+      "domain": "g.network",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:40Z"
+    },
+    "108.62.59.207": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:40Z"
+    },
+    "92.101.141.248": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 29,
+      "countryCode": "RU",
+      "isp": "St.Petersburg Telephone Network",
+      "domain": "ptn.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:40Z"
+    },
+    "5.167.69.133": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "RU",
+      "isp": "JSC ER-Telecom Holding Cheboksary branch",
+      "domain": "ertelecom.ru",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:40Z"
+    },
+    "92.118.39.204": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2938,
+      "countryCode": "RO",
+      "isp": "DMZHOST",
+      "domain": "dmzhost.co",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:40Z"
+    },
+    "162.204.56.94": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 50,
+      "countryCode": "US",
+      "isp": "AT&T Enterprises, LLC",
+      "domain": "att.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:41Z"
+    },
+    "181.188.203.233": {
+      "abuseConfidenceScore": 60,
+      "totalReports": 33,
+      "countryCode": "EC",
+      "isp": "NEGOCIOS Y TELEFONIA NEDETEL S.A.",
+      "domain": "nedetel.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:41Z"
+    },
+    "182.121.173.152": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:41Z"
+    },
+    "179.51.234.113": {
+      "abuseConfidenceScore": 34,
+      "totalReports": 28,
+      "countryCode": "AR",
+      "isp": "TVC5 S.A.",
+      "domain": "tvc5.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:41Z"
+    },
+    "34.138.223.239": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 69,
+      "countryCode": "US",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:41Z"
+    },
+    "4.240.126.25": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 3179,
+      "countryCode": "IN",
+      "isp": "Microsoft Corporation",
+      "domain": "microsoft.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "5.39.30.121": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 223,
+      "countryCode": "FR",
+      "isp": "OVH Hosting Limited",
+      "domain": "ovh.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "89.34.219.249": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 40,
+      "countryCode": "DE",
+      "isp": "play2go.cloud - Cheap and reliable hosting",
+      "domain": "play2go.cloud",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "103.161.113.136": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2626,
+      "countryCode": "VN",
+      "isp": "MXGROUP MEDICINE COMPANY LIMITED",
+      "domain": "serverviet.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "192.251.226.179": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "207.254.29.22": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1521,
+      "countryCode": "IE",
+      "isp": "MacStadium, Inc.",
+      "domain": "macstadium.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "116.50.236.112": {
+      "abuseConfidenceScore": 49,
+      "totalReports": 7,
+      "countryCode": "PH",
+      "isp": "Eastern Telecoms Philippines, Inc.",
+      "domain": "eastern-tele.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:42Z"
+    },
+    "217.217.97.125": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Stellar Group SAS",
+      "domain": "stellar-group.fr",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:43Z"
+    },
+    "182.121.153.131": {
+      "abuseConfidenceScore": 20,
+      "totalReports": 4,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:43Z"
+    },
+    "93.152.221.206": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 1025,
+      "countryCode": "DE",
+      "isp": "TechTies Inc.",
+      "domain": "tech-ties.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:43Z"
+    },
+    "108.62.62.25": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "195.158.14.23": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 120,
+      "countryCode": "UZ",
+      "isp": "Uzbektelekom Joint Stock Company",
+      "domain": "bkm.uz",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "115.73.161.206": {
+      "abuseConfidenceScore": 74,
+      "totalReports": 17,
+      "countryCode": "VN",
+      "isp": "Viettel Group",
+      "domain": "viettel.com.vn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "216.151.138.227": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Cisco Webex LLC",
+      "domain": "webex.com",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "192.251.226.230": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "Freifunk Initiative Guetersloh",
+      "domain": "4830.org",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "4.232.148.111": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 922,
+      "countryCode": "IT",
+      "isp": "Microsoft Corporation",
+      "domain": "microsoft.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "108.62.57.133": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "LeaseWeb USA, Inc. Seattle",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:44Z"
+    },
+    "194.146.42.247": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 56,
+      "countryCode": "KZ",
+      "isp": "Hoster.KZ",
+      "domain": "hoster.kz",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-08-30T18:53:45Z"
+    },
+    "5.182.83.231": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 8622,
+      "countryCode": "ES",
+      "isp": "AVATEL TELECOM, SA",
+      "domain": "avatel.es",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:45Z"
+    },
+    "102.66.182.121": {
+      "abuseConfidenceScore": 50,
+      "totalReports": 21,
+      "countryCode": "ZA",
+      "isp": "Herotel",
+      "domain": "herotel.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-08-30T18:53:45Z"
+    }
+  }
 }

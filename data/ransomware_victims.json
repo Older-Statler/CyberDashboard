@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T18:29:27Z",
+  "generated_at": "2026-08-30T18:53:46Z",
   "victims": [
     {
       "group": "akira",
@@ -36,6 +36,24 @@
       "published": "2026-08-30T09:10:43.889079+00:00",
       "domain": "wmdn.net",
       "url": "https://www.ransomware.live/id/d21kbi5uZXRAdGhyZWVhbQ=="
+    },
+    {
+      "group": "Falcon",
+      "victim": "Globus Medical",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-08-30T14:29:39.892529+00:00",
+      "domain": "globusmedical.com",
+      "url": "https://www.ransomware.live/id/R2xvYnVzIE1lZGljYWxARmFsY29u"
+    },
+    {
+      "group": "Falcon",
+      "victim": "DistributionNOW (DNOW Inc.)",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-08-30T14:29:18.522555+00:00",
+      "domain": "dnow.com",
+      "url": "https://www.ransomware.live/id/RGlzdHJpYnV0aW9uTk9XIChETk9XIEluYy4pQEZhbGNvbg=="
     },
     {
       "group": "qilin",
@@ -882,24 +900,6 @@
       "published": "2026-08-27T14:27:52.096561+00:00",
       "domain": "cetylite.com",
       "url": "https://www.ransomware.live/id/Q2V0eWxpdGVAYWtpcmE="
-    },
-    {
-      "group": "akira",
-      "victim": "CGP MEP",
-      "country": "",
-      "sector": "Other",
-      "published": "2026-08-27T14:27:49.802653+00:00",
-      "domain": "cgpmep.com",
-      "url": "https://www.ransomware.live/id/Q0dQIE1FUEBha2lyYQ=="
-    },
-    {
-      "group": "akira",
-      "victim": "Seabrook Island",
-      "country": "US",
-      "sector": "Hospitality",
-      "published": "2026-08-27T14:27:47.688030+00:00",
-      "domain": "seabrookisland.com",
-      "url": "https://www.ransomware.live/id/U2VhYnJvb2sgSXNsYW5kQGFraXJh"
     }
   ]
 }
