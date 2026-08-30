@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Threat Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">&#9679;</span>
+        <h1>Cyber Threat Dashboard</h1>
+      </div>
+      <div class="topbar-meta">
+        <span id="last-updated" class="last-updated">Loading&hellip;</span>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark/light theme">
+          <span id="theme-toggle-icon">&#9789;</span>
+        </button>
+      </div>
+    </div>
+    <div id="stale-banner" class="stale-banner" hidden>
+      &#9888; The data snapshot looks stale &mdash; the fetch workflow may not be running. Check the Actions tab.
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="kpi-row" class="kpi-row" aria-label="Summary">
+      <div class="kpi-card">
+        <div class="kpi-value" id="kpi-total-iocs">&mdash;</div>
+        <div class="kpi-label">Total IOCs / Indicators</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" id="kpi-new-kev">&mdash;</div>
+        <div class="kpi-label">New KEV entries (7d)</div>
+      </div>
+      <div class="kpi-card kpi-card-danger">
+        <div class="kpi-value" id="kpi-ransomware-kev">&mdash;</div>
+        <div class="kpi-label">KEV tied to ransomware</div>
+      </div>
+      <div class="kpi-card" id="kpi-errors-card">
+        <div class="kpi-value" id="kpi-errors">&mdash;</div>
+        <div class="kpi-label">Feeds in error state</div>
+      </div>
+    </section>
+
+    <div id="error-panel" class="error-panel" hidden>
+      <h2>Feed errors</h2>
+      <ul id="error-list"></ul>
+    </div>
+
+    <section class="feed-section" id="section-threatfox">
+      <div class="feed-header">
+        <h2>ThreatFox <span class="feed-status" id="status-threatfox"></span></h2>
+        <input type="search" class="search-box" data-feed="threatfox" placeholder="Search IOCs, malware, tags&hellip;" />
+      </div>
+      <div class="table-wrap"><table id="table-threatfox"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-threatfox" hidden>No data yet.</p>
+    </section>
+
+    <section class="feed-section" id="section-urlhaus">
+      <div class="feed-header">
+        <h2>URLhaus <span class="feed-status" id="status-urlhaus"></span></h2>
+        <input type="search" class="search-box" data-feed="urlhaus" placeholder="Search URLs, threat type&hellip;" />
+      </div>
+      <div class="table-wrap"><table id="table-urlhaus"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-urlhaus" hidden>No data yet.</p>
+    </section>
+
+    <section class="feed-section" id="section-malwarebazaar">
+      <div class="feed-header">
+        <h2>MalwareBazaar <span class="feed-status" id="status-malwarebazaar"></span></h2>
+        <input type="search" class="search-box" data-feed="malwarebazaar" placeholder="Search file name, family, hash&hellip;" />
+      </div>
+      <div class="table-wrap"><table id="table-malwarebazaar"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-malwarebazaar" hidden>No data yet.</p>
+    </section>
+
+    <section class="feed-section" id="section-cisa_kev">
+      <div class="feed-header">
+        <h2>CISA Known Exploited Vulnerabilities <span class="feed-status" id="status-cisa_kev"></span></h2>
+        <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
+      </div>
+      <div class="table-wrap"><table id="table-cisa_kev"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-cisa_kev" hidden>No data yet.</p>
+    </section>
+
+    <section class="feed-section" id="section-otx">
+      <div class="feed-header">
+        <h2>AlienVault OTX <span class="feed-status" id="status-otx"></span></h2>
+        <input type="search" class="search-box" data-feed="otx" placeholder="Search pulse name, tags&hellip;" />
+      </div>
+      <div class="table-wrap"><table id="table-otx"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-otx" hidden>No data yet.</p>
+    </section>
+
+    <section class="feed-section" id="section-blocklistde">
+      <div class="feed-header">
+        <h2>Blocklist.de <span class="feed-status" id="status-blocklistde"></span></h2>
+        <input type="search" class="search-box" data-feed="blocklistde" placeholder="Search IP, list&hellip;" />
+      </div>
+      <div class="table-wrap"><table id="table-blocklistde"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-blocklistde" hidden>No data yet.</p>
+    </section>
+
+    <footer class="footer">
+      <p>Data refreshed on a schedule via GitHub Actions &middot; read-only snapshot, no live API calls from this page.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
