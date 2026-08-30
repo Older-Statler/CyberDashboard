@@ -1,4 +1,4 @@
-name: GreyNoise Enrichment
+name: Daily Enrichment
 
 on:
   schedule:
@@ -31,15 +31,24 @@ jobs:
         env:
           GREYNOISE_API_KEY: ${{ secrets.GREYNOISE_API_KEY }}
         run: python scripts/fetch_greynoise_enrichment.py
+        continue-on-error: true
+
+      - name: Fetch IP geolocation / ASN data
+        run: python scripts/fetch_geo.py
+        continue-on-error: true
+
+      - name: Append today's trend counts
+        run: python scripts/append_trend.py
+        continue-on-error: true
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/enrichment.json
+          git add data/enrichment.json data/geo.json data/geo_summary.json data/trends.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update GreyNoise enrichment cache [skip ci]"
+            git commit -m "Update enrichment, geo, and trend data [skip ci]"
             git push
           fi

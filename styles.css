@@ -15,6 +15,17 @@
   --link: #63b3ed;
   --row-hover: rgba(255, 255, 255, 0.04);
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --watchlist-hit-bg: rgba(159, 122, 234, 0.16);
+  --watchlist-hit-border: #9f7aea;
+  --sparkline-color: #4fd1c5;
+  /* Geo ramp is a lighter-lightness-band variant of the light-mode blue ramp,
+     so it stays visible against a dark background instead of the darkest
+     step (highest intensity) disappearing into it. */
+  --geo-ramp-0: #1b3a5c;
+  --geo-ramp-1: #2f5f92;
+  --geo-ramp-2: #4f89c9;
+  --geo-ramp-3: #7fb2e8;
+  --geo-ramp-4: #bfe0ff;
 }
 
 html[data-theme="light"] {
@@ -34,10 +45,26 @@ html[data-theme="light"] {
   --link: #2b6cb0;
   --row-hover: rgba(15, 140, 130, 0.06);
   --shadow: 0 1px 3px rgba(20, 30, 45, 0.1);
+  --watchlist-hit-bg: rgba(128, 90, 213, 0.1);
+  --watchlist-hit-border: #805ad5;
+  --sparkline-color: #0f8c82;
+  /* Validated light-mode ramp from the spec: near-white low -> dark navy high. */
+  --geo-ramp-0: #cde2fb;
+  --geo-ramp-1: #6da7ec;
+  --geo-ramp-2: #2a78d6;
+  --geo-ramp-3: #184f95;
+  --geo-ramp-4: #0d366b;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Several components set their own `display` (flex/grid) which would
+   otherwise beat the UA stylesheet's `[hidden] { display: none }` on
+   specificity — this keeps `hidden` authoritative everywhere. */
+[hidden] {
+  display: none !important;
 }
 
 body {
@@ -204,6 +231,13 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.feed-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .feed-status {
@@ -378,5 +412,391 @@ a:hover {
   }
   tbody td {
     max-width: 220px;
+  }
+}
+
+/* ---------- Feed-tags (correlation / triage / watchlist) ---------- */
+
+.feed-tag {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* ---------- Triage panel ---------- */
+
+.triage-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.triage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+
+.triage-card h3 {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.triage-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.triage-card li {
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.triage-card li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.triage-link {
+  font-weight: 600;
+}
+
+.triage-date {
+  color: var(--text-muted);
+  font-size: 11.5px;
+  margin-left: 4px;
+}
+
+/* ---------- Correlated IOC section ---------- */
+
+.correlated-row {
+  cursor: pointer;
+}
+
+/* ---------- Flash highlight on scroll-to-match ---------- */
+
+@keyframes flash-highlight {
+  0%, 100% { box-shadow: 0 0 0 0 transparent; }
+  20% { box-shadow: 0 0 0 3px var(--accent); }
+}
+
+.flash-highlight {
+  animation: flash-highlight 1.4s ease-out;
+}
+
+.row-flash {
+  animation: row-flash 1.6s ease-out;
+}
+
+@keyframes row-flash {
+  0% { background: var(--accent); }
+  100% { background: transparent; }
+}
+
+/* ---------- Watchlist ---------- */
+
+.watchlist-panel {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.watchlist-card,
+.watchlist-matches-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+
+.watchlist-card h3,
+.watchlist-matches-card h3 {
+  font-size: 13px;
+  margin: 0 0 6px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.watchlist-caption {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+
+.watchlist-textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12.5px;
+}
+
+.watchlist-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.watchlist-matches-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.watchlist-matches-card li {
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.watchlist-matches-card li:last-child {
+  border-bottom: none;
+}
+
+tr.watchlist-match {
+  background: var(--watchlist-hit-bg);
+  outline: 1px solid var(--watchlist-hit-border);
+  outline-offset: -1px;
+}
+
+tr.watchlist-match:hover {
+  background: var(--watchlist-hit-bg);
+}
+
+/* ---------- Export buttons ---------- */
+
+.export-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.export-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+/* ---------- Sparklines ---------- */
+
+.sparkline {
+  display: inline-flex;
+  align-items: center;
+  width: 64px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.sparkline-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ---------- GreyNoise quota meter ---------- */
+
+.quota-meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.quota-track {
+  width: 90px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.quota-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.quota-meter.quota-warn .quota-fill {
+  background: var(--warning);
+}
+
+/* ---------- Geo / ASN section ---------- */
+
+.geo-section {
+  margin-bottom: 20px;
+}
+
+.geo-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.geo-map-wrap {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.geo-map-wrap svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.geo-country-path {
+  stroke: var(--bg-card);
+  stroke-width: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.geo-country-path:hover {
+  opacity: 0.75;
+}
+
+.geo-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.geo-legend-ramp {
+  display: flex;
+  height: 10px;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.geo-legend-ramp span {
+  flex: 1;
+}
+
+.geo-legend-ramp span:nth-child(1) { background: var(--geo-ramp-0); }
+.geo-legend-ramp span:nth-child(2) { background: var(--geo-ramp-1); }
+.geo-legend-ramp span:nth-child(3) { background: var(--geo-ramp-2); }
+.geo-legend-ramp span:nth-child(4) { background: var(--geo-ramp-3); }
+.geo-legend-ramp span:nth-child(5) { background: var(--geo-ramp-4); }
+
+.geo-legend-zero {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--border);
+  border: 1px solid var(--text-muted);
+  margin-left: 10px;
+}
+
+.geo-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.geo-table-card h3 {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.geo-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.geo-bar-row {
+  display: grid;
+  grid-template-columns: 32px 1fr 56px;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.geo-bar-label {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.geo-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.geo-bar-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--geo-ramp-2), var(--geo-ramp-4));
+  border-radius: 999px;
+}
+
+.geo-bar-count {
+  text-align: right;
+  color: var(--text-muted);
+}
+
+.geo-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+
+@media (max-width: 900px) {
+  .triage-panel {
+    grid-template-columns: 1fr;
+  }
+  .watchlist-panel {
+    grid-template-columns: 1fr;
+  }
+  .geo-grid {
+    grid-template-columns: 1fr;
   }
 }

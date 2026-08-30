@@ -14,6 +14,10 @@
         <h1>Cyber Threat Dashboard</h1>
       </div>
       <div class="topbar-meta">
+        <div id="quota-meter" class="quota-meter" hidden title="GreyNoise Community API weekly usage">
+          <span id="quota-label">GreyNoise: &mdash;</span>
+          <span class="quota-track"><span id="quota-fill" class="quota-fill" style="width:0%"></span></span>
+        </div>
         <span id="last-updated" class="last-updated">Loading&hellip;</span>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark/light theme">
           <span id="theme-toggle-icon">&#9789;</span>
@@ -50,10 +54,63 @@
       <ul id="error-list"></ul>
     </div>
 
+    <!-- Triage / digest panel: top 5 each of ransomware KEV, GreyNoise-confirmed
+         malicious IPs, and top correlated IOCs. Each card hides itself if its
+         input data is empty/missing (see renderTriage in app.js). -->
+    <section id="triage-panel" class="triage-panel" aria-label="Triage digest" hidden>
+      <div class="triage-card">
+        <h3>Ransomware-tied KEV (recent)</h3>
+        <ul id="triage-kev"></ul>
+      </div>
+      <div class="triage-card">
+        <h3>GreyNoise-confirmed malicious IPs</h3>
+        <ul id="triage-malicious"></ul>
+      </div>
+      <div class="triage-card">
+        <h3>Top correlated IOCs</h3>
+        <ul id="triage-correlated"></ul>
+      </div>
+    </section>
+
+    <!-- Watchlist: per-browser only (localStorage), never transmitted. -->
+    <section class="watchlist-panel" aria-label="Watchlist">
+      <div class="watchlist-card">
+        <h3>Your Watchlist</h3>
+        <p class="watchlist-caption">
+          One IP, CIDR range, or domain per line. Stored only in this browser (<code>localStorage</code>) &mdash;
+          never sent anywhere, never shared with other visitors.
+        </p>
+        <textarea id="watchlist-input" class="watchlist-textarea" placeholder="203.0.113.0/24&#10;10.0.0.5&#10;example.com"></textarea>
+      </div>
+      <div class="watchlist-matches-card" id="watchlist-matches-card" hidden>
+        <h3>Watchlist matches</h3>
+        <ul id="watchlist-matches-list"></ul>
+      </div>
+    </section>
+
+    <!-- Cross-feed correlation: IOCs independently seen in 2+ feeds. -->
+    <section class="feed-section" id="section-correlated">
+      <div class="feed-header">
+        <h2>Correlated IOCs <span class="feed-status" id="status-correlated" title="Computed client-side from loaded feeds">seen in 2+ feeds</span></h2>
+        <div class="export-buttons">
+          <button class="export-btn" data-feed="correlated" data-format="csv" type="button">Export CSV</button>
+          <button class="export-btn" data-feed="correlated" data-format="json" type="button">Export JSON</button>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="table-correlated"><thead></thead><tbody id="correlated-tbody"></tbody></table></div>
+      <p class="empty-note" id="correlated-empty" hidden>No IOCs currently overlap across 2+ feeds.</p>
+    </section>
+
     <section class="feed-section" id="section-threatfox">
       <div class="feed-header">
-        <h2>ThreatFox <span class="feed-status" id="status-threatfox"></span></h2>
-        <input type="search" class="search-box" data-feed="threatfox" placeholder="Search IOCs, malware, tags&hellip;" />
+        <h2>ThreatFox <span class="feed-status" id="status-threatfox"></span> <span class="sparkline" data-feed="threatfox" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="threatfox" placeholder="Search IOCs, malware, tags&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="threatfox" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="threatfox" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap"><table id="table-threatfox"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-threatfox" hidden>No data yet.</p>
@@ -61,8 +118,14 @@
 
     <section class="feed-section" id="section-urlhaus">
       <div class="feed-header">
-        <h2>URLhaus <span class="feed-status" id="status-urlhaus"></span></h2>
-        <input type="search" class="search-box" data-feed="urlhaus" placeholder="Search URLs, threat type&hellip;" />
+        <h2>URLhaus <span class="feed-status" id="status-urlhaus"></span> <span class="sparkline" data-feed="urlhaus" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="urlhaus" placeholder="Search URLs, threat type&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="urlhaus" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="urlhaus" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap"><table id="table-urlhaus"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-urlhaus" hidden>No data yet.</p>
@@ -70,8 +133,14 @@
 
     <section class="feed-section" id="section-malwarebazaar">
       <div class="feed-header">
-        <h2>MalwareBazaar <span class="feed-status" id="status-malwarebazaar"></span></h2>
-        <input type="search" class="search-box" data-feed="malwarebazaar" placeholder="Search file name, family, hash&hellip;" />
+        <h2>MalwareBazaar <span class="feed-status" id="status-malwarebazaar"></span> <span class="sparkline" data-feed="malwarebazaar" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="malwarebazaar" placeholder="Search file name, family, hash&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="malwarebazaar" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="malwarebazaar" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap"><table id="table-malwarebazaar"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-malwarebazaar" hidden>No data yet.</p>
@@ -79,8 +148,14 @@
 
     <section class="feed-section" id="section-cisa_kev">
       <div class="feed-header">
-        <h2>CISA Known Exploited Vulnerabilities <span class="feed-status" id="status-cisa_kev"></span></h2>
-        <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
+        <h2>CISA Known Exploited Vulnerabilities <span class="feed-status" id="status-cisa_kev"></span> <span class="sparkline" data-feed="cisa_kev" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="cisa_kev" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="cisa_kev" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap"><table id="table-cisa_kev"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-cisa_kev" hidden>No data yet.</p>
@@ -88,8 +163,14 @@
 
     <section class="feed-section" id="section-otx">
       <div class="feed-header">
-        <h2>AlienVault OTX <span class="feed-status" id="status-otx"></span></h2>
-        <input type="search" class="search-box" data-feed="otx" placeholder="Search pulse name, tags&hellip;" />
+        <h2>AlienVault OTX <span class="feed-status" id="status-otx"></span> <span class="sparkline" data-feed="otx" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="otx" placeholder="Search pulse name, tags&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="otx" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="otx" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap"><table id="table-otx"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-otx" hidden>No data yet.</p>
@@ -97,15 +178,60 @@
 
     <section class="feed-section" id="section-blocklistde">
       <div class="feed-header">
-        <h2>Blocklist.de <span class="feed-status" id="status-blocklistde"></span></h2>
-        <input type="search" class="search-box" data-feed="blocklistde" placeholder="Search IP, list&hellip;" />
+        <h2>Blocklist.de <span class="feed-status" id="status-blocklistde"></span> <span class="sparkline" data-feed="blocklistde" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="blocklistde" placeholder="Search IP, list&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="blocklistde" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="blocklistde" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap"><table id="table-blocklistde"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-blocklistde" hidden>No data yet.</p>
     </section>
 
+    <!-- Geo/ASN context: hidden entirely until data/geo_summary.json has data. -->
+    <section class="feed-section geo-section" id="geo-section" hidden>
+      <div class="feed-header">
+        <h2>Attack Source Geography</h2>
+        <p class="geo-meta">
+          <span id="geo-total">0</span> IPs geotagged so far &middot; last updated <span id="geo-generated-at">&mdash;</span>
+          &middot; coverage builds gradually (permanent cache, ~500 new IPs/day)
+        </p>
+      </div>
+      <div class="geo-grid">
+        <div>
+          <div class="geo-map-wrap" id="world-map-container" role="img" aria-label="World map showing geotagged attack-source IP density by country"></div>
+          <div class="geo-legend">
+            <span>fewer</span>
+            <span class="geo-legend-ramp"><span></span><span></span><span></span><span></span><span></span></span>
+            <span>more</span>
+            <span class="geo-legend-zero" title="No geotagged IPs"></span>
+            <span>no data</span>
+          </div>
+        </div>
+        <div class="geo-tables">
+          <div class="geo-table-card">
+            <h3>Top 10 source countries</h3>
+            <div class="geo-bars" id="geo-bars"></div>
+          </div>
+          <div class="geo-table-card">
+            <h3>Top 10 ASNs / hosting providers</h3>
+            <div class="table-wrap" style="max-height: 260px;">
+              <table>
+                <thead><tr><th>#</th><th>ASN</th><th>Name</th><th>Count</th></tr></thead>
+                <tbody id="geo-asns-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <p>Data refreshed on a schedule via GitHub Actions &middot; read-only snapshot, no live API calls from this page.</p>
+      <p>World map: <a href="https://github.com/flekschas/simple-world-map" target="_blank" rel="noopener noreferrer">simple-world-map</a> by Al MacDonald / Fritz Lekschas, licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</p>
     </footer>
   </main>
 
