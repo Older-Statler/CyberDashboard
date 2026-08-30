@@ -126,6 +126,21 @@
       </div>
     </section>
 
+    <section class="feed-section" id="section-cisa_kev">
+      <div class="feed-header">
+        <h2>CISA Known Exploited Vulnerabilities <span class="feed-status" id="status-cisa_kev"></span> <span class="sparkline" data-feed="cisa_kev" title="30-day count trend"></span></h2>
+        <div class="feed-header-controls">
+          <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
+          <div class="export-buttons">
+            <button class="export-btn" data-feed="cisa_kev" data-format="csv" type="button">CSV</button>
+            <button class="export-btn" data-feed="cisa_kev" data-format="json" type="button">JSON</button>
+          </div>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="table-cisa_kev"><thead></thead><tbody></tbody></table></div>
+      <p class="empty-note" id="empty-cisa_kev" hidden>No data yet.</p>
+    </section>
+
     <!-- Cross-feed correlation: IOCs independently seen in 2+ feeds. -->
     <section class="feed-section" id="section-correlated">
       <div class="feed-header">
@@ -182,21 +197,6 @@
       </div>
       <div class="table-wrap"><table id="table-malwarebazaar"><thead></thead><tbody></tbody></table></div>
       <p class="empty-note" id="empty-malwarebazaar" hidden>No data yet.</p>
-    </section>
-
-    <section class="feed-section" id="section-cisa_kev">
-      <div class="feed-header">
-        <h2>CISA Known Exploited Vulnerabilities <span class="feed-status" id="status-cisa_kev"></span> <span class="sparkline" data-feed="cisa_kev" title="30-day count trend"></span></h2>
-        <div class="feed-header-controls">
-          <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
-          <div class="export-buttons">
-            <button class="export-btn" data-feed="cisa_kev" data-format="csv" type="button">CSV</button>
-            <button class="export-btn" data-feed="cisa_kev" data-format="json" type="button">JSON</button>
-          </div>
-        </div>
-      </div>
-      <div class="table-wrap"><table id="table-cisa_kev"><thead></thead><tbody></tbody></table></div>
-      <p class="empty-note" id="empty-cisa_kev" hidden>No data yet.</p>
     </section>
 
     <section class="feed-section" id="section-otx">
