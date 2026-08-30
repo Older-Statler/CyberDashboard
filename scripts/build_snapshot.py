@@ -82,7 +82,13 @@ def main():
     with open(LATEST_PATH, "w", encoding="utf-8") as f:
         import json
 
-        json.dump(snapshot, f, ensure_ascii=False, indent=2)
+        # Compact, not pretty-printed: this file is multi-MB and growing
+        # (feed volume, not us), fetched by every visitor's browser on every
+        # page load. Dropping indent=2 cuts its size by ~37% with zero
+        # information loss — nobody hand-reads this file. The trade-off is
+        # `git diff` on it becomes a single-line rewrite each run, which is
+        # an acceptable cost for a bot-committed data cache.
+        json.dump(snapshot, f, ensure_ascii=False, separators=(",", ":"))
 
 
 if __name__ == "__main__":

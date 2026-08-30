@@ -184,6 +184,36 @@
     }
   }
 
+  // data/latest.json is by far the largest fetch (multi-MB and growing with
+  // the feeds). A plain fetch()+.json() gives no feedback until it's fully
+  // done, which reads as a hang on a slow connection — this streams the
+  // response and reports real byte progress instead. Falls back to a plain
+  // fetch if the server doesn't send Content-Length or streaming isn't
+  // available (e.g. very old browsers).
+  async function fetchJsonWithProgress(path, onProgress) {
+    const resp = await fetch(path, { cache: "no-store" });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+
+    const totalStr = resp.headers.get("Content-Length");
+    const total = totalStr ? parseInt(totalStr, 10) : 0;
+    if (!resp.body || !total) {
+      return await resp.json();
+    }
+
+    const reader = resp.body.getReader();
+    const chunks = [];
+    let received = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+      received += value.length;
+      if (onProgress) onProgress(received, total);
+    }
+    const text = await new Blob(chunks).text();
+    return JSON.parse(text);
+  }
+
   async function loadWorldMapSvg() {
     const container = $("world-map-container");
     if (!container) return;
@@ -200,14 +230,17 @@
 
   async function loadData() {
     try {
-      const resp = await fetch("data/latest.json", { cache: "no-store" });
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      state.snapshot = await resp.json();
+      state.snapshot = await fetchJsonWithProgress("data/latest.json", (received, total) => {
+        const pct = Math.min(100, Math.round((received / total) * 100));
+        $("last-updated").textContent = `Loading data… ${pct}% (${(total / 1024 / 1024).toFixed(1)} MB)`;
+      });
     } catch (e) {
       $("last-updated").textContent = "Failed to load data/latest.json";
       console.error("Failed to load snapshot:", e);
       return;
     }
+
+    $("last-updated").textContent = "Processing…";
 
     const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims] = await Promise.all([
       fetchJsonBestEffort("data/enrichment.json"),
