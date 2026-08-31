@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T18:53:46Z",
+  "generated_at": "2026-08-31T13:10:55Z",
   "victims": [
     {
       "group": "akira",
@@ -9,6 +9,51 @@
       "published": "2026-01-15T13:48:29.435004+00:00",
       "domain": "paylogix.com",
       "url": "https://www.ransomware.live/id/UGF5bG9naXhAYWtpcmE="
+    },
+    {
+      "group": "crypto24",
+      "victim": "Me***",
+      "country": "SG",
+      "sector": "Not Found",
+      "published": "2026-08-31T08:26:46.766623+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TWUqKipAY3J5cHRvMjQ="
+    },
+    {
+      "group": "Wallstreet",
+      "victim": "Andover",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-08-30T15:21:42.569290+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QW5kb3ZlckBXYWxsc3RyZWV0"
+    },
+    {
+      "group": "direwolf",
+      "victim": "Hospital Clnico Universidad de Chile",
+      "country": "CL",
+      "sector": "Healthcare",
+      "published": "2026-08-30T14:53:50.462411+00:00",
+      "domain": "redclinica.cl",
+      "url": "https://www.ransomware.live/id/SG9zcGl0YWwgQ2xuaWNvIFVuaXZlcnNpZGFkIGRlIENoaWxlQGRpcmV3b2xm"
+    },
+    {
+      "group": "direwolf",
+      "victim": "Erdem Hospital",
+      "country": "TR",
+      "sector": "Healthcare",
+      "published": "2026-08-30T14:54:22.650260+00:00",
+      "domain": "erdemhastahanesi.com.tr",
+      "url": "https://www.ransomware.live/id/RXJkZW0gSG9zcGl0YWxAZGlyZXdvbGY="
+    },
+    {
+      "group": "direwolf",
+      "victim": "THQ Nordic",
+      "country": "SE",
+      "sector": "Technology",
+      "published": "2026-08-30T14:54:44.921892+00:00",
+      "domain": "thqnordic.com",
+      "url": "https://www.ransomware.live/id/VEhRIE5vcmRpY0BkaXJld29sZg=="
     },
     {
       "group": "qilin",
@@ -36,6 +81,15 @@
       "published": "2026-08-30T09:10:43.889079+00:00",
       "domain": "wmdn.net",
       "url": "https://www.ransomware.live/id/d21kbi5uZXRAdGhyZWVhbQ=="
+    },
+    {
+      "group": "qilin",
+      "victim": "AFSARD",
+      "country": "MK",
+      "sector": "Not Found",
+      "published": "2026-08-30T16:07:30.579790+00:00",
+      "domain": "ipardpa.gov.mk",
+      "url": "https://www.ransomware.live/id/QUZTQVJEQHFpbGlu"
     },
     {
       "group": "Falcon",
@@ -135,15 +189,6 @@
       "published": "2026-08-29T12:02:51.753069+00:00",
       "domain": "www.careclinics.com.my",
       "url": "https://www.ransomware.live/id/Q2FyZUNsaW5pY3NAcWlsaW4="
-    },
-    {
-      "group": "m3rx",
-      "victim": "lindner-group.com",
-      "country": "AT",
-      "sector": "Manufacturing",
-      "published": "2026-08-29T12:01:00.475602+00:00",
-      "domain": "lindner-group.com",
-      "url": "https://www.ransomware.live/id/bGluZG5lci1ncm91cC5jb21AbTNyeA=="
     },
     {
       "group": "qilin",
@@ -565,7 +610,7 @@
       "country": "PT",
       "sector": "Government & Defense",
       "published": "2026-08-28T11:22:27.229090+00:00",
-      "domain": "",
+      "domain": "dgeec.medu.pt",
       "url": "https://www.ransomware.live/id/RGlyZWN0b3JhdGUtR2VuZXJhbCBmb3IgRWR1Y2F0aW9uQFBhbnplcg=="
     },
     {
@@ -855,51 +900,6 @@
       "published": "2026-08-27T06:27:37.513140+00:00",
       "domain": "qualisteel.com",
       "url": "https://www.ransomware.live/id/UXVhbGlzdGVlbEBtZWR1c2Fsb2NrZXI="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Health",
-      "country": "AU",
-      "sector": "Healthcare",
-      "published": "2026-08-27T06:27:23.436098+00:00",
-      "domain": "health.nsw.gov.au",
-      "url": "https://www.ransomware.live/id/SGVhbHRoQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "incransom",
-      "victim": "Rohloff Group",
-      "country": "ZA",
-      "sector": "Manufacturing",
-      "published": "2026-08-27T14:31:07.634510+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Um9obG9mZiBHcm91cEBpbmNyYW5zb20="
-    },
-    {
-      "group": "incransom",
-      "victim": "Ruby Seven Studios",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-08-27T13:31:56.171635+00:00",
-      "domain": "rubyseven.com",
-      "url": "https://www.ransomware.live/id/UnVieSBTZXZlbiBTdHVkaW9zQGluY3JhbnNvbQ=="
-    },
-    {
-      "group": "Eclipse",
-      "victim": "ETNA Software",
-      "country": "IT",
-      "sector": "Technology",
-      "published": "2026-08-27T20:51:43.728232+00:00",
-      "domain": "etnasoft.com",
-      "url": "https://www.ransomware.live/id/RVROQSBTb2Z0d2FyZUBFY2xpcHNl"
-    },
-    {
-      "group": "akira",
-      "victim": "Cetylite",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-08-27T14:27:52.096561+00:00",
-      "domain": "cetylite.com",
-      "url": "https://www.ransomware.live/id/Q2V0eWxpdGVAYWtpcmE="
     }
   ]
 }
