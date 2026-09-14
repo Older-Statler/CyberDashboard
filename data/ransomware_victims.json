@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T11:26:11Z",
+  "generated_at": "2026-09-14T12:18:53Z",
   "victims": [
     {
       "group": "akira",
@@ -11,6 +11,87 @@
       "url": "https://www.ransomware.live/id/UGF5bG9naXhAYWtpcmE="
     },
     {
+      "group": "qilin",
+      "victim": "Alicotrans",
+      "country": "BR",
+      "sector": "Transportation",
+      "published": "2026-09-14T07:59:50.254687+00:00",
+      "domain": "www.alicotrans.com",
+      "url": "https://www.ransomware.live/id/QWxpY290cmFuc0BxaWxpbg=="
+    },
+    {
+      "group": "Panzer",
+      "victim": "Cerámicas Kantu",
+      "country": "",
+      "sector": "Manufacturing",
+      "published": "2026-09-13T23:23:34.307597+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2Vyw6FtaWNhcyBLYW50dUBQYW56ZXI="
+    },
+    {
+      "group": "qilin",
+      "victim": "Gilco Scaffolding",
+      "country": "GB",
+      "sector": "Manufacturing",
+      "published": "2026-09-13T16:59:37.146504+00:00",
+      "domain": "www.gilcoscaffolding.com",
+      "url": "https://www.ransomware.live/id/R2lsY28gU2NhZmZvbGRpbmdAcWlsaW4="
+    },
+    {
+      "group": "emperador",
+      "victim": "Navitrans",
+      "country": "",
+      "sector": "Transportation",
+      "published": "2026-09-13T13:51:22.518452+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TmF2aXRyYW5zQGVtcGVyYWRvcg=="
+    },
+    {
+      "group": "krybit",
+      "victim": "www.kashkha.com",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-09-13T12:29:33.395462+00:00",
+      "domain": "www.kashkha.com",
+      "url": "https://www.ransomware.live/id/d3d3Lmthc2hraGEuY29tQGtyeWJpdA=="
+    },
+    {
+      "group": "qilin",
+      "victim": "CARIDRO VAL DE LOIRE",
+      "country": "FR",
+      "sector": "Agriculture and Food Production",
+      "published": "2026-09-13T11:03:46.354166+00:00",
+      "domain": "caridrovaldeloire.fr",
+      "url": "https://www.ransomware.live/id/Q0FSSURSTyBWQUwgREUgTE9JUkVAcWlsaW4="
+    },
+    {
+      "group": "AuditTeam",
+      "victim": "Paid Victim F9CF4B639CAC1B18",
+      "country": "RU",
+      "sector": "Not Found",
+      "published": "2026-09-13T09:51:41.156898+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGFpZCBWaWN0aW0gRjlDRjRCNjM5Q0FDMUIxOEBBdWRpdFRlYW0="
+    },
+    {
+      "group": "AuditTeam",
+      "victim": "Paid Victim FDC699DE3A112669",
+      "country": "DE",
+      "sector": "Not Found",
+      "published": "2026-09-13T09:51:07.947269+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGFpZCBWaWN0aW0gRkRDNjk5REUzQTExMjY2OUBBdWRpdFRlYW0="
+    },
+    {
+      "group": "shinyhunters",
+      "victim": "Kimberly-Clark",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-09-13T08:48:41.160130+00:00",
+      "domain": "kimberly-clark.com",
+      "url": "https://www.ransomware.live/id/S2ltYmVybHktQ2xhcmtAc2hpbnlodW50ZXJz"
+    },
+    {
       "group": "Doommageddon",
       "victim": "INCOR Group",
       "country": "IN",
@@ -18,6 +99,24 @@
       "published": "2026-09-13T00:53:02.200383+00:00",
       "domain": "incor.in",
       "url": "https://www.ransomware.live/id/SU5DT1IgR3JvdXBARG9vbW1hZ2VkZG9u"
+    },
+    {
+      "group": "AuditTeam",
+      "victim": "vi***in",
+      "country": "IN",
+      "sector": "Transportation",
+      "published": "2026-09-13T09:50:31.693860+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/dmkqKippbkBBdWRpdFRlYW0="
+    },
+    {
+      "group": "Barracuda",
+      "victim": "i2i-systems",
+      "country": "TR",
+      "sector": "Technology",
+      "published": "2026-09-13T09:20:21.439464+00:00",
+      "domain": "i2i-systems.com",
+      "url": "https://www.ransomware.live/id/aTJpLXN5c3RlbXNAQmFycmFjdWRh"
     },
     {
       "group": "Vexy Ransomware",
@@ -801,105 +900,6 @@
       "published": "2026-09-08T16:25:38.035534+00:00",
       "domain": "copeplastics.com",
       "url": "https://www.ransomware.live/id/Y29wZXBsYXN0aWNzLmNvbUBjaGFvcw=="
-    },
-    {
-      "group": "direwolf",
-      "victim": "EMS1R",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-09-08T15:32:19.650582+00:00",
-      "domain": "ems1r.com",
-      "url": "https://www.ransomware.live/id/RU1TMVJAZGlyZXdvbGY="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "fdcputman.nl",
-      "country": "NL",
-      "sector": "Other",
-      "published": "2026-09-08T15:36:47.464788+00:00",
-      "domain": "fdcputman.nl",
-      "url": "https://www.ransomware.live/id/ZmRjcHV0bWFuLm5sQGxvY2tiaXQ1"
-    },
-    {
-      "group": "lockbit5",
-      "victim": "contreras.com.ar",
-      "country": "AR",
-      "sector": "Not Found",
-      "published": "2026-09-08T15:36:03.996094+00:00",
-      "domain": "contreras.com.ar",
-      "url": "https://www.ransomware.live/id/Y29udHJlcmFzLmNvbS5hckBsb2NrYml0NQ=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Alaska Electrical Apprenticeship",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-09-08T13:27:02.593094+00:00",
-      "domain": "www.alaskaelectricalapprenticeship.org",
-      "url": "https://www.ransomware.live/id/QWxhc2thIEVsZWN0cmljYWwgQXBwcmVudGljZXNoaXBAcWlsaW4="
-    },
-    {
-      "group": "Storm",
-      "victim": "Technology Dynamics",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-09-09T10:11:43.321633+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VGVjaG5vbG9neSBEeW5hbWljc0BTdG9ybQ=="
-    },
-    {
-      "group": "rhysida",
-      "victim": "SAD'S Interim",
-      "country": "FR",
-      "sector": "Professional Services",
-      "published": "2026-09-08T06:02:10.597437+00:00",
-      "domain": "sads-interim.eu",
-      "url": "https://www.ransomware.live/id/U0FEJ1MgSW50ZXJpbUByaHlzaWRh"
-    },
-    {
-      "group": "AuditTeam",
-      "victim": "dg***kr",
-      "country": "KR",
-      "sector": "Not Found",
-      "published": "2026-09-09T16:51:24.586768+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/ZGcqKiprckBBdWRpdFRlYW0="
-    },
-    {
-      "group": "AuditTeam",
-      "victim": "go***et",
-      "country": "KR",
-      "sector": "Technology",
-      "published": "2026-09-09T16:50:52.984881+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Z28qKipldEBBdWRpdFRlYW0="
-    },
-    {
-      "group": "AuditTeam",
-      "victim": "kr***rg",
-      "country": "AR",
-      "sector": "Not Found",
-      "published": "2026-09-09T16:50:21.164442+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/a3IqKipyZ0BBdWRpdFRlYW0="
-    },
-    {
-      "group": "AuditTeam",
-      "victim": "bu***en",
-      "country": "RU",
-      "sector": "Not Found",
-      "published": "2026-09-08T16:50:21.630551+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/YnUqKiplbkBBdWRpdFRlYW0="
-    },
-    {
-      "group": "akira",
-      "victim": "Brent Electric",
-      "country": "GB",
-      "sector": "Energy & Utilities",
-      "published": "2026-09-08T14:22:52.626102+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QnJlbnQgRWxlY3RyaWNAYWtpcmE="
     }
   ]
 }
