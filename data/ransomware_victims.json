@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T10:37:47Z",
+  "generated_at": "2026-09-20T11:00:01Z",
   "victims": [
     {
       "group": "akira",
@@ -11,12 +11,102 @@
       "url": "https://www.ransomware.live/id/UGF5bG9naXhAYWtpcmE="
     },
     {
-      "group": "anubis",
-      "victim": "Quest Group",
+      "group": "bravox",
+      "victim": "TOWILL",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-09-20T06:24:14.282329+00:00",
+      "domain": "www.towill.com",
+      "url": "https://www.ransomware.live/id/VE9XSUxMQGJyYXZveA=="
+    },
+    {
+      "group": "N0n",
+      "victim": "Fanatics (global sports commerce platform)",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-09-20T02:51:07.611792+00:00",
+      "domain": "fanatics.com",
+      "url": "https://www.ransomware.live/id/RmFuYXRpY3MgKGdsb2JhbCBzcG9ydHMgY29tbWVyY2UgcGxhdGZvcm0pQE4wbg=="
+    },
+    {
+      "group": "nightspire",
+      "victim": "Great Bay Bio",
+      "country": "HK",
+      "sector": "Healthcare",
+      "published": "2026-09-20T06:40:26.051276+00:00",
+      "domain": "greatbay-bio.com",
+      "url": "https://www.ransomware.live/id/R3JlYXQgQmF5IEJpb0BuaWdodHNwaXJl"
+    },
+    {
+      "group": "unsafe",
+      "victim": "voltgames.io",
       "country": "",
       "sector": "Technology",
-      "published": "2026-09-18T23:55:10.634158+00:00",
+      "published": "2026-09-19T16:20:33.854537+00:00",
+      "domain": "voltgames.io",
+      "url": "https://www.ransomware.live/id/dm9sdGdhbWVzLmlvQHVuc2FmZQ=="
+    },
+    {
+      "group": "arcusmedia",
+      "victim": "AKAZZO",
+      "country": "BR",
+      "sector": "Not Found",
+      "published": "2026-09-19T16:53:14.452502+00:00",
+      "domain": "akazzo.com.br",
+      "url": "https://www.ransomware.live/id/QUtBWlpPQGFyY3VzbWVkaWE="
+    },
+    {
+      "group": "arcusmedia",
+      "victim": "Schneider’s Computing",
+      "country": "CA",
+      "sector": "Technology",
+      "published": "2026-09-19T16:53:54.774549+00:00",
+      "domain": "scomputing.ca",
+      "url": "https://www.ransomware.live/id/U2NobmVpZGVy4oCZcyBDb21wdXRpbmdAYXJjdXNtZWRpYQ=="
+    },
+    {
+      "group": "emperador",
+      "victim": "Cassias MG Government",
+      "country": "BR",
+      "sector": "Government & Defense",
+      "published": "2026-09-19T07:50:51.612488+00:00",
+      "domain": "cassia.mg.gov.br",
+      "url": "https://www.ransomware.live/id/Q2Fzc2lhcyBNRyBHb3Zlcm5tZW50QGVtcGVyYWRvcg=="
+    },
+    {
+      "group": "emperador",
+      "victim": "Electrolux",
+      "country": "SE",
+      "sector": "Manufacturing",
+      "published": "2026-09-19T15:50:53.665077+00:00",
+      "domain": "electroluxgroup.com",
+      "url": "https://www.ransomware.live/id/RWxlY3Ryb2x1eEBlbXBlcmFkb3I="
+    },
+    {
+      "group": "cry0",
+      "victim": "Young Injury Law",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-09-19T13:25:01.672733+00:00",
       "domain": "",
+      "url": "https://www.ransomware.live/id/WW91bmcgSW5qdXJ5IExhd0Bjcnkw"
+    },
+    {
+      "group": "AuditTeam",
+      "victim": "td***up",
+      "country": "IT",
+      "sector": "Not Found",
+      "published": "2026-09-19T10:50:28.792216+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/dGQqKip1cEBBdWRpdFRlYW0="
+    },
+    {
+      "group": "anubis",
+      "victim": "Quest Group",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-09-18T23:55:10.634158+00:00",
+      "domain": "questgroupsearch.com",
       "url": "https://www.ransomware.live/id/UXVlc3QgR3JvdXBAYW51Ymlz"
     },
     {
@@ -25,13 +115,13 @@
       "country": "BR",
       "sector": "Other",
       "published": "2026-09-18T22:23:09.430695+00:00",
-      "domain": "",
+      "domain": "k3gsolutions.com.br",
       "url": "https://www.ransomware.live/id/SzNHIFNvbHV0aW9ucyBCcmF6aWxAUGFuemVy"
     },
     {
       "group": "play",
       "victim": "Vista Plastic Solutions",
-      "country": "US",
+      "country": "CA",
       "sector": "Manufacturing",
       "published": "2026-09-18T20:44:20.711951+00:00",
       "domain": "www.vistahelps.com",
@@ -70,7 +160,7 @@
       "country": "VE",
       "sector": "Technology",
       "published": "2026-09-18T19:51:07.604510+00:00",
-      "domain": "",
+      "domain": "inter.com.ve",
       "url": "https://www.ransomware.live/id/SW50ZXIgKFZlbmV6dWVsYSdzIGxhcmdlc3QgaW50ZXJuZXQgcHJvdmlkZXIpQE4wbg=="
     },
     {
@@ -171,6 +261,15 @@
       "published": "2026-09-18T15:22:48.612462+00:00",
       "domain": "uft.org",
       "url": "https://www.ransomware.live/id/VW5pdGVkIEZlZGVyYXRpb24gb2YgVGVhY2hlcnNATjBu"
+    },
+    {
+      "group": "Vexy Ransomware",
+      "victim": "Quy Nhon University",
+      "country": "VN",
+      "sector": "Education",
+      "published": "2026-09-19T07:54:22.255428+00:00",
+      "domain": "qnu.edu.vn",
+      "url": "https://www.ransomware.live/id/UXV5IE5ob24gVW5pdmVyc2l0eUBWZXh5IFJhbnNvbXdhcmU="
     },
     {
       "group": "rhysida",
@@ -801,105 +900,6 @@
       "published": "2026-09-15T19:31:20.079261+00:00",
       "domain": "meterex.com",
       "url": "https://www.ransomware.live/id/bWV0ZXJleC5jb21Ac2FmZXBheQ=="
-    },
-    {
-      "group": "safepay",
-      "victim": "stoecklin-kuechen.ch",
-      "country": "CH",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-09-15T19:30:46.777907+00:00",
-      "domain": "stoecklin-kuechen.ch",
-      "url": "https://www.ransomware.live/id/c3RvZWNrbGluLWt1ZWNoZW4uY2hAc2FmZXBheQ=="
-    },
-    {
-      "group": "safepay",
-      "victim": "ara-lyss.ch",
-      "country": "CH",
-      "sector": "Professional Services",
-      "published": "2026-09-15T19:29:39.873697+00:00",
-      "domain": "ara-lyss.ch",
-      "url": "https://www.ransomware.live/id/YXJhLWx5c3MuY2hAc2FmZXBheQ=="
-    },
-    {
-      "group": "safepay",
-      "victim": "gob.pe",
-      "country": "PE",
-      "sector": "Government & Defense",
-      "published": "2026-09-15T19:29:06.619312+00:00",
-      "domain": "gob.pe",
-      "url": "https://www.ransomware.live/id/Z29iLnBlQHNhZmVwYXk="
-    },
-    {
-      "group": "Vexy Ransomware",
-      "victim": "Hashimoto Jimuki",
-      "country": "JP",
-      "sector": "Manufacturing",
-      "published": "2026-09-15T19:58:08.769486+00:00",
-      "domain": "aoa21.com",
-      "url": "https://www.ransomware.live/id/SGFzaGltb3RvIEppbXVraUBWZXh5IFJhbnNvbXdhcmU="
-    },
-    {
-      "group": "insomnia",
-      "victim": "Wiggins, Childs, Pantazis, Fisher, & Goldfarb LLC",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-09-15T17:30:14.921178+00:00",
-      "domain": "www.wigginschilds.com",
-      "url": "https://www.ransomware.live/id/V2lnZ2lucywgQ2hpbGRzLCBQYW50YXppcywgRmlzaGVyLCAmIEdvbGRmYXJiIExMQ0BpbnNvbW5pYQ=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Taurus Ibérica",
-      "country": "ES",
-      "sector": "Manufacturing",
-      "published": "2026-09-15T15:01:54.994110+00:00",
-      "domain": "www.taurusiberica.com",
-      "url": "https://www.ransomware.live/id/VGF1cnVzIEliw6lyaWNhQHFpbGlu"
-    },
-    {
-      "group": "qilin",
-      "victim": "Montana Civil Contractors",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-09-15T14:02:02.124378+00:00",
-      "domain": "www.montanacivil.com",
-      "url": "https://www.ransomware.live/id/TW9udGFuYSBDaXZpbCBDb250cmFjdG9yc0BxaWxpbg=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Resolve Law Group",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-09-15T13:03:21.669546+00:00",
-      "domain": "www.resolvelawgroup.com",
-      "url": "https://www.ransomware.live/id/UmVzb2x2ZSBMYXcgR3JvdXBAcWlsaW4="
-    },
-    {
-      "group": "qilin",
-      "victim": "ADM",
-      "country": "US",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-09-15T12:01:12.647322+00:00",
-      "domain": "www.adm.com",
-      "url": "https://www.ransomware.live/id/QURNQHFpbGlu"
-    },
-    {
-      "group": "metaencryptor",
-      "victim": "SFA Engineering Corporation",
-      "country": "KR",
-      "sector": "Manufacturing",
-      "published": "2026-09-15T11:59:46.342220+00:00",
-      "domain": "www.sfa.co.kr",
-      "url": "https://www.ransomware.live/id/U0ZBIEVuZ2luZWVyaW5nIENvcnBvcmF0aW9uQG1ldGFlbmNyeXB0b3I="
-    },
-    {
-      "group": "metaencryptor",
-      "victim": "Nippon Steel Corporation",
-      "country": "JP",
-      "sector": "Manufacturing",
-      "published": "2026-09-15T11:59:12.189167+00:00",
-      "domain": "www.nipponsteel.com",
-      "url": "https://www.ransomware.live/id/TmlwcG9uIFN0ZWVsIENvcnBvcmF0aW9uQG1ldGFlbmNyeXB0b3I="
     }
   ]
 }
