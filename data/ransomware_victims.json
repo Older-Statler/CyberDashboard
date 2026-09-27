@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-09-26T11:07:02Z",
+  "generated_at": "2026-09-27T11:46:02Z",
   "victims": [
+    {
+      "group": "m3rx",
+      "victim": "cipher.systems",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-09-26T17:02:51.145975+00:00",
+      "domain": "cipher.systems",
+      "url": "https://www.ransomware.live/id/Y2lwaGVyLnN5c3RlbXNAbTNyeA=="
+    },
+    {
+      "group": "Barracuda",
+      "victim": "International Chemical Co.",
+      "country": "",
+      "sector": "Manufacturing",
+      "published": "2026-09-26T15:51:01.584677+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SW50ZXJuYXRpb25hbCBDaGVtaWNhbCBDby5AQmFycmFjdWRh"
+    },
     {
       "group": "termite",
       "victim": "Crossett",
@@ -182,6 +200,15 @@
       "url": "https://www.ransomware.live/id/SWJlcmlhIENvbXBvc2l0ZWNoIE1hbnVmYWN0dXJpbmdAcWlsaW4="
     },
     {
+      "group": "thegentlemen",
+      "victim": "FTAPI Software",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-09-26T08:42:43.611644+00:00",
+      "domain": "ftapi.com",
+      "url": "https://www.ransomware.live/id/RlRBUEkgU29mdHdhcmVAdGhlZ2VudGxlbWVu"
+    },
+    {
       "group": "incransom",
       "victim": "pharma5.ma",
       "country": "MA",
@@ -252,6 +279,24 @@
       "published": "2026-09-24T17:08:57.902259+00:00",
       "domain": "welgenone.com",
       "url": "https://www.ransomware.live/id/d2VsZ2Vub25lLmNvbUBpbmNyYW5zb20="
+    },
+    {
+      "group": "Storm",
+      "victim": "Applied Composites",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-09-26T08:48:35.034186+00:00",
+      "domain": "appliedcomposites.com",
+      "url": "https://www.ransomware.live/id/QXBwbGllZCBDb21wb3NpdGVzQFN0b3Jt"
+    },
+    {
+      "group": "Storm",
+      "victim": "Magna Legal Services",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-09-26T08:48:02.341778+00:00",
+      "domain": "magnals.com",
+      "url": "https://www.ransomware.live/id/TWFnbmEgTGVnYWwgU2VydmljZXNAU3Rvcm0="
     },
     {
       "group": "Wallstreet",
@@ -360,6 +405,33 @@
       "published": "2026-09-24T08:44:48.048248+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/RmluYWwgc3RhdGVtZW50IHJlIFBTQUBzaGlueWh1bnRlcnM="
+    },
+    {
+      "group": "thegentlemen",
+      "victim": "ENKEI*******",
+      "country": "",
+      "sector": "Manufacturing",
+      "published": "2026-09-26T08:43:03.052002+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RU5LRUkqKioqKioqQHRoZWdlbnRsZW1lbg=="
+    },
+    {
+      "group": "thegentlemen",
+      "victim": "Charles Keith",
+      "country": "SG",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-09-26T08:43:25.529856+00:00",
+      "domain": "charleskeith.com",
+      "url": "https://www.ransomware.live/id/Q2hhcmxlcyBLZWl0aEB0aGVnZW50bGVtZW4="
+    },
+    {
+      "group": "thegentlemen",
+      "victim": "Ligue se Grupo",
+      "country": "PT",
+      "sector": "Other",
+      "published": "2026-09-26T08:43:46.371446+00:00",
+      "domain": "grupoligue-se.pt",
+      "url": "https://www.ransomware.live/id/TGlndWUgc2UgR3J1cG9AdGhlZ2VudGxlbWVu"
     },
     {
       "group": "Barracuda",
@@ -614,6 +686,15 @@
       "url": "https://www.ransomware.live/id/Vy4uLiBCLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
     },
     {
+      "group": "payoutsking",
+      "victim": "M****n",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-09-26T08:55:32.683964+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TSoqKipuQHBheW91dHNraW5n"
+    },
+    {
       "group": "akira",
       "victim": "Urban Engineering",
       "country": "",
@@ -819,87 +900,6 @@
       "published": "2026-09-22T01:44:58.093768+00:00",
       "domain": "thelender.com",
       "url": "https://www.ransomware.live/id/dGhlTGVuZGVyQHRlcm1pdGU="
-    },
-    {
-      "group": "termite",
-      "victim": "TruAmerica Multifamily",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-09-22T01:45:30.663148+00:00",
-      "domain": "www.truamerica.com",
-      "url": "https://www.ransomware.live/id/VHJ1QW1lcmljYSBNdWx0aWZhbWlseUB0ZXJtaXRl"
-    },
-    {
-      "group": "pear",
-      "victim": "Westside GI",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-09-24T21:40:03.968565+00:00",
-      "domain": "westsidegicenter.com",
-      "url": "https://www.ransomware.live/id/V2VzdHNpZGUgR0lAcGVhcg=="
-    },
-    {
-      "group": "pear",
-      "victim": "Martin Lawrence Galleries",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-09-24T21:39:04.054012+00:00",
-      "domain": "martinlawrence.com",
-      "url": "https://www.ransomware.live/id/TWFydGluIExhd3JlbmNlIEdhbGxlcmllc0BwZWFy"
-    },
-    {
-      "group": "pear",
-      "victim": "Indroj Medical Group Inc.",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-09-24T21:38:02.153160+00:00",
-      "domain": "npiprofile.com",
-      "url": "https://www.ransomware.live/id/SW5kcm9qIE1lZGljYWwgR3JvdXAgSW5jLkBwZWFy"
-    },
-    {
-      "group": "kairos",
-      "victim": "Krapf Group",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-09-22T15:45:48.484772+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/S3JhcGYgR3JvdXBAa2Fpcm9z"
-    },
-    {
-      "group": "akira",
-      "victim": "Coe Press Equipment",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-09-22T13:29:07.814346+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29lIFByZXNzIEVxdWlwbWVudEBha2lyYQ=="
-    },
-    {
-      "group": "akira",
-      "victim": "TDMI",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-09-22T13:28:48.077806+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VERNSUBha2lyYQ=="
-    },
-    {
-      "group": "akira",
-      "victim": "DI.C.S.EL. S.R.L.",
-      "country": "IT",
-      "sector": "Manufacturing",
-      "published": "2026-09-22T12:52:00.770230+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/REkuQy5TLkVMLiBTLlIuTC5AYWtpcmE="
-    },
-    {
-      "group": "AuditTeam",
-      "victim": "Pr***IT",
-      "country": "IT",
-      "sector": "Professional Services",
-      "published": "2026-09-22T11:50:21.724962+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UHIqKipJVEBBdWRpdFRlYW0="
     }
   ]
 }
