@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-10-13T13:49:42Z",
-  "total_geotagged": 23500,
+  "generated_at": "2026-10-14T11:27:12Z",
+  "total_geotagged": 24000,
   "by_country": {
-    "RU": 2294,
-    "US": 5291,
-    "SG": 347,
-    "CN": 4982,
-    "DE": 824,
-    "FR": 330,
-    "BR": 603,
-    "IN": 889,
-    "AR": 222,
-    "TR": 147,
-    "ID": 752,
-    "GB": 408,
-    "KR": 726,
-    "LV": 18,
-    "SE": 149,
-    "HK": 358,
+    "RU": 2331,
+    "US": 5367,
+    "SG": 357,
+    "CN": 5099,
+    "DE": 843,
+    "FR": 340,
+    "BR": 623,
+    "IN": 922,
+    "AR": 231,
+    "TR": 149,
+    "ID": 765,
+    "GB": 413,
+    "KR": 736,
+    "LV": 19,
+    "SE": 152,
+    "HK": 364,
     "MK": 6,
-    "NL": 533,
-    "MY": 107,
-    "ES": 84,
-    "CA": 154,
-    "CO": 78,
-    "PK": 253,
-    "IR": 96,
+    "NL": 547,
+    "MY": 110,
+    "ES": 85,
+    "CA": 161,
+    "CO": 80,
+    "PK": 256,
+    "IR": 97,
     "LK": 13,
     "MD": 17,
-    "BE": 105,
-    "NG": 18,
+    "BE": 111,
+    "NG": 20,
     "BO": 27,
-    "CL": 43,
-    "UA": 380,
-    "TH": 100,
-    "VN": 320,
+    "CL": 44,
+    "UA": 390,
+    "TH": 103,
+    "VN": 326,
     "KZ": 47,
     "VE": 22,
-    "TW": 169,
-    "EG": 38,
-    "AE": 47,
+    "TW": 172,
+    "EG": 40,
+    "AE": 49,
     "CZ": 31,
-    "IT": 232,
+    "IT": 236,
     "PY": 26,
     "LY": 6,
-    "ET": 37,
-    "MX": 86,
+    "ET": 39,
+    "MX": 87,
     "AD": 20,
-    "MA": 40,
-    "PL": 94,
+    "MA": 41,
+    "PL": 98,
     "BD": 106,
     "GT": 4,
-    "CH": 61,
-    "HU": 23,
+    "CH": 62,
+    "HU": 24,
     "JM": 1,
-    "JP": 145,
+    "JP": 149,
     "PS": 5,
     "NZ": 4,
     "MM": 20,
-    "AU": 99,
+    "AU": 101,
     "SN": 3,
     "PE": 36,
     "GR": 9,
     "EC": 38,
-    "PH": 138,
-    "BG": 40,
+    "PH": 140,
+    "BG": 44,
     "BH": 2,
-    "IE": 26,
+    "IE": 27,
     "FI": 85,
-    "IL": 34,
-    "IQ": 52,
+    "IL": 36,
+    "IQ": 58,
     "EE": 7,
     "NO": 13,
-    "AL": 27,
-    "BW": 11,
+    "AL": 28,
+    "BW": 15,
     "AM": 19,
-    "ZA": 305,
+    "ZA": 314,
     "SI": 33,
     "PT": 14,
     "YE": 2,
     "BY": 7,
-    "KE": 19,
-    "LU": 14,
+    "KE": 21,
+    "LU": 16,
     "CU": 6,
-    "UZ": 33,
+    "UZ": 35,
     "TG": 1,
-    "LT": 26,
+    "LT": 27,
     "JO": 2,
     "RS": 22,
     "IS": 14,
     "ZM": 7,
     "TN": 19,
-    "NP": 17,
+    "NP": 18,
     "RO": 27,
     "AZ": 7,
-    "AT": 20,
+    "AT": 21,
     "BA": 4,
     "DZ": 27,
     "KH": 5,
     "CM": 2,
     "NA": 1,
     "SY": 10,
-    "AF": 18,
+    "AF": 19,
     "LA": 3,
     "TZ": 12,
     "GE": 10,
@@ -113,7 +113,7 @@
     "DO": 11,
     "MO": 4,
     "KG": 2,
-    "BJ": 9,
+    "BJ": 10,
     "CI": 3,
     "SZ": 2,
     "GH": 35,
@@ -134,7 +134,7 @@
     "GU": 1,
     "ZW": 7,
     "BF": 2,
-    "UG": 22,
+    "UG": 23,
     "GM": 2,
     "AO": 4,
     "MZ": 5,
@@ -153,105 +153,116 @@
     "KP": 1,
     "TJ": 1,
     "MT": 2,
-    "SC": 3,
+    "SC": 4,
     "IM": 1,
     "MV": 1,
     "TT": 1,
     "TM": 1,
     "FJ": 1,
     "ME": 1,
-    "BB": 1
+    "BB": 1,
+    "NE": 1
   },
   "top_asns": [
     {
       "asn": "AS4837",
       "name": "CHINA169-Backbone",
-      "count": 3075
-    },
-    {
-      "asn": "AS396190",
-      "name": "LEASEWEB-USA-SEA",
-      "count": 1481
+      "count": 3158
     },
     {
       "asn": "AS57026",
       "name": "CHEB-AS",
-      "count": 1472
+      "count": 1495
+    },
+    {
+      "asn": "AS396190",
+      "name": "LEASEWEB-USA-SEA",
+      "count": 1495
     },
     {
       "asn": "AS396982",
       "name": "GOOGLE-CLOUD-PLATFORM",
-      "count": 628
+      "count": 650
     },
     {
       "asn": "AS4134",
       "name": "CHINANET-BACKBONE",
-      "count": 609
+      "count": 623
     },
     {
       "asn": "AS4766",
       "name": "KIXS-AS-KR",
-      "count": 576
+      "count": 581
     },
     {
       "asn": "AS13445",
       "name": "WEBEX",
-      "count": 562
+      "count": 570
     },
     {
       "asn": "AS394380",
       "name": "LEASEWEB-USA-DAL",
-      "count": 535
+      "count": 539
     },
     {
       "asn": "AS14061",
       "name": "DIGITALOCEAN-ASN",
-      "count": 458
+      "count": 474
     },
     {
       "asn": "AS14237",
       "name": "BEAMSPEED1",
-      "count": 369
+      "count": 375
     },
     {
       "asn": "AS34665",
       "name": "PINDC-AS",
-      "count": 368
+      "count": 372
     },
     {
       "asn": "AS22773",
       "name": "ASN-CXA-ALL-CCI-22773-RDC",
-      "count": 337
+      "count": 342
     },
     {
       "asn": "AS8075",
       "name": "MICROSOFT-CORP-MSN-AS-BLOCK",
-      "count": 228
+      "count": 230
     },
     {
       "asn": "AS206813",
       "name": "AS4830org",
-      "count": 188
+      "count": 191
     },
     {
       "asn": "AS15895",
       "name": "KSNET-AS",
-      "count": 187
+      "count": 189
     },
     {
       "asn": "AS137718",
       "name": "VOLCANO-ENGINE",
-      "count": 168
+      "count": 172
     },
     {
       "asn": "AS132203",
       "name": "TENCENT-NET-AP-CN",
-      "count": 164
+      "count": 166
     },
     {
       "asn": "AS45102",
       "name": "ALIBABA-CN-NET",
+      "count": 162
+    },
+    {
+      "asn": "AS31898",
+      "name": "ORACLE-BMC-31898",
       "count": 156
+    },
+    {
+      "asn": "AS9829",
+      "name": "BSNL-NIB",
+      "count": 155
     },
     {
       "asn": "AS202596",
@@ -259,29 +270,19 @@
       "count": 152
     },
     {
-      "asn": "AS9829",
-      "name": "BSNL-NIB",
-      "count": 149
-    },
-    {
-      "asn": "AS31898",
-      "name": "ORACLE-BMC-31898",
-      "count": 146
-    },
-    {
       "asn": "AS37963",
       "name": "ALIBABA-CN-NET",
-      "count": 145
-    },
-    {
-      "asn": "AS197170",
-      "name": "TECHTIES-AS",
-      "count": 133
+      "count": 149
     },
     {
       "asn": "AS135377",
       "name": "UCLOUD-HK-AS-AP",
-      "count": 131
+      "count": 136
+    },
+    {
+      "asn": "AS197170",
+      "name": "TECHTIES-AS",
+      "count": 136
     },
     {
       "asn": "AS37457",
