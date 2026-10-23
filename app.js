@@ -24,10 +24,13 @@
     abuseipdb: null,
     spamhausDrop: null,
     dropRangesParsed: [],
+    dropCache: new Map(), // ip -> matching DROP range (or null), reset when ranges change
     ransomwareVictims: null,
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
     correlated: [],
-    triage: { ransomwareKev: [], epssCriticalKev: [], maliciousIps: [], topCorrelated: [], recentVictims: [] },
+    triage: { ransomwareKev: [], epssCriticalKev: [], maliciousIps: [], topCorrelated: [] },
+    rw: null, // ransomware victims in the last RW_WINDOW_HOURS, see computeRansomwareWindow
+    rwCountry: null, // country code selected on the globe / bars, filters the live feed
     watchlistText: "",
     watchlistMatches: [],
     watchlistMatchKeys: new Set(),
@@ -78,38 +81,6 @@
     if (hrs < 24) return `${hrs} hr ago`;
     const days = Math.round(hrs / 24);
     return `${days} day${days === 1 ? "" : "s"} ago`;
-  }
-
-  // ---------- Theme ----------
-
-  function initTheme() {
-    let saved = null;
-    try {
-      saved = localStorage.getItem("ctd-theme");
-    } catch (e) {
-      /* localStorage unavailable */
-    }
-    const theme = saved || "dark";
-    document.documentElement.setAttribute("data-theme", theme);
-    updateThemeIcon(theme);
-
-    $("theme-toggle").addEventListener("click", () => {
-      const current = document.documentElement.getAttribute("data-theme");
-      const next = current === "light" ? "dark" : "light";
-      document.documentElement.setAttribute("data-theme", next);
-      updateThemeIcon(next);
-      try {
-        localStorage.setItem("ctd-theme", next);
-      } catch (e) {
-        /* ignore */
-      }
-      // Re-render the map so its ramp/legend follow the new theme's CSS vars.
-      renderWorldMap((state.geoSummary && state.geoSummary.by_country) || {});
-    });
-  }
-
-  function updateThemeIcon(theme) {
-    $("theme-toggle-icon").textContent = theme === "light" ? "☼" : "☽";
   }
 
   // ---------- IOC normalization (shared by correlation + watchlist) ----------
@@ -404,11 +375,28 @@
         return cidr ? { ...cidr, sbl_id: r.sbl_id, raw: r.cidr } : null;
       })
       .filter(Boolean);
+    state.dropCache = new Map();
   }
 
+  // Called for every IP in every feed (KPI, correlation scoring, badges), so
+  // parse each IP once and remember the answer — re-parsing the IP for each
+  // of the ~1,700 DROP ranges used to freeze the page for over a minute.
   function isIpInDrop(ip) {
     if (!ip || !state.dropRangesParsed.length) return null;
-    return state.dropRangesParsed.find((r) => ipInCidr(ip, r)) || null;
+    const cache = state.dropCache;
+    if (cache.has(ip)) return cache.get(ip);
+    let hit = null;
+    if (isIpv4(ip)) {
+      const n = ipToInt(ip);
+      for (const r of state.dropRangesParsed) {
+        if ((n & r.mask) === r.network) {
+          hit = r;
+          break;
+        }
+      }
+    }
+    cache.set(ip, hit);
+    return hit;
   }
 
   function countIpsInDrop(feeds) {
@@ -661,6 +649,7 @@
     if (!state.tableState[feed]) state.tableState[feed] = { sortKey: null, sortDir: "asc", query: "" };
     state.tableState[feed].query = value;
     renderFeed(feed);
+    activateTab(section.id, true);
     section.scrollIntoView({ behavior: "smooth", block: "start" });
     section.classList.add("flash-highlight");
     setTimeout(() => section.classList.remove("flash-highlight"), 1500);
@@ -709,19 +698,14 @@
 
     const topCorrelated = (state.correlated || []).slice(0, 5);
 
-    const recentVictims = (state.ransomwareVictims?.victims || [])
-      .slice()
-      .sort((a, b) => (b.published || "").localeCompare(a.published || ""))
-      .slice(0, 5);
-
-    state.triage = { ransomwareKev, epssCriticalKev, maliciousIps, topCorrelated, recentVictims };
+    state.triage = { ransomwareKev, epssCriticalKev, maliciousIps, topCorrelated };
   }
 
   function renderTriage() {
     const panel = $("triage-panel");
     const t = state.triage;
     const hasAny =
-      t.ransomwareKev.length || t.epssCriticalKev.length || t.maliciousIps.length || t.topCorrelated.length || t.recentVictims.length;
+      t.ransomwareKev.length || t.epssCriticalKev.length || t.maliciousIps.length || t.topCorrelated.length;
     panel.hidden = !hasAny;
     if (!hasAny) return;
 
@@ -740,15 +724,6 @@
       .map(
         (x) =>
           `<li><a href="#section-cisa_kev" class="triage-link" data-feed="cisa_kev" data-q="${escapeHtml(x.item.cve_id)}">${escapeHtml(x.item.cve_id)}</a> — ${escapeHtml(x.item.vendor_project)} / ${escapeHtml(x.item.product)}<span class="triage-date">${(x.epss.percentile * 100).toFixed(1)}th pct</span></li>`
-      )
-      .join("");
-
-    const victimsCard = $("triage-victims").closest(".triage-card");
-    victimsCard.hidden = !t.recentVictims.length;
-    $("triage-victims").innerHTML = t.recentVictims
-      .map(
-        (v) =>
-          `<li><a href="#" class="triage-link" data-feed="ransomware_victims" data-q="${escapeHtml(v.victim || "")}">${escapeHtml(v.victim || "Unknown")}</a> — ${escapeHtml(v.group || "unknown group")}<span class="triage-date">${escapeHtml(v.country || "")}</span></li>`
       )
       .join("");
 
@@ -928,6 +903,7 @@
     const card = $("watchlist-matches-card");
     const list = $("watchlist-matches-list");
     const matches = state.watchlistMatches || [];
+    $("tabcount-watchlist").textContent = matches.length ? String(matches.length) : "";
     if (!matches.length) {
       card.hidden = true;
       list.innerHTML = "";
@@ -1518,12 +1494,452 @@
     renderWatchlistPanel();
     Object.keys(FEED_DEFS).forEach(renderFeed);
     renderGeo();
+    state.rw = computeRansomwareWindow();
+    renderRansomwarePanels();
+    updateGlobe();
+    renderTabCounts();
+    syncTabs();
+  }
+
+  // ---------- Header clock ----------
+
+  function startClock() {
+    const el = $("utc-clock");
+    if (!el) return;
+    const tick = () => {
+      el.textContent = `${new Date().toISOString().slice(11, 19)} UTC`;
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  // ---------- Data deck tabs ----------
+
+  const TAB_KEY = "ctd-tab";
+  const DEFAULT_TAB = "section-correlated";
+
+  function tabButtons() {
+    return Array.from(document.querySelectorAll(".deck-tab"));
+  }
+
+  // `remember` = a user choice: stored, and re-applied when a hidden tab
+  // (e.g. geo before its data loads) becomes available again.
+  function activateTab(id, remember) {
+    if (remember) {
+      state.preferredTab = id;
+      try {
+        localStorage.setItem(TAB_KEY, id);
+      } catch (e) {
+        /* localStorage unavailable */
+      }
+    }
+    const buttons = tabButtons();
+    const btn = buttons.find((b) => b.dataset.tab === id && !b.hidden) || buttons.find((b) => !b.hidden);
+    if (!btn) return;
+    buttons.forEach((b) => {
+      const on = b === btn;
+      b.setAttribute("aria-selected", on ? "true" : "false");
+      b.tabIndex = on ? 0 : -1;
+    });
+    document.querySelectorAll(".deck-panel").forEach((p) => p.classList.toggle("is-active", p.id === btn.dataset.tab));
+  }
+
+  function initTabs() {
+    let saved = null;
+    try {
+      saved = localStorage.getItem(TAB_KEY);
+    } catch (e) {
+      /* localStorage unavailable */
+    }
+    state.preferredTab = saved || DEFAULT_TAB;
+
+    const buttons = tabButtons();
+    buttons.forEach((b) => {
+      b.setAttribute("aria-controls", b.dataset.tab);
+      b.addEventListener("click", () => activateTab(b.dataset.tab, true));
+      b.addEventListener("keydown", (ev) => {
+        if (ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") return;
+        const visible = tabButtons().filter((x) => !x.hidden);
+        const i = visible.indexOf(b);
+        const next = visible[(i + (ev.key === "ArrowRight" ? 1 : -1) + visible.length) % visible.length];
+        activateTab(next.dataset.tab, true);
+        next.focus();
+        ev.preventDefault();
+      });
+    });
+    syncTabs();
+  }
+
+  // A tab hides along with its panel (geo stays hidden until it has data).
+  function syncTabs() {
+    tabButtons().forEach((b) => {
+      const panel = $(b.dataset.tab);
+      b.hidden = !panel || panel.hidden;
+    });
+    activateTab(state.preferredTab || DEFAULT_TAB, false);
+  }
+
+  function compactNumber(n) {
+    if (n >= 100000) return `${Math.round(n / 1000)}k`;
+    if (n >= 10000) return `${(n / 1000).toFixed(1)}k`;
+    return n.toLocaleString();
+  }
+
+  function renderTabCounts() {
+    Object.keys(FEED_DEFS).forEach((feed) => {
+      const el = $(`tabcount-${feed}`);
+      if (!el) return;
+      const def = FEED_DEFS[feed];
+      const info = def.getItems ? def.getItems() : state.snapshot.feeds?.[feed];
+      const n = info?.items?.length || 0;
+      el.textContent = n ? compactNumber(n) : "";
+    });
+    const n = (state.correlated || []).length;
+    $("tabcount-correlated").textContent = n ? compactNumber(n) : "";
+  }
+
+  // ---------- Ransomware: last 72h (globe + side panels) ----------
+
+  const RW_WINDOW_HOURS = 72;
+  const RW_FRESH_HOURS = 6;
+
+  // ransomware.live's "discovered" date (stored as `published`) is when the
+  // victim appeared on a leak site, not when the attack happened.
+  // ransomware.live dates look like "2026-10-22T23:40:29.746474+00:00" (or
+  // with a space instead of "T", no zone). Trim to millisecond precision and
+  // assume UTC when no zone is given, so every browser parses them the same.
+  function parseRwTime(str) {
+    if (!str) return NaN;
+    let s = String(str).trim().replace(" ", "T").replace(/(\.\d{3})\d+/, "$1");
+    if (!/(Z|[+-]\d{2}:?\d{2})$/.test(s)) s += "Z";
+    return new Date(s).getTime();
+  }
+
+  function computeRansomwareWindow() {
+    const cutoff = Date.now() - RW_WINDOW_HOURS * 3600 * 1000;
+    const victims = (state.ransomwareVictims?.victims || [])
+      .map((v) => ({ v, t: parseRwTime(v.published) }))
+      .filter((x) => !isNaN(x.t) && x.t >= cutoff)
+      .sort((a, b) => b.t - a.t);
+
+    const byCountry = new Map();
+    const byGroup = new Map();
+    let unlocated = 0;
+    for (const { v, t } of victims) {
+      const group = (v.group || "").trim() || "unknown";
+      byGroup.set(group, (byGroup.get(group) || 0) + 1);
+      const code = (v.country || "").trim().toUpperCase();
+      if (!/^[A-Z]{2}$/.test(code)) {
+        unlocated += 1;
+        continue;
+      }
+      let c = byCountry.get(code);
+      if (!c) {
+        c = { code, count: 0, groups: new Map(), latest: 0 };
+        byCountry.set(code, c);
+      }
+      c.count += 1;
+      c.groups.set(group, (c.groups.get(group) || 0) + 1);
+      c.latest = Math.max(c.latest, t);
+    }
+    return { loaded: !!state.ransomwareVictims, victims, byCountry, byGroup, unlocated };
+  }
+
+  function barListHtml(entries, labelFn, titleFn, dataAttr) {
+    const max = entries.length ? entries[0][1] : 0;
+    return entries
+      .map(([key, count]) => {
+        const pct = max ? Math.max(4, Math.round((count / max) * 100)) : 0;
+        const attr = dataAttr ? ` ${dataAttr}="${escapeHtml(key)}" tabindex="0" role="button"` : "";
+        return `<div class="bar-row"${attr} title="${escapeHtml(titleFn(key, count))}">
+          <span class="bar-label">${escapeHtml(labelFn(key))}</span>
+          <span class="bar-track"><span class="bar-fill" style="width:${pct}%"></span></span>
+          <span class="bar-count">${count}</span>
+        </div>`;
+      })
+      .join("");
+  }
+
+  function renderRansomwarePanels() {
+    const rw = state.rw;
+    if (!rw) return;
+    const dash = "—";
+    $("rw-stat-victims").textContent = rw.loaded ? rw.victims.length : dash;
+    $("rw-stat-countries").textContent = rw.loaded ? rw.byCountry.size : dash;
+    $("rw-stat-groups").textContent = rw.loaded ? rw.byGroup.size : dash;
+    $("rw-stat-unlocated").textContent = rw.unlocated
+      ? `${rw.unlocated} victim${rw.unlocated === 1 ? "" : "s"} without a listed country (not on globe)`
+      : "";
+    const gen = state.ransomwareVictims?.generated_at;
+    $("globe-sub").textContent = gen ? `ransomware.live · synced ${relativeTime(gen)}` : "ransomware.live";
+
+    // Live feed, optionally filtered to the country picked on the globe.
+    const filter = state.rwCountry;
+    const filterBtn = $("rw-filter");
+    filterBtn.hidden = !filter;
+    if (filter) filterBtn.textContent = `${countryName(filter)} ✕`;
+
+    const freshCutoff = Date.now() - RW_FRESH_HOURS * 3600 * 1000;
+    const rows = rw.victims.filter(({ v }) => !filter || (v.country || "").toUpperCase() === filter);
+    $("rw-feed").innerHTML = rows
+      .map(({ v, t }) => {
+        const code = (v.country || "").trim().toUpperCase();
+        const chip = /^[A-Z]{2}$/.test(code)
+          ? `<span class="cc-chip" title="${escapeHtml(countryName(code))}">${escapeHtml(code)}</span>`
+          : `<span class="cc-chip cc-unknown" title="No country listed">??</span>`;
+        return `<li tabindex="0" data-q="${escapeHtml(v.victim || "")}" class="${t >= freshCutoff ? "is-fresh" : ""}">
+          <span class="rw-victim" title="${escapeHtml(v.victim || "")}">${escapeHtml(v.victim || "Unknown victim")}</span>
+          <span class="rw-group">${escapeHtml(v.group || "unknown group")}</span>
+          <span class="rw-meta">${chip}<span>${escapeHtml(relativeTime(new Date(t).toISOString()))}</span></span>
+        </li>`;
+      })
+      .join("");
+    $("rw-feed-empty").hidden = !rw.loaded || rows.length > 0;
+
+    const countries = Array.from(rw.byCountry.values())
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 8)
+      .map((c) => [c.code, c.count]);
+    $("rw-countries").innerHTML = barListHtml(
+      countries,
+      (code) => code,
+      (code, n) => `${countryName(code)}: ${n} victim${n === 1 ? "" : "s"} — click to filter`,
+      "data-country"
+    );
+
+    const groups = Array.from(rw.byGroup.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 8);
+    $("rw-groups").innerHTML = barListHtml(groups, (g) => g, (g, n) => `${g}: ${n} victim${n === 1 ? "" : "s"}`, null);
+  }
+
+  function setRwCountry(code) {
+    state.rwCountry = code || null;
+    renderRansomwarePanels();
+    const c = code && globeState.centroids?.[code];
+    if (globeState.globe && c) {
+      globeState.globe.controls().autoRotate = false;
+      globeState.globe.pointOfView({ lat: c[0], lng: c[1], altitude: 1.7 }, 1200);
+    } else if (globeState.globe && !code) {
+      globeState.globe.controls().autoRotate = !prefersReducedMotion();
+    }
+  }
+
+  // Delegated once; the lists themselves are re-rendered on each render().
+  function initRansomwarePanels() {
+    const activate = (ev, fn) => {
+      if (ev.type === "keydown" && ev.key !== "Enter" && ev.key !== " ") return;
+      if (ev.type === "keydown") ev.preventDefault();
+      fn();
+    };
+    const feed = $("rw-feed");
+    ["click", "keydown"].forEach((type) =>
+      feed.addEventListener(type, (ev) => {
+        const li = ev.target.closest("li[data-q]");
+        if (li) activate(ev, () => scrollToMatch("ransomware_victims", li.getAttribute("data-q")));
+      })
+    );
+    const bars = $("rw-countries");
+    ["click", "keydown"].forEach((type) =>
+      bars.addEventListener(type, (ev) => {
+        const row = ev.target.closest("[data-country]");
+        if (row) activate(ev, () => setRwCountry(row.getAttribute("data-country")));
+      })
+    );
+    $("rw-filter").addEventListener("click", () => setRwCountry(null));
+  }
+
+  // ---------- 3D globe (globe.gl, loaded lazily from jsDelivr) ----------
+
+  const GLOBE_LIB_URL = "https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js";
+  const TOPOJSON_LIB_URL = "https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js";
+  const WORLD_ATLAS_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json";
+
+  const globeState = { globe: null, centroids: null, max: 1 };
+
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.crossOrigin = "anonymous";
+      s.onload = resolve;
+      s.onerror = () => reject(new Error(`Failed to load ${src}`));
+      document.head.appendChild(s);
+    });
+  }
+
+  async function fetchJsonStrict(url) {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status} for ${url}`);
+    return resp.json();
+  }
+
+  function hasWebGL() {
+    try {
+      const c = document.createElement("canvas");
+      return !!(window.WebGLRenderingContext && (c.getContext("webgl2") || c.getContext("webgl")));
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function prefersReducedMotion() {
+    return !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }
+
+  // world-atlas has a few degenerate rings (North Korea includes a "polygon"
+  // that is one point repeated), which makes H3 throw while dotting the land.
+  // Keep only polygons whose outer ring has at least 3 distinct points.
+  function cleanLandFeatures(features) {
+    const distinctPoints = (ring) => new Set(ring.map((pt) => `${pt[0]},${pt[1]}`)).size;
+    return features
+      .map((f) => {
+        const g = f.geometry;
+        const polys = !g ? [] : g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : [];
+        const kept = polys.filter((poly) => poly[0] && distinctPoints(poly[0]) >= 3);
+        return kept.length ? { ...f, geometry: { type: "MultiPolygon", coordinates: kept } } : null;
+      })
+      .filter(Boolean);
+  }
+
+  function globeTooltip(d) {
+    const groups = Array.from(d.groups.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 4)
+      .map(([g, n]) => `${escapeHtml(g)}${n > 1 ? ` ×${n}` : ""}`)
+      .join(", ");
+    return `<div class="globe-tip"><strong>${escapeHtml(countryName(d.code))}</strong> · ${d.count} victim${d.count === 1 ? "" : "s"}
+      <div class="tip-groups">${groups}</div>
+      <div class="tip-groups">latest ${escapeHtml(relativeTime(new Date(d.latest).toISOString()))}</div></div>`;
+  }
+
+  async function initGlobe() {
+    const container = $("globe-container");
+    const status = $("globe-status");
+    if (!container) return;
+    if (!hasWebGL()) {
+      status.textContent = "3D globe unavailable: WebGL is turned off in this browser. The lists still work.";
+      return;
+    }
+    try {
+      const [, , atlas, centroids] = await Promise.all([
+        loadScript(GLOBE_LIB_URL),
+        loadScript(TOPOJSON_LIB_URL),
+        fetchJsonStrict(WORLD_ATLAS_URL),
+        fetchJsonStrict("assets/country-centroids.json"),
+      ]);
+      globeState.centroids = centroids;
+      const land = cleanLandFeatures(window.topojson.feature(atlas, atlas.objects.countries).features);
+      const reduced = prefersReducedMotion();
+      const scale = (d) => Math.sqrt(d.count / globeState.max);
+
+      const globe = new window.Globe(container, { animateIn: !reduced })
+        .width(container.clientWidth)
+        .height(container.clientHeight)
+        .backgroundColor("rgba(0,0,0,0)")
+        .atmosphereColor("#00e5ff")
+        .atmosphereAltitude(0.2)
+        // Land as a field of glowing dots.
+        .hexPolygonsData(land)
+        .hexPolygonResolution(3)
+        .hexPolygonMargin(0.4)
+        .hexPolygonUseDots(true)
+        .hexPolygonColor(() => "rgba(0, 229, 255, 0.5)")
+        .hexPolygonLabel((f) => `<div class="globe-tip">${escapeHtml(f.properties?.name || "")}</div>`)
+        // Victim countries: a red column (height ~ victims) plus pulsing rings.
+        .pointLat("lat")
+        .pointLng("lng")
+        .pointColor(() => "#ff3b5c")
+        .pointAltitude((d) => 0.02 + 0.1 * scale(d))
+        .pointRadius((d) => 0.45 + 0.7 * scale(d))
+        .pointLabel(globeTooltip)
+        .pointsTransitionDuration(reduced ? 0 : 900)
+        .onPointClick((d) => setRwCountry(d.code))
+        .ringLat("lat")
+        .ringLng("lng")
+        .ringColor(() => (t) => `rgba(255, 59, 92, ${Math.max(0, 1 - t).toFixed(3)})`)
+        .ringMaxRadius((d) => 2.5 + 5 * scale(d))
+        .ringPropagationSpeed(2.2)
+        .ringRepeatPeriod((d) => 1600 - 900 * scale(d))
+        .labelLat("lat")
+        .labelLng("lng")
+        .labelText("code")
+        .labelSize(1.9)
+        .labelDotRadius(0.35)
+        .labelColor(() => "rgba(216, 243, 255, 0.9)")
+        .labelResolution(2)
+        .labelAltitude(0.012)
+        .labelLabel(globeTooltip)
+        .onLabelClick((d) => setRwCountry(d.code));
+
+      const mat = globe.globeMaterial();
+      if (mat.color) mat.color.set("#041726");
+      if (mat.emissive) mat.emissive.set("#020b14");
+      mat.shininess = 6;
+
+      const controls = globe.controls();
+      controls.autoRotate = !reduced;
+      controls.autoRotateSpeed = 0.5;
+      // Pause the spin while the pointer is on the globe so it's easy to aim.
+      container.addEventListener("pointerenter", () => {
+        controls.autoRotate = false;
+      });
+      container.addEventListener("pointerleave", () => {
+        controls.autoRotate = !reduced && !state.rwCountry;
+      });
+      globe.pointOfView({ lat: 28, lng: -40, altitude: 2.3 });
+
+      new ResizeObserver(() => {
+        if (container.clientWidth && container.clientHeight) {
+          globe.width(container.clientWidth).height(container.clientHeight);
+        }
+      }).observe(container);
+      // Stop rendering while the globe is scrolled out of view.
+      new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) globe.resumeAnimation();
+        else globe.pauseAnimation();
+      }).observe(container);
+
+      globeState.globe = globe;
+      status.hidden = true;
+      updateGlobe();
+    } catch (e) {
+      console.error("Globe failed to initialize:", e);
+      status.textContent = "3D globe failed to load (CDN blocked or offline). The lists still work.";
+    }
+  }
+
+  function updateGlobe() {
+    const globe = globeState.globe;
+    const rw = state.rw;
+    if (!globe || !rw) return;
+    const centroids = globeState.centroids || {};
+    const points = [];
+    for (const c of rw.byCountry.values()) {
+      const ll = centroids[c.code];
+      if (ll) points.push({ ...c, lat: ll[0], lng: ll[1] });
+    }
+    globeState.max = Math.max(1, ...points.map((p) => p.count));
+    const top = points.slice().sort((a, b) => b.count - a.count).slice(0, 8);
+    globe.pointsData(points).ringsData(points).labelsData(top);
+
+    const status = $("globe-status");
+    if (rw.loaded && !points.length) {
+      status.textContent = `No located ransomware victims in the last ${RW_WINDOW_HOURS} hours.`;
+      status.hidden = false;
+    } else {
+      status.hidden = true;
+    }
   }
 
   // ---------- Init ----------
 
   document.addEventListener("DOMContentLoaded", () => {
-    initTheme();
+    startClock();
+    initTabs();
+    initRansomwarePanels();
+    initGlobe();
     wireSearchBoxes();
     wireExportButtons();
     initWatchlist();

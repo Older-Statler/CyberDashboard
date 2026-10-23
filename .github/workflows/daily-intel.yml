@@ -55,10 +55,6 @@ jobs:
         run: python scripts/fetch_spamhaus_drop.py
         continue-on-error: true
 
-      - name: Fetch ransomware.live recent victims
-        run: python scripts/fetch_ransomware_live.py
-        continue-on-error: true
-
       - name: Build slim enrichment files for the dashboard
         run: python scripts/build_enrichment_views.py
         continue-on-error: true
@@ -74,7 +70,7 @@ jobs:
           git add data/enrichment.json data/geo.json data/geo_summary.json data/trends.json \
                   data/epss.json data/internetdb.json data/abuseipdb.json \
                   data/internetdb_view.json data/abuseipdb_view.json \
-                  data/spamhaus_drop.json data/ransomware_victims.json
+                  data/spamhaus_drop.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

@@ -11,7 +11,8 @@ Pages serves the static site that reads it.
 GitHub Actions (cron, every 30 min)
    -> scripts/fetch_*.py pull each feed (using repo secrets for auth)
    -> scripts/build_snapshot.py merges them into data/latest.json
-   -> commits data/latest.json if it changed
+   -> scripts/fetch_ransomware_live.py refreshes data/ransomware_victims.json
+   -> commits both if they changed
    -> GitHub Pages serves the repo, including data/latest.json
 
 Browser
@@ -20,7 +21,7 @@ Browser
    -> renders everything client-side
 ```
 
-A second workflow (`daily-intel.yml`) runs once a day and pulls eight more sources, each
+A second workflow (`daily-intel.yml`) runs once a day and pulls seven more sources, each
 as its own independently-fault-tolerant step, all committed as small JSON files the
 frontend reads the same way it reads `latest.json`:
 
@@ -35,7 +36,6 @@ frontend reads the same way it reads `latest.json`:
 - looks up crowd-sourced abuse reports via AbuseIPDB (`data/abuseipdb.json`) — optional,
   needs a free key.
 - fetches Spamhaus DROP's criminal-controlled netblocks (`data/spamhaus_drop.json`).
-- fetches recent ransomware victims from ransomware.live (`data/ransomware_victims.json`).
 - appends today's per-feed item counts to a small rolling history (`data/trends.json`,
   capped at 90 days) that drives the sparklines in each feed's header.
 
@@ -45,7 +45,27 @@ JS. Doing the fetch inside GitHub Actions keeps keys server-side (as encrypted s
 while keeping the actual dashboard 100% static. Everything added in phases 2 and 3
 (correlation, triage digest, watchlist, export, the extended signal-count scoring) follows
 the same rule and runs entirely client-side from data already loaded — no new external
-calls from the browser at all.
+calls from the browser at all. The one external fetch the page makes is for display
+libraries: the 3D globe loads globe.gl, topojson-client and world-atlas country shapes
+from jsDelivr (pinned versions). If that fails, the rest of the dashboard still works.
+
+## Layout (phase 4)
+
+A full-width, dark "ops center" layout:
+
+- **Command center** (first screen) — KPIs and the triage digest on the left; in the
+  middle a rotating 3D globe marking every country with ransomware victims disclosed in
+  the last 72 hours (red columns sized by victim count, pulsing rings, hover for groups,
+  click to zoom and filter); on the right a live 72-hour victim feed plus top countries
+  and most active groups. The 72h window uses ransomware.live's *discovered* date, i.e.
+  when the victim appeared on a leak site, not the date of the attack. Victims without a
+  listed country are counted but can't be placed on the globe. Country positions come
+  from `assets/country-centroids.json`.
+- **Data deck** — every feed table, the correlated IOCs, source-IP geography and the
+  watchlist live in one tabbed panel below. Clicking anything that points at a row
+  (triage, correlated IOCs, the victim feed) opens the right tab with the search filled in.
+- ransomware.live now refreshes in the 30-minute workflow so the 72h view stays current.
+- Dark only — the light theme and its toggle were removed.
 
 ## Feature tour (phase 2)
 
@@ -99,8 +119,8 @@ calls from the browser at all.
 - **Ransomware Activity** — a new section listing recent ransomware.live victim
   disclosures (group, victim, sector, country, date) — the organizational complement to
   the ransomware-tagged KEV entries: one says "this vulnerability is used by ransomware
-  operators," this says "and here's who they've hit lately." The 5 most recent surface in
-  the triage panel too. Intentionally *not* cross-referenced against the IOC feeds —
+  operators," this says "and here's who they've hit lately." (Since phase 4 the recent
+  victims show in the command center's live feed instead of a triage card.) Intentionally *not* cross-referenced against the IOC feeds —
   victim data isn't shaped for that kind of matching.
 - **Extended correlation scoring** — "Correlated IOCs" is now "Correlated / High-Confidence
   IOCs," ranked by total *signal count* rather than raw feed-count alone: appearing in 2+
@@ -116,11 +136,12 @@ calls from the browser at all.
 
 ```
 .github/workflows/
-  fetch-feeds.yml        # main cron: all 6 bulk feeds, every 30 min
+  fetch-feeds.yml        # main cron: all 6 bulk feeds + ransomware.live, every 30 min
   daily-intel.yml        # GreyNoise, geo/ASN, EPSS, InternetDB, AbuseIPDB, Spamhaus
-                          # DROP, ransomware.live, trend rollup — once daily
+                          # DROP, trend rollup — once daily
 assets/
   world-map.svg           # ISO-tagged world map for the choropleth (CC BY-SA 3.0)
+  country-centroids.json  # ISO alpha-2 -> [lat, lng] for globe markers (Google DSPL, CC BY 4.0)
 scripts/
   common.py                       # shared write_raw()/load_json() helpers
   lib/
@@ -210,9 +231,10 @@ index.html / styles.css / app.js  # the dashboard itself
   runs seem to have stopped.
 - **No client-side keys, ever.** All API keys live only in GitHub Actions secrets and
   are used server-side inside the workflow runs. The shipped frontend (`index.html`,
-  `app.js`, `styles.css`) makes no calls to any external threat-intel API.
+  `app.js`, `styles.css`) makes no calls to any external threat-intel API (only the
+  jsDelivr globe libraries described above).
 - **ransomware.live is rate-limited to 1 request/minute per endpoint.** `fetch_ransomware_live.py`
-  only calls one endpoint (`/recentvictims`) once per run, so this is trivially respected —
+  only calls one endpoint (`/recentvictims`) once per 30-minute run, so this is trivially respected —
   but if a second endpoint is ever added there, the calls need to be spaced 60+ seconds apart.
 - **Shodan InternetDB has no documented rate limit**, so `fetch_internetdb.py` self-imposes
   one anyway: 300 new/re-checked IPs per run with a ~200ms delay between requests, out of
@@ -240,5 +262,5 @@ index.html / styles.css / app.js  # the dashboard itself
   Spamhaus's Botnet Controller List becomes relevant later).
 - Cross-referencing ransomware.live victim data against the IOC feeds (different data
   shape, not a clean match — see Ransomware Activity above).
-- A second map layer for ransomware-victims-by-country (the ranked table covers it for
-  now; revisit if the existing choropleth should support a toggleable second dataset).
+- Plotting individual ransomware victims more precisely than country level (ransomware.live
+  only gives a country code, and often none).

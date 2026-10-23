@@ -59,6 +59,12 @@ jobs:
         run: python scripts/fetch_blocklistde.py
         continue-on-error: true
 
+      # Its own file, not part of latest.json. One request per run keeps
+      # well inside ransomware.live's 1 request/minute limit.
+      - name: Fetch ransomware.live recent victims
+        run: python scripts/fetch_ransomware_live.py
+        continue-on-error: true
+
       - name: Build snapshot
         run: python scripts/build_snapshot.py
 
@@ -66,7 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json
+          git add data/latest.json data/ransomware_victims.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
