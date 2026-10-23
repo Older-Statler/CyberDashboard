@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-10-23T10:52:22Z",
+  "generated_at": "2026-10-23T14:21:41Z",
   "victims": [
+    {
+      "group": "N0n",
+      "victim": "Horn of Africa Regional Environment Centre and Network",
+      "country": "ET",
+      "sector": "Other",
+      "published": "2026-10-23T09:23:08.588331+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SG9ybiBvZiBBZnJpY2EgUmVnaW9uYWwgRW52aXJvbm1lbnQgQ2VudHJlIGFuZCBOZXR3b3JrQE4wbg=="
+    },
+    {
+      "group": "N0n",
+      "victim": "PROTEX Confection",
+      "country": "TN",
+      "sector": "Manufacturing",
+      "published": "2026-10-23T07:55:08.528891+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UFJPVEVYIENvbmZlY3Rpb25ATjBu"
+    },
+    {
+      "group": "N0n",
+      "victim": "SunTechnics Fabrisolar AG",
+      "country": "CH",
+      "sector": "Energy & Utilities",
+      "published": "2026-10-23T07:54:36.121914+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U3VuVGVjaG5pY3MgRmFicmlzb2xhciBBR0BOMG4="
+    },
+    {
+      "group": "qilin",
+      "victim": "Coop Italia",
+      "country": "IT",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-23T07:20:02.119870+00:00",
+      "domain": "www.coop.it",
+      "url": "https://www.ransomware.live/id/Q29vcCBJdGFsaWFAcWlsaW4="
+    },
+    {
+      "group": "Wallstreet",
+      "victim": "Prism Medical Products",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-10-23T07:58:37.737942+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UHJpc20gTWVkaWNhbCBQcm9kdWN0c0BXYWxsc3RyZWV0"
+    },
+    {
+      "group": "emperador",
+      "victim": "B2Chat",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-10-23T07:52:10.595001+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QjJDaGF0QGVtcGVyYWRvcg=="
+    },
     {
       "group": "qilin",
       "victim": "SEPIVER",
@@ -846,60 +900,6 @@
       "published": "2026-10-19T21:39:49.714008+00:00",
       "domain": "www.toyota-canarias.es",
       "url": "https://www.ransomware.live/id/VG95b3RhIENhbmFyaWFzQHFpbGlu"
-    },
-    {
-      "group": "Redact",
-      "victim": "Baker Donelson",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-19T20:55:00.112730+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QmFrZXIgRG9uZWxzb25AUmVkYWN0"
-    },
-    {
-      "group": "N0n",
-      "victim": "Vormittag Associates Inc",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-10-19T20:53:43.606863+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Vm9ybWl0dGFnIEFzc29jaWF0ZXMgSW5jQE4wbg=="
-    },
-    {
-      "group": "Global Secret Group",
-      "victim": "Seminole Schools",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-10-19T20:52:13.758169+00:00",
-      "domain": "sps.k12.ok.us",
-      "url": "https://www.ransomware.live/id/U2VtaW5vbGUgU2Nob29sc0BHbG9iYWwgU2VjcmV0IEdyb3Vw"
-    },
-    {
-      "group": "lockbit5",
-      "victim": "chooseultimate.com",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-19T21:31:17.353307+00:00",
-      "domain": "chooseultimate.com",
-      "url": "https://www.ransomware.live/id/Y2hvb3NldWx0aW1hdGUuY29tQGxvY2tiaXQ1"
-    },
-    {
-      "group": "N0n",
-      "victim": "Froggys Fog",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-19T19:22:56.788259+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RnJvZ2d5cyBGb2dATjBu"
-    },
-    {
-      "group": "qilin",
-      "victim": "WalkingTree Technologies",
-      "country": "IN",
-      "sector": "Technology",
-      "published": "2026-10-19T15:59:19.631587+00:00",
-      "domain": "www.walkingtree.tech",
-      "url": "https://www.ransomware.live/id/V2Fsa2luZ1RyZWUgVGVjaG5vbG9naWVzQHFpbGlu"
     }
   ]
 }
