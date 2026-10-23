@@ -238,6 +238,7 @@
   async function loadData() {
     // Start the smaller files now so they download alongside latest.json
     // instead of waiting for it to finish.
+    let auxReady = false;
     const auxPromise = Promise.all([
       fetchJsonBestEffort("data/enrichment.json"),
       fetchJsonBestEffort("data/trends.json"),
@@ -248,7 +249,10 @@
       fetchJsonBestEffort("data/spamhaus_drop.json"),
       fetchJsonBestEffort("data/ransomware_victims.json"),
       loadWorldMapSvg(),
-    ]);
+    ]).then((results) => {
+      auxReady = true;
+      return results;
+    });
 
     try {
       state.snapshot = await fetchJsonWithProgress("data/latest.json", (received, total) => {
@@ -262,6 +266,14 @@
     }
 
     $("last-updated").textContent = "Processing…";
+
+    // Show the feed tables as soon as latest.json is in. Every enrichment
+    // panel/badge already hides itself when its data is missing, so the
+    // second render() below just fills them in.
+    if (!auxReady) {
+      render();
+      $("last-updated").textContent += " · loading enrichment…";
+    }
 
     const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims] = await auxPromise;
     state.enrichment = enrichment;
