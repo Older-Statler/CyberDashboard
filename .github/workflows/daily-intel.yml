@@ -59,6 +59,10 @@ jobs:
         run: python scripts/fetch_ransomware_live.py
         continue-on-error: true
 
+      - name: Build slim enrichment files for the dashboard
+        run: python scripts/build_enrichment_views.py
+        continue-on-error: true
+
       - name: Append today's trend counts
         run: python scripts/append_trend.py
         continue-on-error: true
@@ -69,6 +73,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/enrichment.json data/geo.json data/geo_summary.json data/trends.json \
                   data/epss.json data/internetdb.json data/abuseipdb.json \
+                  data/internetdb_view.json data/abuseipdb_view.json \
                   data/spamhaus_drop.json data/ransomware_victims.json
           if git diff --cached --quiet; then
             echo "No changes to commit."

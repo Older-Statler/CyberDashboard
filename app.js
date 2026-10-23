@@ -176,7 +176,7 @@
 
   async function fetchJsonBestEffort(path) {
     try {
-      const resp = await fetch(path, { cache: "no-store" });
+      const resp = await fetch(path, { cache: "no-cache" });
       if (!resp.ok) return null;
       return await resp.json();
     } catch (e) {
@@ -191,7 +191,7 @@
   // fetch if the server doesn't send Content-Length or streaming isn't
   // available (e.g. very old browsers).
   async function fetchJsonWithProgress(path, onProgress) {
-    const resp = await fetch(path, { cache: "no-store" });
+    const resp = await fetch(path, { cache: "no-cache" });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
     const totalStr = resp.headers.get("Content-Length");
@@ -229,6 +229,20 @@
   }
 
   async function loadData() {
+    // Start the smaller files now so they download alongside latest.json
+    // instead of waiting for it to finish.
+    const auxPromise = Promise.all([
+      fetchJsonBestEffort("data/enrichment.json"),
+      fetchJsonBestEffort("data/trends.json"),
+      fetchJsonBestEffort("data/geo_summary.json"),
+      fetchJsonBestEffort("data/epss.json"),
+      fetchJsonBestEffort("data/internetdb_view.json"),
+      fetchJsonBestEffort("data/abuseipdb_view.json"),
+      fetchJsonBestEffort("data/spamhaus_drop.json"),
+      fetchJsonBestEffort("data/ransomware_victims.json"),
+      loadWorldMapSvg(),
+    ]);
+
     try {
       state.snapshot = await fetchJsonWithProgress("data/latest.json", (received, total) => {
         const pct = Math.min(100, Math.round((received / total) * 100));
@@ -242,17 +256,7 @@
 
     $("last-updated").textContent = "Processing…";
 
-    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims] = await Promise.all([
-      fetchJsonBestEffort("data/enrichment.json"),
-      fetchJsonBestEffort("data/trends.json"),
-      fetchJsonBestEffort("data/geo_summary.json"),
-      fetchJsonBestEffort("data/epss.json"),
-      fetchJsonBestEffort("data/internetdb.json"),
-      fetchJsonBestEffort("data/abuseipdb.json"),
-      fetchJsonBestEffort("data/spamhaus_drop.json"),
-      fetchJsonBestEffort("data/ransomware_victims.json"),
-      loadWorldMapSvg(),
-    ]);
+    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims] = await auxPromise;
     state.enrichment = enrichment;
     state.trends = trends;
     state.geoSummary = geoSummary;

@@ -138,6 +138,7 @@ scripts/
   fetch_abuseipdb.py              # AbuseIPDB per-IP abuse reports, 14-day TTL cache
   fetch_spamhaus_drop.py          # Spamhaus DROP netblocks, full refresh daily
   fetch_ransomware_live.py        # ransomware.live recent victims
+  build_enrichment_views.py       # slim, current-IPs-only copies of the InternetDB/AbuseIPDB caches for the frontend
   append_trend.py                 # daily per-feed count rollup, capped at 90 entries
   build_snapshot.py               # merges data/raw/*.json -> data/latest.json
 data/
@@ -148,6 +149,8 @@ data/
   epss.json               # full refresh every run — one entry per KEV CVE
   internetdb.json         # IP -> exposure cache, 30-day TTL
   abuseipdb.json          # IP -> abuse report cache, 14-day TTL
+  internetdb_view.json    # what the frontend loads: current IPs + badge fields only
+  abuseipdb_view.json     #   (rebuilt daily by build_enrichment_views.py)
   spamhaus_drop.json      # full refresh every run — CIDR ranges + SBL IDs
   ransomware_victims.json # full refresh every run — ~100 most recent victims
   trends.json             # daily per-feed count rollup, capped at 90 entries
