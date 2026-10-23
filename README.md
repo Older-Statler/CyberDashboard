@@ -197,6 +197,10 @@ index.html / styles.css / app.js  # the dashboard itself
   `status: "error"` record rather than crashing. `build_snapshot.py` then carries forward
   the *previous* run's items for any feed that errored, so one broken feed never blanks
   the rest of the dashboard — it just shows a stale/error badge for that section.
+- **URLhaus is trimmed to the last 14 days.** The export covers ~30 days (~35k URLs) and
+  was most of `data/latest.json`'s download, so `fetch_urlhaus.py` keeps only URLs added in
+  the last `KEEP_DAYS` (14) days and drops `urlhaus_link`, which the frontend rebuilds from
+  the id. Table, search, correlation, watchlist and export all cover that 14-day window.
 - **Polling limits respected.** URLhaus's export regenerates every 5 minutes server-side;
   the 30-minute cron is comfortably within that and every other feed's stated minimum.
 - **Scheduled workflows auto-disable after 60 days of repo inactivity.** Since successful

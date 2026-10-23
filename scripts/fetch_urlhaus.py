@@ -3,9 +3,15 @@
 
 Requires URLHAUS_AUTH_KEY. The export is a CSV regenerated every 5
 minutes server-side; a 30-minute cron is well inside that limit.
+
+The export covers ~30 days (~35k URLs), which made URLhaus most of
+data/latest.json's download. Only the last KEEP_DAYS days are kept, and
+urlhaus_link is dropped because it's always https://urlhaus.abuse.ch/url/<id>/
+and the frontend rebuilds it from the id.
 """
 
 import csv
+import datetime
 import os
 import sys
 
@@ -15,6 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import write_raw
 
 FEED = "urlhaus"
+KEEP_DAYS = 14
 
 # abuse.ch comments out the header line too (e.g. "# id,dateadded,url,...")
 # so it gets stripped along with the real comment lines below, and can't be
@@ -43,13 +50,22 @@ def main():
 
         reader = csv.reader(lines, quotechar='"', delimiter=",")
 
+        cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=KEEP_DAYS)).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
         items = []
         skipped = 0
+        too_old = 0
         for row in reader:
             if len(row) != len(FIELDNAMES):
                 skipped += 1
                 continue
             record = dict(zip(FIELDNAMES, row))
+            # dateadded is "YYYY-MM-DD HH:MM:SS" UTC, so a string compare works.
+            # Rows with a blank date are kept rather than silently dropped.
+            if record.get("dateadded") and record["dateadded"] < cutoff:
+                too_old += 1
+                continue
             items.append(
                 {
                     "id": record.get("id"),
@@ -59,10 +75,13 @@ def main():
                     "last_online": record.get("last_online"),
                     "threat": record.get("threat"),
                     "tags": record.get("tags"),
-                    "urlhaus_link": record.get("urlhaus_link"),
                     "reporter": record.get("reporter"),
                 }
             )
+
+        if not items and too_old and not skipped:
+            write_raw(FEED, [], error=f"all {too_old} rows older than {KEEP_DAYS} days")
+            return
 
         if not items and skipped:
             # Every row failed the column-count check, which almost always

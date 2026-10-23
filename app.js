@@ -46,6 +46,13 @@
       .replace(/"/g, "&quot;");
   }
 
+  // The fetcher no longer stores urlhaus_link (it's always derivable from
+  // the id); older snapshots still carry it, so prefer it when present.
+  function urlhausLink(item) {
+    if (item.urlhaus_link) return item.urlhaus_link;
+    return item.id ? `https://urlhaus.abuse.ch/url/${encodeURIComponent(item.id)}/` : "";
+  }
+
   function fmtDate(iso) {
     if (!iso) return "&mdash;";
     const d = new Date(iso);
@@ -1301,8 +1308,9 @@
           label: "URL",
           sortValue: (i) => (i.url || "").toLowerCase(),
           render: (i) => {
-            const link = i.urlhaus_link
-              ? `<a href="${escapeHtml(i.urlhaus_link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(i.url)}</a>`
+            const href = urlhausLink(i);
+            const link = href
+              ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(i.url)}</a>`
               : escapeHtml(i.url);
             return `<span class="mono">${link}</span>`;
           },
@@ -1320,7 +1328,7 @@
       defaultSort: { key: "date_added", dir: "desc" },
       rowKey: (i) => i.url,
       csvHeaders: ["URL", "Status", "Threat", "Date Added", "Last Online", "Tags", "URLhaus Link", "Reporter"],
-      toCsvRow: (i) => [i.url, i.url_status, i.threat, i.date_added, i.last_online, i.tags, i.urlhaus_link, i.reporter],
+      toCsvRow: (i) => [i.url, i.url_status, i.threat, i.date_added, i.last_online, i.tags, urlhausLink(i), i.reporter],
     },
 
     malwarebazaar: {
