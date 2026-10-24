@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-10-24T16:54:17Z",
+  "generated_at": "2026-10-24T19:18:52Z",
   "victims": [
+    {
+      "group": "emperador",
+      "victim": "Frommann Energie GmbH",
+      "country": "DE",
+      "sector": "Energy & Utilities",
+      "published": "2026-10-24T14:52:41.604608+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RnJvbW1hbm4gRW5lcmdpZSBHbWJIQGVtcGVyYWRvcg=="
+    },
+    {
+      "group": "emperador",
+      "victim": "Phoenix S&S GmbH",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-10-24T14:53:32.619361+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGhvZW5peCBTJlMgR21iSEBlbXBlcmFkb3I="
+    },
+    {
+      "group": "qilin",
+      "victim": "SLTN Inter Access",
+      "country": "NL",
+      "sector": "Not Found",
+      "published": "2026-10-24T13:17:20.097554+00:00",
+      "domain": "www.sltn.nl",
+      "url": "https://www.ransomware.live/id/U0xUTiBJbnRlciBBY2Nlc3NAcWlsaW4="
+    },
     {
       "group": "krybit",
       "victim": "www.choicegoodwill.com",
@@ -873,33 +900,6 @@
       "published": "2026-10-21T20:52:16.151344+00:00",
       "domain": "olyortho.com",
       "url": "https://www.ransomware.live/id/b2x5b3J0aG8uY29tQEJyYWluQ2lwaGVy"
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "mvjllp.com",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-21T20:51:40.629098+00:00",
-      "domain": "mvjllp.com",
-      "url": "https://www.ransomware.live/id/bXZqbGxwLmNvbUBCcmFpbkNpcGhlcg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Hanjin Information Systems & Telecommunication Co., Ltd.",
-      "country": "KR",
-      "sector": "Technology",
-      "published": "2026-10-21T19:54:47.947489+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SGFuamluIEluZm9ybWF0aW9uIFN5c3RlbXMgJiBUZWxlY29tbXVuaWNhdGlvbiBDby4sIEx0ZC5ATjBu"
-    },
-    {
-      "group": "interlock",
-      "victim": "Coastal Alabama Community College",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-10-21T19:29:49.091231+00:00",
-      "domain": "coastalalabama.edu",
-      "url": "https://www.ransomware.live/id/Q29hc3RhbCBBbGFiYW1hIENvbW11bml0eSBDb2xsZWdlQGludGVybG9jaw=="
     }
   ]
 }
