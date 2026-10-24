@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-24T04:55:23Z",
+  "generated_at": "2026-10-24T09:21:05Z",
   "victims": [
+    {
+      "group": "qilin",
+      "victim": "Commonwealth Community Bank",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-10-24T03:30:27.396662+00:00",
+      "domain": "www.cwcbankhb.com",
+      "url": "https://www.ransomware.live/id/Q29tbW9ud2VhbHRoIENvbW11bml0eSBCYW5rQHFpbGlu"
+    },
+    {
+      "group": "Deadlock",
+      "victim": "Trinity Custom Homes",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-10-24T02:53:03.322742+00:00",
+      "domain": "trinitycustom.com",
+      "url": "https://www.ransomware.live/id/VHJpbml0eSBDdXN0b20gSG9tZXNARGVhZGxvY2s="
+    },
     {
       "group": "Panzer",
       "victim": "Family Planning Association of Pakistan",
@@ -882,24 +900,6 @@
       "published": "2026-10-21T04:25:04.144451+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/WHlsYW5waWNrc0BOMG4="
-    },
-    {
-      "group": "everest",
-      "victim": "Lanham Associates",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-10-21T13:27:34.419618+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TGFuaGFtIEFzc29jaWF0ZXNAZXZlcmVzdA=="
-    },
-    {
-      "group": "bravox",
-      "victim": "GSE-M Technology Sdn. Bhd.",
-      "country": "MY",
-      "sector": "Technology",
-      "published": "2026-10-21T02:12:33.335286+00:00",
-      "domain": "www.gse.com.my",
-      "url": "https://www.ransomware.live/id/R1NFLU0gVGVjaG5vbG9neSBTZG4uIEJoZC5AYnJhdm94"
     }
   ]
 }
