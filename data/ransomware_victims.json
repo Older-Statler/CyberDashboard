@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-24T19:18:52Z",
+  "generated_at": "2026-10-24T21:46:47Z",
   "victims": [
+    {
+      "group": "qilin",
+      "victim": "Castle Howard Estate",
+      "country": "GB",
+      "sector": "Hospitality",
+      "published": "2026-10-24T16:34:49.360176+00:00",
+      "domain": "www.castlehoward.co.uk",
+      "url": "https://www.ransomware.live/id/Q2FzdGxlIEhvd2FyZCBFc3RhdGVAcWlsaW4="
+    },
+    {
+      "group": "lamashtu",
+      "victim": "Vins Viallet",
+      "country": "FR",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-24T16:30:40.843615+00:00",
+      "domain": "vins-viallet.com",
+      "url": "https://www.ransomware.live/id/VmlucyBWaWFsbGV0QGxhbWFzaHR1"
+    },
     {
       "group": "emperador",
       "victim": "Frommann Energie GmbH",
@@ -882,24 +900,6 @@
       "published": "2026-10-21T20:53:28.795043+00:00",
       "domain": "srsnodgrass.com",
       "url": "https://www.ransomware.live/id/c3Jzbm9kZ3Jhc3MuY29tQEJyYWluQ2lwaGVy"
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "prosomnus.com",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-21T20:52:52.404024+00:00",
-      "domain": "prosomnus.com",
-      "url": "https://www.ransomware.live/id/cHJvc29tbnVzLmNvbUBCcmFpbkNpcGhlcg=="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "olyortho.com",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-21T20:52:16.151344+00:00",
-      "domain": "olyortho.com",
-      "url": "https://www.ransomware.live/id/b2x5b3J0aG8uY29tQEJyYWluQ2lwaGVy"
     }
   ]
 }
