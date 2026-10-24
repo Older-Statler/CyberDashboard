@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-24T00:24:23Z",
+  "generated_at": "2026-10-24T04:55:23Z",
   "victims": [
+    {
+      "group": "Panzer",
+      "victim": "Family Planning Association of Pakistan",
+      "country": "PK",
+      "sector": "Healthcare",
+      "published": "2026-10-24T00:24:57.173779+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RmFtaWx5IFBsYW5uaW5nIEFzc29jaWF0aW9uIG9mIFBha2lzdGFuQFBhbnplcg=="
+    },
+    {
+      "group": "Deadlock",
+      "victim": "Hensel Elektrik",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-10-23T21:50:47.029484+00:00",
+      "domain": "www.hensel-electric.de/tr-tr",
+      "url": "https://www.ransomware.live/id/SGVuc2VsIEVsZWt0cmlrQERlYWRsb2Nr"
+    },
     {
       "group": "rhysida",
       "victim": "Sanders Law Group",
@@ -882,24 +900,6 @@
       "published": "2026-10-21T02:12:33.335286+00:00",
       "domain": "www.gse.com.my",
       "url": "https://www.ransomware.live/id/R1NFLU0gVGVjaG5vbG9neSBTZG4uIEJoZC5AYnJhdm94"
-    },
-    {
-      "group": "everest",
-      "victim": "PLD Group",
-      "country": "",
-      "sector": "Other",
-      "published": "2026-10-21T13:28:57.039323+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UExEIEdyb3VwQGV2ZXJlc3Q="
-    },
-    {
-      "group": "everest",
-      "victim": "Lindauer Dornier",
-      "country": "DE",
-      "sector": "Manufacturing",
-      "published": "2026-10-21T13:28:16.825573+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TGluZGF1ZXIgRG9ybmllckBldmVyZXN0"
     }
   ]
 }
