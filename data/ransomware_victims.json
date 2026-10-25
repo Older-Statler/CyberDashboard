@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-10-25T21:06:56Z",
+  "generated_at": "2026-10-25T23:28:16Z",
   "victims": [
+    {
+      "group": "qilin",
+      "victim": "White & Case",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-25T17:18:17.976366+00:00",
+      "domain": "www.whitecase.com",
+      "url": "https://www.ransomware.live/id/V2hpdGUgJiBDYXNlQHFpbGlu"
+    },
     {
       "group": "Whitearmor",
       "victim": "Partido Liberal",
@@ -36,6 +45,15 @@
       "published": "2026-10-25T14:52:33.011354+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/QS1STVNAZW1wZXJhZG9y"
+    },
+    {
+      "group": "Panzer",
+      "victim": "Yodingenierie",
+      "country": "BJ",
+      "sector": "Professional Services",
+      "published": "2026-10-25T17:55:57.455931+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/WW9kaW5nZW5pZXJpZUBQYW56ZXI="
     },
     {
       "group": "HYFLOCK",
@@ -135,6 +153,15 @@
       "published": "2026-10-25T00:31:56.643577+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TmV3Y29tZXIgQ3JlbWF0aW9ucywgRnVuZXJhbHMgJiBSZWNlcHRpb25zQGFudWJpcw=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Hossner-Textil GmbH",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-10-25T17:17:40.651485+00:00",
+      "domain": "www.hossner-textile.de",
+      "url": "https://www.ransomware.live/id/SG9zc25lci1UZXh0aWwgR21iSEBxaWxpbg=="
     },
     {
       "group": "qilin",
@@ -873,33 +900,6 @@
       "published": "2026-10-22T07:26:49.292466+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTA1QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #104",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-22T07:26:14.546647+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTA0QE4wbg=="
-    },
-    {
-      "group": "spacebears",
-      "victim": "SGLA (Schwartz, Giannini, Lantsberger & Adamson)",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-22T07:02:23.611702+00:00",
-      "domain": "www.sglacpas.com",
-      "url": "https://www.ransomware.live/id/U0dMQSAoU2Nod2FydHosIEdpYW5uaW5pLCBMYW50c2JlcmdlciAmIEFkYW1zb24pQHNwYWNlYmVhcnM="
-    },
-    {
-      "group": "lamashtu",
-      "victim": "Hecker Holzsystembau",
-      "country": "DE",
-      "sector": "Manufacturing",
-      "published": "2026-10-22T05:09:06.343259+00:00",
-      "domain": "hecker-hsb.de",
-      "url": "https://www.ransomware.live/id/SGVja2VyIEhvbHpzeXN0ZW1iYXVAbGFtYXNodHU="
     }
   ]
 }
