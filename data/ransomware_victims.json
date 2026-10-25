@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-10-25T05:07:47Z",
+  "generated_at": "2026-10-25T10:02:00Z",
   "victims": [
+    {
+      "group": "emperador",
+      "victim": "AB InBev",
+      "country": "BE",
+      "sector": "Agriculture and Food Production",
+      "published": "2026-10-25T03:22:10.246426+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QUIgSW5CZXZAZW1wZXJhZG9y"
+    },
     {
       "group": "anubis",
       "victim": "Newcomer Cremations, Funerals & Receptions",
@@ -9,6 +18,15 @@
       "published": "2026-10-25T00:31:56.643577+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TmV3Y29tZXIgQ3JlbWF0aW9ucywgRnVuZXJhbHMgJiBSZWNlcHRpb25zQGFudWJpcw=="
+    },
+    {
+      "group": "Whitearmor",
+      "victim": "Hisense",
+      "country": "CN",
+      "sector": "Technology",
+      "published": "2026-10-25T01:24:13.562658+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SGlzZW5zZUBXaGl0ZWFybW9y"
     },
     {
       "group": "qilin",
@@ -882,24 +900,6 @@
       "published": "2026-10-21T20:55:23.367768+00:00",
       "domain": "oflaherty-law.com",
       "url": "https://www.ransomware.live/id/b2ZsYWhlcnR5LWxhdy5jb21AQnJhaW5DaXBoZXI="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "clinicaromero.com",
-      "country": "AR",
-      "sector": "Healthcare",
-      "published": "2026-10-21T20:54:47.561918+00:00",
-      "domain": "clinicaromero.com",
-      "url": "https://www.ransomware.live/id/Y2xpbmljYXJvbWVyby5jb21AQnJhaW5DaXBoZXI="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "sodali.com",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-21T20:54:08.535201+00:00",
-      "domain": "sodali.com",
-      "url": "https://www.ransomware.live/id/c29kYWxpLmNvbUBCcmFpbkNpcGhlcg=="
     }
   ]
 }
