@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-10-25T14:30:38Z",
+  "generated_at": "2026-10-25T18:14:42Z",
   "victims": [
+    {
+      "group": "HYFLOCK",
+      "victim": "Aesthetic Dental Designs, P.A",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-10-25T11:53:17.559073+00:00",
+      "domain": "dentalartsofatlantis.com",
+      "url": "https://www.ransomware.live/id/QWVzdGhldGljIERlbnRhbCBEZXNpZ25zLCBQLkFASFlGTE9DSw=="
+    },
     {
       "group": "emperador",
       "victim": "AyT COMPUTERS SRL",
@@ -90,6 +99,15 @@
       "published": "2026-10-25T00:31:56.643577+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TmV3Y29tZXIgQ3JlbWF0aW9ucywgRnVuZXJhbHMgJiBSZWNlcHRpb25zQGFudWJpcw=="
+    },
+    {
+      "group": "qilin",
+      "victim": "ECOM",
+      "country": "CH",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-25T10:35:02.202543+00:00",
+      "domain": "www.ecomgroup.com",
+      "url": "https://www.ransomware.live/id/RUNPTUBxaWxpbg=="
     },
     {
       "group": "Whitearmor",
@@ -882,24 +900,6 @@
       "published": "2026-10-22T16:00:00.074615+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TWVkaWVud2Vya3N0YXR0QGFraXJh"
-    },
-    {
-      "group": "akira",
-      "victim": "Annapath",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-22T15:59:40.386628+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QW5uYXBhdGhAYWtpcmE="
-    },
-    {
-      "group": "N0n",
-      "victim": "Heritage Senior Living",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-21T23:56:37.985836+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SGVyaXRhZ2UgU2VuaW9yIExpdmluZ0BOMG4="
     }
   ]
 }
