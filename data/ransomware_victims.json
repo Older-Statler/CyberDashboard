@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-10-25T18:14:42Z",
+  "generated_at": "2026-10-25T21:06:56Z",
   "victims": [
+    {
+      "group": "Whitearmor",
+      "victim": "Partido Liberal",
+      "country": "AR",
+      "sector": "Government & Defense",
+      "published": "2026-10-25T16:56:33.851704+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGFydGlkbyBMaWJlcmFsQFdoaXRlYXJtb3I="
+    },
+    {
+      "group": "Falcon",
+      "victim": "Weitz & Luxenberg",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-25T15:52:01.178008+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/V2VpdHogJiBMdXhlbmJlcmdARmFsY29u"
+    },
+    {
+      "group": "Falcon",
+      "victim": "Astrana Health",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-10-25T14:53:02.969183+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QXN0cmFuYSBIZWFsdGhARmFsY29u"
+    },
+    {
+      "group": "emperador",
+      "victim": "A-RMS",
+      "country": "",
+      "sector": "Government & Defense",
+      "published": "2026-10-25T14:52:33.011354+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QS1STVNAZW1wZXJhZG9y"
+    },
     {
       "group": "HYFLOCK",
       "victim": "Aesthetic Dental Designs, P.A",
@@ -99,6 +135,15 @@
       "published": "2026-10-25T00:31:56.643577+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TmV3Y29tZXIgQ3JlbWF0aW9ucywgRnVuZXJhbHMgJiBSZWNlcHRpb25zQGFudWJpcw=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Ooredoo Myanmar",
+      "country": "MM",
+      "sector": "Technology",
+      "published": "2026-10-25T16:20:30.173290+00:00",
+      "domain": "www.u9.com.mm",
+      "url": "https://www.ransomware.live/id/T29yZWRvbyBNeWFubWFyQHFpbGlu"
     },
     {
       "group": "qilin",
@@ -855,51 +900,6 @@
       "published": "2026-10-22T05:09:06.343259+00:00",
       "domain": "hecker-hsb.de",
       "url": "https://www.ransomware.live/id/SGVja2VyIEhvbHpzeXN0ZW1iYXVAbGFtYXNodHU="
-    },
-    {
-      "group": "everest",
-      "victim": "Linebarger Goggan Blair & Sampson",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-22T03:36:22.187070+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TGluZWJhcmdlciBHb2dnYW4gQmxhaXIgJiBTYW1wc29uQGV2ZXJlc3Q="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "K.r.a. ...s",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-22T01:30:31.743420+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Sy5yLmEuIC4uLnNAU2lsZW50UmFuc29tR3JvdXA="
-    },
-    {
-      "group": "lamashtu",
-      "victim": "Gräfliches Hofbrauhaus Freising",
-      "country": "DE",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-10-22T00:45:12.522650+00:00",
-      "domain": "hofbrauhaus-freising.de",
-      "url": "https://www.ransomware.live/id/R3LDpGZsaWNoZXMgSG9mYnJhdWhhdXMgRnJlaXNpbmdAbGFtYXNodHU="
-    },
-    {
-      "group": "lamashtu",
-      "victim": "VERGI Muenster",
-      "country": "DE",
-      "sector": "Energy & Utilities",
-      "published": "2026-10-22T00:44:36.019322+00:00",
-      "domain": "vergi-muenster.de",
-      "url": "https://www.ransomware.live/id/VkVSR0kgTXVlbnN0ZXJAbGFtYXNodHU="
-    },
-    {
-      "group": "akira",
-      "victim": "Medienwerkstatt",
-      "country": "DE",
-      "sector": "Education",
-      "published": "2026-10-22T16:00:00.074615+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TWVkaWVud2Vya3N0YXR0QGFraXJh"
     }
   ]
 }
