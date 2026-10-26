@@ -235,7 +235,10 @@
         $("last-updated").textContent = `Loading data… ${pct}% (${(total / 1024 / 1024).toFixed(1)} MB)`;
       });
     } catch (e) {
-      $("last-updated").textContent = "Failed to load data/latest.json";
+      // On an auto-refresh, the previous data is still on screen; say so.
+      $("last-updated").textContent = state.snapshot
+        ? `Refresh failed · showing data from ${relativeTime(state.snapshot.generated_at)}`
+        : "Failed to load data/latest.json";
       console.error("Failed to load snapshot:", e);
       return;
     }
@@ -262,6 +265,33 @@
     state.ukNews = ukNews;
 
     render();
+  }
+
+  // ---------- Auto-refresh ----------
+
+  // Re-fetch every data file and re-render in place (not a browser reload),
+  // so search boxes, the selected tab, scroll position and the globe survive.
+  // Matches the 30-min fetch workflow. Hidden tabs skip the download and
+  // catch up as soon as they're visible again.
+  const REFRESH_MINUTES = 30;
+  let lastLoadAt = Date.now();
+  let refreshing = false;
+
+  async function refreshIfDue() {
+    if (refreshing || document.hidden) return;
+    if (Date.now() - lastLoadAt < REFRESH_MINUTES * 60000) return;
+    refreshing = true;
+    try {
+      await loadData();
+    } finally {
+      lastLoadAt = Date.now();
+      refreshing = false;
+    }
+  }
+
+  function initAutoRefresh() {
+    setInterval(refreshIfDue, 60000);
+    document.addEventListener("visibilitychange", refreshIfDue);
   }
 
   // ---------- KPIs / header ----------
@@ -2029,5 +2059,6 @@
     wireExportButtons();
     initWatchlist();
     loadData();
+    initAutoRefresh();
   });
 })();
