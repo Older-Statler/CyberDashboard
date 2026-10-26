@@ -281,16 +281,32 @@
     if (refreshing || document.hidden) return;
     if (Date.now() - lastLoadAt < REFRESH_MINUTES * 60000) return;
     refreshing = true;
+    renderRefreshCountdown();
     try {
       await loadData();
     } finally {
       lastLoadAt = Date.now();
       refreshing = false;
+      renderRefreshCountdown();
     }
   }
 
+  function renderRefreshCountdown() {
+    const el = $("refresh-countdown");
+    if (!el) return;
+    el.classList.toggle("is-busy", refreshing);
+    if (refreshing) {
+      el.textContent = "Refreshing…";
+      return;
+    }
+    const left = Math.max(0, Math.ceil((lastLoadAt + REFRESH_MINUTES * 60000 - Date.now()) / 1000));
+    const mm = String(Math.floor(left / 60)).padStart(2, "0");
+    const ss = String(left % 60).padStart(2, "0");
+    el.textContent = `Next refresh ${mm}:${ss}`;
+  }
+
   function initAutoRefresh() {
-    setInterval(refreshIfDue, 60000);
+    setInterval(refreshIfDue, 1000);
     document.addEventListener("visibilitychange", refreshIfDue);
   }
 
@@ -1544,6 +1560,7 @@
     if (!el) return;
     const tick = () => {
       el.textContent = `${new Date().toISOString().slice(11, 19)} UTC`;
+      renderRefreshCountdown();
     };
     tick();
     setInterval(tick, 1000);

@@ -236,6 +236,15 @@ code,
   color: var(--text-muted);
 }
 
+.refresh-countdown {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.refresh-countdown.is-busy {
+  color: var(--accent);
+}
+
 .utc-clock {
   color: var(--accent);
   letter-spacing: 0.08em;
