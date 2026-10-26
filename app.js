@@ -26,6 +26,9 @@
     dropRangesParsed: [],
     dropCache: new Map(), // ip -> matching DROP range (or null), reset when ranges change
     ransomwareVictims: null,
+    ukNews: null,
+    newsQuery: "",
+    newsUkOnly: false,
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
     correlated: [],
     triage: { ransomwareKev: [], epssCriticalKev: [], maliciousIps: [], topCorrelated: [] },
@@ -219,6 +222,7 @@
       fetchJsonBestEffort("data/abuseipdb_view.json"),
       fetchJsonBestEffort("data/spamhaus_drop.json"),
       fetchJsonBestEffort("data/ransomware_victims.json"),
+      fetchJsonBestEffort("data/uk_news.json"),
       loadWorldMapSvg(),
     ]).then((results) => {
       auxReady = true;
@@ -246,7 +250,7 @@
       $("last-updated").textContent += " · loading enrichment…";
     }
 
-    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims] = await auxPromise;
+    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims, ukNews] = await auxPromise;
     state.enrichment = enrichment;
     state.trends = trends;
     state.geoSummary = geoSummary;
@@ -255,6 +259,7 @@
     state.abuseipdb = abuseipdb;
     state.spamhausDrop = spamhausDrop;
     state.ransomwareVictims = ransomwareVictims;
+    state.ukNews = ukNews;
 
     render();
   }
@@ -1238,7 +1243,7 @@
   }
 
   function wireSearchBoxes() {
-    document.querySelectorAll(".search-box").forEach((input) => {
+    document.querySelectorAll(".search-box[data-feed]").forEach((input) => {
       input.addEventListener("input", () => {
         const feed = input.getAttribute("data-feed");
         if (!state.tableState[feed]) state.tableState[feed] = { sortKey: null, sortDir: "asc", query: "" };
@@ -1497,6 +1502,7 @@
     state.rw = computeRansomwareWindow();
     renderRansomwarePanels();
     updateGlobe();
+    renderUkNews();
     renderTabCounts();
     syncTabs();
   }
@@ -1596,6 +1602,84 @@
     });
     const n = (state.correlated || []).length;
     $("tabcount-correlated").textContent = n ? compactNumber(n) : "";
+  }
+
+  // ---------- UK cyber security news (last 48h) ----------
+
+  const NEWS_WINDOW_HOURS = 48;
+
+  // The fetcher already trims to 48h, but re-check against the browser's
+  // clock so a stale data file never shows week-old headlines.
+  function ukNewsItems() {
+    const cutoff = Date.now() - NEWS_WINDOW_HOURS * 3600 * 1000;
+    return (state.ukNews?.items || []).filter((i) => {
+      const t = new Date(i.published).getTime();
+      return !isNaN(t) && t >= cutoff;
+    });
+  }
+
+  function renderUkNews() {
+    const section = $("section-uk_news");
+    if (!section) return;
+    // No data file yet: keep the tab hidden rather than show an empty panel.
+    section.hidden = !state.ukNews;
+    if (!state.ukNews) return;
+
+    const all = ukNewsItems();
+    const q = state.newsQuery.trim().toLowerCase();
+    const shown = all.filter(
+      (i) =>
+        (!state.newsUkOnly || i.uk_focus) &&
+        (!q || `${i.title} ${i.summary} ${i.source}`.toLowerCase().includes(q))
+    );
+
+    const sources = state.ukNews.sources || [];
+    const failed = sources.filter((s) => s.status !== "ok").map((s) => s.name);
+    const status = $("status-uk_news");
+    status.className = `feed-status ${failed.length ? "pending" : "ok"}`;
+    status.textContent = failed.length ? `${failed.length} source${failed.length === 1 ? "" : "s"} down` : "ok";
+    status.title = failed.length ? `Failed: ${failed.join(", ")}` : "";
+
+    const gen = state.ukNews.generated_at;
+    $("news-meta").textContent =
+      `${shown.length} of ${all.length} headlines · ${sources.length} UK outlets · ` +
+      `synced ${gen ? relativeTime(gen) : "unknown"}`;
+
+    $("news-list").innerHTML = shown
+      .map((i) => {
+        const safeLink = /^https?:\/\//i.test(i.link || "") ? i.link : "#";
+        return `<li class="news-item">
+          <div class="news-line">
+            <span class="news-source">${escapeHtml(i.source)}</span>
+            ${i.uk_focus ? `<span class="news-uk" title="Story mentions the UK">UK</span>` : ""}
+            <time datetime="${escapeHtml(i.published)}" title="${escapeHtml(i.published)}">${escapeHtml(relativeTime(i.published))}</time>
+          </div>
+          <a class="news-title" href="${escapeHtml(safeLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(i.title)}</a>
+          ${i.summary ? `<p class="news-summary">${escapeHtml(i.summary)}</p>` : ""}
+        </li>`;
+      })
+      .join("");
+    const empty = $("news-empty");
+    empty.hidden = shown.length > 0;
+    empty.textContent = all.length ? "No headlines match the current filter." : `No headlines in the last ${NEWS_WINDOW_HOURS} hours.`;
+
+    const count = $("tabcount-uk_news");
+    if (count) count.textContent = all.length ? String(all.length) : "";
+  }
+
+  function initUkNews() {
+    const search = $("news-search");
+    const ukOnly = $("news-uk-only");
+    if (search)
+      search.addEventListener("input", () => {
+        state.newsQuery = search.value;
+        renderUkNews();
+      });
+    if (ukOnly)
+      ukOnly.addEventListener("change", () => {
+        state.newsUkOnly = ukOnly.checked;
+        renderUkNews();
+      });
   }
 
   // ---------- Ransomware: last 72h (globe + side panels) ----------
@@ -1940,6 +2024,7 @@
     initTabs();
     initRansomwarePanels();
     initGlobe();
+    initUkNews();
     wireSearchBoxes();
     wireExportButtons();
     initWatchlist();

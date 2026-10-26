@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-10-26T08:02:04Z",
+  "window_hours": 48,
+  "sources": [
+    {
+      "name": "NCSC",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "The Register",
+      "status": "ok",
+      "count": 2
+    },
+    {
+      "name": "Computer Weekly",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "Infosecurity Magazine",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "The Guardian",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "name": "ITPro",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "Graham Cluley",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "BBC News",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "Tech Monitor",
+      "status": "ok",
+      "count": 0
+    }
+  ],
+  "items": [
+    {
+      "title": "Work to protect DNS from quantum decryption attacks is speeding up",
+      "link": "https://www.theregister.com/networks/2026/10/26/work-to-protect-dns-from-quantum-decryption-attacks-is-speeding-up/5305274",
+      "source": "The Register",
+      "published": "2026-10-26T04:08:23Z",
+      "summary": "PLUS: Regional internet registry reform nears; Trustworthy-sounding domains attract scammers",
+      "uk_focus": false
+    },
+    {
+      "title": "Cookie theft: how fraudsters get the digital key to your accounts",
+      "link": "https://www.theguardian.com/money/2026/oct/25/cookie-theft-how-fraudsters-get-the-digital-key-to-your-accounts",
+      "source": "The Guardian",
+      "published": "2026-10-25T07:00:56Z",
+      "summary": "‘Session cookies’ are a primary target for hackers letting them hijack and use your accounts You’ve had a busy morning of life admin, logging into various accounts to check balances and make payments. At the end of a productive few hours you close your laptop and move on to your…",
+      "uk_focus": false
+    },
+    {
+      "title": "Autonomous attack agent in 'Skynet mode' hijacks other models to carry out its evil deeds",
+      "link": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215",
+      "source": "The Register",
+      "published": "2026-10-24T13:02:00Z",
+      "summary": "Designed to carry out 100,000 steps without human approval",
+      "uk_focus": false
+    }
+  ]
+}

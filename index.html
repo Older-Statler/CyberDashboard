@@ -134,6 +134,7 @@
         <button type="button" role="tab" class="deck-tab" data-tab="section-correlated">Correlated <span class="tab-count" id="tabcount-correlated"></span></button>
         <button type="button" role="tab" class="deck-tab" data-tab="section-cisa_kev">CISA KEV <span class="tab-count" id="tabcount-cisa_kev"></span></button>
         <button type="button" role="tab" class="deck-tab" data-tab="section-ransomware_victims">Ransomware <span class="tab-count" id="tabcount-ransomware_victims"></span></button>
+        <button type="button" role="tab" class="deck-tab" data-tab="section-uk_news">UK News <span class="tab-count" id="tabcount-uk_news"></span></button>
         <button type="button" role="tab" class="deck-tab" data-tab="section-threatfox">ThreatFox <span class="tab-count" id="tabcount-threatfox"></span></button>
         <button type="button" role="tab" class="deck-tab" data-tab="section-urlhaus">URLhaus <span class="tab-count" id="tabcount-urlhaus"></span></button>
         <button type="button" role="tab" class="deck-tab" data-tab="section-malwarebazaar">MalwareBazaar <span class="tab-count" id="tabcount-malwarebazaar"></span></button>
@@ -188,6 +189,21 @@
         </div>
         <div class="table-wrap"><table id="table-ransomware_victims"><thead></thead><tbody></tbody></table></div>
         <p class="empty-note" id="empty-ransomware_victims" hidden>No data yet.</p>
+      </section>
+
+      <!-- UK cyber security headlines (data/uk_news.json, last 48h). renderUkNews
+           keeps this hidden, along with its tab, until that file loads. -->
+      <section class="feed-section deck-panel" id="section-uk_news" role="tabpanel" hidden>
+        <div class="feed-header">
+          <h2>UK Cyber Security News <span class="feed-status" id="status-uk_news"></span></h2>
+          <div class="feed-header-controls">
+            <input type="search" class="search-box" id="news-search" placeholder="Search headlines&hellip;" />
+            <label class="news-toggle"><input type="checkbox" id="news-uk-only" /> UK stories only</label>
+          </div>
+        </div>
+        <p class="news-meta" id="news-meta"></p>
+        <ol class="news-list" id="news-list"></ol>
+        <p class="empty-note" id="news-empty" hidden>No headlines in the last 48 hours.</p>
       </section>
 
       <section class="feed-section deck-panel" id="section-threatfox" role="tabpanel">

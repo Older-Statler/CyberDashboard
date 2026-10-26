@@ -12,7 +12,8 @@ GitHub Actions (cron, every 30 min)
    -> scripts/fetch_*.py pull each feed (using repo secrets for auth)
    -> scripts/build_snapshot.py merges them into data/latest.json
    -> scripts/fetch_ransomware_live.py refreshes data/ransomware_victims.json
-   -> commits both if they changed
+   -> scripts/fetch_uk_news.py refreshes data/uk_news.json (UK cyber headlines, last 48h)
+   -> commits them if they changed
    -> GitHub Pages serves the repo, including data/latest.json
 
 Browser
@@ -116,6 +117,13 @@ A full-width, dark "ops center" layout:
 - **Spamhaus DROP** — criminal-controlled netblocks, one level up from individual IPs. Any
   IP inside a DROP range gets a "netblock flagged" badge, plus its own KPI tile. Reuses the
   same CIDR-matching helper originally built for the watchlist.
+- **UK News** — a data-deck tab of cyber security headlines from the last 48 hours, pulled
+  from the public RSS feeds of UK outlets (NCSC, The Register, Computer Weekly, Infosecurity
+  Magazine, The Guardian, ITPro, Graham Cluley, plus security stories from BBC News and Tech
+  Monitor). Each headline links to the article. A "UK stories only" toggle narrows it to
+  stories that mention the UK (keyword match). The page re-applies the 48h cut-off against
+  the browser clock, so stale data never shows old headlines. Add or drop outlets in
+  `SOURCES` in `fetch_uk_news.py`.
 - **Ransomware Activity** — a new section listing recent ransomware.live victim
   disclosures (group, victim, sector, country, date) — the organizational complement to
   the ransomware-tagged KEV entries: one says "this vulnerability is used by ransomware
@@ -159,6 +167,7 @@ scripts/
   fetch_abuseipdb.py              # AbuseIPDB per-IP abuse reports, 14-day TTL cache
   fetch_spamhaus_drop.py          # Spamhaus DROP netblocks, full refresh daily
   fetch_ransomware_live.py        # ransomware.live recent victims
+  fetch_uk_news.py                # UK cyber security headlines (RSS), last 48h
   build_enrichment_views.py       # slim, current-IPs-only copies of the InternetDB/AbuseIPDB caches for the frontend
   append_trend.py                 # daily per-feed count rollup, capped at 90 entries
   build_snapshot.py               # merges data/raw/*.json -> data/latest.json
