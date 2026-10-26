@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T08:07:36Z",
+  "generated_at": "2026-10-26T14:57:27Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 2
+      "count": 4
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 0
+      "count": 4
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Graham Cluley",
@@ -50,6 +50,86 @@
   ],
   "items": [
     {
+      "title": "Linux Flaws Exposed Before Fixes as Root Exploit Goes Public",
+      "link": "https://www.infosecurity-magazine.com/news/linux-flaws-exposed-before-fixes/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-26T14:00:00Z",
+      "summary": "Six Linux flaws were made public, including one with a working root exploit and no merged fix",
+      "uk_focus": false
+    },
+    {
+      "title": "We shouldn't be surprised about the PHPocalypse, as the internet is built on sticks and glue",
+      "link": "https://www.theregister.com/security/2026/10/26/we-shouldnt-be-surprised-about-the-phpocalypse-as-the-internet-is-built-on-sticks-and-glue/5305186",
+      "source": "The Register",
+      "published": "2026-10-26T13:14:00Z",
+      "summary": "What better way to celebrate Cybersecurity Awareness Month than warning that three-quarters of the web is about to be set on fire?",
+      "uk_focus": false
+    },
+    {
+      "title": "Microsoft Issues Emergency Patch Update for Critical .NET Buffer Overflow Flaw",
+      "link": "https://www.infosecurity-magazine.com/news/microsoft-patch-update-net-flaw/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-26T12:45:00Z",
+      "summary": "Microsoft’s updates address two newly disclosed vulnerabilities in the .NET developer platform, as well as flaws not fully addressed in an earlier release",
+      "uk_focus": false
+    },
+    {
+      "title": "UK Biobank back online soon, months after someone tried to sell 500k people's data on Alibaba",
+      "link": "https://www.theregister.com/security/2026/10/26/uk-biobank-back-online-soon-months-after-someone-tried-to-sell-500k-peoples-data-on-alibaba/5305363",
+      "source": "The Register",
+      "published": "2026-10-26T12:38:00Z",
+      "summary": "Charity confirms slew of security improvements as it waits for UK.gov's go-ahead",
+      "uk_focus": true
+    },
+    {
+      "title": "Britain bets big on AI to defend against the threats AI is helping create",
+      "link": "https://www.theregister.com/security/2026/10/26/britain-bets-big-on-ai-to-defend-against-the-threats-ai-is-helping-create/5305319",
+      "source": "The Register",
+      "published": "2026-10-26T11:00:00Z",
+      "summary": "Whitehall wants agents guarding critical infrastructure as part of a wider £600M spending spree",
+      "uk_focus": true
+    },
+    {
+      "title": "Blue Initiative Offers Maritime Sector Dedicated Vulnerability Database",
+      "link": "https://www.infosecurity-magazine.com/news/blue-initiative-maritime/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-26T10:15:00Z",
+      "summary": "Blue Initiative launches a new vulnerability database for IT and OT CVEs relevant to the maritime industry",
+      "uk_focus": false
+    },
+    {
+      "title": "Thales Imperva Cloud WAF",
+      "link": "https://www.itpro.com/security/unified-threat-management/thales-imperva-cloud-waf-review-keeping-the-bad-actors-out-of-your-corporate-websites",
+      "source": "ITPro",
+      "published": "2026-10-26T09:57:41Z",
+      "summary": "Sophisticated web application firewall that's a breeze to deploy, packed with sophisticated security features, and ideally suited to enterprises",
+      "uk_focus": false
+    },
+    {
+      "title": "PHP Publishes Mitigation Advice for New RCE Flaw",
+      "link": "https://www.infosecurity-magazine.com/news/php-publishes-mitigation-advice/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-26T09:15:00Z",
+      "summary": "PHP warns of critical RCE vulnerability CVE-2026-115560, but says limited exploit conditions mean most deployments are unlikely to be affected",
+      "uk_focus": false
+    },
+    {
+      "title": "Toshiba looks to deliver quantum-safe networks at scale",
+      "link": "https://www.computerweekly.com/news/366652753/Toshiba-looks-to-deliver-quantum-safe-networks-at-scale",
+      "source": "Computer Weekly",
+      "published": "2026-10-26T06:15:00Z",
+      "summary": "Carrier-grade platform enables businesses to integrate quantum-safe protection across existing networks with reduced complexity, footprint and cost",
+      "uk_focus": false
+    },
+    {
+      "title": "Gartner: Winning in the edge",
+      "link": "https://www.computerweekly.com/feature/Gartner-Winning-in-the-edge",
+      "source": "Computer Weekly",
+      "published": "2026-10-26T05:00:00Z",
+      "summary": "Gartner analysts assess how the market for edge AI is likely to evolve to support growing demand for artificial intelligence models running outside public clouds",
+      "uk_focus": false
+    },
+    {
       "title": "Work to protect DNS from quantum decryption attacks is speeding up",
       "link": "https://www.theregister.com/networks/2026/10/26/work-to-protect-dns-from-quantum-decryption-attacks-is-speeding-up/5305274",
       "source": "The Register",
@@ -63,14 +143,6 @@
       "source": "The Guardian",
       "published": "2026-10-25T07:00:56Z",
       "summary": "‘Session cookies’ are a primary target for hackers letting them hijack and use your accounts You’ve had a busy morning of life admin, logging into various accounts to check balances and make payments. At the end of a productive few hours you close your laptop and move on to your…",
-      "uk_focus": false
-    },
-    {
-      "title": "Autonomous attack agent in 'Skynet mode' hijacks other models to carry out its evil deeds",
-      "link": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215",
-      "source": "The Register",
-      "published": "2026-10-24T13:02:00Z",
-      "summary": "Designed to carry out 100,000 steps without human approval",
       "uk_focus": false
     }
   ]
