@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T14:57:27Z",
+  "generated_at": "2026-10-26T20:25:04Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 4
+      "count": 8
     },
     {
       "name": "Computer Weekly",
@@ -20,7 +20,7 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 4
+      "count": 6
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,54 @@
     }
   ],
   "items": [
+    {
+      "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
+      "link": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515",
+      "source": "The Register",
+      "published": "2026-10-26T17:58:00Z",
+      "summary": "Redmond joins growing list of software maintainers scrambling to patch compression flaw",
+      "uk_focus": false
+    },
+    {
+      "title": "Inside ISACA’s race to help its members stay current",
+      "link": "https://www.itpro.com/security/inside-isacas-race-to-help-its-members-stay-current",
+      "source": "ITPro",
+      "published": "2026-10-26T17:10:01Z",
+      "summary": "At the association’s recent European conference, it was clear that security and governance professionals are having to move faster than ever just to keep up",
+      "uk_focus": false
+    },
+    {
+      "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",
+      "link": "https://www.theregister.com/security/2026/10/26/uk-pentester-killa-claims-2k-bitcoin-prize-in-php2shell-capture-the-flag-contest/5305429",
+      "source": "The Register",
+      "published": "2026-10-26T16:14:00Z",
+      "summary": "Jaydip Modhwadia beats challenge designed to test real-world exploitability of PHP2Shell in around 3 hours",
+      "uk_focus": true
+    },
+    {
+      "title": "CISA 2030 Sets Out ‘Aggressive, Anticipatory’ Cyber Defense Strategy for Critical Infrastructure",
+      "link": "https://www.infosecurity-magazine.com/news/cisa-aggressive-strategy-critical/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-26T16:00:00Z",
+      "summary": "CISA’s new strategy, CISA 2030, will focus on rapid detection and response and resiliency of critical services ahead of “passive defense”",
+      "uk_focus": false
+    },
+    {
+      "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
+      "link": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456",
+      "source": "The Register",
+      "published": "2026-10-26T15:47:05Z",
+      "summary": "Claude maker reveals financials and warns investors its AI models could blackmail humans, resist shutdown, or go rogue",
+      "uk_focus": false
+    },
+    {
+      "title": "Gheist Attackers Stumble in Attempt to Abuse GitHub Tokens",
+      "link": "https://www.infosecurity-magazine.com/news/gheist-attackers-abuse-stolen/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-26T15:00:00Z",
+      "summary": "A large-scale GitHub campaign abused stolen access tokens to target 13,500+ branches and repositories with secret-stealing workflows",
+      "uk_focus": false
+    },
     {
       "title": "Linux Flaws Exposed Before Fixes as Root Exploit Goes Public",
       "link": "https://www.infosecurity-magazine.com/news/linux-flaws-exposed-before-fixes/",
@@ -111,6 +159,14 @@
       "source": "Infosecurity Magazine",
       "published": "2026-10-26T09:15:00Z",
       "summary": "PHP warns of critical RCE vulnerability CVE-2026-115560, but says limited exploit conditions mean most deployments are unlikely to be affected",
+      "uk_focus": false
+    },
+    {
+      "title": "PHP2Shell: No login, no app code, no warning. What next?",
+      "link": "https://www.theregister.com/security/2026/10/26/partner-content-no-login-no-app-code-no-warning-what-next/5305336",
+      "source": "The Register",
+      "published": "2026-10-26T08:00:00Z",
+      "summary": "PARTNER CONTENT: Learn what the flaws are, how far exploitation has gone, and how to get to full coverage fast with Tanium",
       "uk_focus": false
     },
     {
