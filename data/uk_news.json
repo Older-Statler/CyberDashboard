@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T00:01:20Z",
+  "generated_at": "2026-10-27T05:25:11Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Japanese virtual desktop cloud hacked so hard it asks to be banned",
+      "link": "https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610",
+      "source": "The Register",
+      "published": "2026-10-27T01:06:22Z",
+      "summary": "CEO admits service used for foreign exchange trading had holes company was slow to fix",
+      "uk_focus": false
+    },
     {
       "title": "Worm armed 42 GitHub repos by hiding a payload too big to fail",
       "link": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570",
@@ -95,6 +103,14 @@
       "source": "Computer Weekly",
       "published": "2026-10-26T16:30:00Z",
       "summary": "Five days into the PHP2Shell incident, and patch rates are creeping upwards, but the majority of publicly visible PHP hosts remain exposed.",
+      "uk_focus": true
+    },
+    {
+      "title": "UK secrecy over AI in immigration and asylum decisions under fire",
+      "link": "https://www.computerweekly.com/news/366652683/UK-secrecy-over-AI-in-immigration-and-asylum-decisions-under-fire",
+      "source": "Computer Weekly",
+      "published": "2026-10-26T16:24:00Z",
+      "summary": "Home Office seeks technical fixes to immigration and asylum while invoking national security to avoid disclosing the growing use of AI in decision making, claims report",
       "uk_focus": true
     },
     {
