@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T16:16:14Z",
+  "generated_at": "2026-10-27T20:51:16Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 8
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 13
+      "count": 14
     },
     {
       "name": "The Guardian",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Tech Life",
+      "link": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-10-27T20:30:00Z",
+      "summary": "We hear from Ondřej Surý, the programmer whose PHP patches helped avert a cyber crisis.",
+      "uk_focus": false
+    },
+    {
+      "title": "AI 'hacker' finds 4 severe bugs in popular industrial control software in under 4 hours",
+      "link": "https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811",
+      "source": "The Register",
+      "published": "2026-10-27T19:11:02Z",
+      "summary": "One critical, three high-severity EPICS bugs could disrupt research experiments",
+      "uk_focus": false
+    },
+    {
+      "title": "Cyber Incident Forces UNM Health to Cancel Surgeries, Divert Ambulances",
+      "link": "https://www.infosecurity-magazine.com/news/cyber-unmhealth-surgeries/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T16:45:00Z",
+      "summary": "The University of New Mexico is working to restore systems following the incident, which has been claimed by the BYOD ransomware group",
+      "uk_focus": false
+    },
     {
       "title": "Day 2 of canceled classes at University of New Mexico after Health Sciences Center cyberattack",
       "link": "https://www.theregister.com/cyber-crime/2026/10/27/day-2-of-canceled-classes-at-university-of-new-mexico-after-health-sciences-center-cyberattack/5305690",
@@ -95,6 +119,22 @@
       "source": "The Register",
       "published": "2026-10-27T14:45:00Z",
       "summary": "Both critical PHP flaws land on the agency’s exploited list as infosec pros confirm hackers are getting working shells",
+      "uk_focus": false
+    },
+    {
+      "title": "PHP2Shell: US updates Kev catalogue as exploits spread",
+      "link": "https://www.computerweekly.com/news/366652834/PHP2Shell-US-updates-Kev-catalogue-as-exploits-spread",
+      "source": "Computer Weekly",
+      "published": "2026-10-27T14:15:00Z",
+      "summary": "After live exploitation of PHP2Shell was verified at the weekend, the US' Cisa cyber agency updates its vulnerability catalogue, urging organisations to prioritise their fixes.",
+      "uk_focus": false
+    },
+    {
+      "title": "OpenAI’s Altman: Only way out of patch apocalypse is through",
+      "link": "https://www.computerweekly.com/news/366652912/OpenAIs-Altman-Only-way-out-of-patch-apocalypse-is-through",
+      "source": "Computer Weekly",
+      "published": "2026-10-27T14:00:00Z",
+      "summary": "OpenAI CEO Sam Altman took to the keynote stage at Oracle AI World, calling for the security community to keep focus in the face of AI-enabled vulnerability discovery.",
       "uk_focus": false
     },
     {
@@ -170,19 +210,19 @@
       "uk_focus": true
     },
     {
-      "title": "Why containers are no longer the biggest software security challenge",
-      "link": "https://www.itpro.com/security/why-containers-are-no-longer-the-biggest-software-security-challenge",
-      "source": "ITPro",
-      "published": "2026-10-27T08:00:00Z",
-      "summary": "Containers may be mainstream, but the security, governance, and AI risks building up around modern software development are creating a new advisory opportunity for the channel",
-      "uk_focus": false
-    },
-    {
       "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
       "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
       "source": "ITPro",
       "published": "2026-10-27T08:00:00Z",
       "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
+      "uk_focus": false
+    },
+    {
+      "title": "Why containers are no longer the biggest software security challenge",
+      "link": "https://www.itpro.com/security/why-containers-are-no-longer-the-biggest-software-security-challenge",
+      "source": "ITPro",
+      "published": "2026-10-27T08:00:00Z",
+      "summary": "Containers may be mainstream, but the security, governance, and AI risks building up around modern software development are creating a new advisory opportunity for the channel",
       "uk_focus": false
     },
     {
