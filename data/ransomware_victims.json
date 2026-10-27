@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-10-27T10:48:53Z",
+  "generated_at": "2026-10-27T16:16:14Z",
   "victims": [
+    {
+      "group": "Wallstreet",
+      "victim": "Bristol City Council",
+      "country": "GB",
+      "sector": "Government & Defense",
+      "published": "2026-10-27T12:08:39.264584+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QnJpc3RvbCBDaXR5IENvdW5jaWxAV2FsbHN0cmVldA=="
+    },
     {
       "group": "N0n",
       "victim": "Company #111",
@@ -126,6 +135,33 @@
       "published": "2026-10-27T01:08:22.327260+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/cHJvYmUtMDExNjM3Y2FiYmY5NDA3Ni1AVUxvc2U="
+    },
+    {
+      "group": "aurora",
+      "victim": "GreenbergFarrow",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-10-27T12:11:30.054574+00:00",
+      "domain": "GreenbergFarrow",
+      "url": "https://www.ransomware.live/id/R3JlZW5iZXJnRmFycm93QGF1cm9yYQ=="
+    },
+    {
+      "group": "qilin",
+      "victim": "NuVista Federal Credit Union",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-10-27T10:38:24.936262+00:00",
+      "domain": "www.nuvista.org",
+      "url": "https://www.ransomware.live/id/TnVWaXN0YSBGZWRlcmFsIENyZWRpdCBVbmlvbkBxaWxpbg=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Hawaii Law Enforcement Fedral Credit Union",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-10-27T10:37:43.635167+00:00",
+      "domain": "www.hlefcu.com",
+      "url": "https://www.ransomware.live/id/SGF3YWlpIExhdyBFbmZvcmNlbWVudCBGZWRyYWwgQ3JlZGl0IFVuaW9uQHFpbGlu"
     },
     {
       "group": "SilentRansomGroup",
@@ -864,42 +900,6 @@
       "published": "2026-10-24T09:27:57.291922+00:00",
       "domain": "pencoproducts.com",
       "url": "https://www.ransomware.live/id/UGVuY28gUHJvZHVjdHNAdGhlZ2VudGxlbWVu"
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Conax Technologies",
-      "country": "NO",
-      "sector": "Technology",
-      "published": "2026-10-24T09:27:35.866098+00:00",
-      "domain": "conaxtechnologies.com",
-      "url": "https://www.ransomware.live/id/Q29uYXggVGVjaG5vbG9naWVzQHRoZWdlbnRsZW1lbg=="
-    },
-    {
-      "group": "emperador",
-      "victim": "JS Constructor, INC",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-10-23T16:52:22.826630+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SlMgQ29uc3RydWN0b3IsIElOQ0BlbXBlcmFkb3I="
-    },
-    {
-      "group": "qilin",
-      "victim": "Labaid Cancer Hospital And Super Speciality Center",
-      "country": "BD",
-      "sector": "Healthcare",
-      "published": "2026-10-23T16:26:27.946648+00:00",
-      "domain": "www.labaidcancer.com",
-      "url": "https://www.ransomware.live/id/TGFiYWlkIENhbmNlciBIb3NwaXRhbCBBbmQgU3VwZXIgU3BlY2lhbGl0eSBDZW50ZXJAcWlsaW4="
-    },
-    {
-      "group": "qilin",
-      "victim": "Kale Balata A",
-      "country": "TR",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-10-23T16:26:08.593297+00:00",
-      "domain": "www.kalebalata.com",
-      "url": "https://www.ransomware.live/id/S2FsZSBCYWxhdGEgQUBxaWxpbg=="
     }
   ]
 }
