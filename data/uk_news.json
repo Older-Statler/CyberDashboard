@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-27T05:25:11Z",
+  "generated_at": "2026-10-27T10:48:53Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "The Register",
@@ -20,17 +20,17 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 6
+      "count": 8
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 2
+      "count": 4
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,46 @@
     }
   ],
   "items": [
+    {
+      "title": "From industry concern to practical action: the value of working with regulators",
+      "link": "https://www.ncsc.gov.uk/blogs/industry-concern-practical-action-value-working-regulators",
+      "source": "NCSC",
+      "published": "2026-10-27T12:00:00Z",
+      "summary": "How industry, the NCSC and the FCA worked together to help organisations share information while protecting market integrity",
+      "uk_focus": true
+    },
+    {
+      "title": "First ISC2 AI Security Certification Expected for Early 2027",
+      "link": "https://www.infosecurity-magazine.com/news/first-isc2-ai-security/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T10:30:00Z",
+      "summary": "ISC2 is seeking 3000 volunteers to enrol to a pilot exam phase for its upcoming AI security certification",
+      "uk_focus": false
+    },
+    {
+      "title": "Watchdog Urges Police and Fire Service to Improve Cybersecurity",
+      "link": "https://www.infosecurity-magazine.com/news/watchdog-police-fire-service/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T09:39:00Z",
+      "summary": "UK police forces and fire and rescue services have been urged to strengthen cybersecurity as rising cyber threats outpace current defenses",
+      "uk_focus": true
+    },
+    {
+      "title": "Why containers are no longer the biggest software security challenge",
+      "link": "https://www.itpro.com/security/why-containers-are-no-longer-the-biggest-software-security-challenge",
+      "source": "ITPro",
+      "published": "2026-10-27T08:00:00Z",
+      "summary": "Containers may be mainstream, but the security, governance, and AI risks building up around modern software development are creating a new advisory opportunity for the channel",
+      "uk_focus": false
+    },
+    {
+      "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
+      "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
+      "source": "ITPro",
+      "published": "2026-10-27T08:00:00Z",
+      "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
+      "uk_focus": false
+    },
     {
       "title": "Japanese virtual desktop cloud hacked so hard it asks to be banned",
       "link": "https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610",
@@ -102,7 +142,7 @@
       "link": "https://www.computerweekly.com/news/366652698/EU-makes-progress-towards-PHP-patching-UK-lags-behind",
       "source": "Computer Weekly",
       "published": "2026-10-26T16:30:00Z",
-      "summary": "Five days into the PHP2Shell incident, and patch rates are creeping upwards, but the majority of publicly visible PHP hosts remain exposed.",
+      "summary": "Five days into the PHP2Shell incident, and patch rates are creeping upwards, but the majority of publicly visible PHP hosts remain exposed",
       "uk_focus": true
     },
     {
@@ -239,14 +279,6 @@
       "source": "The Register",
       "published": "2026-10-26T04:08:23Z",
       "summary": "PLUS: Regional internet registry reform nears; Trustworthy-sounding domains attract scammers",
-      "uk_focus": false
-    },
-    {
-      "title": "Cookie theft: how fraudsters get the digital key to your accounts",
-      "link": "https://www.theguardian.com/money/2026/oct/25/cookie-theft-how-fraudsters-get-the-digital-key-to-your-accounts",
-      "source": "The Guardian",
-      "published": "2026-10-25T07:00:56Z",
-      "summary": "‘Session cookies’ are a primary target for hackers letting them hijack and use your accounts You’ve had a busy morning of life admin, logging into various accounts to check balances and make payments. At the end of a productive few hours you close your laptop and move on to your…",
       "uk_focus": false
     }
   ]
