@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T20:25:04Z",
+  "generated_at": "2026-10-27T00:01:20Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 8
+      "count": 11
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
@@ -50,6 +50,30 @@
   ],
   "items": [
     {
+      "title": "Worm armed 42 GitHub repos by hiding a payload too big to fail",
+      "link": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570",
+      "source": "The Register",
+      "published": "2026-10-26T22:29:01Z",
+      "summary": "Payload blobs measuring 12.9 to 13.7 MB were large enough to evade GitHub code search",
+      "uk_focus": false
+    },
+    {
+      "title": "Alibaba's Qwen AI caught trying to contact server in China",
+      "link": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
+      "source": "The Register",
+      "published": "2026-10-26T21:27:37Z",
+      "summary": "But there's not much evidence this is anything more than echoes of unsanitized training data",
+      "uk_focus": false
+    },
+    {
+      "title": "LiteLLM supply chain attack started with an exposed master key",
+      "link": "https://www.theregister.com/security/2026/10/26/litellm-supply-chain-attack-started-with-an-exposed-master-key/5305544",
+      "source": "The Register",
+      "published": "2026-10-26T20:30:53Z",
+      "summary": "A 'strong illustration of the risks associated with failing to rotate a potentially exposed key'",
+      "uk_focus": false
+    },
+    {
       "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
       "link": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515",
       "source": "The Register",
@@ -64,6 +88,14 @@
       "published": "2026-10-26T17:10:01Z",
       "summary": "At the association’s recent European conference, it was clear that security and governance professionals are having to move faster than ever just to keep up",
       "uk_focus": false
+    },
+    {
+      "title": "EU makes progress towards PHP patching, UK lags behind",
+      "link": "https://www.computerweekly.com/news/366652698/EU-makes-progress-towards-PHP-patching-UK-lags-behind",
+      "source": "Computer Weekly",
+      "published": "2026-10-26T16:30:00Z",
+      "summary": "Five days into the PHP2Shell incident, and patch rates are creeping upwards, but the majority of publicly visible PHP hosts remain exposed.",
+      "uk_focus": true
     },
     {
       "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",

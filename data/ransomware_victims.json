@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-10-26T20:25:04Z",
+  "generated_at": "2026-10-27T00:01:20Z",
   "victims": [
+    {
+      "group": "N0n",
+      "victim": "Ingelectus Innovative Electrical Solutions S.L.",
+      "country": "ES",
+      "sector": "Energy & Utilities",
+      "published": "2026-10-26T18:57:11.389460+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SW5nZWxlY3R1cyBJbm5vdmF0aXZlIEVsZWN0cmljYWwgU29sdXRpb25zIFMuTC5ATjBu"
+    },
+    {
+      "group": "Falcon",
+      "victim": "Beasley Allen Law Firm",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-26T16:54:28.340940+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QmVhc2xleSBBbGxlbiBMYXcgRmlybUBGYWxjb24="
+    },
+    {
+      "group": "Whitearmor",
+      "victim": "Gamdom",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-10-26T18:00:10.433408+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R2FtZG9tQFdoaXRlYXJtb3I="
+    },
     {
       "group": "qilin",
       "victim": "Delta Electric Power Association",
@@ -873,33 +900,6 @@
       "published": "2026-10-23T10:58:40.183463+00:00",
       "domain": "vinsolutions.com",
       "url": "https://www.ransomware.live/id/dmluc29sdXRpb25zLmNvbUBTY2FybGV0dGdyb3Vw"
-    },
-    {
-      "group": "emperador",
-      "victim": "B2Chat",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-10-23T07:52:10.595001+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QjJDaGF0QGVtcGVyYWRvcg=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Miljaus Producciones S.L (www.miljaus.com)",
-      "country": "ES",
-      "sector": "Other",
-      "published": "2026-10-23T20:17:19.946628+00:00",
-      "domain": "www.miljaus.com",
-      "url": "https://www.ransomware.live/id/TWlsamF1cyBQcm9kdWNjaW9uZXMgUy5MICh3d3cubWlsamF1cy5jb20pQHFpbGlu"
-    },
-    {
-      "group": "aurora",
-      "victim": "ARX Group SA",
-      "country": "CH",
-      "sector": "Other",
-      "published": "2026-10-23T17:57:21.767704+00:00",
-      "domain": "ARX Group SA",
-      "url": "https://www.ransomware.live/id/QVJYIEdyb3VwIFNBQGF1cm9yYQ=="
     }
   ]
 }
