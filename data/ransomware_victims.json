@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-10-28T19:00:03Z",
+  "generated_at": "2026-10-28T23:07:48Z",
   "victims": [
+    {
+      "group": "SilentRansomGroup",
+      "victim": "L...",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-10-28T17:34:09.834165+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TC4uLkBTaWxlbnRSYW5zb21Hcm91cA=="
+    },
+    {
+      "group": "Panzer",
+      "victim": "PQE Group",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-10-28T18:26:50.917009+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UFFFIEdyb3VwQFBhbnplcg=="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Noelker and Hull",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-28T16:59:06.260497+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Tm9lbGtlciBhbmQgSHVsbEByaHlzaWRh"
+    },
     {
       "group": "payload",
       "victim": "Hauhinco",
@@ -873,33 +900,6 @@
       "published": "2026-10-25T06:56:05.946039+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/VGVjaG5vbGVhZHMgU2VydmljZXMgSW5jLkBOMG4="
-    },
-    {
-      "group": "N0n",
-      "victim": "Pure Grow Diamonds Inc.",
-      "country": "",
-      "sector": "Manufacturing",
-      "published": "2026-10-25T06:55:37.623219+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UHVyZSBHcm93IERpYW1vbmRzIEluYy5ATjBu"
-    },
-    {
-      "group": "N0n",
-      "victim": "Mach Law APC (San Diego family law and divorce practice)",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-25T06:55:09.342572+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TWFjaCBMYXcgQVBDIChTYW4gRGllZ28gZmFtaWx5IGxhdyBhbmQgZGl2b3JjZSBwcmFjdGljZSlATjBu"
-    },
-    {
-      "group": "N0n",
-      "victim": "Keidel Supply Company Incorporated",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-10-25T06:54:40.120560+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/S2VpZGVsIFN1cHBseSBDb21wYW55IEluY29ycG9yYXRlZEBOMG4="
     }
   ]
 }

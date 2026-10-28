@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T19:00:03Z",
+  "generated_at": "2026-10-28T23:07:48Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 12
+      "count": 10
     },
     {
       "name": "Computer Weekly",
@@ -19,9 +19,8 @@
     },
     {
       "name": "Infosecurity Magazine",
-      "status": "error",
-      "count": 0,
-      "error": "HTTPSConnectionPool(host='www.infosecurity-magazine.com', port=443): Max retries exceeded with url: /rss/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi"
+      "status": "ok",
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -41,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Tech Monitor",
@@ -51,11 +50,35 @@
   ],
   "items": [
     {
+      "title": "Details of thousands of US immigration agents leaked in major hack",
+      "link": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-10-28T22:12:43Z",
+      "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
+      "uk_focus": false
+    },
+    {
+      "title": "Oracle celebrates end of Cybersecurity Awareness Month with quadruple trouble",
+      "link": "https://www.theregister.com/security/2026/10/28/oracle-celebrates-end-of-cybersecurity-awareness-month-with-quadruple-trouble/5306121",
+      "source": "The Register",
+      "published": "2026-10-28T19:56:56Z",
+      "summary": "Attackers probe another EBS bug, and ShinyHunters' PeopleSoft 0-day turns out to involve three vulns",
+      "uk_focus": false
+    },
+    {
       "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
       "link": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050",
       "source": "The Register",
       "published": "2026-10-28T15:52:17Z",
       "summary": "Artem Stryzhak joined both gangs, which targeted businesses and a hospital during the pandemic",
+      "uk_focus": false
+    },
+    {
+      "title": "Japan’s GMO Internet Urges Customers to Disconnect PCs",
+      "link": "https://www.infosecurity-magazine.com/news/japan-gmo-internet-disconnect/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-28T15:49:00Z",
+      "summary": "GMO Internet has told customers to unplug their PCs in advance of a possible ransomware attack",
       "uk_focus": false
     },
     {
@@ -72,6 +95,30 @@
       "source": "ITPro",
       "published": "2026-10-28T15:20:37Z",
       "summary": "The PHP vulnerabilities sent the web into a frenzy last week as organizations rushed to apply patches",
+      "uk_focus": false
+    },
+    {
+      "title": "Attackers Hide Malware Behind Signed ChatGPT and Claude Binaries",
+      "link": "https://www.infosecurity-magazine.com/news/attackers-hide-malware-behind/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-28T15:13:00Z",
+      "summary": "Attackers have used fake ChatGPT and Claude projects to distribute Yoba malware",
+      "uk_focus": false
+    },
+    {
+      "title": "AI Is Turning CISOs Into Business-Risk Translators, Says Nvidia’s Head of Cyber",
+      "link": "https://www.infosecurity-magazine.com/news/ai-is-turning-cisos-into/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-28T14:10:00Z",
+      "summary": "Nvidia’s Mark Weatherford says CISOs must translate AI cybersecurity risks into business priorities, clarify risk ownership and balance innovation with security controls",
+      "uk_focus": false
+    },
+    {
+      "title": "Energy Giant Engie Notifies Customers of Supply Chain Breach",
+      "link": "https://www.infosecurity-magazine.com/news/energy-giant-engie-supply-chain/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-28T14:05:00Z",
+      "summary": "An undisclosed number of Engie customers have had their data compromised after a supply chain incident",
       "uk_focus": false
     },
     {
@@ -123,6 +170,14 @@
       "uk_focus": false
     },
     {
+      "title": "Cyber Incident Forces UNM Health to Cancel Surgeries, Divert Ambulances",
+      "link": "https://www.infosecurity-magazine.com/news/cyber-unmhealth-surgeries/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T16:45:00Z",
+      "summary": "The University of New Mexico is working to restore systems following the incident, which has been claimed by the BYOD ransomware group",
+      "uk_focus": false
+    },
+    {
       "title": "Day 2 of canceled classes at University of New Mexico after Health Sciences Center cyberattack",
       "link": "https://www.theregister.com/cyber-crime/2026/10/27/day-2-of-canceled-classes-at-university-of-new-mexico-after-health-sciences-center-cyberattack/5305690",
       "source": "The Register",
@@ -131,11 +186,35 @@
       "uk_focus": false
     },
     {
+      "title": "Hackers Infect 953 Online Stores With Scanner-Evading Code",
+      "link": "https://www.infosecurity-magazine.com/news/hackers-infect-953-online-stores/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T16:00:00Z",
+      "summary": "Attackers have infected 953 online stores with a scanner-evading JavaScript loader since July 2025",
+      "uk_focus": false
+    },
+    {
+      "title": "OpenAI Compaction Flaw Exposed AI Reasoning to Researchers",
+      "link": "https://www.infosecurity-magazine.com/news/openai-compaction-flaw-ai/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T16:00:00Z",
+      "summary": "Researchers uncovered an OpenAI API flaw that exposed hidden AI reasoning traces, prompting a fix and a $6000 bug bounty reward",
+      "uk_focus": false
+    },
+    {
       "title": "Microsoft Teams is getting a suite new AI features to crack down on phishing attacks",
       "link": "https://www.itpro.com/security/phishing/microsoft-teams-is-getting-a-suite-new-ai-features-to-crack-down-on-phishing-attacks",
       "source": "ITPro",
       "published": "2026-10-27T15:08:57Z",
       "summary": "A sharp rise in phishing attacks against Microsoft Teams has prompted a raft of new features",
+      "uk_focus": false
+    },
+    {
+      "title": "ISC2 Launches Cyber-AI Workforce Coalition to Address the Future of AI Security Jobs",
+      "link": "https://www.infosecurity-magazine.com/news/isc2-launches-cyberai-workforce/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T15:00:00Z",
+      "summary": "ISC2’s new Cyber-AI Workforce Coalition serves as a “vendor-neutral convener” to map the future of AI security careers, ISC2 CEO Scott Beale told Infosecurity",
       "uk_focus": false
     },
     {
@@ -179,6 +258,14 @@
       "uk_focus": false
     },
     {
+      "title": "Attackers Exploit Teams External Chat to Breach Organizations in Under 15 Minutes",
+      "link": "https://www.infosecurity-magazine.com/news/exploit-teams-chat-breach/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T12:30:00Z",
+      "summary": "Arctic Wolf warned that the function enables highly effective social engineering attacks, which lead to incidents such as ransomware",
+      "uk_focus": false
+    },
+    {
       "title": "From industry concern to practical action: the value of working with regulators",
       "link": "https://www.ncsc.gov.uk/blogs/industry-concern-practical-action-value-working-regulators",
       "source": "NCSC",
@@ -193,6 +280,30 @@
       "published": "2026-10-27T11:49:30Z",
       "summary": "Alternative für Deutschland swats away scandals as reporters swarm leaked email tranche",
       "uk_focus": false
+    },
+    {
+      "title": "Copenhagen University Breach Compromises Data on Half a Million People",
+      "link": "https://www.infosecurity-magazine.com/news/copenhagen-university-data-breach/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T11:00:00Z",
+      "summary": "Hackers have stolen personal information on over 520,000 people from the University of Copenhagen",
+      "uk_focus": false
+    },
+    {
+      "title": "First ISC2 AI Security Certification Expected for Early 2027",
+      "link": "https://www.infosecurity-magazine.com/news/first-isc2-ai-security/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T10:30:00Z",
+      "summary": "ISC2 is seeking 3000 volunteers to enrol to a pilot exam phase for its upcoming AI security certification",
+      "uk_focus": false
+    },
+    {
+      "title": "Watchdog Urges Police and Fire Service to Improve Cybersecurity",
+      "link": "https://www.infosecurity-magazine.com/news/watchdog-police-fire-service/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-27T09:39:00Z",
+      "summary": "UK police forces and fire and rescue services have been urged to strengthen cybersecurity as rising cyber threats outpace current defenses",
+      "uk_focus": true
     },
     {
       "title": "Autumn Budget 2026: Healey sets out AI funding",
@@ -232,30 +343,6 @@
       "source": "The Register",
       "published": "2026-10-27T01:06:22Z",
       "summary": "CEO admits service used for foreign exchange trading had holes company was slow to fix",
-      "uk_focus": false
-    },
-    {
-      "title": "Worm armed 42 GitHub repos by hiding a payload too big to fail",
-      "link": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570",
-      "source": "The Register",
-      "published": "2026-10-26T22:29:01Z",
-      "summary": "Payload blobs measuring 12.9 to 13.7 MB were large enough to evade GitHub code search",
-      "uk_focus": false
-    },
-    {
-      "title": "Alibaba's Qwen AI caught trying to contact server in China",
-      "link": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
-      "source": "The Register",
-      "published": "2026-10-26T21:27:37Z",
-      "summary": "But there's not much evidence this is anything more than echoes of unsanitized training data",
-      "uk_focus": false
-    },
-    {
-      "title": "LiteLLM supply chain attack started with an exposed master key",
-      "link": "https://www.theregister.com/security/2026/10/26/litellm-supply-chain-attack-started-with-an-exposed-master-key/5305544",
-      "source": "The Register",
-      "published": "2026-10-26T20:30:53Z",
-      "summary": "A 'strong illustration of the risks associated with failing to rotate a potentially exposed key'",
       "uk_focus": false
     }
   ]
