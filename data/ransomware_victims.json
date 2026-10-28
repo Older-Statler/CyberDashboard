@@ -1,6 +1,69 @@
 {
-  "generated_at": "2026-10-27T20:51:15Z",
+  "generated_at": "2026-10-28T00:18:46Z",
   "victims": [
+    {
+      "group": "play",
+      "victim": "Tailormade Logistics",
+      "country": "DK",
+      "sector": "Transportation",
+      "published": "2026-10-27T19:51:56.059899+00:00",
+      "domain": "www.tailormade-logistics.com",
+      "url": "https://www.ransomware.live/id/VGFpbG9ybWFkZSBMb2dpc3RpY3NAcGxheQ=="
+    },
+    {
+      "group": "play",
+      "victim": "Coast 2 Coast",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-27T19:51:00.885314+00:00",
+      "domain": "www.c2cescrow.com",
+      "url": "https://www.ransomware.live/id/Q29hc3QgMiBDb2FzdEBwbGF5"
+    },
+    {
+      "group": "play",
+      "victim": "VPC Builders",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-27T19:50:08.859781+00:00",
+      "domain": "www.vpcbuilders.com",
+      "url": "https://www.ransomware.live/id/VlBDIEJ1aWxkZXJzQHBsYXk="
+    },
+    {
+      "group": "play",
+      "victim": "Hygiena",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-10-27T18:27:11.459416+00:00",
+      "domain": "www.hygiena.com",
+      "url": "https://www.ransomware.live/id/SHlnaWVuYUBwbGF5"
+    },
+    {
+      "group": "play",
+      "victim": "Money Concepts Capital",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-10-27T18:26:34.660553+00:00",
+      "domain": "www.moneyconcepts.com",
+      "url": "https://www.ransomware.live/id/TW9uZXkgQ29uY2VwdHMgQ2FwaXRhbEBwbGF5"
+    },
+    {
+      "group": "play",
+      "victim": "MicroSearch",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-10-27T17:30:26.723125+00:00",
+      "domain": "www.microsearch.net",
+      "url": "https://www.ransomware.live/id/TWljcm9TZWFyY2hAcGxheQ=="
+    },
+    {
+      "group": "play",
+      "victim": "QLC",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-10-27T17:29:53.098004+00:00",
+      "domain": "www.qlc-labeling.com",
+      "url": "https://www.ransomware.live/id/UUxDQHBsYXk="
+    },
     {
       "group": "Whitearmor",
       "victim": "wagyu.xyz",
@@ -243,6 +306,15 @@
       "published": "2026-10-27T01:08:22.327260+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/cHJvYmUtMDExNjM3Y2FiYmY5NDA3Ni1AVUxvc2U="
+    },
+    {
+      "group": "BYOD",
+      "victim": "UPDATE: UNM",
+      "country": "",
+      "sector": "Education",
+      "published": "2026-10-27T18:50:58.721566+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VVBEQVRFOiBVTk1AQllPRA=="
     },
     {
       "group": "aurora",
@@ -828,78 +900,6 @@
       "published": "2026-10-24T11:21:47.292156+00:00",
       "domain": "mainplace.com.my",
       "url": "https://www.ransomware.live/id/bWFpbnBsYWNlLmNvbS5teUBrcnliaXQ="
-    },
-    {
-      "group": "krybit",
-      "victim": "MODON Developments S.A.E",
-      "country": "EG",
-      "sector": "Manufacturing",
-      "published": "2026-10-24T11:21:10.713443+00:00",
-      "domain": "MODON Developments S.A.E",
-      "url": "https://www.ransomware.live/id/TU9ET04gRGV2ZWxvcG1lbnRzIFMuQS5FQGtyeWJpdA=="
-    },
-    {
-      "group": "krybit",
-      "victim": "www.zhservices.com",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-10-24T11:20:35.048020+00:00",
-      "domain": "www.zhservices.com",
-      "url": "https://www.ransomware.live/id/d3d3Lnpoc2VydmljZXMuY29tQGtyeWJpdA=="
-    },
-    {
-      "group": "krybit",
-      "victim": "grupoeuro.com.mx",
-      "country": "MX",
-      "sector": "Manufacturing",
-      "published": "2026-10-24T11:19:59.229175+00:00",
-      "domain": "grupoeuro.com.mx",
-      "url": "https://www.ransomware.live/id/Z3J1cG9ldXJvLmNvbS5teEBrcnliaXQ="
-    },
-    {
-      "group": "krybit",
-      "victim": "www.optika.ca",
-      "country": "CA",
-      "sector": "Technology",
-      "published": "2026-10-24T11:19:23.017695+00:00",
-      "domain": "www.optika.ca",
-      "url": "https://www.ransomware.live/id/d3d3Lm9wdGlrYS5jYUBrcnliaXQ="
-    },
-    {
-      "group": "N0n",
-      "victim": "Texcar Inc.",
-      "country": "",
-      "sector": "Manufacturing",
-      "published": "2026-10-24T09:55:07.404732+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VGV4Y2FyIEluYy5ATjBu"
-    },
-    {
-      "group": "N0n",
-      "victim": "GPIC Projectos Con Instalacoes Lda",
-      "country": "PT",
-      "sector": "Manufacturing",
-      "published": "2026-10-24T09:54:32.982729+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/R1BJQyBQcm9qZWN0b3MgQ29uIEluc3RhbGFjb2VzIExkYUBOMG4="
-    },
-    {
-      "group": "N0n",
-      "victim": "Asisken Asistencia Médica S.A.",
-      "country": "AR",
-      "sector": "Healthcare",
-      "published": "2026-10-24T09:53:58.710021+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QXNpc2tlbiBBc2lzdGVuY2lhIE3DqWRpY2EgUy5BLkBOMG4="
-    },
-    {
-      "group": "N0n",
-      "victim": "Adirondack Networks, Inc.",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-10-24T09:53:23.606425+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QWRpcm9uZGFjayBOZXR3b3JrcywgSW5jLkBOMG4="
     }
   ]
 }
