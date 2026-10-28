@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T00:18:46Z",
+  "generated_at": "2026-10-28T06:05:24Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 17
+      "count": 16
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
@@ -210,19 +210,19 @@
       "uk_focus": true
     },
     {
-      "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
-      "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
-      "source": "ITPro",
-      "published": "2026-10-27T08:00:00Z",
-      "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
-      "uk_focus": false
-    },
-    {
       "title": "Why containers are no longer the biggest software security challenge",
       "link": "https://www.itpro.com/security/why-containers-are-no-longer-the-biggest-software-security-challenge",
       "source": "ITPro",
       "published": "2026-10-27T08:00:00Z",
       "summary": "Containers may be mainstream, but the security, governance, and AI risks building up around modern software development are creating a new advisory opportunity for the channel",
+      "uk_focus": false
+    },
+    {
+      "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
+      "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
+      "source": "ITPro",
+      "published": "2026-10-27T08:00:00Z",
+      "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
       "uk_focus": false
     },
     {
@@ -407,22 +407,6 @@
       "source": "Computer Weekly",
       "published": "2026-10-26T06:15:00Z",
       "summary": "Carrier-grade platform enables businesses to integrate quantum-safe protection across existing networks with reduced complexity, footprint and cost",
-      "uk_focus": false
-    },
-    {
-      "title": "Gartner: Winning in the edge",
-      "link": "https://www.computerweekly.com/feature/Gartner-Winning-in-the-edge",
-      "source": "Computer Weekly",
-      "published": "2026-10-26T05:00:00Z",
-      "summary": "Gartner analysts assess how the market for edge AI is likely to evolve to support growing demand for artificial intelligence models running outside public clouds",
-      "uk_focus": false
-    },
-    {
-      "title": "Work to protect DNS from quantum decryption attacks is speeding up",
-      "link": "https://www.theregister.com/networks/2026/10/26/work-to-protect-dns-from-quantum-decryption-attacks-is-speeding-up/5305274",
-      "source": "The Register",
-      "published": "2026-10-26T04:08:23Z",
-      "summary": "PLUS: Regional internet registry reform nears; Trustworthy-sounding domains attract scammers",
       "uk_focus": false
     }
   ]
