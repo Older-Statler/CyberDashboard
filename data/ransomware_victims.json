@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-10-28T13:23:48Z",
+  "generated_at": "2026-10-28T19:00:03Z",
   "victims": [
+    {
+      "group": "payload",
+      "victim": "Hauhinco",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-10-28T14:49:50.250850+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SGF1aGluY29AcGF5bG9hZA=="
+    },
+    {
+      "group": "payload",
+      "victim": "Marbre Design",
+      "country": "",
+      "sector": "Manufacturing",
+      "published": "2026-10-28T14:48:35.878124+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TWFyYnJlIERlc2lnbkBwYXlsb2Fk"
+    },
+    {
+      "group": "rhysida",
+      "victim": "Broadstreet HEOR",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-10-28T12:28:36.839608+00:00",
+      "domain": "broadstreetheor.com",
+      "url": "https://www.ransomware.live/id/QnJvYWRzdHJlZXQgSEVPUkByaHlzaWRh"
+    },
     {
       "group": "N0n",
       "victim": "Company #112",
@@ -27,6 +54,51 @@
       "published": "2026-10-28T02:10:42.771753+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/d2FneXUueHl6IHVuZmFpcm5lc3NAV2hpdGVhcm1vcg=="
+    },
+    {
+      "group": "akira",
+      "victim": "Trulife",
+      "country": "",
+      "sector": "Healthcare",
+      "published": "2026-10-28T13:37:58.825942+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VHJ1bGlmZUBha2lyYQ=="
+    },
+    {
+      "group": "akira",
+      "victim": "Roberts Consulting Services",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-10-28T13:37:39.134708+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Um9iZXJ0cyBDb25zdWx0aW5nIFNlcnZpY2VzQGFraXJh"
+    },
+    {
+      "group": "aurora",
+      "victim": "EWM Group",
+      "country": "GB",
+      "sector": "Other",
+      "published": "2026-10-28T13:00:09.407449+00:00",
+      "domain": "EWM Group",
+      "url": "https://www.ransomware.live/id/RVdNIEdyb3VwQGF1cm9yYQ=="
+    },
+    {
+      "group": "akira",
+      "victim": "Insurance Services",
+      "country": "",
+      "sector": "Financial Services",
+      "published": "2026-10-28T12:58:43.776859+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SW5zdXJhbmNlIFNlcnZpY2VzQGFraXJh"
+    },
+    {
+      "group": "aurora",
+      "victim": "Meleghy Automotive & Cie. GmbH",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-10-28T10:05:41.800988+00:00",
+      "domain": "Meleghy Automotive & Cie. GmbH",
+      "url": "https://www.ransomware.live/id/TWVsZWdoeSBBdXRvbW90aXZlICYgQ2llLiBHbWJIQGF1cm9yYQ=="
     },
     {
       "group": "Whitearmor",
@@ -828,78 +900,6 @@
       "published": "2026-10-25T06:54:40.120560+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/S2VpZGVsIFN1cHBseSBDb21wYW55IEluY29ycG9yYXRlZEBOMG4="
-    },
-    {
-      "group": "N0n",
-      "victim": "Andrews Advisory Group LLC",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-25T06:54:11.761633+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QW5kcmV3cyBBZHZpc29yeSBHcm91cCBMTENATjBu"
-    },
-    {
-      "group": "Scarlettgroup",
-      "victim": "mahsing.com.my",
-      "country": "MY",
-      "sector": "Hospitality",
-      "published": "2026-10-26T04:56:48.598229+00:00",
-      "domain": "mahsing.com.my",
-      "url": "https://www.ransomware.live/id/bWFoc2luZy5jb20ubXlAU2NhcmxldHRncm91cA=="
-    },
-    {
-      "group": "emperador",
-      "victim": "AB InBev",
-      "country": "BE",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-10-25T03:22:10.246426+00:00",
-      "domain": "ab-inbev.be",
-      "url": "https://www.ransomware.live/id/QUIgSW5CZXZAZW1wZXJhZG9y"
-    },
-    {
-      "group": "anubis",
-      "victim": "Newcomer Cremations, Funerals & Receptions",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-25T00:31:56.643577+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TmV3Y29tZXIgQ3JlbWF0aW9ucywgRnVuZXJhbHMgJiBSZWNlcHRpb25zQGFudWJpcw=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Hossner-Textil GmbH",
-      "country": "DE",
-      "sector": "Manufacturing",
-      "published": "2026-10-25T17:17:40.651485+00:00",
-      "domain": "www.hossner-textile.de",
-      "url": "https://www.ransomware.live/id/SG9zc25lci1UZXh0aWwgR21iSEBxaWxpbg=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Ooredoo Myanmar",
-      "country": "MM",
-      "sector": "Technology",
-      "published": "2026-10-25T16:20:30.173290+00:00",
-      "domain": "www.u9.com.mm",
-      "url": "https://www.ransomware.live/id/T29yZWRvbyBNeWFubWFyQHFpbGlu"
-    },
-    {
-      "group": "qilin",
-      "victim": "ECOM",
-      "country": "CH",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-25T10:35:02.202543+00:00",
-      "domain": "www.ecomgroup.com",
-      "url": "https://www.ransomware.live/id/RUNPTUBxaWxpbg=="
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "Hisense",
-      "country": "CN",
-      "sector": "Technology",
-      "published": "2026-10-25T01:24:13.562658+00:00",
-      "domain": "Hisense.com",
-      "url": "https://www.ransomware.live/id/SGlzZW5zZUBXaGl0ZWFybW9y"
     }
   ]
 }

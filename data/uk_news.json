@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T13:23:49Z",
+  "generated_at": "2026-10-28T19:00:03Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
@@ -36,7 +36,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -50,6 +50,38 @@
     }
   ],
   "items": [
+    {
+      "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
+      "link": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050",
+      "source": "The Register",
+      "published": "2026-10-28T15:52:17Z",
+      "summary": "Artem Stryzhak joined both gangs, which targeted businesses and a hospital during the pandemic",
+      "uk_focus": false
+    },
+    {
+      "title": "Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems",
+      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated",
+      "source": "Graham Cluley",
+      "published": "2026-10-28T15:27:15Z",
+      "summary": "A Ukrainian man who carried out ransomware attacks for both the Nefilim and Hive gangs, including attacks on law firms and a healthcare provider during the COVID-19 pandemic, has been sentenced to 70 months in a US prison. Read more in my article on the Hot for Security blog.",
+      "uk_focus": false
+    },
+    {
+      "title": "CISA urges federal agencies to patch after PHP exploits observed",
+      "link": "https://www.itpro.com/security/cisa-urges-federal-agencies-to-patch-after-php-exploits-observed",
+      "source": "ITPro",
+      "published": "2026-10-28T15:20:37Z",
+      "summary": "The PHP vulnerabilities sent the web into a frenzy last week as organizations rushed to apply patches",
+      "uk_focus": false
+    },
+    {
+      "title": "Lapsed US snooping law still running as senators object",
+      "link": "https://www.computerweekly.com/news/366652857/Lapsed-US-snooping-law-still-running-as-senators-object",
+      "source": "Computer Weekly",
+      "published": "2026-10-28T13:20:00Z",
+      "summary": "FISA 702 is one of two key US laws that undermine data sovereignty and allow the US to access foreign data without the subject knowing. Senators demand release of a secret ruling",
+      "uk_focus": false
+    },
     {
       "title": "Cisco open sources tool for detecting AI agents on hacking sprees",
       "link": "https://www.theregister.com/security/2026/10/28/cisco-open-sources-tool-for-detecting-ai-agents-on-hacking-sprees/5305867",
@@ -171,19 +203,19 @@
       "uk_focus": true
     },
     {
-      "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
-      "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
-      "source": "ITPro",
-      "published": "2026-10-27T08:00:00Z",
-      "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
-      "uk_focus": false
-    },
-    {
       "title": "Why containers are no longer the biggest software security challenge",
       "link": "https://www.itpro.com/security/why-containers-are-no-longer-the-biggest-software-security-challenge",
       "source": "ITPro",
       "published": "2026-10-27T08:00:00Z",
       "summary": "Containers may be mainstream, but the security, governance, and AI risks building up around modern software development are creating a new advisory opportunity for the channel",
+      "uk_focus": false
+    },
+    {
+      "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
+      "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
+      "source": "ITPro",
+      "published": "2026-10-27T08:00:00Z",
+      "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
       "uk_focus": false
     },
     {
@@ -224,54 +256,6 @@
       "source": "The Register",
       "published": "2026-10-26T20:30:53Z",
       "summary": "A 'strong illustration of the risks associated with failing to rotate a potentially exposed key'",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
-      "link": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515",
-      "source": "The Register",
-      "published": "2026-10-26T17:58:00Z",
-      "summary": "Redmond joins growing list of software maintainers scrambling to patch compression flaw",
-      "uk_focus": false
-    },
-    {
-      "title": "Inside ISACA’s race to help its members stay current",
-      "link": "https://www.itpro.com/security/inside-isacas-race-to-help-its-members-stay-current",
-      "source": "ITPro",
-      "published": "2026-10-26T17:10:01Z",
-      "summary": "At the association’s recent European conference, it was clear that security and governance professionals are having to move faster than ever just to keep up",
-      "uk_focus": false
-    },
-    {
-      "title": "EU makes progress towards PHP patching, UK lags behind",
-      "link": "https://www.computerweekly.com/news/366652698/EU-makes-progress-towards-PHP-patching-UK-lags-behind",
-      "source": "Computer Weekly",
-      "published": "2026-10-26T16:30:00Z",
-      "summary": "Five days into the PHP2Shell incident, and patch rates are creeping upwards, but the majority of publicly visible PHP hosts remain exposed",
-      "uk_focus": true
-    },
-    {
-      "title": "UK secrecy over AI in immigration and asylum decisions under fire",
-      "link": "https://www.computerweekly.com/news/366652683/UK-secrecy-over-AI-in-immigration-and-asylum-decisions-under-fire",
-      "source": "Computer Weekly",
-      "published": "2026-10-26T16:24:00Z",
-      "summary": "Home Office seeks technical fixes to immigration and asylum while invoking national security to avoid disclosing the growing use of AI in decision making, claims report",
-      "uk_focus": true
-    },
-    {
-      "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",
-      "link": "https://www.theregister.com/security/2026/10/26/uk-pentester-killa-claims-2k-bitcoin-prize-in-php2shell-capture-the-flag-contest/5305429",
-      "source": "The Register",
-      "published": "2026-10-26T16:14:00Z",
-      "summary": "Jaydip Modhwadia beats challenge designed to test real-world exploitability of PHP2Shell in around 3 hours",
-      "uk_focus": true
-    },
-    {
-      "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
-      "link": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456",
-      "source": "The Register",
-      "published": "2026-10-26T15:47:05Z",
-      "summary": "Claude maker reveals financials and warns investors its AI models could blackmail humans, resist shutdown, or go rogue",
       "uk_focus": false
     }
   ]
