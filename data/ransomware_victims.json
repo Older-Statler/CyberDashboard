@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-10-29T02:41:52Z",
+  "generated_at": "2026-10-29T09:36:16Z",
   "victims": [
+    {
+      "group": "anubis",
+      "victim": "Santiam Hospital & Clinics",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-10-28T23:32:38.524137+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U2FudGlhbSBIb3NwaXRhbCAmIENsaW5pY3NAYW51Ymlz"
+    },
+    {
+      "group": "SilentRansomGroup",
+      "victim": "Lowenstein Sandler LLP",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-28T23:30:55.412982+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TG93ZW5zdGVpbiBTYW5kbGVyIExMUEBTaWxlbnRSYW5zb21Hcm91cA=="
+    },
+    {
+      "group": "lockbit5",
+      "victim": "susannecerda.com",
+      "country": "MX",
+      "sector": "Not Found",
+      "published": "2026-10-29T04:03:09.015718+00:00",
+      "domain": "susannecerda.com",
+      "url": "https://www.ransomware.live/id/c3VzYW5uZWNlcmRhLmNvbUBsb2NrYml0NQ=="
+    },
+    {
+      "group": "lockbit5",
+      "victim": "xspringcapital.com",
+      "country": "SG",
+      "sector": "Financial Services",
+      "published": "2026-10-29T04:03:54.440445+00:00",
+      "domain": "xspringcapital.com",
+      "url": "https://www.ransomware.live/id/eHNwcmluZ2NhcGl0YWwuY29tQGxvY2tiaXQ1"
+    },
     {
       "group": "SilentRansomGroup",
       "victim": "Morrison Foerster",
@@ -34,7 +70,7 @@
       "country": "US",
       "sector": "Manufacturing",
       "published": "2026-10-28T21:31:10.907978+00:00",
-      "domain": "",
+      "domain": "fortrexsolutions.com",
       "url": "https://www.ransomware.live/id/Rm9ydHJleEBXYWxsc3RyZWV0"
     },
     {
@@ -56,21 +92,12 @@
       "url": "https://www.ransomware.live/id/TC4uLkBTaWxlbnRSYW5zb21Hcm91cA=="
     },
     {
-      "group": "Panzer",
-      "victim": "PQE Group",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-10-28T18:26:50.917009+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UFFFIEdyb3VwQFBhbnplcg=="
-    },
-    {
       "group": "rhysida",
       "victim": "Noelker and Hull",
       "country": "US",
       "sector": "Professional Services",
       "published": "2026-10-28T16:59:06.260497+00:00",
-      "domain": "",
+      "domain": "noelkerhull.com",
       "url": "https://www.ransomware.live/id/Tm9lbGtlciBhbmQgSHVsbEByaHlzaWRh"
     },
     {
@@ -79,13 +106,13 @@
       "country": "DE",
       "sector": "Manufacturing",
       "published": "2026-10-28T14:49:50.250850+00:00",
-      "domain": "",
+      "domain": "hauhinco.de",
       "url": "https://www.ransomware.live/id/SGF1aGluY29AcGF5bG9hZA=="
     },
     {
       "group": "payload",
       "victim": "Marbre Design",
-      "country": "",
+      "country": "FR",
       "sector": "Manufacturing",
       "published": "2026-10-28T14:48:35.878124+00:00",
       "domain": "",
@@ -115,8 +142,17 @@
       "country": "",
       "sector": "Other",
       "published": "2026-10-28T02:10:42.771753+00:00",
-      "domain": "",
+      "domain": "wagyu.xyz",
       "url": "https://www.ransomware.live/id/d2FneXUueHl6IHVuZmFpcm5lc3NAV2hpdGVhcm1vcg=="
+    },
+    {
+      "group": "Panzer",
+      "victim": "PQE Group",
+      "country": "IT",
+      "sector": "Professional Services",
+      "published": "2026-10-28T18:26:50.917009+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UFFFIEdyb3VwQFBhbnplcg=="
     },
     {
       "group": "akira",
@@ -124,7 +160,7 @@
       "country": "",
       "sector": "Healthcare",
       "published": "2026-10-28T13:37:58.825942+00:00",
-      "domain": "",
+      "domain": "trulife.com",
       "url": "https://www.ransomware.live/id/VHJ1bGlmZUBha2lyYQ=="
     },
     {
@@ -133,7 +169,7 @@
       "country": "",
       "sector": "Professional Services",
       "published": "2026-10-28T13:37:39.134708+00:00",
-      "domain": "",
+      "domain": "jsrconsulting.com",
       "url": "https://www.ransomware.live/id/Um9iZXJ0cyBDb25zdWx0aW5nIFNlcnZpY2VzQGFraXJh"
     },
     {
@@ -171,24 +207,6 @@
       "published": "2026-10-28T01:09:16.806823+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/UnlkZXJAV2hpdGVhcm1vcg=="
-    },
-    {
-      "group": "rhysida",
-      "victim": "Machelen (Belgium)",
-      "country": "BE",
-      "sector": "Not Found",
-      "published": "2026-10-27T22:25:47.522037+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TWFjaGVsZW4gKEJlbGdpdW0pQHJoeXNpZGE="
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "https://t.me/whitearmorxd",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-27T23:18:42.871402+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/aHR0cHM6Ly90Lm1lL3doaXRlYXJtb3J4ZEBXaGl0ZWFybW9y"
     },
     {
       "group": "emperador",
@@ -882,24 +900,6 @@
       "published": "2026-10-25T15:52:01.178008+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/V2VpdHogJiBMdXhlbmJlcmdARmFsY29u"
-    },
-    {
-      "group": "Falcon",
-      "victim": "Astrana Health",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-25T14:53:02.969183+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QXN0cmFuYSBIZWFsdGhARmFsY29u"
-    },
-    {
-      "group": "emperador",
-      "victim": "A-RMS",
-      "country": "",
-      "sector": "Government & Defense",
-      "published": "2026-10-25T14:52:33.011354+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QS1STVNAZW1wZXJhZG9y"
     }
   ]
 }

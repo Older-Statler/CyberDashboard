@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T02:41:52Z",
+  "generated_at": "2026-10-29T09:36:16Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 13
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
+      "link": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139",
+      "source": "The Register",
+      "published": "2026-10-29T09:00:00Z",
+      "summary": "Cursing in login credentials can help keep the bad guys out, but not when the rest of your security is BS",
+      "uk_focus": false
+    },
+    {
+      "title": "MR ROBOT Malware-as-a-Service Targets Indian Bank Customers",
+      "link": "https://www.infosecurity-magazine.com/news/robot-malware-indian-bank-customers/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-29T09:00:00Z",
+      "summary": "MR ROBOT Android malware rents banking trojans that steal one-time passwords and card data",
+      "uk_focus": false
+    },
+    {
+      "title": "AI agents are gaining employee-level access. How partners can stop over-privileged automation",
+      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-agents-are-gaining-employee-level-access-how-partners-can-stop-over-privileged-automation",
+      "source": "ITPro",
+      "published": "2026-10-29T08:00:00Z",
+      "summary": "How partners can rein in over-privileged agents before access becomes a risk",
+      "uk_focus": false
+    },
     {
       "title": "Details of thousands of US immigration agents leaked in major hack",
       "link": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
@@ -312,38 +336,6 @@
       "published": "2026-10-27T09:39:00Z",
       "summary": "UK police forces and fire and rescue services have been urged to strengthen cybersecurity as rising cyber threats outpace current defenses",
       "uk_focus": true
-    },
-    {
-      "title": "Autumn Budget 2026: Healey sets out AI funding",
-      "link": "https://www.computerweekly.com/news/366652587/Autumn-Budget-2026-Healey-sets-out-AI-funding",
-      "source": "Computer Weekly",
-      "published": "2026-10-27T08:20:00Z",
-      "summary": "The chancellor wants to boost UK tech sovereignty and has unveiled plans to support chip development, AI defence and biosecurity",
-      "uk_focus": true
-    },
-    {
-      "title": "Why containers are no longer the biggest software security challenge",
-      "link": "https://www.itpro.com/security/why-containers-are-no-longer-the-biggest-software-security-challenge",
-      "source": "ITPro",
-      "published": "2026-10-27T08:00:00Z",
-      "summary": "Containers may be mainstream, but the security, governance, and AI risks building up around modern software development are creating a new advisory opportunity for the channel",
-      "uk_focus": false
-    },
-    {
-      "title": "Japan has declared a national cyber emergency – what could this mean for enterprise security leaders?",
-      "link": "https://www.itpro.com/security/cyber-attacks/japan-has-declared-a-national-cyber-emergency-what-could-this-mean-for-enterprise-security-leaders",
-      "source": "ITPro",
-      "published": "2026-10-27T08:00:00Z",
-      "summary": "Could authorities elsewhere take similar steps, and does it change how we respond to cyber incidents?",
-      "uk_focus": false
-    },
-    {
-      "title": "AI World: AI vulnerability surge brings change for Oracle’s cyber practice",
-      "link": "https://www.computerweekly.com/news/366652684/AI-World-AI-vulnerability-surge-brings-change-for-Oracles-cyber-practice",
-      "source": "Computer Weekly",
-      "published": "2026-10-27T06:45:00Z",
-      "summary": "With CVE volumes spiking amid AI-assisted vulnerability discovery, Oracle is responding with cyber initiatives and practices for its customers",
-      "uk_focus": false
     }
   ]
 }
