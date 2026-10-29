@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T16:44:13Z",
+  "generated_at": "2026-10-29T21:39:11Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,12 +15,12 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 10
     },
     {
       "name": "The Guardian",
@@ -35,12 +35,12 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Suspected Chinese attackers built a custom PHP2Shell exploit and rooted 25 servers",
+      "link": "https://www.theregister.com/security/2026/10/29/suspected-chinese-attackers-built-a-custom-php2shell-exploit-and-rooted-25-servers/5306456",
+      "source": "The Register",
+      "published": "2026-10-29T19:05:17Z",
+      "summary": "Snoops 'likely still' have access to US government-affiliated network",
+      "uk_focus": false
+    },
+    {
+      "title": "BYOD cyberattack diverts ambulances and cancels classes at University of New Mexico health center",
+      "link": "https://www.fortra.com/blog/byod-cyberattack-diverts-ambulances-and-cancels-classes-university-new-mexico-health-center",
+      "source": "Graham Cluley",
+      "published": "2026-10-29T17:01:24Z",
+      "summary": "Ambulances were diverted, surgeries cancelled, and medical students sent home from classes after a ransomware group attacked the University of New Mexico's Health Sciences Center (HSC) this week. Read more in my article on the Fortra blog.",
+      "uk_focus": false
+    },
     {
       "title": "NIK C2 Malware Can Use Victims’ OpenAI Keys for AI Queries",
       "link": "https://www.infosecurity-magazine.com/news/nik-c2-malware-victims-openai-keys/",
@@ -64,6 +80,14 @@
       "published": "2026-10-29T14:47:40Z",
       "summary": "Officials confirm this week’s tax deadlines extended to November as a result",
       "uk_focus": false
+    },
+    {
+      "title": "UK surveillance watchdog ‘disappointed’ over government investigatory powers failings",
+      "link": "https://www.computerweekly.com/news/366652841/UK-surveillance-watchdog-disappointed-over-government-investigatory-powers-failings",
+      "source": "Computer Weekly",
+      "published": "2026-10-29T14:24:00Z",
+      "summary": "Operational pressures do not reduce the need for lawful and consistent safeguards, says Investigatory Powers Commissioner’s Office (IPCO)",
+      "uk_focus": true
     },
     {
       "title": "CREST Urges Whole-Ecosystem Approach to Financial Cyber Resilience",
@@ -271,30 +295,6 @@
       "source": "Computer Weekly",
       "published": "2026-10-28T07:50:00Z",
       "summary": "Austria is following Germany’s lead by introducing a sovereign encrypted messaging service for healthcare professionals",
-      "uk_focus": false
-    },
-    {
-      "title": "Tech Life",
-      "link": "https://www.bbc.co.uk/sounds/play/w3ct8jys?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-10-27T20:30:00Z",
-      "summary": "We hear from Ondřej Surý, the programmer whose PHP patches helped avert a cyber crisis.",
-      "uk_focus": false
-    },
-    {
-      "title": "AI 'hacker' finds 4 severe bugs in popular industrial control software in under 4 hours",
-      "link": "https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811",
-      "source": "The Register",
-      "published": "2026-10-27T19:11:02Z",
-      "summary": "One critical, three high-severity EPICS bugs could disrupt research experiments",
-      "uk_focus": false
-    },
-    {
-      "title": "Cyber Incident Forces UNM Health to Cancel Surgeries, Divert Ambulances",
-      "link": "https://www.infosecurity-magazine.com/news/cyber-unmhealth-surgeries/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T16:45:00Z",
-      "summary": "The University of New Mexico is working to restore systems following the incident, which has been claimed by the BYOD ransomware group",
       "uk_focus": false
     }
   ]
