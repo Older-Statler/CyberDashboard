@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-10-29T09:36:16Z",
+  "generated_at": "2026-10-29T16:44:13Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 9
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 13
+      "count": 11
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,86 @@
     }
   ],
   "items": [
+    {
+      "title": "NIK C2 Malware Can Use Victims’ OpenAI Keys for AI Queries",
+      "link": "https://www.infosecurity-magazine.com/news/nik-c2-malware-victims-openai-keys/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-29T15:00:00Z",
+      "summary": "NIK C2 malware can fall back on victims’ OpenAI API keys to run AI queries",
+      "uk_focus": false
+    },
+    {
+      "title": "Belgium's tax agency confirms cyberattack, pulls services offline",
+      "link": "https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409",
+      "source": "The Register",
+      "published": "2026-10-29T14:47:40Z",
+      "summary": "Officials confirm this week’s tax deadlines extended to November as a result",
+      "uk_focus": false
+    },
+    {
+      "title": "CREST Urges Whole-Ecosystem Approach to Financial Cyber Resilience",
+      "link": "https://www.infosecurity-magazine.com/news/crest-financial-cyber-resilience/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-29T14:00:00Z",
+      "summary": "CREST has published a framework for strengthening cyber resilience across financial services",
+      "uk_focus": false
+    },
+    {
+      "title": "Shortlist of age checks for the UK's under-16 social media ban is out, 'some' adults will need verifying",
+      "link": "https://www.theregister.com/security/2026/10/29/shortlist-of-age-checks-for-the-uks-under-16-social-media-ban-is-out-some-adults-will-need-verifying/5306282",
+      "source": "The Register",
+      "published": "2026-10-29T12:33:00Z",
+      "summary": "Some adults may not need to prove it, but many will",
+      "uk_focus": true
+    },
+    {
+      "title": "Having a PHP patch available does not mean you're protected",
+      "link": "https://www.computerweekly.com/opinion/Having-a-PHP-patch-available-does-not-mean-youre-protected",
+      "source": "Computer Weekly",
+      "published": "2026-10-29T12:04:00Z",
+      "summary": "Patching is not a silver bullet solution. Turning patches into effective protection demands qualified professionals, clear responsibilities and the operational readiness to act.",
+      "uk_focus": false
+    },
+    {
+      "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
+      "link": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153",
+      "source": "The Register",
+      "published": "2026-10-29T12:00:00Z",
+      "summary": "'The workflow automatically is triggered within a second, and if the workflow is indeed vulnerable, then the attack is executed successfully'",
+      "uk_focus": false
+    },
+    {
+      "title": "Online Scam Volumes Double to Overtake Phishing",
+      "link": "https://www.infosecurity-magazine.com/news/online-scam-volumes-double/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-29T11:15:00Z",
+      "summary": "Akamai research reveals that scam detections topped six million in Q2 2026",
+      "uk_focus": false
+    },
+    {
+      "title": "ICO Reprimands Staffordshire Police After Domestic Abuse Breach",
+      "link": "https://www.infosecurity-magazine.com/news/ico-reprimand-staffordshire-police/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-29T10:30:00Z",
+      "summary": "The UK’s privacy regulator has issued a reprimand to Staffordshire Police following a serious breach of personal information",
+      "uk_focus": true
+    },
+    {
+      "title": "Security leaders brace for an overhaul of public key infrastructure as quantum risks rise",
+      "link": "https://www.itpro.com/security/encryption/security-leaders-brace-for-an-overhaul-of-public-key-infrastructure-as-quantum-risks-rise",
+      "source": "ITPro",
+      "published": "2026-10-29T10:20:00Z",
+      "summary": "The scale of the work ahead is becoming clearer across cryptographic discovery, automation, architecture, governance and investment",
+      "uk_focus": false
+    },
+    {
+      "title": "NIST Publishes Guidance to Meet Federal Post-Quantum Deadlines",
+      "link": "https://www.infosecurity-magazine.com/news/nist-guidance-post-quantum/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-29T09:45:00Z",
+      "summary": "The guidance sets out how federal agencies can prioritize PQC adoption for the most sensitive systems, to meet the 2031 transition deadline",
+      "uk_focus": false
+    },
     {
       "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
       "link": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139",
@@ -79,6 +159,14 @@
       "source": "BBC News",
       "published": "2026-10-29T01:30:43Z",
       "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
+      "uk_focus": false
+    },
+    {
+      "title": "Non-profit group leaks data of more than 40,000 homeland security workers",
+      "link": "https://www.theguardian.com/us-news/2026/oct/28/homeland-security-data-leak",
+      "source": "The Guardian",
+      "published": "2026-10-29T01:25:35Z",
+      "summary": "Information released by Distributed Denial of Secrets is the third such government data disclosure in the last month Data identifying more than 41,000 employees and contractors for the US Department of Homeland Security (DHS) was released on Wednesday in an unprecedented leak…",
       "uk_focus": false
     },
     {
@@ -208,134 +296,6 @@
       "published": "2026-10-27T16:45:00Z",
       "summary": "The University of New Mexico is working to restore systems following the incident, which has been claimed by the BYOD ransomware group",
       "uk_focus": false
-    },
-    {
-      "title": "Day 2 of canceled classes at University of New Mexico after Health Sciences Center cyberattack",
-      "link": "https://www.theregister.com/cyber-crime/2026/10/27/day-2-of-canceled-classes-at-university-of-new-mexico-after-health-sciences-center-cyberattack/5305690",
-      "source": "The Register",
-      "published": "2026-10-27T16:15:00Z",
-      "summary": "University hospitals once again accepting patients after initial ambulance diversion, but recovery to continue in phases",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers Infect 953 Online Stores With Scanner-Evading Code",
-      "link": "https://www.infosecurity-magazine.com/news/hackers-infect-953-online-stores/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T16:00:00Z",
-      "summary": "Attackers have infected 953 online stores with a scanner-evading JavaScript loader since July 2025",
-      "uk_focus": false
-    },
-    {
-      "title": "OpenAI Compaction Flaw Exposed AI Reasoning to Researchers",
-      "link": "https://www.infosecurity-magazine.com/news/openai-compaction-flaw-ai/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T16:00:00Z",
-      "summary": "Researchers uncovered an OpenAI API flaw that exposed hidden AI reasoning traces, prompting a fix and a $6000 bug bounty reward",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft Teams is getting a suite new AI features to crack down on phishing attacks",
-      "link": "https://www.itpro.com/security/phishing/microsoft-teams-is-getting-a-suite-new-ai-features-to-crack-down-on-phishing-attacks",
-      "source": "ITPro",
-      "published": "2026-10-27T15:08:57Z",
-      "summary": "A sharp rise in phishing attacks against Microsoft Teams has prompted a raft of new features",
-      "uk_focus": false
-    },
-    {
-      "title": "ISC2 Launches Cyber-AI Workforce Coalition to Address the Future of AI Security Jobs",
-      "link": "https://www.infosecurity-magazine.com/news/isc2-launches-cyberai-workforce/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T15:00:00Z",
-      "summary": "ISC2’s new Cyber-AI Workforce Coalition serves as a “vendor-neutral convener” to map the future of AI security careers, ISC2 CEO Scott Beale told Infosecurity",
-      "uk_focus": false
-    },
-    {
-      "title": "CISA confirms PHP2Shell under attack as researchers clock successful exploits",
-      "link": "https://www.theregister.com/cyber-crime/2026/10/27/cisa-confirms-php2shell-under-attack-as-researchers-clock-successful-exploits/5305681",
-      "source": "The Register",
-      "published": "2026-10-27T14:45:00Z",
-      "summary": "Both critical PHP flaws land on the agency’s exploited list as infosec pros confirm hackers are getting working shells",
-      "uk_focus": false
-    },
-    {
-      "title": "PHP2Shell: US updates Kev catalogue as exploits spread",
-      "link": "https://www.computerweekly.com/news/366652834/PHP2Shell-US-updates-Kev-catalogue-as-exploits-spread",
-      "source": "Computer Weekly",
-      "published": "2026-10-27T14:15:00Z",
-      "summary": "After live exploitation of PHP2Shell was verified at the weekend, the US Cisa cyber agency has updated its vulnerability catalogue, urging organisations to prioritise their fixes",
-      "uk_focus": false
-    },
-    {
-      "title": "OpenAI’s Altman: Only way out of patch apocalypse is through",
-      "link": "https://www.computerweekly.com/news/366652912/OpenAIs-Altman-Only-way-out-of-patch-apocalypse-is-through",
-      "source": "Computer Weekly",
-      "published": "2026-10-27T14:00:00Z",
-      "summary": "OpenAI CEO Sam Altman took to the keynote stage at Oracle AI World, calling for the security community to keep focus in the face of AI-enabled vulnerability discovery",
-      "uk_focus": false
-    },
-    {
-      "title": "UK police and fire services urged to bolster cyber capabilities",
-      "link": "https://www.itpro.com/security/uk-police-and-fire-services-urged-to-bolster-cyber-capabilities",
-      "source": "ITPro",
-      "published": "2026-10-27T13:14:55Z",
-      "summary": "From legacy systems and poor training to third-party risks, more needs to be done to protect sensitive data",
-      "uk_focus": true
-    },
-    {
-      "title": "Microsoft releases out-of-band Windows fixes with certificate updates",
-      "link": "https://www.theregister.com/security/2026/10/27/microsoft-releases-out-of-band-windows-fixes-with-certificate-updates/5305637",
-      "source": "The Register",
-      "published": "2026-10-27T12:30:00Z",
-      "summary": "Did you hear the one about eMudhra and the power of 4? Time to get connected to certificate trust list updates",
-      "uk_focus": false
-    },
-    {
-      "title": "Attackers Exploit Teams External Chat to Breach Organizations in Under 15 Minutes",
-      "link": "https://www.infosecurity-magazine.com/news/exploit-teams-chat-breach/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T12:30:00Z",
-      "summary": "Arctic Wolf warned that the function enables highly effective social engineering attacks, which lead to incidents such as ransomware",
-      "uk_focus": false
-    },
-    {
-      "title": "From industry concern to practical action: the value of working with regulators",
-      "link": "https://www.ncsc.gov.uk/blogs/industry-concern-practical-action-value-working-regulators",
-      "source": "NCSC",
-      "published": "2026-10-27T12:00:00Z",
-      "summary": "How industry, the NCSC and the FCA worked together to help organisations share information while protecting market integrity",
-      "uk_focus": true
-    },
-    {
-      "title": "Attack on email hosting provider for German far right party AfD exposed 345k accounts",
-      "link": "https://www.theregister.com/cyber-crime/2026/10/27/attack-on-email-hosting-provider-for-german-far-right-party-afd-exposed-345k-accounts/5305660",
-      "source": "The Register",
-      "published": "2026-10-27T11:49:30Z",
-      "summary": "Alternative für Deutschland swats away scandals as reporters swarm leaked email tranche",
-      "uk_focus": false
-    },
-    {
-      "title": "Copenhagen University Breach Compromises Data on Half a Million People",
-      "link": "https://www.infosecurity-magazine.com/news/copenhagen-university-data-breach/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T11:00:00Z",
-      "summary": "Hackers have stolen personal information on over 520,000 people from the University of Copenhagen",
-      "uk_focus": false
-    },
-    {
-      "title": "First ISC2 AI Security Certification Expected for Early 2027",
-      "link": "https://www.infosecurity-magazine.com/news/first-isc2-ai-security/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T10:30:00Z",
-      "summary": "ISC2 is seeking 3000 volunteers to enrol to a pilot exam phase for its upcoming AI security certification",
-      "uk_focus": false
-    },
-    {
-      "title": "Watchdog Urges Police and Fire Service to Improve Cybersecurity",
-      "link": "https://www.infosecurity-magazine.com/news/watchdog-police-fire-service/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-27T09:39:00Z",
-      "summary": "UK police forces and fire and rescue services have been urged to strengthen cybersecurity as rising cyber threats outpace current defenses",
-      "uk_focus": true
     }
   ]
 }

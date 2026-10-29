@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-29T09:36:16Z",
+  "generated_at": "2026-10-29T16:44:12Z",
   "victims": [
+    {
+      "group": "emperador",
+      "victim": "MAA Group Consulting Engineers",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-10-29T10:21:43.189083+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TUFBIEdyb3VwIENvbnN1bHRpbmcgRW5naW5lZXJzQGVtcGVyYWRvcg=="
+    },
+    {
+      "group": "rhysida",
+      "victim": "ClaimTek Systems",
+      "country": "",
+      "sector": "Financial Services",
+      "published": "2026-10-29T09:07:28.112468+00:00",
+      "domain": "claimtek.com",
+      "url": "https://www.ransomware.live/id/Q2xhaW1UZWsgU3lzdGVtc0ByaHlzaWRh"
+    },
     {
       "group": "anubis",
       "victim": "Santiam Hospital & Clinics",
@@ -31,7 +49,7 @@
     {
       "group": "lockbit5",
       "victim": "xspringcapital.com",
-      "country": "SG",
+      "country": "TH",
       "sector": "Financial Services",
       "published": "2026-10-29T04:03:54.440445+00:00",
       "domain": "xspringcapital.com",
@@ -882,24 +900,6 @@
       "published": "2026-10-25T17:18:17.976366+00:00",
       "domain": "www.whitecase.com",
       "url": "https://www.ransomware.live/id/V2hpdGUgJiBDYXNlQHFpbGlu"
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "Partido Liberal",
-      "country": "AR",
-      "sector": "Government & Defense",
-      "published": "2026-10-25T16:56:33.851704+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UGFydGlkbyBMaWJlcmFsQFdoaXRlYXJtb3I="
-    },
-    {
-      "group": "Falcon",
-      "victim": "Weitz & Luxenberg",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-25T15:52:01.178008+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/V2VpdHogJiBMdXhlbmJlcmdARmFsY29u"
     }
   ]
 }
