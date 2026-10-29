@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T23:07:48Z",
+  "generated_at": "2026-10-29T02:41:52Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 9
     },
     {
       "name": "Computer Weekly",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "BBC News",
@@ -53,8 +53,16 @@
       "title": "Details of thousands of US immigration agents leaked in major hack",
       "link": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
       "source": "BBC News",
-      "published": "2026-10-28T22:12:43Z",
+      "published": "2026-10-29T01:30:43Z",
       "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
+      "uk_focus": false
+    },
+    {
+      "title": "Smashing Security podcast #490: How Jared Kushner’s iPhone was allegedly hacked twice",
+      "link": "https://grahamcluley.com/smashing-security-podcast-490/",
+      "source": "Graham Cluley",
+      "published": "2026-10-29T00:16:56Z",
+      "summary": "Dutch spies, Russian hackers and Jared Kushner’s iPhone. It sounds like the ingredients for a thriller, but according to claims in a new book the US President's son-in-law may have been hacked twice. Is any of it true, and what does it tell us about the phones in our pockets?…",
       "uk_focus": false
     },
     {
@@ -335,14 +343,6 @@
       "source": "Computer Weekly",
       "published": "2026-10-27T06:45:00Z",
       "summary": "With CVE volumes spiking amid AI-assisted vulnerability discovery, Oracle is responding with cyber initiatives and practices for its customers",
-      "uk_focus": false
-    },
-    {
-      "title": "Japanese virtual desktop cloud hacked so hard it asks to be banned",
-      "link": "https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610",
-      "source": "The Register",
-      "published": "2026-10-27T01:06:22Z",
-      "summary": "CEO admits service used for foreign exchange trading had holes company was slow to fix",
       "uk_focus": false
     }
   ]
