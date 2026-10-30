@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-30T20:00:45Z",
+  "generated_at": "2026-10-30T23:38:52Z",
   "victims": [
+    {
+      "group": "rhysida",
+      "victim": "Cipsa Industrias Sa De Cv",
+      "country": "MX",
+      "sector": "Manufacturing",
+      "published": "2026-10-30T18:43:09.038702+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2lwc2EgSW5kdXN0cmlhcyBTYSBEZSBDdkByaHlzaWRh"
+    },
+    {
+      "group": "SilentRansomGroup",
+      "victim": "A... F...",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-10-30T17:09:36.433302+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QS4uLiBGLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
+    },
     {
       "group": "Doommageddon",
       "victim": "A***** T******",
@@ -36,6 +54,33 @@
       "published": "2026-10-30T00:02:22.816559+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/U3VzbWFuIEdvZGZyZXkgTExQQFNpbGVudFJhbnNvbUdyb3Vw"
+    },
+    {
+      "group": "qilin",
+      "victim": "Richland Resources Corporation",
+      "country": "US",
+      "sector": "Energy & Utilities",
+      "published": "2026-10-30T18:41:56.148562+00:00",
+      "domain": "rrcokc.com",
+      "url": "https://www.ransomware.live/id/UmljaGxhbmQgUmVzb3VyY2VzIENvcnBvcmF0aW9uQHFpbGlu"
+    },
+    {
+      "group": "qilin",
+      "victim": "Sistemas Visuales 360",
+      "country": "MX",
+      "sector": "Technology",
+      "published": "2026-10-30T16:40:18.382940+00:00",
+      "domain": "www.sistemasvisuales360.com.mx",
+      "url": "https://www.ransomware.live/id/U2lzdGVtYXMgVmlzdWFsZXMgMzYwQHFpbGlu"
+    },
+    {
+      "group": "qilin",
+      "victim": "Societe Ivoirienne De Telediffusion",
+      "country": "CI",
+      "sector": "Technology",
+      "published": "2026-10-30T16:39:39.901910+00:00",
+      "domain": "www.sidt.ci",
+      "url": "https://www.ransomware.live/id/U29jaWV0ZSBJdm9pcmllbm5lIERlIFRlbGVkaWZmdXNpb25AcWlsaW4="
     },
     {
       "group": "qilin",
@@ -855,51 +900,6 @@
       "published": "2026-10-27T04:31:06.242991+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/VEVDTkEgSUNFQGV2ZXJlc3Q="
-    },
-    {
-      "group": "everest",
-      "victim": "MediSolution",
-      "country": "",
-      "sector": "Healthcare",
-      "published": "2026-10-27T04:30:31.961924+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TWVkaVNvbHV0aW9uQGV2ZXJlc3Q="
-    },
-    {
-      "group": "everest",
-      "victim": "SleepEx LabRetriever",
-      "country": "",
-      "sector": "Healthcare",
-      "published": "2026-10-27T04:29:56.461196+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U2xlZXBFeCBMYWJSZXRyaWV2ZXJAZXZlcmVzdA=="
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "gamblinglore",
-      "country": "",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-27T04:05:36.281691+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Z2FtYmxpbmdsb3JlQFdoaXRlYXJtb3I="
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "Verification",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-10-27T03:07:40.796568+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VmVyaWZpY2F0aW9uQFdoaXRlYXJtb3I="
-    },
-    {
-      "group": "ULose",
-      "victim": "zzq-test",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-27T01:08:42.042582+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/enpxLXRlc3RAVUxvc2U="
     }
   ]
 }
