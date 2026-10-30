@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-30T01:42:27Z",
+  "generated_at": "2026-10-30T08:18:10Z",
   "victims": [
+    {
+      "group": "SilentRansomGroup",
+      "victim": "Susman Godfrey LLP",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-10-30T00:02:22.816559+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U3VzbWFuIEdvZGZyZXkgTExQQFNpbGVudFJhbnNvbUdyb3Vw"
+    },
+    {
+      "group": "Global Secret Group",
+      "victim": "TDS Telecommunications LLC.",
+      "country": "US",
+      "sector": "Energy & Utilities",
+      "published": "2026-10-29T21:54:07.712704+00:00",
+      "domain": "tdstelecom.com",
+      "url": "https://www.ransomware.live/id/VERTIFRlbGVjb21tdW5pY2F0aW9ucyBMTEMuQEdsb2JhbCBTZWNyZXQgR3JvdXA="
+    },
     {
       "group": "Shiba",
       "victim": "IT Foods Industries",
@@ -882,24 +900,6 @@
       "published": "2026-10-26T12:01:07.997083+00:00",
       "domain": "www.appl.de",
       "url": "https://www.ransomware.live/id/RklSTUVOR1JVUFBFIEFQUEwgSG9sZGluZyBHbWJIQHFpbGlu"
-    },
-    {
-      "group": "qilin",
-      "victim": "Premier Medical Group",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-26T12:00:15.570344+00:00",
-      "domain": "www.premiermedicalhv.com",
-      "url": "https://www.ransomware.live/id/UHJlbWllciBNZWRpY2FsIEdyb3VwQHFpbGlu"
-    },
-    {
-      "group": "qilin",
-      "victim": "Zachary Confections",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-26T11:59:07.803953+00:00",
-      "domain": "www.zacharyconfections.com",
-      "url": "https://www.ransomware.live/id/WmFjaGFyeSBDb25mZWN0aW9uc0BxaWxpbg=="
     }
   ]
 }

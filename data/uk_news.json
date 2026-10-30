@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T01:42:27Z",
+  "generated_at": "2026-10-30T08:18:10Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 3
+      "count": 5
     },
     {
       "name": "Graham Cluley",
@@ -50,11 +50,35 @@
   ],
   "items": [
     {
-      "title": "Crypto worth billions frozen after suspected Binance hack",
+      "title": "Hackers are using GitHub to push fake ChatGPT and Claude apps",
+      "link": "https://www.itpro.com/security/malware/hackers-are-using-github-to-push-fake-chatgpt-and-claude-apps",
+      "source": "ITPro",
+      "published": "2026-10-30T08:15:00Z",
+      "summary": "A Russia-linked campaign tricks users into installing infected software by by impersonating popular AI desktop applications",
+      "uk_focus": false
+    },
+    {
+      "title": "Hacked fridges and another Google Cloud outage",
+      "link": "https://www.itpro.com/security/cyber-attacks/hacked-fridges-and-another-google-cloud-outage",
+      "source": "ITPro",
+      "published": "2026-10-30T07:43:54Z",
+      "summary": "On this week's episode, ITPro news and analysis editor Ross Kelly joins Bobby and Scott to talk through the biggest stories of the month",
+      "uk_focus": false
+    },
+    {
+      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
       "link": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
       "source": "BBC News",
-      "published": "2026-10-30T01:20:57Z",
-      "summary": "The firm said transactions are suspended while it conducts security checks and will \"cover all losses\".",
+      "published": "2026-10-30T07:16:05Z",
+      "summary": "Two analytics firms have attributed the incident to a North Korean hacking unit called TraderTraitor.",
+      "uk_focus": false
+    },
+    {
+      "title": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
+      "link": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539",
+      "source": "The Register",
+      "published": "2026-10-30T04:22:12Z",
+      "summary": "Binance freezes funny money after compromise of engineer’s laptop linked to $6.3 billion of unauthorized trades",
       "uk_focus": false
     },
     {
@@ -303,14 +327,6 @@
       "source": "The Register",
       "published": "2026-10-28T11:45:00Z",
       "summary": "Company chiefs believe the attackers could be the same as those who used ARTEX to breach South Korea’s financial giants",
-      "uk_focus": false
-    },
-    {
-      "title": "Austrian doctors to swap emails and phone calls for encrypted messages",
-      "link": "https://www.computerweekly.com/news/366652932/Austrian-doctors-to-swap-emails-and-phone-calls-for-encrypted-messages",
-      "source": "Computer Weekly",
-      "published": "2026-10-28T07:50:00Z",
-      "summary": "Austria is following Germany’s lead by introducing a sovereign encrypted messaging service for healthcare professionals",
       "uk_focus": false
     }
   ]
