@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T21:39:11Z",
+  "generated_at": "2026-10-30T01:42:27Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Computer Weekly",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Crypto worth billions frozen after suspected Binance hack",
+      "link": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-10-30T01:20:57Z",
+      "summary": "The firm said transactions are suspended while it conducts security checks and will \"cover all losses\".",
+      "uk_focus": false
+    },
+    {
+      "title": "Researchers find bugs in 5 AI developer tools, with OpenAI and Microsoft flaws still unpatched",
+      "link": "https://www.theregister.com/security/2026/10/29/researchers-find-bugs-in-5-ai-developer-tools-with-openai-and-microsoft-flaws-still-unpatched/5306508",
+      "source": "The Register",
+      "published": "2026-10-29T23:12:26Z",
+      "summary": "Embedded browsers are at the heart of the problem",
+      "uk_focus": false
+    },
     {
       "title": "Suspected Chinese attackers built a custom PHP2Shell exploit and rooted 25 servers",
       "link": "https://www.theregister.com/security/2026/10/29/suspected-chinese-attackers-built-a-custom-php2shell-exploit-and-rooted-25-servers/5306456",
