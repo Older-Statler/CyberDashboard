@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T15:12:46Z",
+  "generated_at": "2026-10-30T20:00:46Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Computer Weekly",
@@ -20,12 +20,12 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 10
+      "count": 9
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "ITPro",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "BBC News",
@@ -49,6 +49,54 @@
     }
   ],
   "items": [
+    {
+      "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
+      "link": "https://www.theregister.com/security/2026/10/30/crim-spent-7k-on-ai-services-in-extortion-attacks-then-left-evidence-for-all-to-see/5306754",
+      "source": "The Register",
+      "published": "2026-10-30T19:37:12Z",
+      "summary": "n0n-existent security",
+      "uk_focus": false
+    },
+    {
+      "title": "Credit where it’s due to AI for uncovering the PHP flaw – and discredit to the leaker | Letters",
+      "link": "https://www.theguardian.com/technology/2026/oct/30/credit-where-its-due-to-ai-for-uncovering-the-php-flaw-and-discredit-to-the-leaker",
+      "source": "The Guardian",
+      "published": "2026-10-30T17:10:09Z",
+      "summary": "David Gibson says the problem is that details of the flaw were revealed before it was fixed, while Charles MacKinnon notes that we are at the mercy of technology we don’t understand Chris Stokel-Walker may be right ( The internet has broken – again. Shouldn’t the tech firms that…",
+      "uk_focus": false
+    },
+    {
+      "title": "GM cracks the petty cash box for multistate driver tracking settlement",
+      "link": "https://www.theregister.com/security/2026/10/30/gm-cracks-the-petty-cash-box-for-multistate-driver-tracking-settlement/5306721",
+      "source": "The Register",
+      "published": "2026-10-30T16:48:37Z",
+      "summary": "$220 million? For all of you? Yeah, we can probably dig that up ...",
+      "uk_focus": false
+    },
+    {
+      "title": "The Binance hack explained",
+      "link": "https://www.itpro.com/security/cyber-attacks/the-binance-hack-explained-how-much-cryptocurrency-was-stolen-whos-behind-the-attack-and-was-a-single-compromised-laptop-to-blame",
+      "source": "ITPro",
+      "published": "2026-10-30T16:31:08Z",
+      "summary": "Initial reports that a single compromised laptop was the cause of the Binance hack have been debunked by the crypto exchange firm",
+      "uk_focus": false
+    },
+    {
+      "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
+      "link": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682",
+      "source": "The Register",
+      "published": "2026-10-30T16:27:00Z",
+      "summary": "Claudeshop fingers 'malicious actor' in targeted supply-chain attack on Cursor",
+      "uk_focus": false
+    },
+    {
+      "title": "New Framework Puts Ransomware Resilience for AI Systems in Focus",
+      "link": "https://www.infosecurity-magazine.com/news/framework-ransomware-resilience-ai/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-10-30T15:53:00Z",
+      "summary": "RAID-AI aims to help organizations assess their security preparation for ransomware attacks targeting AI systems",
+      "uk_focus": false
+    },
     {
       "title": "Chinese Actor Compromises US Government Network Via Chained PHP2Shell Exploit",
       "link": "https://www.infosecurity-magazine.com/news/chinese-us-government-chained-php2/",
@@ -319,54 +367,6 @@
       "source": "Graham Cluley",
       "published": "2026-10-29T00:16:56Z",
       "summary": "Dutch spies, Russian hackers and Jared Kushner’s iPhone. It sounds like the ingredients for a thriller, but according to claims in a new book the US President's son-in-law may have been hacked twice. Is any of it true, and what does it tell us about the phones in our pockets?…",
-      "uk_focus": false
-    },
-    {
-      "title": "Oracle celebrates end of Cybersecurity Awareness Month with quadruple trouble",
-      "link": "https://www.theregister.com/security/2026/10/28/oracle-celebrates-end-of-cybersecurity-awareness-month-with-quadruple-trouble/5306121",
-      "source": "The Register",
-      "published": "2026-10-28T19:56:56Z",
-      "summary": "Attackers probe another EBS bug, and ShinyHunters' PeopleSoft 0-day turns out to involve three vulns",
-      "uk_focus": false
-    },
-    {
-      "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
-      "link": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050",
-      "source": "The Register",
-      "published": "2026-10-28T15:52:17Z",
-      "summary": "Artem Stryzhak joined both gangs, which targeted businesses and a hospital during the pandemic",
-      "uk_focus": false
-    },
-    {
-      "title": "Japan’s GMO Internet Urges Customers to Disconnect PCs",
-      "link": "https://www.infosecurity-magazine.com/news/japan-gmo-internet-disconnect/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-28T15:49:00Z",
-      "summary": "GMO Internet has told customers to unplug their PCs in advance of a possible ransomware attack",
-      "uk_focus": false
-    },
-    {
-      "title": "Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems",
-      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated",
-      "source": "Graham Cluley",
-      "published": "2026-10-28T15:27:15Z",
-      "summary": "A Ukrainian man who carried out ransomware attacks for both the Nefilim and Hive gangs, including attacks on law firms and a healthcare provider during the COVID-19 pandemic, has been sentenced to 70 months in a US prison. Read more in my article on the Hot for Security blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "CISA urges federal agencies to patch after PHP exploits observed",
-      "link": "https://www.itpro.com/security/cisa-urges-federal-agencies-to-patch-after-php-exploits-observed",
-      "source": "ITPro",
-      "published": "2026-10-28T15:20:37Z",
-      "summary": "The PHP vulnerabilities sent the web into a frenzy last week as organizations rushed to apply patches",
-      "uk_focus": false
-    },
-    {
-      "title": "Attackers Hide Malware Behind Signed ChatGPT and Claude Binaries",
-      "link": "https://www.infosecurity-magazine.com/news/attackers-hide-malware-behind/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-28T15:13:00Z",
-      "summary": "Attackers have used fake ChatGPT and Claude projects to distribute Yoba malware",
       "uk_focus": false
     }
   ]
