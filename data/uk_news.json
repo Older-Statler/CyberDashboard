@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T04:41:58Z",
+  "generated_at": "2026-10-31T10:46:44Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 10
     },
     {
       "name": "Computer Weekly",
@@ -20,7 +20,7 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 9
+      "count": 6
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 8
+      "count": 6
     },
     {
       "name": "Graham Cluley",
@@ -303,54 +303,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-10-29T11:15:00Z",
       "summary": "Akamai research reveals that scam detections topped six million in Q2 2026",
-      "uk_focus": false
-    },
-    {
-      "title": "ICO Reprimands Staffordshire Police After Domestic Abuse Breach",
-      "link": "https://www.infosecurity-magazine.com/news/ico-reprimand-staffordshire-police/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-29T10:30:00Z",
-      "summary": "The UK’s privacy regulator has issued a reprimand to Staffordshire Police following a serious breach of personal information",
-      "uk_focus": true
-    },
-    {
-      "title": "Security leaders brace for an overhaul of public key infrastructure as quantum risks rise",
-      "link": "https://www.itpro.com/security/encryption/security-leaders-brace-for-an-overhaul-of-public-key-infrastructure-as-quantum-risks-rise",
-      "source": "ITPro",
-      "published": "2026-10-29T10:20:00Z",
-      "summary": "The scale of the work ahead is becoming clearer across cryptographic discovery, automation, architecture, governance and investment",
-      "uk_focus": false
-    },
-    {
-      "title": "NIST Publishes Guidance to Meet Federal Post-Quantum Deadlines",
-      "link": "https://www.infosecurity-magazine.com/news/nist-guidance-post-quantum/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-29T09:45:00Z",
-      "summary": "The guidance sets out how federal agencies can prioritize PQC adoption for the most sensitive systems, to meet the 2031 transition deadline",
-      "uk_focus": false
-    },
-    {
-      "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
-      "link": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139",
-      "source": "The Register",
-      "published": "2026-10-29T09:00:00Z",
-      "summary": "Cursing in login credentials can help keep the bad guys out, but not when the rest of your security is BS",
-      "uk_focus": false
-    },
-    {
-      "title": "MR ROBOT Malware-as-a-Service Targets Indian Bank Customers",
-      "link": "https://www.infosecurity-magazine.com/news/robot-malware-indian-bank-customers/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-29T09:00:00Z",
-      "summary": "MR ROBOT Android malware rents banking trojans that steal one-time passwords and card data",
-      "uk_focus": false
-    },
-    {
-      "title": "AI agents are gaining employee-level access. How partners can stop over-privileged automation",
-      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-agents-are-gaining-employee-level-access-how-partners-can-stop-over-privileged-automation",
-      "source": "ITPro",
-      "published": "2026-10-29T08:00:00Z",
-      "summary": "How partners can rein in over-privileged agents before access becomes a risk",
       "uk_focus": false
     }
   ]

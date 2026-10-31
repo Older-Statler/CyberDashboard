@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T04:41:58Z",
+  "generated_at": "2026-10-31T10:46:43Z",
   "victims": [
     {
       "group": "everstake",
@@ -126,6 +126,15 @@
       "published": "2026-10-30T05:53:58.343512+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TWludXRlcyBRdWljayBTZXJ2aWNlc0BOMG4="
+    },
+    {
+      "group": "Scarlettgroup",
+      "victim": "spencers.com",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-31T03:34:17.691492+00:00",
+      "domain": "spencers.com",
+      "url": "https://www.ransomware.live/id/c3BlbmNlcnMuY29tQFNjYXJsZXR0Z3JvdXA="
     },
     {
       "group": "SilentRansomGroup",
@@ -891,15 +900,6 @@
       "published": "2026-10-27T17:29:53.098004+00:00",
       "domain": "www.qlc-labeling.com",
       "url": "https://www.ransomware.live/id/UUxDQHBsYXk="
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "wagyu.xyz",
-      "country": "",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-27T15:06:27.903414+00:00",
-      "domain": "wagyu.xyz",
-      "url": "https://www.ransomware.live/id/d2FneXUueHl6QFdoaXRlYXJtb3I="
     }
   ]
 }
