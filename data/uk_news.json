@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T23:38:52Z",
+  "generated_at": "2026-10-31T04:41:58Z",
   "window_hours": 48,
   "sources": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "ITPro",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 3
+      "count": 2
     },
     {
       "name": "BBC News",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+      "link": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-10-31T02:12:19Z",
+      "summary": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become.",
+      "uk_focus": false
+    },
     {
       "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
       "link": "https://www.theregister.com/security/2026/10/30/crim-spent-7k-on-ai-services-in-extortion-attacks-then-left-evidence-for-all-to-see/5306754",
@@ -343,30 +351,6 @@
       "source": "ITPro",
       "published": "2026-10-29T08:00:00Z",
       "summary": "How partners can rein in over-privileged agents before access becomes a risk",
-      "uk_focus": false
-    },
-    {
-      "title": "Details of thousands of US immigration agents leaked in major hack",
-      "link": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-10-29T01:30:43Z",
-      "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
-      "uk_focus": false
-    },
-    {
-      "title": "Non-profit group leaks data of more than 40,000 homeland security workers",
-      "link": "https://www.theguardian.com/us-news/2026/oct/28/homeland-security-data-leak",
-      "source": "The Guardian",
-      "published": "2026-10-29T01:25:35Z",
-      "summary": "Information released by Distributed Denial of Secrets is the third such government data disclosure in the last month Data identifying more than 41,000 employees and contractors for the US Department of Homeland Security (DHS) was released on Wednesday in an unprecedented leak…",
-      "uk_focus": false
-    },
-    {
-      "title": "Smashing Security podcast #490: How Jared Kushner’s iPhone was allegedly hacked twice",
-      "link": "https://grahamcluley.com/smashing-security-podcast-490/",
-      "source": "Graham Cluley",
-      "published": "2026-10-29T00:16:56Z",
-      "summary": "Dutch spies, Russian hackers and Jared Kushner’s iPhone. It sounds like the ingredients for a thriller, but according to claims in a new book the US President's son-in-law may have been hacked twice. Is any of it true, and what does it tell us about the phones in our pockets?…",
       "uk_focus": false
     }
   ]
