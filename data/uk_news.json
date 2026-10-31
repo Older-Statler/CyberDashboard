@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:46:44Z",
+  "generated_at": "2026-10-31T15:58:46Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 7
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 1
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 6
+      "count": 3
     },
     {
       "name": "The Guardian",
@@ -239,70 +239,6 @@
       "source": "Graham Cluley",
       "published": "2026-10-29T17:01:24Z",
       "summary": "Ambulances were diverted, surgeries cancelled, and medical students sent home from classes after a ransomware group attacked the University of New Mexico's Health Sciences Center (HSC) this week. Read more in my article on the Fortra blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "NIK C2 Malware Can Use Victims’ OpenAI Keys for AI Queries",
-      "link": "https://www.infosecurity-magazine.com/news/nik-c2-malware-victims-openai-keys/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-29T15:00:00Z",
-      "summary": "NIK C2 malware can fall back on victims’ OpenAI API keys to run AI queries",
-      "uk_focus": false
-    },
-    {
-      "title": "Belgium's tax agency confirms cyberattack, pulls services offline",
-      "link": "https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409",
-      "source": "The Register",
-      "published": "2026-10-29T14:47:40Z",
-      "summary": "Officials confirm this week’s tax deadlines extended to November as a result",
-      "uk_focus": false
-    },
-    {
-      "title": "UK surveillance watchdog ‘disappointed’ over government investigatory powers failings",
-      "link": "https://www.computerweekly.com/news/366652841/UK-surveillance-watchdog-disappointed-over-government-investigatory-powers-failings",
-      "source": "Computer Weekly",
-      "published": "2026-10-29T14:24:00Z",
-      "summary": "Operational pressures do not reduce the need for lawful and consistent safeguards, says Investigatory Powers Commissioner’s Office",
-      "uk_focus": true
-    },
-    {
-      "title": "CREST Urges Whole-Ecosystem Approach to Financial Cyber Resilience",
-      "link": "https://www.infosecurity-magazine.com/news/crest-financial-cyber-resilience/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-29T14:00:00Z",
-      "summary": "CREST has published a framework for strengthening cyber resilience across financial services",
-      "uk_focus": false
-    },
-    {
-      "title": "Shortlist of age checks for the UK's under-16 social media ban is out, 'some' adults will need verifying",
-      "link": "https://www.theregister.com/security/2026/10/29/shortlist-of-age-checks-for-the-uks-under-16-social-media-ban-is-out-some-adults-will-need-verifying/5306282",
-      "source": "The Register",
-      "published": "2026-10-29T12:33:00Z",
-      "summary": "Some adults may not need to prove it, but many will",
-      "uk_focus": true
-    },
-    {
-      "title": "Having a PHP patch available does not mean you're protected",
-      "link": "https://www.computerweekly.com/opinion/Having-a-PHP-patch-available-does-not-mean-youre-protected",
-      "source": "Computer Weekly",
-      "published": "2026-10-29T12:04:00Z",
-      "summary": "Patching is not a silver bullet solution. Turning patches into effective protection demands qualified professionals, clear responsibilities and the operational readiness to act.",
-      "uk_focus": false
-    },
-    {
-      "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
-      "link": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153",
-      "source": "The Register",
-      "published": "2026-10-29T12:00:00Z",
-      "summary": "'The workflow automatically is triggered within a second, and if the workflow is indeed vulnerable, then the attack is executed successfully'",
-      "uk_focus": false
-    },
-    {
-      "title": "Online Scam Volumes Double to Overtake Phishing",
-      "link": "https://www.infosecurity-magazine.com/news/online-scam-volumes-double/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-29T11:15:00Z",
-      "summary": "Akamai research reveals that scam detections topped six million in Q2 2026",
       "uk_focus": false
     }
   ]
