@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-10-31T15:58:46Z",
+  "generated_at": "2026-10-31T19:53:26Z",
   "victims": [
+    {
+      "group": "payload",
+      "victim": "Straze Garden Center",
+      "country": "",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-31T14:31:26.317572+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U3RyYXplIEdhcmRlbiBDZW50ZXJAcGF5bG9hZA=="
+    },
+    {
+      "group": "payload",
+      "victim": "Kraft Lernen",
+      "country": "DE",
+      "sector": "Education",
+      "published": "2026-10-31T14:30:05.303563+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S3JhZnQgTGVybmVuQHBheWxvYWQ="
+    },
+    {
+      "group": "payload",
+      "victim": "SALEG (Sachsen-Anhaltische Landesentwicklungsgesellschaft mbH)",
+      "country": "DE",
+      "sector": "Government & Defense",
+      "published": "2026-10-31T14:28:42.041214+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U0FMRUcgKFNhY2hzZW4tQW5oYWx0aXNjaGUgTGFuZGVzZW50d2lja2x1bmdzZ2VzZWxsc2NoYWZ0IG1iSClAcGF5bG9hZA=="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Phoenix Charter Academy",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-10-31T12:35:39.959568+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGhvZW5peCBDaGFydGVyIEFjYWRlbXlAcmh5c2lkYQ=="
+    },
     {
       "group": "sarcoma",
       "victim": "Ivan Smith Furniture",
@@ -864,42 +900,6 @@
       "published": "2026-10-28T20:24:06.315999+00:00",
       "domain": "aisj.co.il",
       "url": "https://www.ransomware.live/id/VGhlIEFuZ2xpY2FuIEludGVybmF0aW9uYWwgU2Nob29sQEdsb2JhbCBTZWNyZXQgR3JvdXA="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "L...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-28T17:34:09.834165+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TC4uLkBTaWxlbnRSYW5zb21Hcm91cA=="
-    },
-    {
-      "group": "rhysida",
-      "victim": "Noelker and Hull",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-28T16:59:06.260497+00:00",
-      "domain": "noelkerhull.com",
-      "url": "https://www.ransomware.live/id/Tm9lbGtlciBhbmQgSHVsbEByaHlzaWRh"
-    },
-    {
-      "group": "payload",
-      "victim": "Hauhinco",
-      "country": "DE",
-      "sector": "Manufacturing",
-      "published": "2026-10-28T14:49:50.250850+00:00",
-      "domain": "hauhinco.de",
-      "url": "https://www.ransomware.live/id/SGF1aGluY29AcGF5bG9hZA=="
-    },
-    {
-      "group": "payload",
-      "victim": "Marbre Design",
-      "country": "FR",
-      "sector": "Manufacturing",
-      "published": "2026-10-28T14:48:35.878124+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TWFyYnJlIERlc2lnbkBwYXlsb2Fk"
     }
   ]
 }
