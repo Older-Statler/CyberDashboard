@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-10-31T19:53:26Z",
+  "generated_at": "2026-10-31T23:10:37Z",
   "victims": [
+    {
+      "group": "Vexy Ransomware",
+      "victim": "JHAMF Group",
+      "country": "BD",
+      "sector": "Not Found",
+      "published": "2026-10-31T19:04:20.888985+00:00",
+      "domain": "www.jhamf.com",
+      "url": "https://www.ransomware.live/id/SkhBTUYgR3JvdXBAVmV4eSBSYW5zb213YXJl"
+    },
+    {
+      "group": "Vexy Ransomware",
+      "victim": "System Soft",
+      "country": "BG",
+      "sector": "Technology",
+      "published": "2026-10-31T19:04:42.079141+00:00",
+      "domain": "systemsoft.info",
+      "url": "https://www.ransomware.live/id/U3lzdGVtIFNvZnRAVmV4eSBSYW5zb213YXJl"
+    },
+    {
+      "group": "emperador",
+      "victim": "Punta Shopping",
+      "country": "BR",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-31T18:51:54.564529+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UHVudGEgU2hvcHBpbmdAZW1wZXJhZG9y"
+    },
     {
       "group": "payload",
       "victim": "Straze Garden Center",
@@ -162,6 +189,15 @@
       "published": "2026-10-31T07:18:47.943645+00:00",
       "domain": "bi-link.com",
       "url": "https://www.ransomware.live/id/QmkgTGlua0B0aGVnZW50bGVtZW4="
+    },
+    {
+      "group": "nightspire",
+      "victim": "**F*A *.A",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-10-31T18:29:04.429922+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/KipGKkEgKi5BQG5pZ2h0c3BpcmU="
     },
     {
       "group": "AuditTeam",
@@ -864,42 +900,6 @@
       "published": "2026-10-28T21:29:40.152117+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TW9ycmlzb24gRm9lcnN0ZXJAU2lsZW50UmFuc29tR3JvdXA="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "T... E...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-28T21:29:20.618729+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VC4uLiBFLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "S... H...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-28T21:28:57.171470+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Uy4uLiBILi4uQFNpbGVudFJhbnNvbUdyb3Vw"
-    },
-    {
-      "group": "Wallstreet",
-      "victim": "Fortrex",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-10-28T21:31:10.907978+00:00",
-      "domain": "fortrexsolutions.com",
-      "url": "https://www.ransomware.live/id/Rm9ydHJleEBXYWxsc3RyZWV0"
-    },
-    {
-      "group": "Global Secret Group",
-      "victim": "The Anglican International School",
-      "country": "IL",
-      "sector": "Education",
-      "published": "2026-10-28T20:24:06.315999+00:00",
-      "domain": "aisj.co.il",
-      "url": "https://www.ransomware.live/id/VGhlIEFuZ2xpY2FuIEludGVybmF0aW9uYWwgU2Nob29sQEdsb2JhbCBTZWNyZXQgR3JvdXA="
     }
   ]
 }
