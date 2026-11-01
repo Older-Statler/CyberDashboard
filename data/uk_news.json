@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:10:37Z",
+  "generated_at": "2026-11-01T02:29:06Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Computer Weekly",
@@ -215,14 +215,6 @@
       "source": "The Register",
       "published": "2026-10-30T04:22:12Z",
       "summary": "Binance freezes funny money after compromise of engineer’s laptop linked to $6.3 billion of unauthorized trades",
-      "uk_focus": false
-    },
-    {
-      "title": "Researchers find bugs in 5 AI developer tools, with OpenAI and Microsoft flaws still unpatched",
-      "link": "https://www.theregister.com/security/2026/10/29/researchers-find-bugs-in-5-ai-developer-tools-with-openai-and-microsoft-flaws-still-unpatched/5306508",
-      "source": "The Register",
-      "published": "2026-10-29T23:12:26Z",
-      "summary": "Embedded browsers are at the heart of the problem",
       "uk_focus": false
     }
   ]
