@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T09:37:59Z",
+  "generated_at": "2026-11-01T16:38:40Z",
   "victims": [
     {
       "group": "Barracuda",
@@ -9,6 +9,69 @@
       "published": "2026-11-01T01:50:47.238640+00:00",
       "domain": "evinoks.com",
       "url": "https://www.ransomware.live/id/RVZJTk9LU0BCYXJyYWN1ZGE="
+    },
+    {
+      "group": "qilin",
+      "victim": "Shibata Co., Ltd.",
+      "country": "JP",
+      "sector": "Manufacturing",
+      "published": "2026-11-01T12:25:55.065188+00:00",
+      "domain": "www.shibata.co.jp",
+      "url": "https://www.ransomware.live/id/U2hpYmF0YSBDby4sIEx0ZC5AcWlsaW4="
+    },
+    {
+      "group": "qilin",
+      "victim": "Meshbesher & Spence",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-01T12:25:32.835938+00:00",
+      "domain": "www.meshbesher.com",
+      "url": "https://www.ransomware.live/id/TWVzaGJlc2hlciAmIFNwZW5jZUBxaWxpbg=="
+    },
+    {
+      "group": "qilin",
+      "victim": "BKV Vasúti Jármjavító Kft",
+      "country": "HU",
+      "sector": "Transportation",
+      "published": "2026-11-01T12:24:51.104823+00:00",
+      "domain": "www.vjsz.hu",
+      "url": "https://www.ransomware.live/id/QktWIFZhc8O6dGkgSsOhcm1qYXbDrXTDsyBLZnRAcWlsaW4="
+    },
+    {
+      "group": "qilin",
+      "victim": "Forum",
+      "country": "AT",
+      "sector": "Professional Services",
+      "published": "2026-11-01T12:24:09.617902+00:00",
+      "domain": "www.forum-zt.at",
+      "url": "https://www.ransomware.live/id/Rm9ydW1AcWlsaW4="
+    },
+    {
+      "group": "qilin",
+      "victim": "Select Community Management",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-01T11:25:59.119232+00:00",
+      "domain": "www.thecondopros.com",
+      "url": "https://www.ransomware.live/id/U2VsZWN0IENvbW11bml0eSBNYW5hZ2VtZW50QHFpbGlu"
+    },
+    {
+      "group": "qilin",
+      "victim": "CMD Naturkosmetik",
+      "country": "DE",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-01T11:25:13.392406+00:00",
+      "domain": "www.cmd-natur.de",
+      "url": "https://www.ransomware.live/id/Q01EIE5hdHVya29zbWV0aWtAcWlsaW4="
+    },
+    {
+      "group": "qilin",
+      "victim": "qc-consult",
+      "country": "DE",
+      "sector": "Professional Services",
+      "published": "2026-11-01T11:24:24.453592+00:00",
+      "domain": "www.qc-consult.de",
+      "url": "https://www.ransomware.live/id/cWMtY29uc3VsdEBxaWxpbg=="
     },
     {
       "group": "qilin",
@@ -837,69 +900,6 @@
       "published": "2026-10-29T10:21:43.189083+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TUFBIEdyb3VwIENvbnN1bHRpbmcgRW5naW5lZXJzQGVtcGVyYWRvcg=="
-    },
-    {
-      "group": "rhysida",
-      "victim": "ClaimTek Systems",
-      "country": "",
-      "sector": "Financial Services",
-      "published": "2026-10-29T09:07:28.112468+00:00",
-      "domain": "claimtek.com",
-      "url": "https://www.ransomware.live/id/Q2xhaW1UZWsgU3lzdGVtc0ByaHlzaWRh"
-    },
-    {
-      "group": "Scarlettgroup",
-      "victim": "sunnybrook.ca",
-      "country": "CA",
-      "sector": "Healthcare",
-      "published": "2026-10-29T15:46:24.034979+00:00",
-      "domain": "sunnybrook.ca",
-      "url": "https://www.ransomware.live/id/c3Vubnlicm9vay5jYUBTY2FybGV0dGdyb3Vw"
-    },
-    {
-      "group": "Scarlettgroup",
-      "victim": "au.bank.in",
-      "country": "IN",
-      "sector": "Financial Services",
-      "published": "2026-10-29T15:45:17.986426+00:00",
-      "domain": "au.bank.in",
-      "url": "https://www.ransomware.live/id/YXUuYmFuay5pbkBTY2FybGV0dGdyb3Vw"
-    },
-    {
-      "group": "qilin",
-      "victim": "Proterial",
-      "country": "JP",
-      "sector": "Manufacturing",
-      "published": "2026-10-29T15:10:23.232443+00:00",
-      "domain": "www.proterial.com",
-      "url": "https://www.ransomware.live/id/UHJvdGVyaWFsQHFpbGlu"
-    },
-    {
-      "group": "anubis",
-      "victim": "Santiam Hospital & Clinics",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-28T23:32:38.524137+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U2FudGlhbSBIb3NwaXRhbCAmIENsaW5pY3NAYW51Ymlz"
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "Lowenstein Sandler LLP",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-28T23:30:55.412982+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TG93ZW5zdGVpbiBTYW5kbGVyIExMUEBTaWxlbnRSYW5zb21Hcm91cA=="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "susannecerda.com",
-      "country": "MX",
-      "sector": "Not Found",
-      "published": "2026-10-29T04:03:09.015718+00:00",
-      "domain": "susannecerda.com",
-      "url": "https://www.ransomware.live/id/c3VzYW5uZWNlcmRhLmNvbUBsb2NrYml0NQ=="
     }
   ]
 }

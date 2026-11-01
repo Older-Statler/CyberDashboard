@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T09:37:59Z",
+  "generated_at": "2026-11-01T16:38:40Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 4
+      "count": 2
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 3
+      "count": 0
     },
     {
       "name": "The Guardian",
@@ -30,17 +30,17 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 4
+      "count": 0
     },
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 3
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -87,110 +87,6 @@
       "source": "The Register",
       "published": "2026-10-30T16:48:37Z",
       "summary": "$220 million? For all of you? Yeah, we can probably dig that up ...",
-      "uk_focus": false
-    },
-    {
-      "title": "The Binance hack explained",
-      "link": "https://www.itpro.com/security/cyber-attacks/the-binance-hack-explained-how-much-cryptocurrency-was-stolen-whos-behind-the-attack-and-was-a-single-compromised-laptop-to-blame",
-      "source": "ITPro",
-      "published": "2026-10-30T16:31:08Z",
-      "summary": "Initial reports that a single compromised laptop was the cause of the Binance hack have been debunked by the crypto exchange firm",
-      "uk_focus": false
-    },
-    {
-      "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
-      "link": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682",
-      "source": "The Register",
-      "published": "2026-10-30T16:27:00Z",
-      "summary": "Claudeshop fingers 'malicious actor' in targeted supply-chain attack on Cursor",
-      "uk_focus": false
-    },
-    {
-      "title": "New Framework Puts Ransomware Resilience for AI Systems in Focus",
-      "link": "https://www.infosecurity-magazine.com/news/framework-ransomware-resilience-ai/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-30T15:53:00Z",
-      "summary": "RAID-AI aims to help organizations assess their security preparation for ransomware attacks targeting AI systems",
-      "uk_focus": false
-    },
-    {
-      "title": "Chinese Actor Compromises US Government Network Via Chained PHP2Shell Exploit",
-      "link": "https://www.infosecurity-magazine.com/news/chinese-us-government-chained-php2/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-30T12:00:00Z",
-      "summary": "Dream found that a suspected Chinese-nexus actor gained root access to Palo Alto Network firewall servers to target government organizations",
-      "uk_focus": false
-    },
-    {
-      "title": "Who could be behind the Binance hack and what we know so far",
-      "link": "https://www.bbc.co.uk/news/articles/cm5yn8eqg3npo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-10-30T11:57:33Z",
-      "summary": "Binance has been hit by what could be the biggest crypto hack ever - here's what we know so far",
-      "uk_focus": false
-    },
-    {
-      "title": "British intelligence agency misplaced 'thousands' of storage devices, years later still can't say how many",
-      "link": "https://www.theregister.com/security/2026/10/30/british-intelligence-agency-misplaced-thousands-of-storage-devices-years-later-still-cant-say-how-many/5306605",
-      "source": "The Register",
-      "published": "2026-10-30T11:45:00Z",
-      "summary": "Other agency errors included an unchecked software bug that led to Terrorism Act detentions",
-      "uk_focus": true
-    },
-    {
-      "title": "From Bitcoin to Binance: Crypto terms and what they mean",
-      "link": "https://www.bbc.co.uk/news/articles/cy5w2k5k5ylo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-10-30T11:35:51Z",
-      "summary": "The Binance hack has thrust cryptocurrencies back into headlines - but what are they and how do they work?",
-      "uk_focus": false
-    },
-    {
-      "title": "Binance Hit by Record-Breaking $6.3bn Hack in Largest Cryptocurrency Heist in History",
-      "link": "https://www.infosecurity-magazine.com/news/binance-record-hack-crypto-heist/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-10-30T11:25:00Z",
-      "summary": "Leading cryptocurrency analysts have attributed the cyber-attack to a North Korean elite hacking unit",
-      "uk_focus": false
-    },
-    {
-      "title": "Ransomware attacks on government agencies have surged 91% in a year",
-      "link": "https://www.itpro.com/security/ransomware/no-government-entity-large-or-small-previously-targeted-or-not-is-immune-ransomware-attacks-on-government-agencies-have-surged-91-percent-in-a-year",
-      "source": "ITPro",
-      "published": "2026-10-30T11:17:27Z",
-      "summary": "Comparitech has observed a rise in ransomware attacks against government organizations",
-      "uk_focus": false
-    },
-    {
-      "title": "40,000 staff exposed in 'severe' Department of Homeland Security breach",
-      "link": "https://www.itpro.com/security/data-breaches/a-severe-operational-failure-that-places-the-physical-safety-of-undercover-personnel-at-direct-risk-hacktivist-group-leaks-data-on-40-000-department-of-homeland-security-staff",
-      "source": "ITPro",
-      "published": "2026-10-30T10:41:55Z",
-      "summary": "A hacktivist group claims it gained access to DHS systems using compromised user credentials",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers leak personnel data of 41,000+ Homeland Security staff, including ICE and border agents",
-      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-leak-41-000-dhs-staff-data",
-      "source": "Graham Cluley",
-      "published": "2026-10-30T10:33:50Z",
-      "summary": "The US Department of Homeland Security has had the details of more than 41,000 staff, including ICE and CBP agents, published online. Not ideal for an organisation with \"Security\" in its name. Read more in my article on the Hot for Security blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "North Korean ‘elite’ hacking group steals $6.36bn from Binance",
-      "link": "https://www.computerweekly.com/news/366653153/North-Korean-elite-hacking-group-steals-636bn-from-Binance",
-      "source": "Computer Weekly",
-      "published": "2026-10-30T10:30:00Z",
-      "summary": "An engineer’s laptop was compromised, enabling hackers to withdraw $6.36bn from Binance wallets",
-      "uk_focus": false
-    },
-    {
-      "title": "Inside HPE Erskine – where enterprise technology gets a new lease of life",
-      "link": "https://www.itpro.com/business/inside-hpe-erskine-where-enterprise-technology-gets-a-new-lease-of-life",
-      "source": "ITPro",
-      "published": "2026-10-30T10:05:54Z",
-      "summary": "ITPro got a behind-the-scenes look at how HPE’s global facility is building trust in refurbished technology for a more circular IT economy",
       "uk_focus": false
     }
   ]
