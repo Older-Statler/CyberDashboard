@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T02:29:06Z",
+  "generated_at": "2026-11-01T09:37:59Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Computer Weekly",
@@ -25,12 +25,12 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 6
+      "count": 4
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "A gift to scammers: why you should probably keep your birthday a secret",
+      "link": "https://www.theguardian.com/money/2026/nov/01/do-not-share-date-of-birth-online-scam-fraudsters-advice",
+      "source": "The Guardian",
+      "published": "2026-11-01T07:00:05Z",
+      "summary": "Using a fake DOB or leaving the field blank when making an online account can offer protection from identity theft You get a call from your bank saying there has been suspicious activity on your account. They read out your name, address and date of birth so you are happy it is a…",
+      "uk_focus": false
+    },
     {
       "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
       "link": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
@@ -183,38 +191,6 @@
       "source": "ITPro",
       "published": "2026-10-30T10:05:54Z",
       "summary": "ITPro got a behind-the-scenes look at how HPE’s global facility is building trust in refurbished technology for a more circular IT economy",
-      "uk_focus": false
-    },
-    {
-      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
-      "link": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-10-30T09:33:51Z",
-      "summary": "Two analytics firms have attributed the incident to a North Korean hacking unit called TraderTraitor.",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers are using GitHub to push fake ChatGPT and Claude apps",
-      "link": "https://www.itpro.com/security/malware/hackers-are-using-github-to-push-fake-chatgpt-and-claude-apps",
-      "source": "ITPro",
-      "published": "2026-10-30T08:15:00Z",
-      "summary": "A Russia-linked campaign tricks users into installing infected software by by impersonating popular AI desktop applications",
-      "uk_focus": false
-    },
-    {
-      "title": "Hacked fridges and another Google Cloud outage",
-      "link": "https://www.itpro.com/security/cyber-attacks/hacked-fridges-and-another-google-cloud-outage",
-      "source": "ITPro",
-      "published": "2026-10-30T07:43:54Z",
-      "summary": "On this week's episode, ITPro news and analysis editor Ross Kelly joins Bobby and Scott to talk through the biggest stories of the month",
-      "uk_focus": false
-    },
-    {
-      "title": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
-      "link": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539",
-      "source": "The Register",
-      "published": "2026-10-30T04:22:12Z",
-      "summary": "Binance freezes funny money after compromise of engineer’s laptop linked to $6.3 billion of unauthorized trades",
       "uk_focus": false
     }
   ]

@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-01T02:29:06Z",
+  "generated_at": "2026-11-01T09:37:59Z",
   "victims": [
+    {
+      "group": "Barracuda",
+      "victim": "EVINOKS",
+      "country": "TR",
+      "sector": "Technology",
+      "published": "2026-11-01T01:50:47.238640+00:00",
+      "domain": "evinoks.com",
+      "url": "https://www.ransomware.live/id/RVZJTk9LU0BCYXJyYWN1ZGE="
+    },
+    {
+      "group": "qilin",
+      "victim": "Danser",
+      "country": "US",
+      "sector": "Other",
+      "published": "2026-11-01T00:39:08.118503+00:00",
+      "domain": "www.danserinc.com",
+      "url": "https://www.ransomware.live/id/RGFuc2VyQHFpbGlu"
+    },
     {
       "group": "Vexy Ransomware",
       "victim": "JHAMF Group",
@@ -20,15 +38,6 @@
       "url": "https://www.ransomware.live/id/U3lzdGVtIFNvZnRAVmV4eSBSYW5zb213YXJl"
     },
     {
-      "group": "emperador",
-      "victim": "Punta Shopping",
-      "country": "BR",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-31T18:51:54.564529+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UHVudGEgU2hvcHBpbmdAZW1wZXJhZG9y"
-    },
-    {
       "group": "payload",
       "victim": "Straze Garden Center",
       "country": "",
@@ -43,7 +52,7 @@
       "country": "DE",
       "sector": "Education",
       "published": "2026-10-31T14:30:05.303563+00:00",
-      "domain": "",
+      "domain": "kraft-lernen.de",
       "url": "https://www.ransomware.live/id/S3JhZnQgTGVybmVuQHBheWxvYWQ="
     },
     {
@@ -61,7 +70,7 @@
       "country": "US",
       "sector": "Education",
       "published": "2026-10-31T12:35:39.959568+00:00",
-      "domain": "",
+      "domain": "phoenixcharteracademy.org",
       "url": "https://www.ransomware.live/id/UGhvZW5peCBDaGFydGVyIEFjYWRlbXlAcmh5c2lkYQ=="
     },
     {
@@ -189,6 +198,15 @@
       "published": "2026-10-31T07:18:47.943645+00:00",
       "domain": "bi-link.com",
       "url": "https://www.ransomware.live/id/QmkgTGlua0B0aGVnZW50bGVtZW4="
+    },
+    {
+      "group": "emperador",
+      "victim": "Punta Shopping",
+      "country": "UY",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-10-31T18:51:54.564529+00:00",
+      "domain": "puntashopping.com.uy",
+      "url": "https://www.ransomware.live/id/UHVudGEgU2hvcHBpbmdAZW1wZXJhZG9y"
     },
     {
       "group": "nightspire",
@@ -882,24 +900,6 @@
       "published": "2026-10-29T04:03:09.015718+00:00",
       "domain": "susannecerda.com",
       "url": "https://www.ransomware.live/id/c3VzYW5uZWNlcmRhLmNvbUBsb2NrYml0NQ=="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "xspringcapital.com",
-      "country": "TH",
-      "sector": "Financial Services",
-      "published": "2026-10-29T04:03:54.440445+00:00",
-      "domain": "xspringcapital.com",
-      "url": "https://www.ransomware.live/id/eHNwcmluZ2NhcGl0YWwuY29tQGxvY2tiaXQ1"
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "Morrison Foerster",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-10-28T21:29:40.152117+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TW9ycmlzb24gRm9lcnN0ZXJAU2lsZW50UmFuc29tR3JvdXA="
     }
   ]
 }
