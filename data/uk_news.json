@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T16:38:40Z",
+  "generated_at": "2026-11-01T20:59:43Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 2
+      "count": 0
     },
     {
       "name": "Computer Weekly",
@@ -25,7 +25,7 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "ITPro",
@@ -63,30 +63,6 @@
       "source": "BBC News",
       "published": "2026-10-31T02:12:19Z",
       "summary": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become.",
-      "uk_focus": false
-    },
-    {
-      "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
-      "link": "https://www.theregister.com/security/2026/10/30/crim-spent-7k-on-ai-services-in-extortion-attacks-then-left-evidence-for-all-to-see/5306754",
-      "source": "The Register",
-      "published": "2026-10-30T19:37:12Z",
-      "summary": "n0n-existent security",
-      "uk_focus": false
-    },
-    {
-      "title": "Credit where it’s due to AI for uncovering the PHP flaw – and discredit to the leaker | Letters",
-      "link": "https://www.theguardian.com/technology/2026/oct/30/credit-where-its-due-to-ai-for-uncovering-the-php-flaw-and-discredit-to-the-leaker",
-      "source": "The Guardian",
-      "published": "2026-10-30T17:10:09Z",
-      "summary": "David Gibson says the problem is that details of the flaw were revealed before it was fixed, while Charles MacKinnon notes that we are at the mercy of technology we don’t understand Chris Stokel-Walker may be right ( The internet has broken – again. Shouldn’t the tech firms that…",
-      "uk_focus": false
-    },
-    {
-      "title": "GM cracks the petty cash box for multistate driver tracking settlement",
-      "link": "https://www.theregister.com/security/2026/10/30/gm-cracks-the-petty-cash-box-for-multistate-driver-tracking-settlement/5306721",
-      "source": "The Register",
-      "published": "2026-10-30T16:48:37Z",
-      "summary": "$220 million? For all of you? Yeah, we can probably dig that up ...",
       "uk_focus": false
     }
   ]

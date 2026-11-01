@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-01T16:38:40Z",
+  "generated_at": "2026-11-01T20:59:43Z",
   "victims": [
+    {
+      "group": "Whitearmor",
+      "victim": "AmplifAI (GoDaddy instance)",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-01T13:58:21.336343+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QW1wbGlmQUkgKEdvRGFkZHkgaW5zdGFuY2UpQFdoaXRlYXJtb3I="
+    },
+    {
+      "group": "direwolf",
+      "victim": "My Cloud Grocer",
+      "country": "GB",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-01T13:06:49.688974+00:00",
+      "domain": "mycloudgrocer.com",
+      "url": "https://www.ransomware.live/id/TXkgQ2xvdWQgR3JvY2VyQGRpcmV3b2xm"
+    },
+    {
+      "group": "HYFLOCK",
+      "victim": "hitech group",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-01T12:51:59.138258+00:00",
+      "domain": "hitechgroup.com",
+      "url": "https://www.ransomware.live/id/aGl0ZWNoIGdyb3VwQEhZRkxPQ0s="
+    },
     {
       "group": "Barracuda",
       "victim": "EVINOKS",
@@ -9,6 +36,15 @@
       "published": "2026-11-01T01:50:47.238640+00:00",
       "domain": "evinoks.com",
       "url": "https://www.ransomware.live/id/RVZJTk9LU0BCYXJyYWN1ZGE="
+    },
+    {
+      "group": "qilin",
+      "victim": "Global Holding",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-11-01T15:29:16.445863+00:00",
+      "domain": "globalholding-inc.com",
+      "url": "https://www.ransomware.live/id/R2xvYmFsIEhvbGRpbmdAcWlsaW4="
     },
     {
       "group": "qilin",
@@ -864,42 +900,6 @@
       "published": "2026-10-29T13:22:37.130896+00:00",
       "domain": "www.csba.org",
       "url": "https://www.ransomware.live/id/Q2FsaWZvcm5pYSBTY2hvb2wgQm9hcmRzIEFzc29jaWF0aW9uQEJvb2JhIFByb2plY3Q="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "National Association of Credit Management",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-10-29T13:22:58.010345+00:00",
-      "domain": "www.nacm.org",
-      "url": "https://www.ransomware.live/id/TmF0aW9uYWwgQXNzb2NpYXRpb24gb2YgQ3JlZGl0IE1hbmFnZW1lbnRAQm9vYmEgUHJvamVjdA=="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "LifeFone",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-10-29T13:23:18.856891+00:00",
-      "domain": "www.lifefone.com",
-      "url": "https://www.ransomware.live/id/TGlmZUZvbmVAQm9vYmEgUHJvamVjdA=="
-    },
-    {
-      "group": "dragonforce",
-      "victim": "lyserp.com",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-10-30T10:43:50.157404+00:00",
-      "domain": "www.lyserp.com",
-      "url": "https://www.ransomware.live/id/bHlzZXJwLmNvbUBkcmFnb25mb3JjZQ=="
-    },
-    {
-      "group": "emperador",
-      "victim": "MAA Group Consulting Engineers",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-10-29T10:21:43.189083+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TUFBIEdyb3VwIENvbnN1bHRpbmcgRW5naW5lZXJzQGVtcGVyYWRvcg=="
     }
   ]
 }
