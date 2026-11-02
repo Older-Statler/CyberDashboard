@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T07:27:55Z",
+  "generated_at": "2026-11-02T17:23:15Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 0
+      "count": 5
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 0
+      "count": 4
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Graham Cluley",
@@ -50,12 +50,108 @@
   ],
   "items": [
     {
+      "title": "Thieves pilfer environment variables from Trigger AI workflow tool",
+      "link": "https://www.theregister.com/security/2026/11/02/thieves-pilfer-environment-variables-from-trigger-ai-workflow-tool/5306998",
+      "source": "The Register",
+      "published": "2026-11-02T16:44:30Z",
+      "summary": "So, who's ready to clear the dust out of that server closet and move things back on-prem?",
+      "uk_focus": false
+    },
+    {
+      "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
+      "link": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967",
+      "source": "The Register",
+      "published": "2026-11-02T16:00:00Z",
+      "summary": "Don't let the LLMjackers hit you",
+      "uk_focus": false
+    },
+    {
+      "title": "Nuclear threats and street brawls: Russia, Ukraine report attacks on their emergency alert apps",
+      "link": "https://www.theregister.com/security/2026/11/02/nuclear-threats-and-street-brawls-russia-ukraine-report-attacks-on-their-emergency-alert-apps/5306901",
+      "source": "The Register",
+      "published": "2026-11-02T14:45:00Z",
+      "summary": "Within minutes of a ceasefire lifting in Kherson, Ukraine’s citizens were pummelled with threatening notifications",
+      "uk_focus": false
+    },
+    {
+      "title": "Armadin Tests Find 88% of Severe Flaws Outside Vendor Advisories",
+      "link": "https://www.infosecurity-magazine.com/news/armadin-severe-exposures-missed/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-02T14:45:00Z",
+      "summary": "Armadin found 88% of critical and high findings in its client tests fell outside vendor advisories",
+      "uk_focus": false
+    },
+    {
+      "title": "Bitter Deploys PapRAT in Asian Cyber-Espionage Campaign",
+      "link": "https://www.infosecurity-magazine.com/news/paprat-bitter-cyberespionage/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-02T14:00:00Z",
+      "summary": "Bitter used three infection chains against South and Southeast Asian targets, one with no malware executable",
+      "uk_focus": false
+    },
+    {
+      "title": "Frozen part II: Hackers remotely defrost produce in Euro supermarkets ... again",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/02/frozen-part-ii-hackers-remotely-defrost-produce-in-euro-supermarkets-again/5306924",
+      "source": "The Register",
+      "published": "2026-11-02T13:15:00Z",
+      "summary": "Let it go (bad): Dozens of stores report mass food wastage as managers start their week in puddles",
+      "uk_focus": false
+    },
+    {
+      "title": "Infostealer uses LLMs to compile dossiers on victims",
+      "link": "https://www.itpro.com/security/malware/infostealer-uses-llms-to-compile-dossiers-on-victims",
+      "source": "ITPro",
+      "published": "2026-11-02T13:07:53Z",
+      "summary": "Volta-Autodoxer collates and evaluates data from passwords to Uber Eats receipts",
+      "uk_focus": false
+    },
+    {
+      "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
+      "link": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
+      "source": "The Register",
+      "published": "2026-11-02T11:45:00Z",
+      "summary": "Exchange scrambles to replace stolen funds as customers withdraw billions and hackers get busy laundering their haul",
+      "uk_focus": false
+    },
+    {
+      "title": "FBI Attributes Binance Heist to North Korea’s TraderTraitor",
+      "link": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-02T10:15:00Z",
+      "summary": "The FBI has blamed North Korean APT group TraderTraitor for the world’s biggest cyber heist",
+      "uk_focus": false
+    },
+    {
+      "title": "Who controls the technology we depend on?",
+      "link": "https://www.computerweekly.com/opinion/Who-controls-the-technology-we-depend-on",
+      "source": "Computer Weekly",
+      "published": "2026-11-02T10:09:00Z",
+      "summary": "In October 2026, MI5 revealed it was spending more on countering state threats than it did during the Cold War. The Computer Weekly Security Think Tank explores the changing nature of state-backed cyber threats.",
+      "uk_focus": false
+    },
+    {
+      "title": "Chainalysis Warns Customers After “Offensive Agentic” Security Incident",
+      "link": "https://www.infosecurity-magazine.com/news/chainalysis-customers-offensive/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-02T09:30:00Z",
+      "summary": "Chainalysis reveals AI-driven attack that led to unauthorized activity",
+      "uk_focus": false
+    },
+    {
       "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
       "link": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC News",
-      "published": "2026-11-02T03:32:14Z",
+      "published": "2026-11-02T07:42:33Z",
       "summary": "The exchange froze transactions following the incident which has been linked to a North Korean group.",
       "uk_focus": false
+    },
+    {
+      "title": "Belfast journalists subjected to unlawful spying cannot claim costs over PSNI failures",
+      "link": "https://www.computerweekly.com/news/366653294/Belfast-journalists-subjected-to-unlawful-spying-cannot-claim-costs-over-PSNI-failures",
+      "source": "Computer Weekly",
+      "published": "2026-11-02T06:00:00Z",
+      "summary": "The Court of Appeal finds that the Investigatory Powers Tribunal has no power to award costs against Northern Ireland police despite ‘unreasonable conduct’ by the force",
+      "uk_focus": true
     },
     {
       "title": "A gift to scammers: why you should probably keep your birthday a secret",
