@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:50:09Z",
+  "generated_at": "2026-11-02T14:59:51Z",
   "lookups": {
     "151.245.230.21": {
       "noise": true,
@@ -1274,17 +1274,52 @@
       "name": "unknown",
       "last_seen": "2026-11-01",
       "checked_at": "2026-11-01T12:50:08Z"
+    },
+    "192.253.230.180": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-01",
+      "checked_at": "2026-11-02T14:59:50Z"
+    },
+    "125.44.178.50": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-10-24",
+      "checked_at": "2026-11-02T14:59:50Z"
+    },
+    "106.112.194.160": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-02",
+      "checked_at": "2026-11-02T14:59:51Z"
+    },
+    "150.241.244.61": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-02",
+      "checked_at": "2026-11-02T14:59:51Z"
+    },
+    "117.173.156.172": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-02",
+      "checked_at": "2026-11-02T14:59:51Z"
+    },
+    "144.48.130.149": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-02",
+      "checked_at": "2026-11-02T14:59:51Z"
     }
   },
   "usage": {
     "recent_lookups": [
-      "2026-10-26T12:26:57Z",
-      "2026-10-26T12:26:58Z",
-      "2026-10-26T12:26:58Z",
-      "2026-10-26T12:26:59Z",
-      "2026-10-26T12:26:59Z",
-      "2026-10-26T12:27:00Z",
-      "2026-10-26T12:27:00Z",
       "2026-10-27T11:45:45Z",
       "2026-10-27T11:45:45Z",
       "2026-10-27T11:45:46Z",
@@ -1326,7 +1361,14 @@
       "2026-11-01T12:50:08Z",
       "2026-11-01T12:50:08Z",
       "2026-11-01T12:50:08Z",
-      "2026-11-01T12:50:08Z"
+      "2026-11-01T12:50:08Z",
+      "2026-11-02T14:59:50Z",
+      "2026-11-02T14:59:50Z",
+      "2026-11-02T14:59:50Z",
+      "2026-11-02T14:59:51Z",
+      "2026-11-02T14:59:51Z",
+      "2026-11-02T14:59:51Z",
+      "2026-11-02T14:59:51Z"
     ]
   }
 }
