@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:54:57Z",
+  "generated_at": "2026-11-03T20:50:27Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 8
+      "count": 10
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 4
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 9
+      "count": 10
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Tech Monitor",
@@ -50,11 +50,59 @@
   ],
   "items": [
     {
+      "title": "AI policy wonks declare 'sovereign agents' a threat to civilization",
+      "link": "https://www.theregister.com/security/2026/11/03/ai-policy-wonks-declare-sovereign-agents-a-threat-to-civilization/5307354",
+      "source": "The Register",
+      "published": "2026-11-03T19:33:01Z",
+      "summary": "These are AI agents that operate outside of human control and 'pursue open-ended, evolving survival'",
+      "uk_focus": false
+    },
+    {
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "link": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-03T16:19:29Z",
+      "summary": "An engineer was contacted through a legitimate job-hunting platform and invited to bogus job interviews with fake company representatives, Binance says.",
+      "uk_focus": false
+    },
+    {
+      "title": "Password manager mSecure tells users to change passwords, won't say why",
+      "link": "https://www.theregister.com/security/2026/11/03/password-manager-msecure-tells-users-to-change-passwords-wont-say-why/5307296",
+      "source": "The Register",
+      "published": "2026-11-03T16:10:00Z",
+      "summary": "Customers left wondering what's been compromised after vendor advises resetting passwords, 2FA and passkeys",
+      "uk_focus": false
+    },
+    {
+      "title": "Russia-Aligned Gorbag Targets Ukraine for Intelligence",
+      "link": "https://www.infosecurity-magazine.com/news/russia-gorbag-targets-ukraine/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-03T15:30:00Z",
+      "summary": "Russia-aligned Gorbag has hit Ukrainian justice, local government and defense bodies since 2025",
+      "uk_focus": false
+    },
+    {
+      "title": "Identity and access management investment is skyrocketing",
+      "link": "https://www.itpro.com/security/identity-and-access-management-investment-is-skyrocketing-heres-why",
+      "source": "ITPro",
+      "published": "2026-11-03T15:10:35Z",
+      "summary": "Juniper Research predicts identity and access management investment to surge 55% on the back of AI",
+      "uk_focus": false
+    },
+    {
       "title": "Hackers Exploit BTCPay Server Flaw to Steal Cryptocurrency",
       "link": "https://www.infosecurity-magazine.com/news/btcpay-server-flaw-cryptocurrency/",
       "source": "Infosecurity Magazine",
       "published": "2026-11-03T14:30:00Z",
       "summary": "Attackers drained hot wallets on outdated BTCPay Server instances, with $1.63m traced so far",
+      "uk_focus": false
+    },
+    {
+      "title": "Exposing state threats still matters - resilience matters more",
+      "link": "https://www.computerweekly.com/opinion/Exposing-state-threats-still-matters-resilience-matters-more",
+      "source": "Computer Weekly",
+      "published": "2026-11-03T13:57:00Z",
+      "summary": "In October 2026, MI5 revealed it was spending more on countering state threats than it did during the Cold War. The Computer Weekly Security Think Tank explores the changing nature of state-backed cyber threats.",
       "uk_focus": false
     },
     {
@@ -79,6 +127,22 @@
       "source": "The Register",
       "published": "2026-11-03T12:39:25Z",
       "summary": "Cyber agency warns critical infrastructure is a likely target as chief urges bosses to stop doing 'tech on the cheap'",
+      "uk_focus": true
+    },
+    {
+      "title": "UK government backs Cyber Essentials discount for SMEs",
+      "link": "https://www.computerweekly.com/news/366653512/UK-government-backs-Cyber-Essentials-discount-for-SMEs",
+      "source": "Computer Weekly",
+      "published": "2026-11-03T12:35:00Z",
+      "summary": "Almost £10m of funding is being made available to help qualifying SMEs achieve Cyber Essentials certification.",
+      "uk_focus": true
+    },
+    {
+      "title": "UK abattoirs caught up in cyber attack against European supermarkets",
+      "link": "https://www.computerweekly.com/news/366653356/UK-abattoirs-caught-up-in-cyber-attack-against-European-supermarkets",
+      "source": "Computer Weekly",
+      "published": "2026-11-03T12:30:00Z",
+      "summary": "Refrigerators at three meat processors in the UK were hit by cyber attacks amid warnings from the UK’s National Cyber Security Centre to protect internet-facing industrial devices",
       "uk_focus": true
     },
     {
