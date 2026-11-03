@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T17:23:15Z",
+  "generated_at": "2026-11-03T00:00:01Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 5
+      "count": 7
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Max-severity bug in widely used OT programming tool exploited to deliver Linux malware",
+      "link": "https://www.theregister.com/security/2026/11/02/max-severity-bug-in-widely-used-ot-programming-tool-exploited-to-deliver-linux-malware/5307086",
+      "source": "The Register",
+      "published": "2026-11-02T22:55:17Z",
+      "summary": "Your industrial IoT gateway isn't exposed to the internet, right? RIGHT?!",
+      "uk_focus": false
+    },
+    {
+      "title": "Cops bust botnet of 1.3M infected Android TV boxes",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045",
+      "source": "The Register",
+      "published": "2026-11-02T19:03:31Z",
+      "summary": "Videostrong accused of shipping devices with a backdoor baked in",
+      "uk_focus": false
+    },
+    {
+      "title": "If hackers can take control of a supermarket freezer, how vulnerable is other tech?",
+      "link": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-02T18:25:01Z",
+      "summary": "Dozens of shops across European countries have been hit by a cyber-attack affecting their fridges.",
+      "uk_focus": false
+    },
     {
       "title": "Thieves pilfer environment variables from Trigger AI workflow tool",
       "link": "https://www.theregister.com/security/2026/11/02/thieves-pilfer-environment-variables-from-trigger-ai-workflow-tool/5306998",
@@ -79,6 +103,14 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-02T14:45:00Z",
       "summary": "Armadin found 88% of critical and high findings in its client tests fell outside vendor advisories",
+      "uk_focus": false
+    },
+    {
+      "title": "Cold chain cyber attacks highlight lack of OT security in retail",
+      "link": "https://www.computerweekly.com/news/366653380/Cold-chain-cyber-attacks-highlight-lack-of-OT-security-in-retail",
+      "source": "Computer Weekly",
+      "published": "2026-11-02T14:18:00Z",
+      "summary": "A series of cyber attacks targeting supermarket cold chain equipment has highlighted a lack of attention paid to the resilience of operational technology.",
       "uk_focus": false
     },
     {
