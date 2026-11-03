@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-11-03T00:00:01Z",
+  "generated_at": "2026-11-03T06:34:18Z",
   "victims": [
+    {
+      "group": "SilentRansomGroup",
+      "victim": "S... G...",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-02T21:00:34.267356+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Uy4uLiBHLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
+    },
     {
       "group": "everstake",
       "victim": "da*****t.com",
@@ -99,6 +108,15 @@
       "published": "2026-11-02T04:52:10.564040+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTEzQE4wbg=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Isapre Consalud",
+      "country": "CL",
+      "sector": "Healthcare",
+      "published": "2026-11-02T20:21:50.112374+00:00",
+      "domain": "www.consalud.cl",
+      "url": "https://www.ransomware.live/id/SXNhcHJlIENvbnNhbHVkQHFpbGlu"
     },
     {
       "group": "Orova",
@@ -477,6 +495,15 @@
       "published": "2026-10-31T07:18:47.943645+00:00",
       "domain": "bi-link.com",
       "url": "https://www.ransomware.live/id/QmkgTGlua0B0aGVnZW50bGVtZW4="
+    },
+    {
+      "group": "nightspire",
+      "victim": "REFSA S.A.",
+      "country": "AR",
+      "sector": "Other",
+      "published": "2026-11-02T22:26:30.067899+00:00",
+      "domain": "recursosyenergia.com.ar",
+      "url": "https://www.ransomware.live/id/UkVGU0EgUy5BLkBuaWdodHNwaXJl"
     },
     {
       "group": "emperador",
@@ -873,33 +900,6 @@
       "published": "2026-10-30T14:07:54.040565+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/SHVkc29uICYgSHVkc29uIFNpZ24gUHJvZHVjdHNAYWtpcmE="
-    },
-    {
-      "group": "akira",
-      "victim": "Service One Transportation",
-      "country": "",
-      "sector": "Transportation",
-      "published": "2026-10-30T14:07:33.876309+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U2VydmljZSBPbmUgVHJhbnNwb3J0YXRpb25AYWtpcmE="
-    },
-    {
-      "group": "qilin",
-      "victim": "Farmacia I",
-      "country": "MX",
-      "sector": "Healthcare",
-      "published": "2026-10-30T13:36:25.803166+00:00",
-      "domain": "www.farmaciasimas.com",
-      "url": "https://www.ransomware.live/id/RmFybWFjaWEgSUBxaWxpbg=="
-    },
-    {
-      "group": "qilin",
-      "victim": "Grupo Ciosa, SAPI de CV",
-      "country": "MX",
-      "sector": "Other",
-      "published": "2026-10-30T13:35:46.678379+00:00",
-      "domain": "www.ciosa.com",
-      "url": "https://www.ransomware.live/id/R3J1cG8gQ2lvc2EsIFNBUEkgZGUgQ1ZAcWlsaW4="
     }
   ]
 }

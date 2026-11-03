@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T00:00:01Z",
+  "generated_at": "2026-11-03T06:34:18Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "The Register",
@@ -15,7 +15,7 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
@@ -25,7 +25,7 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "ITPro",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,38 @@
     }
   ],
   "items": [
+    {
+      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
+      "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
+      "source": "NCSC",
+      "published": "2026-11-03T12:00:00Z",
+      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
+      "uk_focus": true
+    },
+    {
+      "title": "Artificial intelligence and cyber intrusion",
+      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
+      "source": "NCSC",
+      "published": "2026-11-03T12:00:00Z",
+      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
+      "uk_focus": true
+    },
+    {
+      "title": "North Korea denies being behind record $6.3bn Binance hack",
+      "link": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-03T06:22:29Z",
+      "summary": "US government agencies and cyber analysts have blamed Pyongyang for the record-breaking heist.",
+      "uk_focus": false
+    },
+    {
+      "title": "AI-powered malware ‘highly likely’ to be used to hack UK infrastructure by 2028",
+      "link": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
+      "source": "The Guardian",
+      "published": "2026-11-03T00:01:32Z",
+      "summary": "National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals AI-powered malicious software is “highly likely” to be used in hacking attacks against the UK’s power stations, airports and hospitals by 2028, according to the…",
+      "uk_focus": true
+    },
     {
       "title": "Max-severity bug in widely used OT programming tool exploited to deliver Linux malware",
       "link": "https://www.theregister.com/security/2026/11/02/max-severity-bug-in-widely-used-ot-programming-tool-exploited-to-deliver-linux-malware/5307086",
@@ -64,6 +96,14 @@
       "published": "2026-11-02T19:03:31Z",
       "summary": "Videostrong accused of shipping devices with a backdoor baked in",
       "uk_focus": false
+    },
+    {
+      "title": "UK to face AI-powered cyber attacks within two years, warns NCSC",
+      "link": "https://www.computerweekly.com/news/366653412/UK-to-face-AI-powered-cyber-attacks-within-two-years-warns-NCSC",
+      "source": "Computer Weekly",
+      "published": "2026-11-02T19:01:00Z",
+      "summary": "In a worst-case scenario, self-replicating artificial intelligence could launch cyber attacks at will against UK targets by 2028",
+      "uk_focus": true
     },
     {
       "title": "If hackers can take control of a supermarket freezer, how vulnerable is other tech?",
