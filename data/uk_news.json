@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T06:34:18Z",
+  "generated_at": "2026-11-03T14:54:57Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Computer Weekly",
@@ -20,17 +20,17 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 4
+      "count": 9
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 1
+      "count": 4
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,38 @@
     }
   ],
   "items": [
+    {
+      "title": "Hackers Exploit BTCPay Server Flaw to Steal Cryptocurrency",
+      "link": "https://www.infosecurity-magazine.com/news/btcpay-server-flaw-cryptocurrency/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-03T14:30:00Z",
+      "summary": "Attackers drained hot wallets on outdated BTCPay Server instances, with $1.63m traced so far",
+      "uk_focus": false
+    },
+    {
+      "title": "Cyber-Attack on Refrigeration Systems Hits Supermarkets Across Europe",
+      "link": "https://www.infosecurity-magazine.com/news/cyber-refrigeration-supermarkets/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-03T13:45:00Z",
+      "summary": "The incident has reportedly resulted in temperatures being changed on supermarket refrigerators, reminiscent of an attack that affected French retailers last month",
+      "uk_focus": false
+    },
+    {
+      "title": "UK meat industry hit by cyber-attack which targeted European supermarket freezers",
+      "link": "https://www.bbc.co.uk/news/articles/ckq6ndq8l6v0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-03T13:07:00Z",
+      "summary": "Supermarkets in countries including Ireland, Sweden and Belgium reported fridges being hiked in temperature on Monday.",
+      "uk_focus": true
+    },
+    {
+      "title": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
+      "link": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200",
+      "source": "The Register",
+      "published": "2026-11-03T12:39:25Z",
+      "summary": "Cyber agency warns critical infrastructure is a likely target as chief urges bosses to stop doing 'tech on the cheap'",
+      "uk_focus": true
+    },
     {
       "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
       "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
@@ -66,11 +98,59 @@
       "uk_focus": true
     },
     {
+      "title": "NCSC Chief Warns of Imminent AI Ransomware Threat to UK Critical Infrastructure",
+      "link": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-03T11:45:00Z",
+      "summary": "The UK’s cyber chief has warned that AI-powered malware is highly likely to feature in ransomware attacks targeting British critical infrastructure by 2028",
+      "uk_focus": true
+    },
+    {
+      "title": "NCSC warns UK firms could face a torrent of AI-powered cyber attacks",
+      "link": "https://www.itpro.com/security/cyber-attacks/the-ncsc-says-ai-powered-cyber-attacks-are-coming-for-uk-firms-but-they-still-need-to-sharpen-up-on-basic-security-practices",
+      "source": "ITPro",
+      "published": "2026-11-03T10:55:27Z",
+      "summary": "Critical national infrastructure organizations need to take advantage of the help available, and invest a great deal more",
+      "uk_focus": true
+    },
+    {
+      "title": "LLMJacking is Costing Some Businesses Up to $1m, Warns Google",
+      "link": "https://www.infosecurity-magazine.com/news/llmjacking-cost-business-1m-warns/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-03T10:45:00Z",
+      "summary": "Google Mandiant has warned of the high cost of hijacked access to large language models, or LLMJacking",
+      "uk_focus": false
+    },
+    {
+      "title": "Police and Tech Firms Team Up to Dismantle XCPE Botnet",
+      "link": "https://www.infosecurity-magazine.com/news/police-tech-firms-team-up-to/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-03T09:35:00Z",
+      "summary": "Google and partners have taken down the XCPE botnet attributed to Chinese device maker Videostrong",
+      "uk_focus": false
+    },
+    {
+      "title": "More European supermarkets hit by suspected cyber attack",
+      "link": "https://www.itpro.com/security/cyber-attacks/a-freezer-should-never-accept-an-instruction-to-heat-to-50-c-no-matter-who-sends-it-more-european-supermarkets-hit-by-suspected-cyber-attack",
+      "source": "ITPro",
+      "published": "2026-11-03T08:46:29Z",
+      "summary": "More than 40 stores have been affected across seven countries as experts warn thousands more internet-exposed systems remain vulnerable",
+      "uk_focus": false
+    },
+    {
       "title": "North Korea denies being behind record $6.3bn Binance hack",
       "link": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
       "source": "BBC News",
-      "published": "2026-11-03T06:22:29Z",
+      "published": "2026-11-03T08:33:20Z",
       "summary": "US government agencies and cyber analysts have blamed Pyongyang for the record-breaking heist.",
+      "uk_focus": false
+    },
+    {
+      "title": "What is memory poisoning and who is at risk?",
+      "link": "https://www.itpro.com/security/what-is-memory-poisoning-and-who-is-at-risk",
+      "source": "ITPro",
+      "published": "2026-11-03T08:00:00Z",
+      "summary": "Researchers are warning that AI is at risk from memory poisoning. How do attacks work, and how should firms respond to the threat?",
       "uk_focus": false
     },
     {
@@ -150,7 +230,7 @@
       "link": "https://www.computerweekly.com/news/366653380/Cold-chain-cyber-attacks-highlight-lack-of-OT-security-in-retail",
       "source": "Computer Weekly",
       "published": "2026-11-02T14:18:00Z",
-      "summary": "A series of cyber attacks targeting supermarket cold chain equipment has highlighted a lack of attention paid to the resilience of operational technology.",
+      "summary": "A series of cyber attacks targeting supermarket cold chain equipment has highlighted a lack of attention paid to the resilience of operational technology",
       "uk_focus": false
     },
     {
@@ -224,14 +304,6 @@
       "published": "2026-11-02T06:00:00Z",
       "summary": "The Court of Appeal finds that the Investigatory Powers Tribunal has no power to award costs against Northern Ireland police despite ‘unreasonable conduct’ by the force",
       "uk_focus": true
-    },
-    {
-      "title": "A gift to scammers: why you should probably keep your birthday a secret",
-      "link": "https://www.theguardian.com/money/2026/nov/01/do-not-share-date-of-birth-online-scam-fraudsters-advice",
-      "source": "The Guardian",
-      "published": "2026-11-01T07:00:05Z",
-      "summary": "Using a fake DOB or leaving the field blank when making an online account can offer protection from identity theft You get a call from your bank saying there has been suspicious activity on your account. They read out your name, address and date of birth so you are happy it is a…",
-      "uk_focus": false
     }
   ]
 }
