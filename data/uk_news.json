@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T16:02:45Z",
+  "generated_at": "2026-11-04T22:04:52Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 9
+      "count": 8
     },
     {
       "name": "Computer Weekly",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Tech Monitor",
@@ -50,19 +50,27 @@
   ],
   "items": [
     {
+      "title": "Apple turns iCloud into spy cloud, will start looking at public share links",
+      "link": "https://www.theregister.com/security/2026/11/04/apple-turns-icloud-into-spy-cloud-will-start-looking-at-public-share-links/5307681",
+      "source": "The Register",
+      "published": "2026-11-04T21:49:38Z",
+      "summary": "Content shared with anyone who has the URL will be scanned for 'harmful content,' though the iMaker hasn't defined that term",
+      "uk_focus": false
+    },
+    {
+      "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
+      "link": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-04T16:26:15Z",
+      "summary": "The French Blood Establishment (EFS) said cold rooms storing blood were impacted by hackers.",
+      "uk_focus": false
+    },
+    {
       "title": "US gov IT worker pleads guilty to sending Top Secret files to Ethiopia",
       "link": "https://www.theregister.com/security/2026/11/04/us-gov-it-worker-pleads-guilty-to-sending-top-secret-files-to-ethiopia/5307595",
       "source": "The Register",
       "published": "2026-11-04T15:39:30Z",
       "summary": "Help desk technician agrees to minimum 10-year jail term after being caught copying files for more than 2 years",
-      "uk_focus": false
-    },
-    {
-      "title": "Russian hacktivists say they were behind freezer hacks, but speculation remains",
-      "link": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-04T15:19:46Z",
-      "summary": "Noname and Z-Pentest Alliance are claiming responsibility - but this is being met with scepticism.",
       "uk_focus": false
     },
     {
@@ -96,6 +104,14 @@
       "published": "2026-11-04T12:10:59Z",
       "summary": "The attack on cold rooms at Coolworld happened the same night as attacks on fridges in Benelux and Sweden",
       "uk_focus": false
+    },
+    {
+      "title": "Mastercard meets ‘responsibility’ through SME cyber security training",
+      "link": "https://www.computerweekly.com/news/366653613/Mastercard-meets-responsibility-through-SME-cyber-security-training",
+      "source": "Computer Weekly",
+      "published": "2026-11-04T12:00:00Z",
+      "summary": "Card giant is offering free cyber security training to millions of SMEs in the UK through its SME Academy",
+      "uk_focus": true
     },
     {
       "title": "3AM Ransomware Used Human-AI Hybrid Tactics in UK School Estate Compromise",
@@ -351,38 +367,6 @@
       "source": "The Register",
       "published": "2026-11-02T22:55:17Z",
       "summary": "Your industrial IoT gateway isn't exposed to the internet, right? RIGHT?!",
-      "uk_focus": false
-    },
-    {
-      "title": "Cops bust botnet of 1.3M infected Android TV boxes",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045",
-      "source": "The Register",
-      "published": "2026-11-02T19:03:31Z",
-      "summary": "Videostrong accused of shipping devices with a backdoor baked in",
-      "uk_focus": false
-    },
-    {
-      "title": "UK to face AI-powered cyber attacks within two years, warns NCSC",
-      "link": "https://www.computerweekly.com/news/366653412/UK-to-face-AI-powered-cyber-attacks-within-two-years-warns-NCSC",
-      "source": "Computer Weekly",
-      "published": "2026-11-02T19:01:00Z",
-      "summary": "In a worst-case scenario, self-replicating artificial intelligence could launch cyber attacks at will against UK targets by 2028",
-      "uk_focus": true
-    },
-    {
-      "title": "If hackers can take control of a supermarket freezer, how vulnerable is other tech?",
-      "link": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-02T18:25:01Z",
-      "summary": "Dozens of shops across European countries have been hit by a cyber-attack affecting their fridges.",
-      "uk_focus": false
-    },
-    {
-      "title": "Thieves pilfer environment variables from Trigger AI workflow tool",
-      "link": "https://www.theregister.com/security/2026/11/02/thieves-pilfer-environment-variables-from-trigger-ai-workflow-tool/5306998",
-      "source": "The Register",
-      "published": "2026-11-02T16:44:30Z",
-      "summary": "So, who's ready to clear the dust out of that server closet and move things back on-prem?",
       "uk_focus": false
     }
   ]
