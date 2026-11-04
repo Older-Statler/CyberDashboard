@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:06:41Z",
+  "generated_at": "2026-11-04T07:52:19Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,7 +15,7 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Tech Monitor",
@@ -368,22 +368,6 @@
       "published": "2026-11-02T09:30:00Z",
       "summary": "Chainalysis reveals AI-driven attack that led to unauthorized activity",
       "uk_focus": false
-    },
-    {
-      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
-      "link": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-02T07:42:33Z",
-      "summary": "The exchange froze transactions following the incident which has been linked to a North Korean group.",
-      "uk_focus": false
-    },
-    {
-      "title": "Belfast journalists subjected to unlawful spying cannot claim costs over PSNI failures",
-      "link": "https://www.computerweekly.com/news/366653294/Belfast-journalists-subjected-to-unlawful-spying-cannot-claim-costs-over-PSNI-failures",
-      "source": "Computer Weekly",
-      "published": "2026-11-02T06:00:00Z",
-      "summary": "The Court of Appeal finds that the Investigatory Powers Tribunal has no power to award costs against Northern Ireland police despite ‘unreasonable conduct’ by the force",
-      "uk_focus": true
     }
   ]
 }
