@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-04T07:52:18Z",
+  "generated_at": "2026-11-04T16:02:45Z",
   "victims": [
+    {
+      "group": "rhysida",
+      "victim": "Juge, Napolitano, Ruli, Putfark & Pittman",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-11-04T09:49:52.047003+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SnVnZSwgTmFwb2xpdGFubywgUnVsaSwgUHV0ZmFyayAmIFBpdHRtYW5Acmh5c2lkYQ=="
+    },
+    {
+      "group": "Scarlettgroup",
+      "victim": "sigsauer.com",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-04T08:30:41.479687+00:00",
+      "domain": "sigsauer.com",
+      "url": "https://www.ransomware.live/id/c2lnc2F1ZXIuY29tQFNjYXJsZXR0Z3JvdXA="
+    },
     {
       "group": "Aoqin",
       "victim": "SILIKO d.o.o.",
@@ -36,6 +54,15 @@
       "published": "2026-11-04T00:52:42.935237+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/R29sZHNtaXRoICYgSHVsbEBBb3Fpbg=="
+    },
+    {
+      "group": "Doommageddon",
+      "victim": "ASLAN TEKSTİL ve KONFEKSİYON San.ve Tic. A.Ş.",
+      "country": "TR",
+      "sector": "Manufacturing",
+      "published": "2026-11-04T08:21:21.424054+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QVNMQU4gVEVLU1TEsEwgdmUgS09ORkVLU8SwWU9OIFNhbi52ZSBUaWMuIEEuxZ4uQERvb21tYWdlZGRvbg=="
     },
     {
       "group": "incransom",
@@ -452,6 +479,24 @@
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTEzQE4wbg=="
     },
     {
+      "group": "pear",
+      "victim": "gWorks",
+      "country": "US",
+      "sector": "Other",
+      "published": "2026-11-04T09:48:34.196620+00:00",
+      "domain": "gworks.com",
+      "url": "https://www.ransomware.live/id/Z1dvcmtzQHBlYXI="
+    },
+    {
+      "group": "pear",
+      "victim": "Palm Vascular Centers",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-04T09:47:42.923537+00:00",
+      "domain": "palmvascular.com",
+      "url": "https://www.ransomware.live/id/UGFsbSBWYXNjdWxhciBDZW50ZXJzQHBlYXI="
+    },
+    {
       "group": "Orova",
       "victim": "MARDEC Berhad",
       "country": "MY",
@@ -855,51 +900,6 @@
       "published": "2026-10-31T07:59:35.931824+00:00",
       "domain": "uaa.mx",
       "url": "https://www.ransomware.live/id/dWFhLm14QHNhZmVwYXk="
-    },
-    {
-      "group": "N0n",
-      "victim": "Digital Triumph",
-      "country": "MY",
-      "sector": "Technology",
-      "published": "2026-10-31T07:58:16.924529+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RGlnaXRhbCBUcml1bXBoQE4wbg=="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Bi Link",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-10-31T07:18:47.943645+00:00",
-      "domain": "bi-link.com",
-      "url": "https://www.ransomware.live/id/QmkgTGlua0B0aGVnZW50bGVtZW4="
-    },
-    {
-      "group": "nightspire",
-      "victim": "REFSA S.A.",
-      "country": "AR",
-      "sector": "Other",
-      "published": "2026-11-02T22:26:30.067899+00:00",
-      "domain": "recursosyenergia.com.ar",
-      "url": "https://www.ransomware.live/id/UkVGU0EgUy5BLkBuaWdodHNwaXJl"
-    },
-    {
-      "group": "emperador",
-      "victim": "Punta Shopping",
-      "country": "UY",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-10-31T18:51:54.564529+00:00",
-      "domain": "puntashopping.com.uy",
-      "url": "https://www.ransomware.live/id/UHVudGEgU2hvcHBpbmdAZW1wZXJhZG9y"
-    },
-    {
-      "group": "nightspire",
-      "victim": "**F*A *.A",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-10-31T18:29:04.429922+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/KipGKkEgKi5BQG5pZ2h0c3BpcmU="
     }
   ]
 }

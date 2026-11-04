@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T07:52:19Z",
+  "generated_at": "2026-11-04T16:02:45Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 9
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 5
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 10
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 5
+      "count": 8
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,110 @@
     }
   ],
   "items": [
+    {
+      "title": "US gov IT worker pleads guilty to sending Top Secret files to Ethiopia",
+      "link": "https://www.theregister.com/security/2026/11/04/us-gov-it-worker-pleads-guilty-to-sending-top-secret-files-to-ethiopia/5307595",
+      "source": "The Register",
+      "published": "2026-11-04T15:39:30Z",
+      "summary": "Help desk technician agrees to minimum 10-year jail term after being caught copying files for more than 2 years",
+      "uk_focus": false
+    },
+    {
+      "title": "Russian hacktivists say they were behind freezer hacks, but speculation remains",
+      "link": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-04T15:19:46Z",
+      "summary": "Noname and Z-Pentest Alliance are claiming responsibility - but this is being met with scepticism.",
+      "uk_focus": false
+    },
+    {
+      "title": "China-Aligned Group Abuses Sogou Input Method to Deliver Malware",
+      "link": "https://www.infosecurity-magazine.com/news/slippynunchucks-sogou-dns-hijacking/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-04T15:00:00Z",
+      "summary": "SlippyNunchucks used DNS hijacking to turn Sogou brand promotions into a malware channel",
+      "uk_focus": false
+    },
+    {
+      "title": "APT29 Watering Holes Target Unpatched iPhones and Android Devices",
+      "link": "https://www.infosecurity-magazine.com/news/apt29-watering-holes-iphones/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-04T14:00:00Z",
+      "summary": "APT29 compromised Ukrainian analytics tracker Plerdy to serve n-day exploits to mobile users",
+      "uk_focus": false
+    },
+    {
+      "title": "France Blood Service Cyber-Attack Sends Blood Storage Temperatures to 110°C",
+      "link": "https://www.infosecurity-magazine.com/news/france-blood-service-cyberattack/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-04T12:52:00Z",
+      "summary": "A supplier of the French National Blood Service was hit by a cyber-attack in which hackers turned cold rooms hosting blood samples up to 110°C (230°F)",
+      "uk_focus": false
+    },
+    {
+      "title": "French blood service hit by cyber attack threatening to turn stocks into “black pudding”",
+      "link": "https://www.itpro.com/security/cyber-attacks/french-blood-service-hit-by-new-cyber-attack-threatening-to-turn-stocks-into-black-pudding",
+      "source": "ITPro",
+      "published": "2026-11-04T12:10:59Z",
+      "summary": "The attack on cold rooms at Coolworld happened the same night as attacks on fridges in Benelux and Sweden",
+      "uk_focus": false
+    },
+    {
+      "title": "3AM Ransomware Used Human-AI Hybrid Tactics in UK School Estate Compromise",
+      "link": "https://www.infosecurity-magazine.com/news/3am-ransomware-hybrid-ai-uk-school/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-04T12:00:00Z",
+      "summary": "Bitdefender highlighted a unique human-AI approach during a September attack on a UK school estate, which resulted in financial data being exfiltrated",
+      "uk_focus": true
+    },
+    {
+      "title": "Cyberattack on French plasma stores is enough to make your blood boil",
+      "link": "https://www.theregister.com/security/2026/11/04/cyberattack-on-french-plasma-stores-is-enough-to-make-your-blood-boil/5307519",
+      "source": "The Register",
+      "published": "2026-11-04T11:56:54Z",
+      "summary": "Attackers reportedly set cold-room controls to 110°C, but safeguards prevented stock losses",
+      "uk_focus": false
+    },
+    {
+      "title": "Police Seize 100+ Servers After Four-Year Investment Fraud Probe",
+      "link": "https://www.infosecurity-magazine.com/news/police-100-servers-fouryear/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-04T11:02:00Z",
+      "summary": "A German-led coalition of law enforcers has intensified efforts to strike at a €4m investment fraud scheme",
+      "uk_focus": false
+    },
+    {
+      "title": "Cyber researchers issue warning over 'hybrid AI' ransomware capabilities after attacks on schools",
+      "link": "https://www.itpro.com/security/ransomware/cyber-researchers-issue-warning-over-hybrid-ai-ransomware-capabilities-after-attacks-on-schools",
+      "source": "ITPro",
+      "published": "2026-11-04T10:42:10Z",
+      "summary": "A campaign by the 3AM ransomware group saw hackers wage AI-automated attacks",
+      "uk_focus": false
+    },
+    {
+      "title": "Fake Interview of Software Engineer Led to Binance Mega-Heist",
+      "link": "https://www.infosecurity-magazine.com/news/fake-interview-software-engineer/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-04T09:25:00Z",
+      "summary": "Binance has revealed details of how North Korean hackers stole $6.4bn theft of crypto assets",
+      "uk_focus": false
+    },
+    {
+      "title": "Why a quarter of security flaws are never fully fixed",
+      "link": "https://www.itpro.com/security/a-quarter-of-security-vulnerabilities-are-never-fully-fixed-and-ai-is-compounding-the-problem",
+      "source": "ITPro",
+      "published": "2026-11-04T08:24:06Z",
+      "summary": "A new study warns against delegating flaw fixes to AI when human staff are still struggling to understand what's wrong",
+      "uk_focus": false
+    },
+    {
+      "title": "What does disaster recovery look like in an AI-centric world?",
+      "link": "https://www.itpro.com/security/what-does-disaster-recovery-look-like-in-an-ai-centric-world",
+      "source": "ITPro",
+      "published": "2026-11-04T08:00:00Z",
+      "summary": "With AI deeply embedded in modern business operations, organizations face new resilience challenges far beyond traditional IT backups.",
+      "uk_focus": false
+    },
     {
       "title": "North Korean fake job interview led to $6.3B Binance heist",
       "link": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
@@ -150,7 +254,7 @@
       "link": "https://www.computerweekly.com/news/366653512/UK-government-backs-Cyber-Essentials-discount-for-SMEs",
       "source": "Computer Weekly",
       "published": "2026-11-03T12:35:00Z",
-      "summary": "Almost £10m of funding is being made available to help qualifying SMEs achieve Cyber Essentials certification.",
+      "summary": "Almost £10m of funding is being made available to help qualifying SMEs achieve Cyber Essentials certification",
       "uk_focus": true
     },
     {
@@ -279,94 +383,6 @@
       "source": "The Register",
       "published": "2026-11-02T16:44:30Z",
       "summary": "So, who's ready to clear the dust out of that server closet and move things back on-prem?",
-      "uk_focus": false
-    },
-    {
-      "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
-      "link": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967",
-      "source": "The Register",
-      "published": "2026-11-02T16:00:00Z",
-      "summary": "Don't let the LLMjackers hit you",
-      "uk_focus": false
-    },
-    {
-      "title": "Nuclear threats and street brawls: Russia, Ukraine report attacks on their emergency alert apps",
-      "link": "https://www.theregister.com/security/2026/11/02/nuclear-threats-and-street-brawls-russia-ukraine-report-attacks-on-their-emergency-alert-apps/5306901",
-      "source": "The Register",
-      "published": "2026-11-02T14:45:00Z",
-      "summary": "Within minutes of a ceasefire lifting in Kherson, Ukraine’s citizens were pummelled with threatening notifications",
-      "uk_focus": false
-    },
-    {
-      "title": "Armadin Tests Find 88% of Severe Flaws Outside Vendor Advisories",
-      "link": "https://www.infosecurity-magazine.com/news/armadin-severe-exposures-missed/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-02T14:45:00Z",
-      "summary": "Armadin found 88% of critical and high findings in its client tests fell outside vendor advisories",
-      "uk_focus": false
-    },
-    {
-      "title": "Cold chain cyber attacks highlight lack of OT security in retail",
-      "link": "https://www.computerweekly.com/news/366653380/Cold-chain-cyber-attacks-highlight-lack-of-OT-security-in-retail",
-      "source": "Computer Weekly",
-      "published": "2026-11-02T14:18:00Z",
-      "summary": "A series of cyber attacks targeting supermarket cold chain equipment has highlighted a lack of attention paid to the resilience of operational technology",
-      "uk_focus": false
-    },
-    {
-      "title": "Bitter Deploys PapRAT in Asian Cyber-Espionage Campaign",
-      "link": "https://www.infosecurity-magazine.com/news/paprat-bitter-cyberespionage/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-02T14:00:00Z",
-      "summary": "Bitter used three infection chains against South and Southeast Asian targets, one with no malware executable",
-      "uk_focus": false
-    },
-    {
-      "title": "Frozen part II: Hackers remotely defrost produce in Euro supermarkets ... again",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/02/frozen-part-ii-hackers-remotely-defrost-produce-in-euro-supermarkets-again/5306924",
-      "source": "The Register",
-      "published": "2026-11-02T13:15:00Z",
-      "summary": "Let it go (bad): Dozens of stores report mass food wastage as managers start their week in puddles",
-      "uk_focus": false
-    },
-    {
-      "title": "Infostealer uses LLMs to compile dossiers on victims",
-      "link": "https://www.itpro.com/security/malware/infostealer-uses-llms-to-compile-dossiers-on-victims",
-      "source": "ITPro",
-      "published": "2026-11-02T13:07:53Z",
-      "summary": "Volta-Autodoxer collates and evaluates data from passwords to Uber Eats receipts",
-      "uk_focus": false
-    },
-    {
-      "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
-      "link": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
-      "source": "The Register",
-      "published": "2026-11-02T11:45:00Z",
-      "summary": "Exchange scrambles to replace stolen funds as customers withdraw billions and hackers get busy laundering their haul",
-      "uk_focus": false
-    },
-    {
-      "title": "FBI Attributes Binance Heist to North Korea’s TraderTraitor",
-      "link": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-02T10:15:00Z",
-      "summary": "The FBI has blamed North Korean APT group TraderTraitor for the world’s biggest cyber heist",
-      "uk_focus": false
-    },
-    {
-      "title": "Who controls the technology we depend on?",
-      "link": "https://www.computerweekly.com/opinion/Who-controls-the-technology-we-depend-on",
-      "source": "Computer Weekly",
-      "published": "2026-11-02T10:09:00Z",
-      "summary": "In October 2026, MI5 revealed it was spending more on countering state threats than it did during the Cold War. The Computer Weekly Security Think Tank explores the changing nature of state-backed cyber threats.",
-      "uk_focus": false
-    },
-    {
-      "title": "Chainalysis Warns Customers After “Offensive Agentic” Security Incident",
-      "link": "https://www.infosecurity-magazine.com/news/chainalysis-customers-offensive/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-02T09:30:00Z",
-      "summary": "Chainalysis reveals AI-driven attack that led to unauthorized activity",
       "uk_focus": false
     }
   ]
