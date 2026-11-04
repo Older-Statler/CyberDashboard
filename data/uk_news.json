@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T20:50:27Z",
+  "generated_at": "2026-11-04T01:06:41Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Infosecurity Magazine",
@@ -50,11 +50,27 @@
   ],
   "items": [
     {
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
+      "link": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "source": "The Register",
+      "published": "2026-11-03T22:04:45Z",
+      "summary": "'It was not a single isolated breach or a simple phishing incident,' exchange says",
+      "uk_focus": false
+    },
+    {
       "title": "AI policy wonks declare 'sovereign agents' a threat to civilization",
       "link": "https://www.theregister.com/security/2026/11/03/ai-policy-wonks-declare-sovereign-agents-a-threat-to-civilization/5307354",
       "source": "The Register",
       "published": "2026-11-03T19:33:01Z",
       "summary": "These are AI agents that operate outside of human control and 'pursue open-ended, evolving survival'",
+      "uk_focus": false
+    },
+    {
+      "title": "TSB releases shocking fraud data to urge caution as Black Friday and Christmas near",
+      "link": "https://www.computerweekly.com/news/366653435/TSB-releases-shocking-fraud-data-to-urge-caution-as-Black-Friday-and-Christmas-near",
+      "source": "Computer Weekly",
+      "published": "2026-11-03T19:01:00Z",
+      "summary": "TSB data shows that purchase fraud losses among its customers are up 4% this year",
       "uk_focus": false
     },
     {
