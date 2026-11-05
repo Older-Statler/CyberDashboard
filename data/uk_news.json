@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T02:42:02Z",
+  "generated_at": "2026-11-05T10:30:54Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,12 +15,12 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 13
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,38 @@
     }
   ],
   "items": [
+    {
+      "title": "GhostMap Bug Leaves Android Phones Stuck in Reboot Loop",
+      "link": "https://www.infosecurity-magazine.com/news/ghostmap-bug-android-phones-stuck/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-05T10:15:00Z",
+      "summary": "Bitdefender warns that unfixed GhostMap bug could force users to factory reset their device",
+      "uk_focus": false
+    },
+    {
+      "title": "NATS Air Traffic Control Failure Cost UK Economy £33m",
+      "link": "https://www.infosecurity-magazine.com/news/nats-air-traffic-control-fail-cost/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-05T09:25:00Z",
+      "summary": "Cyber Monitoring Centre report claims an IT failure at the UK’s NATS air traffic services provider cost over £30m",
+      "uk_focus": true
+    },
+    {
+      "title": "Tokenmaxxing crackdowns and AI cybersecurity risks",
+      "link": "https://www.itpro.com/security/tokenmaxxing-crackdowns-and-ai-cybersecurity-risks",
+      "source": "ITPro",
+      "published": "2026-11-05T08:00:00Z",
+      "summary": "As companies cut down on ‘tokenmaxxing’, what are the risks posed by the practice and how will crackdowns impact cybersecurity?",
+      "uk_focus": false
+    },
+    {
+      "title": "SailPoint: Anarchy reigns over enterprise agentic AI",
+      "link": "https://www.computerweekly.com/news/366653557/SailPoint-Anarchy-reigns-over-enterprise-agentic-AI",
+      "source": "Computer Weekly",
+      "published": "2026-11-05T04:30:00Z",
+      "summary": "SailPoint research has found 89% of EMEA enterprises deploy AI agents, but 99% lack the identity security tools to govern them",
+      "uk_focus": false
+    },
     {
       "title": "Smashing Security podcast #491: How AI agents are spooking the banks",
       "link": "https://grahamcluley.com/smashing-security-podcast-491/",
@@ -327,38 +359,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-03T10:45:00Z",
       "summary": "Google Mandiant has warned of the high cost of hijacked access to large language models, or LLMJacking",
-      "uk_focus": false
-    },
-    {
-      "title": "Police and Tech Firms Team Up to Dismantle XCPE Botnet",
-      "link": "https://www.infosecurity-magazine.com/news/police-tech-firms-team-up-to/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-03T09:35:00Z",
-      "summary": "Google and partners have taken down the XCPE botnet attributed to Chinese device maker Videostrong",
-      "uk_focus": false
-    },
-    {
-      "title": "More European supermarkets hit by suspected cyber attack",
-      "link": "https://www.itpro.com/security/cyber-attacks/a-freezer-should-never-accept-an-instruction-to-heat-to-50-c-no-matter-who-sends-it-more-european-supermarkets-hit-by-suspected-cyber-attack",
-      "source": "ITPro",
-      "published": "2026-11-03T08:46:29Z",
-      "summary": "More than 40 stores have been affected across seven countries as experts warn thousands more internet-exposed systems remain vulnerable",
-      "uk_focus": false
-    },
-    {
-      "title": "North Korea denies being behind record $6.3bn Binance hack",
-      "link": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-03T08:33:20Z",
-      "summary": "US government agencies and cyber analysts have blamed Pyongyang for the record-breaking heist.",
-      "uk_focus": false
-    },
-    {
-      "title": "What is memory poisoning and who is at risk?",
-      "link": "https://www.itpro.com/security/what-is-memory-poisoning-and-who-is-at-risk",
-      "source": "ITPro",
-      "published": "2026-11-03T08:00:00Z",
-      "summary": "Researchers are warning that AI is at risk from memory poisoning. How do attacks work, and how should firms respond to the threat?",
       "uk_focus": false
     }
   ]

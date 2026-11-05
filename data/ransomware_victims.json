@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-05T02:42:02Z",
+  "generated_at": "2026-11-05T10:30:54Z",
   "victims": [
+    {
+      "group": "Dark Project",
+      "victim": "Custom Bakehouse",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-05T06:21:31.072294+00:00",
+      "domain": "www.custombakehouse.com",
+      "url": "https://www.ransomware.live/id/Q3VzdG9tIEJha2Vob3VzZUBEYXJrIFByb2plY3Q="
+    },
+    {
+      "group": "N0n",
+      "victim": "Delta Dental of Missouri",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-05T04:52:28.695264+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RGVsdGEgRGVudGFsIG9mIE1pc3NvdXJpQE4wbg=="
+    },
+    {
+      "group": "N0n",
+      "victim": "The Container Store",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-05T04:51:57.488255+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VGhlIENvbnRhaW5lciBTdG9yZUBOMG4="
+    },
     {
       "group": "medusalocker",
       "victim": "Msn",
@@ -126,15 +153,6 @@
       "published": "2026-11-04T22:19:30.447149+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/SW50ZXJhdGl2YSBQbGFzdGljb3MgKEludGVycGxhc3QpQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "The Courier Guy",
-      "country": "ZA",
-      "sector": "Transportation",
-      "published": "2026-11-04T22:18:59.115002+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VGhlIENvdXJpZXIgR3V5QG1lZHVzYWxvY2tlcg=="
     },
     {
       "group": "medusalocker",
@@ -443,6 +461,15 @@
       "url": "https://www.ransomware.live/id/Rm9vZCBCYW5rIG9mIENlbnRyYWwgTG91aXNpYW5hQERhcmsgUHJvamVjdA=="
     },
     {
+      "group": "lockbit5",
+      "victim": "centratamagroup.com",
+      "country": "BR",
+      "sector": "Other",
+      "published": "2026-11-04T23:14:32.813129+00:00",
+      "domain": "centratamagroup.com",
+      "url": "https://www.ransomware.live/id/Y2VudHJhdGFtYWdyb3VwLmNvbUBsb2NrYml0NQ=="
+    },
+    {
       "group": "N0n",
       "victim": "Company #132",
       "country": "US",
@@ -540,6 +567,15 @@
       "published": "2026-11-04T00:52:42.935237+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/R29sZHNtaXRoICYgSHVsbEBBb3Fpbg=="
+    },
+    {
+      "group": "medusalocker",
+      "victim": "The Courier Guy",
+      "country": "ZA",
+      "sector": "Transportation",
+      "published": "2026-11-04T22:18:59.115002+00:00",
+      "domain": "thecourierguy.co.za",
+      "url": "https://www.ransomware.live/id/VGhlIENvdXJpZXIgR3V5QG1lZHVzYWxvY2tlcg=="
     },
     {
       "group": "akira",
@@ -641,6 +677,15 @@
       "url": "https://www.ransomware.live/id/UHJvamVjdCBUcm9qYW4gSG9yc2VAV2hpdGVhcm1vcg=="
     },
     {
+      "group": "Destello",
+      "victim": "MAPFRE Brasil 2026",
+      "country": "BR",
+      "sector": "Financial Services",
+      "published": "2026-11-05T06:18:10.870881+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TUFQRlJFIEJyYXNpbCAyMDI2QERlc3RlbGxv"
+    },
+    {
       "group": "SilentRansomGroup",
       "victim": "G... R...",
       "country": "",
@@ -648,6 +693,15 @@
       "published": "2026-11-03T12:54:26.532228+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Ry4uLiBSLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
+    },
+    {
+      "group": "thegentlemen",
+      "victim": "MKG Kirchrode",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-11-05T06:03:08.792726+00:00",
+      "domain": "mkg-kirchrode.de",
+      "url": "https://www.ransomware.live/id/TUtHIEtpcmNocm9kZUB0aGVnZW50bGVtZW4="
     },
     {
       "group": "Booba Project",
@@ -846,60 +900,6 @@
       "published": "2026-11-03T14:23:34.931859+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Qmlzb24gQmFnQGFraXJh"
-    },
-    {
-      "group": "akira",
-      "victim": "SK Global Software",
-      "country": "KR",
-      "sector": "Technology",
-      "published": "2026-11-03T14:23:15.347965+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U0sgR2xvYmFsIFNvZnR3YXJlQGFraXJh"
-    },
-    {
-      "group": "akira",
-      "victim": "Pelham Plastics",
-      "country": "",
-      "sector": "Manufacturing",
-      "published": "2026-11-03T14:22:55.446972+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UGVsaGFtIFBsYXN0aWNzQGFraXJh"
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "S... G...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-02T21:00:34.267356+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Uy4uLiBHLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
-    },
-    {
-      "group": "everstake",
-      "victim": "da*****t.com",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-02T16:17:21.248292+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/ZGEqKioqKnQuY29tQGV2ZXJzdGFrZQ=="
-    },
-    {
-      "group": "everstake",
-      "victim": "ra*****g.com",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-02T16:16:43.107808+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/cmEqKioqKmcuY29tQGV2ZXJzdGFrZQ=="
-    },
-    {
-      "group": "Redact",
-      "victim": "Holland & Knight",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-02T16:00:11.224717+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SG9sbGFuZCAmIEtuaWdodEBSZWRhY3Q="
     }
   ]
 }
