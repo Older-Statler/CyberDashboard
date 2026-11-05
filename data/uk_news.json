@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-05T10:30:54Z",
+  "generated_at": "2026-11-05T18:15:32Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 2
+      "count": 0
     },
     {
       "name": "The Register",
       "status": "ok",
-      "count": 7
+      "count": 11
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 13
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 3
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,102 @@
     }
   ],
   "items": [
+    {
+      "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852",
+      "source": "The Register",
+      "published": "2026-11-05T18:03:00Z",
+      "summary": "Agentic 'on-path attack' went after Chainalysis's tools, which are routinely called upon to assist police investigations",
+      "uk_focus": false
+    },
+    {
+      "title": "OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'",
+      "link": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
+      "source": "The Register",
+      "published": "2026-11-05T17:00:00Z",
+      "summary": "The latest bug hunting model 'avoided exploiting out-of-scope services over 99 percent of the time', claims House of Altman",
+      "uk_focus": false
+    },
+    {
+      "title": "Tobacco company got smoked by leaving secret recipes on a file share",
+      "link": "https://www.theregister.com/security/2026/11/05/tobacco-company-got-smoked-by-leaving-secret-recipes-on-a-file-share/5307704",
+      "source": "The Register",
+      "published": "2026-11-05T16:02:00Z",
+      "summary": "They denied the data was real...then removed it",
+      "uk_focus": false
+    },
+    {
+      "title": "Residential Proxy Traffic Traced to White House Network",
+      "link": "https://www.infosecurity-magazine.com/news/white-house-residential-proxy-exits/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-05T16:00:00Z",
+      "summary": "White House network addresses were used as exits by 28 residential proxy services",
+      "uk_focus": false
+    },
+    {
+      "title": "Zyxel Switch Patch Missed Flaw Behind Wave of Attacks",
+      "link": "https://www.infosecurity-magazine.com/news/zyxel-gs1900-patch-missed-flaw/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-05T15:15:00Z",
+      "summary": "Zyxel’s June GS1900 patch did not block the exploit used against 996 switches, Binarly found",
+      "uk_focus": false
+    },
+    {
+      "title": "India Warns of New AI-Driven Cyber-Attacks Targeting Financial and Crypto Businesses",
+      "link": "https://www.infosecurity-magazine.com/news/india-warns-ai-cyberattacks/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-05T14:25:00Z",
+      "summary": "The Indian CERT said a new cyber malicious group tracked as ‘Crafty Flacon’ is using Chinese-made AI tools to attack fintech and crypto organizations",
+      "uk_focus": false
+    },
+    {
+      "title": "Anthropic won't fix a Claude Dispatch flaw that could let attackers execute remote commands across corporate boundaries",
+      "link": "https://www.theregister.com/research/2026/11/05/anthropic-wont-fix-a-claude-dispatch-flaw-that-could-let-attackers-execute-remote-commands-across-corporate-boundaries/5307684",
+      "source": "The Register",
+      "published": "2026-11-05T13:00:00Z",
+      "summary": "From EOP to RCE in six simple steps",
+      "uk_focus": false
+    },
+    {
+      "title": "New York's Queens Public Library battles ransomware crims: Wi-Fi, checkouts, and website go dark",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/05/new-yorks-queens-public-library-battles-ransomware-crims-wi-fi-checkouts-and-website-go-dark/5307796",
+      "source": "The Register",
+      "published": "2026-11-05T12:10:15Z",
+      "summary": "No gang has claimed the attack on incredible neighborhood resource yet",
+      "uk_focus": false
+    },
+    {
+      "title": "Chinese Nation-State Threat Activity Falls Sharply in Q2 and Q3 2026",
+      "link": "https://www.infosecurity-magazine.com/news/chinese-nation-activity-falls/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-05T11:40:00Z",
+      "summary": "Trellix observed a 41.4% drop in China-nexus activity between April and September, which may reflect changing PRC strategic priorities",
+      "uk_focus": false
+    },
+    {
+      "title": "320,000 school files published on dark web after attack on education platform",
+      "link": "https://www.itpro.com/security/cyber-attacks/320-000-school-files-published-on-dark-web-after-attack-on-education-platform",
+      "source": "ITPro",
+      "published": "2026-11-05T11:23:02Z",
+      "summary": "Data from dozens of schools has been accessed after an attack on the Trading with Schools platform",
+      "uk_focus": false
+    },
+    {
+      "title": "Norway's aid agency pwned and all users' data is stolen",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/05/norways-aid-agency-pwned-and-all-users-data-is-stolen/5307765",
+      "source": "The Register",
+      "published": "2026-11-05T11:19:16Z",
+      "summary": "Norad said it cannot be sure that the details of those in 'conflict areas and authoritarian states' are safe or not",
+      "uk_focus": false
+    },
+    {
+      "title": "How the Binance hack happened",
+      "link": "https://www.itpro.com/security/cyber-crime/fake-interviews-compromised-laptops-and-dodgy-software-packages-how-the-binance-hack-happened",
+      "source": "ITPro",
+      "published": "2026-11-05T10:49:35Z",
+      "summary": "Binance has revealed new details on a record-breaking hack that hit the company last week",
+      "uk_focus": false
+    },
     {
       "title": "GhostMap Bug Leaves Android Phones Stuck in Reboot Loop",
       "link": "https://www.infosecurity-magazine.com/news/ghostmap-bug-android-phones-stuck/",
@@ -231,134 +327,6 @@
       "source": "Computer Weekly",
       "published": "2026-11-03T19:01:00Z",
       "summary": "TSB data shows that purchase fraud losses among its customers are up 4% this year",
-      "uk_focus": false
-    },
-    {
-      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
-      "link": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-03T16:19:29Z",
-      "summary": "An engineer was contacted through a legitimate job-hunting platform and invited to bogus job interviews with fake company representatives, Binance says.",
-      "uk_focus": false
-    },
-    {
-      "title": "Password manager mSecure tells users to change passwords, won't say why",
-      "link": "https://www.theregister.com/security/2026/11/03/password-manager-msecure-tells-users-to-change-passwords-wont-say-why/5307296",
-      "source": "The Register",
-      "published": "2026-11-03T16:10:00Z",
-      "summary": "Customers left wondering what's been compromised after vendor advises resetting passwords, 2FA and passkeys",
-      "uk_focus": false
-    },
-    {
-      "title": "Russia-Aligned Gorbag Targets Ukraine for Intelligence",
-      "link": "https://www.infosecurity-magazine.com/news/russia-gorbag-targets-ukraine/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-03T15:30:00Z",
-      "summary": "Russia-aligned Gorbag has hit Ukrainian justice, local government and defense bodies since 2025",
-      "uk_focus": false
-    },
-    {
-      "title": "Identity and access management investment is skyrocketing",
-      "link": "https://www.itpro.com/security/identity-and-access-management-investment-is-skyrocketing-heres-why",
-      "source": "ITPro",
-      "published": "2026-11-03T15:10:35Z",
-      "summary": "Juniper Research predicts identity and access management investment to surge 55% on the back of AI",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers Exploit BTCPay Server Flaw to Steal Cryptocurrency",
-      "link": "https://www.infosecurity-magazine.com/news/btcpay-server-flaw-cryptocurrency/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-03T14:30:00Z",
-      "summary": "Attackers drained hot wallets on outdated BTCPay Server instances, with $1.63m traced so far",
-      "uk_focus": false
-    },
-    {
-      "title": "Exposing state threats still matters - resilience matters more",
-      "link": "https://www.computerweekly.com/opinion/Exposing-state-threats-still-matters-resilience-matters-more",
-      "source": "Computer Weekly",
-      "published": "2026-11-03T13:57:00Z",
-      "summary": "In October 2026, MI5 revealed it was spending more on countering state threats than it did during the Cold War. The Computer Weekly Security Think Tank explores the changing nature of state-backed cyber threats.",
-      "uk_focus": false
-    },
-    {
-      "title": "Cyber-Attack on Refrigeration Systems Hits Supermarkets Across Europe",
-      "link": "https://www.infosecurity-magazine.com/news/cyber-refrigeration-supermarkets/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-03T13:45:00Z",
-      "summary": "The incident has reportedly resulted in temperatures being changed on supermarket refrigerators, reminiscent of an attack that affected French retailers last month",
-      "uk_focus": false
-    },
-    {
-      "title": "UK meat industry hit by cyber-attack which targeted European supermarket freezers",
-      "link": "https://www.bbc.co.uk/news/articles/ckq6ndq8l6v0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-03T13:07:00Z",
-      "summary": "Supermarkets in countries including Ireland, Sweden and Belgium reported fridges being hiked in temperature on Monday.",
-      "uk_focus": true
-    },
-    {
-      "title": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
-      "link": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200",
-      "source": "The Register",
-      "published": "2026-11-03T12:39:25Z",
-      "summary": "Cyber agency warns critical infrastructure is a likely target as chief urges bosses to stop doing 'tech on the cheap'",
-      "uk_focus": true
-    },
-    {
-      "title": "UK government backs Cyber Essentials discount for SMEs",
-      "link": "https://www.computerweekly.com/news/366653512/UK-government-backs-Cyber-Essentials-discount-for-SMEs",
-      "source": "Computer Weekly",
-      "published": "2026-11-03T12:35:00Z",
-      "summary": "Almost £10m of funding is being made available to help qualifying SMEs achieve Cyber Essentials certification",
-      "uk_focus": true
-    },
-    {
-      "title": "UK abattoirs caught up in cyber attack against European supermarkets",
-      "link": "https://www.computerweekly.com/news/366653356/UK-abattoirs-caught-up-in-cyber-attack-against-European-supermarkets",
-      "source": "Computer Weekly",
-      "published": "2026-11-03T12:30:00Z",
-      "summary": "Refrigerators at three meat processors in the UK were hit by cyber attacks amid warnings from the UK’s National Cyber Security Centre to protect internet-facing industrial devices",
-      "uk_focus": true
-    },
-    {
-      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
-      "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
-      "source": "NCSC",
-      "published": "2026-11-03T12:00:00Z",
-      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
-      "uk_focus": true
-    },
-    {
-      "title": "Artificial intelligence and cyber intrusion",
-      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
-      "source": "NCSC",
-      "published": "2026-11-03T12:00:00Z",
-      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
-      "uk_focus": true
-    },
-    {
-      "title": "NCSC Chief Warns of Imminent AI Ransomware Threat to UK Critical Infrastructure",
-      "link": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-03T11:45:00Z",
-      "summary": "The UK’s cyber chief has warned that AI-powered malware is highly likely to feature in ransomware attacks targeting British critical infrastructure by 2028",
-      "uk_focus": true
-    },
-    {
-      "title": "NCSC warns UK firms could face a torrent of AI-powered cyber attacks",
-      "link": "https://www.itpro.com/security/cyber-attacks/the-ncsc-says-ai-powered-cyber-attacks-are-coming-for-uk-firms-but-they-still-need-to-sharpen-up-on-basic-security-practices",
-      "source": "ITPro",
-      "published": "2026-11-03T10:55:27Z",
-      "summary": "Critical national infrastructure organizations need to take advantage of the help available, and invest a great deal more",
-      "uk_focus": true
-    },
-    {
-      "title": "LLMJacking is Costing Some Businesses Up to $1m, Warns Google",
-      "link": "https://www.infosecurity-magazine.com/news/llmjacking-cost-business-1m-warns/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-03T10:45:00Z",
-      "summary": "Google Mandiant has warned of the high cost of hijacked access to large language models, or LLMJacking",
       "uk_focus": false
     }
   ]

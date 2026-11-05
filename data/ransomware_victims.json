@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-05T10:30:54Z",
+  "generated_at": "2026-11-05T18:15:32Z",
   "victims": [
+    {
+      "group": "Aoqin",
+      "victim": "Sistel",
+      "country": "BR",
+      "sector": "Technology",
+      "published": "2026-11-05T11:20:37.780181+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U2lzdGVsQEFvcWlu"
+    },
+    {
+      "group": "everstake",
+      "victim": "ne*****h.com",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-05T09:09:10.819816+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/bmUqKioqKmguY29tQGV2ZXJzdGFrZQ=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Disclosed",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-11-05T07:59:30.753699+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RGlzY2xvc2VkQFBpeGVsTGVha3M="
+    },
     {
       "group": "Dark Project",
       "victim": "Custom Bakehouse",
@@ -27,6 +54,33 @@
       "published": "2026-11-05T04:51:57.488255+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/VGhlIENvbnRhaW5lciBTdG9yZUBOMG4="
+    },
+    {
+      "group": "BYOD",
+      "victim": "First and Final Warning - IHG Hotels & Resorts (Estate)",
+      "country": "",
+      "sector": "Hospitality",
+      "published": "2026-11-05T09:50:45.225354+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Rmlyc3QgYW5kIEZpbmFsIFdhcm5pbmcgLSBJSEcgSG90ZWxzICYgUmVzb3J0cyAoRXN0YXRlKUBCWU9E"
+    },
+    {
+      "group": "qilin",
+      "victim": "Calvary Christian College",
+      "country": "AU",
+      "sector": "Education",
+      "published": "2026-11-05T09:14:45.298141+00:00",
+      "domain": "www.calvary.qld.edu.au",
+      "url": "https://www.ransomware.live/id/Q2FsdmFyeSBDaHJpc3RpYW4gQ29sbGVnZUBxaWxpbg=="
+    },
+    {
+      "group": "AuditTeam",
+      "victim": "kx***om",
+      "country": "CN",
+      "sector": "Technology",
+      "published": "2026-11-05T08:50:34.763915+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/a3gqKipvbUBBdWRpdFRlYW0="
     },
     {
       "group": "medusalocker",
@@ -846,60 +900,6 @@
       "published": "2026-11-03T03:27:20.759448+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTIwQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #119",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-03T03:26:45.106476+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTE5QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #118",
-      "country": "AE",
-      "sector": "Not Found",
-      "published": "2026-11-03T03:26:08.243467+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTE4QE4wbg=="
-    },
-    {
-      "group": "BYOD",
-      "victim": "IHG Hotels & Resorts (Estate)",
-      "country": "GB",
-      "sector": "Hospitality",
-      "published": "2026-11-04T01:26:31.478812+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SUhHIEhvdGVscyAmIFJlc29ydHMgKEVzdGF0ZSlAQllPRA=="
-    },
-    {
-      "group": "incransom",
-      "victim": "hillandbeyer.com",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-03T21:56:42.037577+00:00",
-      "domain": "hillandbeyer.com",
-      "url": "https://www.ransomware.live/id/aGlsbGFuZGJleWVyLmNvbUBpbmNyYW5zb20="
-    },
-    {
-      "group": "qilin",
-      "victim": "Arthur Chapman Kettering Smetak Pikala PA",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-03T15:16:48.739925+00:00",
-      "domain": "www.arthurchapman.com",
-      "url": "https://www.ransomware.live/id/QXJ0aHVyIENoYXBtYW4gS2V0dGVyaW5nIFNtZXRhayBQaWthbGEgUEFAcWlsaW4="
-    },
-    {
-      "group": "akira",
-      "victim": "Bison Bag",
-      "country": "",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-03T14:23:34.931859+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Qmlzb24gQmFnQGFraXJh"
     }
   ]
 }
