@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T18:15:32Z",
+  "generated_at": "2026-11-05T23:48:01Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Feds warn grocers: Don't chill on cyber defenses as freezer hacking spree heats up",
+      "link": "https://www.theregister.com/security/2026/11/05/feds-warn-grocers-dont-chill-on-cyber-defenses-as-freezer-hacking-spree-heats-up/5307978",
+      "source": "The Register",
+      "published": "2026-11-05T22:37:06Z",
+      "summary": "No documented attacks against American supermarkets…yet",
+      "uk_focus": false
+    },
+    {
+      "title": "The White House is apparently a popular residential proxy exit spot",
+      "link": "https://www.theregister.com/security/2026/11/05/the-white-house-is-apparently-a-popular-residential-proxy-exit-spot/5307969",
+      "source": "The Register",
+      "published": "2026-11-05T20:50:57Z",
+      "summary": "How it got there is another matter entirely",
+      "uk_focus": false
+    },
+    {
+      "title": "Get root on a musl Linux system by slamming it with an overly long password",
+      "link": "https://www.theregister.com/security/2026/11/05/get-root-on-a-musl-linux-system-by-slamming-it-with-an-overly-long-password/5307910",
+      "source": "The Register",
+      "published": "2026-11-05T18:29:00Z",
+      "summary": "Decade-old vulnerability in OpenSSH is now fixed, so get a-patchin'",
+      "uk_focus": false
+    },
     {
       "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
       "link": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852",
@@ -303,30 +327,6 @@
       "source": "ITPro",
       "published": "2026-11-04T08:00:00Z",
       "summary": "With AI deeply embedded in modern business operations, organizations face new resilience challenges far beyond traditional IT backups.",
-      "uk_focus": false
-    },
-    {
-      "title": "North Korean fake job interview led to $6.3B Binance heist",
-      "link": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-      "source": "The Register",
-      "published": "2026-11-03T22:04:45Z",
-      "summary": "'It was not a single isolated breach or a simple phishing incident,' exchange says",
-      "uk_focus": false
-    },
-    {
-      "title": "AI policy wonks declare 'sovereign agents' a threat to civilization",
-      "link": "https://www.theregister.com/security/2026/11/03/ai-policy-wonks-declare-sovereign-agents-a-threat-to-civilization/5307354",
-      "source": "The Register",
-      "published": "2026-11-03T19:33:01Z",
-      "summary": "These are AI agents that operate outside of human control and 'pursue open-ended, evolving survival'",
-      "uk_focus": false
-    },
-    {
-      "title": "TSB releases shocking fraud data to urge caution as Black Friday and Christmas near",
-      "link": "https://www.computerweekly.com/news/366653435/TSB-releases-shocking-fraud-data-to-urge-caution-as-Black-Friday-and-Christmas-near",
-      "source": "Computer Weekly",
-      "published": "2026-11-03T19:01:00Z",
-      "summary": "TSB data shows that purchase fraud losses among its customers are up 4% this year",
       "uk_focus": false
     }
   ]
