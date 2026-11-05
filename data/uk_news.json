@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T22:04:52Z",
+  "generated_at": "2026-11-05T02:42:02Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Computer Weekly",
@@ -25,7 +25,7 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "ITPro",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Smashing Security podcast #491: How AI agents are spooking the banks",
+      "link": "https://grahamcluley.com/smashing-security-podcast-491/",
+      "source": "Graham Cluley",
+      "published": "2026-11-05T00:15:11Z",
+      "summary": "Bank of America has a message for its customers: please, for the love of God, stop handing your banking passwords to your AI assistant. And if your robot does something daft with your money? That's your problem, not theirs. Meanwhile, a company that promised to rescue ransomware…",
+      "uk_focus": false
+    },
     {
       "title": "Apple turns iCloud into spy cloud, will start looking at public share links",
       "link": "https://www.theregister.com/security/2026/11/04/apple-turns-icloud-into-spy-cloud-will-start-looking-at-public-share-links/5307681",
@@ -351,22 +359,6 @@
       "source": "ITPro",
       "published": "2026-11-03T08:00:00Z",
       "summary": "Researchers are warning that AI is at risk from memory poisoning. How do attacks work, and how should firms respond to the threat?",
-      "uk_focus": false
-    },
-    {
-      "title": "AI-powered malware ‘highly likely’ to be used to hack UK infrastructure by 2028",
-      "link": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
-      "source": "The Guardian",
-      "published": "2026-11-03T00:01:32Z",
-      "summary": "National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals AI-powered malicious software is “highly likely” to be used in hacking attacks against the UK’s power stations, airports and hospitals by 2028, according to the…",
-      "uk_focus": true
-    },
-    {
-      "title": "Max-severity bug in widely used OT programming tool exploited to deliver Linux malware",
-      "link": "https://www.theregister.com/security/2026/11/02/max-severity-bug-in-widely-used-ot-programming-tool-exploited-to-deliver-linux-malware/5307086",
-      "source": "The Register",
-      "published": "2026-11-02T22:55:17Z",
-      "summary": "Your industrial IoT gateway isn't exposed to the internet, right? RIGHT?!",
       "uk_focus": false
     }
   ]
