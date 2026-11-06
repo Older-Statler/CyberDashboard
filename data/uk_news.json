@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T13:55:45Z",
+  "generated_at": "2026-11-06T20:18:41Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 16
+      "count": 15
     },
     {
       "name": "Computer Weekly",
@@ -20,17 +20,17 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 9
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Activists break into building site of Microsoft datacentre in Amsterdam",
+      "link": "https://www.theguardian.com/world/2026/nov/06/activists-break-into-building-site-of-microsoft-datacentre-in-amsterdam",
+      "source": "The Guardian",
+      "published": "2026-11-06T18:51:37Z",
+      "summary": "Separate actions also take place outside fence and across Europe in backlash against impact of AI boom Activists have stormed the site of a Microsoft datacentre being built in Amsterdam, as the backlash to the social and environmental harms of the AI boom spreads across Europe.…",
+      "uk_focus": false
+    },
+    {
+      "title": "Three charged after impersonating CEOs and attorneys in $129 million deepfake fraud scheme",
+      "link": "https://www.itpro.com/security/cyber-crime/three-charged-after-impersonating-ceos-and-attorneys-in-usd129-million-deepfake-fraud-scheme",
+      "source": "ITPro",
+      "published": "2026-11-06T15:51:56Z",
+      "summary": "The deepfake voice and video scheme saw fraudsters steal nearly $130 million",
+      "uk_focus": false
+    },
     {
       "title": "DigiCert admits 16-month security lapse exposed customer information",
       "link": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097",
@@ -311,38 +327,6 @@
       "source": "The Register",
       "published": "2026-11-04T21:49:38Z",
       "summary": "Content shared with anyone who has the URL will be scanned for 'harmful content,' though the iMaker hasn't defined that term",
-      "uk_focus": false
-    },
-    {
-      "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
-      "link": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-04T16:26:15Z",
-      "summary": "The French Blood Establishment (EFS) said cold rooms storing blood were impacted by hackers.",
-      "uk_focus": false
-    },
-    {
-      "title": "US gov IT worker pleads guilty to sending Top Secret files to Ethiopia",
-      "link": "https://www.theregister.com/security/2026/11/04/us-gov-it-worker-pleads-guilty-to-sending-top-secret-files-to-ethiopia/5307595",
-      "source": "The Register",
-      "published": "2026-11-04T15:39:30Z",
-      "summary": "Help desk technician agrees to minimum 10-year jail term after being caught copying files for more than 2 years",
-      "uk_focus": false
-    },
-    {
-      "title": "China-Aligned Group Abuses Sogou Input Method to Deliver Malware",
-      "link": "https://www.infosecurity-magazine.com/news/slippynunchucks-sogou-dns-hijacking/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-04T15:00:00Z",
-      "summary": "SlippyNunchucks used DNS hijacking to turn Sogou brand promotions into a malware channel",
-      "uk_focus": false
-    },
-    {
-      "title": "APT29 Watering Holes Target Unpatched iPhones and Android Devices",
-      "link": "https://www.infosecurity-magazine.com/news/apt29-watering-holes-iphones/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-04T14:00:00Z",
-      "summary": "APT29 compromised Ukrainian analytics tracker Plerdy to serve n-day exploits to mobile users",
       "uk_focus": false
     }
   ]
