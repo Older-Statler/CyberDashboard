@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T05:42:36Z",
+  "generated_at": "2026-11-06T13:55:45Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 16
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 11
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 7
+      "count": 4
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Tech Monitor",
@@ -50,11 +50,91 @@
   ],
   "items": [
     {
-      "title": "AI agents are a ‘bane’ for some website operators, says Cloudflare",
+      "title": "DigiCert admits 16-month security lapse exposed customer information",
+      "link": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097",
+      "source": "The Register",
+      "published": "2026-11-06T13:15:00Z",
+      "summary": "Botched server move left the door open, and DigiCert took months to notice someone had wandered in",
+      "uk_focus": false
+    },
+    {
+      "title": "ARTEX Offensive AI Tool Activity Far Exceeds Reported Campaigns, Censys Finds",
+      "link": "https://www.infosecurity-magazine.com/news/artex-activity-exceeds-reported/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-06T13:00:00Z",
+      "summary": "A new Censys report showed that the use of ARTEX, an AI pentesting tool popular with threat actor, could be spreading far beyond initially reported campaigns",
+      "uk_focus": false
+    },
+    {
+      "title": "CISA, FBI Urge Action to Protect Industrial Refrigeration Networks",
+      "link": "https://www.infosecurity-magazine.com/news/cisa-protect-refrigeration-networks/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-06T11:50:00Z",
+      "summary": "The CISA advisory follows a swathe of attacks in which hackers have tampered with the temperatures of internet-exposed supermarket refrigeration systems",
+      "uk_focus": false
+    },
+    {
+      "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
+      "link": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889",
+      "source": "The Register",
+      "published": "2026-11-06T11:00:00Z",
+      "summary": "Cyber Security and Resilience Bill could pave way for searches, seizures, and inspections when operators lose control of automated systems",
+      "uk_focus": true
+    },
+    {
+      "title": "Elon Musk appears to signal the end of the road for Cybertruck",
+      "link": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-06T09:57:04Z",
+      "summary": "Musk said it was to make room for production of its Cybercabs - autonomous taxis without a driver.",
+      "uk_focus": false
+    },
+    {
+      "title": "Half of Security Leaders Report Sensitive Data Exposure Through AI Tools",
+      "link": "https://www.infosecurity-magazine.com/news/security-data-exposure-ai/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-06T09:15:00Z",
+      "summary": "BlackFog found a lack of visibility into data being shared with AI tools, even those approved for use in the enterprise",
+      "uk_focus": false
+    },
+    {
+      "title": "Why password spraying is still an effective attack method",
+      "link": "https://www.itpro.com/security/hacking/why-password-spraying-is-still-an-effective-attack-method",
+      "source": "ITPro",
+      "published": "2026-11-06T08:00:00Z",
+      "summary": "Bobby and Ross talk to the CEO of Passpack about how IT leaders can beat password spraying",
+      "uk_focus": false
+    },
+    {
+      "title": "Hospital gave very sick doctor a special PC for his personal, erm, pleasure",
+      "link": "https://www.theregister.com/security/2026/11/06/hospital-gave-very-sick-doctor-a-special-pc-for-his-personal-erm-pleasure/5307750",
+      "source": "The Register",
+      "published": "2026-11-06T06:31:00Z",
+      "summary": "Support chap told to either allow blatant policy violations or find a new job",
+      "uk_focus": false
+    },
+    {
+      "title": "Watchdog investigates Europol over ‘irregular’ data processing claims",
+      "link": "https://www.computerweekly.com/news/366653892/Watchdog-investigates-Europol-over-irregular-data-processing-claims",
+      "source": "Computer Weekly",
+      "published": "2026-11-06T06:15:00Z",
+      "summary": "The European Data Protection Supervisor is investigating Europol’s data processing environment, after an investigation by Computer Weekly, Correctiv and Solomon exposed serious data protection and security failures",
+      "uk_focus": false
+    },
+    {
+      "title": "AI agents are a 'bane' for some website operators, says Cloudflare",
       "link": "https://www.theregister.com/networks/2026/11/06/ai-agents-are-a-bane-for-some-website-operators-says-cloudflare/5308022",
       "source": "The Register",
       "published": "2026-11-06T04:25:14Z",
       "summary": "CEO says sovereigns probably exploited PHP2SHELL ages ago, and suggests containers are dead",
+      "uk_focus": false
+    },
+    {
+      "title": "Zurich uncovers £19m of fraud with Quantexa data analytics",
+      "link": "https://www.computerweekly.com/news/366653717/Zurich-uncovers-19m-of-fraud-with-Quantexa-data-analytics",
+      "source": "Computer Weekly",
+      "published": "2026-11-06T04:19:00Z",
+      "summary": "The insurer has used Quantexa’s data analytics technology to uncover £109.3m in insurance fraud over the past year, including so-called crash-for-cash scams",
       "uk_focus": false
     },
     {
@@ -263,86 +343,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-04T14:00:00Z",
       "summary": "APT29 compromised Ukrainian analytics tracker Plerdy to serve n-day exploits to mobile users",
-      "uk_focus": false
-    },
-    {
-      "title": "France Blood Service Cyber-Attack Sends Blood Storage Temperatures to 110°C",
-      "link": "https://www.infosecurity-magazine.com/news/france-blood-service-cyberattack/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-04T12:52:00Z",
-      "summary": "A supplier of the French National Blood Service was hit by a cyber-attack in which hackers turned cold rooms hosting blood samples up to 110°C (230°F)",
-      "uk_focus": false
-    },
-    {
-      "title": "French blood service hit by cyber attack threatening to turn stocks into “black pudding”",
-      "link": "https://www.itpro.com/security/cyber-attacks/french-blood-service-hit-by-new-cyber-attack-threatening-to-turn-stocks-into-black-pudding",
-      "source": "ITPro",
-      "published": "2026-11-04T12:10:59Z",
-      "summary": "The attack on cold rooms at Coolworld happened the same night as attacks on fridges in Benelux and Sweden",
-      "uk_focus": false
-    },
-    {
-      "title": "Mastercard meets ‘responsibility’ through SME cyber security training",
-      "link": "https://www.computerweekly.com/news/366653613/Mastercard-meets-responsibility-through-SME-cyber-security-training",
-      "source": "Computer Weekly",
-      "published": "2026-11-04T12:00:00Z",
-      "summary": "Card giant is offering free cyber security training to millions of SMEs in the UK through its SME Academy",
-      "uk_focus": true
-    },
-    {
-      "title": "3AM Ransomware Used Human-AI Hybrid Tactics in UK School Estate Compromise",
-      "link": "https://www.infosecurity-magazine.com/news/3am-ransomware-hybrid-ai-uk-school/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-04T12:00:00Z",
-      "summary": "Bitdefender highlighted a unique human-AI approach during a September attack on a UK school estate, which resulted in financial data being exfiltrated",
-      "uk_focus": true
-    },
-    {
-      "title": "Cyberattack on French plasma stores is enough to make your blood boil",
-      "link": "https://www.theregister.com/security/2026/11/04/cyberattack-on-french-plasma-stores-is-enough-to-make-your-blood-boil/5307519",
-      "source": "The Register",
-      "published": "2026-11-04T11:56:54Z",
-      "summary": "Attackers reportedly set cold-room controls to 110°C, but safeguards prevented stock losses",
-      "uk_focus": false
-    },
-    {
-      "title": "Police Seize 100+ Servers After Four-Year Investment Fraud Probe",
-      "link": "https://www.infosecurity-magazine.com/news/police-100-servers-fouryear/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-04T11:02:00Z",
-      "summary": "A German-led coalition of law enforcers has intensified efforts to strike at a €4m investment fraud scheme",
-      "uk_focus": false
-    },
-    {
-      "title": "Cyber researchers issue warning over 'hybrid AI' ransomware capabilities after attacks on schools",
-      "link": "https://www.itpro.com/security/ransomware/cyber-researchers-issue-warning-over-hybrid-ai-ransomware-capabilities-after-attacks-on-schools",
-      "source": "ITPro",
-      "published": "2026-11-04T10:42:10Z",
-      "summary": "A campaign by the 3AM ransomware group saw hackers wage AI-automated attacks",
-      "uk_focus": false
-    },
-    {
-      "title": "Fake Interview of Software Engineer Led to Binance Mega-Heist",
-      "link": "https://www.infosecurity-magazine.com/news/fake-interview-software-engineer/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-04T09:25:00Z",
-      "summary": "Binance has revealed details of how North Korean hackers stole $6.4bn theft of crypto assets",
-      "uk_focus": false
-    },
-    {
-      "title": "Why a quarter of security flaws are never fully fixed",
-      "link": "https://www.itpro.com/security/a-quarter-of-security-vulnerabilities-are-never-fully-fixed-and-ai-is-compounding-the-problem",
-      "source": "ITPro",
-      "published": "2026-11-04T08:24:06Z",
-      "summary": "A new study warns against delegating flaw fixes to AI when human staff are still struggling to understand what's wrong",
-      "uk_focus": false
-    },
-    {
-      "title": "What does disaster recovery look like in an AI-centric world?",
-      "link": "https://www.itpro.com/security/what-does-disaster-recovery-look-like-in-an-ai-centric-world",
-      "source": "ITPro",
-      "published": "2026-11-04T08:00:00Z",
-      "summary": "With AI deeply embedded in modern business operations, organizations face new resilience challenges far beyond traditional IT backups.",
       "uk_focus": false
     }
   ]
