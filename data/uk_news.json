@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T18:15:02Z",
+  "generated_at": "2026-11-07T22:13:56Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 8
     },
     {
       "name": "Computer Weekly",
@@ -183,22 +183,6 @@
       "source": "The Register",
       "published": "2026-11-05T22:37:06Z",
       "summary": "No documented attacks against American supermarkets…yet",
-      "uk_focus": false
-    },
-    {
-      "title": "The White House is apparently a popular residential proxy exit spot",
-      "link": "https://www.theregister.com/security/2026/11/05/the-white-house-is-apparently-a-popular-residential-proxy-exit-spot/5307969",
-      "source": "The Register",
-      "published": "2026-11-05T20:50:57Z",
-      "summary": "How it got there is another matter entirely",
-      "uk_focus": false
-    },
-    {
-      "title": "Get root on a musl Linux system by slamming it with an overly long password",
-      "link": "https://www.theregister.com/security/2026/11/05/get-root-on-a-musl-linux-system-by-slamming-it-with-an-overly-long-password/5307910",
-      "source": "The Register",
-      "published": "2026-11-05T18:29:00Z",
-      "summary": "Decade-old vulnerability in OpenSSH is now fixed, so get a-patchin'",
       "uk_focus": false
     }
   ]

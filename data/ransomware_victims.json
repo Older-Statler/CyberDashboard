@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T18:15:02Z",
+  "generated_at": "2026-11-07T22:13:56Z",
   "victims": [
     {
       "group": "rhysida",
@@ -180,6 +180,42 @@
       "published": "2026-11-07T01:07:11.580830+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/QmVuZXNjaCBMYXdAU2lsZW50UmFuc29tR3JvdXA="
+    },
+    {
+      "group": "qilin",
+      "victim": "AXE - EXPERTS",
+      "country": "FR",
+      "sector": "Professional Services",
+      "published": "2026-11-07T17:25:22.021798+00:00",
+      "domain": "axe-experts.com",
+      "url": "https://www.ransomware.live/id/QVhFIC0gRVhQRVJUU0BxaWxpbg=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Oak Green School",
+      "country": "GB",
+      "sector": "Education",
+      "published": "2026-11-07T14:32:10.066717+00:00",
+      "domain": "www.oakgreen.bucks.sch.uk",
+      "url": "https://www.ransomware.live/id/T2FrIEdyZWVuIFNjaG9vbEBxaWxpbg=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Gandol Doors",
+      "country": "TR",
+      "sector": "Manufacturing",
+      "published": "2026-11-07T14:31:27.673985+00:00",
+      "domain": "www.gandol.com",
+      "url": "https://www.ransomware.live/id/R2FuZG9sIERvb3JzQHFpbGlu"
+    },
+    {
+      "group": "qilin",
+      "victim": "Amber Management Ltd",
+      "country": "GB",
+      "sector": "Other",
+      "published": "2026-11-07T14:30:35.066447+00:00",
+      "domain": "www.amberman.co.uk",
+      "url": "https://www.ransomware.live/id/QW1iZXIgTWFuYWdlbWVudCBMdGRAcWlsaW4="
     },
     {
       "group": "incransom",
@@ -864,42 +900,6 @@
       "published": "2026-11-04T20:57:10.228398+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/VW5pbGV2ZXJAV2hpdGVhcm1vcg=="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "prairieridge.net",
-      "country": "US",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-11-04T19:23:48.416523+00:00",
-      "domain": "prairieridge.net",
-      "url": "https://www.ransomware.live/id/cHJhaXJpZXJpZGdlLm5ldEBCcmFpbkNpcGhlcg=="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "ciscocems.com",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-04T19:23:13.002766+00:00",
-      "domain": "ciscocems.com",
-      "url": "https://www.ransomware.live/id/Y2lzY29jZW1zLmNvbUBCcmFpbkNpcGhlcg=="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "parkell.com",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-04T19:22:34.873760+00:00",
-      "domain": "parkell.com",
-      "url": "https://www.ransomware.live/id/cGFya2VsbC5jb21AQnJhaW5DaXBoZXI="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "tritonclaims.com",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-11-04T19:21:56.999583+00:00",
-      "domain": "tritonclaims.com",
-      "url": "https://www.ransomware.live/id/dHJpdG9uY2xhaW1zLmNvbUBCcmFpbkNpcGhlcg=="
     }
   ]
 }
