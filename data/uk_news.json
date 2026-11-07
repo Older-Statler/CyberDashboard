@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T06:27:10Z",
+  "generated_at": "2026-11-07T13:28:29Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 15
+      "count": 13
     },
     {
       "name": "Computer Weekly",
@@ -20,7 +20,7 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 9
+      "count": 6
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 5
+      "count": 2
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "NHS breach helpline left staff carrying a 'significant emotional burden'",
+      "link": "https://www.theregister.com/security/2026/11/07/nhs-breach-helpline-left-staff-carrying-a-significant-emotional-burden/5308201",
+      "source": "The Register",
+      "published": "2026-11-07T10:30:00Z",
+      "summary": "Team given a day's notice faced distressed callers, safeguarding decisions during project that stretched from 2 weeks to 11",
+      "uk_focus": true
+    },
     {
       "title": "Elon Musk appears to signal the end of the road for Cybertruck",
       "link": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
@@ -239,78 +247,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-05T14:25:00Z",
       "summary": "The Indian CERT said a new cyber malicious group tracked as ‘Crafty Flacon’ is using Chinese-made AI tools to attack fintech and crypto organizations",
-      "uk_focus": false
-    },
-    {
-      "title": "Anthropic won't fix a Claude Dispatch flaw that could let attackers execute remote commands across corporate boundaries",
-      "link": "https://www.theregister.com/research/2026/11/05/anthropic-wont-fix-a-claude-dispatch-flaw-that-could-let-attackers-execute-remote-commands-across-corporate-boundaries/5307684",
-      "source": "The Register",
-      "published": "2026-11-05T13:00:00Z",
-      "summary": "From EOP to RCE in six simple steps",
-      "uk_focus": false
-    },
-    {
-      "title": "New York's Queens Public Library battles ransomware crims: Wi-Fi, checkouts, and website go dark",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/05/new-yorks-queens-public-library-battles-ransomware-crims-wi-fi-checkouts-and-website-go-dark/5307796",
-      "source": "The Register",
-      "published": "2026-11-05T12:10:15Z",
-      "summary": "No gang has claimed the attack on incredible neighborhood resource yet",
-      "uk_focus": false
-    },
-    {
-      "title": "Chinese Nation-State Threat Activity Falls Sharply in Q2 and Q3 2026",
-      "link": "https://www.infosecurity-magazine.com/news/chinese-nation-activity-falls/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-05T11:40:00Z",
-      "summary": "Trellix observed a 41.4% drop in China-nexus activity between April and September, which may reflect changing PRC strategic priorities",
-      "uk_focus": false
-    },
-    {
-      "title": "320,000 school files published on dark web after attack on education platform",
-      "link": "https://www.itpro.com/security/cyber-attacks/320-000-school-files-published-on-dark-web-after-attack-on-education-platform",
-      "source": "ITPro",
-      "published": "2026-11-05T11:23:02Z",
-      "summary": "Data from dozens of schools has been accessed after an attack on the Trading with Schools platform",
-      "uk_focus": false
-    },
-    {
-      "title": "Norway's aid agency pwned and all users' data is stolen",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/05/norways-aid-agency-pwned-and-all-users-data-is-stolen/5307765",
-      "source": "The Register",
-      "published": "2026-11-05T11:19:16Z",
-      "summary": "Norad said it cannot be sure that the details of those in 'conflict areas and authoritarian states' are safe or not",
-      "uk_focus": false
-    },
-    {
-      "title": "How the Binance hack happened",
-      "link": "https://www.itpro.com/security/cyber-crime/fake-interviews-compromised-laptops-and-dodgy-software-packages-how-the-binance-hack-happened",
-      "source": "ITPro",
-      "published": "2026-11-05T10:49:35Z",
-      "summary": "Binance has revealed new details on a record-breaking hack that hit the company last week",
-      "uk_focus": false
-    },
-    {
-      "title": "GhostMap Bug Leaves Android Phones Stuck in Reboot Loop",
-      "link": "https://www.infosecurity-magazine.com/news/ghostmap-bug-android-phones-stuck/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-05T10:15:00Z",
-      "summary": "Bitdefender warns that unfixed GhostMap bug could force users to factory reset their device",
-      "uk_focus": false
-    },
-    {
-      "title": "NATS Air Traffic Control Failure Cost UK Economy £33m",
-      "link": "https://www.infosecurity-magazine.com/news/nats-air-traffic-control-fail-cost/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-05T09:25:00Z",
-      "summary": "Cyber Monitoring Centre report claims an IT failure at the UK’s NATS air traffic services provider cost over £30m",
-      "uk_focus": true
-    },
-    {
-      "title": "Tokenmaxxing crackdowns and AI cybersecurity risks",
-      "link": "https://www.itpro.com/security/tokenmaxxing-crackdowns-and-ai-cybersecurity-risks",
-      "source": "ITPro",
-      "published": "2026-11-05T08:00:00Z",
-      "summary": "As companies cut down on ‘tokenmaxxing’, what are the risks posed by the practice and how will crackdowns impact cybersecurity?",
       "uk_focus": false
     }
   ]

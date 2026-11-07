@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-07T06:27:10Z",
+  "generated_at": "2026-11-07T13:28:29Z",
   "victims": [
+    {
+      "group": "rhysida",
+      "victim": "Treuhand & Immobilien Abt AG",
+      "country": "CH",
+      "sector": "Financial Services",
+      "published": "2026-11-07T08:18:16.664309+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VHJldWhhbmQgJiBJbW1vYmlsaWVuIEFidCBBR0ByaHlzaWRh"
+    },
+    {
+      "group": "Whitearmor",
+      "victim": "maersk",
+      "country": "DK",
+      "sector": "Transportation",
+      "published": "2026-11-07T03:48:01.376268+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/bWFlcnNrQFdoaXRlYXJtb3I="
+    },
     {
       "group": "anubis",
       "victim": "Kahler Automation",
@@ -882,24 +900,6 @@
       "published": "2026-11-04T20:28:28.072534+00:00",
       "domain": "www.fbcenla.org",
       "url": "https://www.ransomware.live/id/Rm9vZCBCYW5rIG9mIENlbnRyYWwgTG91aXNpYW5hQERhcmsgUHJvamVjdA=="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "centratamagroup.com",
-      "country": "BR",
-      "sector": "Other",
-      "published": "2026-11-04T23:14:32.813129+00:00",
-      "domain": "centratamagroup.com",
-      "url": "https://www.ransomware.live/id/Y2VudHJhdGFtYWdyb3VwLmNvbUBsb2NrYml0NQ=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #132",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-04T12:25:49.819714+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTMyQE4wbg=="
     }
   ]
 }
