@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T13:28:29Z",
+  "generated_at": "2026-11-07T18:15:02Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 13
+      "count": 10
     },
     {
       "name": "Computer Weekly",
@@ -20,7 +20,7 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 6
+      "count": 3
     },
     {
       "name": "The Guardian",
@@ -199,54 +199,6 @@
       "source": "The Register",
       "published": "2026-11-05T18:29:00Z",
       "summary": "Decade-old vulnerability in OpenSSH is now fixed, so get a-patchin'",
-      "uk_focus": false
-    },
-    {
-      "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852",
-      "source": "The Register",
-      "published": "2026-11-05T18:03:00Z",
-      "summary": "Agentic 'on-path attack' went after Chainalysis's tools, which are routinely called upon to assist police investigations",
-      "uk_focus": false
-    },
-    {
-      "title": "OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'",
-      "link": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
-      "source": "The Register",
-      "published": "2026-11-05T17:00:00Z",
-      "summary": "The latest bug hunting model 'avoided exploiting out-of-scope services over 99 percent of the time', claims House of Altman",
-      "uk_focus": false
-    },
-    {
-      "title": "Tobacco company got smoked by leaving secret recipes on a file share",
-      "link": "https://www.theregister.com/security/2026/11/05/tobacco-company-got-smoked-by-leaving-secret-recipes-on-a-file-share/5307704",
-      "source": "The Register",
-      "published": "2026-11-05T16:02:00Z",
-      "summary": "They denied the data was real...then removed it",
-      "uk_focus": false
-    },
-    {
-      "title": "Residential Proxy Traffic Traced to White House Network",
-      "link": "https://www.infosecurity-magazine.com/news/white-house-residential-proxy-exits/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-05T16:00:00Z",
-      "summary": "White House network addresses were used as exits by 28 residential proxy services",
-      "uk_focus": false
-    },
-    {
-      "title": "Zyxel Switch Patch Missed Flaw Behind Wave of Attacks",
-      "link": "https://www.infosecurity-magazine.com/news/zyxel-gs1900-patch-missed-flaw/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-05T15:15:00Z",
-      "summary": "Zyxel’s June GS1900 patch did not block the exploit used against 996 switches, Binarly found",
-      "uk_focus": false
-    },
-    {
-      "title": "India Warns of New AI-Driven Cyber-Attacks Targeting Financial and Crypto Businesses",
-      "link": "https://www.infosecurity-magazine.com/news/india-warns-ai-cyberattacks/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-05T14:25:00Z",
-      "summary": "The Indian CERT said a new cyber malicious group tracked as ‘Crafty Flacon’ is using Chinese-made AI tools to attack fintech and crypto organizations",
       "uk_focus": false
     }
   ]
