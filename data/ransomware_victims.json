@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-06T20:18:41Z",
+  "generated_at": "2026-11-07T00:14:43Z",
   "victims": [
+    {
+      "group": "SilentRansomGroup",
+      "victim": "Tucker Ellis",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-06T18:58:03.015515+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VHVja2VyIEVsbGlzQFNpbGVudFJhbnNvbUdyb3Vw"
+    },
+    {
+      "group": "SilentRansomGroup",
+      "victim": "Wachtell, Lipton, Rosen & Katz",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-06T18:57:43.060629+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/V2FjaHRlbGwsIExpcHRvbiwgUm9zZW4gJiBLYXR6QFNpbGVudFJhbnNvbUdyb3Vw"
+    },
+    {
+      "group": "SilentRansomGroup",
+      "victim": "B... law",
+      "country": "",
+      "sector": "Professional Services",
+      "published": "2026-11-06T16:36:19.921755+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Qi4uLiBsYXdAU2lsZW50UmFuc29tR3JvdXA="
+    },
     {
       "group": "direwolf",
       "victim": "Algonomy",
@@ -27,6 +54,15 @@
       "published": "2026-11-06T12:00:26.537597+00:00",
       "domain": "icborgosangiuseppe.edu.it",
       "url": "https://www.ransomware.live/id/SXN0aXR1dG8gQm9yZ29AU2hpYmE="
+    },
+    {
+      "group": "incransom",
+      "victim": "https://www.sleep-clinic.ca/",
+      "country": "CA",
+      "sector": "Healthcare",
+      "published": "2026-11-06T19:09:52.349424+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/aHR0cHM6Ly93d3cuc2xlZXAtY2xpbmljLmNhL0BpbmNyYW5zb20="
     },
     {
       "group": "akira",
@@ -864,42 +900,6 @@
       "published": "2026-11-04T00:53:54.779184+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/UGV0cm9zaGFoZChFbmFwIFNpcGV0cm9sIEludGVybmF0aW9uYWwgLSBFZ3lwdCBCcmFuY2gpQEFvcWlu"
-    },
-    {
-      "group": "Aoqin",
-      "victim": "Nextron Technology",
-      "country": "CN",
-      "sector": "Technology",
-      "published": "2026-11-04T00:53:18.747649+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TmV4dHJvbiBUZWNobm9sb2d5QEFvcWlu"
-    },
-    {
-      "group": "Aoqin",
-      "victim": "Goldsmith & Hull",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-04T00:52:42.935237+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/R29sZHNtaXRoICYgSHVsbEBBb3Fpbg=="
-    },
-    {
-      "group": "akira",
-      "victim": "System Plus",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-05T14:34:04.437450+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U3lzdGVtIFBsdXNAYWtpcmE="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "The Courier Guy",
-      "country": "ZA",
-      "sector": "Transportation",
-      "published": "2026-11-04T22:18:59.115002+00:00",
-      "domain": "thecourierguy.co.za",
-      "url": "https://www.ransomware.live/id/VGhlIENvdXJpZXIgR3V5QG1lZHVzYWxvY2tlcg=="
     }
   ]
 }
