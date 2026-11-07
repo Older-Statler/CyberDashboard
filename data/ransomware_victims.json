@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-11-07T00:14:43Z",
+  "generated_at": "2026-11-07T06:27:10Z",
   "victims": [
+    {
+      "group": "anubis",
+      "victim": "Kahler Automation",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-11-07T01:08:56.613436+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S2FobGVyIEF1dG9tYXRpb25AYW51Ymlz"
+    },
+    {
+      "group": "SilentRansomGroup",
+      "victim": "Benesch Law",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-07T01:07:11.580830+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QmVuZXNjaCBMYXdAU2lsZW50UmFuc29tR3JvdXA="
+    },
+    {
+      "group": "incransom",
+      "victim": "1da9100e55aqf21eb651eNea",
+      "country": "AL",
+      "sector": "Not Found",
+      "published": "2026-11-07T00:15:21.235992+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/MWRhOTEwMGU1NWFxZjIxZWI2NTFlTmVhQGluY3JhbnNvbQ=="
+    },
+    {
+      "group": "BrainCipher",
+      "victim": "Mutares.com",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-11-06T21:21:28.464004+00:00",
+      "domain": "Mutares.com",
+      "url": "https://www.ransomware.live/id/TXV0YXJlcy5jb21AQnJhaW5DaXBoZXI="
+    },
     {
       "group": "SilentRansomGroup",
       "victim": "Tucker Ellis",
@@ -153,6 +189,42 @@
       "published": "2026-11-06T01:22:59.334278+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/U2NyeSBBbmFseXRpY3NATjBu"
+    },
+    {
+      "group": "qilin",
+      "victim": "Acondistec",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-11-07T01:34:21.307146+00:00",
+      "domain": "acondistec.de",
+      "url": "https://www.ransomware.live/id/QWNvbmRpc3RlY0BxaWxpbg=="
+    },
+    {
+      "group": "genesis",
+      "victim": "Xinos Construction",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-06T20:46:11.665511+00:00",
+      "domain": "xinosconstructioncorp.com",
+      "url": "https://www.ransomware.live/id/WGlub3MgQ29uc3RydWN0aW9uQGdlbmVzaXM="
+    },
+    {
+      "group": "genesis",
+      "victim": "Insation Technologies",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-06T20:45:33.758918+00:00",
+      "domain": "insationtech.com",
+      "url": "https://www.ransomware.live/id/SW5zYXRpb24gVGVjaG5vbG9naWVzQGdlbmVzaXM="
+    },
+    {
+      "group": "Eclipse",
+      "victim": "Comercial en Fletes México, S.A. de C.V.",
+      "country": "MX",
+      "sector": "Transportation",
+      "published": "2026-11-06T20:21:47.711641+00:00",
+      "domain": "cfm.com.mx",
+      "url": "https://www.ransomware.live/id/Q29tZXJjaWFsIGVuIEZsZXRlcyBNw6l4aWNvLCBTLkEuIGRlIEMuVi5ARWNsaXBzZQ=="
     },
     {
       "group": "akira",
@@ -828,78 +900,6 @@
       "published": "2026-11-04T12:25:49.819714+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTMyQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #131",
-      "country": "DE",
-      "sector": "Not Found",
-      "published": "2026-11-04T12:25:12.376076+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTMxQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #130",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-04T12:24:34.067511+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTMwQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #129",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-04T12:23:54.766963+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTI5QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #128",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-04T12:23:16.354299+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTI4QE4wbg=="
-    },
-    {
-      "group": "rhysida",
-      "victim": "Juge, Napolitano, Ruli, Putfark & Pittman",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-11-04T09:49:52.047003+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SnVnZSwgTmFwb2xpdGFubywgUnVsaSwgUHV0ZmFyayAmIFBpdHRtYW5Acmh5c2lkYQ=="
-    },
-    {
-      "group": "Scarlettgroup",
-      "victim": "sigsauer.com",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-11-04T08:30:41.479687+00:00",
-      "domain": "sigsauer.com",
-      "url": "https://www.ransomware.live/id/c2lnc2F1ZXIuY29tQFNjYXJsZXR0Z3JvdXA="
-    },
-    {
-      "group": "Aoqin",
-      "victim": "SILIKO d.o.o.",
-      "country": "SI",
-      "sector": "Manufacturing",
-      "published": "2026-11-04T00:54:26.315826+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U0lMSUtPIGQuby5vLkBBb3Fpbg=="
-    },
-    {
-      "group": "Aoqin",
-      "victim": "Petroshahd(Enap Sipetrol International - Egypt Branch)",
-      "country": "CL",
-      "sector": "Energy & Utilities",
-      "published": "2026-11-04T00:53:54.779184+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UGV0cm9zaGFoZChFbmFwIFNpcGV0cm9sIEludGVybmF0aW9uYWwgLSBFZ3lwdCBCcmFuY2gpQEFvcWlu"
     }
   ]
 }
