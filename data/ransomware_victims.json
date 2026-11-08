@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-08T20:17:06Z",
+  "generated_at": "2026-11-08T23:56:18Z",
   "victims": [
+    {
+      "group": "Deadlock",
+      "victim": "Fidex",
+      "country": "MX",
+      "sector": "Not Found",
+      "published": "2026-11-08T19:51:54.679870+00:00",
+      "domain": "www.fidex.com.mx",
+      "url": "https://www.ransomware.live/id/RmlkZXhARGVhZGxvY2s="
+    },
+    {
+      "group": "Deadlock",
+      "victim": "NoseTea",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-08T19:51:32.761876+00:00",
+      "domain": "home.nosetea.com",
+      "url": "https://www.ransomware.live/id/Tm9zZVRlYUBEZWFkbG9jaw=="
+    },
+    {
+      "group": "Deadlock",
+      "victim": "Coopebis",
+      "country": "CR",
+      "sector": "Agriculture and Food Production",
+      "published": "2026-11-08T18:21:29.011582+00:00",
+      "domain": "coopebis.coop",
+      "url": "https://www.ransomware.live/id/Q29vcGViaXNARGVhZGxvY2s="
+    },
     {
       "group": "Deadlock",
       "victim": "Trinity Custom Homes - USA",
@@ -72,6 +99,15 @@
       "published": "2026-11-08T03:49:05.694674+00:00",
       "domain": "q-technicians.be",
       "url": "https://www.ransomware.live/id/cS10ZWNobmljaWFucy5iZUBpbmNyYW5zb20="
+    },
+    {
+      "group": "Eclipse",
+      "victim": "globalair.com.sg",
+      "country": "SG",
+      "sector": "Transportation",
+      "published": "2026-11-08T16:22:07.068011+00:00",
+      "domain": "globalair.com.sg",
+      "url": "https://www.ransomware.live/id/Z2xvYmFsYWlyLmNvbS5zZ0BFY2xpcHNl"
     },
     {
       "group": "N0n",
@@ -614,6 +650,15 @@
       "url": "https://www.ransomware.live/id/U2NyeSBBbmFseXRpY3NATjBu"
     },
     {
+      "group": "akira",
+      "victim": "Calmont Wire & Cable",
+      "country": "CA",
+      "sector": "Manufacturing",
+      "published": "2026-11-08T17:33:01.391555+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2FsbW9udCBXaXJlICYgQ2FibGVAYWtpcmE="
+    },
+    {
       "group": "qilin",
       "victim": "Acondistec",
       "country": "DE",
@@ -855,51 +900,6 @@
       "published": "2026-11-05T09:50:45.225354+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Rmlyc3QgYW5kIEZpbmFsIFdhcm5pbmcgLSBJSEcgSG90ZWxzICYgUmVzb3J0cyAoRXN0YXRlKUBCWU9E"
-    },
-    {
-      "group": "qilin",
-      "victim": "Calvary Christian College",
-      "country": "AU",
-      "sector": "Education",
-      "published": "2026-11-05T09:14:45.298141+00:00",
-      "domain": "www.calvary.qld.edu.au",
-      "url": "https://www.ransomware.live/id/Q2FsdmFyeSBDaHJpc3RpYW4gQ29sbGVnZUBxaWxpbg=="
-    },
-    {
-      "group": "AuditTeam",
-      "victim": "kx***om",
-      "country": "CN",
-      "sector": "Technology",
-      "published": "2026-11-05T08:50:34.763915+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/a3gqKipvbUBBdWRpdFRlYW0="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Msn",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-04T22:27:24.873996+00:00",
-      "domain": "msn.com",
-      "url": "https://www.ransomware.live/id/TXNuQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "baiapai",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-04T22:25:50.790256+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/YmFpYXBhaUBtZWR1c2Fsb2NrZXI="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Vinitgloves",
-      "country": "IN",
-      "sector": "Manufacturing",
-      "published": "2026-11-04T22:25:19.459966+00:00",
-      "domain": "vinitgloves.com",
-      "url": "https://www.ransomware.live/id/VmluaXRnbG92ZXNAbWVkdXNhbG9ja2Vy"
     }
   ]
 }

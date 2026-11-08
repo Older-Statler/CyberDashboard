@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T20:17:06Z",
+  "generated_at": "2026-11-08T23:56:18Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Computer Weekly",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Tech Monitor",
@@ -64,22 +64,6 @@
       "published": "2026-11-07T10:30:00Z",
       "summary": "Team given a day's notice faced distressed callers, safeguarding decisions during project that stretched from 2 weeks to 11",
       "uk_focus": true
-    },
-    {
-      "title": "Elon Musk appears to signal the end of the road for Cybertruck",
-      "link": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-06T21:49:50Z",
-      "summary": "Musk said it was to make room for production of its Cybercabs - autonomous taxis without a driver.",
-      "uk_focus": false
-    },
-    {
-      "title": "Agents reveal secrets when offered to team up with each other",
-      "link": "https://www.theregister.com/security/2026/11/06/agents-reveal-secrets-when-offered-to-team-up-with-each-other/5308260",
-      "source": "The Register",
-      "published": "2026-11-06T21:39:23Z",
-      "summary": "If you wouldn't put it on GitHub, don't give models access to it",
-      "uk_focus": false
     }
   ]
 }
