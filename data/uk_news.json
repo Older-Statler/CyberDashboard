@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T01:43:50Z",
+  "generated_at": "2026-11-08T08:45:01Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 6
+      "count": 4
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 0
     },
     {
       "name": "Infosecurity Magazine",
@@ -25,12 +25,12 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Hot fridges, a fake nuclear alert and a $6bn heist: are we in the foothills of a hacking epidemic?",
+      "link": "https://www.theguardian.com/news/ng-interactive/2026/nov/08/hot-fridges-a-fake-nuclear-alert-and-a-6bn-heist-are-we-in-the-foothills-of-a-hacking-epidemic",
+      "source": "The Guardian",
+      "published": "2026-11-08T06:00:33Z",
+      "summary": "As AI exposes flaws in IT systems and geopolitics plays out on the cyber frontline, some experts say the events of recent weeks could soon be a common occurence Alex Pearce was doing the morning rounds at his fruit and vegetable wholesale business in London on Monday last week…",
+      "uk_focus": true
+    },
     {
       "title": "NHS breach helpline left staff carrying a 'significant emotional burden'",
       "link": "https://www.theregister.com/security/2026/11/07/nhs-breach-helpline-left-staff-carrying-a-significant-emotional-burden/5308201",
@@ -127,46 +135,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-06T09:15:00Z",
       "summary": "BlackFog found a lack of visibility into data being shared with AI tools, even those approved for use in the enterprise",
-      "uk_focus": false
-    },
-    {
-      "title": "Why password spraying is still an effective attack method",
-      "link": "https://www.itpro.com/security/hacking/why-password-spraying-is-still-an-effective-attack-method",
-      "source": "ITPro",
-      "published": "2026-11-06T08:00:00Z",
-      "summary": "Bobby and Ross talk to the CEO of Passpack about how IT leaders can beat password spraying",
-      "uk_focus": false
-    },
-    {
-      "title": "Hospital gave very sick doctor a special PC for his personal, erm, pleasure",
-      "link": "https://www.theregister.com/security/2026/11/06/hospital-gave-very-sick-doctor-a-special-pc-for-his-personal-erm-pleasure/5307750",
-      "source": "The Register",
-      "published": "2026-11-06T06:31:00Z",
-      "summary": "Support chap told to either allow blatant policy violations or find a new job",
-      "uk_focus": false
-    },
-    {
-      "title": "Watchdog investigates Europol over ‘irregular’ data processing claims",
-      "link": "https://www.computerweekly.com/news/366653892/Watchdog-investigates-Europol-over-irregular-data-processing-claims",
-      "source": "Computer Weekly",
-      "published": "2026-11-06T06:15:00Z",
-      "summary": "The European Data Protection Supervisor is investigating Europol’s data processing environment, after an investigation by Computer Weekly, Correctiv and Solomon exposed serious data protection and security failures",
-      "uk_focus": false
-    },
-    {
-      "title": "AI agents are a 'bane' for some website operators, says Cloudflare",
-      "link": "https://www.theregister.com/networks/2026/11/06/ai-agents-are-a-bane-for-some-website-operators-says-cloudflare/5308022",
-      "source": "The Register",
-      "published": "2026-11-06T04:25:14Z",
-      "summary": "CEO says sovereigns probably exploited PHP2SHELL ages ago, and suggests containers are dead",
-      "uk_focus": false
-    },
-    {
-      "title": "Zurich uncovers £19m of fraud with Quantexa data analytics",
-      "link": "https://www.computerweekly.com/news/366653717/Zurich-uncovers-19m-of-fraud-with-Quantexa-data-analytics",
-      "source": "Computer Weekly",
-      "published": "2026-11-06T04:19:00Z",
-      "summary": "The insurer has used Quantexa’s data analytics technology to uncover £109.3m in insurance fraud over the past year, including so-called crash-for-cash scams",
       "uk_focus": false
     }
   ]

@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-11-08T01:43:50Z",
+  "generated_at": "2026-11-08T08:45:01Z",
   "victims": [
+    {
+      "group": "BYOD",
+      "victim": "Twitter",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-08T03:20:51.920702+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VHdpdHRlckBCWU9E"
+    },
+    {
+      "group": "incransom",
+      "victim": "www.bogard.com.mx",
+      "country": "MX",
+      "sector": "Other",
+      "published": "2026-11-08T03:47:21.145552+00:00",
+      "domain": "www.bogard.com.mx",
+      "url": "https://www.ransomware.live/id/d3d3LmJvZ2FyZC5jb20ubXhAaW5jcmFuc29t"
+    },
+    {
+      "group": "incransom",
+      "victim": "bpcm.com",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-08T03:48:13.488273+00:00",
+      "domain": "bpcm.com",
+      "url": "https://www.ransomware.live/id/YnBjbS5jb21AaW5jcmFuc29t"
+    },
+    {
+      "group": "Whitearmor",
+      "victim": "Clínica La Sagrada Familia (Colombia)",
+      "country": "CO",
+      "sector": "Healthcare",
+      "published": "2026-11-08T03:33:23.256858+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2zDrW5pY2EgTGEgU2FncmFkYSBGYW1pbGlhIChDb2xvbWJpYSlAV2hpdGVhcm1vcg=="
+    },
+    {
+      "group": "incransom",
+      "victim": "q-technicians.be",
+      "country": "BE",
+      "sector": "Professional Services",
+      "published": "2026-11-08T03:49:05.694674+00:00",
+      "domain": "q-technicians.be",
+      "url": "https://www.ransomware.live/id/cS10ZWNobmljaWFucy5iZUBpbmNyYW5zb20="
+    },
     {
       "group": "N0n",
       "victim": "Company #147",
@@ -279,6 +324,15 @@
       "published": "2026-11-07T01:07:11.580830+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/QmVuZXNjaCBMYXdAU2lsZW50UmFuc29tR3JvdXA="
+    },
+    {
+      "group": "BYOD",
+      "victim": "???",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-08T03:21:11.775480+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Pz8/QEJZT0Q="
     },
     {
       "group": "qilin",
@@ -846,60 +900,6 @@
       "published": "2026-11-04T22:23:43.682060+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/UnVpeGlhbmcgSmlkaWFuQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Kde",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-04T22:23:12.502234+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/S2RlQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Jobmongers",
-      "country": "GB",
-      "sector": "Professional Services",
-      "published": "2026-11-04T22:22:41.115597+00:00",
-      "domain": "jobmongers.com",
-      "url": "https://www.ransomware.live/id/Sm9ibW9uZ2Vyc0BtZWR1c2Fsb2NrZXI="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "baeaqab",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-04T22:22:08.338014+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/YmFlYXFhYkBtZWR1c2Fsb2NrZXI="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Ulaval",
-      "country": "CA",
-      "sector": "Education",
-      "published": "2026-11-04T22:21:35.811959+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VWxhdmFsQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "On",
-      "country": "CH",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-04T22:21:04.571660+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/T25AbWVkdXNhbG9ja2Vy"
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Hirschinjurylaw",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-04T22:20:33.635900+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SGlyc2NoaW5qdXJ5bGF3QG1lZHVzYWxvY2tlcg=="
     }
   ]
 }
