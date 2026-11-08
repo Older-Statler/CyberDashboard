@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T15:51:33Z",
+  "generated_at": "2026-11-08T20:17:06Z",
   "window_hours": 48,
   "sources": [
     {
@@ -25,12 +25,12 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Graham Cluley",
@@ -79,22 +79,6 @@
       "source": "The Register",
       "published": "2026-11-06T21:39:23Z",
       "summary": "If you wouldn't put it on GitHub, don't give models access to it",
-      "uk_focus": false
-    },
-    {
-      "title": "Activists break into building site of Microsoft datacentre in Amsterdam",
-      "link": "https://www.theguardian.com/world/2026/nov/06/activists-break-into-building-site-of-microsoft-datacentre-in-amsterdam",
-      "source": "The Guardian",
-      "published": "2026-11-06T18:51:37Z",
-      "summary": "Separate actions also take place outside fence and across Europe in backlash against impact of AI boom Activists have stormed the site of a Microsoft datacentre being built in Amsterdam, as the backlash to the social and environmental harms of the AI boom spreads across Europe.…",
-      "uk_focus": false
-    },
-    {
-      "title": "Three charged after impersonating CEOs and attorneys in $129 million deepfake fraud scheme",
-      "link": "https://www.itpro.com/security/cyber-crime/three-charged-after-impersonating-ceos-and-attorneys-in-usd129-million-deepfake-fraud-scheme",
-      "source": "ITPro",
-      "published": "2026-11-06T15:51:56Z",
-      "summary": "The deepfake voice and video scheme saw fraudsters steal nearly $130 million",
       "uk_focus": false
     }
   ]
