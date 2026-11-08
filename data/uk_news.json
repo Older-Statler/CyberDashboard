@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T22:13:56Z",
+  "generated_at": "2026-11-08T01:43:50Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 8
+      "count": 6
     },
     {
       "name": "Computer Weekly",
@@ -167,22 +167,6 @@
       "source": "Computer Weekly",
       "published": "2026-11-06T04:19:00Z",
       "summary": "The insurer has used Quantexa’s data analytics technology to uncover £109.3m in insurance fraud over the past year, including so-called crash-for-cash scams",
-      "uk_focus": false
-    },
-    {
-      "title": "Threat actor targets Indian fintechs on weekends when defenders aren’t watching",
-      "link": "https://www.theregister.com/security/2026/11/06/threat-actor-targets-indian-fintechs-on-weekends-when-defenders-arent-watching/5308000",
-      "source": "The Register",
-      "published": "2026-11-06T01:17:40Z",
-      "summary": "CERT-IN warns of ‘significant escalation’ in AI-powered attacks, some after victims tried to improve defences",
-      "uk_focus": false
-    },
-    {
-      "title": "Feds warn grocers: Don't chill on cyber defenses as freezer hacking spree heats up",
-      "link": "https://www.theregister.com/security/2026/11/05/feds-warn-grocers-dont-chill-on-cyber-defenses-as-freezer-hacking-spree-heats-up/5307978",
-      "source": "The Register",
-      "published": "2026-11-05T22:37:06Z",
-      "summary": "No documented attacks against American supermarkets…yet",
       "uk_focus": false
     }
   ]
