@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:37:11Z",
+  "generated_at": "2026-11-09T15:37:05Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 3
+      "count": 6
     },
     {
       "name": "Computer Weekly",
@@ -20,7 +20,7 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 0
+      "count": 4
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "Graham Cluley",
@@ -45,10 +45,98 @@
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 0
+      "count": 1
     }
   ],
   "items": [
+    {
+      "title": "Microsoft's Azure Linux gets 470-plus security fixes in one almighty patching session",
+      "link": "https://www.theregister.com/security/2026/11/09/microsofts-azure-linux-gets-470-plus-security-fixes-in-one-almighty-patching-session/5308434",
+      "source": "The Register",
+      "published": "2026-11-09T15:02:00Z",
+      "summary": "A mountain of CVEs, a certificate cleanup, and yet more work for Microsoft's patching teams",
+      "uk_focus": false
+    },
+    {
+      "title": "Who Gives A Crap? Hackers, apparently, after toilet paper maker's customer data exposed",
+      "link": "https://www.theregister.com/security/2026/11/09/who-gives-a-crap-hackers-apparently-after-toilet-paper-makers-customer-data-exposed/5308419",
+      "source": "The Register",
+      "published": "2026-11-09T14:30:00Z",
+      "summary": "UK shoppers caught up in third-party security mess, and nobody knows whether the data was flushed away",
+      "uk_focus": true
+    },
+    {
+      "title": "New Supply Chain Attack Compromises Tens of Thousands of GitHub Repositories",
+      "link": "https://www.infosecurity-magazine.com/news/supply-chain-attack-thousands/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-09T14:30:00Z",
+      "summary": "Security researchers have detected a malicious workflow affecting tens of thousands of GitHub repositories, including Uber-owned ones",
+      "uk_focus": false
+    },
+    {
+      "title": "Email Addresses of 2.2 Million Sega Customers Leaked in Vendor Breach",
+      "link": "https://www.infosecurity-magazine.com/news/email-sega-customers-vendor-breach/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-09T13:31:00Z",
+      "summary": "Gaming company Sega warned customers to be vigilant for suspicious emails after hackers compromised Japanese email delivery provider Arara",
+      "uk_focus": false
+    },
+    {
+      "title": "Outlook.com bounces legit emails as Microsoft's authentication crackdown goes sideways",
+      "link": "https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428",
+      "source": "The Register",
+      "published": "2026-11-09T13:30:00Z",
+      "summary": "Missing DMARC or wobbly SPF means your mail may be treated as suspicious",
+      "uk_focus": false
+    },
+    {
+      "title": "Japanese homeware giant pulls online store after cloud breach puts 7.7M records at risk",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/09/japanese-homeware-giant-pulls-online-store-after-cloud-breach-puts-77m-records-at-risk/5308377",
+      "source": "The Register",
+      "published": "2026-11-09T12:47:00Z",
+      "summary": "No reopening date as orders face delays and some customers are told to refuse deliveries to cancel purchases",
+      "uk_focus": false
+    },
+    {
+      "title": "SonicWall issues fixes for seven vulnerabilities",
+      "link": "https://www.itpro.com/security/sonicwall-issues-fixes-for-seven-vulnerabilities-including-an-ssl-vpn-flaw-that-bypasses-mfa",
+      "source": "ITPro",
+      "published": "2026-11-09T12:04:24Z",
+      "summary": "The vulnerability, which appears to have been exploited in the wild, comes alongside six others",
+      "uk_focus": false
+    },
+    {
+      "title": "OpenAI says its new cyber-focused AI model found thousands of Linux kernel vulnerabilities",
+      "link": "https://www.itpro.com/security/openai-says-its-new-cyber-focused-ai-model-found-thousands-of-linux-kernel-vulnerabilities",
+      "source": "ITPro",
+      "published": "2026-11-09T10:50:05Z",
+      "summary": "The new cyber-focused AI model boasts improved bug hunting capabilities compared to its predecessor",
+      "uk_focus": false
+    },
+    {
+      "title": "Crédit Mutuel Arkéa Targeted in Reported $133m Heist",
+      "link": "https://www.infosecurity-magazine.com/news/crdit-mutuel-arka-targeted/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-09T10:30:00Z",
+      "summary": "French co-operative bank Crédit Mutuel Arkéa has reported a cyber-attack enabling fraudulent transactions",
+      "uk_focus": false
+    },
+    {
+      "title": "OpenAI launches GPT-6 Cyber to find software vulnerabilities",
+      "link": "https://www.techmonitor.ai/news/openai-launches-gpt-6-cyber-to-find-software-vulnerabilities",
+      "source": "Tech Monitor",
+      "published": "2026-11-09T09:17:18Z",
+      "summary": "OpenAI has announced the release of GPT-6 Cyber, an AI model designed to help security researchers identify and address software vulnerabilities.",
+      "uk_focus": false
+    },
+    {
+      "title": "Anti-Money Laundering Watchdog FATF Targets Scam Compounds",
+      "link": "https://www.infosecurity-magazine.com/news/aml-watchdog-fatf-scam-compounds/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-09T09:16:00Z",
+      "summary": "AML body the Financial Action Task Force has suggested new ways to disrupt scam compounds",
+      "uk_focus": false
+    },
     {
       "title": "Linus Torvalds sees signs AI-prompted patch flood has peaked",
       "link": "https://www.theregister.com/security/2026/11/09/linus-torvalds-sees-signs-ai-prompted-patch-flood-has-peaked/5308345",
@@ -62,7 +150,7 @@
       "link": "https://www.theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335",
       "source": "The Register",
       "published": "2026-11-09T02:14:17Z",
-      "summary": "PLUS: Japan declares infosec emergency; Apple’s makes biggest school Mac sale, ever, anywhere, in the Philippines; And more!",
+      "summary": "PLUS: Japan declares infosec emergency; Apple makes biggest school Mac sale, ever, anywhere, in the Philippines; And more!",
       "uk_focus": false
     },
     {
@@ -71,14 +159,6 @@
       "source": "The Guardian",
       "published": "2026-11-08T06:00:33Z",
       "summary": "As AI exposes flaws in IT systems and geopolitics plays out on the cyber frontline, some experts say the events of recent weeks could soon be a common occurrence Alex Pearce was doing the morning rounds at his fruit and vegetable wholesale business in London on Monday last week…",
-      "uk_focus": true
-    },
-    {
-      "title": "NHS breach helpline left staff carrying a 'significant emotional burden'",
-      "link": "https://www.theregister.com/security/2026/11/07/nhs-breach-helpline-left-staff-carrying-a-significant-emotional-burden/5308201",
-      "source": "The Register",
-      "published": "2026-11-07T10:30:00Z",
-      "summary": "Team given a day's notice faced distressed callers, safeguarding decisions during project that stretched from 2 weeks to 11",
       "uk_focus": true
     }
   ]
