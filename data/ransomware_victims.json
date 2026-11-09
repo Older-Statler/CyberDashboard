@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-08T23:56:18Z",
+  "generated_at": "2026-11-09T05:37:11Z",
   "victims": [
+    {
+      "group": "N0n",
+      "victim": "Expedia Group, Inc.",
+      "country": "US",
+      "sector": "Hospitality",
+      "published": "2026-11-09T00:52:31.602271+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RXhwZWRpYSBHcm91cCwgSW5jLkBOMG4="
+    },
+    {
+      "group": "Panzer",
+      "victim": "Grupa ABS",
+      "country": "PL",
+      "sector": "Other",
+      "published": "2026-11-09T00:55:15.649045+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R3J1cGEgQUJTQFBhbnplcg=="
+    },
+    {
+      "group": "Barracuda",
+      "victim": "ADG Blatt",
+      "country": "DE",
+      "sector": "Other",
+      "published": "2026-11-08T22:50:42.119031+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QURHIEJsYXR0QEJhcnJhY3VkYQ=="
+    },
     {
       "group": "Deadlock",
       "victim": "Fidex",
@@ -56,6 +83,42 @@
       "url": "https://www.ransomware.live/id/S2FkaWNrQERlYWRsb2Nr"
     },
     {
+      "group": "lockbit5",
+      "victim": "sunclinicallaboratories.com",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-08T23:28:39.584061+00:00",
+      "domain": "sunclinicallaboratories.com",
+      "url": "https://www.ransomware.live/id/c3VuY2xpbmljYWxsYWJvcmF0b3JpZXMuY29tQGxvY2tiaXQ1"
+    },
+    {
+      "group": "lockbit5",
+      "victim": "yatra.com",
+      "country": "IN",
+      "sector": "Hospitality",
+      "published": "2026-11-08T23:30:44.922271+00:00",
+      "domain": "yatra.com",
+      "url": "https://www.ransomware.live/id/eWF0cmEuY29tQGxvY2tiaXQ1"
+    },
+    {
+      "group": "lockbit5",
+      "victim": "grupotelles.com",
+      "country": "BR",
+      "sector": "Manufacturing",
+      "published": "2026-11-08T23:32:52.232773+00:00",
+      "domain": "grupotelles.com",
+      "url": "https://www.ransomware.live/id/Z3J1cG90ZWxsZXMuY29tQGxvY2tiaXQ1"
+    },
+    {
+      "group": "lockbit5",
+      "victim": "starmark.co.th",
+      "country": "TH",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-08T23:34:54.344818+00:00",
+      "domain": "starmark.co.th",
+      "url": "https://www.ransomware.live/id/c3Rhcm1hcmsuY28udGhAbG9ja2JpdDU="
+    },
+    {
       "group": "BYOD",
       "victim": "Twitter",
       "country": "US",
@@ -99,6 +162,15 @@
       "published": "2026-11-08T03:49:05.694674+00:00",
       "domain": "q-technicians.be",
       "url": "https://www.ransomware.live/id/cS10ZWNobmljaWFucy5iZUBpbmNyYW5zb20="
+    },
+    {
+      "group": "Orova",
+      "victim": "IE & E Industries",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-09T00:53:07.359272+00:00",
+      "domain": "www.ie-e.com",
+      "url": "https://www.ransomware.live/id/SUUgJiBFIEluZHVzdHJpZXNAT3JvdmE="
     },
     {
       "group": "Eclipse",
@@ -828,78 +900,6 @@
       "published": "2026-11-05T07:59:30.753699+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/RGlzY2xvc2VkQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "Dark Project",
-      "victim": "Custom Bakehouse",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-05T06:21:31.072294+00:00",
-      "domain": "www.custombakehouse.com",
-      "url": "https://www.ransomware.live/id/Q3VzdG9tIEJha2Vob3VzZUBEYXJrIFByb2plY3Q="
-    },
-    {
-      "group": "N0n",
-      "victim": "Delta Dental of Missouri",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-05T04:52:28.695264+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RGVsdGEgRGVudGFsIG9mIE1pc3NvdXJpQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "The Container Store",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-05T04:51:57.488255+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VGhlIENvbnRhaW5lciBTdG9yZUBOMG4="
-    },
-    {
-      "group": "qilin",
-      "victim": "Insurance Audit Services",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-11-05T20:46:53.207943+00:00",
-      "domain": "www.insaudit.com",
-      "url": "https://www.ransomware.live/id/SW5zdXJhbmNlIEF1ZGl0IFNlcnZpY2VzQHFpbGlu"
-    },
-    {
-      "group": "akira",
-      "victim": "Westboro Partners",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-05T15:20:30.799838+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/V2VzdGJvcm8gUGFydG5lcnNAYWtpcmE="
-    },
-    {
-      "group": "akira",
-      "victim": "David L Wade & Associates",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-11-05T14:33:52.506679+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RGF2aWQgTCBXYWRlICYgQXNzb2NpYXRlc0Bha2lyYQ=="
-    },
-    {
-      "group": "akira",
-      "victim": "Source Energy Services",
-      "country": "CA",
-      "sector": "Energy & Utilities",
-      "published": "2026-11-05T14:33:40.396921+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U291cmNlIEVuZXJneSBTZXJ2aWNlc0Bha2lyYQ=="
-    },
-    {
-      "group": "BYOD",
-      "victim": "First and Final Warning - IHG Hotels & Resorts (Estate)",
-      "country": "",
-      "sector": "Hospitality",
-      "published": "2026-11-05T09:50:45.225354+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Rmlyc3QgYW5kIEZpbmFsIFdhcm5pbmcgLSBJSEcgSG90ZWxzICYgUmVzb3J0cyAoRXN0YXRlKUBCWU9E"
     }
   ]
 }
