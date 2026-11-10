@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T15:43:41Z",
+  "generated_at": "2026-11-10T21:41:46Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 16
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -30,12 +30,12 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -49,6 +49,46 @@
     }
   ],
   "items": [
+    {
+      "title": "Barracuda’s email security gateways bitten by make-me-root vulns",
+      "link": "https://www.theregister.com/security/2026/11/10/barracudas-email-security-gateways-bitten-by-make-me-root-vulns/5308883",
+      "source": "The Register",
+      "published": "2026-11-10T18:51:35Z",
+      "summary": "Someone's fishing for exposed devices",
+      "uk_focus": false
+    },
+    {
+      "title": "CISA Expands Incident Reporting Form While CIRCIA Mandate Waits",
+      "link": "https://www.infosecurity-magazine.com/news/cisa-incident-reporting-form-circia/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-10T17:00:00Z",
+      "summary": "CISA adds MITRE ATT&CK detail to incident reports as CIRCIA rule awaits White House review",
+      "uk_focus": false
+    },
+    {
+      "title": "AI is rewriting the rules for MSPs in cybersecurity",
+      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-is-rewriting-the-rules-for-msps-in-cybersecurity",
+      "source": "ITPro",
+      "published": "2026-11-10T16:22:32Z",
+      "summary": "The inescapable presence of AI is changing what customers expect from MSPs, who are increasingly being pulled into business decisions that extend beyond technology",
+      "uk_focus": false
+    },
+    {
+      "title": "Trump taps Palantir security chief to run battered US cyber defense agency",
+      "link": "https://www.theregister.com/security/2026/11/10/trump-taps-palantir-security-chief-to-run-battered-us-cyber-defense-agency/5308763",
+      "source": "The Register",
+      "published": "2026-11-10T16:15:00Z",
+      "summary": "Michael LoSapio could inherit a depleted workforce and a political headache or two, courtesy of his current employer",
+      "uk_focus": false
+    },
+    {
+      "title": "Iranian hackers turned up the heat on French supermarket freezers, says France",
+      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/iranian-hackers-supermarket-freezers-france",
+      "source": "Graham Cluley",
+      "published": "2026-11-10T16:05:50Z",
+      "summary": "Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read more in my article on the Hot for Security blog.",
+      "uk_focus": false
+    },
     {
       "title": "Fireworks AI gets burned twice as customer data exposure widens",
       "link": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722",
@@ -120,6 +160,14 @@
       "published": "2026-11-10T11:15:00Z",
       "summary": "The BYOD ransomware group has claimed to have locked the university’s databases and stolen sensitive data from its systems",
       "uk_focus": false
+    },
+    {
+      "title": "Data dive: Mapping UK councils’ hyperscale dependence",
+      "link": "https://www.computerweekly.com/news/366654752/Data-dive-Mapping-UK-councils-hyperscale-dependence",
+      "source": "Computer Weekly",
+      "published": "2026-11-10T11:00:00Z",
+      "summary": "More than half the DNS records that route UK councils’ email and websites resolve to Microsoft, Amazon or Google – though 99.7% publish anti-spoofing controls",
+      "uk_focus": true
     },
     {
       "title": "France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants",
