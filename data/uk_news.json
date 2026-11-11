@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T21:41:46Z",
+  "generated_at": "2026-11-11T01:45:00Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 16
+      "count": 18
     },
     {
       "name": "Computer Weekly",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "November Patch Tuesday boasts over 1,000 bugs but only one zero-day so far",
+      "link": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-but-only-one-zero-day-so-far/5308946",
+      "source": "The Register",
+      "published": "2026-11-10T22:37:01Z",
+      "summary": "Microsoft admins wail and gnash their teeth",
+      "uk_focus": false
+    },
+    {
+      "title": "Ring robots ready to patrol paranoids’ pads",
+      "link": "https://www.theregister.com/offbeat/2026/11/10/ring-robots-ready-to-patrol-paranoids-pads/5308932",
+      "source": "The Register",
+      "published": "2026-11-10T21:45:45Z",
+      "summary": "Amazon calls its home security drone and business patrol bot 'proactive protection'",
+      "uk_focus": false
+    },
     {
       "title": "Barracuda’s email security gateways bitten by make-me-root vulns",
       "link": "https://www.theregister.com/security/2026/11/10/barracudas-email-security-gateways-bitten-by-make-me-root-vulns/5308883",
