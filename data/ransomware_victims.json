@@ -1,23 +1,14 @@
 {
-  "generated_at": "2026-11-11T08:59:43Z",
+  "generated_at": "2026-11-11T17:02:58Z",
   "victims": [
     {
-      "group": "N0n",
-      "victim": "LiveRamp",
+      "group": "Aoqin",
+      "victim": "Tyfone",
       "country": "US",
       "sector": "Technology",
-      "published": "2026-11-11T01:00:34.807539+00:00",
+      "published": "2026-11-11T09:51:11.638383+00:00",
       "domain": "",
-      "url": "https://www.ransomware.live/id/TGl2ZVJhbXBATjBu"
-    },
-    {
-      "group": "N0n",
-      "victim": "DraftKings",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-11T00:59:58.822376+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RHJhZnRLaW5nc0BOMG4="
+      "url": "https://www.ransomware.live/id/VHlmb25lQEFvcWlu"
     },
     {
       "group": "interlock",
@@ -27,6 +18,24 @@
       "published": "2026-11-11T00:43:34.761065+00:00",
       "domain": "gvsd.ca",
       "url": "https://www.ransomware.live/id/R2FyZGVuIFZhbGxleSBTY2hvb2wgRGl2aXNpb25AaW50ZXJsb2Nr"
+    },
+    {
+      "group": "qilin",
+      "victim": "Oral Roberts University",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-11-11T12:39:29.803815+00:00",
+      "domain": "www.oru.edu",
+      "url": "https://www.ransomware.live/id/T3JhbCBSb2JlcnRzIFVuaXZlcnNpdHlAcWlsaW4="
+    },
+    {
+      "group": "osiris",
+      "victim": "The Queenan Law Firm",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-11T10:57:35.434084+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VGhlIFF1ZWVuYW4gTGF3IEZpcm1Ab3Npcmlz"
     },
     {
       "group": "Panzer",
@@ -290,13 +299,13 @@
       "url": "https://www.ransomware.live/id/UFlSQU1JRCBIRUFMVEhDQVJFQFZvcnRleA=="
     },
     {
-      "group": "N0n",
-      "victim": "Landmark Group",
-      "country": "AE",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-10T01:53:03.920029+00:00",
+      "group": "osiris",
+      "victim": "Herald Christian Health Center",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-11T08:15:49.722849+00:00",
       "domain": "",
-      "url": "https://www.ransomware.live/id/TGFuZG1hcmsgR3JvdXBATjBu"
+      "url": "https://www.ransomware.live/id/SGVyYWxkIENocmlzdGlhbiBIZWFsdGggQ2VudGVyQG9zaXJpcw=="
     },
     {
       "group": "BYOD",
@@ -351,15 +360,6 @@
       "published": "2026-11-10T12:53:22.976108+00:00",
       "domain": "frolinahome.com",
       "url": "https://www.ransomware.live/id/RnJvbGluYSBIb21lQENsaW1heCBJbmM="
-    },
-    {
-      "group": "N0n",
-      "victim": "Vertex Pharmaceuticals Incorporated",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-09T23:53:08.209771+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VmVydGV4IFBoYXJtYWNldXRpY2FscyBJbmNvcnBvcmF0ZWRATjBu"
     },
     {
       "group": "iah6477",
@@ -603,15 +603,6 @@
       "published": "2026-11-09T12:24:02.339654+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTk4QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "159 Solutions, Inc.",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-09T12:23:17.999394+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/MTU5IFNvbHV0aW9ucywgSW5jLkBOMG4="
     },
     {
       "group": "Aoqin",
@@ -900,6 +891,15 @@
       "published": "2026-11-09T10:33:04.138777+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTY5QE4wbg=="
+    },
+    {
+      "group": "N0n",
+      "victim": "Company #168",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-09T10:32:24.125855+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMTY4QE4wbg=="
     }
   ]
 }

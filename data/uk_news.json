@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-11T08:59:43Z",
+  "generated_at": "2026-11-11T17:02:58Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "The Register",
       "status": "ok",
-      "count": 17
+      "count": 14
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 11
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Graham Cluley",
@@ -45,10 +45,82 @@
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 1
+      "count": 0
     }
   ],
   "items": [
+    {
+      "title": "Anthropic's Glasswing Finds Many Vulnerabilities Yet Delivers Few Fixes, Researcher Says",
+      "link": "https://www.infosecurity-magazine.com/news/anthropic-glasswing/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-11T16:30:00Z",
+      "summary": "VulnCheck’s Patrick Garrity has found that seven months on, Project Glasswing resulted in only 217 vulnerabilities getting fixed, despite thousands reported",
+      "uk_focus": false
+    },
+    {
+      "title": "Suspected Chinese Malware Supplier Tied to Three Hacking Campaigns",
+      "link": "https://www.infosecurity-magazine.com/news/chinese-malware-tied-three-hacking/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-11T16:00:00Z",
+      "summary": "Check Point links three China-nexus clusters through a shared Sparrow malware framework",
+      "uk_focus": false
+    },
+    {
+      "title": "How can IT leaders tackle shadow agentic AI threats?",
+      "link": "https://www.itpro.com/security/how-can-it-leaders-tackle-shadow-agentic-ai-threats",
+      "source": "ITPro",
+      "published": "2026-11-11T15:34:04Z",
+      "summary": "Unchecked AI agents exploit employee access to alter critical systems. Here's how IT leaders can regain control",
+      "uk_focus": false
+    },
+    {
+      "title": "Shipping giant Maersk probes 'IT security incident,' data theft",
+      "link": "https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096",
+      "source": "The Register",
+      "published": "2026-11-11T12:05:34Z",
+      "summary": "Says it 'strongly' suspects attack limited to legacy system, and that nothing sensitive is at risk",
+      "uk_focus": false
+    },
+    {
+      "title": "NCSC scheme will help critical organisations test their cyber defences",
+      "link": "https://www.ncsc.gov.uk/news/ncsc-scheme-help-critical-organisations-test-their-cyber-defences",
+      "source": "NCSC",
+      "published": "2026-11-11T12:00:00Z",
+      "summary": "New NCSC Cyber Adversary Simulation scheme will help critical organisations strengthen their resilience through rigorous, real-world testing by trusted providers.",
+      "uk_focus": true
+    },
+    {
+      "title": "Security leaders are embracing AI in the SOC, but trust is still lacking",
+      "link": "https://www.itpro.com/security/security-leaders-are-embracing-ai-in-the-soc-but-trust-is-still-lacking",
+      "source": "ITPro",
+      "published": "2026-11-11T10:52:45Z",
+      "summary": "AI needs to be implemented in a “controlled manner” in security operations centers",
+      "uk_focus": false
+    },
+    {
+      "title": "Everything we know so far about the Sega data breach",
+      "link": "https://www.itpro.com/security/data-breaches/sega-data-breach-everything-we-know-so-far-as-2-2-million-customers-exposed",
+      "source": "ITPro",
+      "published": "2026-11-11T10:39:23Z",
+      "summary": "Customers are urged to be wary of potential phishing scams in the wake of the Sega data breach",
+      "uk_focus": false
+    },
+    {
+      "title": "OT Incidents Hit a Third of Industrial Organizations, SANS Finds",
+      "link": "https://www.infosecurity-magazine.com/news/ot-incidents-third-industrial/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-11T10:00:00Z",
+      "summary": "SANS Institute records largest single-year jump in ICS/OT cyber incidents",
+      "uk_focus": false
+    },
+    {
+      "title": "Microsoft Fixes 1235 Flaws in Another Record Patch Tuesday",
+      "link": "https://www.infosecurity-magazine.com/news/microsoft-fixes-1235-flaws-record/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-11T09:15:00Z",
+      "summary": "Microsoft patched a record-breaking 1235 CVEs in November’s Patch Tuesday",
+      "uk_focus": false
+    },
     {
       "title": "Duck and coverage: The insurance impact of a cyber attack",
       "link": "https://www.itpro.com/business/duck-and-coverage-the-insurance-impact-of-a-cyber-attack",
@@ -287,110 +359,6 @@
       "source": "The Register",
       "published": "2026-11-09T17:31:00Z",
       "summary": "Pair of researchers chain WAF bypasses and default logins to command vehicles in Australia and the US",
-      "uk_focus": false
-    },
-    {
-      "title": "Jailbroken AI Agent Ran Two-Week Attack on European Telecom",
-      "link": "https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-09T16:00:00Z",
-      "summary": "Jailbroken DeepSeek agent spent two weeks attacking a European telecom, Malbear Labs found",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft's Azure Linux gets 470-plus security fixes in one almighty patching session",
-      "link": "https://www.theregister.com/security/2026/11/09/microsofts-azure-linux-gets-470-plus-security-fixes-in-one-almighty-patching-session/5308434",
-      "source": "The Register",
-      "published": "2026-11-09T15:02:00Z",
-      "summary": "A mountain of CVEs, a certificate cleanup, and yet more work for Microsoft's patching teams",
-      "uk_focus": false
-    },
-    {
-      "title": "Who Gives A Crap? Hackers, apparently, after toilet paper maker's customer data exposed",
-      "link": "https://www.theregister.com/security/2026/11/09/who-gives-a-crap-hackers-apparently-after-toilet-paper-makers-customer-data-exposed/5308419",
-      "source": "The Register",
-      "published": "2026-11-09T14:30:00Z",
-      "summary": "UK shoppers caught up in third-party security mess, and nobody knows whether the data was flushed away",
-      "uk_focus": true
-    },
-    {
-      "title": "New Supply Chain Attack Compromises Tens of Thousands of GitHub Repositories",
-      "link": "https://www.infosecurity-magazine.com/news/supply-chain-attack-thousands/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-09T14:30:00Z",
-      "summary": "Security researchers have detected a malicious workflow affecting tens of thousands of GitHub repositories, including Uber-owned ones",
-      "uk_focus": false
-    },
-    {
-      "title": "Email Addresses of 2.2 Million Sega Customers Leaked in Vendor Breach",
-      "link": "https://www.infosecurity-magazine.com/news/email-sega-customers-vendor-breach/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-09T13:31:00Z",
-      "summary": "Gaming company Sega warned customers to be vigilant for suspicious emails after hackers compromised Japanese email delivery provider Arara",
-      "uk_focus": false
-    },
-    {
-      "title": "Outlook.com bounces legit emails as Microsoft's authentication crackdown goes sideways",
-      "link": "https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428",
-      "source": "The Register",
-      "published": "2026-11-09T13:30:00Z",
-      "summary": "Missing DMARC or wobbly SPF means your mail may be treated as suspicious",
-      "uk_focus": false
-    },
-    {
-      "title": "Japanese homeware giant pulls online store after cloud breach puts 7.7M records at risk",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/09/japanese-homeware-giant-pulls-online-store-after-cloud-breach-puts-77m-records-at-risk/5308377",
-      "source": "The Register",
-      "published": "2026-11-09T12:47:00Z",
-      "summary": "No reopening date as orders face delays and some customers are told to refuse deliveries to cancel purchases",
-      "uk_focus": false
-    },
-    {
-      "title": "SonicWall issues fixes for seven vulnerabilities",
-      "link": "https://www.itpro.com/security/sonicwall-issues-fixes-for-seven-vulnerabilities-including-an-ssl-vpn-flaw-that-bypasses-mfa",
-      "source": "ITPro",
-      "published": "2026-11-09T12:04:24Z",
-      "summary": "The vulnerability, which appears to have been exploited in the wild, comes alongside six others",
-      "uk_focus": false
-    },
-    {
-      "title": "Gartner Symposium: Keeping the tech flywheel under control",
-      "link": "https://www.computerweekly.com/news/366654694/Gartner-Symposium-Keeping-the-tech-flywheel-under-control",
-      "source": "Computer Weekly",
-      "published": "2026-11-09T11:36:00Z",
-      "summary": "The annual IT leadership conference kicked off with a keynote featuring a drift car metaphor and the use of flywheels to manage risk and value",
-      "uk_focus": false
-    },
-    {
-      "title": "OpenAI says its new cyber-focused AI model found thousands of Linux kernel vulnerabilities",
-      "link": "https://www.itpro.com/security/openai-says-its-new-cyber-focused-ai-model-found-thousands-of-linux-kernel-vulnerabilities",
-      "source": "ITPro",
-      "published": "2026-11-09T10:50:05Z",
-      "summary": "The new cyber-focused AI model boasts improved bug hunting capabilities compared to its predecessor",
-      "uk_focus": false
-    },
-    {
-      "title": "Crédit Mutuel Arkéa Targeted in Reported $133m Heist",
-      "link": "https://www.infosecurity-magazine.com/news/crdit-mutuel-arka-targeted/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-09T10:30:00Z",
-      "summary": "French co-operative bank Crédit Mutuel Arkéa has reported a cyber-attack enabling fraudulent transactions",
-      "uk_focus": false
-    },
-    {
-      "title": "OpenAI launches GPT-6 Cyber to find software vulnerabilities",
-      "link": "https://www.techmonitor.ai/news/openai-launches-gpt-6-cyber-to-find-software-vulnerabilities",
-      "source": "Tech Monitor",
-      "published": "2026-11-09T09:17:18Z",
-      "summary": "OpenAI has announced the release of GPT-6 Cyber, an AI model designed to help security researchers identify and address software vulnerabilities.",
-      "uk_focus": false
-    },
-    {
-      "title": "Anti-Money Laundering Watchdog FATF Targets Scam Compounds",
-      "link": "https://www.infosecurity-magazine.com/news/aml-watchdog-fatf-scam-compounds/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-09T09:16:00Z",
-      "summary": "AML body the Financial Action Task Force has suggested new ways to disrupt scam compounds",
       "uk_focus": false
     }
   ]
