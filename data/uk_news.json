@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T17:02:58Z",
+  "generated_at": "2026-11-11T23:37:52Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 11
     },
     {
       "name": "Computer Weekly",
@@ -20,7 +20,7 @@
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Hacked fridges and other dangers lurking in the ‘internet of shit’ | Letters",
+      "link": "https://www.theguardian.com/technology/2026/nov/11/hacked-fridges-and-other-dangers-lurking-in-the-internet-of-shit",
+      "source": "The Guardian",
+      "published": "2026-11-11T17:26:27Z",
+      "summary": "One reader sounds a warning about all our devices that are connected to the internet, following a series of cyber-attacks on supermarket fridges Well done to Alex Pearce for unplugging his fridge from the internet ( Hot fridges, a fake nuclear alert and a $6bn heist: are we in…",
+      "uk_focus": false
+    },
+    {
+      "title": "N-able Rushes Out N-central Fixes After 33 Zero-Days Go Public",
+      "link": "https://www.infosecurity-magazine.com/news/n-able-n-central-able2shell-0day/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-11T17:15:00Z",
+      "summary": "N-able fixes seven N-central CVEs after 33 alleged zero-days are published",
+      "uk_focus": false
+    },
     {
       "title": "Anthropic's Glasswing Finds Many Vulnerabilities Yet Delivers Few Fixes, Researcher Says",
       "link": "https://www.infosecurity-magazine.com/news/anthropic-glasswing/",
@@ -138,8 +154,8 @@
       "uk_focus": false
     },
     {
-      "title": "November Patch Tuesday boasts over 1,000 bugs but only one zero-day so far",
-      "link": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-but-only-one-zero-day-so-far/5308946",
+      "title": "November Patch Tuesday boasts over 1,000 bugs, one already under attack",
+      "link": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-one-already-under-attack/5308946",
       "source": "The Register",
       "published": "2026-11-10T22:37:01Z",
       "summary": "Microsoft admins wail and gnash their teeth",
@@ -327,38 +343,6 @@
       "source": "The Register",
       "published": "2026-11-10T00:00:20Z",
       "summary": "Enterprise security tools will offer its capabilities without handing customers the model itself",
-      "uk_focus": false
-    },
-    {
-      "title": "France blames Iran for supermarket hack meltdowns",
-      "link": "https://www.theregister.com/security/2026/11/09/france-blames-iran-for-supermarket-hack-meltdowns/5308591",
-      "source": "The Register",
-      "published": "2026-11-09T22:45:21Z",
-      "summary": "The 'first cyber offensive campaign carried out purely for the purpose of sabotage on national territory'",
-      "uk_focus": false
-    },
-    {
-      "title": "Attackers backdoor trusted AWS integrations to steal secrets",
-      "link": "https://www.theregister.com/security/2026/11/09/attackers-backdoor-trusted-aws-integrations-to-steal-secrets/5308553",
-      "source": "The Register",
-      "published": "2026-11-09T19:59:50Z",
-      "summary": "Wiz researchers uncovered the secret-stealing supply-chain attack",
-      "uk_focus": false
-    },
-    {
-      "title": "The Guardian view on the British Library: don’t privatise the reading rooms | Editorial",
-      "link": "https://www.theguardian.com/commentisfree/2026/nov/09/the-guardian-view-on-the-british-library-dont-privatise-the-reading-rooms",
-      "source": "The Guardian",
-      "published": "2026-11-09T18:50:54Z",
-      "summary": "Cybercriminals are to blame for the current crisis. But renting out study space will not lead to recovery It holds two copies of Magna Carta , the charter that set limits on royal power in 1215. It has the sole surviving manuscript of the Anglo-Saxon epic Beowulf and notebooks…",
-      "uk_focus": true
-    },
-    {
-      "title": "Researchers pwn automakers’ Android apps to remotely unlock cars, honk horns",
-      "link": "https://www.theregister.com/security/2026/11/09/researchers-pwn-automakers-android-apps-to-remotely-unlock-cars-honk-horns/5308483",
-      "source": "The Register",
-      "published": "2026-11-09T17:31:00Z",
-      "summary": "Pair of researchers chain WAF bypasses and default logins to command vehicles in Australia and the US",
       "uk_focus": false
     }
   ]
