@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T01:45:00Z",
+  "generated_at": "2026-11-11T08:59:43Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 18
+      "count": 17
     },
     {
       "name": "Computer Weekly",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Duck and coverage: The insurance impact of a cyber attack",
+      "link": "https://www.itpro.com/business/duck-and-coverage-the-insurance-impact-of-a-cyber-attack",
+      "source": "ITPro",
+      "published": "2026-11-11T08:00:00Z",
+      "summary": "A cyber attack can impact far more than revenue, but insurance can help soften the blow",
+      "uk_focus": false
+    },
+    {
+      "title": "OpenAI builds a kill switch for its research models",
+      "link": "https://www.theregister.com/ai-and-ml/2026/11/11/openai-builds-a-kill-switch-for-its-research-models/5309006",
+      "source": "The Register",
+      "published": "2026-11-11T05:20:56Z",
+      "summary": "How much damage can a rogue agent do in 35 seconds? Asking cos that’s how long it might take to shut one down",
+      "uk_focus": false
+    },
     {
       "title": "November Patch Tuesday boasts over 1,000 bugs but only one zero-day so far",
       "link": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-but-only-one-zero-day-so-far/5308946",
@@ -375,22 +391,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-09T09:16:00Z",
       "summary": "AML body the Financial Action Task Force has suggested new ways to disrupt scam compounds",
-      "uk_focus": false
-    },
-    {
-      "title": "Linus Torvalds sees signs AI-prompted patch flood has peaked",
-      "link": "https://www.theregister.com/security/2026/11/09/linus-torvalds-sees-signs-ai-prompted-patch-flood-has-peaked/5308345",
-      "source": "The Register",
-      "published": "2026-11-09T04:53:08Z",
-      "summary": "Fixes are arriving faster than new bug reports for one major Linux project",
-      "uk_focus": false
-    },
-    {
-      "title": "Huawei says it’s made a 100 percent Chinese PC",
-      "link": "https://www.theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335",
-      "source": "The Register",
-      "published": "2026-11-09T02:14:17Z",
-      "summary": "PLUS: Japan declares infosec emergency; Apple makes biggest school Mac sale, ever, anywhere, in the Philippines; And more!",
       "uk_focus": false
     }
   ]
