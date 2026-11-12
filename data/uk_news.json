@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:37:52Z",
+  "generated_at": "2026-11-12T06:23:23Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,7 +15,7 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Infosecurity Magazine",
@@ -35,12 +35,12 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
+      "link": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244",
+      "source": "The Register",
+      "published": "2026-11-12T04:22:18Z",
+      "summary": "Couldn’t get the hardware it needed to generate certs, so tried to code a workaround",
+      "uk_focus": false
+    },
+    {
+      "title": "Smashing Security podcast #492: How hackers turned Russian cars into pumpkins",
+      "link": "https://grahamcluley.com/smashing-security-podcast-492/",
+      "source": "Graham Cluley",
+      "published": "2026-11-12T00:32:55Z",
+      "summary": "You're driving your new Chinese SUV when the dashboard goes dark. Ten minutes later, your phone rings. A stranger says they've got the digital key to your car, and would you like it back? Of course you would. That'll be $550. Meanwhile, three men have been charged over a scheme…",
+      "uk_focus": false
+    },
     {
       "title": "Hacked fridges and other dangers lurking in the ‘internet of shit’ | Letters",
       "link": "https://www.theguardian.com/technology/2026/nov/11/hacked-fridges-and-other-dangers-lurking-in-the-internet-of-shit",
@@ -319,30 +335,6 @@
       "source": "ITPro",
       "published": "2026-11-10T08:00:00Z",
       "summary": "There’s a difference between what an AI agent is allowed to do and what it’s capable of. How can enterprises prevent their agents from performing unsanctioned actions beyond their knowledge and control?",
-      "uk_focus": false
-    },
-    {
-      "title": "Australia considers criminal penalties for rogue AI in wake of OpenAI hack",
-      "link": "https://www.bbc.co.uk/news/articles/cmp3g37l566po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-10T05:22:39Z",
-      "summary": "AI safety regulator will also be created after a rogue OpenAI agent hacked government websites.",
-      "uk_focus": false
-    },
-    {
-      "title": "Google Cloud London outage: Continuity lessons for IT leaders",
-      "link": "https://www.computerweekly.com/news/366654732/Google-Cloud-London-outage-Continuity-lessons-for-IT-leaders",
-      "source": "Computer Weekly",
-      "published": "2026-11-10T04:13:00Z",
-      "summary": "Cloud outages reveal that infrastructure resilience does not equal business resilience. Mapping dependencies, defining failover authority and testing recovery plans are essential",
-      "uk_focus": true
-    },
-    {
-      "title": "Anthropic's super bug-finding Mythos model is going into Cisco and IBM products",
-      "link": "https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616",
-      "source": "The Register",
-      "published": "2026-11-10T00:00:20Z",
-      "summary": "Enterprise security tools will offer its capabilities without handing customers the model itself",
       "uk_focus": false
     }
   ]
