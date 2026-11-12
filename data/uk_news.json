@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T15:30:33Z",
+  "generated_at": "2026-11-12T22:07:56Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,7 +15,7 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,46 @@
     }
   ],
   "items": [
+    {
+      "title": "OpenAI launches security products, tells orgs they’re doomed if they don’t use them",
+      "link": "https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500",
+      "source": "The Register",
+      "published": "2026-11-12T20:48:45Z",
+      "summary": "Meanwhile, a group of nonprofits sue AI giants and cite AI-driven cyberattacks",
+      "uk_focus": false
+    },
+    {
+      "title": "Lego marketplace BrickLink in pieces after 'unusual activity' takes it offline for almost a week",
+      "link": "https://www.theregister.com/security/2026/11/12/lego-marketplace-bricklink-in-pieces-after-unusual-activity-takes-it-offline-for-almost-a-week/5309425",
+      "source": "The Register",
+      "published": "2026-11-12T20:08:08Z",
+      "summary": "Lego fans demand answers as outage approaches a week with no confirmed cause",
+      "uk_focus": false
+    },
+    {
+      "title": "Software Samaritan revamps borked Indian certs to block smart TV ads",
+      "link": "https://www.theregister.com/security/2026/11/12/software-samaritan-revamps-borked-indian-certs-to-block-smart-tv-ads/5309467",
+      "source": "The Register",
+      "published": "2026-11-12T18:02:55Z",
+      "summary": "A little tinkering can black hole obnoxious Samsung TV ads and some tracking, until a firmware fix ruins the fun",
+      "uk_focus": false
+    },
+    {
+      "title": "Weak Passwords Expose SQL Servers to Cryptominer and Gh0st RAT",
+      "link": "https://www.infosecurity-magazine.com/news/fortinet-sql-server-cryptominer/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-12T16:00:00Z",
+      "summary": "Fortinet finds weak SQL Server passwords used to deliver a miner and Gh0st RAT",
+      "uk_focus": false
+    },
+    {
+      "title": "WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk",
+      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/whitearmor-gang-cyberattack-maersk",
+      "source": "Graham Cluley",
+      "published": "2026-11-12T15:12:29Z",
+      "summary": "Shipping giant Maersk has confirmed that one of its systems was broken into by hackers who have stolen data. The WhiteArmor gang has claimed responsbility for the attack. Read more in my article on the Hot for Security blog.",
+      "uk_focus": false
+    },
     {
       "title": "Microsoft Exchange Server 2016 and 2019 enter their 'permanently vulnerable' era",
       "link": "https://www.theregister.com/saas/2026/11/12/microsoft-exchange-server-2016-and-2019-enter-their-permanently-vulnerable-era/5309401",
@@ -95,6 +135,14 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-12T10:45:00Z",
       "summary": "Symantec’s Dick O’Brien says the rapid closure of the patch window means organizations must move beyond patching and adopt an assume exploit mindset",
+      "uk_focus": false
+    },
+    {
+      "title": "AI & cybersecurity: A Computer Weekly Downtime Upload podcast",
+      "link": "https://www.computerweekly.com/podcast/AI-cybersecurity-A-Computer-Weekly-Downtime-Upload-podcast",
+      "source": "Computer Weekly",
+      "published": "2026-11-12T10:38:00Z",
+      "summary": "We speak to Gartner's Akif Khan about the need for organisations to reassess employee cyber training and agentic AI identity and access management",
       "uk_focus": false
     },
     {
@@ -271,54 +319,6 @@
       "source": "The Register",
       "published": "2026-11-10T22:37:01Z",
       "summary": "Microsoft admins wail and gnash their teeth",
-      "uk_focus": false
-    },
-    {
-      "title": "Ring robots ready to patrol paranoids’ pads",
-      "link": "https://www.theregister.com/offbeat/2026/11/10/ring-robots-ready-to-patrol-paranoids-pads/5308932",
-      "source": "The Register",
-      "published": "2026-11-10T21:45:45Z",
-      "summary": "Amazon calls its home security drone and business patrol bot 'proactive protection'",
-      "uk_focus": false
-    },
-    {
-      "title": "Barracuda’s email security gateways bitten by make-me-root vulns",
-      "link": "https://www.theregister.com/security/2026/11/10/barracudas-email-security-gateways-bitten-by-make-me-root-vulns/5308883",
-      "source": "The Register",
-      "published": "2026-11-10T18:51:35Z",
-      "summary": "Someone's fishing for exposed devices",
-      "uk_focus": false
-    },
-    {
-      "title": "CISA Expands Incident Reporting Form While CIRCIA Mandate Waits",
-      "link": "https://www.infosecurity-magazine.com/news/cisa-incident-reporting-form-circia/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T17:00:00Z",
-      "summary": "CISA adds MITRE ATT&CK detail to incident reports as CIRCIA rule awaits White House review",
-      "uk_focus": false
-    },
-    {
-      "title": "AI is rewriting the rules for MSPs in cybersecurity",
-      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-is-rewriting-the-rules-for-msps-in-cybersecurity",
-      "source": "ITPro",
-      "published": "2026-11-10T16:22:32Z",
-      "summary": "The inescapable presence of AI is changing what customers expect from MSPs, who are increasingly being pulled into business decisions that extend beyond technology",
-      "uk_focus": false
-    },
-    {
-      "title": "Trump taps Palantir security chief to run battered US cyber defense agency",
-      "link": "https://www.theregister.com/security/2026/11/10/trump-taps-palantir-security-chief-to-run-battered-us-cyber-defense-agency/5308763",
-      "source": "The Register",
-      "published": "2026-11-10T16:15:00Z",
-      "summary": "Michael LoSapio could inherit a depleted workforce and a political headache or two, courtesy of his current employer",
-      "uk_focus": false
-    },
-    {
-      "title": "Iranian hackers turned up the heat on French supermarket freezers, says France",
-      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/iranian-hackers-supermarket-freezers-france",
-      "source": "Graham Cluley",
-      "published": "2026-11-10T16:05:50Z",
-      "summary": "Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read more in my article on the Hot for Security blog.",
       "uk_focus": false
     }
   ]

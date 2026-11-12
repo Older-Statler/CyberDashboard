@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-12T15:30:33Z",
+  "generated_at": "2026-11-12T22:07:55Z",
   "victims": [
+    {
+      "group": "Panzer",
+      "victim": "Ministry of Health Malaysia",
+      "country": "MY",
+      "sector": "Government & Defense",
+      "published": "2026-11-12T17:58:17.861886+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TWluaXN0cnkgb2YgSGVhbHRoIE1hbGF5c2lhQFBhbnplcg=="
+    },
+    {
+      "group": "krybit",
+      "victim": "cey-tech.com",
+      "country": "CY",
+      "sector": "Technology",
+      "published": "2026-11-12T13:56:09.215118+00:00",
+      "domain": "cey-tech.com",
+      "url": "https://www.ransomware.live/id/Y2V5LXRlY2guY29tQGtyeWJpdA=="
+    },
+    {
+      "group": "metaencryptor",
+      "victim": "Promantra, Inc.",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-12T12:18:48.149722+00:00",
+      "domain": "promantra.us",
+      "url": "https://www.ransomware.live/id/UHJvbWFudHJhLCBJbmMuQG1ldGFlbmNyeXB0b3I="
+    },
     {
       "group": "Barracuda",
       "victim": "ProLiant",
@@ -873,33 +900,6 @@
       "published": "2026-11-09T16:52:56.739848+00:00",
       "domain": "mindef.gov.cm",
       "url": "https://www.ransomware.live/id/Q2FtZXJvb24gZ292ZXJubWVudCB0cm9vcHMgbGVha2VkQEhZRkxPQ0s="
-    },
-    {
-      "group": "BYOD",
-      "victim": "Vanderbilt EDU",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-11-09T15:50:50.098302+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VmFuZGVyYmlsdCBFRFVAQllPRA=="
-    },
-    {
-      "group": "everstake",
-      "victim": "carrollins.com",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-09T15:16:03.614243+00:00",
-      "domain": "carrollins.com",
-      "url": "https://www.ransomware.live/id/Y2Fycm9sbGlucy5jb21AZXZlcnN0YWtl"
-    },
-    {
-      "group": "Black X",
-      "victim": "Forus Deporte y Ocio S.L",
-      "country": "ES",
-      "sector": "Hospitality",
-      "published": "2026-11-10T04:57:36.415215+00:00",
-      "domain": "forus.es",
-      "url": "https://www.ransomware.live/id/Rm9ydXMgRGVwb3J0ZSB5IE9jaW8gUy5MQEJsYWNrIFg="
     }
   ]
 }
