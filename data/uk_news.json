@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T06:23:23Z",
+  "generated_at": "2026-11-12T15:30:33Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,12 +15,12 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 11
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 8
+      "count": 6
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,102 @@
     }
   ],
   "items": [
+    {
+      "title": "Microsoft Exchange Server 2016 and 2019 enter their 'permanently vulnerable' era",
+      "link": "https://www.theregister.com/saas/2026/11/12/microsoft-exchange-server-2016-and-2019-enter-their-permanently-vulnerable-era/5309401",
+      "source": "The Register",
+      "published": "2026-11-12T14:55:00Z",
+      "summary": "Upgrade, migrate, but don't prevaricate – time has run out",
+      "uk_focus": false
+    },
+    {
+      "title": "Hacked Asian Telcos Used to Intercept Taiwanese Calls and Texts",
+      "link": "https://www.infosecurity-magazine.com/news/silentair-liminal-panda-telco/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-12T14:30:00Z",
+      "summary": "Enea linked SilentAir and Liminal Panda to attacks on Asian mobile operators",
+      "uk_focus": false
+    },
+    {
+      "title": "Lego Takes BrickLink Marketplace Offline After Detecting Unusual Activity",
+      "link": "https://www.infosecurity-magazine.com/news/lego-takes-bricklink-marketplace/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-12T14:00:00Z",
+      "summary": "Lego has taken its BrickLink Marketplace offline after detecting unusual activity as the company investigates the incident",
+      "uk_focus": false
+    },
+    {
+      "title": "Hackers exploiting ScreenConnect plugin flaw to spread malware across hundreds of PCs",
+      "link": "https://www.theregister.com/security/2026/11/12/hackers-exploiting-screenconnect-plugin-flaw-to-spread-malware-across-hundreds-of-pcs/5309361",
+      "source": "The Register",
+      "published": "2026-11-12T13:02:00Z",
+      "summary": "ConnectWise disables third-party extensions in 400 environments as bughunters uncover auth hole may let crims bypass MFA",
+      "uk_focus": false
+    },
+    {
+      "title": "European tech buyers add digital sovereignty to cyber shopping list",
+      "link": "https://www.theregister.com/security/2026/11/12/european-tech-buyers-add-digital-sovereignty-to-cyber-shopping-list/5309216",
+      "source": "The Register",
+      "published": "2026-11-12T11:31:00Z",
+      "summary": "Sales from EU HQ'd vendor rocket in two years. The Trump affect? Yes but NIS2 and DORA are factors too",
+      "uk_focus": false
+    },
+    {
+      "title": "Security Teams Must Shift from Patching to Mitigation in the AI Era",
+      "link": "https://www.infosecurity-magazine.com/news/shift-patching-mitigation-ai-era/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-12T10:45:00Z",
+      "summary": "Symantec’s Dick O’Brien says the rapid closure of the patch window means organizations must move beyond patching and adopt an assume exploit mindset",
+      "uk_focus": false
+    },
+    {
+      "title": "NCSC Launches Cyber Adversary Testing to Boost Resilience",
+      "link": "https://www.infosecurity-magazine.com/news/ncsc-cyber-adversary-testing-boost/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-12T10:00:00Z",
+      "summary": "The UK’s National Cyber Security Centre has launched a new Cyber Adversary Simulation (CyAS) scheme",
+      "uk_focus": true
+    },
+    {
+      "title": "London hotel put admin login for booking website on whiteboard behind the front desk",
+      "link": "https://www.theregister.com/security/2026/11/12/london-hotel-put-admin-login-for-booking-website-on-whiteboard-behind-the-front-desk/5308889",
+      "source": "The Register",
+      "published": "2026-11-12T09:30:00Z",
+      "summary": "You could check out more than your room",
+      "uk_focus": true
+    },
+    {
+      "title": "Maersk Reveals Data Breach as Extortion Group Demands $5m",
+      "link": "https://www.infosecurity-magazine.com/news/maersk-data-breach-extortion-group/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-12T08:49:00Z",
+      "summary": "Maersk has revealed a threat actor extracted data from one of its legacy systems",
+      "uk_focus": false
+    },
+    {
+      "title": "AI agents bring down wind farm within two hours",
+      "link": "https://www.computerweekly.com/news/366654794/AI-agents-bring-down-wind-farm-within-two-hours",
+      "source": "Computer Weekly",
+      "published": "2026-11-12T08:13:00Z",
+      "summary": "Warning after research shows AI agents can hack into a wind farm, access engineering data and shut down electricity supplies",
+      "uk_focus": false
+    },
+    {
+      "title": "AI risk decoded: What are the real threats posed by AI?",
+      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-risk-decoded-what-are-the-real-threats-posed-by-ai",
+      "source": "ITPro",
+      "published": "2026-11-12T08:00:00Z",
+      "summary": "Amid predictions AI will cause human extinction, what are the real risks businesses should be aware of?",
+      "uk_focus": false
+    },
+    {
+      "title": "Bug-hunting time cut dramatically with AI, says Forescout",
+      "link": "https://www.computerweekly.com/news/366654735/Bug-hunting-time-cut-dramatically-with-AI-says-Forescout",
+      "source": "Computer Weekly",
+      "published": "2026-11-12T05:23:00Z",
+      "summary": "Forescout’s Vedere Labs has shown AI can cut bug-finding time dramatically, including those common in critical infrastructure",
+      "uk_focus": false
+    },
     {
       "title": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
       "link": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244",
@@ -223,118 +319,6 @@
       "source": "Graham Cluley",
       "published": "2026-11-10T16:05:50Z",
       "summary": "Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read more in my article on the Hot for Security blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "Fireworks AI gets burned twice as customer data exposure widens",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722",
-      "source": "The Register",
-      "published": "2026-11-10T15:28:00Z",
-      "summary": "Inference biz pins latest breach on cloud provider and LLMJacking miscreants",
-      "uk_focus": false
-    },
-    {
-      "title": "Russia-Linked Turla Hijacks Exchange Servers to Spy on NATO and EU Emails",
-      "link": "https://www.infosecurity-magazine.com/news/turla-cereal-exchange-email/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T14:30:00Z",
-      "summary": "Turla used compromised Exchange servers to collect NATO and EU-linked emails",
-      "uk_focus": false
-    },
-    {
-      "title": "Cloud Vulnerabilities Surge Fourfold in Less Than a Year",
-      "link": "https://www.infosecurity-magazine.com/news/cloud-vulnerabilities-surge/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T14:00:00Z",
-      "summary": "AI is amplifying the impact of vulnerabilities, long-lived credentials and other cloud risks, says Datadog",
-      "uk_focus": false
-    },
-    {
-      "title": "Chrome zero-day whack-a-mole continues as 2026 tally hits 8",
-      "link": "https://www.theregister.com/security/2026/11/10/chrome-zero-day-whack-a-mole-continues-as-2026-tally-hits-8/5308732",
-      "source": "The Register",
-      "published": "2026-11-10T13:28:00Z",
-      "summary": "Another Chrome memory bug gets squashed, but not before attackers got their hands on it",
-      "uk_focus": false
-    },
-    {
-      "title": "UK military 'hunt forces' look to track down cyber criminals in real world",
-      "link": "https://www.itpro.com/security/cyber-crime/uk-military-hunt-forces-look-to-track-down-cyber-criminals-in-real-world",
-      "source": "ITPro",
-      "published": "2026-11-10T13:11:26Z",
-      "summary": "The aim is to stop cyber attacks in their early stages before they escalate into large-scale attacks",
-      "uk_focus": true
-    },
-    {
-      "title": "Ransomware threat blares from Vanderbilt University computers during cyberattack",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/10/ransomware-threat-blares-from-vanderbilt-university-computers-during-cyberattack/5308687",
-      "source": "The Register",
-      "published": "2026-11-10T13:00:00Z",
-      "summary": "BYOD claims extensive data theft as campus Wi-Fi returns, most systems remain restricted, and classes carry on",
-      "uk_focus": false
-    },
-    {
-      "title": "Default Admin Password Let Researchers Unlock and Start Cars",
-      "link": "https://www.infosecurity-magazine.com/news/forgerock-openidm-default-password/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T12:15:00Z",
-      "summary": "Default admin password on automaker login servers let researchers unlock and start test cars",
-      "uk_focus": false
-    },
-    {
-      "title": "Google DeepMind melds humans and AI agents to vet Signal's secure messaging techniques",
-      "link": "https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625",
-      "source": "The Register",
-      "published": "2026-11-10T12:00:00Z",
-      "summary": "Post-quantum handshake and Triple Ratchet get a formal security check",
-      "uk_focus": false
-    },
-    {
-      "title": "Vanderbilt University Takes Systems Offline After Cyber Incident",
-      "link": "https://www.infosecurity-magazine.com/news/vanderbilt-university-cyber/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T11:15:00Z",
-      "summary": "The BYOD ransomware group has claimed to have locked the university’s databases and stolen sensitive data from its systems",
-      "uk_focus": false
-    },
-    {
-      "title": "Data dive: Mapping UK councils’ hyperscale dependence",
-      "link": "https://www.computerweekly.com/news/366654752/Data-dive-Mapping-UK-councils-hyperscale-dependence",
-      "source": "Computer Weekly",
-      "published": "2026-11-10T11:00:00Z",
-      "summary": "More than half the DNS records that route UK councils’ email and websites resolve to Microsoft, Amazon or Google – though 99.7% publish anti-spoofing controls",
-      "uk_focus": true
-    },
-    {
-      "title": "France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants",
-      "link": "https://www.infosecurity-magazine.com/news/france-blames-iran-supermarket/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T10:35:00Z",
-      "summary": "The French authorities have tied the cyber-attack targeting supermarket fridges to Iran’s Islamic Revolutionary Guard Corps",
-      "uk_focus": false
-    },
-    {
-      "title": "France blames Iran for fridge attacks",
-      "link": "https://www.itpro.com/security/cyber-attacks/france-blames-iran-for-fridge-attacks",
-      "source": "ITPro",
-      "published": "2026-11-10T09:59:54Z",
-      "summary": "The French government attributed the attack to cyber criminals affiliated with Iran, calling for fresh sanctions",
-      "uk_focus": false
-    },
-    {
-      "title": "Binance Investigates ShinyHunters Breach Claims",
-      "link": "https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-10T09:30:00Z",
-      "summary": "Cryptocurrency exchange Binance says ShinyHunters’ breach claims appear to be a scam",
-      "uk_focus": false
-    },
-    {
-      "title": "After recent hacks, enterprises need to gain control of their own AI",
-      "link": "https://www.itpro.com/security/after-recent-hacks-enterprises-need-to-gain-control-of-their-own-ai",
-      "source": "ITPro",
-      "published": "2026-11-10T08:00:00Z",
-      "summary": "There’s a difference between what an AI agent is allowed to do and what it’s capable of. How can enterprises prevent their agents from performing unsanctioned actions beyond their knowledge and control?",
       "uk_focus": false
     }
   ]
