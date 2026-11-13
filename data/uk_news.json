@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-11-13T10:41:57Z",
+  "generated_at": "2026-11-13T18:26:46Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 4
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 10
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Tech Monitor",
@@ -50,12 +50,60 @@
   ],
   "items": [
     {
+      "title": "Five ways CISOs can use ‘dark AI’ to their own advantage",
+      "link": "https://www.itpro.com/security/its-the-ai-cybersecurity-apocalypse-for-threat-actors-five-ways-cisos-can-use-dark-ai-to-their-own-advantage",
+      "source": "ITPro",
+      "published": "2026-11-13T17:14:58Z",
+      "summary": "Vulnerability discovery will explode over the next few years, but CIOs can use AI to beat hackers at their own game",
+      "uk_focus": false
+    },
+    {
+      "title": "Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says",
+      "link": "https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-13T13:45:00Z",
+      "summary": "Proofpoint’s Selena Larson notes that threat actors’ reliance on AI has led to lots of mistakes being made, with little evidence of increased sophistication",
+      "uk_focus": false
+    },
+    {
+      "title": "Quantum Systems drones back in the air after malware scare",
+      "link": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658",
+      "source": "The Register",
+      "published": "2026-11-13T13:14:00Z",
+      "summary": "Germany's Bundeswehr lifted precautionary grounding after malicious update reportedly reached military servers",
+      "uk_focus": false
+    },
+    {
       "title": "Microsoft 365 Outage Set to Ramp up Security Risks to Organizations",
       "link": "https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/",
       "source": "Infosecurity Magazine",
-      "published": "2026-11-13T10:29:00Z",
+      "published": "2026-11-13T12:29:00Z",
       "summary": "While Microsoft resolves the global M365 and Outlook outage, cybersecurity teams remain on high alert as cybercriminals prepare to exploit the chaos",
       "uk_focus": false
+    },
+    {
+      "title": "Phishing Rises Three Times Faster in Europe Than Globally, Proofpoint Finds",
+      "link": "https://www.infosecurity-magazine.com/news/phishing-rises-faster-europe/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-13T11:15:00Z",
+      "summary": "New Proofpoint research reveals phishing detections surged 4.5x across Europe year over year, compared with 1.5x globally",
+      "uk_focus": false
+    },
+    {
+      "title": "Italian court rejects data from police hacking of Sky ECC cryptophone network",
+      "link": "https://www.computerweekly.com/news/366654798/Italian-court-rejects-data-from-police-hacking-of-Sky-ECC-cryptophone-network",
+      "source": "Computer Weekly",
+      "published": "2026-11-13T11:14:00Z",
+      "summary": "Italian prosecution against mafia group collapses after judge throws out intercept evidence from police hacking of the Sky ECC cryptophone network",
+      "uk_focus": false
+    },
+    {
+      "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
+      "link": "https://www.theregister.com/security/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/5309421",
+      "source": "The Register",
+      "published": "2026-11-13T11:02:00Z",
+      "summary": "Watchdog wants assurances from 200 execs that employees aren't poking around patient files they have no business viewing",
+      "uk_focus": true
     },
     {
       "title": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
@@ -66,11 +114,11 @@
       "uk_focus": false
     },
     {
-      "title": "What we know about the global Microsoft outage",
-      "link": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-13T09:59:20Z",
-      "summary": "Microsoft has said the outage was not caused by a cyber-security incident, but efforts to fix the issues have so far been largely unsuccessful.",
+      "title": "Microsoft outage: Impact shows risk of M365 bundle lock-in",
+      "link": "https://www.computerweekly.com/news/366654819/Microsoft-outage-Impact-shows-risk-of-M365-bundle-lock-in",
+      "source": "Computer Weekly",
+      "published": "2026-11-13T09:15:00Z",
+      "summary": "The Microsoft 365 suite provides everything from office productivity to cyber security tools. Should organisations rethink their Microsoft strategy?",
       "uk_focus": false
     },
     {
@@ -102,7 +150,7 @@
       "link": "https://www.computerweekly.com/news/366654608/Global-Microsoft-outage-leaves-users-open-to-phishing-attacks",
       "source": "Computer Weekly",
       "published": "2026-11-13T05:30:00Z",
-      "summary": "The global degradation of service impacting many Microsoft functions means IT admins may be less able to keep corporate IT security safe",
+      "summary": "The global degradation of service impacting many Microsoft functions means admins may be less able to keep corporate IT security safe",
       "uk_focus": false
     },
     {
@@ -263,70 +311,6 @@
       "source": "Graham Cluley",
       "published": "2026-11-12T00:32:55Z",
       "summary": "You're driving your new Chinese SUV when the dashboard goes dark. Ten minutes later, your phone rings. A stranger says they've got the digital key to your car, and would you like it back? Of course you would. That'll be $550. Meanwhile, three men have been charged over a scheme…",
-      "uk_focus": false
-    },
-    {
-      "title": "Hacked fridges and other dangers lurking in the ‘internet of shit’ | Letters",
-      "link": "https://www.theguardian.com/technology/2026/nov/11/hacked-fridges-and-other-dangers-lurking-in-the-internet-of-shit",
-      "source": "The Guardian",
-      "published": "2026-11-11T17:26:27Z",
-      "summary": "One reader sounds a warning about all our devices that are connected to the internet, following a series of cyber-attacks on supermarket fridges Well done to Alex Pearce for unplugging his fridge from the internet ( Hot fridges, a fake nuclear alert and a $6bn heist: are we in…",
-      "uk_focus": false
-    },
-    {
-      "title": "N-able Rushes Out N-central Fixes After 33 Zero-Days Go Public",
-      "link": "https://www.infosecurity-magazine.com/news/n-able-n-central-able2shell-0day/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-11T17:15:00Z",
-      "summary": "N-able fixes seven N-central CVEs after 33 alleged zero-days are published",
-      "uk_focus": false
-    },
-    {
-      "title": "Anthropic's Glasswing Finds Many Vulnerabilities Yet Delivers Few Fixes, Researcher Says",
-      "link": "https://www.infosecurity-magazine.com/news/anthropic-glasswing/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-11T16:30:00Z",
-      "summary": "VulnCheck’s Patrick Garrity has found that seven months on, Project Glasswing resulted in only 217 vulnerabilities getting fixed, despite thousands reported",
-      "uk_focus": false
-    },
-    {
-      "title": "Suspected Chinese Malware Supplier Tied to Three Hacking Campaigns",
-      "link": "https://www.infosecurity-magazine.com/news/chinese-malware-tied-three-hacking/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-11T16:00:00Z",
-      "summary": "Check Point links three China-nexus clusters through a shared Sparrow malware framework",
-      "uk_focus": false
-    },
-    {
-      "title": "How can IT leaders tackle shadow agentic AI threats?",
-      "link": "https://www.itpro.com/security/how-can-it-leaders-tackle-shadow-agentic-ai-threats",
-      "source": "ITPro",
-      "published": "2026-11-11T15:34:04Z",
-      "summary": "Unchecked AI agents exploit employee access to alter critical systems. Here's how IT leaders can regain control",
-      "uk_focus": false
-    },
-    {
-      "title": "Shipping giant Maersk probes 'IT security incident,' data theft",
-      "link": "https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096",
-      "source": "The Register",
-      "published": "2026-11-11T12:05:34Z",
-      "summary": "Says it 'strongly' suspects attack limited to legacy system, and that nothing sensitive is at risk",
-      "uk_focus": false
-    },
-    {
-      "title": "NCSC scheme will help critical organisations test their cyber defences",
-      "link": "https://www.ncsc.gov.uk/news/ncsc-scheme-help-critical-organisations-test-their-cyber-defences",
-      "source": "NCSC",
-      "published": "2026-11-11T12:00:00Z",
-      "summary": "New NCSC Cyber Adversary Simulation scheme will help critical organisations strengthen their resilience through rigorous, real-world testing by trusted providers.",
-      "uk_focus": true
-    },
-    {
-      "title": "Security leaders are embracing AI in the SOC, but trust is still lacking",
-      "link": "https://www.itpro.com/security/security-leaders-are-embracing-ai-in-the-soc-but-trust-is-still-lacking",
-      "source": "ITPro",
-      "published": "2026-11-11T10:52:45Z",
-      "summary": "AI needs to be implemented in a “controlled manner” in security operations centers",
       "uk_focus": false
     }
   ]
