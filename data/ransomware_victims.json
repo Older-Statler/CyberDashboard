@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-11-13T18:26:46Z",
+  "generated_at": "2026-11-13T23:47:49Z",
   "victims": [
+    {
+      "group": "Aoqin",
+      "victim": "The Tidewater Inn",
+      "country": "US",
+      "sector": "Hospitality",
+      "published": "2026-11-13T18:21:30.277020+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VGhlIFRpZGV3YXRlciBJbm5AQW9xaW4="
+    },
+    {
+      "group": "Wallstreet",
+      "victim": "Walgreen Co.",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-13T19:03:11.758241+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/V2FsZ3JlZW4gQ28uQFdhbGxzdHJlZXQ="
+    },
+    {
+      "group": "bravox",
+      "victim": "World Wide Fittings",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-13T14:21:52.700230+00:00",
+      "domain": "www.worldwidefittings.com",
+      "url": "https://www.ransomware.live/id/V29ybGQgV2lkZSBGaXR0aW5nc0BicmF2b3g="
+    },
+    {
+      "group": "Dark Project",
+      "victim": "The CCMC",
+      "country": "CA",
+      "sector": "Not Found",
+      "published": "2026-11-13T15:55:12.125727+00:00",
+      "domain": "www.ccmcnet.com",
+      "url": "https://www.ransomware.live/id/VGhlIENDTUNARGFyayBQcm9qZWN0"
+    },
     {
       "group": "Doommageddon",
       "victim": "Koray Topaç Hukuk Bürosu",
@@ -27,6 +63,33 @@
       "published": "2026-11-13T03:28:24.431546+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjE2QE4wbg=="
+    },
+    {
+      "group": "akira",
+      "victim": "Galorath",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-13T14:19:54.964178+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R2Fsb3JhdGhAYWtpcmE="
+    },
+    {
+      "group": "akira",
+      "victim": "Replogle Globes",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-13T14:19:35.288814+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UmVwbG9nbGUgR2xvYmVzQGFraXJh"
+    },
+    {
+      "group": "akira",
+      "victim": "Paragon Mechanical",
+      "country": "",
+      "sector": "Manufacturing",
+      "published": "2026-11-13T14:19:15.669572+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGFyYWdvbiBNZWNoYW5pY2FsQGFraXJh"
     },
     {
       "group": "safepay",
@@ -837,69 +900,6 @@
       "published": "2026-11-11T08:15:49.722849+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/SGVyYWxkIENocmlzdGlhbiBIZWFsdGggQ2VudGVyQG9zaXJpcw=="
-    },
-    {
-      "group": "BYOD",
-      "victim": "Providence",
-      "country": "",
-      "sector": "Healthcare",
-      "published": "2026-11-10T18:21:10.443994+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UHJvdmlkZW5jZUBCWU9E"
-    },
-    {
-      "group": "BYOD",
-      "victim": "Toyota",
-      "country": "JP",
-      "sector": "Manufacturing",
-      "published": "2026-11-10T18:20:50.838235+00:00",
-      "domain": "toyota.jp",
-      "url": "https://www.ransomware.live/id/VG95b3RhQEJZT0Q="
-    },
-    {
-      "group": "Orova",
-      "victim": "Herminio India Precision Technology",
-      "country": "IN",
-      "sector": "Manufacturing",
-      "published": "2026-11-10T16:58:23.194946+00:00",
-      "domain": "herminiogroup.com",
-      "url": "https://www.ransomware.live/id/SGVybWluaW8gSW5kaWEgUHJlY2lzaW9uIFRlY2hub2xvZ3lAT3JvdmE="
-    },
-    {
-      "group": "Climax Inc",
-      "victim": "Redacted Redacted",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-10T12:54:38.225291+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UmVkYWN0ZWQgUmVkYWN0ZWRAQ2xpbWF4IEluYw=="
-    },
-    {
-      "group": "Climax Inc",
-      "victim": "Nepal Electricity Authority",
-      "country": "NP",
-      "sector": "Energy & Utilities",
-      "published": "2026-11-10T12:54:04.109046+00:00",
-      "domain": "nea.org.np",
-      "url": "https://www.ransomware.live/id/TmVwYWwgRWxlY3RyaWNpdHkgQXV0aG9yaXR5QENsaW1heCBJbmM="
-    },
-    {
-      "group": "Climax Inc",
-      "victim": "Frolina Home",
-      "country": "BR",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-10T12:53:22.976108+00:00",
-      "domain": "frolinahome.com",
-      "url": "https://www.ransomware.live/id/RnJvbGluYSBIb21lQENsaW1heCBJbmM="
-    },
-    {
-      "group": "iah6477",
-      "victim": "fhiworks",
-      "country": "",
-      "sector": "Healthcare",
-      "published": "2026-11-09T23:22:45.684888+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Zmhpd29ya3NAaWFoNjQ3Nw=="
     }
   ]
 }

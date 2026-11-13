@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T18:26:46Z",
+  "generated_at": "2026-11-13T23:47:49Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
@@ -50,11 +50,27 @@
   ],
   "items": [
     {
+      "title": "This year’s bug count just passed 100K",
+      "link": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
+      "source": "The Register",
+      "published": "2026-11-13T20:52:17Z",
+      "summary": "‘We don’t have a security problem anymore. We have a data problem now’",
+      "uk_focus": false
+    },
+    {
       "title": "Five ways CISOs can use ‘dark AI’ to their own advantage",
       "link": "https://www.itpro.com/security/its-the-ai-cybersecurity-apocalypse-for-threat-actors-five-ways-cisos-can-use-dark-ai-to-their-own-advantage",
       "source": "ITPro",
       "published": "2026-11-13T17:14:58Z",
       "summary": "Vulnerability discovery will explode over the next few years, but CIOs can use AI to beat hackers at their own game",
+      "uk_focus": false
+    },
+    {
+      "title": "Mid-sized businesses can't leave quantum readiness to their suppliers",
+      "link": "https://www.computerweekly.com/opinion/Mid-sized-businesses-cant-leave-quantum-readiness-to-their-suppliers",
+      "source": "Computer Weekly",
+      "published": "2026-11-13T15:13:00Z",
+      "summary": "With suppliers focused on ensuring their own product lines are quantum-secure, end-users with diverse estates still can't afford to sleep on quantum security.",
       "uk_focus": false
     },
     {
