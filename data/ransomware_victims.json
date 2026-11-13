@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-11-13T02:49:50Z",
+  "generated_at": "2026-11-13T10:41:57Z",
   "victims": [
+    {
+      "group": "N0n",
+      "victim": "Company #216",
+      "country": "BW",
+      "sector": "Not Found",
+      "published": "2026-11-13T03:28:24.431546+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjE2QE4wbg=="
+    },
     {
       "group": "safepay",
       "victim": "toyokiki-thailand.com",
@@ -27,6 +36,33 @@
       "published": "2026-11-12T19:51:09.760686+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/QWlyYmx1ZUBBb3Fpbg=="
+    },
+    {
+      "group": "Vexy Ransomware",
+      "victim": "Upper Web",
+      "country": "BR",
+      "sector": "Technology",
+      "published": "2026-11-12T23:18:52.272049+00:00",
+      "domain": "upperweb.com.br",
+      "url": "https://www.ransomware.live/id/VXBwZXIgV2ViQFZleHkgUmFuc29td2FyZQ=="
+    },
+    {
+      "group": "Vexy Ransomware",
+      "victim": "Osiiminppal",
+      "country": "GL",
+      "sector": "Not Found",
+      "published": "2026-11-12T23:19:13.283990+00:00",
+      "domain": "www.osiiminppal.com",
+      "url": "https://www.ransomware.live/id/T3NpaW1pbnBwYWxAVmV4eSBSYW5zb213YXJl"
+    },
+    {
+      "group": "Vexy Ransomware",
+      "victim": "Franc-Oil",
+      "country": "NG",
+      "sector": "Energy & Utilities",
+      "published": "2026-11-12T23:19:34.118381+00:00",
+      "domain": "franc-oiloffshore.com.ng",
+      "url": "https://www.ransomware.live/id/RnJhbmMtT2lsQFZleHkgUmFuc29td2FyZQ=="
     },
     {
       "group": "Panzer",
@@ -864,42 +900,6 @@
       "published": "2026-11-12T10:05:46.031757+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/SEVMUCBGb3VuZGF0aW9uQGluY3JhbnNvbQ=="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "Wilentz, Goldman & Spitzer",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-11-09T21:06:01.428547+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/V2lsZW50eiwgR29sZG1hbiAmIFNwaXR6ZXJAU2lsZW50UmFuc29tR3JvdXA="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "B... W...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-09T19:06:39.173002+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Qi4uLiBXLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Published",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-09T19:05:21.981778+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UHVibGlzaGVkQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "Global Secret Group",
-      "victim": "Ornico",
-      "country": "ZA",
-      "sector": "Professional Services",
-      "published": "2026-11-09T18:54:40.368012+00:00",
-      "domain": "www.ornico.co",
-      "url": "https://www.ransomware.live/id/T3JuaWNvQEdsb2JhbCBTZWNyZXQgR3JvdXA="
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T02:49:51Z",
+  "generated_at": "2026-11-13T10:41:57Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,62 @@
     }
   ],
   "items": [
+    {
+      "title": "Microsoft 365 Outage Set to Ramp up Security Risks to Organizations",
+      "link": "https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-13T10:29:00Z",
+      "summary": "While Microsoft resolves the global M365 and Outlook outage, cybersecurity teams remain on high alert as cybercriminals prepare to exploit the chaos",
+      "uk_focus": false
+    },
+    {
+      "title": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
+      "link": "https://www.theregister.com/security/2026/11/13/brit-police-watchdog-says-cops-use-of-facial-recog-risks-wrongful-arrests/5309379",
+      "source": "The Register",
+      "published": "2026-11-13T10:15:00Z",
+      "summary": "New report calls for change, highlights hodgepodge governance and misunderstanding about tech’s limitations among officers",
+      "uk_focus": false
+    },
+    {
+      "title": "What we know about the global Microsoft outage",
+      "link": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-13T09:59:20Z",
+      "summary": "Microsoft has said the outage was not caused by a cyber-security incident, but efforts to fix the issues have so far been largely unsuccessful.",
+      "uk_focus": false
+    },
+    {
+      "title": "AI Set to Revolutionize Ransomware Following “Stagnant” Few Years",
+      "link": "https://www.infosecurity-magazine.com/news/ai-revolutionize-ransomware/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-13T09:15:00Z",
+      "summary": "TrendAI’s Bob McArdle said ransomware techniques will change significantly in the next year, with AI making attacks more dangerous and profitable",
+      "uk_focus": false
+    },
+    {
+      "title": "NCSC puts critical infrastructure to the test with new assessment scheme",
+      "link": "https://www.itpro.com/security/ncsc-puts-critical-infrastructure-to-the-test-with-new-assessment-scheme",
+      "source": "ITPro",
+      "published": "2026-11-13T08:45:00Z",
+      "summary": "The program will match public sector bodies and critical infrastructure providers with accredited partners",
+      "uk_focus": true
+    },
+    {
+      "title": "C++26 stumbles at finish line over Contracts dispute",
+      "link": "https://www.theregister.com/devops/2026/11/13/c26-stumbles-at-finish-line-over-contracts-dispute/5309526",
+      "source": "The Register",
+      "published": "2026-11-13T07:31:00Z",
+      "summary": "ISO working group faces a fight over runtime checks, complexity, and the language's release timetable",
+      "uk_focus": false
+    },
+    {
+      "title": "Global Microsoft outage leaves users open to phishing attacks",
+      "link": "https://www.computerweekly.com/news/366654608/Global-Microsoft-outage-leaves-users-open-to-phishing-attacks",
+      "source": "Computer Weekly",
+      "published": "2026-11-13T05:30:00Z",
+      "summary": "The global degradation of service impacting many Microsoft functions means IT admins may be less able to keep corporate IT security safe",
+      "uk_focus": false
+    },
     {
       "title": "OpenAI launches security products, tells orgs they’re doomed if they don’t use them",
       "link": "https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500",
@@ -271,46 +327,6 @@
       "source": "ITPro",
       "published": "2026-11-11T10:52:45Z",
       "summary": "AI needs to be implemented in a “controlled manner” in security operations centers",
-      "uk_focus": false
-    },
-    {
-      "title": "Everything we know so far about the Sega data breach",
-      "link": "https://www.itpro.com/security/data-breaches/sega-data-breach-everything-we-know-so-far-as-2-2-million-customers-exposed",
-      "source": "ITPro",
-      "published": "2026-11-11T10:39:23Z",
-      "summary": "Customers are urged to be wary of potential phishing scams in the wake of the Sega data breach",
-      "uk_focus": false
-    },
-    {
-      "title": "OT Incidents Hit a Third of Industrial Organizations, SANS Finds",
-      "link": "https://www.infosecurity-magazine.com/news/ot-incidents-third-industrial/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-11T10:00:00Z",
-      "summary": "SANS Institute records largest single-year jump in ICS/OT cyber incidents",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft Fixes 1235 Flaws in Another Record Patch Tuesday",
-      "link": "https://www.infosecurity-magazine.com/news/microsoft-fixes-1235-flaws-record/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-11T09:15:00Z",
-      "summary": "Microsoft patched a record-breaking 1235 CVEs in November’s Patch Tuesday",
-      "uk_focus": false
-    },
-    {
-      "title": "Duck and coverage: The insurance impact of a cyber attack",
-      "link": "https://www.itpro.com/business/duck-and-coverage-the-insurance-impact-of-a-cyber-attack",
-      "source": "ITPro",
-      "published": "2026-11-11T08:00:00Z",
-      "summary": "A cyber attack can impact far more than revenue, but insurance can help soften the blow",
-      "uk_focus": false
-    },
-    {
-      "title": "OpenAI builds a kill switch for its research models",
-      "link": "https://www.theregister.com/ai-and-ml/2026/11/11/openai-builds-a-kill-switch-for-its-research-models/5309006",
-      "source": "The Register",
-      "published": "2026-11-11T05:20:56Z",
-      "summary": "How much damage can a rogue agent do in 35 seconds? Asking cos that’s how long it might take to shut one down",
       "uk_focus": false
     }
   ]
