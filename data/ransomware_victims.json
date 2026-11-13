@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-12T22:07:55Z",
+  "generated_at": "2026-11-13T02:49:50Z",
   "victims": [
+    {
+      "group": "safepay",
+      "victim": "toyokiki-thailand.com",
+      "country": "TH",
+      "sector": "Manufacturing",
+      "published": "2026-11-12T22:02:03.406527+00:00",
+      "domain": "toyokiki-thailand.com",
+      "url": "https://www.ransomware.live/id/dG95b2tpa2ktdGhhaWxhbmQuY29tQHNhZmVwYXk="
+    },
+    {
+      "group": "Curious Worm",
+      "victim": "benchmarkseniorliving.com",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-12T19:55:02.258632+00:00",
+      "domain": "benchmarkseniorliving.com",
+      "url": "https://www.ransomware.live/id/YmVuY2htYXJrc2VuaW9ybGl2aW5nLmNvbUBDdXJpb3VzIFdvcm0="
+    },
+    {
+      "group": "Aoqin",
+      "victim": "Airblue",
+      "country": "PK",
+      "sector": "Transportation",
+      "published": "2026-11-12T19:51:09.760686+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QWlyYmx1ZUBBb3Fpbg=="
+    },
     {
       "group": "Panzer",
       "victim": "Ministry of Health Malaysia",
@@ -18,6 +45,15 @@
       "published": "2026-11-12T13:56:09.215118+00:00",
       "domain": "cey-tech.com",
       "url": "https://www.ransomware.live/id/Y2V5LXRlY2guY29tQGtyeWJpdA=="
+    },
+    {
+      "group": "incransom",
+      "victim": "axiscades.com",
+      "country": "IN",
+      "sector": "Manufacturing",
+      "published": "2026-11-12T21:45:05.518295+00:00",
+      "domain": "axiscades.com",
+      "url": "https://www.ransomware.live/id/YXhpc2NhZGVzLmNvbUBpbmNyYW5zb20="
     },
     {
       "group": "metaencryptor",
@@ -864,42 +900,6 @@
       "published": "2026-11-09T18:54:40.368012+00:00",
       "domain": "www.ornico.co",
       "url": "https://www.ransomware.live/id/T3JuaWNvQEdsb2JhbCBTZWNyZXQgR3JvdXA="
-    },
-    {
-      "group": "Global Secret Group",
-      "victim": "Heartland Honda",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-09T18:53:36.260816+00:00",
-      "domain": "heartlandhonda.com",
-      "url": "https://www.ransomware.live/id/SGVhcnRsYW5kIEhvbmRhQEdsb2JhbCBTZWNyZXQgR3JvdXA="
-    },
-    {
-      "group": "rhysida",
-      "victim": "M.C.S. Steel Public Company Limited",
-      "country": "TH",
-      "sector": "Manufacturing",
-      "published": "2026-11-09T17:27:39.431342+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TS5DLlMuIFN0ZWVsIFB1YmxpYyBDb21wYW55IExpbWl0ZWRAcmh5c2lkYQ=="
-    },
-    {
-      "group": "Black X",
-      "victim": "DomusVi",
-      "country": "ES",
-      "sector": "Healthcare",
-      "published": "2026-11-10T04:56:53.842543+00:00",
-      "domain": "domusvi.es",
-      "url": "https://www.ransomware.live/id/RG9tdXNWaUBCbGFjayBY"
-    },
-    {
-      "group": "HYFLOCK",
-      "victim": "Cameroon government troops leaked",
-      "country": "CM",
-      "sector": "Government & Defense",
-      "published": "2026-11-09T16:52:56.739848+00:00",
-      "domain": "mindef.gov.cm",
-      "url": "https://www.ransomware.live/id/Q2FtZXJvb24gZ292ZXJubWVudCB0cm9vcHMgbGVha2VkQEhZRkxPQ0s="
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T22:07:56Z",
+  "generated_at": "2026-11-13T02:49:51Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 10
     },
     {
       "name": "Computer Weekly",
@@ -311,14 +311,6 @@
       "source": "The Register",
       "published": "2026-11-11T05:20:56Z",
       "summary": "How much damage can a rogue agent do in 35 seconds? Asking cos that’s how long it might take to shut one down",
-      "uk_focus": false
-    },
-    {
-      "title": "November Patch Tuesday boasts over 1,000 bugs, one already under attack",
-      "link": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-one-already-under-attack/5308946",
-      "source": "The Register",
-      "published": "2026-11-10T22:37:01Z",
-      "summary": "Microsoft admins wail and gnash their teeth",
       "uk_focus": false
     }
   ]
