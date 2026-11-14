@@ -1427,6 +1427,288 @@ tr.watchlist-match:hover {
   margin: 4px 0;
 }
 
+/* ---------- IOC detail drawer ---------- */
+
+/* Small "details" trigger next to an IOC in the tables / watchlist. */
+.ioc-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin: 0 6px 0 0;
+  padding: 0;
+  vertical-align: 1px;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  flex: none;
+}
+
+.ioc-open:hover,
+.ioc-open:focus-visible {
+  background: rgba(0, 229, 255, 0.12);
+  box-shadow: var(--glow);
+}
+
+/* Button that looks like the triage links it replaced. */
+.link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--link);
+  cursor: pointer;
+  text-align: left;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(92, 200, 255, 0.5);
+}
+
+body.drawer-open {
+  overflow: hidden;
+}
+
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(1, 4, 8, 0.6);
+}
+
+.ioc-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 61;
+  width: min(480px, 100%);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card-solid);
+  border-left: 1px solid var(--border-strong);
+  box-shadow: -12px 0 32px rgba(0, 0, 0, 0.55), var(--glow);
+  animation: drawer-in 0.18s ease-out;
+}
+
+.ioc-drawer:focus {
+  outline: none;
+}
+
+@keyframes drawer-in {
+  from { transform: translateX(24px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+.drawer-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.drawer-heading {
+  min-width: 0;
+}
+
+.drawer-kicker {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.drawer-title {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.drawer-close {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-muted);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.drawer-close:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.drawer-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 4px 16px 20px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.drawer-section {
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.drawer-section:last-child {
+  border-bottom: none;
+}
+
+.drawer-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-bottom: 8px;
+}
+
+.drawer-section h3,
+.drawer-enrich h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.drawer-enrich h4 {
+  font-size: 9.5px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.drawer-enrich + .drawer-enrich {
+  margin-top: 10px;
+}
+
+.drawer-count {
+  margin-left: 4px;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  letter-spacing: 0;
+}
+
+.drawer-fields {
+  display: grid;
+  grid-template-columns: minmax(84px, max-content) minmax(0, 1fr);
+  gap: 4px 12px;
+  margin: 0;
+  font-size: 12.5px;
+}
+
+.drawer-fields dt {
+  color: var(--text-muted);
+}
+
+.drawer-fields dd {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.drawer-fields .badge {
+  margin-left: 0;
+}
+
+.drawer-hits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.drawer-hit {
+  padding: 8px 10px;
+  background: rgba(0, 229, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+
+.drawer-hit .drawer-show {
+  margin-top: 8px;
+}
+
+.drawer-show {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 2px;
+  padding: 4px 9px;
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.drawer-show:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.drawer-note {
+  margin: 6px 0 0;
+  font-size: 11.5px;
+  color: var(--text-dim);
+}
+
+.drawer-section-head + .drawer-note {
+  margin: 0 0 8px;
+}
+
+.drawer-dim {
+  color: var(--text-dim);
+}
+
+.drawer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.drawer-links a {
+  display: inline-block;
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.drawer-links a:hover {
+  border-color: var(--link);
+}
+
 /* ---------- Responsive ---------- */
 
 /* Narrower desktops: globe on top full width, side columns below it. */
@@ -1500,13 +1782,18 @@ tr.watchlist-match:hover {
   tbody td {
     max-width: 240px;
   }
+  .ioc-drawer {
+    width: 100%;
+    border-left: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .live-dot,
   .rw-feed li.is-fresh,
   .flash-highlight,
-  .row-flash {
+  .row-flash,
+  .ioc-drawer {
     animation: none;
   }
 }

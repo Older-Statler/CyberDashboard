@@ -14,9 +14,10 @@ GreyNoise's exact rate-limit header/body field isn't documented, so any
 rate-limit info found in a response is stored as a bonus under
 usage.api_reported, not relied on.
 
-Candidate IPs come from the shared lib.extract_ips helper (v3 refactor) —
-this drops the earlier per-run "prioritize IPs seen in 2+ feeds first"
-ordering in favor of one shared extraction path across all enrichers.
+Candidate IPs come from the shared lib.extract_ips helper, ranked by
+get_ranked_ips_from_snapshot() (feed count, ThreatFox, Spamhaus DROP,
+AbuseIPDB score, recency) so the 7/day budget goes to the most
+interesting uncached IPs first.
 """
 
 import datetime
@@ -28,7 +29,7 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import load_json
-from lib.extract_ips import get_ips_from_snapshot
+from lib.extract_ips import get_ranked_ips_from_snapshot, load_abuse_entries, load_drop_ranges
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LATEST_PATH = os.path.join(BASE, "data", "latest.json")
@@ -91,7 +92,9 @@ def main():
     usage = enrichment.get("usage", {})
     recent_lookups = usage.get("recent_lookups", [])
 
-    candidates = get_ips_from_snapshot(latest)
+    candidates = get_ranked_ips_from_snapshot(
+        latest, drop_ranges=load_drop_ranges(), abuse_entries=load_abuse_entries()
+    )
 
     cutoff = now() - datetime.timedelta(days=CACHE_TTL_DAYS)
     to_check = []

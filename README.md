@@ -83,7 +83,8 @@ A full-width, dark "ops center" layout:
   highlighted background and surface in a "Watchlist matches" panel.
 - **Export** — every feed table (and the correlated-IOC panel) has CSV/JSON export
   buttons that respect whatever search filter is currently active, built entirely
-  client-side via a `Blob` + temporary download link.
+  client-side via a `Blob` + temporary download link. CSV cells that start with `=`, `+`,
+  `-` or `@` get a leading `'` so spreadsheets don't run feed data as formulas.
 - **GreyNoise quota meter** — a small usage meter ("GreyNoise: N / 50 this week") next to
   the last-updated timestamp, computed from a rolling 7-day log the enrichment script
   keeps in `data/enrichment.json`. The self-imposed cap was tightened from the original
@@ -139,6 +140,26 @@ A full-width, dark "ops center" layout:
 - **Shared IP-extraction helper** (`scripts/lib/extract_ips.py`) — the "which IPs appear
   across the bulk feeds" logic used to be duplicated in the GreyNoise and geo scripts;
   now every per-IP enricher (GreyNoise, geo, InternetDB, AbuseIPDB) imports one function.
+
+## Feature tour (phase 5)
+
+- **IOC detail drawer** — the small "i" button next to an IOC in the ThreatFox, URLhaus,
+  MalwareBazaar and Blocklist.de tables, a Correlated row, a triage IOC, or a watchlist
+  match opens a side panel with everything the page knows about that IOC: every feed hit
+  with its details, the signal count and its breakdown, GreyNoise / AbuseIPDB / InternetDB
+  / Spamhaus DROP enrichment, and "show in table" buttons (OTX hits search by pulse name,
+  since the OTX table only searches pulse names and tags). It also has lookup links to
+  VirusTotal, Shodan, AbuseIPDB, GreyNoise, ThreatFox, MalwareBazaar, URLhaus and Spamhaus.
+  These are plain links that open in a new tab; the page itself still makes no requests to
+  those services. Live malicious URLs are shown as text, never as links.
+- **Prioritised enrichment** — GreyNoise, InternetDB and AbuseIPDB used to spend their
+  daily budget on whichever IPs came out of a set first. They now take IPs in priority
+  order (`get_ranked_ips_from_snapshot()` in `scripts/lib/extract_ips.py`): seen in more
+  feeds, then in ThreatFox, then inside a Spamhaus DROP range, then AbuseIPDB score ≥ 75,
+  then most recently seen. AbuseIPDB leaves out its own score, so new IPs come before
+  re-checks of known-bad ones. The caps and TTLs are unchanged.
+- **Keyboard-sortable tables** — column headers can be focused with Tab and sorted with
+  Enter or Space.
 
 ## Repository structure
 
@@ -233,6 +254,16 @@ index.html / styles.css / app.js  # the dashboard itself
   the id. Table, search, correlation, watchlist and export all cover that 14-day window.
 - **Polling limits respected.** URLhaus's export regenerates every 5 minutes server-side;
   the 30-minute cron is comfortably within that and every other feed's stated minimum.
+- **GitHub throttles the schedules.** Scheduled runs are best-effort. In November 2026 the
+  30-minute workflow actually ran only every 5–8 hours, and the 06:00 daily job started
+  between 12:30 and 15:30 UTC. The crons were moved off the busy :00/:30 marks (to :07/:37
+  and 06:23) to help. The page's stale banner appears only once the snapshot is more than
+  12 hours old (`STALE_AFTER_HOURS` in `app.js`), so it signals a real outage rather than
+  normal throttling. If runs stay sparse, trigger `workflow_dispatch` from an external cron.
+- **Both workflows push to `main`.** Each commit step runs `git pull --rebase` before
+  `git push` and retries up to three times. The two workflows write different files, so the
+  rebase is always clean. Before this, the daily push was sometimes rejected when the feed
+  workflow pushed first, and that day's enrichment was lost.
 - **Scheduled workflows auto-disable after 60 days of repo inactivity.** Since successful
   cron runs commit to the repo, this is normally self-sustaining. But if a feed's API
   changes and every fetch starts failing for an extended period with no other commits,

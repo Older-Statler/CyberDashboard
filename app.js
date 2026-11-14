@@ -1,8 +1,11 @@
 (() => {
   "use strict";
 
-  const CRON_INTERVAL_MINUTES = 30;
-  const STALE_AFTER_CYCLES = 2;
+  // The feed workflow is scheduled every 30 minutes, but GitHub throttles
+  // scheduled runs and in practice they land every 5-8 hours. Only flag the
+  // snapshot as stale once it's clearly past that, so the banner means
+  // "something is wrong" rather than showing most of the time.
+  const STALE_AFTER_HOURS = 12;
   const GREYNOISE_WEEKLY_CAP = 50;
 
   const FEED_LABELS = {
@@ -31,6 +34,8 @@
     newsUkOnly: false,
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
     correlated: [],
+    iocIndex: new Map(), // "type|value" -> correlation entries (with source item), see buildCorrelation
+    drawer: null, // { type, value, trigger, triggerSelector } while the IOC drawer is open
     triage: { ransomwareKev: [], epssCriticalKev: [], maliciousIps: [], topCorrelated: [] },
     rw: null, // ransomware victims in the last RW_WINDOW_HOURS, see computeRansomwareWindow
     rwCountry: null, // country code selected on the globe / bars, filters the live feed
@@ -324,8 +329,8 @@
 
     const staleBanner = $("stale-banner");
     if (generatedAt) {
-      const ageMinutes = (Date.now() - new Date(generatedAt).getTime()) / 60000;
-      staleBanner.hidden = ageMinutes <= CRON_INTERVAL_MINUTES * STALE_AFTER_CYCLES;
+      const ageHours = (Date.now() - new Date(generatedAt).getTime()) / 3600000;
+      staleBanner.hidden = ageHours <= STALE_AFTER_HOURS;
     } else {
       staleBanner.hidden = true;
     }
@@ -514,50 +519,67 @@
 
   // ---------- Correlation ----------
 
+  // Per-feed IOC normalisation, shared by the correlation index and the
+  // drawer triggers in the feed tables so both agree on an IOC's key.
+  function threatfoxNorm(item) {
+    const t = (item.ioc_type || "").toLowerCase();
+    let kind = null;
+    if (t.includes("ip")) kind = "ip";
+    else if (t.includes("domain")) kind = "domain";
+    else if (t.includes("url")) kind = "url";
+    else if (t.includes("hash") || t.includes("md5") || t.includes("sha")) kind = "hash";
+    return normalizeIocValue(item.ioc, kind);
+  }
+
+  function urlhausNorm(item) {
+    const host = extractHost(item.url);
+    if (!host) return null;
+    const ip = normalizeIp(host);
+    return ip ? { type: "ip", value: ip } : normalizeIocValue(host, "domain");
+  }
+
+  function otxNorm(ind) {
+    const type = (ind.type || "").toLowerCase();
+    let kind = null;
+    if (type.includes("ipv4") || type.includes("ipv6")) kind = "ip";
+    else if (type.includes("domain") || type.includes("hostname")) kind = "domain";
+    else if (type.includes("url")) kind = "url";
+    else if (type.includes("hash") || type.includes("md5") || type.includes("sha")) kind = "hash";
+    return normalizeIocValue(ind.indicator, kind);
+  }
+
+  // Each entry keeps a reference to its source item (and, for OTX, the
+  // indicator) so the IOC drawer can show per-feed details without
+  // rescanning the feeds.
   function extractCorrelationEntries(feeds) {
     const entries = [];
 
     for (const item of feeds.threatfox?.items || []) {
-      const t = (item.ioc_type || "").toLowerCase();
-      let kind = null;
-      if (t.includes("ip")) kind = "ip";
-      else if (t.includes("domain")) kind = "domain";
-      else if (t.includes("url")) kind = "url";
-      else if (t.includes("hash") || t.includes("md5") || t.includes("sha")) kind = "hash";
-      const norm = normalizeIocValue(item.ioc, kind);
+      const norm = threatfoxNorm(item);
       if (norm) {
-        entries.push({ norm, feed: "threatfox", label: item.malware_printable || item.ioc_type, seenAt: item.first_seen });
+        entries.push({ norm, feed: "threatfox", label: item.malware_printable || item.ioc_type, seenAt: item.first_seen, item });
       }
     }
 
     for (const item of feeds.urlhaus?.items || []) {
-      const host = extractHost(item.url);
-      if (!host) continue;
-      const ip = normalizeIp(host);
-      const norm = ip ? { type: "ip", value: ip } : normalizeIocValue(host, "domain");
+      const norm = urlhausNorm(item);
       if (norm) {
-        entries.push({ norm, feed: "urlhaus", label: item.threat || "malicious URL", seenAt: item.date_added });
+        entries.push({ norm, feed: "urlhaus", label: item.threat || "malicious URL", seenAt: item.date_added, item });
       }
     }
 
     for (const item of feeds.malwarebazaar?.items || []) {
       const norm = normalizeIocValue(item.sha256_hash, "hash");
       if (norm) {
-        entries.push({ norm, feed: "malwarebazaar", label: item.signature || "malware sample", seenAt: item.first_seen });
+        entries.push({ norm, feed: "malwarebazaar", label: item.signature || "malware sample", seenAt: item.first_seen, item });
       }
     }
 
     for (const item of feeds.otx?.items || []) {
       for (const ind of item.indicators || []) {
-        const type = (ind.type || "").toLowerCase();
-        let kind = null;
-        if (type.includes("ipv4") || type.includes("ipv6")) kind = "ip";
-        else if (type.includes("domain") || type.includes("hostname")) kind = "domain";
-        else if (type.includes("url")) kind = "url";
-        else if (type.includes("hash") || type.includes("md5") || type.includes("sha")) kind = "hash";
-        const norm = normalizeIocValue(ind.indicator, kind);
+        const norm = otxNorm(ind);
         if (norm) {
-          entries.push({ norm, feed: "otx", label: item.name, seenAt: item.created });
+          entries.push({ norm, feed: "otx", label: item.name, seenAt: item.created, item, indicator: ind });
         }
       }
     }
@@ -566,7 +588,7 @@
     for (const item of feeds.blocklistde?.items || []) {
       const norm = normalizeIocValue(item.ip, "ip");
       if (norm) {
-        entries.push({ norm, feed: "blocklistde", label: (item.lists || []).join(", ") || "blocklist", seenAt: blFetchedAt });
+        entries.push({ norm, feed: "blocklistde", label: (item.lists || []).join(", ") || "blocklist", seenAt: blFetchedAt, item });
       }
     }
 
@@ -621,10 +643,14 @@
       map.get(key).push(e);
     }
 
+    // The full index (every IOC, not just those with a signal) backs the
+    // IOC drawer.
+    state.iocIndex = map;
+
     const correlated = [];
-    for (const [key, list] of map.entries()) {
+    for (const list of map.values()) {
       const feedsSeen = Array.from(new Set(list.map((e) => e.feed)));
-      const [type, value] = key.split("|");
+      const { type, value } = list[0].norm;
       const { count, breakdown } = computeSignalCount(type, value, feedsSeen);
       if (count < 1) continue;
       const mostRecent = list.reduce((latest, e) => {
@@ -669,13 +695,13 @@
 
     const rows = list.slice(0, 300);
     tbody.innerHTML = rows
-      .map((c, idx) => {
+      .map((c) => {
         const feedTags = c.feeds.map((f) => `<span class="tag feed-tag">${escapeHtml(FEED_LABELS[f] || f)}</span>`).join("");
         const signalBadge = `<span class="badge badge-info" title="${escapeHtml(c.signalBreakdown.join(", "))}">${c.signalCount} signal${c.signalCount === 1 ? "" : "s"}</span>`;
         const labels = c.labels.slice(0, 3).map((l) => escapeHtml(l)).join(", ");
         const recent = c.mostRecent ? fmtDate(new Date(c.mostRecent).toISOString()) : "&mdash;";
-        return `<tr class="correlated-row" data-idx="${idx}">
-          <td><span class="mono">${escapeHtml(c.value)}</span></td>
+        return `<tr class="correlated-row" ${iocAttrs(c.type, c.value)}>
+          <td>${iocButton(c)}<span class="mono">${escapeHtml(c.value)}</span></td>
           <td>${feedTags || "&mdash;"}</td>
           <td>${signalBadge}</td>
           <td>${labels || "&mdash;"}</td>
@@ -683,13 +709,7 @@
         </tr>`;
       })
       .join("");
-
-    tbody.querySelectorAll("tr.correlated-row").forEach((tr) => {
-      tr.addEventListener("click", () => {
-        const idx = Number(tr.getAttribute("data-idx"));
-        scrollToMatch(rows[idx].feeds[0], rows[idx].value);
-      });
-    });
+    // Row clicks open the IOC drawer via the delegated handler in initIocDrawer.
   }
 
   function scrollToMatch(feed, value) {
@@ -704,6 +724,384 @@
     section.scrollIntoView({ behavior: "smooth", block: "start" });
     section.classList.add("flash-highlight");
     setTimeout(() => section.classList.remove("flash-highlight"), 1500);
+  }
+
+  // ---------- IOC detail drawer ----------
+  //
+  // Everything the page already knows about one IOC, looked up from
+  // state.iocIndex (built once per render() in buildCorrelation) plus the
+  // enrichment maps. Triggers are any element carrying data-ioc-type /
+  // data-ioc-value; one delegated click handler (initIocDrawer) opens it.
+  // Lookup links are plain outbound links — the page never fetches them.
+
+  const DRAWER_FEED_ORDER = ["threatfox", "urlhaus", "malwarebazaar", "otx", "blocklistde"];
+  const DRAWER_MAX_HITS = 25;
+  const IOC_TYPE_LABELS = { ip: "IPv4 address", domain: "Domain", hash: "File hash" };
+
+  function iocAttrs(type, value) {
+    return `data-ioc-type="${escapeHtml(type)}" data-ioc-value="${escapeHtml(value)}"`;
+  }
+
+  function iocButton(norm) {
+    if (!norm) return "";
+    return `<button type="button" class="ioc-open" ${iocAttrs(norm.type, norm.value)} title="Show IOC details" aria-label="Show details for ${escapeHtml(norm.value)}">i</button>`;
+  }
+
+  // Still worth showing (or keeping open across a refresh) when it's in a
+  // feed, or for an IP that only the enrichment sources know about.
+  function iocKnown(type, value) {
+    if (state.iocIndex.has(`${type}|${value}`)) return true;
+    if (type !== "ip") return false;
+    return Boolean(state.enrichment?.lookups?.[value] || state.abuseipdb?.entries?.[value] || state.internetdb?.entries?.[value]);
+  }
+
+  // rows: [label, html] — html must already be escaped; empty values are skipped.
+  function drawerFields(rows) {
+    const html = rows
+      .filter(([, v]) => v !== "" && v !== null && v !== undefined)
+      .map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${v}</dd>`)
+      .join("");
+    return html ? `<dl class="drawer-fields">${html}</dl>` : "";
+  }
+
+  function drawerTags(list) {
+    return (list || [])
+      .filter((t) => t !== null && t !== undefined && t !== "")
+      .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
+      .join("");
+  }
+
+  function drawerDate(iso) {
+    return iso ? fmtDate(iso) : "";
+  }
+
+  function extLink(href, text) {
+    return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(text)}</a>`;
+  }
+
+  function drawerShowButton(feed, query, text) {
+    return `<button type="button" class="drawer-show" data-drawer-feed="${escapeHtml(feed)}" data-drawer-q="${escapeHtml(query)}">${escapeHtml(text)}</button>`;
+  }
+
+  const DRAWER_HIT_RENDERERS = {
+    threatfox: (e) => {
+      const i = e.item;
+      return drawerFields([
+        ["IOC", `<span class="mono">${escapeHtml(i.ioc)}</span>`],
+        ["Type", escapeHtml(i.ioc_type)],
+        ["Malware", escapeHtml(i.malware_printable)],
+        ["Confidence", escapeHtml(i.confidence_level)],
+        ["First seen", drawerDate(i.first_seen)],
+        ["Tags", drawerTags(i.tags)],
+        ["Reporter", escapeHtml(i.reporter)],
+        ["Record", i.id ? extLink(`https://threatfox.abuse.ch/ioc/${encodeURIComponent(i.id)}/`, "ThreatFox IOC record") : ""],
+      ]);
+    },
+    urlhaus: (e) => {
+      const i = e.item;
+      const href = urlhausLink(i);
+      const tags = i.tags && i.tags !== "None" ? escapeHtml(i.tags) : "";
+      return drawerFields([
+        // Shown as text: linking straight to a live malware URL is a footgun.
+        ["URL", `<span class="mono">${escapeHtml(i.url)}</span>`],
+        ["Status", escapeHtml(i.url_status)],
+        ["Threat", escapeHtml(i.threat)],
+        ["Date added", drawerDate(i.date_added)],
+        ["Last online", drawerDate(i.last_online)],
+        ["Tags", tags],
+        ["Reporter", escapeHtml(i.reporter)],
+        ["Record", href ? extLink(href, "URLhaus URL record") : ""],
+      ]);
+    },
+    malwarebazaar: (e) => {
+      const i = e.item;
+      return drawerFields([
+        ["File name", escapeHtml(i.file_name)],
+        ["SHA256", `<span class="mono">${escapeHtml(i.sha256_hash)}</span>`],
+        ["Family", escapeHtml(i.signature)],
+        ["First seen", drawerDate(i.first_seen)],
+        ["Last seen", drawerDate(i.last_seen)],
+        ["Tags", drawerTags(i.tags)],
+      ]);
+    },
+    otx: (e) => {
+      const i = e.item;
+      return (
+        drawerFields([
+          ["Pulse", escapeHtml(i.name)],
+          ["Created", drawerDate(i.created)],
+          ["Indicator", `<span class="mono">${escapeHtml(e.indicator?.indicator)}</span> <span class="drawer-dim">${escapeHtml(e.indicator?.type)}</span>`],
+          ["Pulse tags", drawerTags((i.tags || []).slice(0, 10))],
+        ]) + drawerShowButton("otx", i.name || "", "Show pulse in OTX table")
+      );
+    },
+    blocklistde: (e) => drawerFields([["Lists", drawerTags(e.item.lists)]]),
+  };
+
+  function drawerFeedGroup(feed, hits, type, value) {
+    const label = FEED_LABELS[feed] || feed;
+    let list = hits;
+    if (feed === "otx") {
+      // One block per pulse, even if it lists the IOC under two types.
+      const seen = new Set();
+      list = hits.filter((e) => {
+        const k = e.item.name || "";
+        if (seen.has(k)) return false;
+        seen.add(k);
+        return true;
+      });
+    }
+    const shown = list.slice(0, DRAWER_MAX_HITS);
+    const items = shown.map((e) => `<li class="drawer-hit">${DRAWER_HIT_RENDERERS[feed](e)}</li>`).join("");
+    const more =
+      list.length > shown.length ? `<p class="drawer-note">+ ${list.length - shown.length} more ${escapeHtml(label)} entries not shown.</p>` : "";
+    // The OTX table only searches pulse name/tags, so its buttons live on each pulse instead.
+    const query = type === "hash" ? value.toLowerCase() : value;
+    const headBtn = feed === "otx" ? "" : drawerShowButton(feed, query, `Show in ${label} table`);
+    return `<section class="drawer-section">
+      <div class="drawer-section-head"><h3>${escapeHtml(label)} <span class="drawer-count">${list.length}</span></h3>${headBtn}</div>
+      <ul class="drawer-hits">${items}</ul>${more}
+    </section>`;
+  }
+
+  function greynoiseClassBadge(cls) {
+    const c = cls || "unclassified";
+    const badge = c === "malicious" ? "badge-malicious" : c === "benign" ? "badge-noise" : "badge-unclassified";
+    return `<span class="badge ${badge}">${escapeHtml(c)}</span>`;
+  }
+
+  function drawerEnrichment(ip) {
+    const blocks = [];
+
+    const gn = state.enrichment?.lookups?.[ip];
+    if (gn) {
+      blocks.push([
+        "GreyNoise",
+        drawerFields([
+          ["Classification", greynoiseClassBadge(gn.classification)],
+          ["Internet scanner", gn.noise === undefined ? "" : gn.noise ? "yes" : "no"],
+          ["Actor", gn.name && gn.name !== "unknown" ? escapeHtml(gn.name) : ""],
+          ["Last seen", escapeHtml(gn.last_seen)],
+          ["Checked", drawerDate(gn.checked_at)],
+        ]),
+      ]);
+    }
+
+    const abuse = state.abuseipdb?.entries?.[ip];
+    if (abuse && abuse.abuseConfidenceScore !== undefined && abuse.abuseConfidenceScore !== null) {
+      blocks.push([
+        "AbuseIPDB",
+        drawerFields([
+          ["Confidence", abuseipdbBadge(ip).trim()],
+          ["Reports", escapeHtml(abuse.totalReports ?? 0)],
+          ["ISP", escapeHtml(abuse.isp)],
+        ]),
+      ]);
+    }
+
+    const idb = state.internetdb?.entries?.[ip];
+    if (idb && !idb.no_data) {
+      const fields = drawerFields([
+        ["Ports", drawerTags(idb.ports)],
+        ["CVEs", drawerTags(idb.vulns)],
+        ["Hostnames", drawerTags(idb.hostnames)],
+        ["Tags", drawerTags(idb.tags)],
+      ]);
+      if (fields) blocks.push(["InternetDB", fields]);
+    }
+
+    const drop = isIpInDrop(ip);
+    if (drop) {
+      blocks.push([
+        "Spamhaus DROP",
+        drawerFields([
+          ["Range", `<span class="mono">${escapeHtml(drop.raw)}</span>`],
+          ["SBL id", escapeHtml(drop.sbl_id)],
+        ]),
+      ]);
+    }
+
+    if (!blocks.length) return "";
+    return `<section class="drawer-section">
+      <div class="drawer-section-head"><h3>Enrichment</h3></div>
+      ${blocks.map(([title, html]) => `<div class="drawer-enrich"><h4>${escapeHtml(title)}</h4>${html}</div>`).join("")}
+    </section>`;
+  }
+
+  function drawerLookupLinks(type, value) {
+    const v = encodeURIComponent(type === "hash" ? value.toLowerCase() : value);
+    const links = [];
+    if (type === "ip") {
+      links.push(
+        ["VirusTotal", `https://www.virustotal.com/gui/ip-address/${v}`],
+        ["Shodan", `https://www.shodan.io/host/${v}`],
+        ["AbuseIPDB", `https://www.abuseipdb.com/check/${v}`],
+        ["GreyNoise", `https://viz.greynoise.io/ip/${v}`]
+      );
+    } else if (type === "domain") {
+      links.push(["VirusTotal", `https://www.virustotal.com/gui/domain/${v}`]);
+    } else if (type === "hash") {
+      links.push(["VirusTotal", `https://www.virustotal.com/gui/file/${v}`]);
+      const algo = { 32: "md5", 40: "sha1", 64: "sha256" }[value.length];
+      if (algo === "sha256") links.push(["MalwareBazaar", `https://bazaar.abuse.ch/sample/${v}/`]);
+      else if (algo) links.push(["MalwareBazaar", `https://bazaar.abuse.ch/browse.php?search=${encodeURIComponent(`${algo}:`)}${v}`]);
+    }
+    links.push(["ThreatFox", `https://threatfox.abuse.ch/browse.php?search=${encodeURIComponent("ioc:")}${v}`]);
+    if (type === "ip" || type === "domain") links.push(["URLhaus host", `https://urlhaus.abuse.ch/host/${v}/`]);
+    if (type === "ip") {
+      const drop = isIpInDrop(value);
+      if (drop && drop.sbl_id) {
+        links.push([`Spamhaus ${drop.sbl_id}`, `https://check.spamhaus.org/results?query=${encodeURIComponent(drop.sbl_id)}`]);
+      }
+    }
+    return `<section class="drawer-section">
+      <div class="drawer-section-head"><h3>Look up</h3></div>
+      <p class="drawer-note">Opens the provider's site in a new tab. This page makes no requests to them.</p>
+      <ul class="drawer-links">${links.map(([text, href]) => `<li>${extLink(href, text)}</li>`).join("")}</ul>
+    </section>`;
+  }
+
+  function renderIocDrawer() {
+    const d = state.drawer;
+    if (!d) return;
+    const { type, value } = d;
+    const hits = state.iocIndex.get(`${type}|${value}`) || [];
+    const feedsSeen = DRAWER_FEED_ORDER.filter((f) => hits.some((e) => e.feed === f));
+    const { count, breakdown } = computeSignalCount(type, value, feedsSeen);
+
+    $("ioc-drawer-type").textContent = IOC_TYPE_LABELS[type] || type;
+    $("ioc-drawer-title").textContent = value;
+
+    const signalCls = count >= 2 ? "badge-malicious" : count === 1 ? "badge-unclassified" : "badge-info";
+    const summary = drawerFields([
+      ["Signals", `<span class="badge ${signalCls}">${count} signal${count === 1 ? "" : "s"}</span>`],
+      ["Breakdown", breakdown.length ? drawerTags(breakdown) : `<span class="drawer-dim">no corroborating signals</span>`],
+      [
+        "Feeds",
+        feedsSeen.length
+          ? feedsSeen.map((f) => `<span class="tag feed-tag">${escapeHtml(FEED_LABELS[f] || f)}</span>`).join("")
+          : `<span class="drawer-dim">not in any current feed</span>`,
+      ],
+    ]);
+
+    const groups = feedsSeen.map((f) => drawerFeedGroup(f, hits.filter((e) => e.feed === f), type, value)).join("");
+
+    $("ioc-drawer-body").innerHTML =
+      `<section class="drawer-section drawer-summary">${summary}</section>` +
+      groups +
+      (type === "ip" ? drawerEnrichment(value) : "") +
+      drawerLookupLinks(type, value);
+  }
+
+  function setBackgroundInert(on) {
+    document.querySelectorAll(".topbar, main.page").forEach((el) => {
+      el.inert = on;
+      if (on) el.setAttribute("aria-hidden", "true");
+      else el.removeAttribute("aria-hidden");
+    });
+    document.body.classList.toggle("drawer-open", on);
+  }
+
+  function openIocDrawer(type, value, trigger) {
+    const drawer = $("ioc-drawer");
+    if (!drawer || !type || !value) return;
+    // A correlated row isn't focusable itself; return focus to its button.
+    const focusEl = trigger && (trigger.matches("button, a") ? trigger : trigger.querySelector("button"));
+    state.drawer = { type, value, trigger: focusEl || null, scope: trigger?.closest("[id]")?.id || null };
+    renderIocDrawer();
+    $("ioc-drawer-body").scrollTop = 0;
+    drawer.hidden = false;
+    $("ioc-drawer-backdrop").hidden = false;
+    setBackgroundInert(true);
+    $("ioc-drawer-close").focus();
+  }
+
+  function closeIocDrawer(restoreFocus = true) {
+    const d = state.drawer;
+    if (!d) return;
+    state.drawer = null;
+    $("ioc-drawer").hidden = true;
+    $("ioc-drawer-backdrop").hidden = true;
+    setBackgroundInert(false);
+    if (!restoreFocus) return;
+    let target = d.trigger && d.trigger.isConnected ? d.trigger : null;
+    if (!target && d.scope && window.CSS?.escape) {
+      // The trigger was re-rendered (auto-refresh); find its replacement.
+      target = $(d.scope)?.querySelector(
+        `button[data-ioc-type="${CSS.escape(d.type)}"][data-ioc-value="${CSS.escape(d.value)}"]`
+      );
+    }
+    if (target) target.focus();
+  }
+
+  // Called at the end of render(): keep an open drawer in step with new data.
+  function refreshIocDrawer() {
+    const d = state.drawer;
+    if (!d) return;
+    if (!iocKnown(d.type, d.value)) {
+      closeIocDrawer();
+      return;
+    }
+    const body = $("ioc-drawer-body");
+    const scrollTop = body.scrollTop;
+    const hadFocus = $("ioc-drawer").contains(document.activeElement) && document.activeElement !== $("ioc-drawer-close");
+    renderIocDrawer();
+    body.scrollTop = scrollTop;
+    // The focused element may have been replaced by the re-render.
+    if (hadFocus && !$("ioc-drawer").contains(document.activeElement)) $("ioc-drawer-close").focus();
+  }
+
+  function drawerFocusables() {
+    return Array.from($("ioc-drawer").querySelectorAll("button, a[href]")).filter((el) => !el.disabled && el.offsetParent !== null);
+  }
+
+  function initIocDrawer() {
+    const drawer = $("ioc-drawer");
+    if (!drawer) return;
+
+    document.addEventListener("click", (ev) => {
+      if (state.drawer) return;
+      const trigger = ev.target.closest("[data-ioc-type][data-ioc-value]");
+      if (!trigger || ev.target.closest("a")) return; // leave outbound links alone
+      ev.preventDefault();
+      openIocDrawer(trigger.getAttribute("data-ioc-type"), trigger.getAttribute("data-ioc-value"), trigger);
+    });
+
+    $("ioc-drawer-close").addEventListener("click", () => closeIocDrawer());
+    $("ioc-drawer-backdrop").addEventListener("click", () => closeIocDrawer());
+
+    $("ioc-drawer-body").addEventListener("click", (ev) => {
+      const btn = ev.target.closest(".drawer-show");
+      if (!btn) return;
+      const feed = btn.getAttribute("data-drawer-feed");
+      closeIocDrawer(false);
+      scrollToMatch(feed, btn.getAttribute("data-drawer-q"));
+      const input = document.querySelector(`.search-box[data-feed="${feed}"]`);
+      if (input) input.focus({ preventScroll: true });
+    });
+
+    document.addEventListener("keydown", (ev) => {
+      if (!state.drawer) return;
+      if (ev.key === "Escape") {
+        ev.preventDefault();
+        closeIocDrawer();
+        return;
+      }
+      // Belt and braces alongside `inert`: keep Tab inside the dialog.
+      if (ev.key === "Tab") {
+        const els = drawerFocusables();
+        if (!els.length) return;
+        const first = els[0];
+        const last = els[els.length - 1];
+        if (ev.shiftKey && (document.activeElement === first || !drawer.contains(document.activeElement))) {
+          last.focus();
+          ev.preventDefault();
+        } else if (!ev.shiftKey && (document.activeElement === last || !drawer.contains(document.activeElement))) {
+          first.focus();
+          ev.preventDefault();
+        }
+      }
+    });
   }
 
   // ---------- Triage / digest panel ----------
@@ -782,9 +1180,8 @@
     maliciousCard.hidden = !t.maliciousIps.length;
     $("triage-malicious").innerHTML = t.maliciousIps
       .map((m) => {
-        const primaryFeed = m.feeds[0] || "blocklistde";
         const tags = m.feeds.map((f) => `<span class="tag feed-tag">${escapeHtml(FEED_LABELS[f] || f)}</span>`).join("");
-        return `<li><a href="#" class="triage-link" data-feed="${primaryFeed}" data-q="${escapeHtml(m.ip)}"><span class="mono">${escapeHtml(m.ip)}</span></a> ${tags}<span class="triage-date">${relativeTime(m.checkedAt)}</span></li>`;
+        return `<li><button type="button" class="triage-link link-btn" ${iocAttrs("ip", m.ip)}><span class="mono">${escapeHtml(m.ip)}</span></button> ${tags}<span class="triage-date">${relativeTime(m.checkedAt)}</span></li>`;
       })
       .join("");
 
@@ -793,11 +1190,13 @@
     $("triage-correlated").innerHTML = t.topCorrelated
       .map((c) => {
         const tags = c.feeds.map((f) => `<span class="tag feed-tag">${escapeHtml(FEED_LABELS[f] || f)}</span>`).join("");
-        return `<li><a href="#" class="triage-link" data-feed="${c.feeds[0]}" data-q="${escapeHtml(c.value)}"><span class="mono">${escapeHtml(c.value)}</span></a> ${tags}</li>`;
+        return `<li><button type="button" class="triage-link link-btn" ${iocAttrs(c.type, c.value)}><span class="mono">${escapeHtml(c.value)}</span></button> ${tags}</li>`;
       })
       .join("");
 
-    panel.querySelectorAll(".triage-link").forEach((a) => {
+    // KEV links scroll to the KEV table; IOC buttons open the drawer via
+    // the delegated handler in initIocDrawer.
+    panel.querySelectorAll("a.triage-link[data-feed]").forEach((a) => {
       a.addEventListener("click", (ev) => {
         ev.preventDefault();
         scrollToMatch(a.getAttribute("data-feed"), a.getAttribute("data-q"));
@@ -892,13 +1291,13 @@
       if (t.includes("ip")) {
         const ip = normalizeIp(item.ioc);
         if (ip && watchlistMatchesIp(ip, entries)) {
-          matches.push({ feed: "threatfox", value: item.ioc, label: item.malware_printable });
+          matches.push({ feed: "threatfox", value: item.ioc, label: item.malware_printable, norm: { type: "ip", value: ip } });
           matchKeys.add(`threatfox::${item.ioc}`);
         }
       } else if (t.includes("domain")) {
         const d = normalizeDomain(item.ioc);
         if (d && watchlistMatchesDomain(d, entries)) {
-          matches.push({ feed: "threatfox", value: item.ioc, label: item.malware_printable });
+          matches.push({ feed: "threatfox", value: item.ioc, label: item.malware_printable, norm: { type: "domain", value: d } });
           matchKeys.add(`threatfox::${item.ioc}`);
         }
       }
@@ -908,12 +1307,12 @@
       const host = extractHost(item.url);
       const ip = normalizeIp(host);
       if (ip && watchlistMatchesIp(ip, entries)) {
-        matches.push({ feed: "urlhaus", value: item.url, label: item.threat });
+        matches.push({ feed: "urlhaus", value: item.url, label: item.threat, norm: { type: "ip", value: ip } });
         matchKeys.add(`urlhaus::${item.url}`);
       } else {
         const d = normalizeDomain(host);
         if (d && watchlistMatchesDomain(d, entries)) {
-          matches.push({ feed: "urlhaus", value: item.url, label: item.threat });
+          matches.push({ feed: "urlhaus", value: item.url, label: item.threat, norm: { type: "domain", value: d } });
           matchKeys.add(`urlhaus::${item.url}`);
         }
       }
@@ -921,7 +1320,7 @@
 
     for (const item of feeds.blocklistde?.items || []) {
       if (item.ip && watchlistMatchesIp(item.ip, entries)) {
-        matches.push({ feed: "blocklistde", value: item.ip, label: (item.lists || []).join(", ") });
+        matches.push({ feed: "blocklistde", value: item.ip, label: (item.lists || []).join(", "), norm: normalizeIocValue(item.ip, "ip") });
         matchKeys.add(`blocklistde::${item.ip}`);
       }
     }
@@ -935,12 +1334,12 @@
         if (type.includes("ipv4")) {
           const ip = normalizeIp(ind.indicator);
           if (ip && watchlistMatchesIp(ip, entries)) {
-            matches.push({ feed: "otx", value: ind.indicator, label: item.name });
+            matches.push({ feed: "otx", value: ind.indicator, label: item.name, norm: { type: "ip", value: ip } });
           }
         } else if (type.includes("domain") || type.includes("hostname")) {
           const d = normalizeDomain(ind.indicator);
           if (d && watchlistMatchesDomain(d, entries)) {
-            matches.push({ feed: "otx", value: ind.indicator, label: item.name });
+            matches.push({ feed: "otx", value: ind.indicator, label: item.name, norm: { type: "domain", value: d } });
           }
         }
       }
@@ -965,7 +1364,7 @@
       .slice(0, 30)
       .map(
         (m) =>
-          `<li><span class="tag feed-tag">${escapeHtml(FEED_LABELS[m.feed] || m.feed)}</span> <span class="mono">${escapeHtml(m.value)}</span>${m.label ? ` — ${escapeHtml(m.label)}` : ""}</li>`
+          `<li><span class="tag feed-tag">${escapeHtml(FEED_LABELS[m.feed] || m.feed)}</span> ${iocButton(m.norm)}<span class="mono">${escapeHtml(m.value)}</span>${m.label ? ` — ${escapeHtml(m.label)}` : ""}</li>`
       )
       .join("");
   }
@@ -991,8 +1390,18 @@
   // ---------- Export (CSV / JSON, respects current filter) ----------
 
   function csvEscape(val) {
-    const s = val === null || val === undefined ? "" : String(val);
-    if (/[",\r\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+    let s = val === null || val === undefined ? "" : String(val);
+    // Feed fields (file names, URLs, tags, victim names) are attacker-controlled.
+    // A cell starting with = + - @ (or tab/CR) runs as a formula when the
+    // CSV is opened in Excel or Sheets, so prefix it with a quote. Excel in
+    // locales whose list separator is ";" (much of Europe) also starts a new
+    // cell at every ";" (quotes only count at the start of a cell), and list
+    // fields are joined with ";", so do the same after each ";". Leading
+    // whitespace is allowed for. Plain numbers are left alone.
+    if (typeof val === "string" && !/^-?\d+(\.\d+)?$/.test(s)) {
+      s = s.replace(/(^|;)(\s*?)(?=[=+\-@\t\r])/g, "$1$2'");
+    }
+    if (/[",;\t\r\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
     return s;
   }
 
@@ -1225,13 +1634,14 @@
       columns
         .map((col) => {
           const arrow = ts.sortKey === col.key ? (ts.sortDir === "asc" ? "↑" : "↓") : "";
-          return `<th data-key="${escapeHtml(col.key)}">${escapeHtml(col.label)}<span class="sort-arrow">${arrow}</span></th>`;
+          const ariaSort = ts.sortKey === col.key ? (ts.sortDir === "asc" ? "ascending" : "descending") : "none";
+          return `<th data-key="${escapeHtml(col.key)}" tabindex="0" aria-sort="${ariaSort}">${escapeHtml(col.label)}<span class="sort-arrow">${arrow}</span></th>`;
         })
         .join("") +
       "</tr>";
 
     thead.querySelectorAll("th").forEach((th) => {
-      th.addEventListener("click", () => {
+      const sortBy = (fromKeyboard) => {
         const key = th.getAttribute("data-key");
         if (ts.sortKey === key) {
           ts.sortDir = ts.sortDir === "asc" ? "desc" : "asc";
@@ -1240,6 +1650,14 @@
           ts.sortDir = "asc";
         }
         renderTable(feed, columns, searchFn, defaultSort, getItems);
+        // The header row is rebuilt, so put keyboard focus back on the same column.
+        if (fromKeyboard) table.querySelector(`thead th[data-key="${CSS.escape(key)}"]`)?.focus();
+      };
+      th.addEventListener("click", () => sortBy(false));
+      th.addEventListener("keydown", (ev) => {
+        if (ev.key !== "Enter" && ev.key !== " ") return;
+        ev.preventDefault();
+        sortBy(true);
       });
     });
 
@@ -1310,7 +1728,7 @@
           sortValue: (i) => (i.ioc || "").toLowerCase(),
           render: (i) => {
             const ip = extractIpFromIoc(i.ioc, i.ioc_type);
-            return `<span class="mono">${escapeHtml(i.ioc)}</span>${ip ? ipBadges(ip) : ""}`;
+            return `${iocButton(threatfoxNorm(i))}<span class="mono">${escapeHtml(i.ioc)}</span>${ip ? ipBadges(ip) : ""}`;
           },
         },
         { key: "ioc_type", label: "Type", sortValue: (i) => i.ioc_type || "", render: (i) => escapeHtml(i.ioc_type) },
@@ -1351,7 +1769,7 @@
             const link = href
               ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(i.url)}</a>`
               : escapeHtml(i.url);
-            return `<span class="mono">${link}</span>`;
+            return `${iocButton(urlhausNorm(i))}<span class="mono">${link}</span>`;
           },
         },
         { key: "url_status", label: "Status", sortValue: (i) => i.url_status || "", render: (i) => escapeHtml(i.url_status) },
@@ -1377,7 +1795,8 @@
           key: "sha256_hash",
           label: "SHA256",
           sortValue: (i) => i.sha256_hash || "",
-          render: (i) => `<span class="mono">${escapeHtml((i.sha256_hash || "").slice(0, 16))}&hellip;</span>`,
+          render: (i) =>
+            `${iocButton(normalizeIocValue(i.sha256_hash, "hash"))}<span class="mono" title="${escapeHtml(i.sha256_hash)}">${escapeHtml((i.sha256_hash || "").slice(0, 16))}&hellip;</span>`,
         },
         { key: "signature", label: "Family", sortValue: (i) => (i.signature || "").toLowerCase(), render: (i) => escapeHtml(i.signature || "—") },
         { key: "first_seen", label: "First Seen", sortValue: (i) => i.first_seen || "", render: (i) => fmtDate(i.first_seen) },
@@ -1485,7 +1904,7 @@
           key: "ip",
           label: "IP",
           sortValue: (i) => i.ip || "",
-          render: (i) => `<span class="mono">${escapeHtml(i.ip)}</span>${ipBadges(i.ip)}`,
+          render: (i) => `${iocButton(normalizeIocValue(i.ip, "ip"))}<span class="mono">${escapeHtml(i.ip)}</span>${ipBadges(i.ip)}`,
         },
         {
           key: "lists",
@@ -1551,6 +1970,7 @@
     renderUkNews();
     renderTabCounts();
     syncTabs();
+    refreshIocDrawer();
   }
 
   // ---------- Header clock ----------
@@ -2075,6 +2495,7 @@
     wireSearchBoxes();
     wireExportButtons();
     initWatchlist();
+    initIocDrawer();
     loadData();
     initAutoRefresh();
   });

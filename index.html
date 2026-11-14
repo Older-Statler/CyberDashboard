@@ -352,6 +352,21 @@
     </footer>
   </main>
 
+  <!-- IOC detail drawer: opened from any element with data-ioc-type /
+       data-ioc-value (see initIocDrawer in app.js). Lives outside .topbar and
+       main.page so those can be made inert while it is open. -->
+  <div id="ioc-drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <div id="ioc-drawer" class="ioc-drawer" role="dialog" aria-modal="true" aria-labelledby="ioc-drawer-title" aria-describedby="ioc-drawer-type" tabindex="-1" hidden>
+    <div class="drawer-head">
+      <div class="drawer-heading">
+        <p class="drawer-kicker" id="ioc-drawer-type">IOC</p>
+        <h2 class="drawer-title" id="ioc-drawer-title"></h2>
+      </div>
+      <button type="button" class="drawer-close" id="ioc-drawer-close" aria-label="Close IOC details">&times;</button>
+    </div>
+    <div class="drawer-body" id="ioc-drawer-body"></div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>

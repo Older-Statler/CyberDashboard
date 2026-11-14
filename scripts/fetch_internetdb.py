@@ -19,7 +19,7 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import load_json
-from lib.extract_ips import get_ips_from_snapshot
+from lib.extract_ips import get_ranked_ips_from_snapshot, load_abuse_entries, load_drop_ranges
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LATEST_PATH = os.path.join(BASE, "data", "latest.json")
@@ -55,7 +55,10 @@ def main():
     cache = load_json(INTERNETDB_PATH, default=None) or {"generated_at": None, "entries": {}}
     entries = cache.get("entries", {})
 
-    candidates = get_ips_from_snapshot(latest)
+    # Highest-priority IPs first, so the per-run cap is spent on them.
+    candidates = get_ranked_ips_from_snapshot(
+        latest, drop_ranges=load_drop_ranges(), abuse_entries=load_abuse_entries()
+    )
     cutoff = now() - datetime.timedelta(days=REFRESH_DAYS)
 
     to_check = []
