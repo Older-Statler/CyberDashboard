@@ -765,7 +765,9 @@
   }
 
   function drawerTags(list) {
-    return (list || [])
+    // Feed data can change shape; a lone string is one tag, anything else none.
+    const arr = Array.isArray(list) ? list : typeof list === "string" && list ? [list] : [];
+    return arr
       .filter((t) => t !== null && t !== undefined && t !== "")
       .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
       .join("");
@@ -1008,7 +1010,15 @@
     // A correlated row isn't focusable itself; return focus to its button.
     const focusEl = trigger && (trigger.matches("button, a") ? trigger : trigger.querySelector("button"));
     state.drawer = { type, value, trigger: focusEl || null, scope: trigger?.closest("[id]")?.id || null };
-    renderIocDrawer();
+    try {
+      renderIocDrawer();
+    } catch (e) {
+      // Don't leave state.drawer set on a drawer that never opened: the
+      // click handler ignores clicks while it's set, so nothing would open.
+      state.drawer = null;
+      console.error("IOC drawer failed to render:", e);
+      return;
+    }
     $("ioc-drawer-body").scrollTop = 0;
     drawer.hidden = false;
     $("ioc-drawer-backdrop").hidden = false;
@@ -1045,7 +1055,13 @@
     const body = $("ioc-drawer-body");
     const scrollTop = body.scrollTop;
     const hadFocus = $("ioc-drawer").contains(document.activeElement) && document.activeElement !== $("ioc-drawer-close");
-    renderIocDrawer();
+    try {
+      renderIocDrawer();
+    } catch (e) {
+      console.error("IOC drawer failed to refresh:", e);
+      closeIocDrawer();
+      return;
+    }
     body.scrollTop = scrollTop;
     // The focused element may have been replaced by the re-render.
     if (hadFocus && !$("ioc-drawer").contains(document.activeElement)) $("ioc-drawer-close").focus();

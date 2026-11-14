@@ -14,6 +14,7 @@ import csv
 import datetime
 import os
 import sys
+from urllib.parse import quote
 
 import requests
 
@@ -32,7 +33,9 @@ FIELDNAMES = ["id", "dateadded", "url", "url_status", "last_online", "threat", "
 
 
 def main():
-    auth_key = os.environ.get("URLHAUS_AUTH_KEY")
+    # strip(): a key pasted into the secret with a trailing newline/space
+    # would otherwise fail every run, percent-encoded into the URL.
+    auth_key = (os.environ.get("URLHAUS_AUTH_KEY") or "").strip()
     if not auth_key:
         write_raw(FEED, [], error="URLHAUS_AUTH_KEY not set")
         return
@@ -96,11 +99,19 @@ def main():
             return
 
         write_raw(FEED, items)
+    except requests.RequestException as e:
+        # The key is part of the URL path, and requests puts the URL (possibly
+        # percent-encoded) in its error messages. The error ends up in the
+        # public data/latest.json, so never record the message itself: just
+        # the exception type and HTTP status.
+        status = getattr(getattr(e, "response", None), "status_code", None)
+        detail = f"HTTP {status}" if status else type(e).__name__
+        write_raw(FEED, [], error=f"URLhaus export request failed: {detail}")
     except Exception as e:
-        # The key is part of the URL path, and requests puts the URL in
-        # HTTPError messages. The error ends up in data/latest.json, which is
-        # public, so scrub the key before recording it.
-        write_raw(FEED, [], error=str(e).replace(auth_key, "<redacted>"))
+        # Parsing errors don't normally contain the URL, but scrub the key
+        # (raw and percent-encoded) anyway.
+        msg = str(e).replace(auth_key, "<redacted>").replace(quote(auth_key, safe=""), "<redacted>")
+        write_raw(FEED, [], error=msg)
 
 
 if __name__ == "__main__":

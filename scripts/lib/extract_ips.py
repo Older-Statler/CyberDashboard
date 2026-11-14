@@ -21,6 +21,9 @@ ABUSEIPDB_PATH = os.path.join(BASE, "data", "abuseipdb.json")
 # AbuseIPDB confidence score at or above which an IP counts as "known bad"
 # for ranking purposes.
 ABUSE_SCORE_THRESHOLD = 75
+# See get_ranked_ips_from_snapshot(): caps how much of the front of the
+# ranking (where the per-run budgets go) one /24 can take.
+MAX_PER_SLASH24_UP_FRONT = 2
 
 
 def _normalize_ip(raw):
@@ -201,6 +204,13 @@ def get_ranked_ips_from_snapshot(snapshot, drop_ranges=None, abuse_entries=None)
 
     drop_ranges and abuse_entries are optional; None or bad data simply
     means that signal is absent for every IP.
+
+    Then a diversity pass: at most MAX_PER_SLASH24_UP_FRONT IPs from any one
+    /24 keep their place; the rest of that /24 moves behind every other IP
+    (still in rank order). Anyone can report IPs to ThreatFox and URLhaus,
+    so without this a reporter could put their own block at the top and use
+    up the small per-run budgets (GreyNoise is 7/day). They now need many
+    netblocks to do that.
     """
     signals = rank_ip_signals(snapshot, drop_ranges, abuse_entries)
     # Python's sort is stable (including with reverse=True), so sort by
@@ -216,4 +226,14 @@ def get_ranked_ips_from_snapshot(snapshot, drop_ranges=None, abuse_entries=None)
         ),
         reverse=True,
     )
-    return ranked
+
+    front, deferred, per_net = [], [], {}
+    for ip in ranked:
+        net = ip.rsplit(".", 1)[0]
+        n = per_net.get(net, 0)
+        if n < MAX_PER_SLASH24_UP_FRONT:
+            per_net[net] = n + 1
+            front.append(ip)
+        else:
+            deferred.append(ip)
+    return front + deferred

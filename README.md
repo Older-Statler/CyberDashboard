@@ -157,7 +157,10 @@ A full-width, dark "ops center" layout:
   order (`get_ranked_ips_from_snapshot()` in `scripts/lib/extract_ips.py`): seen in more
   feeds, then in ThreatFox, then inside a Spamhaus DROP range, then AbuseIPDB score ≥ 75,
   then most recently seen. AbuseIPDB leaves out its own score, so new IPs come before
-  re-checks of known-bad ones. The caps and TTLs are unchanged.
+  re-checks of known-bad ones. At most 2 IPs from any one /24 keep their place near the
+  front; the rest of that netblock goes to the back. Anyone can report IPs to these feeds,
+  so this stops one reporter's netblock from taking the whole budget. The caps and TTLs
+  are unchanged.
 - **Keyboard-sortable tables** — column headers can be focused with Tab and sorted with
   Enter or Space.
 
