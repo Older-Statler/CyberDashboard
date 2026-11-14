@@ -97,7 +97,10 @@ def main():
 
         write_raw(FEED, items)
     except Exception as e:
-        write_raw(FEED, [], error=str(e))
+        # The key is part of the URL path, and requests puts the URL in
+        # HTTPError messages. The error ends up in data/latest.json, which is
+        # public, so scrub the key before recording it.
+        write_raw(FEED, [], error=str(e).replace(auth_key, "<redacted>"))
 
 
 if __name__ == "__main__":

@@ -1239,7 +1239,7 @@
           ts.sortKey = key;
           ts.sortDir = "asc";
         }
-        renderTable(feed, columns, searchFn, defaultSort);
+        renderTable(feed, columns, searchFn, defaultSort, getItems);
       });
     });
 

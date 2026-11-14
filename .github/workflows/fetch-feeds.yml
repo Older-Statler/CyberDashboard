@@ -2,7 +2,8 @@ name: Fetch Threat Intel Feeds
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Off the :00/:30 marks, where GitHub delays and drops scheduled runs.
+    - cron: "7,37 * * * *"
   workflow_dispatch: {}
 
 concurrency:
@@ -83,5 +84,13 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update threat feed snapshot [skip ci]"
-            git push
+            # The two workflows push to main independently, so the remote may
+            # have moved since checkout. They write disjoint files, so a
+            # rebase is always clean; retry in case of a second race.
+            for attempt in 1 2 3; do
+              git pull --rebase --quiet && git push && exit 0
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((attempt * 10))
+            done
+            exit 1
           fi
