@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T23:47:49Z",
+  "generated_at": "2026-11-14T05:33:22Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 13
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -303,30 +303,6 @@
       "source": "ITPro",
       "published": "2026-11-12T08:00:00Z",
       "summary": "Amid predictions AI will cause human extinction, what are the real risks businesses should be aware of?",
-      "uk_focus": false
-    },
-    {
-      "title": "Bug-hunting time cut dramatically with AI, says Forescout",
-      "link": "https://www.computerweekly.com/news/366654735/Bug-hunting-time-cut-dramatically-with-AI-says-Forescout",
-      "source": "Computer Weekly",
-      "published": "2026-11-12T05:23:00Z",
-      "summary": "Forescout’s Vedere Labs has shown AI can cut bug-finding time dramatically, including those common in critical infrastructure",
-      "uk_focus": false
-    },
-    {
-      "title": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
-      "link": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244",
-      "source": "The Register",
-      "published": "2026-11-12T04:22:18Z",
-      "summary": "Couldn’t get the hardware it needed to generate certs, so tried to code a workaround",
-      "uk_focus": false
-    },
-    {
-      "title": "Smashing Security podcast #492: How hackers turned Russian cars into pumpkins",
-      "link": "https://grahamcluley.com/smashing-security-podcast-492/",
-      "source": "Graham Cluley",
-      "published": "2026-11-12T00:32:55Z",
-      "summary": "You're driving your new Chinese SUV when the dashboard goes dark. Ten minutes later, your phone rings. A stranger says they've got the digital key to your car, and would you like it back? Of course you would. That'll be $550. Meanwhile, three men have been charged over a scheme…",
       "uk_focus": false
     }
   ]

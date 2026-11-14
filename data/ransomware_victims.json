@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-13T23:47:49Z",
+  "generated_at": "2026-11-14T05:33:22Z",
   "victims": [
+    {
+      "group": "interlock",
+      "victim": "K&A Industries",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-13T22:46:01.680491+00:00",
+      "domain": "kaindustries.com",
+      "url": "https://www.ransomware.live/id/SyZBIEluZHVzdHJpZXNAaW50ZXJsb2Nr"
+    },
+    {
+      "group": "everest",
+      "victim": "Final Notice Before Publication",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-11-13T22:44:12.215915+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RmluYWwgTm90aWNlIEJlZm9yZSBQdWJsaWNhdGlvbkBldmVyZXN0"
+    },
+    {
+      "group": "Curious Worm",
+      "victim": "i*t*r***t.com",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-13T20:53:46.961552+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/aSp0KnIqKip0LmNvbUBDdXJpb3VzIFdvcm0="
+    },
+    {
+      "group": "Curious Worm",
+      "victim": "t**a.com",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-13T20:53:27.907368+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/dCoqYS5jb21AQ3VyaW91cyBXb3Jt"
+    },
+    {
+      "group": "play",
+      "victim": "Frey Properties of Highland LLC",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-13T20:29:46.224571+00:00",
+      "domain": "www.frey-properties.com",
+      "url": "https://www.ransomware.live/id/RnJleSBQcm9wZXJ0aWVzIG9mIEhpZ2hsYW5kIExMQ0BwbGF5"
+    },
+    {
+      "group": "play",
+      "victim": "ARRB Group",
+      "country": "AU",
+      "sector": "Government & Defense",
+      "published": "2026-11-13T20:29:10.769450+00:00",
+      "domain": "www.arrbgroup.net",
+      "url": "https://www.ransomware.live/id/QVJSQiBHcm91cEBwbGF5"
+    },
     {
       "group": "Aoqin",
       "victim": "The Tidewater Inn",
@@ -11,6 +65,15 @@
       "url": "https://www.ransomware.live/id/VGhlIFRpZGV3YXRlciBJbm5AQW9xaW4="
     },
     {
+      "group": "incransom",
+      "victim": "Advantage Archives",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-13T20:14:47.003693+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QWR2YW50YWdlIEFyY2hpdmVzQGluY3JhbnNvbQ=="
+    },
+    {
       "group": "Wallstreet",
       "victim": "Walgreen Co.",
       "country": "US",
@@ -18,6 +81,24 @@
       "published": "2026-11-13T19:03:11.758241+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/V2FsZ3JlZW4gQ28uQFdhbGxzdHJlZXQ="
+    },
+    {
+      "group": "Panzer",
+      "victim": "RE/MAX Germany",
+      "country": "DE",
+      "sector": "Professional Services",
+      "published": "2026-11-13T21:51:51.251717+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UkUvTUFYIEdlcm1hbnlAUGFuemVy"
+    },
+    {
+      "group": "incransom",
+      "victim": "sportsmansguide.com",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-13T20:14:27.769657+00:00",
+      "domain": "sportsmansguide.com",
+      "url": "https://www.ransomware.live/id/c3BvcnRzbWFuc2d1aWRlLmNvbUBpbmNyYW5zb20="
     },
     {
       "group": "bravox",
@@ -819,87 +900,6 @@
       "published": "2026-11-10T07:09:08.851645+00:00",
       "domain": "southwestortho.com",
       "url": "https://www.ransomware.live/id/U291dGh3ZXN0IE9ydGhvcGVkaWMgJiBSZWNvbnN0cnVjdGl2ZSBTcGVjaWFsaXN0c0BpbnRlcmxvY2s="
-    },
-    {
-      "group": "interlock",
-      "victim": "Assiniboine Dental Group",
-      "country": "CA",
-      "sector": "Healthcare",
-      "published": "2026-11-10T07:07:31.141025+00:00",
-      "domain": "assiniboinedentalgroup.com",
-      "url": "https://www.ransomware.live/id/QXNzaW5pYm9pbmUgRGVudGFsIEdyb3VwQGludGVybG9jaw=="
-    },
-    {
-      "group": "interlock",
-      "victim": "Elmcrest Children's Center, Inc",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-10T07:06:58.563837+00:00",
-      "domain": "elmcrest.org",
-      "url": "https://www.ransomware.live/id/RWxtY3Jlc3QgQ2hpbGRyZW4ncyBDZW50ZXIsIEluY0BpbnRlcmxvY2s="
-    },
-    {
-      "group": "interlock",
-      "victim": "Conecuh Sausage Company Inc",
-      "country": "US",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-11-10T07:06:19.341357+00:00",
-      "domain": "conecuhsausage.com",
-      "url": "https://www.ransomware.live/id/Q29uZWN1aCBTYXVzYWdlIENvbXBhbnkgSW5jQGludGVybG9jaw=="
-    },
-    {
-      "group": "Vortex",
-      "victim": "CRESA",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-10T04:50:18.935641+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q1JFU0FAVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "ALEXION",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-10T04:49:46.187076+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QUxFWElPTkBWb3J0ZXg="
-    },
-    {
-      "group": "Vortex",
-      "victim": "PYRAMID HEALTHCARE",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-10T04:49:12.202032+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/UFlSQU1JRCBIRUFMVEhDQVJFQFZvcnRleA=="
-    },
-    {
-      "group": "incransom",
-      "victim": "raymondjames.com",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-11-12T10:04:47.038299+00:00",
-      "domain": "raymondjames.com",
-      "url": "https://www.ransomware.live/id/cmF5bW9uZGphbWVzLmNvbUBpbmNyYW5zb20="
-    },
-    {
-      "group": "incransom",
-      "victim": "gamechangerwm.com",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-12T10:05:07.680578+00:00",
-      "domain": "gamechangerwm.com",
-      "url": "https://www.ransomware.live/id/Z2FtZWNoYW5nZXJ3bS5jb21AaW5jcmFuc29t"
-    },
-    {
-      "group": "osiris",
-      "victim": "Herald Christian Health Center",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-11T08:15:49.722849+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SGVyYWxkIENocmlzdGlhbiBIZWFsdGggQ2VudGVyQG9zaXJpcw=="
     }
   ]
 }
