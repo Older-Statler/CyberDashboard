@@ -37,6 +37,17 @@
     <!-- Command center: KPIs + triage | ransomware globe | live ransomware feed -->
     <div class="ops-grid">
       <aside class="ops-col ops-left" aria-label="Summary and triage">
+        <!-- What's new since this browser's last visit (localStorage only).
+             renderSinceSummary in app.js keeps it hidden when there's nothing
+             new, on a first visit, or when storage is unavailable. -->
+        <section id="since-panel" class="since-panel" aria-labelledby="since-title" hidden>
+          <div class="since-head">
+            <h2><span id="since-title">Since your last visit</span> <span id="since-when" class="since-when"></span></h2>
+            <button type="button" id="since-mark-seen" class="since-mark">Mark all as seen</button>
+          </div>
+          <ul id="since-list" class="since-list"></ul>
+        </section>
+
         <section id="kpi-row" class="kpi-grid" aria-label="Summary">
           <div class="kpi-card">
             <div class="kpi-value" id="kpi-total-iocs">&mdash;</div>
@@ -151,9 +162,12 @@
       <section class="feed-section deck-panel" id="section-correlated" role="tabpanel">
         <div class="feed-header">
           <h2>Correlated / High-Confidence IOCs <span class="feed-status" id="status-correlated" title="Computed client-side from loaded feeds + enrichment sources">signal count &ge; 1</span></h2>
-          <div class="export-buttons">
-            <button class="export-btn" data-feed="correlated" data-format="csv" type="button">CSV</button>
-            <button class="export-btn" data-feed="correlated" data-format="json" type="button">JSON</button>
+          <div class="feed-header-controls">
+            <label class="news-toggle new-only-toggle" hidden title="IOCs with 2+ signals that are new since your last visit"><input type="checkbox" class="new-only" data-feed="correlated" /> New only <span class="new-only-count"></span></label>
+            <div class="export-buttons">
+              <button class="export-btn" data-feed="correlated" data-format="csv" type="button">CSV</button>
+              <button class="export-btn" data-feed="correlated" data-format="json" type="button">JSON</button>
+            </div>
           </div>
         </div>
         <p class="geo-meta">Ranked by total corroborating signals: raw multi-feed overlap, GreyNoise, AbuseIPDB, Spamhaus DROP, and InternetDB each contribute.</p>
@@ -166,6 +180,7 @@
           <h2>CISA Known Exploited Vulnerabilities <span class="feed-status" id="status-cisa_kev"></span> <span class="sparkline" data-feed="cisa_kev" title="30-day count trend"></span></h2>
           <div class="feed-header-controls">
             <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
+            <label class="news-toggle new-only-toggle" hidden title="Only rows new since your last visit"><input type="checkbox" class="new-only" data-feed="cisa_kev" /> New only <span class="new-only-count"></span></label>
             <div class="export-buttons">
               <button class="export-btn" data-feed="cisa_kev" data-format="csv" type="button">CSV</button>
               <button class="export-btn" data-feed="cisa_kev" data-format="json" type="button">JSON</button>
@@ -182,6 +197,7 @@
           <h2>Ransomware Activity <span class="feed-status" id="status-ransomware_victims"></span></h2>
           <div class="feed-header-controls">
             <input type="search" class="search-box" data-feed="ransomware_victims" placeholder="Search group, victim, sector, country&hellip;" />
+            <label class="news-toggle new-only-toggle" hidden title="Only rows new since your last visit"><input type="checkbox" class="new-only" data-feed="ransomware_victims" /> New only <span class="new-only-count"></span></label>
             <div class="export-buttons">
               <button class="export-btn" data-feed="ransomware_victims" data-format="csv" type="button">CSV</button>
               <button class="export-btn" data-feed="ransomware_victims" data-format="json" type="button">JSON</button>

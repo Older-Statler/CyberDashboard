@@ -163,6 +163,18 @@ A full-width, dark "ops center" layout:
   are unchanged.
 - **Keyboard-sortable tables** — column headers can be focused with Tab and sorted with
   Enter or Space.
+- **New since your last visit** — new CISA KEV entries, ransomware victims, correlated IOCs
+  (2+ signals) and UK news headlines get a green NEW badge. A summary at the top of the
+  command center ("Since your last visit (3 hr ago): 2 KEV · 14 victims · …") links to each
+  tab, and the KEV, Ransomware and Correlated tables get a "New only" filter, which export
+  respects. Items are matched by ID, not date, against what was on screen at the end of your
+  previous visit. A new visit starts when the page is opened or brought back into view
+  after more than 60 minutes without activity; reloads and auto-refresh don't reset it.
+  On a first visit nothing is marked new. "Mark all as seen" resets it, and open tabs stay
+  in sync. Stored only in this browser's `localStorage` (`ctd-seen`, `ctd-seen-active`,
+  about 50 KB); if storage is blocked or full the feature just doesn't appear. The bulk
+  URLhaus and Blocklist.de feeds aren't tracked, since they turn over too fast for "new"
+  to mean much.
 
 ## Repository structure
 

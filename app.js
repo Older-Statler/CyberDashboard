@@ -42,6 +42,15 @@
     watchlistText: "",
     watchlistMatches: [],
     watchlistMatchKeys: new Set(),
+    // "New since your last visit", see the section of that name below.
+    since: {
+      enabled: false, // false when localStorage is blocked/full: no badges, no summary
+      record: null, // validated contents of SEEN_KEY
+      baseline: null, // category -> Set of ids (or null = no baseline for it)
+      current: null, // category -> array of ids in the data on screen (or null)
+      newSets: { kev: new Set(), rw: new Set(), ioc: new Set(), news: new Set() },
+      newOnly: {}, // table ("cisa_kev" / "ransomware_victims" / "correlated") -> "new only" filter on
+    },
   };
 
   function $(id) {
@@ -270,6 +279,7 @@
     state.ukNews = ukNews;
 
     render();
+    sinceAfterLoad();
   }
 
   // ---------- Auto-refresh ----------
@@ -676,11 +686,21 @@
     state.correlated = correlated;
   }
 
+  // The correlated list as shown and exported: all of it, or just the new
+  // IOCs when the "new only" filter is on.
+  function correlatedRows() {
+    const list = state.correlated || [];
+    if (!isNewOnly("correlated")) return list;
+    const newSet = state.since.newSets.ioc;
+    return list.filter((c) => newSet.has(iocSeenKey(c)));
+  }
+
   function renderCorrelated() {
     const tbody = $("correlated-tbody");
     const emptyNote = $("correlated-empty");
     const table = $("table-correlated");
     const list = state.correlated || [];
+    syncNewOnlyToggle("correlated");
 
     if (!list.length) {
       table.querySelector("thead").innerHTML = "";
@@ -693,15 +713,17 @@
     table.querySelector("thead").innerHTML =
       "<tr><th>IOC</th><th>Feeds</th><th>Signals</th><th>Malware / Threat</th><th>Most Recent</th></tr>";
 
-    const rows = list.slice(0, 300);
+    const newSet = state.since.newSets.ioc;
+    const rows = correlatedRows().slice(0, 300);
     tbody.innerHTML = rows
       .map((c) => {
         const feedTags = c.feeds.map((f) => `<span class="tag feed-tag">${escapeHtml(FEED_LABELS[f] || f)}</span>`).join("");
         const signalBadge = `<span class="badge badge-info" title="${escapeHtml(c.signalBreakdown.join(", "))}">${c.signalCount} signal${c.signalCount === 1 ? "" : "s"}</span>`;
         const labels = c.labels.slice(0, 3).map((l) => escapeHtml(l)).join(", ");
         const recent = c.mostRecent ? fmtDate(new Date(c.mostRecent).toISOString()) : "&mdash;";
-        return `<tr class="correlated-row" ${iocAttrs(c.type, c.value)}>
-          <td>${iocButton(c)}<span class="mono">${escapeHtml(c.value)}</span></td>
+        const isNew = newSet.has(iocSeenKey(c));
+        return `<tr class="correlated-row${isNew ? " is-new" : ""}" ${iocAttrs(c.type, c.value)}>
+          <td>${iocButton(c)}<span class="mono">${escapeHtml(c.value)}</span>${isNew ? NEW_BADGE : ""}</td>
           <td>${feedTags || "&mdash;"}</td>
           <td>${signalBadge}</td>
           <td>${labels || "&mdash;"}</td>
@@ -719,6 +741,8 @@
     input.value = value;
     if (!state.tableState[feed]) state.tableState[feed] = { sortKey: null, sortDir: "asc", query: "" };
     state.tableState[feed].query = value;
+    // The match may not be a new row; don't let the "new only" filter hide it.
+    state.since.newOnly[feed] = false;
     renderFeed(feed);
     activateTab(section.id, true);
     section.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1460,7 +1484,7 @@
   }
 
   function exportCorrelated(format) {
-    const rows = state.correlated || [];
+    const rows = correlatedRows();
     if (!rows.length) return;
     const stamp = timestampForFilename();
     if (format === "json") {
@@ -1628,6 +1652,8 @@
     const items = info?.items || [];
     const emptyNote = $(`empty-${feed}`);
     const table = $(`table-${feed}`);
+    const def = FEED_DEFS[feed];
+    syncNewOnlyToggle(feed);
 
     if (!items.length) {
       table.querySelector("thead").innerHTML = "";
@@ -1677,10 +1703,15 @@
       });
     });
 
+    const newSet = def?.sinceCat ? state.since.newSets[def.sinceCat] : null;
+
     let filtered = items;
+    if (newSet && isNewOnly(feed)) {
+      filtered = filtered.filter((item) => newSet.has(def.sinceKey(item)));
+    }
     if (ts.query) {
       const q = ts.query.toLowerCase();
-      filtered = items.filter((item) => searchFn(item).toLowerCase().includes(q));
+      filtered = filtered.filter((item) => searchFn(item).toLowerCase().includes(q));
     }
 
     const sortCol = columns.find((c) => c.key === ts.sortKey);
@@ -1699,15 +1730,19 @@
     const MAX_ROWS = 500;
     const shown = filtered.slice(0, MAX_ROWS);
 
-    const rowKeyFn = FEED_DEFS[feed]?.rowKey;
+    const rowKeyFn = def?.rowKey;
     const matchKeys = state.watchlistMatchKeys;
+    const hasNew = newSet && newSet.size > 0;
 
     const tbody = table.querySelector("tbody");
     tbody.innerHTML = shown
       .map((item) => {
         const isMatch = rowKeyFn && matchKeys && matchKeys.has(`${feed}::${rowKeyFn(item)}`);
-        const cls = isMatch ? ' class="watchlist-match"' : "";
-        return `<tr${cls}>${columns.map((c) => `<td>${c.render(item)}</td>`).join("")}</tr>`;
+        const isNew = hasNew && newSet.has(def.sinceKey(item));
+        const classes = [isMatch ? "watchlist-match" : "", isNew ? "is-new" : ""].filter(Boolean).join(" ");
+        const cls = classes ? ` class="${classes}"` : "";
+        // The NEW badge goes at the end of the first cell.
+        return `<tr${cls}>${columns.map((c, i) => `<td>${c.render(item)}${isNew && i === 0 ? NEW_BADGE : ""}</td>`).join("")}</tr>`;
       })
       .join("");
 
@@ -1872,6 +1907,8 @@
       searchFn: (i) => `${i.cve_id || ""} ${i.vendor_project || ""} ${i.product || ""} ${i.vulnerability_name || ""}`,
       defaultSort: { key: "date_added", dir: "desc" },
       rowKey: (i) => i.cve_id,
+      sinceCat: "kev",
+      sinceKey: (i) => i.cve_id,
       csvHeaders: ["CVE ID", "Vendor", "Product", "Name", "Date Added", "Due Date", "Ransomware Use", "EPSS Score", "EPSS Percentile", "Description"],
       toCsvRow: (i) => {
         const e = epssFor(i.cve_id);
@@ -1947,6 +1984,8 @@
       searchFn: (i) => `${i.group || ""} ${i.victim || ""} ${i.sector || ""} ${i.country || ""} ${i.domain || ""}`,
       defaultSort: { key: "published", dir: "desc" },
       rowKey: (i) => i.url || i.victim,
+      sinceCat: "rw",
+      sinceKey: (i) => rwSeenKey(i),
       csvHeaders: ["Group", "Victim", "Sector", "Country", "Published", "Domain", "URL"],
       toCsvRow: (i) => [i.group, i.victim, i.sector, i.country, i.published, i.domain, i.url],
       // Not one of data/latest.json's feeds — sourced from its own file
@@ -1973,6 +2012,7 @@
     renderKpis();
     renderQuotaMeter();
     buildCorrelation();
+    computeSince();
     buildTriage();
     buildWatchlistMatches();
     renderCorrelated();
@@ -1986,6 +2026,7 @@
     renderUkNews();
     renderTabCounts();
     syncTabs();
+    renderSinceSummary();
     refreshIocDrawer();
   }
 
@@ -2128,13 +2169,16 @@
       `${shown.length} of ${all.length} headlines · ${sources.length} UK outlets · ` +
       `synced ${gen ? relativeTime(gen) : "unknown"}`;
 
+    const newSet = state.since.newSets.news;
     $("news-list").innerHTML = shown
       .map((i) => {
         const safeLink = /^https?:\/\//i.test(i.link || "") ? i.link : "#";
-        return `<li class="news-item">
+        const isNew = newSet.has(i.link);
+        return `<li class="news-item${isNew ? " is-new" : ""}">
           <div class="news-line">
             <span class="news-source">${escapeHtml(i.source)}</span>
             ${i.uk_focus ? `<span class="news-uk" title="Story mentions the UK">UK</span>` : ""}
+            ${isNew ? NEW_BADGE : ""}
             <time datetime="${escapeHtml(i.published)}" title="${escapeHtml(i.published)}">${escapeHtml(relativeTime(i.published))}</time>
           </div>
           <a class="news-title" href="${escapeHtml(safeLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(i.title)}</a>
@@ -2163,6 +2207,380 @@
         state.newsUkOnly = ukOnly.checked;
         renderUkNews();
       });
+  }
+
+  // ---------- "New since your last visit" ----------
+  //
+  // Items are tracked by identity, not by date: feeds backdate entries and
+  // KEV's date_added is only a day. Four categories: KEV (cve_id),
+  // ransomware victims (url, else group|victim), correlated IOCs with at
+  // least SEEN_IOC_MIN_SIGNALS signals (type|value) and UK news (link). The
+  // bulk feeds churn too much for "new" to mean anything, so they're left out.
+  //
+  // localStorage holds two keys:
+  //   SEEN_ACTIVE_KEY  last time the page was in use (ms since epoch)
+  //   SEEN_KEY         { v, baseline, baselineAt, baselineKind, pending, pendingAt }
+  // `baseline` is what an item is compared against for the whole visit: the
+  // ids on screen at the end of the previous visit. `pending` is re-captured
+  // after every full load of this visit (including auto-refresh), so it
+  // always holds the latest ids, and becomes the baseline when the next
+  // visit starts. A visit starts when the page is loaded, or the
+  // tab comes back into view, more than VISIT_GAP_MINUTES after it was last
+  // in use, so reloads and the 30-min auto-refresh keep the same baseline.
+  // Every id list is { kev, rw, ioc, news }, each an array of strings, or
+  // null when there's nothing to compare against for that category.
+
+  const SEEN_KEY = "ctd-seen";
+  const SEEN_ACTIVE_KEY = "ctd-seen-active";
+  const VISIT_GAP_MINUTES = 60;
+  const SEEN_IOC_MIN_SIGNALS = 2;
+  const SEEN_MAX_IDS = 20000; // per category; anything bigger is treated as corrupt
+  const SEEN_CATS = ["kev", "rw", "ioc", "news"];
+  const NEW_BADGE = ` <span class="badge badge-new" title="New since your last visit">NEW</span>`;
+
+  // Summary order, wording, and where each part jumps to.
+  const SINCE_PARTS = [
+    { cat: "kev", one: "KEV", many: "KEV", tab: "section-cisa_kev", table: "cisa_kev" },
+    { cat: "rw", one: "victim", many: "victims", tab: "section-ransomware_victims", table: "ransomware_victims" },
+    { cat: "ioc", one: "correlated IOC", many: "correlated IOCs", tab: "section-correlated", table: "correlated" },
+    { cat: "news", one: "headline", many: "headlines", tab: "section-uk_news", table: null },
+  ];
+
+  function rwSeenKey(v) {
+    return typeof v.url === "string" && v.url ? v.url : `${v.group || ""}|${v.victim || ""}`;
+  }
+
+  function iocSeenKey(c) {
+    return `${c.type}|${c.value}`;
+  }
+
+  // Distinct non-empty strings, or null when there are none (an empty or
+  // missing source carries the previous baseline forward rather than
+  // making every item in it look new next time).
+  function seenIdList(ids) {
+    const out = Array.from(new Set(ids.filter((x) => typeof x === "string" && x)));
+    // Same cap the reader enforces (parseSeenLists rejects longer lists), so a
+    // category that ever outgrows it can't silently disable the feature.
+    // Unreachable today (KEV, the largest, is ~1,800).
+    return out.length ? out.slice(0, SEEN_MAX_IDS) : null;
+  }
+
+  // undefined = malformed (the whole record is then ignored).
+  function parseSeenLists(raw) {
+    if (raw === null) return null;
+    if (!raw || typeof raw !== "object" || Array.isArray(raw)) return undefined;
+    const out = {};
+    for (const cat of SEEN_CATS) {
+      const list = raw[cat];
+      if (list === null || list === undefined) {
+        out[cat] = null;
+      } else if (Array.isArray(list) && list.length <= SEEN_MAX_IDS && list.every((x) => typeof x === "string")) {
+        out[cat] = list;
+      } else {
+        return undefined;
+      }
+    }
+    return out;
+  }
+
+  // Rejects times more than a day in the future too: beyond JS's date range
+  // (8.64e15 ms) toISOString() throws, and no real stored time is ahead of now.
+  function seenTime(x) {
+    return typeof x === "number" && Number.isFinite(x) && x > 0 && x <= Date.now() + 86400000 ? x : null;
+  }
+
+  // Anything unexpected reads as "no baseline", i.e. a first visit.
+  function readSeenRecord() {
+    let raw = null;
+    try {
+      raw = localStorage.getItem(SEEN_KEY);
+    } catch (e) {
+      return null;
+    }
+    if (!raw) return null;
+    let rec;
+    try {
+      rec = JSON.parse(raw);
+    } catch (e) {
+      return null;
+    }
+    if (!rec || typeof rec !== "object" || Array.isArray(rec) || rec.v !== 1) return null;
+    const baseline = parseSeenLists(rec.baseline);
+    const pending = parseSeenLists(rec.pending);
+    if (baseline === undefined || pending === undefined) return null;
+    return {
+      v: 1,
+      baseline,
+      baselineAt: seenTime(rec.baselineAt),
+      baselineKind: rec.baselineKind === "marked" ? "marked" : "visit",
+      pending,
+      pendingAt: seenTime(rec.pendingAt),
+    };
+  }
+
+  function writeSeenRecord(rec) {
+    try {
+      localStorage.setItem(SEEN_KEY, JSON.stringify(rec));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function readLastActive() {
+    try {
+      const raw = localStorage.getItem(SEEN_ACTIVE_KEY);
+      return raw ? seenTime(Number(raw)) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function touchActive() {
+    try {
+      localStorage.setItem(SEEN_ACTIVE_KEY, String(Date.now()));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function setSeenRecord(rec) {
+    const s = state.since;
+    s.record = rec;
+    s.baseline = null;
+    if (rec && rec.baseline) {
+      s.baseline = {};
+      for (const cat of SEEN_CATS) s.baseline[cat] = rec.baseline[cat] ? new Set(rec.baseline[cat]) : null;
+    }
+  }
+
+  // Storage blocked or full: drop the feature (and its record, so a stale
+  // half-written state can't come back later) and clear any badges.
+  function disableSince() {
+    const s = state.since;
+    s.enabled = false;
+    s.newOnly = {};
+    setSeenRecord(null);
+    try {
+      localStorage.removeItem(SEEN_KEY);
+    } catch (e) {
+      /* storage unavailable */
+    }
+    rerenderSince();
+  }
+
+  // The previous visit's capture becomes this visit's baseline.
+  function startVisit() {
+    const rec = readSeenRecord();
+    if (!rec) {
+      setSeenRecord(null); // first visit (or unreadable record): nothing is new
+      return;
+    }
+    const next = rec.pending
+      ? { ...rec, baseline: rec.pending, baselineAt: rec.pendingAt, baselineKind: "visit", pending: null, pendingAt: null }
+      : rec; // the last visit never finished loading; keep its baseline
+    if (next !== rec && !writeSeenRecord(next)) {
+      disableSince();
+      return;
+    }
+    setSeenRecord(next);
+  }
+
+  // A timestamp from the future (clock changed) counts as idle too, so a
+  // wrong clock can't hold one visit open indefinitely.
+  function isIdle(lastActive) {
+    const gap = Date.now() - (lastActive ?? 0);
+    return lastActive === null || gap > VISIT_GAP_MINUTES * 60000 || gap < -60000;
+  }
+
+  // Built once per render; rows then check membership in O(1).
+  function computeSince() {
+    const s = state.since;
+    s.newSets = { kev: new Set(), rw: new Set(), ioc: new Set(), news: new Set() };
+    if (!s.enabled) {
+      s.current = null;
+      return;
+    }
+    s.current = {
+      kev: seenIdList((state.snapshot.feeds?.cisa_kev?.items || []).map((v) => v.cve_id)),
+      rw: state.ransomwareVictims ? seenIdList((state.ransomwareVictims.victims || []).map(rwSeenKey)) : null,
+      ioc: seenIdList((state.correlated || []).filter((c) => c.signalCount >= SEEN_IOC_MIN_SIGNALS).map(iocSeenKey)),
+      news: state.ukNews ? seenIdList(ukNewsItems().map((i) => i.link)) : null,
+    };
+    if (!s.baseline) return;
+    for (const cat of SEEN_CATS) {
+      const base = s.baseline[cat];
+      const cur = s.current[cat];
+      if (base && cur) s.newSets[cat] = new Set(cur.filter((id) => !base.has(id)));
+    }
+  }
+
+  // Current ids per category, falling back to `fallback` where a source is
+  // empty or didn't load.
+  function currentSeenLists(fallback) {
+    const out = {};
+    for (const cat of SEEN_CATS) out[cat] = state.since.current?.[cat] || fallback?.[cat] || null;
+    return out;
+  }
+
+  // After each complete load: record activity, and capture the ids now on
+  // screen. The last capture of a visit becomes the next visit's baseline,
+  // so items first seen part-way through this visit aren't flagged again.
+  // The capture replaces the previous one rather than adding to it (feeds
+  // drop old items, so a running union would only grow); a source that is
+  // empty or failed this time keeps its previous ids.
+  function sinceAfterLoad() {
+    const s = state.since;
+    if (!s.enabled) return;
+    touchActive();
+    const rec = s.record;
+    const now = Date.now();
+    const next = rec
+      ? { ...rec, pending: currentSeenLists(rec.pending || rec.baseline), pendingAt: now }
+      : { v: 1, baseline: null, baselineAt: null, baselineKind: "visit", pending: currentSeenLists(null), pendingAt: now };
+    if (!writeSeenRecord(next)) {
+      disableSince();
+      return;
+    }
+    setSeenRecord(next);
+  }
+
+  function markAllSeen() {
+    const s = state.since;
+    if (!s.enabled) return;
+    const lists = currentSeenLists(s.record?.baseline);
+    const now = Date.now();
+    const next = { v: 1, baseline: lists, baselineAt: now, baselineKind: "marked", pending: lists, pendingAt: now };
+    if (!writeSeenRecord(next)) {
+      disableSince();
+      return;
+    }
+    setSeenRecord(next);
+    s.newOnly = {};
+    rerenderSince();
+  }
+
+  // Re-render just what shows "new" state (cheaper than a full render()).
+  function rerenderSince() {
+    if (!state.snapshot) return;
+    computeSince();
+    renderCorrelated();
+    renderFeed("cisa_kev");
+    renderFeed("ransomware_victims");
+    renderRansomwarePanels();
+    renderUkNews();
+    renderSinceSummary();
+  }
+
+  function isNewOnly(table) {
+    const part = SINCE_PARTS.find((p) => p.table === table);
+    return Boolean(part && state.since.newOnly[table] && state.since.newSets[part.cat].size > 0);
+  }
+
+  // The "new only" checkbox only shows while that table has new rows.
+  function syncNewOnlyToggle(table) {
+    const input = document.querySelector(`.new-only[data-feed="${table}"]`);
+    if (!input) return;
+    const part = SINCE_PARTS.find((p) => p.table === table);
+    const n = part ? state.since.newSets[part.cat].size : 0;
+    const label = input.closest(".new-only-toggle");
+    label.hidden = n === 0;
+    input.checked = isNewOnly(table);
+    const count = label.querySelector(".new-only-count");
+    if (count) count.textContent = n ? `(${n.toLocaleString()})` : "";
+  }
+
+  function renderSinceSummary() {
+    const panel = $("since-panel");
+    if (!panel) return;
+    const s = state.since;
+    const parts = SINCE_PARTS.filter((p) => s.newSets[p.cat].size > 0);
+    panel.hidden = !s.enabled || !s.baseline || !parts.length;
+    if (panel.hidden) return;
+
+    const at = s.record?.baselineAt;
+    $("since-title").textContent = s.record?.baselineKind === "marked" ? "Since you marked all as seen" : "Since your last visit";
+    // relativeTime() takes the number directly and returns "unknown" for a bad date, never throws.
+    $("since-when").textContent = at ? `(${relativeTime(at)})` : "";
+    $("since-list").innerHTML = parts
+      .map((p) => {
+        const n = s.newSets[p.cat].size;
+        return `<li><button type="button" class="since-jump link-btn" data-since-cat="${escapeHtml(p.cat)}"><span class="since-n">${n.toLocaleString()}</span> ${escapeHtml(n === 1 ? p.one : p.many)}</button></li>`;
+      })
+      .join("");
+  }
+
+  // Jump to a category's tab; for tables, switch on "new only" so the new
+  // rows are what's on screen.
+  function jumpToNew(cat) {
+    const part = SINCE_PARTS.find((p) => p.cat === cat);
+    const section = part && $(part.tab);
+    if (!section || section.hidden) return;
+    if (part.table) {
+      state.since.newOnly[part.table] = true;
+      if (part.table === "correlated") renderCorrelated();
+      else renderFeed(part.table);
+    }
+    activateTab(section.id, true);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    section.classList.add("flash-highlight");
+    setTimeout(() => section.classList.remove("flash-highlight"), 1500);
+  }
+
+  function initSince() {
+    // Blocked storage: the feature never switches on.
+    const lastActive = readLastActive();
+    if (!touchActive()) return;
+    state.since.enabled = true;
+    if (isIdle(lastActive)) startVisit();
+    else setSeenRecord(readSeenRecord());
+
+    // Hidden = stopped looking. Coming back after the gap starts a new
+    // visit; the auto-refresh that follows captures its ids.
+    document.addEventListener("visibilitychange", () => {
+      if (!state.since.enabled) return;
+      if (!document.hidden && isIdle(readLastActive())) {
+        startVisit();
+        if (state.since.enabled) rerenderSince();
+      }
+      touchActive();
+    });
+    window.addEventListener("pagehide", () => {
+      if (state.since.enabled) touchActive();
+    });
+    // Another tab started a visit or marked all as seen.
+    window.addEventListener("storage", (ev) => {
+      if (!state.since.enabled || (ev.key !== null && ev.key !== SEEN_KEY)) return;
+      setSeenRecord(readSeenRecord());
+      rerenderSince();
+    });
+
+    const panel = $("since-panel");
+    if (panel) {
+      panel.addEventListener("click", (ev) => {
+        const jump = ev.target.closest(".since-jump");
+        if (jump) {
+          jumpToNew(jump.getAttribute("data-since-cat"));
+          return;
+        }
+        if (ev.target.closest("#since-mark-seen")) {
+          markAllSeen();
+          // The panel (and the focused button) just hid; keep focus nearby.
+          const tab = document.querySelector('.deck-tab[aria-selected="true"]');
+          if (tab) tab.focus({ preventScroll: true });
+        }
+      });
+    }
+
+    document.addEventListener("change", (ev) => {
+      const input = ev.target.closest(".new-only[data-feed]");
+      if (!input) return;
+      const table = input.getAttribute("data-feed");
+      state.since.newOnly[table] = input.checked;
+      if (table === "correlated") renderCorrelated();
+      else renderFeed(table);
+    });
   }
 
   // ---------- Ransomware: last 72h (globe + side panels) ----------
@@ -2248,15 +2666,18 @@
 
     const freshCutoff = Date.now() - RW_FRESH_HOURS * 3600 * 1000;
     const rows = rw.victims.filter(({ v }) => !filter || (v.country || "").toUpperCase() === filter);
+    const newSet = state.since.newSets.rw;
     $("rw-feed").innerHTML = rows
       .map(({ v, t }) => {
         const code = (v.country || "").trim().toUpperCase();
         const chip = /^[A-Z]{2}$/.test(code)
           ? `<span class="cc-chip" title="${escapeHtml(countryName(code))}">${escapeHtml(code)}</span>`
           : `<span class="cc-chip cc-unknown" title="No country listed">??</span>`;
-        return `<li tabindex="0" data-q="${escapeHtml(v.victim || "")}" class="${t >= freshCutoff ? "is-fresh" : ""}">
+        const isNew = newSet.has(rwSeenKey(v));
+        const cls = [t >= freshCutoff ? "is-fresh" : "", isNew ? "is-new" : ""].filter(Boolean).join(" ");
+        return `<li tabindex="0" data-q="${escapeHtml(v.victim || "")}" class="${cls}">
           <span class="rw-victim" title="${escapeHtml(v.victim || "")}">${escapeHtml(v.victim || "Unknown victim")}</span>
-          <span class="rw-group">${escapeHtml(v.group || "unknown group")}</span>
+          <span class="rw-group">${escapeHtml(v.group || "unknown group")}${isNew ? NEW_BADGE : ""}</span>
           <span class="rw-meta">${chip}<span>${escapeHtml(relativeTime(new Date(t).toISOString()))}</span></span>
         </li>`;
       })
@@ -2512,6 +2933,7 @@
     wireExportButtons();
     initWatchlist();
     initIocDrawer();
+    initSince();
     loadData();
     initAutoRefresh();
   });

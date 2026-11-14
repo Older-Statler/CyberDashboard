@@ -41,6 +41,8 @@ Every step uses `continue-on-error: true`, and each script catches its own excep
 
 IOC detail drawer: `buildCorrelation` keeps every IOC (not just correlated ones) in `state.iocIndex`, keyed `type|value`, with a reference to each source item. Any element with `data-ioc-type` / `data-ioc-value` attributes opens the drawer through one delegated handler (`initIocDrawer`); use `iocButton(norm)` to add a trigger. `render()` ends with `refreshIocDrawer()` so an open drawer follows auto-refresh.
 
+New since last visit: `computeSince()` runs in `render()` after `buildCorrelation()` and marks items whose id isn't in the stored baseline (localStorage `ctd-seen`; `ctd-seen-active` holds the last-activity time). `sinceAfterLoad()` at the end of `loadData()` handles visit boundaries (more than 60 minutes idle) and captures ids. To track a new table, give its `FEED_DEFS` entry `sinceCat` and `sinceKey`; `renderTable` then adds the NEW badge and the "new only" filter. Correlated IOCs are only tracked at `SEEN_IOC_MIN_SIGNALS` (2) or more, to keep storage small.
+
 Layout: a full-width command center (KPIs and triage | ransomware globe | live 72h victim feed), then a tabbed "data deck" holding every table. Section ids such as `section-<feed>` and `geo-section` are what `scrollToMatch` and the tabs target, so keep them stable; `activateTab()` must run before scrolling to a section. The globe (`initGlobe` / `updateGlobe`) lazy-loads globe.gl, topojson-client and world-atlas from jsDelivr at pinned versions, and the page must keep working if that fails or WebGL is off. `render()` processes every IP in every feed, so per-IP lookups must stay cheap: an uncached Spamhaus DROP check once took over a minute of CPU.
 
 **Hard constraints (by design):**

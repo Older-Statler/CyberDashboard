@@ -499,6 +499,110 @@ code,
   margin-left: 6px;
 }
 
+/* ---------- New since your last visit ---------- */
+
+.since-panel {
+  position: relative;
+  padding: 10px 14px;
+  background: var(--ok-bg);
+  border: 1px solid rgba(45, 255, 161, 0.35);
+  border-left: 2px solid var(--ok);
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+}
+
+.since-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-bottom: 6px;
+}
+
+.since-head h2 {
+  margin: 0;
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ok);
+}
+
+.since-when {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-muted);
+}
+
+.since-mark {
+  background: transparent;
+  border: 1px solid rgba(45, 255, 161, 0.45);
+  color: var(--ok);
+  border-radius: 2px;
+  padding: 1px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.since-mark:hover,
+.since-mark:focus-visible {
+  background: rgba(45, 255, 161, 0.16);
+}
+
+.since-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 0;
+  font-size: 12.5px;
+}
+
+/* Trailing separator, so a wrapped line never starts with one. */
+.since-list li:not(:last-child)::after {
+  content: "\00b7";
+  color: var(--text-dim);
+  margin: 0 8px;
+}
+
+.since-n {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.badge-new {
+  background: var(--ok);
+  color: var(--bg);
+  border-color: var(--ok);
+  letter-spacing: 0.08em;
+}
+
+/* The news line is a flex row that already spaces its children. */
+.news-line .badge-new {
+  margin-left: 0;
+}
+
+.rw-group .badge-new {
+  font-size: 9.5px;
+}
+
+tr.is-new > td:first-child {
+  box-shadow: inset 2px 0 0 var(--ok);
+}
+
+.new-only-count {
+  font-family: var(--font-mono);
+  color: var(--ok);
+}
+
 /* ---------- Globe ---------- */
 
 .globe-stage {
