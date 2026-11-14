@@ -175,6 +175,16 @@ A full-width, dark "ops center" layout:
   about 50 KB); if storage is blocked or full the feature just doesn't appear. The bulk
   URLhaus and Blocklist.de feeds aren't tracked, since they turn over too fast for "new"
   to mean much.
+- **KEV vendor / product watchlist** — a "Vendors / products" list on the Watchlist tab (one
+  term per line, with suggestions from the current KEV vendors and a few common ones).
+  Matching is case-, accent- and whitespace-insensitive and whole-word, against vendor and
+  product together: "Exchange" matches "Exchange Server" and "Microsoft Windows" works, but
+  "SAP" doesn't match "WhatsApp". `Vendor / Product` (spaces around the slash) must match
+  both fields; `/ Exchange` matches the product only. Matching KEV rows are highlighted and
+  can be filtered with "Watched only" (export follows it). A "Your vendors in KEV" triage card
+  shows the 5 most recent matches, and the "new since" summary reads e.g. "2 KEV (1 watched)".
+  Stored only in this browser's `localStorage` (`threatDashboardKevVendors`), up to 200 terms
+  of up to 120 characters; a note under the list says how many lines were ignored.
 
 ## Repository structure
 

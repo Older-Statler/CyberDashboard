@@ -80,6 +80,11 @@
              (see renderTriage in app.js). Recent ransomware victims live in
              the right-hand column instead of a triage card. -->
         <section id="triage-panel" class="triage-panel" aria-label="Triage digest" hidden>
+          <!-- KEV entries matching the vendor/product watchlist (Watchlist tab). -->
+          <div class="triage-card triage-card-watch" hidden>
+            <h3>Your vendors in KEV <span class="triage-count" id="triage-vendors-count"></span></h3>
+            <ul id="triage-vendors"></ul>
+          </div>
           <div class="triage-card">
             <h3>Ransomware-tied KEV</h3>
             <ul id="triage-kev"></ul>
@@ -181,6 +186,7 @@
           <div class="feed-header-controls">
             <input type="search" class="search-box" data-feed="cisa_kev" placeholder="Search CVE, vendor, product&hellip;" />
             <label class="news-toggle new-only-toggle" hidden title="Only rows new since your last visit"><input type="checkbox" class="new-only" data-feed="cisa_kev" /> New only <span class="new-only-count"></span></label>
+            <label class="news-toggle watched-only-toggle" hidden title="Only rows matching your vendor / product watchlist"><input type="checkbox" class="watched-only" data-feed="cisa_kev" /> Watched only <span class="watched-only-count"></span></label>
             <div class="export-buttons">
               <button class="export-btn" data-feed="cisa_kev" data-format="csv" type="button">CSV</button>
               <button class="export-btn" data-feed="cisa_kev" data-format="json" type="button">JSON</button>
@@ -340,17 +346,42 @@
       <!-- Watchlist: per-browser only (localStorage), never transmitted. -->
       <section class="feed-section deck-panel" id="section-watchlist" role="tabpanel" aria-label="Watchlist">
         <div class="watchlist-panel">
-          <div class="watchlist-card">
-            <h3>Your Watchlist</h3>
-            <p class="watchlist-caption">
-              One IP, CIDR range, or domain per line. Stored only in this browser (<code>localStorage</code>) &mdash;
-              never sent anywhere, never shared with other visitors.
-            </p>
-            <textarea id="watchlist-input" class="watchlist-textarea" placeholder="203.0.113.0/24&#10;10.0.0.5&#10;example.com"></textarea>
+          <div class="watchlist-inputs">
+            <div class="watchlist-card">
+              <h3>Your Watchlist</h3>
+              <p class="watchlist-caption">
+                One IP, CIDR range, or domain per line. Stored only in this browser (<code>localStorage</code>) &mdash;
+                never sent anywhere, never shared with other visitors.
+              </p>
+              <textarea id="watchlist-input" class="watchlist-textarea" placeholder="203.0.113.0/24&#10;10.0.0.5&#10;example.com"></textarea>
+            </div>
+            <!-- KEV vendor/product watchlist: matched against CISA KEV's
+                 vendor_project / product (see the "KEV vendor watchlist"
+                 section in app.js). Same storage rules as the list above. -->
+            <div class="watchlist-card">
+              <h3><label for="vendor-watch-input">Vendors / products</label></h3>
+              <p class="watchlist-caption" id="vendor-watch-help">
+                One vendor or product per line, matched as whole words against CISA KEV, e.g. <code>Fortinet</code>,
+                <code>Exchange Server</code>, or <code>Ivanti / Connect Secure</code> to require both. Also stored only in this browser.
+              </p>
+              <textarea id="vendor-watch-input" class="watchlist-textarea watchlist-textarea-short" aria-describedby="vendor-watch-help" placeholder="Fortinet&#10;Citrix&#10;Exchange Server&#10;Ivanti / Connect Secure"></textarea>
+              <p class="watchlist-caption vendor-watch-skipped" id="vendor-watch-skipped" role="status" hidden></p>
+              <form class="vendor-add" id="vendor-add-form" hidden>
+                <input type="text" id="vendor-add-input" class="search-box vendor-add-input" list="vendor-suggestions" autocomplete="off" placeholder="Add a KEV vendor&hellip;" aria-label="Add a KEV vendor" />
+                <button type="submit" class="export-btn">ADD</button>
+                <datalist id="vendor-suggestions"></datalist>
+              </form>
+              <div class="vendor-chips" id="vendor-chips" aria-label="Most common KEV vendors"></div>
+            </div>
           </div>
           <div class="watchlist-matches-card" id="watchlist-matches-card" hidden>
             <h3>Watchlist matches</h3>
             <ul id="watchlist-matches-list"></ul>
+            <div class="watchlist-kev" id="watchlist-kev" hidden>
+              <h4>Known exploited vulnerabilities <span class="triage-count" id="watchlist-kev-count"></span></h4>
+              <ul id="watchlist-kev-list"></ul>
+              <p class="watchlist-kev-more" id="watchlist-kev-more" hidden></p>
+            </div>
           </div>
         </div>
       </section>

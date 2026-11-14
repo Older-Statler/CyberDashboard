@@ -42,6 +42,15 @@
     watchlistText: "",
     watchlistMatches: [],
     watchlistMatchKeys: new Set(),
+    // KEV vendor/product watchlist, see "KEV vendor / product watchlist".
+    kevWatch: {
+      text: "",
+      terms: null, // compiled matchers for `text`
+      matches: [], // matching KEV items, most recently added first
+      termFor: new Map(), // cve_id -> the watchlist term that matched it
+      watchedOnly: false, // KEV table "watched only" filter
+      ranked: [], // KEV vendors by entry count, for suggestions
+    },
     // "New since your last visit", see the section of that name below.
     since: {
       enabled: false, // false when localStorage is blocked/full: no badges, no summary
@@ -741,8 +750,9 @@
     input.value = value;
     if (!state.tableState[feed]) state.tableState[feed] = { sortKey: null, sortDir: "asc", query: "" };
     state.tableState[feed].query = value;
-    // The match may not be a new row; don't let the "new only" filter hide it.
+    // The match may not be a new or watched row; don't let those filters hide it.
     state.since.newOnly[feed] = false;
+    if (feed === "cisa_kev") state.kevWatch.watchedOnly = false;
     renderFeed(feed);
     activateTab(section.id, true);
     section.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1168,7 +1178,7 @@
     const ransomwareKev = kevItems
       .filter((v) => v.known_ransomware_campaign_use === "Known")
       .slice()
-      .sort((a, b) => (b.date_added || "").localeCompare(a.date_added || ""))
+      .sort((a, b) => String(b.date_added ?? "").localeCompare(String(a.date_added ?? "")))
       .slice(0, 5);
 
     const epssCriticalKev = kevItems
@@ -1193,10 +1203,22 @@
   function renderTriage() {
     const panel = $("triage-panel");
     const t = state.triage;
+    const watched = state.kevWatch.matches;
     const hasAny =
-      t.ransomwareKev.length || t.epssCriticalKev.length || t.maliciousIps.length || t.topCorrelated.length;
+      watched.length || t.ransomwareKev.length || t.epssCriticalKev.length || t.maliciousIps.length || t.topCorrelated.length;
     panel.hidden = !hasAny;
     if (!hasAny) return;
+
+    const vendorCard = $("triage-vendors").closest(".triage-card");
+    vendorCard.hidden = !watched.length;
+    $("triage-vendors-count").textContent = watched.length ? `(${watched.length.toLocaleString()})` : "";
+    $("triage-vendors").innerHTML = watched
+      .slice(0, 5)
+      .map(
+        (v) =>
+          `<li>${kevWatchLink(v)} — ${escapeHtml(v.vendor_project)} / ${escapeHtml(v.product)}<span class="triage-date">${escapeHtml(v.date_added)}</span></li>`
+      )
+      .join("");
 
     const kevCard = $("triage-kev").closest(".triage-card");
     kevCard.hidden = !t.ransomwareKev.length;
@@ -1393,13 +1415,11 @@
     const card = $("watchlist-matches-card");
     const list = $("watchlist-matches-list");
     const matches = state.watchlistMatches || [];
-    $("tabcount-watchlist").textContent = matches.length ? String(matches.length) : "";
-    if (!matches.length) {
-      card.hidden = true;
-      list.innerHTML = "";
-      return;
-    }
-    card.hidden = false;
+    const total = matches.length + state.kevWatch.matches.length;
+    $("tabcount-watchlist").textContent = total ? String(total) : "";
+    renderKevWatchList();
+    card.hidden = !total;
+    list.hidden = !matches.length;
     list.innerHTML = matches
       .slice(0, 30)
       .map(
@@ -1424,6 +1444,355 @@
         renderWatchlistPanel();
         Object.keys(FEED_DEFS).forEach(renderFeed);
       }, 300);
+    });
+  }
+
+  // ---------- KEV vendor / product watchlist ----------
+  //
+  // A second list on the Watchlist tab: vendor or product names, one per
+  // line, matched against CISA KEV's vendor_project / product. Stored as
+  // plain text (like the IOC list) under VENDOR_WATCH_KEY.
+  //
+  // Matching rules (both the term and the KEV fields go through
+  // normVendorText first: case, accents and runs of whitespace are ignored):
+  //   - A plain term matches whole words in "vendor product", so "Fortinet",
+  //     "Exchange" (-> "Exchange Server") and "Microsoft Windows" (vendor
+  //     Microsoft + product Windows...) all work. A "word" edge is anything
+  //     that isn't a letter or digit, so "SAP" doesn't match inside
+  //     "Sapido", but "Link" does match "D-Link" and ".NET" doesn't match
+  //     "ASP.NET".
+  //   - "Vendor / Product" (a slash with a space on at least one side, so
+  //     "TCP/IP" or "Erlang/OTP" stay single terms) requires the vendor part
+  //     in vendor_project and the product part in product. Leaving one side
+  //     empty ("/ Exchange") checks only the other field.
+  // Terms are regex-escaped and compiled once per edit (compileVendorWatch);
+  // per-row haystacks are cached per KEV item object.
+
+  const VENDOR_WATCH_KEY = "threatDashboardKevVendors";
+  const VENDOR_WATCH_MAX_TERMS = 200;
+  const VENDOR_WATCH_MAX_TERM_LEN = 120;
+  const VENDOR_WATCH_PANEL_MAX = 50;
+  const VENDOR_CHIPS = 8;
+  const VENDOR_PAIR_SEP = /\s+\/\s*|\s*\/\s+/;
+  const vendorHayCache = new WeakMap(); // KEV item -> { v, p, vp }
+
+  function loadVendorWatch() {
+    try {
+      const raw = localStorage.getItem(VENDOR_WATCH_KEY);
+      return typeof raw === "string" ? raw : "";
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function saveVendorWatch(text) {
+    try {
+      localStorage.setItem(VENDOR_WATCH_KEY, text);
+    } catch (e) {
+      /* ignore — the list just won't persist this session */
+    }
+  }
+
+  function normVendorText(s) {
+    return String(s ?? "")
+      .normalize("NFKD")
+      .replace(/[̀-ͯ]/g, "") // combining accents, left after NFKD
+      .toLowerCase()
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  // Lookbehind needs Safari / iOS 16.4+. Older engines throw a SyntaxError
+  // on the pattern, so detect once and use an equivalent that consumes the
+  // preceding character instead (fine, since we only ever call .test()).
+  const HAS_LOOKBEHIND = (() => {
+    try {
+      new RegExp("(?<!a)b", "u");
+      return true;
+    } catch (e) {
+      return false;
+    }
+  })();
+
+  // Whole-word matcher for an already-normalized term, or null if empty or
+  // it can't be compiled (callers then skip the term rather than match all).
+  function vendorWordRe(term) {
+    if (!term) return null;
+    const esc = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const before = HAS_LOOKBEHIND ? "(?<![\\p{L}\\p{N}])" : "(?:^|[^\\p{L}\\p{N}])";
+    try {
+      return new RegExp(`${before}${esc}(?![\\p{L}\\p{N}])`, "u");
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Returns { terms, skipped }: skipped counts lines that were too long,
+  // past the term cap, or couldn't be compiled, so the UI can say so.
+  function compileVendorWatch(text) {
+    const seen = new Set();
+    const terms = [];
+    let skipped = 0;
+    for (const rawLine of String(text || "").split("\n")) {
+      const line = rawLine.trim();
+      if (!line) continue;
+      if (line.length > VENDOR_WATCH_MAX_TERM_LEN || terms.length >= VENDOR_WATCH_MAX_TERMS) {
+        skipped++;
+        continue;
+      }
+      const parts = line.split(VENDOR_PAIR_SEP);
+      let term;
+      if (parts.length === 2) {
+        const v = normVendorText(parts[0]);
+        const p = normVendorText(parts[1]);
+        if (!v && !p) continue;
+        term = { label: line, key: `${v}/${p}`, v, p, vendor: vendorWordRe(v), product: vendorWordRe(p), any: null };
+        // A part that's present but didn't compile must not turn into "match anything".
+        if ((v && !term.vendor) || (p && !term.product)) {
+          skipped++;
+          continue;
+        }
+      } else {
+        const n = normVendorText(line);
+        if (!n) continue;
+        term = { label: line, key: n, n, vendor: null, product: null, any: vendorWordRe(n) };
+        if (!term.any) {
+          skipped++;
+          continue;
+        }
+      }
+      if (seen.has(term.key)) continue;
+      seen.add(term.key);
+      terms.push(term);
+    }
+    return { terms, skipped };
+  }
+
+  function vendorHay(item) {
+    let h = vendorHayCache.get(item);
+    if (!h) {
+      const v = normVendorText(item.vendor_project);
+      const p = normVendorText(item.product);
+      h = { v, p, vp: `${v} ${p}` };
+      vendorHayCache.set(item, h);
+    }
+    return h;
+  }
+
+  // The substring checks skip the (much slower) word-boundary regex for the
+  // vast majority of rows that can't match.
+  function vendorTermMatches(t, h) {
+    if (t.any) return h.vp.includes(t.n) && t.any.test(h.vp);
+    return (!t.vendor || (h.v.includes(t.v) && t.vendor.test(h.v))) && (!t.product || (h.p.includes(t.p) && t.product.test(h.p)));
+  }
+
+  function setVendorWatchText(text) {
+    const w = state.kevWatch;
+    if (text === w.text && w.terms) return;
+    w.text = text;
+    const { terms, skipped } = compileVendorWatch(text);
+    w.terms = terms;
+    w.skipped = skipped;
+    const note = $("vendor-watch-skipped");
+    if (note) {
+      note.hidden = !skipped;
+      note.textContent = skipped
+        ? `${skipped} line${skipped === 1 ? "" : "s"} ignored: the list is limited to ${VENDOR_WATCH_MAX_TERMS} terms of up to ${VENDOR_WATCH_MAX_TERM_LEN} characters each.`
+        : "";
+    }
+  }
+
+  // Matches sorted most recently added first; ids drive the row highlight.
+  function buildKevWatchMatches() {
+    const w = state.kevWatch;
+    const terms = w.terms || [];
+    const matches = [];
+    const termFor = new Map();
+    if (terms.length && state.snapshot) {
+      for (const item of state.snapshot.feeds?.cisa_kev?.items || []) {
+        if (!item || !item.cve_id) continue;
+        const h = vendorHay(item);
+        const t = terms.find((x) => vendorTermMatches(x, h));
+        if (!t) continue;
+        matches.push(item);
+        termFor.set(item.cve_id, t.label);
+      }
+      matches.sort(
+        (a, b) => String(b.date_added ?? "").localeCompare(String(a.date_added ?? "")) || String(b.cve_id).localeCompare(String(a.cve_id))
+      );
+    }
+    w.matches = matches;
+    w.termFor = termFor;
+  }
+
+  function isKevWatched(item) {
+    return state.kevWatch.termFor.has(item.cve_id);
+  }
+
+  function isWatchedOnly(table) {
+    return table === "cisa_kev" && state.kevWatch.watchedOnly && state.kevWatch.matches.length > 0;
+  }
+
+  // The "watched only" checkbox only shows while there are matches.
+  function syncWatchedOnlyToggle(table) {
+    const input = document.querySelector(`.watched-only[data-feed="${table}"]`);
+    if (!input) return;
+    const n = table === "cisa_kev" ? state.kevWatch.matches.length : 0;
+    const label = input.closest(".watched-only-toggle");
+    label.hidden = n === 0;
+    input.checked = isWatchedOnly(table);
+    const count = label.querySelector(".watched-only-count");
+    if (count) count.textContent = n ? `(${n.toLocaleString()})` : "";
+  }
+
+  function kevWatchLink(v) {
+    return `<a href="#section-cisa_kev" class="triage-link" data-feed="cisa_kev" data-q="${escapeHtml(v.cve_id)}">${escapeHtml(v.cve_id)}</a>`;
+  }
+
+  // The KEV half of the Watchlist matches card (renderWatchlistPanel owns
+  // the card and the tab count).
+  function renderKevWatchList() {
+    const block = $("watchlist-kev");
+    const matches = state.kevWatch.matches;
+    block.hidden = !matches.length;
+    if (!matches.length) {
+      $("watchlist-kev-list").innerHTML = "";
+      return;
+    }
+    $("watchlist-kev-count").textContent = `(${matches.length.toLocaleString()})`;
+    $("watchlist-kev-list").innerHTML = matches
+      .slice(0, VENDOR_WATCH_PANEL_MAX)
+      .map(
+        (v) =>
+          `<li>${kevWatchLink(v)} — ${escapeHtml(v.vendor_project)} / ${escapeHtml(v.product)}<span class="triage-date">${escapeHtml(v.date_added)}</span> <span class="watch-term" title="Matched watchlist term">${escapeHtml(state.kevWatch.termFor.get(v.cve_id))}</span></li>`
+      )
+      .join("");
+    const more = $("watchlist-kev-more");
+    more.hidden = matches.length <= VENDOR_WATCH_PANEL_MAX;
+    more.innerHTML = more.hidden
+      ? ""
+      : `Showing the ${VENDOR_WATCH_PANEL_MAX} most recent of ${matches.length.toLocaleString()}. <button type="button" class="link-btn" id="watchlist-kev-all">View all in the KEV table</button>`;
+  }
+
+  // KEV tab with only the watched rows on screen.
+  function showWatchedKev() {
+    const section = $("section-cisa_kev");
+    if (!section) return;
+    const input = document.querySelector('.search-box[data-feed="cisa_kev"]');
+    if (input) input.value = "";
+    if (state.tableState.cisa_kev) state.tableState.cisa_kev.query = "";
+    state.since.newOnly.cisa_kev = false;
+    state.kevWatch.watchedOnly = true;
+    renderFeed("cisa_kev");
+    activateTab(section.id, true);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    section.classList.add("flash-highlight");
+    setTimeout(() => section.classList.remove("flash-highlight"), 1500);
+  }
+
+  // Datalist of every KEV vendor (most entries first) plus a few one-click
+  // chips for the most common ones not already on the list.
+  function renderVendorSuggestions() {
+    const counts = new Map(); // normalized -> { name, n }
+    for (const item of state.snapshot?.feeds?.cisa_kev?.items || []) {
+      const name = String(item?.vendor_project ?? "").trim();
+      const key = normVendorText(name);
+      if (!key) continue;
+      const c = counts.get(key);
+      if (c) c.n++;
+      else counts.set(key, { name, n: 1 });
+    }
+    const ranked = Array.from(counts.values()).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
+    $("vendor-add-form").hidden = !ranked.length;
+    $("vendor-suggestions").innerHTML = ranked.map((c) => `<option value="${escapeHtml(c.name)}"></option>`).join("");
+    state.kevWatch.ranked = ranked;
+    renderVendorChips();
+  }
+
+  function renderVendorChips() {
+    const have = new Set((state.kevWatch.terms || []).map((t) => t.key));
+    const chips = (state.kevWatch.ranked || []).filter((c) => !have.has(normVendorText(c.name))).slice(0, VENDOR_CHIPS);
+    $("vendor-chips").innerHTML = chips.length
+      ? `<span class="vendor-chips-label">Common:</span>` +
+        chips
+          .map(
+            (c) =>
+              `<button type="button" class="vendor-chip" data-vendor="${escapeHtml(c.name)}" title="${c.n.toLocaleString()} KEV entries">+ ${escapeHtml(c.name)}</button>`
+          )
+          .join("")
+      : "";
+  }
+
+  // Everything that depends on the vendor list (cheaper than render()).
+  function rerenderKevWatch() {
+    if (!state.snapshot) return;
+    buildKevWatchMatches();
+    renderFeed("cisa_kev");
+    renderWatchlistPanel();
+    renderTriage();
+    renderSinceSummary();
+    renderVendorChips();
+  }
+
+  function initVendorWatch() {
+    const textarea = $("vendor-watch-input");
+    const text = loadVendorWatch();
+    textarea.value = text;
+    setVendorWatchText(text);
+
+    const commit = () => {
+      saveVendorWatch(textarea.value);
+      setVendorWatchText(textarea.value);
+      rerenderKevWatch();
+    };
+
+    let debounceTimer = null;
+    textarea.addEventListener("input", () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(commit, 300);
+    });
+
+    const addTerm = (term) => {
+      term = String(term || "").trim();
+      if (!term) return;
+      const key = normVendorText(term);
+      const lines = textarea.value.split("\n");
+      if (!lines.some((l) => normVendorText(l) === key)) {
+        const base = textarea.value.replace(/\s+$/, "");
+        textarea.value = base ? `${base}\n${term}` : term;
+      }
+      clearTimeout(debounceTimer);
+      commit();
+    };
+
+    $("vendor-add-form").addEventListener("submit", (ev) => {
+      ev.preventDefault();
+      const input = $("vendor-add-input");
+      addTerm(input.value);
+      input.value = "";
+    });
+    $("vendor-chips").addEventListener("click", (ev) => {
+      const chip = ev.target.closest(".vendor-chip");
+      if (chip) addTerm(chip.getAttribute("data-vendor"));
+    });
+
+    // CVE links and "view all" in the matches card.
+    $("watchlist-matches-card").addEventListener("click", (ev) => {
+      if (ev.target.closest("#watchlist-kev-all")) {
+        showWatchedKev();
+        return;
+      }
+      const a = ev.target.closest("a.triage-link[data-feed]");
+      if (!a) return;
+      ev.preventDefault();
+      scrollToMatch(a.getAttribute("data-feed"), a.getAttribute("data-q"));
+    });
+
+    document.addEventListener("change", (ev) => {
+      const input = ev.target.closest(".watched-only[data-feed]");
+      if (!input) return;
+      state.kevWatch.watchedOnly = input.checked;
+      renderFeed(input.getAttribute("data-feed"));
     });
   }
 
@@ -1654,6 +2023,7 @@
     const table = $(`table-${feed}`);
     const def = FEED_DEFS[feed];
     syncNewOnlyToggle(feed);
+    syncWatchedOnlyToggle(feed);
 
     if (!items.length) {
       table.querySelector("thead").innerHTML = "";
@@ -1709,6 +2079,9 @@
     if (newSet && isNewOnly(feed)) {
       filtered = filtered.filter((item) => newSet.has(def.sinceKey(item)));
     }
+    if (def?.isWatched && isWatchedOnly(feed)) {
+      filtered = filtered.filter(def.isWatched);
+    }
     if (ts.query) {
       const q = ts.query.toLowerCase();
       filtered = filtered.filter((item) => searchFn(item).toLowerCase().includes(q));
@@ -1737,7 +2110,8 @@
     const tbody = table.querySelector("tbody");
     tbody.innerHTML = shown
       .map((item) => {
-        const isMatch = rowKeyFn && matchKeys && matchKeys.has(`${feed}::${rowKeyFn(item)}`);
+        const isMatch =
+          (rowKeyFn && matchKeys && matchKeys.has(`${feed}::${rowKeyFn(item)}`)) || (def?.isWatched && def.isWatched(item));
         const isNew = hasNew && newSet.has(def.sinceKey(item));
         const classes = [isMatch ? "watchlist-match" : "", isNew ? "is-new" : ""].filter(Boolean).join(" ");
         const cls = classes ? ` class="${classes}"` : "";
@@ -1907,6 +2281,7 @@
       searchFn: (i) => `${i.cve_id || ""} ${i.vendor_project || ""} ${i.product || ""} ${i.vulnerability_name || ""}`,
       defaultSort: { key: "date_added", dir: "desc" },
       rowKey: (i) => i.cve_id,
+      isWatched: (i) => isKevWatched(i), // vendor/product watchlist
       sinceCat: "kev",
       sinceKey: (i) => i.cve_id,
       csvHeaders: ["CVE ID", "Vendor", "Product", "Name", "Date Added", "Due Date", "Ransomware Use", "EPSS Score", "EPSS Percentile", "Description"],
@@ -2015,6 +2390,8 @@
     computeSince();
     buildTriage();
     buildWatchlistMatches();
+    buildKevWatchMatches();
+    renderVendorSuggestions();
     renderCorrelated();
     renderTriage();
     renderWatchlistPanel();
@@ -2506,19 +2883,25 @@
     $("since-list").innerHTML = parts
       .map((p) => {
         const n = s.newSets[p.cat].size;
-        return `<li><button type="button" class="since-jump link-btn" data-since-cat="${escapeHtml(p.cat)}"><span class="since-n">${n.toLocaleString()}</span> ${escapeHtml(n === 1 ? p.one : p.many)}</button></li>`;
+        let watched = 0;
+        if (p.cat === "kev") for (const id of s.newSets.kev) if (state.kevWatch.termFor.has(id)) watched++;
+        const watchedBtn = watched
+          ? ` <button type="button" class="since-jump since-watched link-btn" data-since-cat="kev" data-since-watched="1" title="New KEV entries matching your vendor watchlist">(${watched.toLocaleString()} watched)</button>`
+          : "";
+        return `<li><button type="button" class="since-jump link-btn" data-since-cat="${escapeHtml(p.cat)}"><span class="since-n">${n.toLocaleString()}</span> ${escapeHtml(n === 1 ? p.one : p.many)}</button>${watchedBtn}</li>`;
       })
       .join("");
   }
 
   // Jump to a category's tab; for tables, switch on "new only" so the new
-  // rows are what's on screen.
-  function jumpToNew(cat) {
+  // rows are what's on screen (and, for "(n watched)", "watched only" too).
+  function jumpToNew(cat, watched) {
     const part = SINCE_PARTS.find((p) => p.cat === cat);
     const section = part && $(part.tab);
     if (!section || section.hidden) return;
     if (part.table) {
       state.since.newOnly[part.table] = true;
+      if (part.table === "cisa_kev") state.kevWatch.watchedOnly = Boolean(watched);
       if (part.table === "correlated") renderCorrelated();
       else renderFeed(part.table);
     }
@@ -2561,7 +2944,7 @@
       panel.addEventListener("click", (ev) => {
         const jump = ev.target.closest(".since-jump");
         if (jump) {
-          jumpToNew(jump.getAttribute("data-since-cat"));
+          jumpToNew(jump.getAttribute("data-since-cat"), jump.hasAttribute("data-since-watched"));
           return;
         }
         if (ev.target.closest("#since-mark-seen")) {
@@ -2932,6 +3315,13 @@
     wireSearchBoxes();
     wireExportButtons();
     initWatchlist();
+    // Optional feature: if it ever throws (e.g. an engine quirk with a stored
+    // term), the rest of the page must still load its data.
+    try {
+      initVendorWatch();
+    } catch (e) {
+      console.error("Vendor watchlist failed to initialize:", e);
+    }
     initIocDrawer();
     initSince();
     loadData();
