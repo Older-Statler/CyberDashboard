@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-14T13:11:41Z",
+  "generated_at": "2026-11-14T18:48:36Z",
   "victims": [
+    {
+      "group": "EndZone",
+      "victim": "Momentum Telecom",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-14T12:25:18.758864+00:00",
+      "domain": "abc4.com",
+      "url": "https://www.ransomware.live/id/TW9tZW50dW0gVGVsZWNvbUBFbmRab25l"
+    },
+    {
+      "group": "EndZone",
+      "victim": "Absolute Bail Bonds",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-11-14T12:24:57.389262+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QWJzb2x1dGUgQmFpbCBCb25kc0BFbmRab25l"
+    },
     {
       "group": "netrunner",
       "victim": "I****** A*****",
@@ -882,24 +900,6 @@
       "published": "2026-11-10T07:13:00.491056+00:00",
       "domain": "madisonhonda.com",
       "url": "https://www.ransomware.live/id/TWFkaXNvbiBIb25kYUBpbnRlcmxvY2s="
-    },
-    {
-      "group": "interlock",
-      "victim": "Custom Floors Unlimited",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-10T07:12:27.967752+00:00",
-      "domain": "customfloorsunlimited.com",
-      "url": "https://www.ransomware.live/id/Q3VzdG9tIEZsb29ycyBVbmxpbWl0ZWRAaW50ZXJsb2Nr"
-    },
-    {
-      "group": "interlock",
-      "victim": "Meadows Valley School District",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-11-10T07:11:55.473973+00:00",
-      "domain": "mvsd11.org",
-      "url": "https://www.ransomware.live/id/TWVhZG93cyBWYWxsZXkgU2Nob29sIERpc3RyaWN0QGludGVybG9jaw=="
     }
   ]
 }
