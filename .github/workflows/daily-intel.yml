@@ -60,6 +60,13 @@ jobs:
         run: python scripts/build_enrichment_views.py
         continue-on-error: true
 
+      # Daily victim counts per group / country / sector, last 90 days.
+      # Usually one request (the current month); spaced 65s apart when it
+      # needs more, for ransomware.live's 1 request/minute limit.
+      - name: Fetch ransomware.live trend counts
+        run: python scripts/fetch_ransomware_trends.py
+        continue-on-error: true
+
       - name: Append today's trend counts
         run: python scripts/append_trend.py
         continue-on-error: true
@@ -72,6 +79,9 @@ jobs:
                   data/epss.json data/internetdb.json data/abuseipdb.json \
                   data/internetdb_view.json data/abuseipdb_view.json \
                   data/spamhaus_drop.json
+          # Not in the repo until its first successful fetch, and a missing
+          # path would make `git add` fail the whole commit.
+          if [ -f data/ransomware_trends.json ]; then git add data/ransomware_trends.json; fi
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

@@ -2146,3 +2146,357 @@ html.is-framed body > :not(.framed-note) {
 .framed-note a {
   color: var(--accent);
 }
+
+/* ---------- Ransomware trends (Ransomware tab, above the table) ---------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.rw-trends {
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+  padding: 12px 14px 14px;
+  margin-bottom: 14px;
+  min-width: 0;
+}
+
+.rwt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+}
+
+.rwt-head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rwt-head .panel-sub {
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: normal;
+}
+
+.rwt-windows {
+  display: flex;
+  gap: 4px;
+}
+
+.rwt-windows .export-btn[aria-pressed="true"] {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.rwt-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.rwt-summary {
+  margin: 8px 0 6px;
+  font-size: 13px;
+}
+
+.rwt-figure {
+  margin: 0;
+}
+
+.rwt-chart {
+  padding-left: 3.5ch;
+}
+
+.rwt-plot {
+  position: relative;
+  height: 150px;
+  border-bottom: 1px solid var(--border-strong);
+  touch-action: pan-y;
+}
+
+.rwt-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.rwt-bar {
+  fill: rgba(0, 229, 255, 0.55);
+}
+
+.rwt-avg {
+  fill: none;
+  stroke: var(--accent-2);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.rwt-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.rwt-window {
+  fill: rgba(0, 229, 255, 0.06);
+}
+
+.rwt-hover {
+  fill: rgba(216, 243, 255, 0.14);
+  pointer-events: none;
+}
+
+.rwt-ylab {
+  position: absolute;
+  left: -3.5ch;
+  width: 3ch;
+  transform: translateY(-50%);
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  pointer-events: none;
+}
+
+.rwt-xlabs {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: 3px;
+}
+
+.rwt-tip {
+  position: absolute;
+  top: -6px;
+  transform: translateY(-100%);
+  white-space: nowrap;
+  pointer-events: none;
+  background: var(--bg-card-solid);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.rwt-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.rwt-li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.rwt-key {
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+}
+
+.rwt-key-bar {
+  background: rgba(0, 229, 255, 0.55);
+}
+
+.rwt-key-line {
+  height: 2px;
+  background: var(--accent-2);
+}
+
+.rwt-key-win {
+  background: rgba(0, 229, 255, 0.12);
+  border: 1px solid var(--border);
+}
+
+.rwt-details {
+  margin: 8px 0 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.rwt-details summary {
+  cursor: pointer;
+}
+
+.rwt-table-wrap {
+  max-height: 260px;
+  overflow: auto;
+  margin-top: 6px;
+}
+
+.rwt-table {
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.rwt-table th,
+.rwt-table td {
+  padding: 2px 12px 2px 0;
+  text-align: left;
+}
+
+.rwt-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.rwt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px 18px;
+  margin-top: 12px;
+}
+
+.rwt-card {
+  min-width: 0;
+}
+
+.rwt-card h4 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.rwt-vs,
+.rwt-vs-fixed {
+  font-family: var(--font-mono);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-dim);
+}
+
+.rwt-row {
+  display: grid;
+  grid-template-columns: minmax(0, 15ch) 1fr 4ch 5ch;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.rwt-row.is-link {
+  cursor: pointer;
+}
+
+.rwt-row.is-link:hover .bar-label,
+.rwt-row.is-link:focus-visible .bar-label {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.rwt-delta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* More victims is the bad direction here. */
+.rwt-delta.up {
+  color: var(--danger);
+}
+
+.rwt-delta.down {
+  color: var(--ok);
+}
+
+.rwt-delta.flat {
+  color: var(--text-dim);
+}
+
+.rwt-empty,
+.rwt-foot {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.rwt-rising {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rwt-rising li {
+  display: grid;
+  grid-template-columns: 7ch minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.rwt-kind {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.rwt-rname {
+  font-family: var(--font-mono);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rwt-rvs {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .rw-trends {
+    padding: 10px;
+  }
+  .rwt-grid {
+    grid-template-columns: 1fr;
+  }
+  .rwt-row {
+    grid-template-columns: minmax(0, 13ch) 1fr 4ch 5ch;
+  }
+}
