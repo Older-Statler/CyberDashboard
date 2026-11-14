@@ -185,6 +185,38 @@ A full-width, dark "ops center" layout:
   shows the 5 most recent matches, and the "new since" summary reads e.g. "2 KEV (1 watched)".
   Stored only in this browser's `localStorage` (`threatDashboardKevVendors`), up to 200 terms
   of up to 120 characters; a note under the list says how many lines were ignored.
+- **Shareable links** — the current view is kept in the URL fragment, so a copied link opens
+  the same view for someone else. "Copy link" buttons sit beside the data-deck tabs and in
+  the IOC drawer. The fragment carries:
+
+  | Key | Meaning |
+  |---|---|
+  | `tab=` | data-deck tab: `cisa_kev`, `ransomware_victims`, `uk_news`, `threatfox`, `urlhaus`, `malwarebazaar`, `otx`, `blocklistde`, `geo`, `watchlist` (Correlated is the default and is left out) |
+  | `q=` | that tab's search text (up to 200 characters) |
+  | `sort=<column>:<asc\|desc>` | that table's sort, left out when it's the default |
+  | `uk=1` | UK News "UK stories only" |
+  | `ioc=<ip\|domain\|hash>:<value>` | open the IOC drawer on that IOC |
+  | `cc=XX` | ransomware country filter |
+
+  For example `#tab=cisa_kev&q=fortinet&sort=date_added:asc` or `#ioc=ip:1.2.3.4`. It uses
+  the fragment rather than a query string because the fragment is never sent to the server
+  or in the Referer, so IOCs in links stay out of logs. Per-browser state (watchlists, "New
+  only", "Watched only", the "new since" baseline) never goes into a link, and opening a link
+  with a search or IOC turns those filters off so it shows the same rows for everyone. As you
+  work, the address bar tracks only the tab, sort, "UK only" and country filter, without adding
+  Back-button history. Search text and the open IOC are left out of it, so internal IPs or
+  client domains typed into a search don't end up in browser history or history sync. They
+  go into a link only when you click "Copy link". The drawer's "Copy link" shares just that
+  IOC (`#ioc=…`), nothing else from your view. Pasting a new fragment applies it without a
+  reload, and a link never changes your saved tab. Fragments are treated as untrusted:
+  unknown keys, bad values, duplicates and anything over the length caps are ignored, a
+  search containing invisible or control characters (zero-width spaces, bidi overrides) is
+  dropped, and an IOC that is no longer in the data is dropped instead of opening the
+  drawer. A table whose search or filters hide every row says so ("No rows match … (0 of N)").
+- **Not frameable** — the page refuses to run inside another site's iframe and shows an
+  "Open it directly" link instead, so a hostile page can't frame it, steer its view through
+  the fragment and overlay it (clickjacking). GitHub Pages can't send a `frame-ancestors`
+  header, so a small script in `index.html`'s `<head>` does this.
 
 ## Repository structure
 

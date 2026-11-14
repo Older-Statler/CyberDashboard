@@ -9,6 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Refuse to run inside another site's frame (clickjacking: a hostile page
+    // could frame the dashboard, steer its view through the URL fragment and
+    // overlay it). GitHub Pages can't send a frame-ancestors header, and a
+    // <meta> CSP can't set it, so do it here, before the body renders.
+    try {
+      if (window.top !== window.self) document.documentElement.classList.add("is-framed");
+    } catch (e) {
+      document.documentElement.classList.add("is-framed");
+    }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -147,19 +158,28 @@
     <!-- Data deck: every feed table, one tab at a time. Section ids are what
          app.js targets (scrollToMatch, renderTable), so keep them stable. -->
     <section class="deck panel" aria-label="Feed data">
-      <nav class="deck-tabs" role="tablist" aria-label="Feeds">
-        <button type="button" role="tab" class="deck-tab" data-tab="section-correlated">Correlated <span class="tab-count" id="tabcount-correlated"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-cisa_kev">CISA KEV <span class="tab-count" id="tabcount-cisa_kev"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-ransomware_victims">Ransomware <span class="tab-count" id="tabcount-ransomware_victims"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-uk_news">UK News <span class="tab-count" id="tabcount-uk_news"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-threatfox">ThreatFox <span class="tab-count" id="tabcount-threatfox"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-urlhaus">URLhaus <span class="tab-count" id="tabcount-urlhaus"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-malwarebazaar">MalwareBazaar <span class="tab-count" id="tabcount-malwarebazaar"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-otx">OTX <span class="tab-count" id="tabcount-otx"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-blocklistde">Blocklist.de <span class="tab-count" id="tabcount-blocklistde"></span></button>
-        <button type="button" role="tab" class="deck-tab" data-tab="geo-section">Source geography</button>
-        <button type="button" role="tab" class="deck-tab" data-tab="section-watchlist">Watchlist <span class="tab-count tab-count-hit" id="tabcount-watchlist"></span></button>
-      </nav>
+      <!-- Tabs plus "Copy link": the view (tab, search, sort, country filter)
+           is mirrored into the URL fragment, see "Shareable links" in app.js. -->
+      <div class="deck-bar">
+        <nav class="deck-tabs" role="tablist" aria-label="Feeds">
+          <button type="button" role="tab" class="deck-tab" data-tab="section-correlated">Correlated <span class="tab-count" id="tabcount-correlated"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-cisa_kev">CISA KEV <span class="tab-count" id="tabcount-cisa_kev"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-ransomware_victims">Ransomware <span class="tab-count" id="tabcount-ransomware_victims"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-uk_news">UK News <span class="tab-count" id="tabcount-uk_news"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-threatfox">ThreatFox <span class="tab-count" id="tabcount-threatfox"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-urlhaus">URLhaus <span class="tab-count" id="tabcount-urlhaus"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-malwarebazaar">MalwareBazaar <span class="tab-count" id="tabcount-malwarebazaar"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-otx">OTX <span class="tab-count" id="tabcount-otx"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-blocklistde">Blocklist.de <span class="tab-count" id="tabcount-blocklistde"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="geo-section">Source geography</button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-watchlist">Watchlist <span class="tab-count tab-count-hit" id="tabcount-watchlist"></span></button>
+        </nav>
+        <div class="share-link deck-share">
+          <span class="copy-status" id="deck-copy-status" role="status"></span>
+          <input type="text" class="copy-fallback" id="deck-copy-fallback" readonly aria-label="Link to this view" hidden />
+          <button type="button" class="copy-link-btn" id="deck-copy-link" title="Copy a link to this view: tab, search, sort and country filter. The address bar leaves searches out; this link has them. Your watchlists and &quot;new&quot; markers aren't included.">Copy link</button>
+        </div>
+      </div>
 
       <!-- Cross-feed / cross-source correlation: an IOC's "signal count" combines
            raw multi-feed overlap with enrichment corroboration (GreyNoise,
@@ -409,7 +429,15 @@
         <p class="drawer-kicker" id="ioc-drawer-type">IOC</p>
         <h2 class="drawer-title" id="ioc-drawer-title"></h2>
       </div>
-      <button type="button" class="drawer-close" id="ioc-drawer-close" aria-label="Close IOC details">&times;</button>
+      <div class="drawer-actions">
+        <button type="button" class="copy-link-btn" id="drawer-copy-link" title="Copy a link that opens this IOC (nothing else from your view)">Copy link</button>
+        <button type="button" class="drawer-close" id="ioc-drawer-close" aria-label="Close IOC details">&times;</button>
+      </div>
+      <!-- Copy confirmation / manual-copy box; app.js hides the row when it's empty. -->
+      <div class="drawer-share" id="drawer-copy-row" hidden>
+        <span class="copy-status" id="drawer-copy-status" role="status"></span>
+        <input type="text" class="copy-fallback" id="drawer-copy-fallback" readonly aria-label="Link to this IOC" hidden />
+      </div>
     </div>
     <div class="drawer-body" id="ioc-drawer-body"></div>
   </div>

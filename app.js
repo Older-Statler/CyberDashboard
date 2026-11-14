@@ -35,7 +35,9 @@
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
     correlated: [],
     iocIndex: new Map(), // "type|value" -> correlation entries (with source item), see buildCorrelation
-    drawer: null, // { type, value, trigger, triggerSelector } while the IOC drawer is open
+    drawer: null, // { type, value, trigger, scope, fromLink } while the IOC drawer is open
+    hashPendingIoc: null, // { type, value } from the URL fragment, opened once the data is complete
+    dataComplete: false, // latest.json and the auxiliary files have loaded at least once
     triage: { ransomwareKev: [], epssCriticalKev: [], maliciousIps: [], topCorrelated: [] },
     rw: null, // ransomware victims in the last RW_WINDOW_HOURS, see computeRansomwareWindow
     rwCountry: null, // country code selected on the globe / bars, filters the live feed
@@ -273,6 +275,7 @@
     // second render() below just fills them in.
     if (!auxReady) {
       render();
+      applyInitialHash();
       $("last-updated").textContent += " · loading enrichment…";
     }
 
@@ -288,7 +291,11 @@
     state.ukNews = ukNews;
 
     render();
+    applyInitialHash(); // no-op after the first load
     sinceAfterLoad();
+    // A linked IOC may only be known from the enrichment files, so it waits for them.
+    state.dataComplete = true;
+    openPendingHashIoc();
   }
 
   // ---------- Auto-refresh ----------
@@ -1038,12 +1045,13 @@
     document.body.classList.toggle("drawer-open", on);
   }
 
-  function openIocDrawer(type, value, trigger) {
+  // fromLink: opened from the URL fragment, so there's no trigger to return focus to.
+  function openIocDrawer(type, value, trigger, fromLink = false) {
     const drawer = $("ioc-drawer");
     if (!drawer || !type || !value) return;
     // A correlated row isn't focusable itself; return focus to its button.
     const focusEl = trigger && (trigger.matches("button, a") ? trigger : trigger.querySelector("button"));
-    state.drawer = { type, value, trigger: focusEl || null, scope: trigger?.closest("[id]")?.id || null };
+    state.drawer = { type, value, trigger: focusEl || null, scope: trigger?.closest("[id]")?.id || null, fromLink };
     try {
       renderIocDrawer();
     } catch (e) {
@@ -1054,10 +1062,12 @@
       return;
     }
     $("ioc-drawer-body").scrollTop = 0;
+    resetCopyUi("drawer");
     drawer.hidden = false;
     $("ioc-drawer-backdrop").hidden = false;
     setBackgroundInert(true);
     $("ioc-drawer-close").focus();
+    scheduleHashSync();
   }
 
   function closeIocDrawer(restoreFocus = true) {
@@ -1067,7 +1077,13 @@
     $("ioc-drawer").hidden = true;
     $("ioc-drawer-backdrop").hidden = true;
     setBackgroundInert(false);
+    scheduleHashSync();
     if (!restoreFocus) return;
+    if (d.fromLink) {
+      // Nothing on the page opened it; land on the active tab instead of <body>.
+      document.querySelector('.deck-tab[aria-selected="true"]')?.focus({ preventScroll: true });
+      return;
+    }
     let target = d.trigger && d.trigger.isConnected ? d.trigger : null;
     if (!target && d.scope && window.CSS?.escape) {
       // The trigger was re-rendered (auto-refresh); find its replacement.
@@ -1102,7 +1118,7 @@
   }
 
   function drawerFocusables() {
-    return Array.from($("ioc-drawer").querySelectorAll("button, a[href]")).filter((el) => !el.disabled && el.offsetParent !== null);
+    return Array.from($("ioc-drawer").querySelectorAll("button, a[href], input")).filter((el) => !el.disabled && el.offsetParent !== null);
   }
 
   function initIocDrawer() {
@@ -2024,6 +2040,7 @@
     const def = FEED_DEFS[feed];
     syncNewOnlyToggle(feed);
     syncWatchedOnlyToggle(feed);
+    scheduleHashSync(); // search / sort may have changed
 
     if (!items.length) {
       table.querySelector("thead").innerHTML = "";
@@ -2119,6 +2136,19 @@
         return `<tr${cls}>${columns.map((c, i) => `<td>${c.render(item)}${isNew && i === 0 ? NEW_BADGE : ""}</td>`).join("")}</tr>`;
       })
       .join("");
+
+    // Say so when the search or filters hide everything, so an empty-looking
+    // table can't be mistaken for an empty feed (e.g. a link whose search
+    // term is invisible).
+    if (!filtered.length) {
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.colSpan = columns.length;
+      td.className = "empty-note";
+      td.textContent = `No rows match the current search or filters (0 of ${items.length.toLocaleString()}). Clear the search box or untick the filters to see them.`;
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+    }
 
     if (filtered.length > MAX_ROWS) {
       const tr = document.createElement("tr");
@@ -2449,6 +2479,7 @@
       b.tabIndex = on ? 0 : -1;
     });
     document.querySelectorAll(".deck-panel").forEach((p) => p.classList.toggle("is-active", p.id === btn.dataset.tab));
+    scheduleHashSync();
   }
 
   function initTabs() {
@@ -2458,7 +2489,9 @@
     } catch (e) {
       /* localStorage unavailable */
     }
-    state.preferredTab = saved || DEFAULT_TAB;
+    // A shared link's tab wins over the saved one (applied in full after the
+    // first render; set here too so the saved tab doesn't flash first).
+    state.preferredTab = initialHashTab() || saved || DEFAULT_TAB;
 
     const buttons = tabButtons();
     buttons.forEach((b) => {
@@ -2505,6 +2538,407 @@
     $("tabcount-correlated").textContent = n ? compactNumber(n) : "";
   }
 
+  // ---------- Shareable links (URL fragment) ----------
+  //
+  // The view is mirrored into the fragment so a link opens the same thing
+  // for someone else. The fragment is never sent to the server or put in a
+  // Referer, so IOCs in links don't end up in logs. Format, `&`-separated
+  // key=value pairs (percent-encoded; ":" "/" "@" "," left readable):
+  //
+  //   tab=<name>        data-deck tab: correlated (default, omitted), cisa_kev,
+  //                     ransomware_victims, uk_news, threatfox, urlhaus,
+  //                     malwarebazaar, otx, blocklistde, geo, watchlist
+  //   q=<text>          that tab's search box (feed tables and uk_news)
+  //   sort=<key>:<dir>  that tab's sort column (a column key) and asc|desc;
+  //                     omitted when it's the table's default sort
+  //   uk=1              uk_news only: "UK stories only"
+  //   ioc=<type>:<v>    open IOC drawer; type is ip, domain or hash
+  //   cc=<XX>           ransomware country filter (two letters)
+  //
+  // e.g. #tab=cisa_kev&q=fortinet&sort=date_added:asc  or  #ioc=ip:1.2.3.4
+  // A bare legacy anchor like #section-cisa_kev is read as its tab.
+  //
+  // Per-browser state (watchlists, "New only", "Watched only", the "new
+  // since" baseline) is deliberately left out. The fragment is untrusted
+  // input: every value is checked against an allow-list or pattern, length
+  // capped, and anything unknown, malformed, oversized or repeated is
+  // dropped. Values only ever reach the page via input .value, textContent
+  // or the existing escaped render paths. Updates use replaceState, so the
+  // Back button isn't filled with every keystroke.
+
+  const HASH_MAX_LEN = 4096; // whole fragment; anything longer is ignored outright
+  const HASH_Q_MAX = 200;
+  const HASH_IOC_MAX = 500;
+  const HASH_SYNC_MS = 300;
+  const HASH_KEYS = new Set(["tab", "q", "sort", "uk", "ioc", "cc"]);
+  const HASH_TABS = new Map([
+    ["correlated", "section-correlated"],
+    ["cisa_kev", "section-cisa_kev"],
+    ["ransomware_victims", "section-ransomware_victims"],
+    ["uk_news", "section-uk_news"],
+    ["threatfox", "section-threatfox"],
+    ["urlhaus", "section-urlhaus"],
+    ["malwarebazaar", "section-malwarebazaar"],
+    ["otx", "section-otx"],
+    ["blocklistde", "section-blocklistde"],
+    ["geo", "geo-section"],
+    ["watchlist", "section-watchlist"],
+  ]);
+  const HASH_TAB_NAMES = new Map(Array.from(HASH_TABS, ([name, id]) => [id, name]));
+  const HASH_IOC_TYPES = new Set(["ip", "domain", "hash"]); // what the drawer supports
+
+  // ready: the initial fragment has been applied, so syncing may overwrite it.
+  const hashSync = { ready: false, timer: null };
+
+  function hashTableFor(tabName) {
+    return tabName && Object.prototype.hasOwnProperty.call(FEED_DEFS, tabName) ? tabName : null;
+  }
+
+  function searchBoxFor(feed) {
+    return document.querySelector(`.search-box[data-feed="${CSS.escape(feed)}"]`);
+  }
+
+  // Raw fragment -> Map of decoded values for known keys. A pair that fails
+  // to decode is skipped; a key given more than once is dropped entirely.
+  function readHashPairs(raw) {
+    const out = new Map();
+    let s = String(raw || "");
+    if (s.startsWith("#")) s = s.slice(1);
+    if (!s || s.length > HASH_MAX_LEN) return out;
+    if (!s.includes("=")) {
+      // Legacy anchor, e.g. "#section-cisa_kev".
+      const name = HASH_TAB_NAMES.get(s);
+      if (name) out.set("tab", name);
+      return out;
+    }
+    const dupes = new Set();
+    for (const part of s.split("&")) {
+      const eq = part.indexOf("=");
+      if (eq <= 0) continue;
+      let key, value;
+      try {
+        key = decodeURIComponent(part.slice(0, eq).replace(/\+/g, " "));
+        value = decodeURIComponent(part.slice(eq + 1).replace(/\+/g, " "));
+      } catch (e) {
+        continue; // malformed percent-encoding
+      }
+      if (!HASH_KEYS.has(key)) continue;
+      if (out.has(key)) dupes.add(key);
+      else out.set(key, value);
+    }
+    for (const key of dupes) out.delete(key);
+    return out;
+  }
+
+  // Validated IOC, or null.
+  function parseHashIoc(raw) {
+    if (!raw || raw.length > HASH_IOC_MAX + 10) return null;
+    const i = raw.indexOf(":");
+    if (i <= 0) return null;
+    const type = raw.slice(0, i);
+    const value = raw.slice(i + 1);
+    if (!HASH_IOC_TYPES.has(type) || !value || value.length > HASH_IOC_MAX) return null;
+    if (/[\s\p{Cc}\p{Cf}]/u.test(value)) return null; // whitespace, control and invisible format chars
+    const norm = normalizeIocValue(value, type);
+    return norm && norm.type === type ? norm : null;
+  }
+
+  // Fragment -> validated view state. Never throws on any input string.
+  function parseHashState(raw) {
+    const p = readHashPairs(raw);
+    const h = { tab: null, q: null, sort: null, uk: false, ioc: null, cc: null, any: false };
+
+    const tab = p.get("tab");
+    if (tab && HASH_TABS.has(tab)) h.tab = tab;
+
+    const table = hashTableFor(h.tab);
+    const searchable = (table && searchBoxFor(table)) || h.tab === "uk_news";
+    // Drop a search containing control or invisible format characters
+    // (zero-width space, bidi overrides): a link could otherwise fill the
+    // search box with something that looks empty, or reads as another term,
+    // and silently hide every row.
+    const q = (p.get("q") || "").trim();
+    if (searchable && q && q.length <= HASH_Q_MAX && !/[\p{Cc}\p{Cf}]/u.test(q)) h.q = q;
+
+    const sort = /^([a-z_]{1,40}):(asc|desc)$/.exec(p.get("sort") || "");
+    if (table && sort && FEED_DEFS[table].columns.some((c) => c.key === sort[1])) h.sort = { key: sort[1], dir: sort[2] };
+
+    if (h.tab === "uk_news" && p.get("uk") === "1") h.uk = true;
+
+    h.ioc = parseHashIoc(p.get("ioc"));
+
+    const cc = p.get("cc");
+    if (cc && /^[A-Za-z]{2}$/.test(cc)) h.cc = cc.toUpperCase();
+
+    h.any = Boolean(h.tab || h.q || h.sort || h.uk || h.ioc || h.cc);
+    return h;
+  }
+
+  // Used by initTabs, before any data: the linked tab, or null.
+  function initialHashTab() {
+    try {
+      const h = parseHashState(location.hash);
+      return h.any ? HASH_TABS.get(h.tab || "correlated") : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Apply everything except the IOC (callers handle that, since it may have
+  // to wait for the enrichment files). A link describes the whole view, so
+  // what it leaves out goes back to the default.
+  function applyHashState(h) {
+    const tabName = h.tab || "correlated";
+    state.preferredTab = HASH_TABS.get(tabName); // not saved: following a link isn't choosing a tab
+
+    const table = hashTableFor(tabName);
+    if (table) {
+      const def = FEED_DEFS[table];
+      if (!state.tableState[table]) state.tableState[table] = { sortKey: def.defaultSort.key, sortDir: def.defaultSort.dir, query: "" };
+      const ts = state.tableState[table];
+      const input = searchBoxFor(table);
+      if (input) {
+        input.value = h.q || "";
+        ts.query = input.value; // read back: the input strips line breaks
+      }
+      ts.sortKey = h.sort ? h.sort.key : def.defaultSort.key;
+      ts.sortDir = h.sort ? h.sort.dir : def.defaultSort.dir;
+      // Per-browser filters could hide what the link points at.
+      if (h.q || h.ioc) {
+        state.since.newOnly[table] = false;
+        if (table === "cisa_kev") state.kevWatch.watchedOnly = false;
+      }
+      renderFeed(table);
+    } else if (tabName === "uk_news") {
+      const search = $("news-search");
+      const ukOnly = $("news-uk-only");
+      if (search) {
+        search.value = h.q || "";
+        state.newsQuery = search.value;
+      }
+      if (ukOnly) ukOnly.checked = h.uk;
+      state.newsUkOnly = h.uk;
+      renderUkNews();
+    }
+
+    if ((h.cc || null) !== state.rwCountry) setRwCountry(h.cc);
+    syncTabs();
+  }
+
+  // Once, after the first render() of the page.
+  function applyInitialHash() {
+    if (hashSync.ready) return;
+    hashSync.ready = true;
+    try {
+      const h = parseHashState(location.hash);
+      if (h.any) {
+        applyHashState(h);
+        state.hashPendingIoc = h.ioc;
+      }
+    } catch (e) {
+      console.error("Couldn't apply the link's view state:", e);
+    }
+    scheduleHashSync();
+  }
+
+  // Open the linked IOC once the data is complete, if the page knows it.
+  function openPendingHashIoc() {
+    const p = state.hashPendingIoc;
+    if (!p || !state.dataComplete) return;
+    state.hashPendingIoc = null;
+    try {
+      const d = state.drawer;
+      if (d && d.type === p.type && d.value === p.value) return;
+      if (d) closeIocDrawer(false);
+      if (iocKnown(p.type, p.value)) openIocDrawer(p.type, p.value, null, true);
+    } catch (e) {
+      console.error("Couldn't open the linked IOC:", e);
+    }
+    scheduleHashSync();
+  }
+
+  function onHashChange() {
+    // Before the first render, applyInitialHash will read the new fragment.
+    if (!hashSync.ready) return;
+    try {
+      const h = parseHashState(location.hash);
+      applyHashState(h);
+      state.hashPendingIoc = h.ioc;
+      if (!h.ioc && state.drawer) closeIocDrawer();
+      openPendingHashIoc();
+    } catch (e) {
+      console.error("Couldn't apply the link's view state:", e);
+    }
+    scheduleHashSync();
+  }
+
+  // Readable percent-encoding: only what would break parsing is escaped.
+  function encodeHashValue(v) {
+    return encodeURIComponent(v).replace(/%3A/gi, ":").replace(/%2F/gi, "/").replace(/%40/gi, "@").replace(/%2C/gi, ",");
+  }
+
+  // Current view -> fragment string without "#", or "" for the default view.
+  // mode:
+  //   "live" (default) what the address bar shows as you work. Search text
+  //                    and the open IOC are left out: they'd otherwise be
+  //                    written to browser history (and history sync) on
+  //                    every keystroke, and analysts paste internal IPs and
+  //                    client domains into searches.
+  //   "view"           everything, for the deck's "Copy link" button.
+  //   "ioc"            only the open IOC, for the drawer's "Copy link".
+  function buildHash(mode = "live") {
+    if (mode === "ioc") {
+      const d = state.drawer;
+      return d ? `ioc=${encodeHashValue(`${d.type}:${d.value}`)}` : "";
+    }
+    const full = mode === "view";
+    const pairs = [];
+    const tabName = HASH_TAB_NAMES.get(state.preferredTab) || null;
+    if (tabName && tabName !== "correlated") pairs.push(["tab", tabName]);
+
+    const table = hashTableFor(tabName);
+    if (table) {
+      const ts = state.tableState[table];
+      const def = FEED_DEFS[table].defaultSort;
+      if (full && ts?.query) pairs.push(["q", ts.query.slice(0, HASH_Q_MAX)]);
+      if (ts?.sortKey && (ts.sortKey !== def.key || ts.sortDir !== def.dir)) pairs.push(["sort", `${ts.sortKey}:${ts.sortDir}`]);
+    } else if (tabName === "uk_news") {
+      if (full && state.newsQuery) pairs.push(["q", state.newsQuery.slice(0, HASH_Q_MAX)]);
+      if (state.newsUkOnly) pairs.push(["uk", "1"]);
+    }
+
+    const ioc = full && (state.drawer || state.hashPendingIoc);
+    if (ioc) pairs.push(["ioc", `${ioc.type}:${ioc.value}`]);
+    if (state.rwCountry) pairs.push(["cc", state.rwCountry]);
+
+    return pairs.map(([k, v]) => `${k}=${encodeHashValue(v)}`).join("&");
+  }
+
+  function shareUrl(mode) {
+    const frag = buildHash(mode);
+    return location.href.split("#")[0] + (frag ? `#${frag}` : "");
+  }
+
+  function writeHashNow() {
+    clearTimeout(hashSync.timer);
+    hashSync.timer = null;
+    if (!hashSync.ready) return;
+    try {
+      const frag = buildHash();
+      const hasHash = location.href.includes("#");
+      if (frag ? location.hash === `#${frag}` : !hasHash) return;
+      const base = location.pathname + location.search;
+      history.replaceState(history.state, "", frag ? `${base}#${frag}` : base);
+    } catch (e) {
+      /* history API unavailable (sandboxed frame etc.): the URL just won't track */
+    }
+  }
+
+  // Called from anything that changes shareable state; cheap, so callers
+  // don't need to check whether anything actually changed.
+  function scheduleHashSync() {
+    if (!hashSync.ready) return;
+    clearTimeout(hashSync.timer);
+    hashSync.timer = setTimeout(writeHashNow, HASH_SYNC_MS);
+  }
+
+  // ---- "Copy link" buttons ----
+
+  const COPY_UI = {
+    deck: { btn: "deck-copy-link", status: "deck-copy-status", fallback: "deck-copy-fallback" },
+    drawer: { btn: "drawer-copy-link", status: "drawer-copy-status", fallback: "drawer-copy-fallback", row: "drawer-copy-row" },
+  };
+  const copyTimers = {};
+
+  // The drawer keeps its status and fallback in a row of their own, shown only when in use.
+  function syncCopyRow(which) {
+    const ui = COPY_UI[which];
+    const row = ui.row && $(ui.row);
+    if (row) row.hidden = !$(ui.status)?.textContent && $(ui.fallback)?.hidden !== false;
+  }
+
+  function resetCopyUi(which) {
+    const ui = COPY_UI[which];
+    clearTimeout(copyTimers[which]);
+    const status = $(ui.status);
+    const fallback = $(ui.fallback);
+    if (status) status.textContent = "";
+    if (fallback) {
+      fallback.hidden = true;
+      fallback.value = "";
+    }
+    syncCopyRow(which);
+  }
+
+  async function writeClipboard(text) {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (e) {
+      /* denied, or not a secure context */
+    }
+    return false;
+  }
+
+  async function copyLink(which) {
+    const ui = COPY_UI[which];
+    const status = $(ui.status);
+    const fallback = $(ui.fallback);
+    writeHashNow();
+    // The address bar leaves out search text and the IOC (see buildHash);
+    // the copied link has them. The drawer's button shares only its IOC.
+    const url = shareUrl(which === "drawer" ? "ioc" : "view");
+    resetCopyUi(which);
+    let ok = await writeClipboard(url);
+    if (!ok && fallback) {
+      // Show the link selected so it can be copied by hand.
+      fallback.value = url;
+      fallback.hidden = false;
+      syncCopyRow(which);
+      fallback.focus();
+      fallback.select();
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+    }
+    if (status) status.textContent = ok ? "Copied" : "Copy the selected link";
+    syncCopyRow(which);
+    if (ok) {
+      copyTimers[which] = setTimeout(() => {
+        if (status) status.textContent = "";
+        syncCopyRow(which);
+      }, 2000);
+    }
+  }
+
+  function initShareLinks() {
+    // Coalesce bursts (e.g. a script rewriting the fragment in a loop) into
+    // one apply per frame; the handler reads location.hash itself.
+    let hashFrame = 0;
+    window.addEventListener("hashchange", () => {
+      if (hashFrame) return;
+      hashFrame = requestAnimationFrame(() => {
+        hashFrame = 0;
+        onHashChange();
+      });
+    });
+    window.addEventListener("pagehide", writeHashNow);
+    for (const which of Object.keys(COPY_UI)) {
+      const btn = $(COPY_UI[which].btn);
+      if (btn) btn.addEventListener("click", () => copyLink(which));
+      const fallback = $(COPY_UI[which].fallback);
+      if (fallback)
+        fallback.addEventListener("blur", () => {
+          fallback.hidden = true;
+          syncCopyRow(which);
+        });
+    }
+  }
+
   // ---------- UK cyber security news (last 48h) ----------
 
   const NEWS_WINDOW_HOURS = 48;
@@ -2522,6 +2956,7 @@
   function renderUkNews() {
     const section = $("section-uk_news");
     if (!section) return;
+    scheduleHashSync(); // search / "UK only" may have changed
     // No data file yet: keep the tab hidden rather than show an empty panel.
     section.hidden = !state.ukNews;
     if (!state.ukNews) return;
@@ -2565,7 +3000,9 @@
       .join("");
     const empty = $("news-empty");
     empty.hidden = shown.length > 0;
-    empty.textContent = all.length ? "No headlines match the current filter." : `No headlines in the last ${NEWS_WINDOW_HOURS} hours.`;
+    empty.textContent = all.length
+      ? `None of the ${all.length} headlines match the current search or filter. Clear the search box to see them.`
+      : `No headlines in the last ${NEWS_WINDOW_HOURS} hours.`;
 
     const count = $("tabcount-uk_news");
     if (count) count.textContent = all.length ? String(all.length) : "";
@@ -3087,6 +3524,7 @@
   function setRwCountry(code) {
     state.rwCountry = code || null;
     renderRansomwarePanels();
+    scheduleHashSync();
     const c = code && globeState.centroids?.[code];
     if (globeState.globe && c) {
       globeState.globe.controls().autoRotate = false;
@@ -3260,6 +3698,12 @@
         controls.autoRotate = !reduced && !state.rwCountry;
       });
       globe.pointOfView({ lat: 28, lng: -40, altitude: 2.3 });
+      // A country filter set before the globe loaded (e.g. from a shared link).
+      const picked = state.rwCountry && centroids[state.rwCountry];
+      if (Array.isArray(picked)) {
+        controls.autoRotate = false;
+        globe.pointOfView({ lat: picked[0], lng: picked[1], altitude: 1.7 });
+      }
 
       new ResizeObserver(() => {
         if (container.clientWidth && container.clientHeight) {
@@ -3307,6 +3751,21 @@
   // ---------- Init ----------
 
   document.addEventListener("DOMContentLoaded", () => {
+    // Framed by another site (see the script in index.html's <head>): don't
+    // load or wire anything, just offer to open the dashboard directly.
+    if (document.documentElement.classList.contains("is-framed")) {
+      const note = document.createElement("p");
+      note.className = "framed-note";
+      note.append("This dashboard can't be used inside another site. ");
+      const a = document.createElement("a");
+      a.href = location.href.split("#")[0];
+      a.target = "_top";
+      a.rel = "noopener noreferrer";
+      a.textContent = "Open it directly";
+      note.append(a, ".");
+      document.body.prepend(note);
+      return;
+    }
     startClock();
     initTabs();
     initRansomwarePanels();
@@ -3323,6 +3782,11 @@
       console.error("Vendor watchlist failed to initialize:", e);
     }
     initIocDrawer();
+    try {
+      initShareLinks();
+    } catch (e) {
+      console.error("Shareable links failed to initialize:", e);
+    }
     initSince();
     loadData();
     initAutoRefresh();

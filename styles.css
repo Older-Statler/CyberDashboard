@@ -868,11 +868,19 @@ tr.is-new > td:first-child {
   padding: 0;
 }
 
+/* Tabs (scroll sideways when they don't fit) + the "Copy link" control. */
+.deck-bar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
 .deck-tabs {
   display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
   gap: 2px;
   overflow-x: auto;
-  border-bottom: 1px solid var(--border);
   padding: 0 8px;
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) transparent;
@@ -1029,6 +1037,98 @@ tr.is-new > td:first-child {
   color: var(--accent);
   border-color: var(--accent);
   box-shadow: var(--glow);
+}
+
+/* ---------- Shareable links ("Copy link") ---------- */
+
+.copy-link-btn {
+  flex: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 2px;
+  padding: 6px 11px;
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.copy-link-btn:hover,
+.copy-link-btn:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.copy-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ok);
+  white-space: nowrap;
+}
+
+.copy-status:empty {
+  display: none;
+}
+
+/* Shown, with the link selected, when the clipboard can't be written. */
+.copy-fallback {
+  min-width: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.copy-fallback:focus {
+  outline: none;
+  box-shadow: var(--glow);
+}
+
+.deck-share {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px 0 8px;
+}
+
+.deck-share .copy-fallback {
+  width: 240px;
+}
+
+.drawer-actions {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.drawer-actions .copy-link-btn {
+  height: 32px;
+}
+
+.drawer-share {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.drawer-share[hidden] {
+  display: none;
+}
+
+.drawer-share .copy-fallback {
+  flex: 1 1 auto;
+  width: 100%;
 }
 
 /* ---------- Tables ---------- */
@@ -1723,14 +1823,16 @@ body.drawer-open {
 
 .drawer-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px 12px;
   padding: 14px 16px 12px;
   border-bottom: 1px solid var(--border);
 }
 
 .drawer-heading {
+  flex: 1 1 0;
   min-width: 0;
 }
 
@@ -1999,6 +2101,22 @@ body.drawer-open {
     width: 100%;
     border-left: none;
   }
+  /* "Copy link" drops below the tab strip so the tabs keep the full width. */
+  .deck-bar {
+    flex-wrap: wrap;
+  }
+  .deck-share {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 6px 12px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .deck-share .copy-fallback {
+    order: 3;
+    flex: 1 1 100%;
+    width: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2014,4 +2132,17 @@ body.drawer-open {
 /* Shown when vendor watchlist lines are ignored (term cap / length / compile). */
 .vendor-watch-skipped {
   color: var(--warning);
+}
+
+/* Framed by another site (clickjacking guard in index.html): hide the
+   dashboard and show only the "open it directly" note app.js adds. */
+html.is-framed body > :not(.framed-note) {
+  display: none !important;
+}
+.framed-note {
+  margin: 2rem 16px;
+  color: var(--text);
+}
+.framed-note a {
+  color: var(--accent);
 }
