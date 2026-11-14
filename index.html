@@ -171,6 +171,7 @@
           <button type="button" role="tab" class="deck-tab" data-tab="section-malwarebazaar">MalwareBazaar <span class="tab-count" id="tabcount-malwarebazaar"></span></button>
           <button type="button" role="tab" class="deck-tab" data-tab="section-otx">OTX <span class="tab-count" id="tabcount-otx"></span></button>
           <button type="button" role="tab" class="deck-tab" data-tab="section-blocklistde">Blocklist.de <span class="tab-count" id="tabcount-blocklistde"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-epss_movers">EPSS movers <span class="tab-count" id="tabcount-epss_movers"></span></button>
           <button type="button" role="tab" class="deck-tab" data-tab="geo-section">Source geography</button>
           <button type="button" role="tab" class="deck-tab" data-tab="section-watchlist">Watchlist <span class="tab-count tab-count-hit" id="tabcount-watchlist"></span></button>
         </nav>
@@ -366,6 +367,37 @@
         </div>
         <div class="table-wrap"><table id="table-blocklistde"><thead></thead><tbody></tbody></table></div>
         <p class="empty-note" id="empty-blocklistde" hidden>No data yet.</p>
+      </section>
+
+      <!-- EPSS movers (data/epss_movers.json, daily). renderEpssMoversMeta keeps
+           this hidden, along with its tab, until that file loads. -->
+      <section class="feed-section deck-panel" id="section-epss_movers" role="tabpanel" hidden>
+        <div class="feed-header">
+          <h2>EPSS Movers <span class="feed-status" id="status-epss_movers"></span></h2>
+          <div class="feed-header-controls">
+            <input type="search" class="search-box" data-feed="epss_movers" placeholder="Search CVE&hellip;" />
+            <div class="export-buttons">
+              <button class="export-btn" data-feed="epss_movers" data-format="csv" type="button">CSV</button>
+              <button class="export-btn" data-feed="epss_movers" data-format="json" type="button">JSON</button>
+            </div>
+          </div>
+        </div>
+        <p class="geo-meta" id="epss-movers-meta"></p>
+        <p class="geo-meta">Biggest rises in exploitation probability. A CVE climbing fast here can be worth patching before it reaches KEV.</p>
+        <div class="table-wrap"><table id="table-epss_movers"><thead></thead><tbody></tbody></table></div>
+        <p class="empty-note" id="empty-epss_movers" hidden>No data yet.</p>
+
+        <div class="feed-header epss-top-header">
+          <h2>Highest EPSS, not in KEV</h2>
+          <div class="feed-header-controls">
+            <div class="export-buttons">
+              <button class="export-btn" data-feed="epss_top" data-format="csv" type="button">CSV</button>
+              <button class="export-btn" data-feed="epss_top" data-format="json" type="button">JSON</button>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrap"><table id="table-epss_top"><thead></thead><tbody></tbody></table></div>
+        <p class="empty-note" id="empty-epss_top" hidden>No data yet.</p>
       </section>
 
       <!-- Geo/ASN of attack-source IPs. renderGeo sets `hidden` on this section

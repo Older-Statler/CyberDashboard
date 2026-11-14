@@ -32,6 +32,9 @@
     ransomwareTrends: null,
     rwTrendDays: 30, // Ransomware tab trends window, one of RWT_WINDOWS
     ukNews: null,
+    epssMovers: null, // data/epss_movers.json, see "EPSS movers"
+    torExits: null,
+    torSet: new Set(), // Tor exit IPs, rebuilt once per data load (looked up for every IP)
     newsQuery: "",
     newsUkOnly: false,
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
@@ -251,6 +254,8 @@
       fetchJsonBestEffort("data/ransomware_victims.json"),
       fetchJsonBestEffort("data/uk_news.json"),
       fetchJsonBestEffort("data/ransomware_trends.json"),
+      fetchJsonBestEffort("data/epss_movers.json"),
+      fetchJsonBestEffort("data/tor_exits.json"),
       loadWorldMapSvg(),
     ]).then((results) => {
       auxReady = true;
@@ -282,7 +287,7 @@
       $("last-updated").textContent += " · loading enrichment…";
     }
 
-    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims, ukNews, ransomwareTrends] =
+    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims, ukNews, ransomwareTrends, epssMovers, torExits] =
       await auxPromise;
     state.enrichment = enrichment;
     state.trends = trends;
@@ -294,6 +299,9 @@
     state.ransomwareVictims = ransomwareVictims;
     state.ukNews = ukNews;
     state.ransomwareTrends = ransomwareTrends;
+    state.epssMovers = epssMovers && typeof epssMovers === "object" && !Array.isArray(epssMovers) ? epssMovers : null;
+    state.torExits = torExits;
+    state.torSet = buildTorSet(torExits);
 
     render();
     applyInitialHash(); // no-op after the first load
@@ -544,8 +552,25 @@
     return ` <span class="badge badge-drop" title="${escapeHtml(tooltip)}">netblock flagged</span>`;
   }
 
+  // ---------- Tor exit nodes (context, not a malicious signal) ----------
+
+  const TOR_NOTE = "Tor exit node: blocking this IP affects all Tor users";
+
+  function buildTorSet(data) {
+    const ips = Array.isArray(data?.ips) ? data.ips : [];
+    return new Set(ips.filter((ip) => typeof ip === "string"));
+  }
+
+  function isTorExit(ip) {
+    return Boolean(ip) && state.torSet.has(ip);
+  }
+
+  function torBadge(ip) {
+    return isTorExit(ip) ? ` <span class="badge badge-info" title="${escapeHtml(TOR_NOTE)}">Tor exit</span>` : "";
+  }
+
   function ipBadges(ip) {
-    return greynoiseBadge(ip) + internetdbBadge(ip) + abuseipdbBadge(ip) + dropBadge(ip);
+    return greynoiseBadge(ip) + internetdbBadge(ip) + abuseipdbBadge(ip) + dropBadge(ip) + torBadge(ip);
   }
 
   // ---------- Correlation ----------
@@ -799,7 +824,9 @@
   function iocKnown(type, value) {
     if (state.iocIndex.has(`${type}|${value}`)) return true;
     if (type !== "ip") return false;
-    return Boolean(state.enrichment?.lookups?.[value] || state.abuseipdb?.entries?.[value] || state.internetdb?.entries?.[value]);
+    return Boolean(
+      state.enrichment?.lookups?.[value] || state.abuseipdb?.entries?.[value] || state.internetdb?.entries?.[value] || isTorExit(value)
+    );
   }
 
   // rows: [label, html] — html must already be escaped; empty values are skipped.
@@ -970,6 +997,17 @@
       ]);
     }
 
+    // Context only: deliberately not part of computeSignalCount.
+    if (isTorExit(ip)) {
+      blocks.push([
+        "Tor exit node",
+        drawerFields([
+          ["Note", "Blocking this IP affects all Tor users. Shown as context; not counted as a signal."],
+          ["List date", drawerDate(state.torExits?.generated_at)],
+        ]),
+      ]);
+    }
+
     if (!blocks.length) return "";
     return `<section class="drawer-section">
       <div class="drawer-section-head"><h3>Enrichment</h3></div>
@@ -1002,6 +1040,7 @@
       if (drop && drop.sbl_id) {
         links.push([`Spamhaus ${drop.sbl_id}`, `https://check.spamhaus.org/results?query=${encodeURIComponent(drop.sbl_id)}`]);
       }
+      if (isTorExit(value)) links.push(["Tor relay search", `https://metrics.torproject.org/rs.html#search/${v}`]);
     }
     return `<section class="drawer-section">
       <div class="drawer-section-head"><h3>Look up</h3></div>
@@ -2178,6 +2217,100 @@
     });
   }
 
+  // ---------- EPSS movers (data/epss_movers.json) ----------
+  //
+  // Built daily by scripts/fetch_epss_movers.py from FIRST.org's full EPSS
+  // files: the CVEs whose score rose most over the window (7 days), and the
+  // highest-scoring CVEs not in CISA KEV. Every value is untrusted.
+
+  let kevIdCache = { snapshot: null, ids: new Set() };
+
+  // CVE ids in the current KEV snapshot. KEV refreshes every 30 minutes and
+  // the movers file once a day, so "in KEV" is re-checked here too.
+  function kevIdSet() {
+    if (kevIdCache.snapshot !== state.snapshot) {
+      const items = state.snapshot?.feeds?.cisa_kev?.items || [];
+      kevIdCache = { snapshot: state.snapshot, ids: new Set(items.map((i) => i.cve_id).filter(Boolean)) };
+    }
+    return kevIdCache.ids;
+  }
+
+  function epssRows(list) {
+    return (Array.isArray(list) ? list : [])
+      .filter((r) => r && typeof r === "object" && typeof r.cve === "string" && r.cve)
+      .map((r) => ({ ...r, in_kev: r.in_kev === true || kevIdSet().has(r.cve) }));
+  }
+
+  function epssNum(x) {
+    return typeof x === "number" && Number.isFinite(x) ? x : null;
+  }
+
+  function epssPct(x) {
+    const n = epssNum(x);
+    return n === null ? "&mdash;" : `${(n * 100).toFixed(1)}%`;
+  }
+
+  // Change in EPSS score, in percentage points.
+  function epssDelta(x) {
+    const n = epssNum(x);
+    if (n === null) return `<span class="drawer-dim">new</span>`;
+    const pts = Math.round(n * 1000) / 10; // so a tiny fall shows as 0.0, not -0.0
+    const text = `${pts > 0 ? "+" : ""}${(pts || 0).toFixed(1)} pts`;
+    return n >= 0.1 ? `<span class="epss-high">${text}</span>` : text;
+  }
+
+  function cveNvdLink(cve) {
+    return `<span class="mono">${extLink(`https://nvd.nist.gov/vuln/detail/${encodeURIComponent(cve)}`, cve)}</span>`;
+  }
+
+  function epssKevFlag(r) {
+    if (!r.in_kev) return "&mdash;";
+    return `<a href="#section-cisa_kev" class="triage-link badge badge-malicious" data-feed="cisa_kev" data-q="${escapeHtml(r.cve)}" title="In CISA KEV: show it in the KEV table">KEV</a>`;
+  }
+
+  function epssItems(key, filter) {
+    const data = state.epssMovers;
+    if (!data) return { status: "pending", items: [] };
+    let items = epssRows(data[key]);
+    if (filter) items = items.filter(filter);
+    return { status: "ok", items };
+  }
+
+  function renderEpssMoversMeta() {
+    const section = $("section-epss_movers");
+    if (!section) return;
+    // No data file: keep the tab hidden rather than show an empty panel.
+    section.hidden = !state.epssMovers;
+    const meta = $("epss-movers-meta");
+    if (!state.epssMovers || !meta) return;
+    const d = state.epssMovers;
+    const days = epssNum(d.window_days);
+    const total = epssNum(d.total_scored);
+    const parts = [
+      `EPSS scores for ${escapeHtml(d.score_date || "?")}, change vs ${escapeHtml(d.compare_date || "?")}${days ? ` (${days} days)` : ""}`,
+      total ? `${total.toLocaleString()} CVEs scored` : "",
+      "CVEs already in CISA KEV are flagged; CVE links open NVD",
+      `source: <a href="https://www.first.org/epss/" target="_blank" rel="noopener noreferrer">FIRST.org EPSS</a>`,
+    ].filter(Boolean);
+    let html = parts.join(" &middot; ");
+    if (d.model_changed) {
+      html += `<br><strong>EPSS model changed (${escapeHtml(d.compare_model_version)} &rarr; ${escapeHtml(d.model_version)}):</strong> these changes mostly reflect the new model, not new exploitation evidence.`;
+    }
+    meta.innerHTML = html;
+  }
+
+  function initEpssMovers() {
+    const section = $("section-epss_movers");
+    if (!section) return;
+    // KEV flags scroll to that CVE in the KEV table.
+    section.addEventListener("click", (ev) => {
+      const a = ev.target.closest("a.triage-link[data-feed]");
+      if (!a) return;
+      ev.preventDefault();
+      scrollToMatch(a.getAttribute("data-feed"), a.getAttribute("data-q"));
+    });
+  }
+
   // ---------- Per-feed render definitions ----------
 
   const FEED_DEFS = {
@@ -2407,6 +2540,38 @@
           ? { status: "ok", items: state.ransomwareVictims.victims || [] }
           : { status: "pending", items: [] },
     },
+
+    // Not feeds either: both tables come from data/epss_movers.json.
+    epss_movers: {
+      columns: [
+        { key: "cve", label: "CVE", sortValue: (i) => i.cve, render: (i) => cveNvdLink(i.cve) },
+        { key: "delta", label: "Change", sortValue: (i) => epssNum(i.delta) ?? -2, render: (i) => epssDelta(i.delta) },
+        { key: "epss", label: "EPSS", sortValue: (i) => epssNum(i.epss) ?? -1, render: (i) => epssPct(i.epss) },
+        { key: "prev_epss", label: "Was", sortValue: (i) => epssNum(i.prev_epss) ?? -1, render: (i) => epssPct(i.prev_epss) },
+        { key: "percentile", label: "Percentile", sortValue: (i) => epssNum(i.percentile) ?? -1, render: (i) => epssPct(i.percentile) },
+        { key: "in_kev", label: "KEV", sortValue: (i) => (i.in_kev ? 1 : 0), render: (i) => epssKevFlag(i) },
+      ],
+      searchFn: (i) => i.cve,
+      defaultSort: { key: "delta", dir: "desc" },
+      csvHeaders: ["CVE", "EPSS Change", "EPSS", "Previous EPSS", "Percentile", "Previous Percentile", "In KEV"],
+      toCsvRow: (i) => [i.cve, i.delta, i.epss, i.prev_epss, i.percentile, i.prev_percentile, i.in_kev ? "yes" : "no"],
+      getItems: () => epssItems("movers"),
+    },
+
+    epss_top: {
+      columns: [
+        { key: "cve", label: "CVE", sortValue: (i) => i.cve, render: (i) => cveNvdLink(i.cve) },
+        { key: "epss", label: "EPSS", sortValue: (i) => epssNum(i.epss) ?? -1, render: (i) => epssPct(i.epss) },
+        { key: "percentile", label: "Percentile", sortValue: (i) => epssNum(i.percentile) ?? -1, render: (i) => epssPct(i.percentile) },
+        { key: "delta", label: "Change", sortValue: (i) => epssNum(i.delta) ?? -2, render: (i) => epssDelta(i.delta) },
+      ],
+      searchFn: (i) => i.cve,
+      defaultSort: { key: "epss", dir: "desc" },
+      csvHeaders: ["CVE", "EPSS", "Percentile", "EPSS Change"],
+      toCsvRow: (i) => [i.cve, i.epss, i.percentile, i.delta ?? ""],
+      // Dropped as soon as the CVE reaches KEV, even before the next daily build.
+      getItems: () => epssItems("top_non_kev", (r) => !r.in_kev),
+    },
   };
 
   function renderFeed(feed) {
@@ -2438,6 +2603,7 @@
     renderRwTrends();
     updateGlobe();
     renderUkNews();
+    renderEpssMoversMeta();
     renderTabCounts();
     syncTabs();
     renderSinceSummary();
@@ -2554,7 +2720,8 @@
   //
   //   tab=<name>        data-deck tab: correlated (default, omitted), cisa_kev,
   //                     ransomware_victims, uk_news, threatfox, urlhaus,
-  //                     malwarebazaar, otx, blocklistde, geo, watchlist
+  //                     malwarebazaar, otx, blocklistde, epss_movers, geo,
+  //                     watchlist
   //   q=<text>          that tab's search box (feed tables and uk_news)
   //   sort=<key>:<dir>  that tab's sort column (a column key) and asc|desc;
   //                     omitted when it's the table's default sort
@@ -2590,6 +2757,7 @@
     ["malwarebazaar", "section-malwarebazaar"],
     ["otx", "section-otx"],
     ["blocklistde", "section-blocklistde"],
+    ["epss_movers", "section-epss_movers"],
     ["geo", "geo-section"],
     ["watchlist", "section-watchlist"],
   ]);
@@ -4124,6 +4292,7 @@
     initRwTrends();
     initGlobe();
     initUkNews();
+    initEpssMovers();
     wireSearchBoxes();
     wireExportButtons();
     initWatchlist();
