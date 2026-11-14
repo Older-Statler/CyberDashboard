@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T05:33:22Z",
+  "generated_at": "2026-11-14T13:11:41Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 12
+      "count": 10
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 10
+      "count": 7
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 3
+      "count": 2
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
+      "link": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302",
+      "source": "The Register",
+      "published": "2026-11-14T08:18:00Z",
+      "summary": "Accessing banned content is as easy as whipping out a thesaurus, Parliament's Communications and Digital Committee hears",
+      "uk_focus": true
+    },
     {
       "title": "This year’s bug count just passed 100K",
       "link": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
@@ -231,78 +239,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-12T14:00:00Z",
       "summary": "Lego has taken its BrickLink Marketplace offline after detecting unusual activity as the company investigates the incident",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers exploiting ScreenConnect plugin flaw to spread malware across hundreds of PCs",
-      "link": "https://www.theregister.com/security/2026/11/12/hackers-exploiting-screenconnect-plugin-flaw-to-spread-malware-across-hundreds-of-pcs/5309361",
-      "source": "The Register",
-      "published": "2026-11-12T13:02:00Z",
-      "summary": "ConnectWise disables third-party extensions in 400 environments as bughunters uncover auth hole may let crims bypass MFA",
-      "uk_focus": false
-    },
-    {
-      "title": "European tech buyers add digital sovereignty to cyber shopping list",
-      "link": "https://www.theregister.com/security/2026/11/12/european-tech-buyers-add-digital-sovereignty-to-cyber-shopping-list/5309216",
-      "source": "The Register",
-      "published": "2026-11-12T11:31:00Z",
-      "summary": "Sales from EU HQ'd vendor rocket in two years. The Trump affect? Yes but NIS2 and DORA are factors too",
-      "uk_focus": false
-    },
-    {
-      "title": "Security Teams Must Shift from Patching to Mitigation in the AI Era",
-      "link": "https://www.infosecurity-magazine.com/news/shift-patching-mitigation-ai-era/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-12T10:45:00Z",
-      "summary": "Symantec’s Dick O’Brien says the rapid closure of the patch window means organizations must move beyond patching and adopt an assume exploit mindset",
-      "uk_focus": false
-    },
-    {
-      "title": "AI & cybersecurity: A Computer Weekly Downtime Upload podcast",
-      "link": "https://www.computerweekly.com/podcast/AI-cybersecurity-A-Computer-Weekly-Downtime-Upload-podcast",
-      "source": "Computer Weekly",
-      "published": "2026-11-12T10:38:00Z",
-      "summary": "We speak to Gartner's Akif Khan about the need for organisations to reassess employee cyber training and agentic AI identity and access management",
-      "uk_focus": false
-    },
-    {
-      "title": "NCSC Launches Cyber Adversary Testing to Boost Resilience",
-      "link": "https://www.infosecurity-magazine.com/news/ncsc-cyber-adversary-testing-boost/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-12T10:00:00Z",
-      "summary": "The UK’s National Cyber Security Centre has launched a new Cyber Adversary Simulation (CyAS) scheme",
-      "uk_focus": true
-    },
-    {
-      "title": "London hotel put admin login for booking website on whiteboard behind the front desk",
-      "link": "https://www.theregister.com/security/2026/11/12/london-hotel-put-admin-login-for-booking-website-on-whiteboard-behind-the-front-desk/5308889",
-      "source": "The Register",
-      "published": "2026-11-12T09:30:00Z",
-      "summary": "You could check out more than your room",
-      "uk_focus": true
-    },
-    {
-      "title": "Maersk Reveals Data Breach as Extortion Group Demands $5m",
-      "link": "https://www.infosecurity-magazine.com/news/maersk-data-breach-extortion-group/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-12T08:49:00Z",
-      "summary": "Maersk has revealed a threat actor extracted data from one of its legacy systems",
-      "uk_focus": false
-    },
-    {
-      "title": "AI agents bring down wind farm within two hours",
-      "link": "https://www.computerweekly.com/news/366654794/AI-agents-bring-down-wind-farm-within-two-hours",
-      "source": "Computer Weekly",
-      "published": "2026-11-12T08:13:00Z",
-      "summary": "Warning after research shows AI agents can hack into a wind farm, access engineering data and shut down electricity supplies",
-      "uk_focus": false
-    },
-    {
-      "title": "AI risk decoded: What are the real threats posed by AI?",
-      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-risk-decoded-what-are-the-real-threats-posed-by-ai",
-      "source": "ITPro",
-      "published": "2026-11-12T08:00:00Z",
-      "summary": "Amid predictions AI will cause human extinction, what are the real risks businesses should be aware of?",
       "uk_focus": false
     }
   ]

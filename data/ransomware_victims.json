@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-14T05:33:22Z",
+  "generated_at": "2026-11-14T13:11:41Z",
   "victims": [
+    {
+      "group": "netrunner",
+      "victim": "I****** A*****",
+      "country": "KW",
+      "sector": "Not Found",
+      "published": "2026-11-14T01:30:50.924965+00:00",
+      "domain": "i***************.c**",
+      "url": "https://www.ransomware.live/id/SSoqKioqKiBBKioqKipAbmV0cnVubmVy"
+    },
+    {
+      "group": "everest",
+      "victim": "Grundbaulabor Trier GmbH",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-11-14T03:32:50.190997+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R3J1bmRiYXVsYWJvciBUcmllciBHbWJIQGV2ZXJlc3Q="
+    },
     {
       "group": "interlock",
       "victim": "K&A Industries",
@@ -882,24 +900,6 @@
       "published": "2026-11-10T07:11:55.473973+00:00",
       "domain": "mvsd11.org",
       "url": "https://www.ransomware.live/id/TWVhZG93cyBWYWxsZXkgU2Nob29sIERpc3RyaWN0QGludGVybG9jaw=="
-    },
-    {
-      "group": "interlock",
-      "victim": "Ridgway High School",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-11-10T07:10:49.930738+00:00",
-      "domain": "ridgway.k12.co.us",
-      "url": "https://www.ransomware.live/id/UmlkZ3dheSBIaWdoIFNjaG9vbEBpbnRlcmxvY2s="
-    },
-    {
-      "group": "interlock",
-      "victim": "Southwest Orthopedic & Reconstructive Specialists",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-10T07:09:08.851645+00:00",
-      "domain": "southwestortho.com",
-      "url": "https://www.ransomware.live/id/U291dGh3ZXN0IE9ydGhvcGVkaWMgJiBSZWNvbnN0cnVjdGl2ZSBTcGVjaWFsaXN0c0BpbnRlcmxvY2s="
     }
   ]
 }
