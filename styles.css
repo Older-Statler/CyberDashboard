@@ -1263,6 +1263,22 @@ tbody tr:hover {
   text-shadow: 0 0 8px rgba(255, 59, 92, 0.45);
 }
 
+/* Second table in the EPSS movers tab. */
+.epss-top-header {
+  margin-top: 24px;
+}
+
+/* Short values: scroll the table on phones rather than split a CVE id. */
+#section-epss_movers td:not(.empty-note) {
+  white-space: nowrap;
+}
+
+/* The KEV flag in the EPSS tables is a link styled as a badge. */
+a.badge {
+  margin-left: 0;
+  text-decoration: none;
+}
+
 /* ---------- UK news ---------- */
 
 .news-toggle {

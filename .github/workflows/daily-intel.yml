@@ -42,6 +42,14 @@ jobs:
         run: python scripts/fetch_epss.py
         continue-on-error: true
 
+      - name: Fetch EPSS movers
+        run: python scripts/fetch_epss_movers.py
+        continue-on-error: true
+
+      - name: Fetch Tor exit list
+        run: python scripts/fetch_tor_exits.py
+        continue-on-error: true
+
       - name: Fetch Shodan InternetDB data
         run: python scripts/fetch_internetdb.py
         continue-on-error: true
@@ -71,7 +79,7 @@ jobs:
           git add data/enrichment.json data/geo.json data/geo_summary.json data/trends.json \
                   data/epss.json data/internetdb.json data/abuseipdb.json \
                   data/internetdb_view.json data/abuseipdb_view.json \
-                  data/spamhaus_drop.json
+                  data/spamhaus_drop.json data/epss_movers.json data/tor_exits.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
