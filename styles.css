@@ -1021,7 +1021,9 @@ tr.is-new > td:first-child {
   gap: 6px;
 }
 
-.export-btn {
+.export-btn,
+.rwt-win-btn,
+.watchlist-add-btn {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--text-muted);
@@ -1033,7 +1035,9 @@ tr.is-new > td:first-child {
   cursor: pointer;
 }
 
-.export-btn:hover {
+.export-btn:hover,
+.rwt-win-btn:hover,
+.watchlist-add-btn:hover {
   color: var(--accent);
   border-color: var(--accent);
   box-shadow: var(--glow);
@@ -2219,7 +2223,7 @@ html.is-framed body > :not(.framed-note) {
   gap: 4px;
 }
 
-.rwt-windows .export-btn[aria-pressed="true"] {
+.rwt-windows .rwt-win-btn[aria-pressed="true"] {
   color: var(--bg);
   background: var(--accent);
   border-color: var(--accent);

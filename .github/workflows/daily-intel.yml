@@ -16,6 +16,12 @@ permissions:
 jobs:
   enrich:
     runs-on: ubuntu-latest
+    # Normal runs take ~4-6 minutes (InternetDB + AbuseIPDB are most of it).
+    # The step limits below add up to 30, so the commit step still fits even
+    # if every new step runs to its limit.
+    # Sum of the step limits below plus setup, so a hung step is cut off
+    # while there is still time left for the commit step.
+    timeout-minutes: 75
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -33,53 +39,69 @@ jobs:
           GREYNOISE_API_KEY: ${{ secrets.GREYNOISE_API_KEY }}
         run: python scripts/fetch_greynoise_enrichment.py
         continue-on-error: true
+        timeout-minutes: 3
 
       - name: Fetch IP geolocation / ASN data
         run: python scripts/fetch_geo.py
         continue-on-error: true
+        timeout-minutes: 6
 
       - name: Fetch EPSS scores
         run: python scripts/fetch_epss.py
         continue-on-error: true
+        timeout-minutes: 4
 
+      # Step timeouts count as a failure, so continue-on-error still lets the
+      # job carry on to the commit step. Worst case: 5 downloads x 120s
+      # deadline; normally a few seconds.
       - name: Fetch EPSS movers
         run: python scripts/fetch_epss_movers.py
         continue-on-error: true
+        timeout-minutes: 12
 
       - name: Fetch Tor exit list
         run: python scripts/fetch_tor_exits.py
         continue-on-error: true
+        timeout-minutes: 3
 
       - name: Fetch Shodan InternetDB data
         run: python scripts/fetch_internetdb.py
         continue-on-error: true
+        timeout-minutes: 8
 
       - name: Fetch AbuseIPDB reports
         env:
           ABUSEIPDB_API_KEY: ${{ secrets.ABUSEIPDB_API_KEY }}
         run: python scripts/fetch_abuseipdb.py
         continue-on-error: true
+        timeout-minutes: 10
 
       - name: Fetch Spamhaus DROP
         run: python scripts/fetch_spamhaus_drop.py
         continue-on-error: true
+        timeout-minutes: 2
 
       - name: Build slim enrichment files for the dashboard
         run: python scripts/build_enrichment_views.py
         continue-on-error: true
+        timeout-minutes: 2
 
       # Daily victim counts per group / country / sector, last 90 days.
       # Usually one request (the current month); spaced 65s apart when it
-      # needs more, for ransomware.live's 1 request/minute limit.
+      # needs more, for ransomware.live's 1 request/minute limit. The first
+      # run (4 months) takes ~3.5 min; worst case 4 x 120s deadline + 3 x 65s.
       - name: Fetch ransomware.live trend counts
         run: python scripts/fetch_ransomware_trends.py
         continue-on-error: true
+        timeout-minutes: 15
 
       - name: Append today's trend counts
         run: python scripts/append_trend.py
         continue-on-error: true
+        timeout-minutes: 2
 
       - name: Commit and push if changed
+        timeout-minutes: 5
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

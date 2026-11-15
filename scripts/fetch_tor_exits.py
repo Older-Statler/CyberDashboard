@@ -18,16 +18,15 @@ import json
 import os
 import sys
 
-import requests
-
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import now_iso
+from common import fetch_capped, now_iso, write_atomic
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_PATH = os.path.join(BASE, "data", "tor_exits.json")
 TOR_URL = "https://check.torproject.org/torbulkexitlist"
 HEADERS = {"User-Agent": "CyberThreatDashboard/1.0"}
-TIMEOUT = 30
+TIMEOUT = 30  # per socket read
+DEADLINE_S = 60  # whole request; the real list downloads in well under a second
 # The list normally holds 1,000-2,000 exits. Far fewer means a broken or
 # partial response, which would silently drop badges for most of them.
 MIN_IPS = 300
@@ -52,11 +51,8 @@ def parse(text):
 
 def main():
     try:
-        resp = requests.get(TOR_URL, headers=HEADERS, timeout=TIMEOUT)
-        resp.raise_for_status()
-        if len(resp.content) > MAX_BYTES:
-            raise ValueError(f"{len(resp.content)} bytes, larger than expected")
-        ips = parse(resp.text)
+        body = fetch_capped(TOR_URL, MAX_BYTES, DEADLINE_S, headers=HEADERS, timeout=TIMEOUT)
+        ips = parse(body.decode("utf-8", "replace"))
     except Exception as e:
         print(f"Tor exit list fetch failed: {e}; keeping the previous file.")
         return
@@ -65,10 +61,13 @@ def main():
         print(f"Tor exit list: only {len(ips)} IPs parsed, possible format change; keeping the previous file.")
         return
 
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump({"generated_at": now_iso(), "source": TOR_URL, "count": len(ips), "ips": ips}, f, indent=2)
+    payload = {"generated_at": now_iso(), "source": TOR_URL, "count": len(ips), "ips": ips}
+    write_atomic(OUT_PATH, json.dumps(payload, indent=2))
     print(f"Tor exit list: {len(ips)} exit IPs.")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:  # never fail the workflow step
+        print(f"fetch_tor_exits failed: {e}; keeping the previous file.")

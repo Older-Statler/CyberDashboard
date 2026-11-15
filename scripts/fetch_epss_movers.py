@@ -18,22 +18,26 @@ rises, and the daily workflow is sometimes delayed or skipped by GitHub,
 which a one-day window would turn into gaps.
 
 Only the small summary is committed (data/epss_movers.json); the full
-score files are never written to the repo. If either download fails, or a
-file looks truncated, the previous data/epss_movers.json is kept.
+score files are never written to the repo. If either download fails, a
+file looks truncated or stale, the KEV list in data/latest.json looks
+incomplete, or no CVE rose, the previous data/epss_movers.json is kept.
+
+Downloads are streamed with a byte cap and a wall-clock deadline, and the
+gzip is inflated incrementally with an output cap, so neither a huge body
+nor a gzip bomb can exhaust the runner's memory.
 """
 
 import csv
 import datetime
-import gzip
+import itertools
 import json
 import os
 import re
 import sys
-
-import requests
+import zlib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import load_json, now_iso
+from common import fetch_capped, load_json, now_iso, write_atomic
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LATEST_PATH = os.path.join(BASE, "data", "latest.json")
@@ -42,8 +46,11 @@ OUT_PATH = os.path.join(BASE, "data", "epss_movers.json")
 EPSS_BASE_URL = "https://epss.empiricalsecurity.com"
 CURRENT_URL = f"{EPSS_BASE_URL}/epss_scores-current.csv.gz"
 DATED_URL = EPSS_BASE_URL + "/epss_scores-{date}.csv.gz"
-HEADERS = {"User-Agent": "CyberThreatDashboard/1.0"}
-TIMEOUT = 60
+# identity: the file is already gzip; this stops requests from inflating a
+# Content-Encoding layer on top of it before the byte cap sees it.
+HEADERS = {"User-Agent": "CyberThreatDashboard/1.0", "Accept-Encoding": "identity"}
+TIMEOUT = 60  # per socket read
+DEADLINE_S = 120  # per download; the ~3 MB file normally takes about a second
 
 WINDOW_DAYS = 7
 # If the exact comparison day's file is missing, try these offsets instead.
@@ -54,17 +61,68 @@ TOP_NON_KEV = 50
 # broken download, and diffing against it would produce nonsense movers.
 MIN_ROWS = 100_000
 MAX_BYTES = 50 * 1024 * 1024  # compressed; the real file is ~3 MB
+# Inflated; the real file is ~12 MB. A gzip bomb stops here.
+MAX_INFLATED = 200 * 1024 * 1024
+INFLATE_CHUNK = 1024 * 1024
+MAX_LINE = 4096  # real lines are ~40 bytes; bounds the partial-line buffer
+# The real file scores ~410k CVEs (~250 bytes of memory each once parsed).
+# More than this is junk, and would cost memory even under MAX_INFLATED.
+MAX_ROWS = 1_000_000
+# data/latest.json normally lists ~1,800 KEV CVEs. A much shorter list is a
+# truncated snapshot and would put KEV CVEs in "Highest EPSS, not in KEV".
+MIN_KEV = 1000
+# The current file's score_date must be this recent (days before today, UTC).
+MAX_AGE_DAYS = 3
 
 CVE_RE = re.compile(r"^CVE-\d{4}-\d{4,7}$")
-META_RE = re.compile(r"(\w+):([^,]+)")
+META_RE = re.compile(r"(\w{1,40}):([^,]*)")
+META_VALUE_RE = re.compile(r"^[\w.\-]{1,40}$")
 
 
 def download(url):
-    resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    resp.raise_for_status()
-    if len(resp.content) > MAX_BYTES:
-        raise ValueError(f"{url}: {len(resp.content)} bytes, larger than expected")
-    return resp.content
+    return fetch_capped(url, MAX_BYTES, DEADLINE_S, headers=HEADERS, timeout=TIMEOUT)
+
+
+def gunzip_lines(raw_gz):
+    """Yield the decoded lines of a gzip body, inflating INFLATE_CHUNK at a
+    time. Raises ValueError past MAX_INFLATED bytes or on a line longer
+    than MAX_LINE, and on a truncated stream (like gzip.decompress)."""
+    data = raw_gz
+    inflated = 0
+    pending = b""
+    while data:
+        d = zlib.decompressobj(16 + zlib.MAX_WBITS)  # one gzip member
+        while not d.eof:
+            chunk = d.decompress(data, INFLATE_CHUNK)
+            data = d.unconsumed_tail
+            if not chunk and not data:
+                raise ValueError("truncated gzip stream")
+            inflated += len(chunk)
+            if inflated > MAX_INFLATED:
+                raise ValueError(f"inflates past {MAX_INFLATED} bytes")
+            lines = (pending + chunk).split(b"\n")
+            pending = lines.pop()
+            if len(pending) > MAX_LINE:
+                raise ValueError(f"line longer than {MAX_LINE} bytes")
+            for line in lines:
+                yield line.rstrip(b"\r").decode("utf-8")
+        data = d.unused_data  # a following gzip member, if any
+    if pending:
+        yield pending.rstrip(b"\r").decode("utf-8")
+
+
+def parse_meta(line):
+    """{key: value} from "#model_version:v2025.03.14,score_date:...".
+    Values that aren't 1-40 word characters, dots or hyphens are dropped,
+    except that score_date is cut to its leading YYYY-MM-DD first."""
+    meta = {}
+    for key, value in META_RE.findall(line[1:]):
+        value = value.strip()
+        if key == "score_date":
+            value = value[:10]
+        if META_VALUE_RE.match(value):
+            meta[key] = value
+    return meta
 
 
 def parse_scores(raw_gz):
@@ -73,12 +131,15 @@ def parse_scores(raw_gz):
     The first line is a comment like
     "#model_version:v2025.03.14,score_date:2025-11-14T12:00:00Z".
     """
-    text = gzip.decompress(raw_gz).decode("utf-8")
-    lines = text.splitlines()
+    lines = gunzip_lines(raw_gz)
     meta = {}
-    if lines and lines[0].startswith("#"):
-        meta = dict(META_RE.findall(lines[0][1:]))
-        lines = lines[1:]
+    first = next(lines, None)
+    if first is None:
+        return meta, {}
+    if first.startswith("#"):
+        meta = parse_meta(first)
+    else:
+        lines = itertools.chain([first], lines)
     scores = {}
     for row in csv.DictReader(lines):
         cve = (row.get("cve") or "").strip()
@@ -91,11 +152,13 @@ def parse_scores(raw_gz):
             continue
         if 0 <= epss <= 1 and 0 <= pct <= 1:
             scores[cve] = (epss, pct)
+            if len(scores) > MAX_ROWS:
+                raise ValueError(f"more than {MAX_ROWS} CVEs")
     return meta, scores
 
 
 def score_date(meta):
-    raw = (meta.get("score_date") or "")[:10]
+    raw = meta.get("score_date") or ""
     try:
         return datetime.date.fromisoformat(raw)
     except ValueError:
@@ -112,9 +175,13 @@ def fetch_comparison(today):
         except Exception as e:
             print(f"EPSS movers: comparison file for {day} unavailable: {e}")
             continue
-        if len(scores) >= MIN_ROWS:
-            return day, meta, scores
-        print(f"EPSS movers: comparison file for {day} has only {len(scores)} rows; skipping it.")
+        if len(scores) < MIN_ROWS:
+            print(f"EPSS movers: comparison file for {day} has only {len(scores)} rows; skipping it.")
+            continue
+        if score_date(meta) != day:
+            print(f"EPSS movers: comparison file for {day} says score_date {meta.get('score_date')!r}; skipping it.")
+            continue
+        return day, meta, scores
     return None
 
 
@@ -173,9 +240,9 @@ def build(cur_scores, prev_scores, kev):
 def main():
     latest = load_json(LATEST_PATH)
     kev = kev_ids(latest)
-    if not kev:
-        # Without the KEV list every row would be mislabelled; keep the old file.
-        print("EPSS movers: no KEV CVEs in data/latest.json; keeping the previous file.")
+    if len(kev) < MIN_KEV:
+        # Without the full KEV list rows would be mislabelled; keep the old file.
+        print(f"EPSS movers: only {len(kev)} KEV CVEs in data/latest.json (expected >= {MIN_KEV}); keeping the previous file.")
         return
 
     try:
@@ -187,7 +254,12 @@ def main():
         print(f"EPSS movers: current file has only {len(cur_scores)} rows; keeping the previous file.")
         return
 
-    today = score_date(cur_meta) or datetime.datetime.now(datetime.timezone.utc).date()
+    today = score_date(cur_meta)
+    now = datetime.datetime.now(datetime.timezone.utc).date()
+    # -1 allows for a file dated "tomorrow" by a clock just ahead of ours.
+    if today is None or not -1 <= (now - today).days <= MAX_AGE_DAYS:
+        print(f"EPSS movers: current file's score_date {cur_meta.get('score_date')!r} isn't within {MAX_AGE_DAYS} days of {now}; keeping the previous file.")
+        return
     comparison = fetch_comparison(today)
     if not comparison:
         print("EPSS movers: no usable comparison file; keeping the previous file.")
@@ -195,8 +267,9 @@ def main():
     prev_day, prev_meta, prev_scores = comparison
 
     movers, top_non_kev = build(cur_scores, prev_scores, kev)
-    if not movers and not top_non_kev:
-        print("EPSS movers: nothing computed; keeping the previous file.")
+    if not movers:
+        # e.g. the comparison file is a copy of the current one.
+        print("EPSS movers: no CVE rose against the comparison file; keeping the previous file.")
         return
 
     cur_model = cur_meta.get("model_version")
@@ -215,8 +288,7 @@ def main():
         "movers": movers,
         "top_non_kev": top_non_kev,
     }
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+    write_atomic(OUT_PATH, json.dumps(out, ensure_ascii=False, indent=2))
     print(
         f"EPSS movers: {len(movers)} movers, {len(top_non_kev)} top non-KEV "
         f"({today} vs {prev_day}, {len(cur_scores)} CVEs scored)."
@@ -224,4 +296,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:  # never fail the workflow step
+        print(f"fetch_epss_movers failed: {e}; keeping the previous file.")

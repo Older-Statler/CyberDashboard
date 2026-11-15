@@ -237,9 +237,9 @@
           <div class="rwt-head">
             <h3>Trends <span class="panel-sub" id="rwt-sub"></span></h3>
             <div class="rwt-windows" role="group" aria-label="Trend window">
-              <button type="button" class="export-btn" data-rwt-days="7" aria-pressed="false">7d</button>
-              <button type="button" class="export-btn" data-rwt-days="30" aria-pressed="true">30d</button>
-              <button type="button" class="export-btn" data-rwt-days="90" aria-pressed="false">90d</button>
+              <button type="button" class="rwt-win-btn" data-rwt-days="7" aria-pressed="false">7d</button>
+              <button type="button" class="rwt-win-btn" data-rwt-days="30" aria-pressed="true">30d</button>
+              <button type="button" class="rwt-win-btn" data-rwt-days="90" aria-pressed="false">90d</button>
             </div>
           </div>
           <p class="rwt-note">Counted by <em>discovered</em> date, when ransomware.live saw the victim on a leak site (not when the attack happened), per UTC day. The table below lists only the latest 100 victims.</p>
@@ -464,7 +464,7 @@
               <p class="watchlist-caption vendor-watch-skipped" id="vendor-watch-skipped" role="status" hidden></p>
               <form class="vendor-add" id="vendor-add-form" hidden>
                 <input type="text" id="vendor-add-input" class="search-box vendor-add-input" list="vendor-suggestions" autocomplete="off" placeholder="Add a KEV vendor&hellip;" aria-label="Add a KEV vendor" />
-                <button type="submit" class="export-btn">ADD</button>
+                <button type="submit" class="watchlist-add-btn">ADD</button>
                 <datalist id="vendor-suggestions"></datalist>
               </form>
               <div class="vendor-chips" id="vendor-chips" aria-label="Most common KEV vendors"></div>

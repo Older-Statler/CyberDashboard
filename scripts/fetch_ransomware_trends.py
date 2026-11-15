@@ -45,12 +45,33 @@ cuts anything. Names are trimmed to MAX_NAME_LEN characters.
 Fault tolerance
 ---------------
 A month's response is used only if it's a JSON list, at least 80% of its
-records have a `discovered` date inside that month, it isn't empty, and
-it isn't less than half the count recorded for that month last time. A
-rejected or failed month keeps its previous days. If the API can't be
-reached at all (DNS, TLS, timeout), the remaining months are skipped. If
-nothing was usable, the existing file is left untouched. The file is
+records have a `discovered` date inside that month, and it isn't empty.
+Records repeated within a month (same group, victim name and
+`discovered` timestamp) are counted once. Then two sanity checks:
+
+- Bounds: no day may exceed MAX_PER_DAY victims. Real days are tens.
+- Agreement: over the days already stored for that month, the new count
+  must be between MIN_KEEP_RATIO (0.5x) and MAX_GROWTH_RATIO (3x) of the
+  stored one. Skipped when the stored days are themselves out of bounds,
+  or too few to compare.
+
+A response that fails either check is rejected and the month keeps its
+previous days. Rejections are counted per month in the file
+(months[<month>].rejected), so a ratchet can't last: after
+REJECT_LIMIT consecutive rejections the next response is accepted
+anyway, with a loud warning. That covers a real correction, such as
+ransomware.live purging fake claims, and stored data that was wrong in
+the first place. A month that is out of bounds or has pending rejections
+is marked "suspect" and re-fetched every run even after it has ended.
+
+Each month is handled on its own: a rejected or failed month doesn't stop
+the others from being written. If the API can't be reached at all (DNS,
+TLS, timeout, deadline), the remaining months are skipped. If nothing was
+accepted or rejected, the existing file is left untouched. The file is
 written atomically.
+
+Each request is streamed with a byte cap (MAX_BYTES) and a wall-clock
+deadline (DEADLINE_S), and must stay on https.
 """
 
 import datetime
@@ -63,13 +84,16 @@ import time
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import load_json, now_iso
+from common import DeadlineExceeded, fetch_capped, load_json, now_iso, write_atomic
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRENDS_PATH = os.path.join(BASE, "data", "ransomware_trends.json")
 MONTH_URL = "https://api.ransomware.live/v2/victims/{year:04d}/{month:02d}"
 USER_AGENT = "CyberThreatDashboard/1.0 (ransomware trends; daily)"
-TIMEOUT_S = 60
+# api.ransomware.live's TLS certificate expired in Nov 2026: wait for it to be renewed, never pass verify=False.
+TIMEOUT_S = 60  # per socket read
+DEADLINE_S = 120  # whole request; a month (a few MB) normally takes seconds
+MAX_BYTES = 50 * 1024 * 1024  # a month is a few MB of JSON
 
 DAYS_KEPT = 90
 TOP_N = 15
@@ -79,6 +103,17 @@ REQUEST_SPACING_S = 65  # 1 request/minute per endpoint, plus margin
 PREV_MONTH_REFRESH_DAYS = 7
 MIN_IN_MONTH_RATIO = 0.8
 MIN_KEEP_RATIO = 0.5
+# ransomware.live records tens of victims a day; even the biggest mass leak
+# dumps (Clop's MOVEit / Cleo batches) were a few hundred names. A day above
+# this is a broken or inflated response, not news.
+MAX_PER_DAY = 1000
+MAX_GROWTH_RATIO = 3
+# Agreement checks need at least this many stored victims to compare with;
+# below it the ratios are noise.
+MIN_COMPARE_N = 30
+# A month's 4th consecutive disagreeing response (after 3 rejected runs)
+# is accepted.
+REJECT_LIMIT = 3
 UNKNOWN = "-"  # missing / placeholder group, country or sector
 
 DATE_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})")
@@ -123,6 +158,8 @@ def months_to_fetch(today, months_meta):
 
     def complete(ym):
         meta = months_meta.get(month_key(*ym)) or {}
+        if meta.get("suspect"):
+            return False
         fetched = str(meta.get("fetched_at") or "")[:10]
         return bool(fetched) and fetched > month_last_day(*ym).isoformat()
 
@@ -146,14 +183,16 @@ class Unreachable(Exception):
 
 
 def fetch_month(year, month):
-    """Raw JSON for one month, or None on an HTTP / JSON error. Raises
-    Unreachable when the API can't be reached at all."""
+    """Raw JSON for one month, or None on an HTTP / JSON / size / redirect
+    error. Raises Unreachable when the API can't be reached at all."""
     url = MONTH_URL.format(year=year, month=month)
     try:
-        resp = requests.get(url, timeout=TIMEOUT_S, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
-        resp.raise_for_status()
-        return resp.json()
-    except (requests.ConnectionError, requests.Timeout) as e:
+        body = fetch_capped(
+            url, MAX_BYTES, DEADLINE_S, timeout=TIMEOUT_S,
+            headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+        )
+        return json.loads(body)
+    except (requests.ConnectionError, requests.Timeout, DeadlineExceeded) as e:
         raise Unreachable(f"{month_key(year, month)}: {e}") from e
     except Exception as e:
         print(f"ransomware.live {month_key(year, month)}: fetch failed: {e}")
@@ -169,16 +208,26 @@ def count_month(data, year, month):
     prefix = month_key(year, month)
     days = {}
     in_month = 0
+    seen = set()
     for r in records:
-        m = DATE_RE.match(str(r.get("discovered") or ""))
+        discovered = str(r.get("discovered") or "")
+        m = DATE_RE.match(discovered)
         if not m or f"{m.group(1)}-{m.group(2)}" != prefix:
             continue
         in_month += 1
         date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+        group = clean_name(r.get("group") or r.get("group_name"))
+        # The full `discovered` timestamp, not just the day: some leak sites
+        # post several victims under one placeholder name ("hidden", "****").
+        victim = " ".join(str(r.get("victim") or r.get("post_title") or "").split()).casefold()
+        dedup_key = (group.casefold(), victim, discovered)
+        if dedup_key in seen:
+            continue
+        seen.add(dedup_key)
         d = days.setdefault(date, {"total": 0, "groups": {}, "countries": {}, "sectors": {}})
         d["total"] += 1
         for dim, key in (
-            ("groups", clean_name(r.get("group") or r.get("group_name"))),
+            ("groups", group),
             ("countries", clean_country(r.get("country"))),
             ("sectors", clean_sector(r.get("activity") or r.get("sector"))),
         ):
@@ -187,7 +236,38 @@ def count_month(data, year, month):
         return None, "no victims in this month"
     if in_month < MIN_IN_MONTH_RATIO * len(data):
         return None, f"only {in_month} of {len(data)} records are dated in {prefix}"
-    return (days, in_month), None
+    if in_month != len(seen):
+        print(f"ransomware.live {prefix}: {in_month - len(seen)} duplicate records ignored.")
+    return (days, len(seen)), None
+
+
+def out_of_bounds(totals):
+    """The first (date, total) above MAX_PER_DAY, or None."""
+    for date in sorted(totals):
+        if totals[date] > MAX_PER_DAY:
+            return date, totals[date]
+    return None
+
+
+def sanity_check(key, counted, stored):
+    """Why the month's new counts look wrong, or None if they look fine.
+    `counted` is the new per-day counters; `stored` the {date: total} we
+    already have for the days this run would overwrite."""
+    bad = out_of_bounds({date: c["total"] for date, c in counted.items()})
+    if bad:
+        return f"{bad[1]} victims on {bad[0]} (limit {MAX_PER_DAY}/day)"
+    if out_of_bounds(stored):
+        print(f"WARNING ransomware.live {key}: stored counts are out of bounds; replacing them without comparing.")
+        return None
+    old_n = sum(stored.values())
+    if old_n < MIN_COMPARE_N:
+        return None
+    new_n = sum((counted.get(date) or {}).get("total", 0) for date in stored)
+    if new_n < MIN_KEEP_RATIO * old_n:
+        return f"{new_n} victims vs {old_n} stored for the same days; looks truncated"
+    if new_n > MAX_GROWTH_RATIO * old_n:
+        return f"{new_n} victims vs {old_n} stored for the same days; looks inflated"
+    return None
 
 
 def day_entry(date, counts):
@@ -227,13 +307,6 @@ def dump(payload):
     return body + ',\n  "days": [\n    ' + ",\n    ".join(lines) + "\n  ]\n}\n"
 
 
-def write_atomic(path, text):
-    tmp = path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        f.write(text)
-    os.replace(tmp, path)
-
-
 def main(today=None):
     today = today or datetime.datetime.now(datetime.timezone.utc).date()
     yesterday = today - datetime.timedelta(days=1)
@@ -248,9 +321,14 @@ def main(today=None):
         previous = {}
     days = valid_existing_days(previous)
     months_meta = previous.get("months") if isinstance(previous.get("months"), dict) else {}
-    months_meta = {k: v for k, v in months_meta.items() if isinstance(v, dict)}
+    months_meta = {k: dict(v) for k, v in months_meta.items() if isinstance(v, dict)}
+    # Stored days that are out of bounds (e.g. written before these checks
+    # existed) make their month suspect, so it's re-fetched and replaced.
+    for date, d in days.items():
+        if d["total"] > MAX_PER_DAY:
+            months_meta.setdefault(date[:7], {})["suspect"] = True
 
-    accepted = 0
+    changed = 0
     for i, (year, month) in enumerate(months_to_fetch(today, months_meta)):
         if i:
             time.sleep(REQUEST_SPACING_S)
@@ -267,21 +345,37 @@ def main(today=None):
             print(f"ransomware.live {key}: {reason}; keeping previous counts.")
             continue
         counted, n = result
-        old_n = months_meta.get(key, {}).get("count")
-        if isinstance(old_n, int) and n < MIN_KEEP_RATIO * old_n:
-            print(f"ransomware.live {key}: {n} victims vs {old_n} last time; looks truncated, keeping previous counts.")
-            continue
         last = min(month_last_day(year, month), yesterday)
+        span = []
         d = max(datetime.date(year, month, 1), window_start)
         while d <= last:
-            iso = d.isoformat()
-            days[iso] = day_entry(iso, counted.get(iso))
+            span.append(d.isoformat())
             d += datetime.timedelta(days=1)
+        stored = {iso: days[iso]["total"] for iso in span if iso in days}
+        meta = months_meta.get(key, {})
+        rejected = meta.get("rejected") if isinstance(meta.get("rejected"), int) and meta["rejected"] > 0 else 0
+        problem = sanity_check(key, counted, stored)
+        suspect = False
+        if problem and rejected < REJECT_LIMIT:
+            meta = dict(meta, rejected=rejected + 1, suspect=True)
+            months_meta[key] = meta
+            changed += 1
+            print(f"ransomware.live {key}: {problem}; keeping previous counts (rejection {rejected + 1} of {REJECT_LIMIT}).")
+            continue
+        if problem:
+            # Bounded ratchet: the same disagreement REJECT_LIMIT runs in a
+            # row is more likely real than a repeat glitch.
+            print(f"WARNING ransomware.live {key}: {problem}, but {rejected} runs in a row disagreed with the stored counts; accepting the new response.")
+            suspect = out_of_bounds({iso: c["total"] for iso, c in counted.items()}) is not None
+        for iso in span:
+            days[iso] = day_entry(iso, counted.get(iso))
         months_meta[key] = {"fetched_at": now_iso(), "count": n}
-        accepted += 1
+        if suspect:
+            months_meta[key]["suspect"] = True
+        changed += 1
         print(f"ransomware.live {key}: {n} victims.")
 
-    if not accepted:
+    if not changed:
         print("No usable ransomware.live month data this run; leaving the trends file unchanged.")
         return
 

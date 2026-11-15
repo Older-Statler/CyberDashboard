@@ -218,13 +218,41 @@ A full-width, dark "ops center" layout:
   the fragment and overlay it (clickjacking). GitHub Pages can't send a `frame-ancestors`
   header, so a small script in `index.html`'s `<head>` does this.
 
+## Feature tour (phase 6)
+
+- **Ransomware trends** — a "Trends" area on the Ransomware tab: a 90-day daily-victims bar
+  chart with a 7-day average line, the top 8 groups, countries and sectors over 7, 30 or 90
+  days with the change against the previous window of the same length (the 90-day view has
+  no earlier window, so it shows no deltas), and a "Rising" list. Hover or tap for values;
+  "Daily counts as a table" gives a text version. Clicking a group or sector searches the
+  recent-victims table. Counts are by ransomware.live's *discovered* date, like the 72h view.
+  The window is shareable (`rwt=7|30|90`). `fetch_ransomware_trends.py` (daily) reads
+  ransomware.live's month listing (`/v2/victims/YYYY/MM`), so counts are exact rather than
+  limited to the 100-victim snapshot. A normal day is one request; the previous month is
+  re-counted during the first week of a month, and any gap in the 90-day window refills itself.
+  `data/ransomware_trends.json` holds counts only (per day: total, top 15 per dimension plus
+  "other"), no per-victim records. The area stays hidden until the file exists.
+- **EPSS movers** — a new tab listing the 100 CVEs whose EPSS score rose most over about 7
+  days (flagging the ones already in KEV, re-checked against the live KEV list), plus the 50
+  highest-scoring CVEs not in KEV. CVE ids link to NVD. A week rather than a day because
+  daily changes are small and noisy and the daily cron is sometimes late; if the 7-day file
+  is missing it tries 8, 6, then 9 days and records the real window. CVEs that are new since
+  the comparison day aren't counted as movers. If EPSS changed model version in between, the
+  tab warns, since a new model re-scores everything at once. `fetch_epss_movers.py` downloads
+  two ~2.8 MB daily CSVs and commits only `data/epss_movers.json` (~28 KB). EPSS data is
+  published by FIRST.org free of charge with a request for attribution, which the tab gives.
+- **Tor exit nodes** — a neutral "Tor exit" badge on feed IPs that are current Tor exits, and
+  a note in the IOC drawer: blocking such an IP affects every Tor user. Context only, not a
+  correlation signal. From the Tor Project's bulk exit list via `fetch_tor_exits.py` (daily,
+  `data/tor_exits.json`, ~27 KB).
+
 ## Repository structure
 
 ```
 .github/workflows/
   fetch-feeds.yml        # main cron: all 6 bulk feeds + ransomware.live, every 30 min
-  daily-intel.yml        # GreyNoise, geo/ASN, EPSS, InternetDB, AbuseIPDB, Spamhaus
-                          # DROP, trend rollup — once daily
+  daily-intel.yml        # GreyNoise, geo/ASN, EPSS + movers, Tor exits, InternetDB,
+                          # AbuseIPDB, Spamhaus DROP, ransomware trends, trend rollup — once daily
 assets/
   world-map.svg           # ISO-tagged world map for the choropleth (CC BY-SA 3.0)
   country-centroids.json  # ISO alpha-2 -> [lat, lng] for globe markers (Google DSPL, CC BY 4.0)
@@ -245,6 +273,9 @@ scripts/
   fetch_abuseipdb.py              # AbuseIPDB per-IP abuse reports, 14-day TTL cache
   fetch_spamhaus_drop.py          # Spamhaus DROP netblocks, full refresh daily
   fetch_ransomware_live.py        # ransomware.live recent victims
+  fetch_ransomware_trends.py      # ransomware.live month listings -> 90 days of daily counts
+  fetch_epss_movers.py            # EPSS full daily CSVs -> biggest 7-day risers + top non-KEV
+  fetch_tor_exits.py              # Tor Project bulk exit list
   fetch_uk_news.py                # UK cyber security headlines (RSS), last 48h
   build_enrichment_views.py       # slim, current-IPs-only copies of the InternetDB/AbuseIPDB caches for the frontend
   append_trend.py                 # daily per-feed count rollup, capped at 90 entries
@@ -262,6 +293,9 @@ data/
   spamhaus_drop.json      # full refresh every run — CIDR ranges + SBL IDs
   ransomware_victims.json # full refresh every run — ~100 most recent victims
   trends.json             # daily per-feed count rollup, capped at 90 entries
+  ransomware_trends.json  # 90 days of daily victim counts by group/country/sector (counts only)
+  epss_movers.json        # top 100 EPSS risers + top 50 non-KEV CVEs, rebuilt daily
+  tor_exits.json          # current Tor exit IPs, rebuilt daily
   raw/                    # per-feed intermediate output, gitignored
 index.html / styles.css / app.js  # the dashboard itself
 ```
@@ -331,8 +365,27 @@ index.html / styles.css / app.js  # the dashboard itself
   `app.js`, `styles.css`) makes no calls to any external threat-intel API (only the
   jsDelivr globe libraries described above).
 - **ransomware.live is rate-limited to 1 request/minute per endpoint.** `fetch_ransomware_live.py`
-  only calls one endpoint (`/recentvictims`) once per 30-minute run, so this is trivially respected —
-  but if a second endpoint is ever added there, the calls need to be spaced 60+ seconds apart.
+  only calls one endpoint (`/recentvictims`) once per 30-minute run, so this is trivially respected.
+  `fetch_ransomware_trends.py` (daily) uses a different endpoint (`/victims/YYYY/MM`) and spaces
+  its requests 65 seconds apart; its first run fetches up to 4 months, so it takes about 3.5
+  minutes. In November 2026 ransomware.live's TLS certificate expired for a while; both scripts
+  then fail cleanly and keep their previous files (TLS verification is never turned off).
+- **Ransomware trend sanity checks.** Records are de-duplicated per month (group + victim +
+  discovered timestamp). A month is rejected if any day exceeds 1,000 victims or its count is
+  outside 0.5×–3× what was stored for the same days. A rejected month keeps its previous days
+  without blocking the others; after 3 rejections in a row the next response is accepted with
+  a warning, and such months are marked `suspect` and re-fetched even after they end, so bad
+  figures can't get locked in.
+- **Download limits on the newer daily scripts.** EPSS movers, Tor exits and ransomware trends
+  fetch through `fetch_capped()` in `scripts/common.py`: streamed with a size cap, an overall
+  wall-clock deadline (so a server trickling bytes can't stall the job), and https only,
+  including redirects. EPSS decompression is capped at 200 MB and 1M rows. They write with
+  `write_atomic()`, so an interrupted run never commits half a file. EPSS movers also keeps its
+  previous file if the KEV list looks truncated (< 1,000 CVEs), the EPSS file is more than 3
+  days old, the comparison file's date doesn't match, or there are no movers.
+- **Workflow time limits.** `daily-intel.yml` has per-step `timeout-minutes` (about 3× each
+  step's slowest recent run) and a 75-minute job limit, so a hung step is cut off while there
+  is still time for the commit step.
 - **Shodan InternetDB has no documented rate limit**, so `fetch_internetdb.py` self-imposes
   one anyway: 300 new/re-checked IPs per run with a ~200ms delay between requests, out of
   courtesy to a free public service.
@@ -344,6 +397,11 @@ index.html / styles.css / app.js  # the dashboard itself
   (attributed to law-enforcement takedowns — Emotet 2021, Operation Endgame 2024), not
   worth building against right now. If botnet C2 tracking is wanted later, abuse.ch's own
   FAQ points to Spamhaus's Botnet Controller List as the modern replacement.
+- Considered and **not added (yet)**: a C2 server tracker. montysecurity/C2-Tracker was
+  archived in April 2026 with its data files removed. drb-ra/C2IntelFeeds is active but almost
+  all Cobalt Strike and licensed CC BY-NC-SA 4.0, which would need attribution and share-alike
+  on the committed JSON; Feodo Tracker is CC0 but tiny and also feeds ThreatFox, so it isn't
+  independent corroboration.
 
 ## Out of scope (by design)
 
