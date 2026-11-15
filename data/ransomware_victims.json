@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T14:37:53Z",
+  "generated_at": "2026-11-15T20:15:55Z",
   "victims": [
     {
       "group": "PixelLeaks",
@@ -180,6 +180,15 @@
       "published": "2026-11-15T08:59:39.303400+00:00",
       "domain": "hensun.com",
       "url": "https://www.ransomware.live/id/SmlhbmdzdSBIZW5nc2hlbmcgSW5mb3JtYXRpb24gVGVjaG5vbG9neSAo5rGf6IuP5oGS55ub5L+h5oGv5oqA5pyvIC8gaGVuc3VuLmNvbSlAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "lockbit5",
+      "victim": "pah.com.my",
+      "country": "MY",
+      "sector": "Healthcare",
+      "published": "2026-11-15T15:03:34.762752+00:00",
+      "domain": "pah.com.my",
+      "url": "https://www.ransomware.live/id/cGFoLmNvbS5teUBsb2NrYml0NQ=="
     },
     {
       "group": "Barracuda",
@@ -891,15 +900,6 @@
       "published": "2026-11-12T09:53:44.415306+00:00",
       "domain": "groupe-alternance.com",
       "url": "https://www.ransomware.live/id/R3JvdXBlIEFsdGVybmFuY2VAdGhlZ2VudGxlbWVu"
-    },
-    {
-      "group": "akira",
-      "victim": "Leware Construction Company ofFlorida",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-11-11T13:42:18.353064+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TGV3YXJlIENvbnN0cnVjdGlvbiBDb21wYW55IG9mRmxvcmlkYUBha2lyYQ=="
     }
   ]
 }

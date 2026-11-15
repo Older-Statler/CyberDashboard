@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T14:37:54Z",
+  "generated_at": "2026-11-15T20:15:55Z",
   "window_hours": 48,
   "sources": [
     {
@@ -9,13 +9,14 @@
     },
     {
       "name": "The Register",
-      "status": "ok",
-      "count": 2
+      "status": "error",
+      "count": 0,
+      "error": "not well-formed (invalid token): line 7, column 22"
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Infosecurity Magazine",
@@ -30,7 +31,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Graham Cluley",
@@ -55,38 +56,6 @@
       "source": "The Guardian",
       "published": "2026-11-15T07:00:06Z",
       "summary": "Unlike familiar Captcha tests, this con asks you to press a series of keys. And that’s a way in for fraudsters to install malicious software You are looking for some gifts for Christmas and want to support small businesses when you shop. When you visit the site of one you’ve…",
-      "uk_focus": false
-    },
-    {
-      "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
-      "link": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302",
-      "source": "The Register",
-      "published": "2026-11-14T08:18:00Z",
-      "summary": "Accessing banned content is as easy as whipping out a thesaurus, Parliament's Communications and Digital Committee hears",
-      "uk_focus": true
-    },
-    {
-      "title": "This year’s bug count just passed 100K",
-      "link": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
-      "source": "The Register",
-      "published": "2026-11-13T20:52:17Z",
-      "summary": "‘We don’t have a security problem anymore. We have a data problem now’",
-      "uk_focus": false
-    },
-    {
-      "title": "Five ways CISOs can use ‘dark AI’ to their own advantage",
-      "link": "https://www.itpro.com/security/its-the-ai-cybersecurity-apocalypse-for-threat-actors-five-ways-cisos-can-use-dark-ai-to-their-own-advantage",
-      "source": "ITPro",
-      "published": "2026-11-13T17:14:58Z",
-      "summary": "Vulnerability discovery will explode over the next few years, but CIOs can use AI to beat hackers at their own game",
-      "uk_focus": false
-    },
-    {
-      "title": "Mid-sized businesses can't leave quantum readiness to their suppliers",
-      "link": "https://www.computerweekly.com/opinion/Mid-sized-businesses-cant-leave-quantum-readiness-to-their-suppliers",
-      "source": "Computer Weekly",
-      "published": "2026-11-13T15:13:00Z",
-      "summary": "With suppliers focused on ensuring their own product lines are quantum-secure, end-users with diverse estates still can't afford to sleep on quantum security.",
       "uk_focus": false
     }
   ]
