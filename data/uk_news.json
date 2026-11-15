@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T07:01:58Z",
+  "generated_at": "2026-11-15T14:37:54Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 6
+      "count": 2
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 1
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 4
+      "count": 0
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Graham Cluley",
@@ -87,94 +87,6 @@
       "source": "Computer Weekly",
       "published": "2026-11-13T15:13:00Z",
       "summary": "With suppliers focused on ensuring their own product lines are quantum-secure, end-users with diverse estates still can't afford to sleep on quantum security.",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says",
-      "link": "https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-13T13:45:00Z",
-      "summary": "Proofpoint’s Selena Larson notes that threat actors’ reliance on AI has led to lots of mistakes being made, with little evidence of increased sophistication",
-      "uk_focus": false
-    },
-    {
-      "title": "Quantum Systems drones back in the air after malware scare",
-      "link": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658",
-      "source": "The Register",
-      "published": "2026-11-13T13:14:00Z",
-      "summary": "Germany's Bundeswehr lifted precautionary grounding after malicious update reportedly reached military servers",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft 365 Outage Set to Ramp up Security Risks to Organizations",
-      "link": "https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-13T12:29:00Z",
-      "summary": "While Microsoft resolves the global M365 and Outlook outage, cybersecurity teams remain on high alert as cybercriminals prepare to exploit the chaos",
-      "uk_focus": false
-    },
-    {
-      "title": "Phishing Rises Three Times Faster in Europe Than Globally, Proofpoint Finds",
-      "link": "https://www.infosecurity-magazine.com/news/phishing-rises-faster-europe/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-13T11:15:00Z",
-      "summary": "New Proofpoint research reveals phishing detections surged 4.5x across Europe year over year, compared with 1.5x globally",
-      "uk_focus": false
-    },
-    {
-      "title": "Italian court rejects data from police hacking of Sky ECC cryptophone network",
-      "link": "https://www.computerweekly.com/news/366654798/Italian-court-rejects-data-from-police-hacking-of-Sky-ECC-cryptophone-network",
-      "source": "Computer Weekly",
-      "published": "2026-11-13T11:14:00Z",
-      "summary": "Italian prosecution against mafia group collapses after judge throws out intercept evidence from police hacking of the Sky ECC cryptophone network",
-      "uk_focus": false
-    },
-    {
-      "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
-      "link": "https://www.theregister.com/security/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/5309421",
-      "source": "The Register",
-      "published": "2026-11-13T11:02:00Z",
-      "summary": "Watchdog wants assurances from 200 execs that employees aren't poking around patient files they have no business viewing",
-      "uk_focus": true
-    },
-    {
-      "title": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
-      "link": "https://www.theregister.com/security/2026/11/13/brit-police-watchdog-says-cops-use-of-facial-recog-risks-wrongful-arrests/5309379",
-      "source": "The Register",
-      "published": "2026-11-13T10:15:00Z",
-      "summary": "New report calls for change, highlights hodgepodge governance and misunderstanding about tech’s limitations among officers",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft outage: Impact shows risk of M365 bundle lock-in",
-      "link": "https://www.computerweekly.com/news/366654819/Microsoft-outage-Impact-shows-risk-of-M365-bundle-lock-in",
-      "source": "Computer Weekly",
-      "published": "2026-11-13T09:15:00Z",
-      "summary": "The Microsoft 365 suite provides everything from office productivity to cyber security tools. Should organisations rethink their Microsoft strategy?",
-      "uk_focus": false
-    },
-    {
-      "title": "AI Set to Revolutionize Ransomware Following “Stagnant” Few Years",
-      "link": "https://www.infosecurity-magazine.com/news/ai-revolutionize-ransomware/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-13T09:15:00Z",
-      "summary": "TrendAI’s Bob McArdle said ransomware techniques will change significantly in the next year, with AI making attacks more dangerous and profitable",
-      "uk_focus": false
-    },
-    {
-      "title": "NCSC puts critical infrastructure to the test with new assessment scheme",
-      "link": "https://www.itpro.com/security/ncsc-puts-critical-infrastructure-to-the-test-with-new-assessment-scheme",
-      "source": "ITPro",
-      "published": "2026-11-13T08:45:00Z",
-      "summary": "The program will match public sector bodies and critical infrastructure providers with accredited partners",
-      "uk_focus": true
-    },
-    {
-      "title": "C++26 stumbles at finish line over Contracts dispute",
-      "link": "https://www.theregister.com/devops/2026/11/13/c26-stumbles-at-finish-line-over-contracts-dispute/5309526",
-      "source": "The Register",
-      "published": "2026-11-13T07:31:00Z",
-      "summary": "ISO working group faces a fight over runtime checks, complexity, and the language's release timetable",
       "uk_focus": false
     }
   ]
