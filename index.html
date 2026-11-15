@@ -171,6 +171,7 @@
           <button type="button" role="tab" class="deck-tab" data-tab="section-malwarebazaar">MalwareBazaar <span class="tab-count" id="tabcount-malwarebazaar"></span></button>
           <button type="button" role="tab" class="deck-tab" data-tab="section-otx">OTX <span class="tab-count" id="tabcount-otx"></span></button>
           <button type="button" role="tab" class="deck-tab" data-tab="section-blocklistde">Blocklist.de <span class="tab-count" id="tabcount-blocklistde"></span></button>
+          <button type="button" role="tab" class="deck-tab" data-tab="section-epss_movers">EPSS movers <span class="tab-count" id="tabcount-epss_movers"></span></button>
           <button type="button" role="tab" class="deck-tab" data-tab="geo-section">Source geography</button>
           <button type="button" role="tab" class="deck-tab" data-tab="section-watchlist">Watchlist <span class="tab-count tab-count-hit" id="tabcount-watchlist"></span></button>
         </nav>
@@ -227,6 +228,50 @@
             <div class="export-buttons">
               <button class="export-btn" data-feed="ransomware_victims" data-format="csv" type="button">CSV</button>
               <button class="export-btn" data-feed="ransomware_victims" data-format="json" type="button">JSON</button>
+            </div>
+          </div>
+        </div>
+        <!-- 90-day trends (data/ransomware_trends.json). renderRwTrends keeps
+             this hidden unless that file loads and validates. -->
+        <div class="rw-trends" id="rw-trends" hidden>
+          <div class="rwt-head">
+            <h3>Trends <span class="panel-sub" id="rwt-sub"></span></h3>
+            <div class="rwt-windows" role="group" aria-label="Trend window">
+              <button type="button" class="rwt-win-btn" data-rwt-days="7" aria-pressed="false">7d</button>
+              <button type="button" class="rwt-win-btn" data-rwt-days="30" aria-pressed="true">30d</button>
+              <button type="button" class="rwt-win-btn" data-rwt-days="90" aria-pressed="false">90d</button>
+            </div>
+          </div>
+          <p class="rwt-note">Counted by <em>discovered</em> date, when ransomware.live saw the victim on a leak site (not when the attack happened), per UTC day. The table below lists only the latest 100 victims.</p>
+          <p class="rwt-summary" id="rwt-summary"></p>
+          <figure class="rwt-figure">
+            <div id="rwt-chart" class="rwt-chart"></div>
+            <figcaption class="rwt-legend">
+              <span class="rwt-li"><span class="rwt-key rwt-key-bar" aria-hidden="true"></span>Victims per day</span>
+              <span class="rwt-li"><span class="rwt-key rwt-key-line" aria-hidden="true"></span>7-day average</span>
+              <span class="rwt-li"><span class="rwt-key rwt-key-win" aria-hidden="true"></span>Selected window</span>
+            </figcaption>
+          </figure>
+          <details class="rwt-details">
+            <summary>Daily counts as a table</summary>
+            <div id="rwt-table" class="rwt-table-wrap"></div>
+          </details>
+          <div class="rwt-grid">
+            <div class="rwt-card">
+              <h4>Top groups <span class="rwt-vs"></span></h4>
+              <div id="rwt-groups" class="bar-list bar-list-groups"></div>
+            </div>
+            <div class="rwt-card">
+              <h4>Top countries <span class="rwt-vs"></span></h4>
+              <div id="rwt-countries" class="bar-list"></div>
+            </div>
+            <div class="rwt-card">
+              <h4>Top sectors <span class="rwt-vs"></span></h4>
+              <div id="rwt-sectors" class="bar-list"></div>
+            </div>
+            <div class="rwt-card">
+              <h4>Rising <span class="rwt-vs-fixed" id="rwt-rising-sub"></span></h4>
+              <div id="rwt-rising"></div>
             </div>
           </div>
         </div>
@@ -324,6 +369,37 @@
         <p class="empty-note" id="empty-blocklistde" hidden>No data yet.</p>
       </section>
 
+      <!-- EPSS movers (data/epss_movers.json, daily). renderEpssMoversMeta keeps
+           this hidden, along with its tab, until that file loads. -->
+      <section class="feed-section deck-panel" id="section-epss_movers" role="tabpanel" hidden>
+        <div class="feed-header">
+          <h2>EPSS Movers <span class="feed-status" id="status-epss_movers"></span></h2>
+          <div class="feed-header-controls">
+            <input type="search" class="search-box" data-feed="epss_movers" placeholder="Search CVE&hellip;" />
+            <div class="export-buttons">
+              <button class="export-btn" data-feed="epss_movers" data-format="csv" type="button">CSV</button>
+              <button class="export-btn" data-feed="epss_movers" data-format="json" type="button">JSON</button>
+            </div>
+          </div>
+        </div>
+        <p class="geo-meta" id="epss-movers-meta"></p>
+        <p class="geo-meta">Biggest rises in exploitation probability. A CVE climbing fast here can be worth patching before it reaches KEV.</p>
+        <div class="table-wrap"><table id="table-epss_movers"><thead></thead><tbody></tbody></table></div>
+        <p class="empty-note" id="empty-epss_movers" hidden>No data yet.</p>
+
+        <div class="feed-header epss-top-header">
+          <h2>Highest EPSS, not in KEV</h2>
+          <div class="feed-header-controls">
+            <div class="export-buttons">
+              <button class="export-btn" data-feed="epss_top" data-format="csv" type="button">CSV</button>
+              <button class="export-btn" data-feed="epss_top" data-format="json" type="button">JSON</button>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrap"><table id="table-epss_top"><thead></thead><tbody></tbody></table></div>
+        <p class="empty-note" id="empty-epss_top" hidden>No data yet.</p>
+      </section>
+
       <!-- Geo/ASN of attack-source IPs. renderGeo sets `hidden` on this section
            until data/geo_summary.json has data; its tab hides with it. -->
       <section class="feed-section deck-panel geo-section" id="geo-section" role="tabpanel" hidden>
@@ -388,7 +464,7 @@
               <p class="watchlist-caption vendor-watch-skipped" id="vendor-watch-skipped" role="status" hidden></p>
               <form class="vendor-add" id="vendor-add-form" hidden>
                 <input type="text" id="vendor-add-input" class="search-box vendor-add-input" list="vendor-suggestions" autocomplete="off" placeholder="Add a KEV vendor&hellip;" aria-label="Add a KEV vendor" />
-                <button type="submit" class="export-btn">ADD</button>
+                <button type="submit" class="watchlist-add-btn">ADD</button>
                 <datalist id="vendor-suggestions"></datalist>
               </form>
               <div class="vendor-chips" id="vendor-chips" aria-label="Most common KEV vendors"></div>

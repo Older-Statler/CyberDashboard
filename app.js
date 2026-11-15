@@ -29,7 +29,12 @@
     dropRangesParsed: [],
     dropCache: new Map(), // ip -> matching DROP range (or null), reset when ranges change
     ransomwareVictims: null,
+    ransomwareTrends: null,
+    rwTrendDays: 30, // Ransomware tab trends window, one of RWT_WINDOWS
     ukNews: null,
+    epssMovers: null, // data/epss_movers.json, see "EPSS movers"
+    torExits: null,
+    torSet: new Set(), // Tor exit IPs, rebuilt once per data load (looked up for every IP)
     newsQuery: "",
     newsUkOnly: false,
     tableState: {}, // feed -> { sortKey, sortDir, query, lastFiltered }
@@ -248,6 +253,9 @@
       fetchJsonBestEffort("data/spamhaus_drop.json"),
       fetchJsonBestEffort("data/ransomware_victims.json"),
       fetchJsonBestEffort("data/uk_news.json"),
+      fetchJsonBestEffort("data/ransomware_trends.json"),
+      fetchJsonBestEffort("data/epss_movers.json"),
+      fetchJsonBestEffort("data/tor_exits.json"),
       loadWorldMapSvg(),
     ]).then((results) => {
       auxReady = true;
@@ -279,7 +287,8 @@
       $("last-updated").textContent += " · loading enrichment…";
     }
 
-    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims, ukNews] = await auxPromise;
+    const [enrichment, trends, geoSummary, epss, internetdb, abuseipdb, spamhausDrop, ransomwareVictims, ukNews, ransomwareTrends, epssMovers, torExits] =
+      await auxPromise;
     state.enrichment = enrichment;
     state.trends = trends;
     state.geoSummary = geoSummary;
@@ -289,6 +298,10 @@
     state.spamhausDrop = spamhausDrop;
     state.ransomwareVictims = ransomwareVictims;
     state.ukNews = ukNews;
+    state.ransomwareTrends = ransomwareTrends;
+    state.epssMovers = epssMovers && typeof epssMovers === "object" && !Array.isArray(epssMovers) ? epssMovers : null;
+    state.torExits = torExits;
+    state.torSet = buildTorSet(torExits);
 
     render();
     applyInitialHash(); // no-op after the first load
@@ -539,8 +552,25 @@
     return ` <span class="badge badge-drop" title="${escapeHtml(tooltip)}">netblock flagged</span>`;
   }
 
+  // ---------- Tor exit nodes (context, not a malicious signal) ----------
+
+  const TOR_NOTE = "Tor exit node: blocking this IP affects all Tor users";
+
+  function buildTorSet(data) {
+    const ips = Array.isArray(data?.ips) ? data.ips : [];
+    return new Set(ips.filter((ip) => typeof ip === "string"));
+  }
+
+  function isTorExit(ip) {
+    return Boolean(ip) && state.torSet.has(ip);
+  }
+
+  function torBadge(ip) {
+    return isTorExit(ip) ? ` <span class="badge badge-info" title="${escapeHtml(TOR_NOTE)}">Tor exit</span>` : "";
+  }
+
   function ipBadges(ip) {
-    return greynoiseBadge(ip) + internetdbBadge(ip) + abuseipdbBadge(ip) + dropBadge(ip);
+    return greynoiseBadge(ip) + internetdbBadge(ip) + abuseipdbBadge(ip) + dropBadge(ip) + torBadge(ip);
   }
 
   // ---------- Correlation ----------
@@ -750,7 +780,8 @@
     // Row clicks open the IOC drawer via the delegated handler in initIocDrawer.
   }
 
-  function scrollToMatch(feed, value) {
+  // scrollTarget: what to bring into view (default: the whole section).
+  function scrollToMatch(feed, value, scrollTarget) {
     const input = document.querySelector(`.search-box[data-feed="${feed}"]`);
     const section = $(`section-${feed}`);
     if (!input || !section) return;
@@ -762,7 +793,7 @@
     if (feed === "cisa_kev") state.kevWatch.watchedOnly = false;
     renderFeed(feed);
     activateTab(section.id, true);
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    (scrollTarget || section).scrollIntoView({ behavior: "smooth", block: "start" });
     section.classList.add("flash-highlight");
     setTimeout(() => section.classList.remove("flash-highlight"), 1500);
   }
@@ -793,7 +824,9 @@
   function iocKnown(type, value) {
     if (state.iocIndex.has(`${type}|${value}`)) return true;
     if (type !== "ip") return false;
-    return Boolean(state.enrichment?.lookups?.[value] || state.abuseipdb?.entries?.[value] || state.internetdb?.entries?.[value]);
+    return Boolean(
+      state.enrichment?.lookups?.[value] || state.abuseipdb?.entries?.[value] || state.internetdb?.entries?.[value] || isTorExit(value)
+    );
   }
 
   // rows: [label, html] — html must already be escaped; empty values are skipped.
@@ -964,6 +997,17 @@
       ]);
     }
 
+    // Context only: deliberately not part of computeSignalCount.
+    if (isTorExit(ip)) {
+      blocks.push([
+        "Tor exit node",
+        drawerFields([
+          ["Note", "Blocking this IP affects all Tor users. Shown as context; not counted as a signal."],
+          ["List date", drawerDate(state.torExits?.generated_at)],
+        ]),
+      ]);
+    }
+
     if (!blocks.length) return "";
     return `<section class="drawer-section">
       <div class="drawer-section-head"><h3>Enrichment</h3></div>
@@ -996,6 +1040,7 @@
       if (drop && drop.sbl_id) {
         links.push([`Spamhaus ${drop.sbl_id}`, `https://check.spamhaus.org/results?query=${encodeURIComponent(drop.sbl_id)}`]);
       }
+      if (isTorExit(value)) links.push(["Tor relay search", `https://metrics.torproject.org/rs.html#search/${v}`]);
     }
     return `<section class="drawer-section">
       <div class="drawer-section-head"><h3>Look up</h3></div>
@@ -2172,6 +2217,100 @@
     });
   }
 
+  // ---------- EPSS movers (data/epss_movers.json) ----------
+  //
+  // Built daily by scripts/fetch_epss_movers.py from FIRST.org's full EPSS
+  // files: the CVEs whose score rose most over the window (7 days), and the
+  // highest-scoring CVEs not in CISA KEV. Every value is untrusted.
+
+  let kevIdCache = { snapshot: null, ids: new Set() };
+
+  // CVE ids in the current KEV snapshot. KEV refreshes every 30 minutes and
+  // the movers file once a day, so "in KEV" is re-checked here too.
+  function kevIdSet() {
+    if (kevIdCache.snapshot !== state.snapshot) {
+      const items = state.snapshot?.feeds?.cisa_kev?.items || [];
+      kevIdCache = { snapshot: state.snapshot, ids: new Set(items.map((i) => i.cve_id).filter(Boolean)) };
+    }
+    return kevIdCache.ids;
+  }
+
+  function epssRows(list) {
+    return (Array.isArray(list) ? list : [])
+      .filter((r) => r && typeof r === "object" && typeof r.cve === "string" && r.cve)
+      .map((r) => ({ ...r, in_kev: r.in_kev === true || kevIdSet().has(r.cve) }));
+  }
+
+  function epssNum(x) {
+    return typeof x === "number" && Number.isFinite(x) ? x : null;
+  }
+
+  function epssPct(x) {
+    const n = epssNum(x);
+    return n === null ? "&mdash;" : `${(n * 100).toFixed(1)}%`;
+  }
+
+  // Change in EPSS score, in percentage points.
+  function epssDelta(x) {
+    const n = epssNum(x);
+    if (n === null) return `<span class="drawer-dim">new</span>`;
+    const pts = Math.round(n * 1000) / 10; // so a tiny fall shows as 0.0, not -0.0
+    const text = `${pts > 0 ? "+" : ""}${(pts || 0).toFixed(1)} pts`;
+    return n >= 0.1 ? `<span class="epss-high">${text}</span>` : text;
+  }
+
+  function cveNvdLink(cve) {
+    return `<span class="mono">${extLink(`https://nvd.nist.gov/vuln/detail/${encodeURIComponent(cve)}`, cve)}</span>`;
+  }
+
+  function epssKevFlag(r) {
+    if (!r.in_kev) return "&mdash;";
+    return `<a href="#section-cisa_kev" class="triage-link badge badge-malicious" data-feed="cisa_kev" data-q="${escapeHtml(r.cve)}" title="In CISA KEV: show it in the KEV table">KEV</a>`;
+  }
+
+  function epssItems(key, filter) {
+    const data = state.epssMovers;
+    if (!data) return { status: "pending", items: [] };
+    let items = epssRows(data[key]);
+    if (filter) items = items.filter(filter);
+    return { status: "ok", items };
+  }
+
+  function renderEpssMoversMeta() {
+    const section = $("section-epss_movers");
+    if (!section) return;
+    // No data file: keep the tab hidden rather than show an empty panel.
+    section.hidden = !state.epssMovers;
+    const meta = $("epss-movers-meta");
+    if (!state.epssMovers || !meta) return;
+    const d = state.epssMovers;
+    const days = epssNum(d.window_days);
+    const total = epssNum(d.total_scored);
+    const parts = [
+      `EPSS scores for ${escapeHtml(d.score_date || "?")}, change vs ${escapeHtml(d.compare_date || "?")}${days ? ` (${days} days)` : ""}`,
+      total ? `${total.toLocaleString()} CVEs scored` : "",
+      "CVEs already in CISA KEV are flagged; CVE links open NVD",
+      `source: <a href="https://www.first.org/epss/" target="_blank" rel="noopener noreferrer">FIRST.org EPSS</a>`,
+    ].filter(Boolean);
+    let html = parts.join(" &middot; ");
+    if (d.model_changed) {
+      html += `<br><strong>EPSS model changed (${escapeHtml(d.compare_model_version)} &rarr; ${escapeHtml(d.model_version)}):</strong> these changes mostly reflect the new model, not new exploitation evidence.`;
+    }
+    meta.innerHTML = html;
+  }
+
+  function initEpssMovers() {
+    const section = $("section-epss_movers");
+    if (!section) return;
+    // KEV flags scroll to that CVE in the KEV table.
+    section.addEventListener("click", (ev) => {
+      const a = ev.target.closest("a.triage-link[data-feed]");
+      if (!a) return;
+      ev.preventDefault();
+      scrollToMatch(a.getAttribute("data-feed"), a.getAttribute("data-q"));
+    });
+  }
+
   // ---------- Per-feed render definitions ----------
 
   const FEED_DEFS = {
@@ -2401,6 +2540,38 @@
           ? { status: "ok", items: state.ransomwareVictims.victims || [] }
           : { status: "pending", items: [] },
     },
+
+    // Not feeds either: both tables come from data/epss_movers.json.
+    epss_movers: {
+      columns: [
+        { key: "cve", label: "CVE", sortValue: (i) => i.cve, render: (i) => cveNvdLink(i.cve) },
+        { key: "delta", label: "Change", sortValue: (i) => epssNum(i.delta) ?? -2, render: (i) => epssDelta(i.delta) },
+        { key: "epss", label: "EPSS", sortValue: (i) => epssNum(i.epss) ?? -1, render: (i) => epssPct(i.epss) },
+        { key: "prev_epss", label: "Was", sortValue: (i) => epssNum(i.prev_epss) ?? -1, render: (i) => epssPct(i.prev_epss) },
+        { key: "percentile", label: "Percentile", sortValue: (i) => epssNum(i.percentile) ?? -1, render: (i) => epssPct(i.percentile) },
+        { key: "in_kev", label: "KEV", sortValue: (i) => (i.in_kev ? 1 : 0), render: (i) => epssKevFlag(i) },
+      ],
+      searchFn: (i) => i.cve,
+      defaultSort: { key: "delta", dir: "desc" },
+      csvHeaders: ["CVE", "EPSS Change", "EPSS", "Previous EPSS", "Percentile", "Previous Percentile", "In KEV"],
+      toCsvRow: (i) => [i.cve, i.delta, i.epss, i.prev_epss, i.percentile, i.prev_percentile, i.in_kev ? "yes" : "no"],
+      getItems: () => epssItems("movers"),
+    },
+
+    epss_top: {
+      columns: [
+        { key: "cve", label: "CVE", sortValue: (i) => i.cve, render: (i) => cveNvdLink(i.cve) },
+        { key: "epss", label: "EPSS", sortValue: (i) => epssNum(i.epss) ?? -1, render: (i) => epssPct(i.epss) },
+        { key: "percentile", label: "Percentile", sortValue: (i) => epssNum(i.percentile) ?? -1, render: (i) => epssPct(i.percentile) },
+        { key: "delta", label: "Change", sortValue: (i) => epssNum(i.delta) ?? -2, render: (i) => epssDelta(i.delta) },
+      ],
+      searchFn: (i) => i.cve,
+      defaultSort: { key: "epss", dir: "desc" },
+      csvHeaders: ["CVE", "EPSS", "Percentile", "EPSS Change"],
+      toCsvRow: (i) => [i.cve, i.epss, i.percentile, i.delta ?? ""],
+      // Dropped as soon as the CVE reaches KEV, even before the next daily build.
+      getItems: () => epssItems("top_non_kev", (r) => !r.in_kev),
+    },
   };
 
   function renderFeed(feed) {
@@ -2429,8 +2600,10 @@
     renderGeo();
     state.rw = computeRansomwareWindow();
     renderRansomwarePanels();
+    renderRwTrends();
     updateGlobe();
     renderUkNews();
+    renderEpssMoversMeta();
     renderTabCounts();
     syncTabs();
     renderSinceSummary();
@@ -2547,13 +2720,16 @@
   //
   //   tab=<name>        data-deck tab: correlated (default, omitted), cisa_kev,
   //                     ransomware_victims, uk_news, threatfox, urlhaus,
-  //                     malwarebazaar, otx, blocklistde, geo, watchlist
+  //                     malwarebazaar, otx, blocklistde, epss_movers, geo,
+  //                     watchlist
   //   q=<text>          that tab's search box (feed tables and uk_news)
   //   sort=<key>:<dir>  that tab's sort column (a column key) and asc|desc;
   //                     omitted when it's the table's default sort
   //   uk=1              uk_news only: "UK stories only"
   //   ioc=<type>:<v>    open IOC drawer; type is ip, domain or hash
   //   cc=<XX>           ransomware country filter (two letters)
+  //   rwt=<7|30|90>     ransomware_victims only: trends window; omitted at
+  //                     the default (30)
   //
   // e.g. #tab=cisa_kev&q=fortinet&sort=date_added:asc  or  #ioc=ip:1.2.3.4
   // A bare legacy anchor like #section-cisa_kev is read as its tab.
@@ -2570,7 +2746,7 @@
   const HASH_Q_MAX = 200;
   const HASH_IOC_MAX = 500;
   const HASH_SYNC_MS = 300;
-  const HASH_KEYS = new Set(["tab", "q", "sort", "uk", "ioc", "cc"]);
+  const HASH_KEYS = new Set(["tab", "q", "sort", "uk", "ioc", "cc", "rwt"]);
   const HASH_TABS = new Map([
     ["correlated", "section-correlated"],
     ["cisa_kev", "section-cisa_kev"],
@@ -2581,6 +2757,7 @@
     ["malwarebazaar", "section-malwarebazaar"],
     ["otx", "section-otx"],
     ["blocklistde", "section-blocklistde"],
+    ["epss_movers", "section-epss_movers"],
     ["geo", "geo-section"],
     ["watchlist", "section-watchlist"],
   ]);
@@ -2646,7 +2823,7 @@
   // Fragment -> validated view state. Never throws on any input string.
   function parseHashState(raw) {
     const p = readHashPairs(raw);
-    const h = { tab: null, q: null, sort: null, uk: false, ioc: null, cc: null, any: false };
+    const h = { tab: null, q: null, sort: null, uk: false, ioc: null, cc: null, rwt: null, any: false };
 
     const tab = p.get("tab");
     if (tab && HASH_TABS.has(tab)) h.tab = tab;
@@ -2670,7 +2847,10 @@
     const cc = p.get("cc");
     if (cc && /^[A-Za-z]{2}$/.test(cc)) h.cc = cc.toUpperCase();
 
-    h.any = Boolean(h.tab || h.q || h.sort || h.uk || h.ioc || h.cc);
+    const rwt = p.get("rwt");
+    if (h.tab === "ransomware_victims" && /^\d{1,2}$/.test(rwt || "") && RWT_WINDOWS.includes(Number(rwt))) h.rwt = Number(rwt);
+
+    h.any = Boolean(h.tab || h.q || h.sort || h.uk || h.ioc || h.cc || h.rwt);
     return h;
   }
 
@@ -2722,6 +2902,7 @@
     }
 
     if ((h.cc || null) !== state.rwCountry) setRwCountry(h.cc);
+    if ((h.rwt || RWT_DEFAULT_WINDOW) !== state.rwTrendDays) setRwTrendDays(h.rwt || RWT_DEFAULT_WINDOW);
     syncTabs();
   }
 
@@ -2805,6 +2986,9 @@
     } else if (tabName === "uk_news") {
       if (full && state.newsQuery) pairs.push(["q", state.newsQuery.slice(0, HASH_Q_MAX)]);
       if (state.newsUkOnly) pairs.push(["uk", "1"]);
+    }
+    if (tabName === "ransomware_victims" && state.rwTrendDays !== RWT_DEFAULT_WINDOW && rwTrendsModel()) {
+      pairs.push(["rwt", String(state.rwTrendDays)]);
     }
 
     const ioc = full && (state.drawer || state.hashPendingIoc);
@@ -3558,6 +3742,342 @@
     $("rw-filter").addEventListener("click", () => setRwCountry(null));
   }
 
+  // ---------- Ransomware: 90-day trends (data/ransomware_trends.json) ----------
+  //
+  // Daily counts from scripts/fetch_ransomware_trends.py, by the same
+  // `discovered` date as the 72h view. Each day has a total plus its top
+  // names per group / country / sector and an "other" count for the rest,
+  // so window totals are exact and per-name sums very close. Names come
+  // from ransomware.live (attacker-influenced) and are escaped everywhere.
+  // A missing or malformed file keeps the whole area hidden.
+
+  const RWT_WINDOWS = [7, 30, 90];
+  const RWT_DEFAULT_WINDOW = 30;
+  const RWT_AXIS_DAYS = 90;
+  const RWT_TOP = 8;
+  const RWT_RISING = 5;
+  const RWT_RISING_MIN = 3; // a rise to fewer victims than this is noise
+  const RWT_UNKNOWN = "-"; // the script's key for a missing country / sector / group
+  const RWT_DIMS = ["groups", "countries", "sectors"];
+  const RWT_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+  const rwtCache = { raw: null, model: null };
+
+  function rwtCount(v) {
+    return Number.isInteger(v) && v >= 0 && v <= 1e6 ? v : null;
+  }
+
+  function rwtCounts(obj) {
+    const out = new Map();
+    if (!obj || typeof obj !== "object" || Array.isArray(obj)) return out;
+    for (const [k, v] of Object.entries(obj)) {
+      const n = rwtCount(v);
+      if (n && k.length <= 200) out.set(k, n);
+    }
+    return out;
+  }
+
+  function rwtAddDays(date, delta) {
+    const t = Date.UTC(+date.slice(0, 4), +date.slice(5, 7) - 1, +date.slice(8, 10)) + delta * 86400000;
+    return new Date(t).toISOString().slice(0, 10);
+  }
+
+  function rwtDayLabel(date) {
+    return new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+  }
+
+  // Validated, gap-aware model of the file, or null. Rebuilt only when a
+  // new file has been loaded, so render() stays cheap.
+  function rwTrendsModel() {
+    const raw = state.ransomwareTrends;
+    if (rwtCache.raw === raw) return rwtCache.model;
+    rwtCache.raw = raw;
+    rwtCache.model = null;
+    if (!raw || typeof raw !== "object" || !Array.isArray(raw.days)) return null;
+
+    const byDate = new Map();
+    for (const d of raw.days) {
+      if (!d || typeof d !== "object" || typeof d.date !== "string" || !RWT_DATE_RE.test(d.date)) continue;
+      const total = rwtCount(d.total);
+      if (total === null || isNaN(Date.parse(d.date))) continue;
+      const day = { total, other: {} };
+      for (const dim of RWT_DIMS) {
+        day[dim] = rwtCounts(d[dim]);
+        day.other[dim] = rwtCount(d.other?.[dim]) || 0;
+      }
+      byDate.set(d.date, day);
+    }
+    if (!byDate.size) return null;
+
+    const last = Array.from(byDate.keys()).sort().pop();
+    const axis = [];
+    for (let i = RWT_AXIS_DAYS - 1; i >= 0; i--) axis.push(rwtAddDays(last, -i));
+    const series = axis.map((date) => (byDate.has(date) ? byDate.get(date).total : null));
+    // Trailing 7-day mean over the days that have data; a break where fewer than 4 do.
+    const avg = series.map((_, i) => {
+      const win = series.slice(Math.max(0, i - 6), i + 1).filter((v) => v !== null);
+      return win.length >= 4 ? win.reduce((a, b) => a + b, 0) / win.length : null;
+    });
+    rwtCache.model = { byDate, last, axis, series, avg, labels: axis.map(rwtDayLabel), generatedAt: raw.generated_at };
+    return rwtCache.model;
+  }
+
+  // Sums over `n` axis days ending `offset` days before the last one.
+  function rwtWindow(m, n, offset) {
+    const dates = m.axis.slice(m.axis.length - offset - n, m.axis.length - offset);
+    const w = { n, total: 0, covered: 0, other: { groups: 0, countries: 0, sectors: 0 } };
+    for (const dim of RWT_DIMS) w[dim] = new Map();
+    for (const date of dates) {
+      const day = m.byDate.get(date);
+      if (!day) continue;
+      w.covered += 1;
+      w.total += day.total;
+      for (const dim of RWT_DIMS) {
+        for (const [k, v] of day[dim]) w[dim].set(k, (w[dim].get(k) || 0) + v);
+        w.other[dim] += day.other[dim];
+      }
+    }
+    return w;
+  }
+
+  // The window and the one before it; prior is null when it isn't in the file.
+  function rwtCompare(m, n) {
+    return { cur: rwtWindow(m, n, 0), prior: 2 * n <= m.axis.length ? rwtWindow(m, n, n) : null };
+  }
+
+  function rwtSigned(n) {
+    return n > 0 ? `+${n.toLocaleString()}` : n < 0 ? `−${Math.abs(n).toLocaleString()}` : "0";
+  }
+
+  function rwtNiceMax(v) {
+    if (v <= 5) return 5;
+    const p = Math.pow(10, Math.floor(Math.log10(v)));
+    for (const s of [1, 2, 2.5, 5, 10]) if (s * p >= v) return s * p;
+    return 10 * p;
+  }
+
+  function rwtName(dim, key) {
+    if (key === RWT_UNKNOWN) return dim === "countries" ? "Not listed" : "Unknown";
+    return dim === "countries" ? `${key} · ${countryName(key)}` : key;
+  }
+
+  function rwtChartHtml(m, n) {
+    const W = m.axis.length;
+    const peak = Math.max(1, ...m.series.map((v) => v || 0));
+    const top = rwtNiceMax(peak);
+    const y = (v) => (100 - (v / top) * 100).toFixed(2);
+    const bars = m.series
+      .map((v, i) => (v ? `<rect class="rwt-bar" x="${i + 0.15}" y="${y(v)}" width="0.7" height="${((v / top) * 100).toFixed(2)}"/>` : ""))
+      .join("");
+    let path = "";
+    let pen = false;
+    m.avg.forEach((v, i) => {
+      if (v === null) {
+        pen = false;
+        return;
+      }
+      path += `${pen ? "L" : "M"}${(i + 0.5).toFixed(1)} ${y(v)}`;
+      pen = true;
+    });
+    const grid = [0, 0.5, 1]
+      .map((f) => `<line class="rwt-grid" x1="0" x2="${W}" y1="${(100 - f * 100).toFixed(2)}" y2="${(100 - f * 100).toFixed(2)}" vector-effect="non-scaling-stroke"/>`)
+      .join("");
+
+    const present = m.series.filter((v) => v !== null);
+    const sum = present.reduce((a, b) => a + b, 0);
+    const peakIdx = m.series.indexOf(peak);
+    const label =
+      `Daily ransomware victims by discovered date, ${m.labels[0]} to ${m.labels[W - 1]}: ` +
+      `${sum.toLocaleString()} victims over ${present.length} days with data, ` +
+      `average ${(sum / Math.max(1, present.length)).toFixed(1)} a day, peak ${peak.toLocaleString()} on ${m.labels[peakIdx] || "?"}. ` +
+      `Full figures are in the daily counts table.`;
+    const mid = Math.floor((W - 1) / 2);
+    return `<div class="rwt-plot">
+        <span class="rwt-ylab" style="top:0">${top.toLocaleString()}</span>
+        <span class="rwt-ylab" style="top:50%">${(top / 2).toLocaleString()}</span>
+        <span class="rwt-ylab" style="top:100%">0</span>
+        <svg class="rwt-svg" viewBox="0 0 ${W} 100" preserveAspectRatio="none" role="img" aria-label="${escapeHtml(label)}">
+          <rect class="rwt-window" x="${W - n}" y="0" width="${n}" height="100"/>
+          ${grid}${bars}
+          <path class="rwt-avg" d="${path}" vector-effect="non-scaling-stroke"/>
+          <rect class="rwt-hover" id="rwt-hover" x="0" y="0" width="1" height="100" visibility="hidden"/>
+        </svg>
+        <div class="rwt-tip" id="rwt-tip" hidden></div>
+      </div>
+      <div class="rwt-xlabs" aria-hidden="true"><span>${escapeHtml(m.labels[0])}</span><span>${escapeHtml(m.labels[mid])}</span><span>${escapeHtml(m.labels[W - 1])}</span></div>`;
+  }
+
+  function rwtTableHtml(m) {
+    const rows = m.axis
+      .map((date, i) => {
+        const v = m.series[i];
+        const a = m.avg[i];
+        return `<tr><td>${escapeHtml(date)}</td><td class="num">${v === null ? "no data" : v.toLocaleString()}</td><td class="num">${a === null ? "—" : a.toFixed(1)}</td></tr>`;
+      })
+      .reverse()
+      .join("");
+    return `<table class="rwt-table"><thead><tr><th scope="col">Date (UTC)</th><th scope="col">Victims</th><th scope="col">7-day avg</th></tr></thead><tbody>${rows}</tbody></table>`;
+  }
+
+  function rwtDeltaHtml(cur, prior, n) {
+    if (prior === null) return "";
+    const d = cur - prior;
+    const cls = d > 0 ? "up" : d < 0 ? "down" : "flat";
+    const txt = prior === 0 && cur > 0 ? "new" : rwtSigned(d);
+    return `<span class="rwt-delta ${cls}">${txt}<span class="sr-only"> vs prior ${n} days</span></span>`;
+  }
+
+  // Top rows for one dimension. Groups and sectors filter the table below.
+  function rwtListHtml(dim, cmp) {
+    const { cur, prior } = cmp;
+    const n = cur.n;
+    const entries = Array.from(cur[dim].entries())
+      .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))
+      .slice(0, RWT_TOP);
+    if (!entries.length) return `<p class="rwt-empty">No victims in this window.</p>`;
+    const max = entries[0][1];
+    const clickable = dim !== "countries";
+    const rows = entries
+      .map(([key, count]) => {
+        const p = prior ? prior[dim].get(key) || 0 : null;
+        const name = rwtName(dim, key);
+        const pct = Math.max(4, Math.round((count / max) * 100));
+        const vs = p === null ? "" : `; ${p.toLocaleString()} in the prior ${n} (${rwtSigned(count - p)})`;
+        const canFilter = clickable && key !== RWT_UNKNOWN;
+        const tip = `${name}: ${count.toLocaleString()} victim${count === 1 ? "" : "s"} in the last ${n} days${vs}${canFilter ? ". Click to search the recent-victims table" : ""}`;
+        const attr = canFilter ? ` data-rwt-q="${escapeHtml(key)}" tabindex="0" role="button"` : "";
+        return `<div class="rwt-row${canFilter ? " is-link" : ""}"${attr} title="${escapeHtml(tip)}">
+          <span class="bar-label">${escapeHtml(name)}</span>
+          <span class="bar-track"><span class="bar-fill" style="width:${pct}%"></span></span>
+          <span class="bar-count">${count.toLocaleString()}</span>
+          ${rwtDeltaHtml(count, p, n)}
+        </div>`;
+      })
+      .join("");
+    const other = cur.other[dim];
+    const note = other ? `<p class="rwt-foot">${other.toLocaleString()} more on busy days not broken out by name.</p>` : "";
+    return rows + note;
+  }
+
+  // Biggest increases among groups and countries (not "unknown").
+  function rwtRisingHtml(cmp) {
+    const { cur, prior } = cmp;
+    const out = [];
+    for (const dim of ["groups", "countries"]) {
+      for (const [key, count] of cur[dim]) {
+        if (key === RWT_UNKNOWN || count < RWT_RISING_MIN) continue;
+        const p = prior[dim].get(key) || 0;
+        if (count > p) out.push({ dim, key, count, p, d: count - p });
+      }
+    }
+    out.sort((a, b) => b.d - a.d || b.count - a.count || (a.key < b.key ? -1 : 1));
+    const rows = out.slice(0, RWT_RISING);
+    if (!rows.length) return `<p class="rwt-empty">Nothing rising against the prior ${cur.n} days.</p>`;
+    return `<ol class="rwt-rising">${rows
+      .map((r) => {
+        const name = rwtName(r.dim, r.key);
+        const kind = r.dim === "groups" ? "group" : "country";
+        const tip = `${name}: ${r.count} victims in the last ${cur.n} days, ${r.p} in the prior ${cur.n}`;
+        return `<li title="${escapeHtml(tip)}"><span class="rwt-kind">${kind}</span><span class="rwt-rname">${escapeHtml(name)}</span><span class="rwt-delta up">${r.p === 0 ? "new" : rwtSigned(r.d)}</span><span class="rwt-rvs">${r.count} vs ${r.p}</span></li>`;
+      })
+      .join("")}</ol>`;
+  }
+
+  function renderRwTrends() {
+    const wrap = $("rw-trends");
+    if (!wrap) return;
+    const m = rwTrendsModel();
+    wrap.hidden = !m;
+    if (!m) return;
+    const n = RWT_WINDOWS.includes(state.rwTrendDays) ? state.rwTrendDays : RWT_DEFAULT_WINDOW;
+
+    wrap.querySelectorAll("[data-rwt-days]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.rwtDays) === n)));
+    const synced = m.generatedAt ? ` · synced ${relativeTime(m.generatedAt)}` : "";
+    $("rwt-sub").textContent = `to ${m.labels[m.labels.length - 1]} (UTC)${synced}`;
+
+    const cmp = rwtCompare(m, n);
+    const { cur, prior } = cmp;
+    const gaps = cur.covered < n ? ` (data for ${cur.covered} of ${n} days)` : "";
+    let vs = "";
+    if (prior && prior.covered) {
+      const d = cur.total - prior.total;
+      const pct = prior.total ? ` (${rwtSigned(Math.round((d / prior.total) * 100))}%)` : "";
+      vs = ` · <span class="rwt-delta ${d > 0 ? "up" : d < 0 ? "down" : "flat"}">${rwtSigned(d)}${pct}</span> vs prior ${n} days`;
+    }
+    $("rwt-summary").innerHTML =
+      `<strong>${cur.total.toLocaleString()}</strong> victims in the last ${n} days${escapeHtml(gaps)} · ` +
+      `${(cur.total / Math.max(1, cur.covered)).toFixed(1)} a day${vs}`;
+
+    $("rwt-chart").innerHTML = rwtChartHtml(m, n);
+    $("rwt-table").innerHTML = rwtTableHtml(m);
+    const vsLabel = prior ? `change vs prior ${n}d` : `no prior ${n}d in the 90-day history`;
+    wrap.querySelectorAll(".rwt-vs").forEach((el) => (el.textContent = vsLabel));
+    $("rwt-groups").innerHTML = rwtListHtml("groups", cmp);
+    $("rwt-countries").innerHTML = rwtListHtml("countries", cmp);
+    $("rwt-sectors").innerHTML = rwtListHtml("sectors", cmp);
+    // 90 days has nothing before it in the file, so "rising" compares 30 days there.
+    const risingCmp = prior ? cmp : rwtCompare(m, 30);
+    $("rwt-rising-sub").textContent = `last ${risingCmp.cur.n}d vs prior ${risingCmp.cur.n}d`;
+    $("rwt-rising").innerHTML = rwtRisingHtml(risingCmp);
+  }
+
+  function setRwTrendDays(n) {
+    if (!RWT_WINDOWS.includes(n) || n === state.rwTrendDays) return;
+    state.rwTrendDays = n;
+    renderRwTrends();
+    scheduleHashSync();
+  }
+
+  function initRwTrends() {
+    const wrap = $("rw-trends");
+    if (!wrap) return;
+    wrap.addEventListener("click", (ev) => {
+      const b = ev.target.closest("[data-rwt-days]");
+      if (b) setRwTrendDays(Number(b.dataset.rwtDays));
+    });
+    const lists = ["click", "keydown"];
+    lists.forEach((type) =>
+      wrap.addEventListener(type, (ev) => {
+        const row = ev.target.closest("[data-rwt-q]");
+        if (!row) return;
+        if (type === "keydown" && ev.key !== "Enter" && ev.key !== " ") return;
+        ev.preventDefault();
+        const table = document.querySelector("#section-ransomware_victims .table-wrap");
+        scrollToMatch("ransomware_victims", row.getAttribute("data-rwt-q"), table);
+      })
+    );
+
+    // Hover / touch tooltip on the chart: the day under the pointer.
+    const chart = $("rwt-chart");
+    const hide = () => {
+      const tip = $("rwt-tip");
+      const hl = $("rwt-hover");
+      if (tip) tip.hidden = true;
+      if (hl) hl.setAttribute("visibility", "hidden");
+    };
+    const show = (ev) => {
+      const m = rwTrendsModel();
+      const svg = chart.querySelector(".rwt-svg");
+      const tip = $("rwt-tip");
+      const hl = $("rwt-hover");
+      if (!m || !svg || !tip || !hl) return;
+      const r = svg.getBoundingClientRect();
+      if (!r.width) return;
+      const i = Math.min(m.axis.length - 1, Math.max(0, Math.floor(((ev.clientX - r.left) / r.width) * m.axis.length)));
+      const v = m.series[i];
+      const a = m.avg[i];
+      tip.textContent = `${m.labels[i]}: ${v === null ? "no data" : `${v.toLocaleString()} victim${v === 1 ? "" : "s"}`}${a === null ? "" : ` · 7-day avg ${a.toFixed(1)}`}`;
+      tip.hidden = false;
+      const x = ((i + 0.5) / m.axis.length) * r.width;
+      const tw = tip.offsetWidth;
+      tip.style.left = `${Math.min(Math.max(0, x - tw / 2), Math.max(0, r.width - tw))}px`;
+      hl.setAttribute("x", String(i));
+      hl.setAttribute("visibility", "visible");
+    };
+    chart.addEventListener("pointermove", show);
+    chart.addEventListener("pointerdown", show);
+    chart.addEventListener("pointerleave", hide);
+  }
+
   // ---------- 3D globe (globe.gl, loaded lazily from jsDelivr) ----------
 
   const GLOBE_LIB_URL = "https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js";
@@ -3769,8 +4289,10 @@
     startClock();
     initTabs();
     initRansomwarePanels();
+    initRwTrends();
     initGlobe();
     initUkNews();
+    initEpssMovers();
     wireSearchBoxes();
     wireExportButtons();
     initWatchlist();
