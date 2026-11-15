@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T00:07:40Z",
+  "generated_at": "2026-11-15T07:01:58Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,7 +15,7 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
@@ -25,7 +25,7 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "ITPro",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "‘Prove you are not a robot’: how the Captcha scam captures your computer",
+      "link": "https://www.theguardian.com/money/2026/nov/15/captcha-scam-computer-malicious-software",
+      "source": "The Guardian",
+      "published": "2026-11-15T07:00:06Z",
+      "summary": "Unlike familiar Captcha tests, this con asks you to press a series of keys. And that’s a way in for fraudsters to install malicious software You are looking for some gifts for Christmas and want to support small businesses when you shop. When you visit the site of one you’ve…",
+      "uk_focus": false
+    },
     {
       "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
       "link": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302",
@@ -167,14 +175,6 @@
       "source": "The Register",
       "published": "2026-11-13T07:31:00Z",
       "summary": "ISO working group faces a fight over runtime checks, complexity, and the language's release timetable",
-      "uk_focus": false
-    },
-    {
-      "title": "Global Microsoft outage leaves users open to phishing attacks",
-      "link": "https://www.computerweekly.com/news/366654608/Global-Microsoft-outage-leaves-users-open-to-phishing-attacks",
-      "source": "Computer Weekly",
-      "published": "2026-11-13T05:30:00Z",
-      "summary": "The global degradation of service impacting many Microsoft functions means admins may be less able to keep corporate IT security safe",
       "uk_focus": false
     }
   ]

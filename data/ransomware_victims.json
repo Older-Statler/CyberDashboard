@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-14T18:48:36Z",
+  "generated_at": "2026-11-15T07:01:58Z",
   "victims": [
+    {
+      "group": "Barracuda",
+      "victim": "FINSA",
+      "country": "ES",
+      "sector": "Financial Services",
+      "published": "2026-11-14T17:50:40.941619+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RklOU0FAQmFycmFjdWRh"
+    },
+    {
+      "group": "netrunner",
+      "victim": "F***** G****** C********** C***",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-14T17:27:01.418558+00:00",
+      "domain": "w**.f*******.c**",
+      "url": "https://www.ransomware.live/id/RioqKioqIEcqKioqKiogQyoqKioqKioqKiogQyoqKkBuZXRydW5uZXI="
+    },
     {
       "group": "EndZone",
       "victim": "Momentum Telecom",
@@ -20,6 +38,15 @@
       "url": "https://www.ransomware.live/id/QWJzb2x1dGUgQmFpbCBCb25kc0BFbmRab25l"
     },
     {
+      "group": "Scarlettgroup",
+      "victim": "fittleworth.com",
+      "country": "GB",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-14T18:16:18.167053+00:00",
+      "domain": "fittleworth.com",
+      "url": "https://www.ransomware.live/id/Zml0dGxld29ydGguY29tQFNjYXJsZXR0Z3JvdXA="
+    },
+    {
       "group": "netrunner",
       "victim": "I****** A*****",
       "country": "KW",
@@ -36,6 +63,15 @@
       "published": "2026-11-14T03:32:50.190997+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/R3J1bmRiYXVsYWJvciBUcmllciBHbWJIQGV2ZXJlc3Q="
+    },
+    {
+      "group": "qilin",
+      "victim": "Kayaku Safety Systems Malaysia Sdn Bhd",
+      "country": "MY",
+      "sector": "Manufacturing",
+      "published": "2026-11-14T21:36:07.809711+00:00",
+      "domain": "www.kayaku.com.my",
+      "url": "https://www.ransomware.live/id/S2F5YWt1IFNhZmV0eSBTeXN0ZW1zIE1hbGF5c2lhIFNkbiBCaGRAcWlsaW4="
     },
     {
       "group": "interlock",
@@ -864,42 +900,6 @@
       "published": "2026-11-10T12:51:31.559976+00:00",
       "domain": "www.elportalimaging.com",
       "url": "https://www.ransomware.live/id/RWwgUG9ydGFsIEltYWdpbmcgQ2VudGVyQEJvb2JhIFByb2plY3Q="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "Collier Sports Medicine and Orthopedic Center",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-10T12:51:52.565119+00:00",
-      "domain": "www.colliersportsmedicine.com",
-      "url": "https://www.ransomware.live/id/Q29sbGllciBTcG9ydHMgTWVkaWNpbmUgYW5kIE9ydGhvcGVkaWMgQ2VudGVyQEJvb2JhIFByb2plY3Q="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "Georgetown Sleep Center",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-10T12:52:13.704393+00:00",
-      "domain": "www.georgetownsleepcenter.com",
-      "url": "https://www.ransomware.live/id/R2VvcmdldG93biBTbGVlcCBDZW50ZXJAQm9vYmEgUHJvamVjdA=="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "COMPUTER TASK GROUP, Inc.",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-10T12:52:35.138929+00:00",
-      "domain": "www.ctg.com",
-      "url": "https://www.ransomware.live/id/Q09NUFVURVIgVEFTSyBHUk9VUCwgSW5jLkBCb29iYSBQcm9qZWN0"
-    },
-    {
-      "group": "interlock",
-      "victim": "Madison Honda",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-10T07:13:00.491056+00:00",
-      "domain": "madisonhonda.com",
-      "url": "https://www.ransomware.live/id/TWFkaXNvbiBIb25kYUBpbnRlcmxvY2s="
     }
   ]
 }
