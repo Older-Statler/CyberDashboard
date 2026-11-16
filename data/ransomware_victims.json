@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T20:15:55Z",
+  "generated_at": "2026-11-16T00:14:41Z",
   "victims": [
     {
       "group": "PixelLeaks",
@@ -182,6 +182,33 @@
       "url": "https://www.ransomware.live/id/SmlhbmdzdSBIZW5nc2hlbmcgSW5mb3JtYXRpb24gVGVjaG5vbG9neSAo5rGf6IuP5oGS55ub5L+h5oGv5oqA5pyvIC8gaGVuc3VuLmNvbSlAUGl4ZWxMZWFrcw=="
     },
     {
+      "group": "qilin",
+      "victim": "Oregon Linen",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-15T17:12:47.117727+00:00",
+      "domain": "www.oregonlinen.com",
+      "url": "https://www.ransomware.live/id/T3JlZ29uIExpbmVuQHFpbGlu"
+    },
+    {
+      "group": "qilin",
+      "victim": "Cole Manufacturing",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-15T17:11:56.376475+00:00",
+      "domain": "www.colemfg.com",
+      "url": "https://www.ransomware.live/id/Q29sZSBNYW51ZmFjdHVyaW5nQHFpbGlu"
+    },
+    {
+      "group": "qilin",
+      "victim": "Kessler Soils Engineering Products",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-15T17:11:09.306581+00:00",
+      "domain": "www.kesslerdcp.com",
+      "url": "https://www.ransomware.live/id/S2Vzc2xlciBTb2lscyBFbmdpbmVlcmluZyBQcm9kdWN0c0BxaWxpbg=="
+    },
+    {
       "group": "lockbit5",
       "victim": "pah.com.my",
       "country": "MY",
@@ -225,6 +252,15 @@
       "published": "2026-11-14T12:24:57.389262+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/QWJzb2x1dGUgQmFpbCBCb25kc0BFbmRab25l"
+    },
+    {
+      "group": "incransom",
+      "victim": "Sarimelati Kencana Tbk PT",
+      "country": "ID",
+      "sector": "Manufacturing",
+      "published": "2026-11-15T18:44:48.497386+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U2FyaW1lbGF0aSBLZW5jYW5hIFRiayBQVEBpbmNyYW5zb20="
     },
     {
       "group": "Scarlettgroup",
@@ -864,42 +900,6 @@
       "published": "2026-11-12T09:56:52.824440+00:00",
       "domain": "megatrans.com.ar",
       "url": "https://www.ransomware.live/id/TUVHQVRSQU5TQHRoZWdlbnRsZW1lbg=="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Esri South Africa",
-      "country": "ZA",
-      "sector": "Technology",
-      "published": "2026-11-12T09:57:13.824942+00:00",
-      "domain": "esri-southafrica.com",
-      "url": "https://www.ransomware.live/id/RXNyaSBTb3V0aCBBZnJpY2FAdGhlZ2VudGxlbWVu"
-    },
-    {
-      "group": "Aoqin",
-      "victim": "Tyfone",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-11T09:51:11.638383+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VHlmb25lQEFvcWlu"
-    },
-    {
-      "group": "interlock",
-      "victim": "Garden Valley School Division",
-      "country": "CA",
-      "sector": "Education",
-      "published": "2026-11-11T00:43:34.761065+00:00",
-      "domain": "gvsd.ca",
-      "url": "https://www.ransomware.live/id/R2FyZGVuIFZhbGxleSBTY2hvb2wgRGl2aXNpb25AaW50ZXJsb2Nr"
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Groupe Alternance",
-      "country": "FR",
-      "sector": "Professional Services",
-      "published": "2026-11-12T09:53:44.415306+00:00",
-      "domain": "groupe-alternance.com",
-      "url": "https://www.ransomware.live/id/R3JvdXBlIEFsdGVybmFuY2VAdGhlZ2VudGxlbWVu"
     }
   ]
 }
