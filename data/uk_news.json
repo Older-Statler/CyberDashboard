@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T07:08:35Z",
+  "generated_at": "2026-11-16T17:20:02Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 1
+      "count": 3
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 0
+      "count": 6
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Graham Cluley",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -50,6 +50,102 @@
   ],
   "items": [
     {
+      "title": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
+      "link": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094",
+      "source": "The Register",
+      "published": "2026-11-16T16:15:00Z",
+      "summary": "Securing supply chains or coercing other nations to help Washington sideline Beijing and its AI ambitions?",
+      "uk_focus": false
+    },
+    {
+      "title": "Has AI’s ‘Black October’ changed the way you secure your code?",
+      "link": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775",
+      "source": "The Register",
+      "published": "2026-11-16T16:00:00Z",
+      "summary": "PARTNER CONTENT: AI agents are making security vulnerabilities easier to find and exploit in your code. Software engineering and application security teams need new ways to find and fix them",
+      "uk_focus": false
+    },
+    {
+      "title": "Typosquatters Target New Brand Domains Within 24 Hours of Registration",
+      "link": "https://www.infosecurity-magazine.com/news/typosquatters-target-new-brand/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-16T16:00:00Z",
+      "summary": "Symantec said attackers are targeting new campaign sites registered by big name brands, with the lookalike domains enabling malicious follow-on activity",
+      "uk_focus": false
+    },
+    {
+      "title": "La Poste Subsidiary Maileva Breach Exposes 22 Million People",
+      "link": "https://www.infosecurity-magazine.com/news/maileva-docaposte-22-million-breach/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-16T15:25:00Z",
+      "summary": "Maileva breach exposed names and postal addresses of 22 million people",
+      "uk_focus": false
+    },
+    {
+      "title": "Thousands of driver's licenses exposed in Uber data breach",
+      "link": "https://www.itpro.com/security/data-breaches/thousands-of-drivers-licenses-exposed-in-uber-data-breach",
+      "source": "ITPro",
+      "published": "2026-11-16T14:23:43Z",
+      "summary": "Drivers across the US have been impacted in the Uber data breach",
+      "uk_focus": false
+    },
+    {
+      "title": "Google: AI agent turned a security patch into a working exploit with no human help",
+      "link": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
+      "source": "The Register",
+      "published": "2026-11-16T14:00:00Z",
+      "summary": "Look ma, no human in the loop!",
+      "uk_focus": false
+    },
+    {
+      "title": "GTA 6 hacker pleads guilty after release from secure hospital",
+      "link": "https://www.bbc.co.uk/news/articles/cq99exy89dngo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-16T13:34:22Z",
+      "summary": "21-year-old Arion Kurtaj pleaded guilty to the Rockstar Games hack and others he carried out when he was a teenager.",
+      "uk_focus": false
+    },
+    {
+      "title": "Google Project Zero to Cut Disclosure Deadline to 30 Days by 2028",
+      "link": "https://www.infosecurity-magazine.com/news/project-zero-disclosure-deadline/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-16T12:15:00Z",
+      "summary": "Project Zero will publish bug details 30 days after reporting, fixed or not, by 2028",
+      "uk_focus": false
+    },
+    {
+      "title": "FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX",
+      "link": "https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-16T12:00:00Z",
+      "summary": "The FBI warns that threat actors are increasingly using open-source AI pentesting tool ARTEX to launch fast, large-scale intrusions worldwide",
+      "uk_focus": false
+    },
+    {
+      "title": "Microsoft outage: Three times a failure",
+      "link": "https://www.computerweekly.com/news/366654803/Microsoft-outage-Three-times-a-failure",
+      "source": "Computer Weekly",
+      "published": "2026-11-16T11:00:00Z",
+      "summary": "The root cause of the Microsoft outage that impacted millions of users last week was due to inadequate testing, overloading network gateways",
+      "uk_focus": false
+    },
+    {
+      "title": "Information Commissioner’s Office Receives 300+ Reports of Medical Snooping",
+      "link": "https://www.infosecurity-magazine.com/news/ico-300-reports-of-medical-snooping/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-16T10:00:00Z",
+      "summary": "UK privacy watchdog has received reports of hundreds of cases of unauthorized insider access to medical files this year",
+      "uk_focus": true
+    },
+    {
+      "title": "AI Cuts Vulnerability Discovery from Nine Months to 90 Hours",
+      "link": "https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-16T09:00:00Z",
+      "summary": "Forescout report claims to have found 66 new flaws in just 90 hours using AI",
+      "uk_focus": false
+    },
+    {
       "title": "Coles investigates cyber-attack and apologises to customers",
       "link": "https://www.theguardian.com/business/2026/nov/16/coles-cyber-attack-incident-data",
       "source": "The Guardian",
@@ -58,20 +154,20 @@
       "uk_focus": false
     },
     {
+      "title": "UK councils lead on email anti-spoofing but lock into Microsoft",
+      "link": "https://www.computerweekly.com/news/366654774/UK-councils-lead-on-email-anti-spoofing-but-lock-into-Microsoft",
+      "source": "Computer Weekly",
+      "published": "2026-11-16T03:00:00Z",
+      "summary": "UK local authorities outperform DACH counterparts on email anti-spoofing enforcement, but heavy reliance on Microsoft 365 points to trade-off between security and supplier choice",
+      "uk_focus": true
+    },
+    {
       "title": "‘Prove you are not a robot’: how the Captcha scam captures your computer",
       "link": "https://www.theguardian.com/money/2026/nov/15/captcha-scam-computer-malicious-software",
       "source": "The Guardian",
       "published": "2026-11-15T07:00:06Z",
       "summary": "Unlike familiar Captcha tests, this con asks you to press a series of keys. And that’s a way in for fraudsters to install malicious software You are looking for some gifts for Christmas and want to support small businesses when you shop. When you visit the site of one you’ve…",
       "uk_focus": false
-    },
-    {
-      "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
-      "link": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302",
-      "source": "The Register",
-      "published": "2026-11-14T08:18:00Z",
-      "summary": "Accessing banned content is as easy as whipping out a thesaurus, Parliament's Communications and Digital Committee hears",
-      "uk_focus": true
     }
   ]
 }
