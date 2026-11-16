@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-11-16T00:14:41Z",
+  "generated_at": "2026-11-16T07:08:35Z",
   "victims": [
+    {
+      "group": "Aoqin",
+      "victim": "Culinary Specialties",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-16T02:50:36.695962+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q3VsaW5hcnkgU3BlY2lhbHRpZXNAQW9xaW4="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "PlasmaGen Biosciences Pvt Ltd (plasmagen.co.in)",
+      "country": "IN",
+      "sector": "Healthcare",
+      "published": "2026-11-15T23:14:09.208283+00:00",
+      "domain": "plasmagen.co.in",
+      "url": "https://www.ransomware.live/id/UGxhc21hR2VuIEJpb3NjaWVuY2VzIFB2dCBMdGQgKHBsYXNtYWdlbi5jby5pbilAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Connectwell Industries Pvt Ltd (connectwell.com)",
+      "country": "IN",
+      "sector": "Not Found",
+      "published": "2026-11-15T21:19:50.030034+00:00",
+      "domain": "connectwell.com",
+      "url": "https://www.ransomware.live/id/Q29ubmVjdHdlbGwgSW5kdXN0cmllcyBQdnQgTHRkIChjb25uZWN0d2VsbC5jb20pQFBpeGVsTGVha3M="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Godrej & Boyce Mfg Co Ltd (Vikhroli campus systems, godrej.com)",
+      "country": "IN",
+      "sector": "Manufacturing",
+      "published": "2026-11-15T21:19:28.887271+00:00",
+      "domain": "godrej.com",
+      "url": "https://www.ransomware.live/id/R29kcmVqICYgQm95Y2UgTWZnIENvIEx0ZCAoVmlraHJvbGkgY2FtcHVzIHN5c3RlbXMsIGdvZHJlai5jb20pQFBpeGVsTGVha3M="
+    },
     {
       "group": "PixelLeaks",
       "victim": "PT. Fiber Networks Indonesia (AltosDLP surveillance platform, fiber.net.id)",
@@ -180,6 +216,51 @@
       "published": "2026-11-15T08:59:39.303400+00:00",
       "domain": "hensun.com",
       "url": "https://www.ransomware.live/id/SmlhbmdzdSBIZW5nc2hlbmcgSW5mb3JtYXRpb24gVGVjaG5vbG9neSAo5rGf6IuP5oGS55ub5L+h5oGv5oqA5pyvIC8gaGVuc3VuLmNvbSlAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "BYOD",
+      "victim": "Michigan State University - New DL",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-11-16T00:22:06.013361+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TWljaGlnYW4gU3RhdGUgVW5pdmVyc2l0eSAtIE5ldyBETEBCWU9E"
+    },
+    {
+      "group": "BYOD",
+      "victim": "Texas HHSC - Final Warning & Sample",
+      "country": "US",
+      "sector": "Government & Defense",
+      "published": "2026-11-16T00:21:46.182760+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VGV4YXMgSEhTQyAtIEZpbmFsIFdhcm5pbmcgJiBTYW1wbGVAQllPRA=="
+    },
+    {
+      "group": "qilin",
+      "victim": "The Heartland Construction Group",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-15T20:30:14.050348+00:00",
+      "domain": "theheartlandconstructiongroup.com",
+      "url": "https://www.ransomware.live/id/VGhlIEhlYXJ0bGFuZCBDb25zdHJ1Y3Rpb24gR3JvdXBAcWlsaW4="
+    },
+    {
+      "group": "qilin",
+      "victim": "Atlas Evaluation & Inspection Services",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-15T20:28:54.264927+00:00",
+      "domain": "www.aeis.com",
+      "url": "https://www.ransomware.live/id/QXRsYXMgRXZhbHVhdGlvbiAmIEluc3BlY3Rpb24gU2VydmljZXNAcWlsaW4="
+    },
+    {
+      "group": "qilin",
+      "victim": "Apex",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-15T20:28:17.235025+00:00",
+      "domain": "www.apexspace.com",
+      "url": "https://www.ransomware.live/id/QXBleEBxaWxpbg=="
     },
     {
       "group": "qilin",
@@ -819,87 +900,6 @@
       "published": "2026-11-12T09:53:23.606109+00:00",
       "domain": "sielke.com",
       "url": "https://www.ransomware.live/id/U2llbGtlQHRoZWdlbnRsZW1lbg=="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Grupo San Cristobal",
-      "country": "MX",
-      "sector": "Other",
-      "published": "2026-11-12T09:54:05.436455+00:00",
-      "domain": "gruposancristobal.com.mx",
-      "url": "https://www.ransomware.live/id/R3J1cG8gU2FuIENyaXN0b2JhbEB0aGVnZW50bGVtZW4="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Municipalidad de Cieneguilla",
-      "country": "PE",
-      "sector": "Government & Defense",
-      "published": "2026-11-12T09:54:26.634048+00:00",
-      "domain": "municieneguilla.gob.pe",
-      "url": "https://www.ransomware.live/id/TXVuaWNpcGFsaWRhZCBkZSBDaWVuZWd1aWxsYUB0aGVnZW50bGVtZW4="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Darr Equipment",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-11-12T09:54:47.351790+00:00",
-      "domain": "darrequipment.com",
-      "url": "https://www.ransomware.live/id/RGFyciBFcXVpcG1lbnRAdGhlZ2VudGxlbWVu"
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Reso Tech Laurentides",
-      "country": "CA",
-      "sector": "Technology",
-      "published": "2026-11-12T09:55:08.446273+00:00",
-      "domain": "resotechlaurentides.com",
-      "url": "https://www.ransomware.live/id/UmVzbyBUZWNoIExhdXJlbnRpZGVzQHRoZWdlbnRsZW1lbg=="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "City of Humboldt",
-      "country": "CA",
-      "sector": "Government & Defense",
-      "published": "2026-11-12T09:55:29.338411+00:00",
-      "domain": "humboldt.ca",
-      "url": "https://www.ransomware.live/id/Q2l0eSBvZiBIdW1ib2xkdEB0aGVnZW50bGVtZW4="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Orennia",
-      "country": "SE",
-      "sector": "Energy & Utilities",
-      "published": "2026-11-12T09:55:50.253526+00:00",
-      "domain": "orennia.com",
-      "url": "https://www.ransomware.live/id/T3Jlbm5pYUB0aGVnZW50bGVtZW4="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "Clancy Systems International",
-      "country": "US",
-      "sector": "Government & Defense",
-      "published": "2026-11-12T09:56:11.079632+00:00",
-      "domain": "clancysystems.com",
-      "url": "https://www.ransomware.live/id/Q2xhbmN5IFN5c3RlbXMgSW50ZXJuYXRpb25hbEB0aGVnZW50bGVtZW4="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "United Pharmacy",
-      "country": "SA",
-      "sector": "Healthcare",
-      "published": "2026-11-12T09:56:31.917078+00:00",
-      "domain": "unitedpharmacy.sa",
-      "url": "https://www.ransomware.live/id/VW5pdGVkIFBoYXJtYWN5QHRoZWdlbnRsZW1lbg=="
-    },
-    {
-      "group": "thegentlemen",
-      "victim": "MEGATRANS",
-      "country": "AR",
-      "sector": "Transportation",
-      "published": "2026-11-12T09:56:52.824440+00:00",
-      "domain": "megatrans.com.ar",
-      "url": "https://www.ransomware.live/id/TUVHQVRSQU5TQHRoZWdlbnRsZW1lbg=="
     }
   ]
 }
