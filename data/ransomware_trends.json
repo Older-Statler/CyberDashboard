@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T16:06:38Z",
+  "generated_at": "2026-11-17T16:17:50Z",
   "source": "ransomware.live /v2/victims/<year>/<month>",
   "date_field": "discovered",
   "days_kept": 90,
   "top_n": 15,
-  "through": "2026-11-15",
+  "through": "2026-11-16",
   "months": {
     "2026-08": {
       "fetched_at": "2026-11-15T14:12:34Z",
@@ -19,12 +19,11 @@
       "count": 1012
     },
     "2026-11": {
-      "fetched_at": "2026-11-16T16:06:38Z",
-      "count": 491
+      "fetched_at": "2026-11-17T16:17:50Z",
+      "count": 603
     }
   },
   "days": [
-    {"date":"2026-08-18","total":26,"groups":{"Storm":6,"incransom":6,"SilentRansomGroup":2,"AuditTeam":1,"akira":1,"anubis":1,"dragonforce":1,"emperador":1,"gunra":1,"lockbit5":1,"nightspire":1,"play":1,"qilin":1,"securotrop":1,"shinyhunters":1},"countries":{"US":8,"DE":4,"-":3,"AU":2,"AE":1,"BR":1,"CH":1,"GB":1,"HN":1,"MU":1,"MY":1,"RU":1,"TW":1},"sectors":{"-":5,"Manufacturing":4,"Technology":4,"Professional Services":3,"Financial Services":2,"Government & Defense":2,"Healthcare":2,"Other":2,"Energy & Utilities":1,"Retail & E-Commerce":1}},
     {"date":"2026-08-19","total":43,"groups":{"qilin":11,"krybit":5,"thegentlemen":5,"direwolf":4,"incransom":4,"settra":3,"Deadlock":2,"coinbasecartel":2,"Helix":1,"Orova":1,"Storm":1,"akira":1,"insomnia":1,"threeam":1,"xpl0itrs":1},"countries":{"US":11,"-":4,"CA":3,"DE":2,"GB":2,"HK":2,"IT":2,"MX":2,"SE":2,"TH":2,"AR":1,"CY":1,"CZ":1,"ES":1,"FR":1},"sectors":{"-":7,"Manufacturing":5,"Other":5,"Technology":5,"Financial Services":4,"Professional Services":4,"Transportation":4,"Healthcare":3,"Energy & Utilities":2,"Retail & E-Commerce":2,"Government & Defense":1,"Hospitality":1},"other":{"countries":6}},
     {"date":"2026-08-20","total":47,"groups":{"titan":9,"DYSPHOR1A":6,"everest":5,"pear":4,"iah6477":3,"qilin":3,"Majinahanashi":2,"play":2,"thegentlemen":2,"xpl0itrs":2,"Deadlock":1,"Panzer":1,"SilentRansomGroup":1,"akira":1,"emperador":1},"countries":{"US":12,"IT":10,"-":6,"ES":2,"FR":2,"GB":2,"ID":2,"MM":2,"TH":2,"CH":1,"IN":1,"LV":1,"NL":1,"PH":1,"TR":1},"sectors":{"Technology":8,"Manufacturing":7,"Other":5,"-":4,"Financial Services":4,"Professional Services":4,"Education":3,"Healthcare":3,"Hospitality":3,"Government & Defense":2,"Retail & E-Commerce":2,"Agriculture and Food Production":1,"Energy & Utilities":1},"other":{"groups":4,"countries":1}},
     {"date":"2026-08-21","total":45,"groups":{"thegentlemen":15,"direwolf":13,"qilin":7,"pear":2,"rhysida":2,"settra":2,"DYSPHOR1A":1,"Panzer":1,"anubis":1,"dragonforce":1},"countries":{"US":17,"MX":5,"-":3,"AE":3,"AT":2,"IT":2,"BZ":1,"CA":1,"DE":1,"DK":1,"FR":1,"IN":1,"JP":1,"MM":1,"NL":1},"sectors":{"Technology":7,"Manufacturing":6,"Other":6,"-":4,"Hospitality":4,"Professional Services":4,"Education":3,"Energy & Utilities":3,"Financial Services":3,"Transportation":3,"Healthcare":2},"other":{"countries":4}},
@@ -113,6 +112,7 @@
     {"date":"2026-11-12","total":53,"groups":{"thegentlemen":22,"incransom":11,"Majinahanashi":4,"N0n":4,"Vexy Ransomware":3,"qilin":2,"Aoqin":1,"Barracuda":1,"Curious Worm":1,"Panzer":1,"krybit":1,"metaencryptor":1,"safepay":1},"countries":{"US":17,"CA":4,"BR":2,"DE":2,"DK":2,"FR":2,"MX":2,"SA":2,"-":1,"AR":1,"CY":1,"ES":1,"GB":1,"GL":1,"HK":1},"sectors":{"Technology":8,"Government & Defense":6,"Manufacturing":6,"Other":5,"Professional Services":5,"-":4,"Education":4,"Transportation":4,"Financial Services":3,"Healthcare":3,"Retail & E-Commerce":3,"Energy & Utilities":2},"other":{"countries":13}},
     {"date":"2026-11-13","total":19,"groups":{"akira":3,"Curious Worm":2,"incransom":2,"play":2,"Aoqin":1,"Dark Project":1,"Doommageddon":1,"N0n":1,"Panzer":1,"Wallstreet":1,"bravox":1,"emperador":1,"everest":1,"interlock":1},"countries":{"US":9,"-":4,"AU":1,"BW":1,"CA":1,"DE":1,"MY":1,"TR":1},"sectors":{"-":4,"Manufacturing":4,"Professional Services":4,"Retail & E-Commerce":3,"Government & Defense":1,"Hospitality":1,"Other":1,"Technology":1}},
     {"date":"2026-11-14","total":18,"groups":{"N0n":10,"EndZone":2,"netrunner":2,"Barracuda":1,"Scarlettgroup":1,"everest":1,"qilin":1},"countries":{"US":9,"CA":2,"-":1,"DE":1,"ES":1,"GB":1,"KR":1,"KW":1,"MY":1},"sectors":{"Retail & E-Commerce":6,"Financial Services":4,"Manufacturing":3,"-":2,"Technology":2,"Professional Services":1}},
-    {"date":"2026-11-15","total":31,"groups":{"PixelLeaks":23,"qilin":6,"incransom":1,"lockbit5":1},"countries":{"US":12,"-":6,"IN":3,"CN":2,"HK":2,"ID":2,"CH":1,"MY":1,"PH":1,"VN":1},"sectors":{"Manufacturing":7,"Technology":6,"Healthcare":5,"Financial Services":4,"-":2,"Energy & Utilities":2,"Other":2,"Professional Services":2,"Education":1}}
+    {"date":"2026-11-15","total":31,"groups":{"PixelLeaks":23,"qilin":6,"incransom":1,"lockbit5":1},"countries":{"US":12,"-":6,"IN":3,"CN":2,"HK":2,"ID":2,"CH":1,"MY":1,"PH":1,"VN":1},"sectors":{"Manufacturing":7,"Technology":6,"Healthcare":5,"Financial Services":4,"-":2,"Energy & Utilities":2,"Other":2,"Professional Services":2,"Education":1}},
+    {"date":"2026-11-16","total":106,"groups":{"N0n":59,"qilin":13,"ShadowByt3$":5,"Curious Worm":4,"metaencryptor":4,"Vortex":3,"Aoqin":2,"Global Secret Group":2,"chaos":2,"incransom":2,"rhysida":2,"Panzer":1,"Shiba":1,"SilentRansomGroup":1,"akira":1},"countries":{"US":53,"CA":13,"-":8,"GB":5,"DE":4,"AU":2,"FR":2,"IT":2,"PH":2,"SA":2,"AE":1,"DK":1,"HK":1,"ID":1,"IE":1},"sectors":{"Retail & E-Commerce":21,"Healthcare":18,"Financial Services":17,"Manufacturing":11,"Technology":11,"Professional Services":9,"-":4,"Other":4,"Energy & Utilities":3,"Education":2,"Government & Defense":2,"Transportation":2,"Agriculture and Food Production":1,"Hospitality":1},"other":{"groups":4,"countries":8}}
   ]
 }
