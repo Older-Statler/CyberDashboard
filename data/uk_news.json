@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:59:37Z",
+  "generated_at": "2026-11-17T08:56:44Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Computer Weekly",
@@ -25,12 +25,12 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 1
+      "count": 3
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "MSPs are becoming the de facto CISO",
+      "link": "https://www.itpro.com/security/msps-are-becoming-the-de-facto-ciso",
+      "source": "ITPro",
+      "published": "2026-11-17T08:00:00Z",
+      "summary": "The rise of the de facto CISO presents a significant growth opportunity for MSPs. Still, only those who can demonstrate leadership, expertise, and trust will successfully transition from service provider to strategic advisor",
+      "uk_focus": false
+    },
+    {
+      "title": "What's the difference between cybersecurity and cyber resilience – and why does that matter?",
+      "link": "https://www.itpro.com/security/whats-the-difference-between-cybersecurity-and-cyber-resilience-and-why-does-that-matter",
+      "source": "ITPro",
+      "published": "2026-11-17T08:00:00Z",
+      "summary": "Stopping attacks and surviving them aren’t always the same thing, and the costliest breaches are often defined by recovery times",
+      "uk_focus": false
+    },
+    {
+      "title": "Japan's Fugaku supercomputer has decidedly un-super security",
+      "link": "https://www.theregister.com/security/2026/11/17/japans-fugaku-supercomputer-has-decidedly-un-super-security/5310333",
+      "source": "The Register",
+      "published": "2026-11-17T05:27:04Z",
+      "summary": "Attackers try logging in to Earth’s ninth most powerful machine after status page hack exposed credentials",
+      "uk_focus": false
+    },
     {
       "title": "Infoblox customer and staff data exposed in Sharepoint breach",
       "link": "https://www.theregister.com/security/2026/11/16/infoblox-customer-and-staff-data-exposed-in-sharepoint-breach/5310280",
@@ -224,14 +248,6 @@
       "published": "2026-11-16T03:00:00Z",
       "summary": "UK local authorities outperform DACH counterparts on email anti-spoofing enforcement, but heavy reliance on Microsoft 365 points to trade-off between security and supplier choice",
       "uk_focus": true
-    },
-    {
-      "title": "‘Prove you are not a robot’: how the Captcha scam captures your computer",
-      "link": "https://www.theguardian.com/money/2026/nov/15/captcha-scam-computer-malicious-software",
-      "source": "The Guardian",
-      "published": "2026-11-15T07:00:06Z",
-      "summary": "Unlike familiar Captcha tests, this con asks you to press a series of keys. And that’s a way in for fraudsters to install malicious software You are looking for some gifts for Christmas and want to support small businesses when you shop. When you visit the site of one you’ve…",
-      "uk_focus": false
     }
   ]
 }
