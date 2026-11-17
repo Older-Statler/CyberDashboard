@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T17:20:02Z",
+  "generated_at": "2026-11-17T00:59:37Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 3
+      "count": 9
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
@@ -50,11 +50,67 @@
   ],
   "items": [
     {
+      "title": "Infoblox customer and staff data exposed in Sharepoint breach",
+      "link": "https://www.theregister.com/security/2026/11/16/infoblox-customer-and-staff-data-exposed-in-sharepoint-breach/5310280",
+      "source": "The Register",
+      "published": "2026-11-16T21:53:28Z",
+      "summary": "The company is investigating",
+      "uk_focus": false
+    },
+    {
+      "title": "Attackers are using AI agents to automate cybercrime at 'industrial scale,' FBI and AWS warn",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/16/attackers-are-using-ai-agents-to-automate-cybercrime-at-industrial-scale-fbi-and-aws-warn/5310223",
+      "source": "The Register",
+      "published": "2026-11-16T19:52:00Z",
+      "summary": "Critical orgs around the globe under seige",
+      "uk_focus": false
+    },
+    {
+      "title": "‘123456’ has been the world’s most popular password for 7 out of the last 8 years",
+      "link": "https://www.theregister.com/security/2026/11/16/123456-has-been-the-worlds-most-popular-password-for-7-out-of-the-last-8-years/5310189",
+      "source": "The Register",
+      "published": "2026-11-16T18:33:03Z",
+      "summary": "People never learn",
+      "uk_focus": false
+    },
+    {
+      "title": "NoisyTCP bug gives Linux servers a remote crash problem 11 years in the making",
+      "link": "https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144",
+      "source": "The Register",
+      "published": "2026-11-16T18:28:00Z",
+      "summary": "Flaw can take down an entire host, even when the vulnerable service is running inside a container",
+      "uk_focus": false
+    },
+    {
+      "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
+      "link": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139",
+      "source": "The Register",
+      "published": "2026-11-16T18:01:00Z",
+      "summary": "Opt-in Edge archive gives Pro subscribers early access before full testing, while normal updates remain human-validated",
+      "uk_focus": false
+    },
+    {
+      "title": "Crook turns free trials into phishing factory, as LearnWorlds sends 13,000 fake YouTube copyright notices",
+      "link": "https://www.theregister.com/security/2026/11/16/crook-turns-free-trials-into-phishing-factory-as-learnworlds-sends-13000-fake-youtube-copyright-notices/5310122",
+      "source": "The Register",
+      "published": "2026-11-16T17:03:00Z",
+      "summary": "570 bogus accounts, one rewritten welcome email, and a fake YouTube page, but CEO says no breach",
+      "uk_focus": false
+    },
+    {
       "title": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
       "link": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094",
       "source": "The Register",
       "published": "2026-11-16T16:15:00Z",
       "summary": "Securing supply chains or coercing other nations to help Washington sideline Beijing and its AI ambitions?",
+      "uk_focus": false
+    },
+    {
+      "title": "The big cyber short, or dot AI bubble?",
+      "link": "https://www.computerweekly.com/opinion/The-big-cyber-short-or-dot-AI-bubble",
+      "source": "Computer Weekly",
+      "published": "2026-11-16T16:01:00Z",
+      "summary": "Most discussions around AI risk focus on hallucinations, data privacy and regulation, but there's a more fundamental threat building beneath the surface: the financial foundations of the AI boom itself.",
       "uk_focus": false
     },
     {
@@ -71,6 +127,14 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-16T16:00:00Z",
       "summary": "Symantec said attackers are targeting new campaign sites registered by big name brands, with the lookalike domains enabling malicious follow-on activity",
+      "uk_focus": false
+    },
+    {
+      "title": "Threat actor use of AI becoming routine, warns Google",
+      "link": "https://www.computerweekly.com/news/366654805/Threat-actor-use-of-AI-becoming-routine-warns-Google",
+      "source": "Computer Weekly",
+      "published": "2026-11-16T15:32:00Z",
+      "summary": "The use of AI among threat actors continues to evolve, with integration of LLM agents into malicious workflows now becoming routine practice, according to a report.",
       "uk_focus": false
     },
     {
