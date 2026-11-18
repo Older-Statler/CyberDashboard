@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T01:12:29Z",
+  "generated_at": "2026-11-18T08:58:55Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 7
+      "count": 9
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,46 @@
     }
   ],
   "items": [
+    {
+      "title": "Security flaw found in Java, world's third-largest programming language",
+      "link": "https://www.bbc.co.uk/news/articles/cke89jevqm1vo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-18T08:47:06Z",
+      "summary": "The same tech start-up that discovered a PHP flaw used AI to uncover a critical software bug in one of the world's most popular computer language programs.",
+      "uk_focus": false
+    },
+    {
+      "title": "Nozomi Networks teams up with Lockheed Martin on defense security scheme",
+      "link": "https://www.itpro.com/security/nozomi-networks-teams-up-with-lockheed-martin-on-defense-security-scheme",
+      "source": "ITPro",
+      "published": "2026-11-18T08:45:00Z",
+      "summary": "The collaboration includes the development of automated security configuration assessment capabilities, with an initial focus on DISA STIG compliance",
+      "uk_focus": false
+    },
+    {
+      "title": "Companies will be given 30-day patch deadlines as researchers tighten bug disclosure windows",
+      "link": "https://www.itpro.com/security/companies-will-be-given-30-day-patch-deadlines-as-researchers-tighten-bug-disclosure-windows",
+      "source": "ITPro",
+      "published": "2026-11-18T08:30:00Z",
+      "summary": "The accelerated timeline aims to combat an AI vulnerability avalanche",
+      "uk_focus": false
+    },
+    {
+      "title": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio",
+      "link": "https://www.theguardian.com/us-news/2026/nov/18/zero-evidence-recent-tech-outages-linked-marco-rubio",
+      "source": "The Guardian",
+      "published": "2026-11-18T06:26:49Z",
+      "summary": "The US secretary of state was speaking after Microsoft, major banks, and the National Security Agency were all affected by technical failures in recent days US secretary of state Marco Rubio has sought to assure Americans that there’s “zero” information that the cascade of…",
+      "uk_focus": false
+    },
+    {
+      "title": "Oracle reveals fix-this-ASAP-grade Java4Shell bug that allows attacks on many third-party apps",
+      "link": "https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661",
+      "source": "The Register",
+      "published": "2026-11-18T04:33:05Z",
+      "summary": "Attackers can crash the JVM or achieve unauthenticated RCE",
+      "uk_focus": false
+    },
     {
       "title": "The PHP incident offers some important lessons for IT leaders",
       "link": "https://www.itpro.com/security/the-php-incident-offers-some-important-lessons-for-it-leaders",
@@ -354,14 +394,6 @@
       "uk_focus": false
     },
     {
-      "title": "GTA 6 hacker pleads guilty after release from secure hospital",
-      "link": "https://www.bbc.co.uk/news/articles/cq99exy89dngo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-16T13:34:22Z",
-      "summary": "21-year-old Arion Kurtaj pleaded guilty to the Rockstar Games hack and others he carried out when he was a teenager.",
-      "uk_focus": false
-    },
-    {
       "title": "Google Project Zero to Cut Disclosure Deadline to 30 Days by 2028",
       "link": "https://www.infosecurity-magazine.com/news/project-zero-disclosure-deadline/",
       "source": "Infosecurity Magazine",
@@ -400,22 +432,6 @@
       "published": "2026-11-16T09:00:00Z",
       "summary": "Forescout report claims to have found 66 new flaws in just 90 hours using AI",
       "uk_focus": false
-    },
-    {
-      "title": "Coles investigates cyber-attack and apologises to customers",
-      "link": "https://www.theguardian.com/business/2026/nov/16/coles-cyber-attack-incident-data",
-      "source": "The Guardian",
-      "published": "2026-11-16T04:04:37Z",
-      "summary": "Supermarket giant says no customer, team or supplier data compromised but recommends updating passwords as a precaution Get our breaking news email , free app or daily news podcast Australia’s second-largest retailer has been targeted in a cyber-attack, though it is still too…",
-      "uk_focus": false
-    },
-    {
-      "title": "UK councils lead on email anti-spoofing but lock into Microsoft",
-      "link": "https://www.computerweekly.com/news/366654774/UK-councils-lead-on-email-anti-spoofing-but-lock-into-Microsoft",
-      "source": "Computer Weekly",
-      "published": "2026-11-16T03:00:00Z",
-      "summary": "UK local authorities outperform DACH counterparts on email anti-spoofing enforcement, but heavy reliance on Microsoft 365 points to trade-off between security and supplier choice",
-      "uk_focus": true
     }
   ]
 }

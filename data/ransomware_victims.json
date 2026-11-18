@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-18T01:12:28Z",
+  "generated_at": "2026-11-18T08:58:55Z",
   "victims": [
+    {
+      "group": "Helix",
+      "victim": "Mnfhs",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-18T02:51:10.787870+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TW5maHNASGVsaXg="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "KDBS Solutions (client hosting)",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-18T01:07:38.221316+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S0RCUyBTb2x1dGlvbnMgKGNsaWVudCBob3N0aW5nKUBQaXhlbExlYWtz"
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Proymoda (proymoda.com.mx)",
+      "country": "MX",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-18T01:07:18.469939+00:00",
+      "domain": "proymoda.com.mx",
+      "url": "https://www.ransomware.live/id/UHJveW1vZGEgKHByb3ltb2RhLmNvbS5teClAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "Helix",
+      "victim": "Veritiv",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-18T00:51:25.437023+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VmVyaXRpdkBIZWxpeA=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Meridian Capital Group",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-11-18T01:23:36.393092+00:00",
+      "domain": "www.meridiancapital.com",
+      "url": "https://www.ransomware.live/id/TWVyaWRpYW4gQ2FwaXRhbCBHcm91cEBxaWxpbg=="
+    },
+    {
+      "group": "Vortex",
+      "victim": "Drive Medical - 1,442,814 records",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-17T23:08:12.087534+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RHJpdmUgTWVkaWNhbCAtIDEsNDQyLDgxNCByZWNvcmRzQFZvcnRleA=="
+    },
     {
       "group": "Helix",
       "victim": "Sonoco",
@@ -846,60 +900,6 @@
       "published": "2026-11-16T17:00:53.870227+00:00",
       "domain": "www.arrigoni.it",
       "url": "https://www.ransomware.live/id/QXJyaWdvbmkgU3BBQHFpbGlu"
-    },
-    {
-      "group": "akira",
-      "victim": "The Mandrel Group",
-      "country": "",
-      "sector": "Other",
-      "published": "2026-11-16T13:25:36.387202+00:00",
-      "domain": "themandrelgroup.com",
-      "url": "https://www.ransomware.live/id/VGhlIE1hbmRyZWwgR3JvdXBAYWtpcmE="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "PlasmaGen Biosciences Pvt Ltd (plasmagen.co.in)",
-      "country": "IN",
-      "sector": "Healthcare",
-      "published": "2026-11-15T23:14:09.208283+00:00",
-      "domain": "plasmagen.co.in",
-      "url": "https://www.ransomware.live/id/UGxhc21hR2VuIEJpb3NjaWVuY2VzIFB2dCBMdGQgKHBsYXNtYWdlbi5jby5pbilAUGl4ZWxMZWFrcw=="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Connectwell Industries Pvt Ltd (connectwell.com)",
-      "country": "IN",
-      "sector": "Not Found",
-      "published": "2026-11-15T21:19:50.030034+00:00",
-      "domain": "connectwell.com",
-      "url": "https://www.ransomware.live/id/Q29ubmVjdHdlbGwgSW5kdXN0cmllcyBQdnQgTHRkIChjb25uZWN0d2VsbC5jb20pQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Godrej & Boyce Mfg Co Ltd (Vikhroli campus systems, godrej.com)",
-      "country": "IN",
-      "sector": "Manufacturing",
-      "published": "2026-11-15T21:19:28.887271+00:00",
-      "domain": "godrej.com",
-      "url": "https://www.ransomware.live/id/R29kcmVqICYgQm95Y2UgTWZnIENvIEx0ZCAoVmlraHJvbGkgY2FtcHVzIHN5c3RlbXMsIGdvZHJlai5jb20pQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "PT. Fiber Networks Indonesia (AltosDLP surveillance platform, fiber.net.id)",
-      "country": "ID",
-      "sector": "Technology",
-      "published": "2026-11-15T09:06:32.156917+00:00",
-      "domain": "fiber.net.id",
-      "url": "https://www.ransomware.live/id/UFQuIEZpYmVyIE5ldHdvcmtzIEluZG9uZXNpYSAoQWx0b3NETFAgc3VydmVpbGxhbmNlIHBsYXRmb3JtLCBmaWJlci5uZXQuaWQpQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Huangshi Medical Laboratory (黄石医养医学检验) / Ezong Medical Group x Getein JV",
-      "country": "CN",
-      "sector": "Healthcare",
-      "published": "2026-11-15T09:06:11.207276+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SHVhbmdzaGkgTWVkaWNhbCBMYWJvcmF0b3J5ICjpu4Tnn7PljLvlhbvljLvlrabmo4DpqowpIC8gRXpvbmcgTWVkaWNhbCBHcm91cCB4IEdldGVpbiBKVkBQaXhlbExlYWtz"
     }
   ]
 }
