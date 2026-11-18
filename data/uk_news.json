@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T08:58:55Z",
+  "generated_at": "2026-11-18T17:54:31Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Graham Cluley",
@@ -40,15 +40,159 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 3
     },
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 1
+      "count": 2
     }
   ],
   "items": [
+    {
+      "title": "California tells Waymo to take the next exit after freeway mishaps",
+      "link": "https://www.theregister.com/security/2026/11/18/california-tells-waymo-to-take-the-next-exit-after-freeway-mishaps/5310841",
+      "source": "The Register",
+      "published": "2026-11-18T17:45:00Z",
+      "summary": "Robotaxi operator suspends driverless rides on high-speed roads nationwide after construction zone incursions and a run-in with patrol vehicles",
+      "uk_focus": false
+    },
+    {
+      "title": "Microsoft's official Python agent framework hijacked to distribute malware",
+      "link": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858",
+      "source": "The Register",
+      "published": "2026-11-18T17:23:37Z",
+      "summary": "In today's how-could-things-get-worse-for-Microsoft news, it seems someone's GitHub org admin creds have been compromised",
+      "uk_focus": false
+    },
+    {
+      "title": "When the Call Is Coming From Inside the House: Defending Against AI-Powered Social Engineering",
+      "link": "https://www.itpro.com/security/hacking/when-the-call-is-coming-from-inside-the-house-defending-against-ai-powered-social-engineering",
+      "source": "ITPro",
+      "published": "2026-11-18T17:19:04Z",
+      "summary": "When the Call Is Coming From Inside the House: Defending Against AI-Powered Social Engineering",
+      "uk_focus": false
+    },
+    {
+      "title": "Five Critical Vulnerabilities Found in World's Most Widely Used Open-Source Web Server",
+      "link": "https://www.infosecurity-magazine.com/news/five-critical-vulnerabilities/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T16:55:00Z",
+      "summary": "Five critical NGINX vulnerabilities could allow unauthenticated attackers to remotely execute code and potentially take control of affected servers",
+      "uk_focus": false
+    },
+    {
+      "title": "Cyber insurers now want proof you can actually recover",
+      "link": "https://www.theregister.com/security/2026/11/18/partner-content-cyber-insurers-now-want-proof-you-can-actually-recover/5309325",
+      "source": "The Register",
+      "published": "2026-11-18T16:00:00Z",
+      "summary": "PARTNER CONTENT: As carriers tighten underwriting, a backup job marked green is no longer enough. Here’s the evidence underwriters expect",
+      "uk_focus": false
+    },
+    {
+      "title": "AI-powered cyber threats are changing the rules of enterprise recovery",
+      "link": "https://www.theregister.com/security/2026/11/18/sponsored-ai-powered-cyber-threats-are-changing-the-rules-of-enterprise-recovery/5310515",
+      "source": "The Register",
+      "published": "2026-11-18T15:00:00Z",
+      "summary": "SPONSORED POST: As cyberattacks become more sophisticated, organizations need to look beyond prevention and ensure they can recover critical data quickly and reliably",
+      "uk_focus": false
+    },
+    {
+      "title": "Most SecOps Leaders Are Changing the L1 Role as Agent Use Grows",
+      "link": "https://www.infosecurity-magazine.com/news/secops-changing-l1-role-as-agent/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T15:00:00Z",
+      "summary": "Security leaders are rapidly redesigning SOCs for the AI agent era, with 74% already deploying the technology",
+      "uk_focus": false
+    },
+    {
+      "title": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio",
+      "link": "https://www.theguardian.com/us-news/2026/nov/18/zero-evidence-recent-tech-outages-linked-marco-rubio",
+      "source": "The Guardian",
+      "published": "2026-11-18T14:46:49Z",
+      "summary": "US secretary of state’s comments come as vulnerability in programming language Java highlighted There is “zero evidence” that a wave of IT outages – which have grounded flights, cut off work access, limited bank access, affected Apple and disrupted classified communications –…",
+      "uk_focus": false
+    },
+    {
+      "title": "Suspected Chinese APT Rebuilds EggStreme Malware After Exposure",
+      "link": "https://www.infosecurity-magazine.com/news/eggstreme-malware-rebuilt-after/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T14:00:00Z",
+      "summary": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure",
+      "uk_focus": false
+    },
+    {
+      "title": "Hacks, AI or just overdue updates - why have there been so many outages?",
+      "link": "https://www.bbc.co.uk/news/articles/c6z0kly2lll7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-18T13:16:53Z",
+      "summary": "There is no evidence these are linked, but the constant series of tech disruptions can be unnerving.",
+      "uk_focus": false
+    },
+    {
+      "title": "Java4Shell Vulnerability Allows Remote Attacks on Major Java Apps",
+      "link": "https://www.infosecurity-magazine.com/news/java4shell-vulnerability-remote/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T12:35:00Z",
+      "summary": "A critical OpenJDK vulnerability could expose major Java applications to remote code execution, prompting CISA to urge organizations implement mitigations",
+      "uk_focus": false
+    },
+    {
+      "title": "Russian Espionage Actor Star Blizzard Focuses on Cloud Identities for Mass Data Theft",
+      "link": "https://www.infosecurity-magazine.com/news/russian-star-blizzard-cloud-data/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T11:45:00Z",
+      "summary": "New Google analysis of Star Blizzard, aka Cold Relic, highlighted the group’s growing focus on compromising cloud environments to steal data and facilitate further attacks",
+      "uk_focus": false
+    },
+    {
+      "title": "AI just found another big programming language flaw",
+      "link": "https://www.itpro.com/security/java4shell-security-agencies-issue-alert-as-critical-flaw-found-in-popular-programming-language-and-ai-helped-uncover-it",
+      "source": "ITPro",
+      "published": "2026-11-18T11:32:46Z",
+      "summary": "Researchers say Java4Shell could enable remote code execution, app crashes, and secret extraction",
+      "uk_focus": false
+    },
+    {
+      "title": "Microsoft expands MAI portfolio with seven new models",
+      "link": "https://www.techmonitor.ai/news/microsoft-expands-mai-portfolio-with-seven-new-models",
+      "source": "Tech Monitor",
+      "published": "2026-11-18T10:55:26Z",
+      "summary": "Microsoft launched seven MAI models at Ignite, covering coding, cybersecurity, image editing, transcription, and decision-making tasks.",
+      "uk_focus": false
+    },
+    {
+      "title": "Three AI Models Agree on Just One of 121 Potential Code Flaws",
+      "link": "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T10:00:00Z",
+      "summary": "Echo tested Claude Mythos, GPT-5.6 Sol and GLM-5.3 on the same code and found little overlap",
+      "uk_focus": false
+    },
+    {
+      "title": "UK MPs want AI watchdog with power to pull the plug on dangerous models",
+      "link": "https://www.theregister.com/ai-and-ml/2026/11/18/uk-mps-want-ai-watchdog-with-power-to-pull-the-plug-on-dangerous-models/5310567",
+      "source": "The Register",
+      "published": "2026-11-18T09:30:00Z",
+      "summary": "Parliamentary committee says tech giants can't be left to mark their own homework when it comes to AI safety",
+      "uk_focus": true
+    },
+    {
+      "title": "Watchdog Warns UK Government Is Falling Short on Risk Management",
+      "link": "https://www.infosecurity-magazine.com/news/watchdog-government-risk/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-18T09:30:00Z",
+      "summary": "National Audit Office report claims risk management failures are leading to poor government decisions",
+      "uk_focus": true
+    },
+    {
+      "title": "British hacker who stole $11m through text message scheme jailed for six years in US",
+      "link": "https://www.bbc.co.uk/news/articles/cm87987w1qz5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-18T09:28:35Z",
+      "summary": "Tyler Buchanan, from Dundee, was a member of the notorious Scattered Spider group and began hacking when he was a teenager.",
+      "uk_focus": true
+    },
     {
       "title": "Security flaw found in Java, world's third-largest programming language",
       "link": "https://www.bbc.co.uk/news/articles/cke89jevqm1vo?at_medium=RSS&at_campaign=rss",
@@ -74,12 +218,12 @@
       "uk_focus": false
     },
     {
-      "title": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio",
-      "link": "https://www.theguardian.com/us-news/2026/nov/18/zero-evidence-recent-tech-outages-linked-marco-rubio",
-      "source": "The Guardian",
-      "published": "2026-11-18T06:26:49Z",
-      "summary": "The US secretary of state was speaking after Microsoft, major banks, and the National Security Agency were all affected by technical failures in recent days US secretary of state Marco Rubio has sought to assure Americans that there’s “zero” information that the cascade of…",
-      "uk_focus": false
+      "title": "Data security, compliance top expected connectivity challenges in 2027",
+      "link": "https://www.computerweekly.com/news/366654825/Data-security-compliance-top-expected-connectivity-challenges-in-2027",
+      "source": "Computer Weekly",
+      "published": "2026-11-18T05:09:00Z",
+      "summary": "Research finds that despite government warnings, one in three infrastructure decision-makers at large US and UK firms report using public internet for critical workloads",
+      "uk_focus": true
     },
     {
       "title": "Oracle reveals fix-this-ASAP-grade Java4Shell bug that allows attacks on many third-party apps",
@@ -87,6 +231,14 @@
       "source": "The Register",
       "published": "2026-11-18T04:33:05Z",
       "summary": "Attackers can crash the JVM or achieve unauthenticated RCE",
+      "uk_focus": false
+    },
+    {
+      "title": "The cyber threats to businesses from ‘Grand Theft Auto VI’",
+      "link": "https://www.computerweekly.com/news/366654629/The-cyber-threats-to-businesses-from-Grand-Theft-Auto-VI",
+      "source": "Computer Weekly",
+      "published": "2026-11-18T04:30:00Z",
+      "summary": "‘Grand Theft Auto’ fans waited patiently for over a decade for its next edition, but thanks to their understandable enthusiasm, enterprises are being left open to a range of cyber threats",
       "uk_focus": false
     },
     {
@@ -319,118 +471,6 @@
       "source": "The Register",
       "published": "2026-11-16T18:01:00Z",
       "summary": "Opt-in Edge archive gives Pro subscribers early access before full testing, while normal updates remain human-validated",
-      "uk_focus": false
-    },
-    {
-      "title": "Crook turns LearnWorlds' free trials into phishing factory, sends 13,000 fake YouTube copyright notices",
-      "link": "https://www.theregister.com/security/2026/11/16/crook-turns-learnworlds-free-trials-into-phishing-factory-sends-13000-fake-youtube-copyright-notices/5310122",
-      "source": "The Register",
-      "published": "2026-11-16T17:03:00Z",
-      "summary": "570 bogus accounts, one rewritten welcome email, and a fake YouTube page, but CEO says no breach",
-      "uk_focus": false
-    },
-    {
-      "title": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
-      "link": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094",
-      "source": "The Register",
-      "published": "2026-11-16T16:15:00Z",
-      "summary": "Securing supply chains or coercing other nations to help Washington sideline Beijing and its AI ambitions?",
-      "uk_focus": false
-    },
-    {
-      "title": "The big cyber short, or dot AI bubble?",
-      "link": "https://www.computerweekly.com/opinion/The-big-cyber-short-or-dot-AI-bubble",
-      "source": "Computer Weekly",
-      "published": "2026-11-16T16:01:00Z",
-      "summary": "Most discussions around AI risk focus on hallucinations, data privacy and regulation, but there's a more fundamental threat building beneath the surface: the financial foundations of the AI boom itself.",
-      "uk_focus": false
-    },
-    {
-      "title": "Has AI’s ‘Black October’ changed the way you secure your code?",
-      "link": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775",
-      "source": "The Register",
-      "published": "2026-11-16T16:00:00Z",
-      "summary": "PARTNER CONTENT: AI agents are making security vulnerabilities easier to find and exploit in your code. Software engineering and application security teams need new ways to find and fix them",
-      "uk_focus": false
-    },
-    {
-      "title": "Typosquatters Target New Brand Domains Within 24 Hours of Registration",
-      "link": "https://www.infosecurity-magazine.com/news/typosquatters-target-new-brand/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-16T16:00:00Z",
-      "summary": "Symantec said attackers are targeting new campaign sites registered by big name brands, with the lookalike domains enabling malicious follow-on activity",
-      "uk_focus": false
-    },
-    {
-      "title": "Threat actor use of AI becoming routine, warns Google",
-      "link": "https://www.computerweekly.com/news/366654805/Threat-actor-use-of-AI-becoming-routine-warns-Google",
-      "source": "Computer Weekly",
-      "published": "2026-11-16T15:32:00Z",
-      "summary": "The use of AI among threat actors continues to evolve, with integration of LLM agents into malicious workflows now becoming routine practice, according to a report",
-      "uk_focus": false
-    },
-    {
-      "title": "La Poste Subsidiary Maileva Breach Exposes 22 Million People",
-      "link": "https://www.infosecurity-magazine.com/news/maileva-docaposte-22-million-breach/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-16T15:25:00Z",
-      "summary": "Maileva breach exposed names and postal addresses of 22 million people",
-      "uk_focus": false
-    },
-    {
-      "title": "Thousands of driver's licenses exposed in Uber data breach",
-      "link": "https://www.itpro.com/security/data-breaches/thousands-of-drivers-licenses-exposed-in-uber-data-breach",
-      "source": "ITPro",
-      "published": "2026-11-16T14:23:43Z",
-      "summary": "Drivers across the US have been impacted in the Uber data breach",
-      "uk_focus": false
-    },
-    {
-      "title": "Google: AI agent turned a security patch into a working exploit with no human help",
-      "link": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
-      "source": "The Register",
-      "published": "2026-11-16T14:00:00Z",
-      "summary": "Look ma, no human in the loop!",
-      "uk_focus": false
-    },
-    {
-      "title": "Google Project Zero to Cut Disclosure Deadline to 30 Days by 2028",
-      "link": "https://www.infosecurity-magazine.com/news/project-zero-disclosure-deadline/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-16T12:15:00Z",
-      "summary": "Project Zero will publish bug details 30 days after reporting, fixed or not, by 2028",
-      "uk_focus": false
-    },
-    {
-      "title": "FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX",
-      "link": "https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-16T12:00:00Z",
-      "summary": "The FBI warns that threat actors are increasingly using open-source AI pentesting tool ARTEX to launch fast, large-scale intrusions worldwide",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft outage: Three times a failure",
-      "link": "https://www.computerweekly.com/news/366654803/Microsoft-outage-Three-times-a-failure",
-      "source": "Computer Weekly",
-      "published": "2026-11-16T11:00:00Z",
-      "summary": "The root cause of the Microsoft outage that impacted millions of users last week was due to inadequate testing, overloading network gateways",
-      "uk_focus": false
-    },
-    {
-      "title": "Information Commissioner’s Office Receives 300+ Reports of Medical Snooping",
-      "link": "https://www.infosecurity-magazine.com/news/ico-300-reports-of-medical-snooping/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-16T10:00:00Z",
-      "summary": "UK privacy watchdog has received reports of hundreds of cases of unauthorized insider access to medical files this year",
-      "uk_focus": true
-    },
-    {
-      "title": "AI Cuts Vulnerability Discovery from Nine Months to 90 Hours",
-      "link": "https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-16T09:00:00Z",
-      "summary": "Forescout report claims to have found 66 new flaws in just 90 hours using AI",
       "uk_focus": false
     }
   ]
