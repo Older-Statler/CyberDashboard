@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T18:22:01Z",
+  "generated_at": "2026-11-18T01:12:29Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 16
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
@@ -25,12 +25,12 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Graham Cluley",
@@ -49,6 +49,46 @@
     }
   ],
   "items": [
+    {
+      "title": "The PHP incident offers some important lessons for IT leaders",
+      "link": "https://www.itpro.com/security/the-php-incident-offers-some-important-lessons-for-it-leaders",
+      "source": "ITPro",
+      "published": "2026-11-18T00:00:00Z",
+      "summary": "As the dust starts to settle, some experts believe the threat posed by the PHP flaws was overblown",
+      "uk_focus": false
+    },
+    {
+      "title": "Daily disruptive outages that ground planes and halt work – welcome to the new normal",
+      "link": "https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634",
+      "source": "The Register",
+      "published": "2026-11-17T23:41:31Z",
+      "summary": "NSA, Apple add to a week of high-profile network outages, largely attributed to 'routine maintenance'",
+      "uk_focus": false
+    },
+    {
+      "title": "National Security Agency network for internal communications goes down",
+      "link": "https://www.theguardian.com/us-news/2026/nov/17/nsa-national-security-classified-communications-network-down",
+      "source": "The Guardian",
+      "published": "2026-11-17T20:35:23Z",
+      "summary": "NSA issues ‘code yellow’ as NSANet, used by staff to share classified material, including top-secret intelligence, fails The US National Security Agency said on Tuesday that it had experienced “temporary degradation” during scheduled routine maintenance, after reports that its…",
+      "uk_focus": false
+    },
+    {
+      "title": "Gemini test proves once again that amoral AI agents will do almost anything if told ‘NEVER give up’",
+      "link": "https://www.theregister.com/security/2026/11/17/gemini-test-proves-once-again-that-amoral-ai-agents-will-do-almost-anything-if-told-never-give-up/5310574",
+      "source": "The Register",
+      "published": "2026-11-17T19:52:57Z",
+      "summary": "If you design a test to find misalignment, you will find misalignment",
+      "uk_focus": false
+    },
+    {
+      "title": "UK government warned that lax AI safety undermines GDP boost",
+      "link": "https://www.computerweekly.com/news/366654649/UK-government-warned-that-lax-AI-safety-undermines-GDP-boost",
+      "source": "Computer Weekly",
+      "published": "2026-11-17T19:01:00Z",
+      "summary": "Former Anthropic and Open AI researchers tell MPs that frontier AI model developers are not serious about AI dangers",
+      "uk_focus": true
+    },
     {
       "title": "Hackers smash 'n' grab AI vendor: Take off with license data of Uber drivers",
       "link": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464",
