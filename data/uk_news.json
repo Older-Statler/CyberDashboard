@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T07:13:06Z",
+  "generated_at": "2026-11-19T16:44:12Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "The Register",
@@ -15,12 +15,12 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 13
     },
     {
       "name": "The Guardian",
@@ -30,7 +30,7 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 10
+      "count": 7
     },
     {
       "name": "Graham Cluley",
@@ -45,10 +45,114 @@
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 2
+      "count": 1
     }
   ],
   "items": [
+    {
+      "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
+      "link": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126",
+      "source": "The Register",
+      "published": "2026-11-19T16:20:00Z",
+      "summary": "DoJ claims suspect part of 4-month operation to steal secrets, surveil employees",
+      "uk_focus": false
+    },
+    {
+      "title": "CyberPower PowerPanel Exploited to Run Malicious Code on Domain Controller",
+      "link": "https://www.infosecurity-magazine.com/news/ups-software-abused-domain/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-19T15:30:00Z",
+      "summary": "Symantec found an attacker using CyberPower’s UPS software to run scripts on a domain controller",
+      "uk_focus": false
+    },
+    {
+      "title": "PHP Releases Patches to Fix 18 Vulnerabilities",
+      "link": "https://www.infosecurity-magazine.com/news/php-releases-patches-fix-18/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-19T15:28:00Z",
+      "summary": "PHP has released security updates addressing 18 vulnerabilities, including critical remote code execution flaws affecting session handling",
+      "uk_focus": false
+    },
+    {
+      "title": "European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline",
+      "link": "https://www.infosecurity-magazine.com/news/commission-ai-attack-systems/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-19T14:45:00Z",
+      "summary": "The European Commission said the attack targeted “individual systems”, with reports that attackers leveraged ARTEX in the campaign",
+      "uk_focus": false
+    },
+    {
+      "title": "Financial watchdogs urge banks to bolster cyber resilience",
+      "link": "https://www.itpro.com/security/cyber-attacks/financial-watchdogs-urge-banks-to-bolster-cyber-resilience",
+      "source": "ITPro",
+      "published": "2026-11-19T11:53:43Z",
+      "summary": "Banks and insurers advised to adopt board-level responsibility for cyber",
+      "uk_focus": false
+    },
+    {
+      "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
+      "link": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979",
+      "source": "The Register",
+      "published": "2026-11-19T11:45:00Z",
+      "summary": "Minister calls notification delay 'not acceptable' after October attack on Irish banking player Wellington IT came to light in November",
+      "uk_focus": false
+    },
+    {
+      "title": "TfL Warns 265,000 Photocard Customers May Have Had Personal Data Exposed",
+      "link": "https://www.infosecurity-magazine.com/news/tfl-customers-personal-data-exposed/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-19T11:35:00Z",
+      "summary": "London’s transport body was alerted to the incident after emails were sent from TfL’s system to Oyster Photocard customers",
+      "uk_focus": true
+    },
+    {
+      "title": "TfL takes Oyster photocard website offline after attackers compromise customer accounts",
+      "link": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-attackers-compromise-customer-accounts/5310985",
+      "source": "The Register",
+      "published": "2026-11-19T11:01:00Z",
+      "summary": "Around 265,000 customers potentially affected as London transport operator grapples with another security breach",
+      "uk_focus": true
+    },
+    {
+      "title": "UK court confirms existence of government surveillance order against Apple",
+      "link": "https://www.computerweekly.com/news/366654729/UK-court-confirms-existence-of-government-surveillance-order-against-Apple",
+      "source": "Computer Weekly",
+      "published": "2026-11-19T10:41:00Z",
+      "summary": "Investigatory Powers Tribunal dismisses government claims that disclosing the existence of a secret order to give access to Apple users’ end-to-end encrypted data would damage national security",
+      "uk_focus": true
+    },
+    {
+      "title": "A Fifth of UK Employees Share Passwords with AI",
+      "link": "https://www.infosecurity-magazine.com/news/fifth-uk-employees-share-passwords/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-19T10:30:00Z",
+      "summary": "Dashlane research reveals UK workers are sharing passwords with AI tools and granting access to sensitive data, raising major enterprise security concerns",
+      "uk_focus": true
+    },
+    {
+      "title": "Sticky note on monitor provided keys to the company’s kingdom",
+      "link": "https://www.theregister.com/security/2026/11/19/sticky-note-on-monitor-provided-keys-to-the-companys-kingdom/5310908",
+      "source": "The Register",
+      "published": "2026-11-19T10:15:00Z",
+      "summary": "Don't leave your credentials out in public, where any visitor can see them.",
+      "uk_focus": false
+    },
+    {
+      "title": "Rakuten Securities Breach Could Impact 15 Million Customers",
+      "link": "https://www.infosecurity-magazine.com/news/rakuten-securities-breach-15/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-19T09:20:00Z",
+      "summary": "Japanese broker Rakuten Securities has revealed a data breach involving the account details of 15 million customers",
+      "uk_focus": false
+    },
+    {
+      "title": "Inforcer report finds major data governance gap among businesses deploying AI",
+      "link": "https://www.itpro.com/security/data-protection/inforcer-report-finds-major-data-governance-gap-among-businesses-deploying-ai",
+      "source": "ITPro",
+      "published": "2026-11-19T08:40:00Z",
+      "summary": "The findings reveal that 82% of MSPs are selling or piloting Microsoft 365 Copilot despite many customers lacking adequate data protection measures",
+      "uk_focus": false
+    },
     {
       "title": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
       "link": "https://grahamcluley.com/smashing-security-podcast-493/",
@@ -66,11 +170,11 @@
       "uk_focus": false
     },
     {
-      "title": "Get ready for another critical PHP security release to drop",
-      "link": "https://www.theregister.com/patches/2026/11/18/get-ready-for-another-critical-php-security-release-to-drop/5310911",
+      "title": "Another critical PHP security release has dropped",
+      "link": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911",
       "source": "The Register",
       "published": "2026-11-18T22:38:12Z",
-      "summary": "At least one dangerous RCE bug will get a fix on Thursday",
+      "summary": "At least one dangerous RCE bug gota fix on Thursday",
       "uk_focus": false
     },
     {
@@ -110,7 +214,7 @@
       "link": "https://www.computerweekly.com/news/366654898/US-tech-outages-spark-conversation-on-resilience-in-the-age-of-AI",
       "source": "Computer Weekly",
       "published": "2026-11-18T16:22:00Z",
-      "summary": "From air traffic control systems to banks, and tech companies to government agencies, a spate of high-profile IT outages in the US is surfacing questions about what resilience looks like in an AI-driven world.",
+      "summary": "From air traffic control systems to banks, and tech companies to government agencies, a spate of high-profile IT outages in the US is surfacing questions about what resilience looks like in an AI-driven world",
       "uk_focus": false
     },
     {
@@ -320,150 +424,6 @@
       "published": "2026-11-17T19:01:00Z",
       "summary": "Former Anthropic and Open AI researchers tell MPs that frontier AI model developers are not serious about AI dangers",
       "uk_focus": true
-    },
-    {
-      "title": "Hackers smash 'n' grab AI vendor: Take off with license data of Uber drivers",
-      "link": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464",
-      "source": "The Register",
-      "published": "2026-11-17T16:15:00Z",
-      "summary": "Ride-hailing biz says stolen credentials allowed crooks to help themselves to driver's license data",
-      "uk_focus": false
-    },
-    {
-      "title": "Optimizely hack hits hundreds of company websites worldwide",
-      "link": "https://www.itpro.com/security/cyber-attacks/optimizely-hack-everything-we-know-so-far-as-hundreds-of-websites-found-serving-malware-to-visitors",
-      "source": "ITPro",
-      "published": "2026-11-17T15:45:36Z",
-      "summary": "The Optimizely hack has hit hundreds of sites globally",
-      "uk_focus": false
-    },
-    {
-      "title": "Anthropic Cuts Disclosure Deadline to 30 Days For Serious Bugs",
-      "link": "https://www.infosecurity-magazine.com/news/anthropic-disclosure-deadline-30/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-17T15:30:00Z",
-      "summary": "Anthropic will publish serious flaws found by its AI models 30 days after reporting them",
-      "uk_focus": false
-    },
-    {
-      "title": "Windows 11 previews remote padlock only IT can open",
-      "link": "https://www.theregister.com/os-platforms/2026/11/17/windows-11-previews-remote-padlock-only-it-can-open/5310402",
-      "source": "The Register",
-      "published": "2026-11-17T15:29:00Z",
-      "summary": "Intune feature blocks normal sign-ins without wiping data, while another test build drops Offline Maps settings",
-      "uk_focus": false
-    },
-    {
-      "title": "Optimizely Flaw Exploited to Serve Malicious Code to Visitors of 178 Organizations",
-      "link": "https://www.infosecurity-magazine.com/news/optimizely-hack-malware-178-orgs/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-17T13:45:00Z",
-      "summary": "An attacker abused an Optimizely flaw to plant malicious code on websites of 178 organizations",
-      "uk_focus": false
-    },
-    {
-      "title": "'Not rocket surgery' claims researcher who found six Danfoss fridge controller zero-days in under an hour",
-      "link": "https://www.theregister.com/security/2026/11/17/not-rocket-surgery-claims-researcher-who-found-six-danfoss-fridge-controller-zero-days-in-under-an-hour/5310197",
-      "source": "The Register",
-      "published": "2026-11-17T13:32:00Z",
-      "summary": "Even strict authentication mode has a hole, we're told, while basic exploit defenses are missing from the firmware",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft Warns of Coordinated Phishing Campaign Leveraging M365 Service Outage",
-      "link": "https://www.infosecurity-magazine.com/news/microsoft-phishing-service-outage/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-17T13:00:00Z",
-      "summary": "Microsoft said the high volume campaign was likely designed to capture user credentials, and urged organizations to investigate signs of compromise",
-      "uk_focus": false
-    },
-    {
-      "title": "Why threat hunting should matter to every board",
-      "link": "https://www.ncsc.gov.uk/blogs/why-threat-hunting-should-matter-to-every-board",
-      "source": "NCSC",
-      "published": "2026-11-17T12:00:00Z",
-      "summary": "Monitoring alone cannot detect every threat. Proactive threat hunting can expose gaps in defences and help organisations learn from others facing common threats.",
-      "uk_focus": true
-    },
-    {
-      "title": "Opinion pollster Ipsos 'fesses up to 'cybersecurity incident'",
-      "link": "https://www.theregister.com/security/2026/11/17/opinion-pollster-ipsos-fesses-up-to-cybersecurity-incident/5310405",
-      "source": "The Register",
-      "published": "2026-11-17T11:44:00Z",
-      "summary": "Market research company brings in external specialists to grok cause and scope",
-      "uk_focus": false
-    },
-    {
-      "title": "22 million impacted in attack on French postal subsidiary",
-      "link": "https://www.itpro.com/security/cyber-attacks/22-million-impacted-in-attack-on-french-postal-subsidiary",
-      "source": "ITPro",
-      "published": "2026-11-17T11:21:27Z",
-      "summary": "The Maileva attack exposed contact information and sensitive business data",
-      "uk_focus": false
-    },
-    {
-      "title": "UK regulators call for tight control of personal AI agents",
-      "link": "https://www.computerweekly.com/news/366654742/UK-regulators-call-for-tight-control-of-personal-AI-agents",
-      "source": "Computer Weekly",
-      "published": "2026-11-17T11:15:00Z",
-      "summary": "Personal agentic AI promises to help people save money and time. But are AI developers ready to comply with UK law and regulations?",
-      "uk_focus": true
-    },
-    {
-      "title": "UK gov slammed for 'complacent' cyber resilience stance",
-      "link": "https://www.itpro.com/security/government-slammed-for-complacent-cyber-resilience-stance-as-mps-warn-uk-is-unprepared-for-future-threats",
-      "source": "ITPro",
-      "published": "2026-11-17T10:54:14Z",
-      "summary": "A survey of MPs on national cyber resilience comes after a House of Lords committee slammed the government’s preparations",
-      "uk_focus": true
-    },
-    {
-      "title": "Beyond the AI apocalypse: What CISOs need to do now",
-      "link": "https://www.computerweekly.com/opinion/Beyond-the-AI-apocalypse-What-CISOs-need-to-do-now",
-      "source": "Computer Weekly",
-      "published": "2026-11-17T10:41:00Z",
-      "summary": "Despite the intensive discourse there is little clear evidence that an AI catastrophe is imminent. IT leaders should therefore focus on the threats organisations face today while preparing for what may come next.",
-      "uk_focus": false
-    },
-    {
-      "title": "ICO Issues GTA 6 Scam Warning as Release Date Nears",
-      "link": "https://www.infosecurity-magazine.com/news/ico-gta-6-scam-warning-release/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-17T10:15:00Z",
-      "summary": "The UK's Information Commissioner’s Office has warned of Grand Theft Auto 6-related cyber-attacks",
-      "uk_focus": true
-    },
-    {
-      "title": "AI startup Corma valued at $1bn following new funding round",
-      "link": "https://www.techmonitor.ai/news/ai-startup-corma-valued-at-1bn-following-new-funding-round",
-      "source": "Tech Monitor",
-      "published": "2026-11-17T09:46:11Z",
-      "summary": "Corma has raised $125m in a Series A funding round at a valuation of $1bn as the company seeks to expand its AI-based foundation model for defensive cybersecurity.",
-      "uk_focus": false
-    },
-    {
-      "title": "Fully Autonomous Agentic Attacks Are Three Months Away, Google Warns",
-      "link": "https://www.infosecurity-magazine.com/news/fully-autonomous-agentic-attacks/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-17T09:30:00Z",
-      "summary": "Google Threat Intelligence Group warns of “paradigm shift” in use of agentic pen-test frameworks",
-      "uk_focus": false
-    },
-    {
-      "title": "MSPs are becoming the de facto CISO",
-      "link": "https://www.itpro.com/security/msps-are-becoming-the-de-facto-ciso",
-      "source": "ITPro",
-      "published": "2026-11-17T08:00:00Z",
-      "summary": "The rise of the de facto CISO presents a significant growth opportunity for MSPs. Still, only those who can demonstrate leadership, expertise, and trust will successfully transition from service provider to strategic advisor",
-      "uk_focus": false
-    },
-    {
-      "title": "What's the difference between cybersecurity and cyber resilience – and why does that matter?",
-      "link": "https://www.itpro.com/security/whats-the-difference-between-cybersecurity-and-cyber-resilience-and-why-does-that-matter",
-      "source": "ITPro",
-      "published": "2026-11-17T08:00:00Z",
-      "summary": "Stopping attacks and surviving them aren’t always the same thing, and the costliest breaches are often defined by recovery times",
-      "uk_focus": false
     }
   ]
 }

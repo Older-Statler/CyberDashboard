@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-19T07:13:05Z",
+  "generated_at": "2026-11-19T16:44:12Z",
   "victims": [
+    {
+      "group": "fulcrumsec",
+      "victim": "Ginkgo Bioworks",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-19T11:08:48.224566+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R2lua2dvIEJpb3dvcmtzQGZ1bGNydW1zZWM="
+    },
+    {
+      "group": "HYFLOCK",
+      "victim": "Piz'wich Data Breach",
+      "country": "FR",
+      "sector": "Hospitality",
+      "published": "2026-11-19T11:24:24.424590+00:00",
+      "domain": "pizwich.com",
+      "url": "https://www.ransomware.live/id/UGl6J3dpY2ggRGF0YSBCcmVhY2hASFlGTE9DSw=="
+    },
+    {
+      "group": "HYFLOCK",
+      "victim": "Dong Engineering Consulting Company Data Breach",
+      "country": "VN",
+      "sector": "Professional Services",
+      "published": "2026-11-19T11:25:01.679899+00:00",
+      "domain": "eecinter.com",
+      "url": "https://www.ransomware.live/id/RG9uZyBFbmdpbmVlcmluZyBDb25zdWx0aW5nIENvbXBhbnkgRGF0YSBCcmVhY2hASFlGTE9DSw=="
+    },
+    {
+      "group": "crypto24",
+      "victim": "M.N. Textiles (Pvt) Ltd",
+      "country": "PK",
+      "sector": "Manufacturing",
+      "published": "2026-11-19T10:40:56.326720+00:00",
+      "domain": "www.mntextiles.com",
+      "url": "https://www.ransomware.live/id/TS5OLiBUZXh0aWxlcyAoUHZ0KSBMdGRAY3J5cHRvMjQ="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Smith & Green, Attorneys at Law PLLC",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-19T06:44:34.639183+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U21pdGggJiBHcmVlbiwgQXR0b3JuZXlzIGF0IExhdyBQTExDQHJoeXNpZGE="
+    },
+    {
+      "group": "krybit",
+      "victim": "www.sleepboxbymiracle.com",
+      "country": "RU",
+      "sector": "Hospitality",
+      "published": "2026-11-19T03:51:04.582712+00:00",
+      "domain": "www.sleepboxbymiracle.com",
+      "url": "https://www.ransomware.live/id/d3d3LnNsZWVwYm94YnltaXJhY2xlLmNvbUBrcnliaXQ="
+    },
     {
       "group": "krybit",
       "victim": "www.leadersaluminium.ae",
@@ -18,6 +72,96 @@
       "published": "2026-11-19T00:50:25.526338+00:00",
       "domain": "alumil.com",
       "url": "https://www.ransomware.live/id/YWx1bWlsLmNvbUBrcnliaXQ="
+    },
+    {
+      "group": "Vortex",
+      "victim": "TrueBlue - 1,094.12 GB",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-19T10:59:46.357251+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VHJ1ZUJsdWUgLSAxLDA5NC4xMiBHQkBWb3J0ZXg="
+    },
+    {
+      "group": "aurora",
+      "victim": "Boulart Inc.",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-11-19T10:37:50.130656+00:00",
+      "domain": "Boulart Inc.",
+      "url": "https://www.ransomware.live/id/Qm91bGFydCBJbmMuQGF1cm9yYQ=="
+    },
+    {
+      "group": "Vortex",
+      "victim": "TrueBlue",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-19T10:35:47.427972+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VHJ1ZUJsdWVAVm9ydGV4"
+    },
+    {
+      "group": "Vortex",
+      "victim": "Gensler",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-19T10:35:10.609226+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R2Vuc2xlckBWb3J0ZXg="
+    },
+    {
+      "group": "Vortex",
+      "victim": "Buffalo Construction",
+      "country": "",
+      "sector": "Manufacturing",
+      "published": "2026-11-19T10:34:35.171882+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QnVmZmFsbyBDb25zdHJ1Y3Rpb25AVm9ydGV4"
+    },
+    {
+      "group": "Vortex",
+      "victim": "Ochsner Health",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-19T10:34:00.152772+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/T2Noc25lciBIZWFsdGhAVm9ydGV4"
+    },
+    {
+      "group": "Vortex",
+      "victim": "CDM Smith",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-19T10:33:24.747716+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q0RNIFNtaXRoQFZvcnRleA=="
+    },
+    {
+      "group": "Vortex",
+      "victim": "Kiely Builders",
+      "country": "IE",
+      "sector": "Manufacturing",
+      "published": "2026-11-19T10:32:49.725060+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S2llbHkgQnVpbGRlcnNAVm9ydGV4"
+    },
+    {
+      "group": "Vortex",
+      "victim": "Bond Building",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-11-19T10:32:14.572206+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Qm9uZCBCdWlsZGluZ0BWb3J0ZXg="
+    },
+    {
+      "group": "Vortex",
+      "victim": "Orlando Health",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-19T10:31:39.329232+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/T3JsYW5kbyBIZWFsdGhAVm9ydGV4"
     },
     {
       "group": "medusalocker",
@@ -756,150 +900,6 @@
       "published": "2026-11-17T14:21:18.395020+00:00",
       "domain": "www.cushingcenters.org",
       "url": "https://www.ransomware.live/id/Q2FyZGluYWwgQ3VzaGluZyBDZW50ZXJzQEJvb2JhIFByb2plY3Q="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "Windcrest Fire Department",
-      "country": "US",
-      "sector": "Government & Defense",
-      "published": "2026-11-17T14:21:39.240718+00:00",
-      "domain": "www.windcrest-tx.gov",
-      "url": "https://www.ransomware.live/id/V2luZGNyZXN0IEZpcmUgRGVwYXJ0bWVudEBCb29iYSBQcm9qZWN0"
-    },
-    {
-      "group": "Booba Project",
-      "victim": "Greater Elgin Family Care Center",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T14:22:00.099749+00:00",
-      "domain": "www.greaterfamilyhealth.org",
-      "url": "https://www.ransomware.live/id/R3JlYXRlciBFbGdpbiBGYW1pbHkgQ2FyZSBDZW50ZXJAQm9vYmEgUHJvamVjdA=="
-    },
-    {
-      "group": "Booba Project",
-      "victim": "New England Orthopedic Surgeons",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T13:20:45.892586+00:00",
-      "domain": "www.neortho.com",
-      "url": "https://www.ransomware.live/id/TmV3IEVuZ2xhbmQgT3J0aG9wZWRpYyBTdXJnZW9uc0BCb29iYSBQcm9qZWN0"
-    },
-    {
-      "group": "everstake",
-      "victim": "ar*****l.com",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-17T10:40:19.340655+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/YXIqKioqKmwuY29tQGV2ZXJzdGFrZQ=="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Name upcoming",
-      "country": "MX",
-      "sector": "Not Found",
-      "published": "2026-11-17T08:29:19.022956+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TmFtZSB1cGNvbWluZ0BQaXhlbExlYWtz"
-    },
-    {
-      "group": "Inception",
-      "victim": "PepsiCo",
-      "country": "US",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-11-17T08:16:39.037897+00:00",
-      "domain": "pepsico.com",
-      "url": "https://www.ransomware.live/id/UGVwc2lDb0BJbmNlcHRpb24="
-    },
-    {
-      "group": "Inception",
-      "victim": "Paychex, Inc.",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-11-17T08:16:05.101370+00:00",
-      "domain": "paychex.com",
-      "url": "https://www.ransomware.live/id/UGF5Y2hleCwgSW5jLkBJbmNlcHRpb24="
-    },
-    {
-      "group": "Inception",
-      "victim": "Cigna Healthcare",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T08:14:58.686938+00:00",
-      "domain": "cignaglobal.com",
-      "url": "https://www.ransomware.live/id/Q2lnbmEgSGVhbHRoY2FyZUBJbmNlcHRpb24="
-    },
-    {
-      "group": "Inception",
-      "victim": "Advanced Micro Devices, Inc. (AMD)",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-17T08:14:24.884161+00:00",
-      "domain": "amd.com",
-      "url": "https://www.ransomware.live/id/QWR2YW5jZWQgTWljcm8gRGV2aWNlcywgSW5jLiAoQU1EKUBJbmNlcHRpb24="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Molex (Koch) - 16,448,279 records",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-11-17T02:32:30.271274+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TW9sZXggKEtvY2gpIC0gMTYsNDQ4LDI3OSByZWNvcmRzQFZvcnRleA=="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Mycorpass (Carrington Mortgage Services)",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-11-17T02:31:56.047102+00:00",
-      "domain": "carringtonmortgage.com",
-      "url": "https://www.ransomware.live/id/TXljb3JwYXNzIChDYXJyaW5ndG9uIE1vcnRnYWdlIFNlcnZpY2VzKUBWb3J0ZXg="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Apellis Pharmaceuticals",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T02:31:21.549828+00:00",
-      "domain": "apellis.com",
-      "url": "https://www.ransomware.live/id/QXBlbGxpcyBQaGFybWFjZXV0aWNhbHNAVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "Castle Biosciences - 2,018,234 records",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T02:30:47.111740+00:00",
-      "domain": "castlebiosciences.com",
-      "url": "https://www.ransomware.live/id/Q2FzdGxlIEJpb3NjaWVuY2VzIC0gMiwwMTgsMjM0IHJlY29yZHNAVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "Caris Life Sciences - 21,432,021 records",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T02:30:12.795588+00:00",
-      "domain": "carislifesciences.com",
-      "url": "https://www.ransomware.live/id/Q2FyaXMgTGlmZSBTY2llbmNlcyAtIDIxLDQzMiwwMjEgcmVjb3Jkc0BWb3J0ZXg="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Owens-Minor - 57,985,343 records",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-17T02:29:37.700659+00:00",
-      "domain": "owens-minor.com",
-      "url": "https://www.ransomware.live/id/T3dlbnMtTWlub3IgLSA1Nyw5ODUsMzQzIHJlY29yZHNAVm9ydGV4"
-    },
-    {
-      "group": "akira",
-      "victim": "Optimil Machinery",
-      "country": "",
-      "sector": "Manufacturing",
-      "published": "2026-11-17T13:40:03.544122+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/T3B0aW1pbCBNYWNoaW5lcnlAYWtpcmE="
     }
   ]
 }
