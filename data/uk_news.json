@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T00:06:43Z",
+  "generated_at": "2026-11-19T07:13:06Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 15
+      "count": 14
     },
     {
       "name": "Computer Weekly",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
+      "link": "https://grahamcluley.com/smashing-security-podcast-493/",
+      "source": "Graham Cluley",
+      "published": "2026-11-19T00:14:52Z",
+      "summary": "You join a video call, and your contact and a few colleagues are already there, waiting patiently. But they can't hear you, and a pop-up says you need to install an update to fix your microphone. What could possibly go wrong? Meanwhile, we explain how changing just a handful of…",
+      "uk_focus": false
+    },
     {
       "title": "CISA’s CVE program shake-up: What does it mean for businesses",
       "link": "https://www.itpro.com/security/cisas-cve-program-shake-up-what-does-it-mean-for-businesses",
@@ -455,14 +463,6 @@
       "source": "ITPro",
       "published": "2026-11-17T08:00:00Z",
       "summary": "Stopping attacks and surviving them aren’t always the same thing, and the costliest breaches are often defined by recovery times",
-      "uk_focus": false
-    },
-    {
-      "title": "Japan's Fugaku supercomputer has decidedly un-super security",
-      "link": "https://www.theregister.com/security/2026/11/17/japans-fugaku-supercomputer-has-decidedly-un-super-security/5310333",
-      "source": "The Register",
-      "published": "2026-11-17T05:27:04Z",
-      "summary": "Attackers try logging in to Earth’s ninth most powerful machine after status page hack exposed credentials",
       "uk_focus": false
     }
   ]
