@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T16:44:12Z",
+  "generated_at": "2026-11-19T23:27:32Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 8
     },
     {
       "name": "Infosecurity Magazine",
@@ -25,17 +25,17 @@
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 7
+      "count": 2
     },
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "BBC News",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
+      "link": "https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175",
+      "source": "The Register",
+      "published": "2026-11-19T21:12:33Z",
+      "summary": "First service outages, then data breaches…what's next?!",
+      "uk_focus": false
+    },
+    {
+      "title": "Nvidia adds possible hack to list of very bad things under investigation",
+      "link": "https://www.theregister.com/security/2026/11/19/nvidia-adds-possible-hack-to-list-of-very-bad-things-under-investigation/5311153",
+      "source": "The Register",
+      "published": "2026-11-19T18:52:53Z",
+      "summary": "Ransomware group sets a deadline for the chipmaker to pay up - or see its data leaked",
+      "uk_focus": false
+    },
+    {
+      "title": "Cold Relic: What you need to know",
+      "link": "https://www.fortra.com/blog/cold-relic-what-you-need-know",
+      "source": "Graham Cluley",
+      "published": "2026-11-19T17:10:29Z",
+      "summary": "A Russian spy group is breaking into organisations by pretending to be people they already trust. Meet Cold Relic, the hackers formerly known as COLDRIVER. Read more in my article on the Fortra blog.",
+      "uk_focus": false
+    },
     {
       "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
       "link": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126",
@@ -79,6 +103,30 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-19T14:45:00Z",
       "summary": "The European Commission said the attack targeted “individual systems”, with reports that attackers leveraged ARTEX in the campaign",
+      "uk_focus": false
+    },
+    {
+      "title": "AI red team tool Artex likely behind cyber attack on EU body",
+      "link": "https://www.computerweekly.com/news/366654974/AI-red-team-tool-Artex-likely-behind-cyber-attack-on-EU-body",
+      "source": "Computer Weekly",
+      "published": "2026-11-19T12:42:00Z",
+      "summary": "The European Union said an attack on its executive body's HR systems was likely orchestrated by Artex, an open-source AI penetration testing framework that has found favour among threat actors.",
+      "uk_focus": false
+    },
+    {
+      "title": "Over 250,000 Londoners affected by latest TfL breach",
+      "link": "https://www.computerweekly.com/news/366654973/Over-250000-Londoners-affected-by-latest-TfL-breach",
+      "source": "Computer Weekly",
+      "published": "2026-11-19T12:14:00Z",
+      "summary": "Users of TfL Oyster photocards have become embroiled in a data breach after the transport operator's systems were compromised.",
+      "uk_focus": false
+    },
+    {
+      "title": "Ukrainian police arrest former members of Conti ransomware group",
+      "link": "https://www.computerweekly.com/news/366654831/Ukrainian-police-arrest-former-members-of-Conti-ransomware-group",
+      "source": "Computer Weekly",
+      "published": "2026-11-19T12:10:00Z",
+      "summary": "Ukrainian police have arrested four cyber criminals, who they claim are previously linked to the activities of the Conti ransomware group. The techniques mentioned refer to two possible further subgroups",
       "uk_focus": false
     },
     {
@@ -159,14 +207,6 @@
       "source": "Graham Cluley",
       "published": "2026-11-19T00:14:52Z",
       "summary": "You join a video call, and your contact and a few colleagues are already there, waiting patiently. But they can't hear you, and a pop-up says you need to install an update to fix your microphone. What could possibly go wrong? Meanwhile, we explain how changing just a handful of…",
-      "uk_focus": false
-    },
-    {
-      "title": "CISA’s CVE program shake-up: What does it mean for businesses",
-      "link": "https://www.itpro.com/security/cisas-cve-program-shake-up-what-does-it-mean-for-businesses",
-      "source": "ITPro",
-      "published": "2026-11-19T00:00:00Z",
-      "summary": "How will the US Cybersecurity and Infrastructure Security Agency’s new CVE program framework impact businesses?",
       "uk_focus": false
     },
     {
@@ -290,14 +330,6 @@
       "uk_focus": false
     },
     {
-      "title": "AI just found another big programming language flaw",
-      "link": "https://www.itpro.com/security/java4shell-security-agencies-issue-alert-as-critical-flaw-found-in-popular-programming-language-and-ai-helped-uncover-it",
-      "source": "ITPro",
-      "published": "2026-11-18T11:32:46Z",
-      "summary": "Researchers say Java4Shell could enable remote code execution, app crashes, and secret extraction",
-      "uk_focus": false
-    },
-    {
       "title": "Microsoft expands MAI portfolio with seven new models",
       "link": "https://www.techmonitor.ai/news/microsoft-expands-mai-portfolio-with-seven-new-models",
       "source": "Tech Monitor",
@@ -346,22 +378,6 @@
       "uk_focus": false
     },
     {
-      "title": "Nozomi Networks teams up with Lockheed Martin on defense security scheme",
-      "link": "https://www.itpro.com/security/nozomi-networks-teams-up-with-lockheed-martin-on-defense-security-scheme",
-      "source": "ITPro",
-      "published": "2026-11-18T08:45:00Z",
-      "summary": "The collaboration includes the development of automated security configuration assessment capabilities, with an initial focus on DISA STIG compliance",
-      "uk_focus": false
-    },
-    {
-      "title": "Companies will be given 30-day patch deadlines as researchers tighten bug disclosure windows",
-      "link": "https://www.itpro.com/security/companies-will-be-given-30-day-patch-deadlines-as-researchers-tighten-bug-disclosure-windows",
-      "source": "ITPro",
-      "published": "2026-11-18T08:30:00Z",
-      "summary": "The accelerated timeline aims to combat an AI vulnerability avalanche",
-      "uk_focus": false
-    },
-    {
       "title": "Data security, compliance top expected connectivity challenges in 2027",
       "link": "https://www.computerweekly.com/news/366654825/Data-security-compliance-top-expected-connectivity-challenges-in-2027",
       "source": "Computer Weekly",
@@ -386,44 +402,12 @@
       "uk_focus": false
     },
     {
-      "title": "The PHP incident offers some important lessons for IT leaders",
-      "link": "https://www.itpro.com/security/the-php-incident-offers-some-important-lessons-for-it-leaders",
-      "source": "ITPro",
-      "published": "2026-11-18T00:00:00Z",
-      "summary": "As the dust starts to settle, some experts believe the threat posed by the PHP flaws was overblown",
-      "uk_focus": false
-    },
-    {
       "title": "Daily disruptive outages that ground planes and halt work – welcome to the new normal",
       "link": "https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634",
       "source": "The Register",
       "published": "2026-11-17T23:41:31Z",
       "summary": "NSA, Apple add to a week of high-profile network outages, largely attributed to 'routine maintenance'",
       "uk_focus": false
-    },
-    {
-      "title": "National Security Agency network for internal communications goes down",
-      "link": "https://www.theguardian.com/us-news/2026/nov/17/nsa-national-security-classified-communications-network-down",
-      "source": "The Guardian",
-      "published": "2026-11-17T20:35:23Z",
-      "summary": "NSA issues ‘code yellow’ as NSANet, used by staff to share classified material, including top-secret intelligence, fails The US National Security Agency said on Tuesday that it had experienced “temporary degradation” during scheduled routine maintenance, after reports that its…",
-      "uk_focus": false
-    },
-    {
-      "title": "Gemini test proves once again that amoral AI agents will do almost anything if told ‘NEVER give up’",
-      "link": "https://www.theregister.com/security/2026/11/17/gemini-test-proves-once-again-that-amoral-ai-agents-will-do-almost-anything-if-told-never-give-up/5310574",
-      "source": "The Register",
-      "published": "2026-11-17T19:52:57Z",
-      "summary": "If you design a test to find misalignment, you will find misalignment",
-      "uk_focus": false
-    },
-    {
-      "title": "UK government warned that lax AI safety undermines GDP boost",
-      "link": "https://www.computerweekly.com/news/366654649/UK-government-warned-that-lax-AI-safety-undermines-GDP-boost",
-      "source": "Computer Weekly",
-      "published": "2026-11-17T19:01:00Z",
-      "summary": "Former Anthropic and Open AI researchers tell MPs that frontier AI model developers are not serious about AI dangers",
-      "uk_focus": true
     }
   ]
 }
