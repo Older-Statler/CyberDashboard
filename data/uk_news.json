@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:54:31Z",
+  "generated_at": "2026-11-19T00:06:43Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 18
+      "count": 15
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 5
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
@@ -50,6 +50,30 @@
   ],
   "items": [
     {
+      "title": "CISA’s CVE program shake-up: What does it mean for businesses",
+      "link": "https://www.itpro.com/security/cisas-cve-program-shake-up-what-does-it-mean-for-businesses",
+      "source": "ITPro",
+      "published": "2026-11-19T00:00:00Z",
+      "summary": "How will the US Cybersecurity and Infrastructure Security Agency’s new CVE program framework impact businesses?",
+      "uk_focus": false
+    },
+    {
+      "title": "Get ready for another critical PHP security release to drop",
+      "link": "https://www.theregister.com/patches/2026/11/18/get-ready-for-another-critical-php-security-release-to-drop/5310911",
+      "source": "The Register",
+      "published": "2026-11-18T22:38:12Z",
+      "summary": "At least one dangerous RCE bug will get a fix on Thursday",
+      "uk_focus": false
+    },
+    {
+      "title": "AI found more critical bugs in another widely used technology running 225M websites",
+      "link": "https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887",
+      "source": "The Register",
+      "published": "2026-11-18T21:11:04Z",
+      "summary": "Open source NGINX joins patchapalooza",
+      "uk_focus": false
+    },
+    {
       "title": "California tells Waymo to take the next exit after freeway mishaps",
       "link": "https://www.theregister.com/security/2026/11/18/california-tells-waymo-to-take-the-next-exit-after-freeway-mishaps/5310841",
       "source": "The Register",
@@ -66,19 +90,19 @@
       "uk_focus": false
     },
     {
-      "title": "When the Call Is Coming From Inside the House: Defending Against AI-Powered Social Engineering",
-      "link": "https://www.itpro.com/security/hacking/when-the-call-is-coming-from-inside-the-house-defending-against-ai-powered-social-engineering",
-      "source": "ITPro",
-      "published": "2026-11-18T17:19:04Z",
-      "summary": "When the Call Is Coming From Inside the House: Defending Against AI-Powered Social Engineering",
-      "uk_focus": false
-    },
-    {
       "title": "Five Critical Vulnerabilities Found in World's Most Widely Used Open-Source Web Server",
       "link": "https://www.infosecurity-magazine.com/news/five-critical-vulnerabilities/",
       "source": "Infosecurity Magazine",
       "published": "2026-11-18T16:55:00Z",
       "summary": "Five critical NGINX vulnerabilities could allow unauthenticated attackers to remotely execute code and potentially take control of affected servers",
+      "uk_focus": false
+    },
+    {
+      "title": "US tech outages spark conversation on resilience in the age of AI",
+      "link": "https://www.computerweekly.com/news/366654898/US-tech-outages-spark-conversation-on-resilience-in-the-age-of-AI",
+      "source": "Computer Weekly",
+      "published": "2026-11-18T16:22:00Z",
+      "summary": "From air traffic control systems to banks, and tech companies to government agencies, a spate of high-profile IT outages in the US is surfacing questions about what resilience looks like in an AI-driven world.",
       "uk_focus": false
     },
     {
@@ -135,6 +159,14 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-18T12:35:00Z",
       "summary": "A critical OpenJDK vulnerability could expose major Java applications to remote code execution, prompting CISA to urge organizations implement mitigations",
+      "uk_focus": false
+    },
+    {
+      "title": "I am the passenger: In Brussels at Google’s data sovereignty event",
+      "link": "https://www.computerweekly.com/opinion/I-am-the-passenger-In-Brussels-at-Googles-data-sovereignty-event",
+      "source": "Computer Weekly",
+      "published": "2026-11-18T12:02:00Z",
+      "summary": "I look through the window. What do I see? Physical embassies protected from local law, while cloud data stored with US giants remains exposed to foreign warrants",
       "uk_focus": false
     },
     {
@@ -431,46 +463,6 @@
       "source": "The Register",
       "published": "2026-11-17T05:27:04Z",
       "summary": "Attackers try logging in to Earth’s ninth most powerful machine after status page hack exposed credentials",
-      "uk_focus": false
-    },
-    {
-      "title": "Infoblox customer and staff data exposed in Sharepoint breach",
-      "link": "https://www.theregister.com/security/2026/11/16/infoblox-customer-and-staff-data-exposed-in-sharepoint-breach/5310280",
-      "source": "The Register",
-      "published": "2026-11-16T21:53:28Z",
-      "summary": "The company is investigating",
-      "uk_focus": false
-    },
-    {
-      "title": "Attackers are using AI agents to automate cybercrime at 'industrial scale,' FBI and AWS warn",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/16/attackers-are-using-ai-agents-to-automate-cybercrime-at-industrial-scale-fbi-and-aws-warn/5310223",
-      "source": "The Register",
-      "published": "2026-11-16T19:52:00Z",
-      "summary": "Critical orgs around the globe under seige",
-      "uk_focus": false
-    },
-    {
-      "title": "‘123456’ has been the world’s most popular password for 7 out of the last 8 years",
-      "link": "https://www.theregister.com/security/2026/11/16/123456-has-been-the-worlds-most-popular-password-for-7-out-of-the-last-8-years/5310189",
-      "source": "The Register",
-      "published": "2026-11-16T18:33:03Z",
-      "summary": "People never learn",
-      "uk_focus": false
-    },
-    {
-      "title": "NoisyTCP bug gives Linux servers a remote crash problem 11 years in the making",
-      "link": "https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144",
-      "source": "The Register",
-      "published": "2026-11-16T18:28:00Z",
-      "summary": "Flaw can take down an entire host, even when the vulnerable service is running inside a container",
-      "uk_focus": false
-    },
-    {
-      "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
-      "link": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139",
-      "source": "The Register",
-      "published": "2026-11-16T18:01:00Z",
-      "summary": "Opt-in Edge archive gives Pro subscribers early access before full testing, while normal updates remain human-validated",
       "uk_focus": false
     }
   ]
