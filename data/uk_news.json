@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:12:43Z",
+  "generated_at": "2026-11-20T13:28:53Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,12 +15,12 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 8
+      "count": 5
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 13
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -40,21 +40,69 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 4
+      "count": 2
     },
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 1
+      "count": 0
     }
   ],
   "items": [
+    {
+      "title": "White House removes cyber-security chief after series of tech outages",
+      "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-20T13:28:32Z",
+      "summary": "CBS is reporting he has been fired after losing the confidence of White House chief of staff Stephen Miller.",
+      "uk_focus": false
+    },
+    {
+      "title": "UK government can't keep its encryption-busting order to Apple a secret, tribunal rules",
+      "link": "https://www.theregister.com/security/2026/11/20/uk-government-cant-keep-its-encryption-busting-order-to-apple-a-secret-tribunal-rules/5311292",
+      "source": "The Register",
+      "published": "2026-11-20T12:18:19Z",
+      "summary": "Notice's existence can be acknowledged without harming national security, but its precise demands remain under wraps",
+      "uk_focus": true
+    },
+    {
+      "title": "Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams",
+      "link": "https://www.infosecurity-magazine.com/news/mail-bombing-attacks-it-helpdesk/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-20T11:55:00Z",
+      "summary": "Researchers have uncovered a large-scale campaign in which attackers flood inboxes with emails before impersonating IT helpdesk staff to gain access to user accounts",
+      "uk_focus": false
+    },
+    {
+      "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+      "link": "https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-20T11:15:00Z",
+      "summary": "Ransomware actor N0n has claimed attacks on JPMorgan, Visa and Mastercard, reportedly leaking customer data on its dark web site",
+      "uk_focus": false
+    },
+    {
+      "title": "Windows 11 passkey bug cries failure after successful sign-in",
+      "link": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263",
+      "source": "The Register",
+      "published": "2026-11-20T11:09:44Z",
+      "summary": "Optional update fixes misleading Android error for versions 25H2 and 26H2",
+      "uk_focus": false
+    },
+    {
+      "title": "Suspected North Korea-Aligned Group Hides C2 on Solana Blockchain",
+      "link": "https://www.infosecurity-magazine.com/news/overlord-rat-solana-blockchain-c2/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-20T09:00:00Z",
+      "summary": "Cisco Talos tied a RAT that hides C2 on Solana and survives Windows resets to UAT-12643",
+      "uk_focus": false
+    },
     {
       "title": "Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else",
       "link": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193",
       "source": "The Register",
       "published": "2026-11-20T00:57:45Z",
-      "summary": "Critical Virtzilla bugs, plus a strange Digital Ocean reaction to a nested virtualization issue",
+      "summary": "Critical Virtzilla bugs allow authentication bypass, as a nested virtualization issue got Digital Ocean ducking",
       "uk_focus": false
     },
     {
@@ -134,7 +182,7 @@
       "link": "https://www.computerweekly.com/news/366654974/AI-red-team-tool-Artex-likely-behind-cyber-attack-on-EU-body",
       "source": "Computer Weekly",
       "published": "2026-11-19T12:42:00Z",
-      "summary": "The European Union said an attack on its executive body's HR systems was likely orchestrated by Artex, an open-source AI penetration testing framework that has found favour among threat actors.",
+      "summary": "European Union says an attack on its executive body’s HR systems was likely orchestrated by Artex, an open source AI penetration testing framework that has found favour among threat actors",
       "uk_focus": false
     },
     {
@@ -142,7 +190,7 @@
       "link": "https://www.computerweekly.com/news/366654973/Over-250000-Londoners-affected-by-latest-TfL-breach",
       "source": "Computer Weekly",
       "published": "2026-11-19T12:14:00Z",
-      "summary": "Users of TfL Oyster photocards have become embroiled in a data breach after the transport operator's systems were compromised.",
+      "summary": "Users of TfL Oyster photocards have become embroiled in a data breach after the transport operator’s systems were compromised",
       "uk_focus": false
     },
     {
@@ -238,7 +286,7 @@
       "link": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911",
       "source": "The Register",
       "published": "2026-11-18T22:38:12Z",
-      "summary": "At least one dangerous RCE bug gota fix on Thursday",
+      "summary": "At least one dangerous RCE bug got a fix on Thursday",
       "uk_focus": false
     },
     {
@@ -319,110 +367,6 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-18T14:00:00Z",
       "summary": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure",
-      "uk_focus": false
-    },
-    {
-      "title": "Hacks, AI or just overdue updates - why have there been so many outages?",
-      "link": "https://www.bbc.co.uk/news/articles/c6z0kly2lll7o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-18T13:16:53Z",
-      "summary": "There is no evidence these are linked, but the constant series of tech disruptions can be unnerving.",
-      "uk_focus": false
-    },
-    {
-      "title": "Java4Shell Vulnerability Allows Remote Attacks on Major Java Apps",
-      "link": "https://www.infosecurity-magazine.com/news/java4shell-vulnerability-remote/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-18T12:35:00Z",
-      "summary": "A critical OpenJDK vulnerability could expose major Java applications to remote code execution, prompting CISA to urge organizations implement mitigations",
-      "uk_focus": false
-    },
-    {
-      "title": "I am the passenger: In Brussels at Google’s data sovereignty event",
-      "link": "https://www.computerweekly.com/opinion/I-am-the-passenger-In-Brussels-at-Googles-data-sovereignty-event",
-      "source": "Computer Weekly",
-      "published": "2026-11-18T12:02:00Z",
-      "summary": "I look through the window. What do I see? Physical embassies protected from local law, while cloud data stored with US giants remains exposed to foreign warrants",
-      "uk_focus": false
-    },
-    {
-      "title": "Russian Espionage Actor Star Blizzard Focuses on Cloud Identities for Mass Data Theft",
-      "link": "https://www.infosecurity-magazine.com/news/russian-star-blizzard-cloud-data/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-18T11:45:00Z",
-      "summary": "New Google analysis of Star Blizzard, aka Cold Relic, highlighted the group’s growing focus on compromising cloud environments to steal data and facilitate further attacks",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft expands MAI portfolio with seven new models",
-      "link": "https://www.techmonitor.ai/news/microsoft-expands-mai-portfolio-with-seven-new-models",
-      "source": "Tech Monitor",
-      "published": "2026-11-18T10:55:26Z",
-      "summary": "Microsoft launched seven MAI models at Ignite, covering coding, cybersecurity, image editing, transcription, and decision-making tasks.",
-      "uk_focus": false
-    },
-    {
-      "title": "Three AI Models Agree on Just One of 121 Potential Code Flaws",
-      "link": "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-18T10:00:00Z",
-      "summary": "Echo tested Claude Mythos, GPT-5.6 Sol and GLM-5.3 on the same code and found little overlap",
-      "uk_focus": false
-    },
-    {
-      "title": "UK MPs want AI watchdog with power to pull the plug on dangerous models",
-      "link": "https://www.theregister.com/ai-and-ml/2026/11/18/uk-mps-want-ai-watchdog-with-power-to-pull-the-plug-on-dangerous-models/5310567",
-      "source": "The Register",
-      "published": "2026-11-18T09:30:00Z",
-      "summary": "Parliamentary committee says tech giants can't be left to mark their own homework when it comes to AI safety",
-      "uk_focus": true
-    },
-    {
-      "title": "Watchdog Warns UK Government Is Falling Short on Risk Management",
-      "link": "https://www.infosecurity-magazine.com/news/watchdog-government-risk/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-18T09:30:00Z",
-      "summary": "National Audit Office report claims risk management failures are leading to poor government decisions",
-      "uk_focus": true
-    },
-    {
-      "title": "British hacker who stole $11m through text message scheme jailed for six years in US",
-      "link": "https://www.bbc.co.uk/news/articles/cm87987w1qz5o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-18T09:28:35Z",
-      "summary": "Tyler Buchanan, from Dundee, was a member of the notorious Scattered Spider group and began hacking when he was a teenager.",
-      "uk_focus": true
-    },
-    {
-      "title": "Security flaw found in Java, world's third-largest programming language",
-      "link": "https://www.bbc.co.uk/news/articles/cke89jevqm1vo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-18T08:47:06Z",
-      "summary": "The same tech start-up that discovered a PHP flaw used AI to uncover a critical software bug in one of the world's most popular computer language programs.",
-      "uk_focus": false
-    },
-    {
-      "title": "Data security, compliance top expected connectivity challenges in 2027",
-      "link": "https://www.computerweekly.com/news/366654825/Data-security-compliance-top-expected-connectivity-challenges-in-2027",
-      "source": "Computer Weekly",
-      "published": "2026-11-18T05:09:00Z",
-      "summary": "Research finds that despite government warnings, one in three infrastructure decision-makers at large US and UK firms report using public internet for critical workloads",
-      "uk_focus": true
-    },
-    {
-      "title": "Oracle reveals fix-this-ASAP-grade Java4Shell bug that allows attacks on many third-party apps",
-      "link": "https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661",
-      "source": "The Register",
-      "published": "2026-11-18T04:33:05Z",
-      "summary": "Attackers can crash the JVM or achieve unauthenticated RCE",
-      "uk_focus": false
-    },
-    {
-      "title": "The cyber threats to businesses from ‘Grand Theft Auto VI’",
-      "link": "https://www.computerweekly.com/news/366654629/The-cyber-threats-to-businesses-from-Grand-Theft-Auto-VI",
-      "source": "Computer Weekly",
-      "published": "2026-11-18T04:30:00Z",
-      "summary": "‘Grand Theft Auto’ fans waited patiently for over a decade for its next edition, but thanks to their understandable enthusiasm, enterprises are being left open to a range of cyber threats",
       "uk_focus": false
     }
   ]
