@@ -1,6 +1,33 @@
 {
-  "generated_at": "2026-11-20T13:28:53Z",
+  "generated_at": "2026-11-20T21:27:32Z",
   "victims": [
+    {
+      "group": "everstake",
+      "victim": "al*****o.com",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-20T14:50:12.218333+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/YWwqKioqKm8uY29tQGV2ZXJzdGFrZQ=="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Clarkesville Police Department, City of Clarkesville",
+      "country": "GA",
+      "sector": "Government & Defense",
+      "published": "2026-11-20T14:30:00.896327+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2xhcmtlc3ZpbGxlIFBvbGljZSBEZXBhcnRtZW50LCBDaXR5IG9mIENsYXJrZXN2aWxsZUByaHlzaWRh"
+    },
+    {
+      "group": "Barracuda",
+      "victim": "Dallas Theological Seminary",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-11-20T11:51:15.493998+00:00",
+      "domain": "dts.edu",
+      "url": "https://www.ransomware.live/id/RGFsbGFzIFRoZW9sb2dpY2FsIFNlbWluYXJ5QEJhcnJhY3VkYQ=="
+    },
     {
       "group": "blackout",
       "victim": "wakao.co.jp",
@@ -52,7 +79,7 @@
       "country": "US",
       "sector": "Government & Defense",
       "published": "2026-11-20T03:46:28.600219+00:00",
-      "domain": "",
+      "domain": "boeing.com",
       "url": "https://www.ransomware.live/id/Qm9laW5nQGluY3JhbnNvbQ=="
     },
     {
@@ -61,8 +88,26 @@
       "country": "CH",
       "sector": "Other",
       "published": "2026-11-20T01:22:03.955012+00:00",
-      "domain": "",
+      "domain": "fifa.com",
       "url": "https://www.ransomware.live/id/RklGQSAoRsOpZMOpcmF0aW9uIEludGVybmF0aW9uYWxlIGRlIEZvb3RiYWxsIEFzc29jaWF0aW9uKUBIYW5kc29tZSBCb3kgSGFja2luZyBDbHVi"
+    },
+    {
+      "group": "aurora",
+      "victim": "TraWell Co S.p.A. (d/b/a Safe Bag)",
+      "country": "IT",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-20T15:13:48.420033+00:00",
+      "domain": "TraWell Co S.p.A. (d/b/a Safe Bag)",
+      "url": "https://www.ransomware.live/id/VHJhV2VsbCBDbyBTLnAuQS4gKGQvYi9hIFNhZmUgQmFnKUBhdXJvcmE="
+    },
+    {
+      "group": "akira",
+      "victim": "Pecora",
+      "country": "IT",
+      "sector": "Other",
+      "published": "2026-11-20T13:19:58.215739+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UGVjb3JhQGFraXJh"
     },
     {
       "group": "rhysida",
@@ -88,7 +133,7 @@
       "country": "US",
       "sector": "Retail & E-Commerce",
       "published": "2026-11-19T21:52:49.672867+00:00",
-      "domain": "",
+      "domain": "autozoneinc.com",
       "url": "https://www.ransomware.live/id/QXV0b1pvbmUsIEluYy5ASW5jZXB0aW9u"
     },
     {
@@ -461,13 +506,13 @@
       "url": "https://www.ransomware.live/id/YWx1bWlsLmNvbUBrcnliaXQ="
     },
     {
-      "group": "incransom",
-      "victim": "CHAMBOURCY",
-      "country": "FR",
-      "sector": "Government & Defense",
-      "published": "2026-11-19T17:35:54.168563+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q0hBTUJPVVJDWUBpbmNyYW5zb20="
+      "group": "aurora",
+      "victim": "William Cook Holdings Limited",
+      "country": "GB",
+      "sector": "Manufacturing",
+      "published": "2026-11-20T14:17:35.748681+00:00",
+      "domain": "William Cook Holdings Limited",
+      "url": "https://www.ransomware.live/id/V2lsbGlhbSBDb29rIEhvbGRpbmdzIExpbWl0ZWRAYXVyb3Jh"
     },
     {
       "group": "aurora",
@@ -855,51 +900,6 @@
       "published": "2026-11-18T16:50:42.306001+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/ZW8qKipyKioqKioqeS5jb21AQ3VyaW91cyBXb3Jt"
-    },
-    {
-      "group": "lockbit5",
-      "victim": "cih.com.vn",
-      "country": "VN",
-      "sector": "Other",
-      "published": "2026-11-18T16:19:16.431131+00:00",
-      "domain": "cih.com.vn",
-      "url": "https://www.ransomware.live/id/Y2loLmNvbS52bkBsb2NrYml0NQ=="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "laguarda.com.ec",
-      "country": "EC",
-      "sector": "Other",
-      "published": "2026-11-18T16:21:59.673919+00:00",
-      "domain": "laguarda.com.ec",
-      "url": "https://www.ransomware.live/id/bGFndWFyZGEuY29tLmVjQGxvY2tiaXQ1"
-    },
-    {
-      "group": "lockbit5",
-      "victim": "umraocashmere.com",
-      "country": "IN",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-18T16:21:16.680279+00:00",
-      "domain": "umraocashmere.com",
-      "url": "https://www.ransomware.live/id/dW1yYW9jYXNobWVyZS5jb21AbG9ja2JpdDU="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "primecareofmi.com",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-18T16:24:20.858819+00:00",
-      "domain": "primecareofmi.com",
-      "url": "https://www.ransomware.live/id/cHJpbWVjYXJlb2ZtaS5jb21AbG9ja2JpdDU="
-    },
-    {
-      "group": "lockbit5",
-      "victim": "softlinefurniture.com",
-      "country": "US",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-18T16:22:40.935082+00:00",
-      "domain": "softlinefurniture.com",
-      "url": "https://www.ransomware.live/id/c29mdGxpbmVmdXJuaXR1cmUuY29tQGxvY2tiaXQ1"
     }
   ]
 }
