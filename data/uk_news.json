@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T23:27:32Z",
+  "generated_at": "2026-11-20T04:12:43Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Computer Weekly",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Tech Monitor",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else",
+      "link": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193",
+      "source": "The Register",
+      "published": "2026-11-20T00:57:45Z",
+      "summary": "Critical Virtzilla bugs, plus a strange Digital Ocean reaction to a nested virtualization issue",
+      "uk_focus": false
+    },
+    {
+      "title": "Germ Network infects Android, but in a good way",
+      "link": "https://www.theregister.com/security/2026/11/20/germ-network-infects-android-but-in-a-good-way/5311186",
+      "source": "The Register",
+      "published": "2026-11-20T00:06:35Z",
+      "summary": "Bluesky's preferred encrypted messaging app allows multiple identities without tying you to a phone number",
+      "uk_focus": false
+    },
+    {
+      "title": "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
+      "link": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-20T00:02:07Z",
+      "summary": "Supermarkets, warehouses, restaurants and stadiums have been scrambling to make their devices safe.",
+      "uk_focus": true
+    },
     {
       "title": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
       "link": "https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175",
@@ -399,14 +423,6 @@
       "source": "Computer Weekly",
       "published": "2026-11-18T04:30:00Z",
       "summary": "‘Grand Theft Auto’ fans waited patiently for over a decade for its next edition, but thanks to their understandable enthusiasm, enterprises are being left open to a range of cyber threats",
-      "uk_focus": false
-    },
-    {
-      "title": "Daily disruptive outages that ground planes and halt work – welcome to the new normal",
-      "link": "https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634",
-      "source": "The Register",
-      "published": "2026-11-17T23:41:31Z",
-      "summary": "NSA, Apple add to a week of high-profile network outages, largely attributed to 'routine maintenance'",
       "uk_focus": false
     }
   ]
