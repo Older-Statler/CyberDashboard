@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:27:32Z",
+  "generated_at": "2026-11-21T02:43:49Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Computer Weekly",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 3
+      "count": 2
     },
     {
       "name": "BBC News",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "PHP 8.6: Things are gonna get a lot more strict around here",
+      "link": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486",
+      "source": "The Register",
+      "published": "2026-11-20T23:28:47Z",
+      "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
+      "uk_focus": false
+    },
+    {
+      "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478",
+      "source": "The Register",
+      "published": "2026-11-20T21:27:56Z",
+      "summary": "No financial details, but plenty of other clues",
+      "uk_focus": false
+    },
     {
       "title": "Signal slams door on prying AI agents to protect privacy",
       "link": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466",
@@ -335,22 +351,6 @@
       "source": "ITPro",
       "published": "2026-11-19T08:40:00Z",
       "summary": "The findings reveal that 82% of MSPs are selling or piloting Microsoft 365 Copilot despite many customers lacking adequate data protection measures",
-      "uk_focus": false
-    },
-    {
-      "title": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
-      "link": "https://grahamcluley.com/smashing-security-podcast-493/",
-      "source": "Graham Cluley",
-      "published": "2026-11-19T00:14:52Z",
-      "summary": "You join a video call, and your contact and a few colleagues are already there, waiting patiently. But they can't hear you, and a pop-up says you need to install an update to fix your microphone. What could possibly go wrong? Meanwhile, we explain how changing just a handful of…",
-      "uk_focus": false
-    },
-    {
-      "title": "Another critical PHP security release has dropped",
-      "link": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911",
-      "source": "The Register",
-      "published": "2026-11-18T22:38:12Z",
-      "summary": "At least one dangerous RCE bug got a fix on Thursday",
       "uk_focus": false
     }
   ]
