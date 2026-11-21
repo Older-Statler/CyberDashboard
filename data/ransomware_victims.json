@@ -1,6 +1,105 @@
 {
-  "generated_at": "2026-11-21T17:55:54Z",
+  "generated_at": "2026-11-21T22:56:56Z",
   "victims": [
+    {
+      "group": "safepay",
+      "victim": "tiic.com.ph",
+      "country": "PH",
+      "sector": "Other",
+      "published": "2026-11-21T18:34:09.356004+00:00",
+      "domain": "tiic.com.ph",
+      "url": "https://www.ransomware.live/id/dGlpYy5jb20ucGhAc2FmZXBheQ=="
+    },
+    {
+      "group": "safepay",
+      "victim": "threeroyal.com",
+      "country": "TW",
+      "sector": "Other",
+      "published": "2026-11-21T18:32:47.204185+00:00",
+      "domain": "threeroyal.com",
+      "url": "https://www.ransomware.live/id/dGhyZWVyb3lhbC5jb21Ac2FmZXBheQ=="
+    },
+    {
+      "group": "safepay",
+      "victim": "factotal.com",
+      "country": "CL",
+      "sector": "Technology",
+      "published": "2026-11-21T18:31:39.732929+00:00",
+      "domain": "factotal.com",
+      "url": "https://www.ransomware.live/id/ZmFjdG90YWwuY29tQHNhZmVwYXk="
+    },
+    {
+      "group": "safepay",
+      "victim": "offshore-ocs.com",
+      "country": "SG",
+      "sector": "Other",
+      "published": "2026-11-21T18:31:05.559139+00:00",
+      "domain": "offshore-ocs.com",
+      "url": "https://www.ransomware.live/id/b2Zmc2hvcmUtb2NzLmNvbUBzYWZlcGF5"
+    },
+    {
+      "group": "safepay",
+      "victim": "relax.es",
+      "country": "ES",
+      "sector": "Hospitality",
+      "published": "2026-11-21T18:30:30.654565+00:00",
+      "domain": "relax.es",
+      "url": "https://www.ransomware.live/id/cmVsYXguZXNAc2FmZXBheQ=="
+    },
+    {
+      "group": "safepay",
+      "victim": "pacifico.com.ar",
+      "country": "AR",
+      "sector": "Financial Services",
+      "published": "2026-11-21T18:29:55.300437+00:00",
+      "domain": "pacifico.com.ar",
+      "url": "https://www.ransomware.live/id/cGFjaWZpY28uY29tLmFyQHNhZmVwYXk="
+    },
+    {
+      "group": "safepay",
+      "victim": "qrc-solutions.com",
+      "country": "EC",
+      "sector": "Professional Services",
+      "published": "2026-11-21T18:29:19.159876+00:00",
+      "domain": "qrc-solutions.com",
+      "url": "https://www.ransomware.live/id/cXJjLXNvbHV0aW9ucy5jb21Ac2FmZXBheQ=="
+    },
+    {
+      "group": "safepay",
+      "victim": "santak.com.sg",
+      "country": "SG",
+      "sector": "Energy & Utilities",
+      "published": "2026-11-21T18:28:43.660291+00:00",
+      "domain": "santak.com.sg",
+      "url": "https://www.ransomware.live/id/c2FudGFrLmNvbS5zZ0BzYWZlcGF5"
+    },
+    {
+      "group": "safepay",
+      "victim": "themedical.co.il",
+      "country": "IL",
+      "sector": "Healthcare",
+      "published": "2026-11-21T18:28:08.222255+00:00",
+      "domain": "themedical.co.il",
+      "url": "https://www.ransomware.live/id/dGhlbWVkaWNhbC5jby5pbEBzYWZlcGF5"
+    },
+    {
+      "group": "incransom",
+      "victim": "Regions Behavioral Hospital",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-21T17:20:46.157162+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UmVnaW9ucyBCZWhhdmlvcmFsIEhvc3BpdGFsQGluY3JhbnNvbQ=="
+    },
+    {
+      "group": "SoulGroup",
+      "victim": "County government within a U.S. state",
+      "country": "US",
+      "sector": "Government & Defense",
+      "published": "2026-11-21T15:39:24.003787+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q291bnR5IGdvdmVybm1lbnQgd2l0aGluIGEgVS5TLiBzdGF0ZUBTb3VsR3JvdXA="
+    },
     {
       "group": "lockbit5",
       "victim": "genica.com.ve",
@@ -27,6 +126,15 @@
       "published": "2026-11-21T02:51:53.714936+00:00",
       "domain": "lucidmotors.com",
       "url": "https://www.ransomware.live/id/THVjaWQgTW90b3JzQEluY2VwdGlvbg=="
+    },
+    {
+      "group": "osiris",
+      "victim": "Kang Chiao International School (Linkou)",
+      "country": "TW",
+      "sector": "Education",
+      "published": "2026-11-21T17:23:07.745050+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S2FuZyBDaGlhbyBJbnRlcm5hdGlvbmFsIFNjaG9vbCAoTGlua291KUBvc2lyaXM="
     },
     {
       "group": "Eclipse",
@@ -792,114 +900,6 @@
       "published": "2026-11-19T10:35:47.427972+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/VHJ1ZUJsdWVAVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "Gensler",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-19T10:35:10.609226+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/R2Vuc2xlckBWb3J0ZXg="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Buffalo Construction",
-      "country": "",
-      "sector": "Manufacturing",
-      "published": "2026-11-19T10:34:35.171882+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QnVmZmFsbyBDb25zdHJ1Y3Rpb25AVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "Ochsner Health",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-19T10:34:00.152772+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/T2Noc25lciBIZWFsdGhAVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "CDM Smith",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-19T10:33:24.747716+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q0RNIFNtaXRoQFZvcnRleA=="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Kiely Builders",
-      "country": "IE",
-      "sector": "Manufacturing",
-      "published": "2026-11-19T10:32:49.725060+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/S2llbHkgQnVpbGRlcnNAVm9ydGV4"
-    },
-    {
-      "group": "Vortex",
-      "victim": "Bond Building",
-      "country": "",
-      "sector": "Other",
-      "published": "2026-11-19T10:32:14.572206+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Qm9uZCBCdWlsZGluZ0BWb3J0ZXg="
-    },
-    {
-      "group": "Vortex",
-      "victim": "Orlando Health",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-19T10:31:39.329232+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/T3JsYW5kbyBIZWFsdGhAVm9ydGV4"
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Terminais",
-      "country": "MZ",
-      "sector": "Transportation",
-      "published": "2026-11-18T23:01:01.237023+00:00",
-      "domain": "terminais.co.mz",
-      "url": "https://www.ransomware.live/id/VGVybWluYWlzQG1lZHVzYWxvY2tlcg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #241",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:14:17.690089+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjQxQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #240",
-      "country": "PH",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:13:41.148098+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjQwQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #239",
-      "country": "GB",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:13:04.286185+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM5QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #238",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:12:27.968467+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM4QE4wbg=="
     }
   ]
 }

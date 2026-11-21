@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T17:55:55Z",
+  "generated_at": "2026-11-21T22:56:56Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 9
     },
     {
       "name": "Computer Weekly",
@@ -200,22 +200,6 @@
       "published": "2026-11-20T00:02:07Z",
       "summary": "Supermarkets, warehouses, restaurants and stadiums have been scrambling to make their devices safe.",
       "uk_focus": true
-    },
-    {
-      "title": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
-      "link": "https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175",
-      "source": "The Register",
-      "published": "2026-11-19T21:12:33Z",
-      "summary": "First service outages, then data breaches…what's next?!",
-      "uk_focus": false
-    },
-    {
-      "title": "Nvidia adds possible hack to list of very bad things under investigation",
-      "link": "https://www.theregister.com/security/2026/11/19/nvidia-adds-possible-hack-to-list-of-very-bad-things-under-investigation/5311153",
-      "source": "The Register",
-      "published": "2026-11-19T18:52:53Z",
-      "summary": "Ransomware group sets a deadline for the chipmaker to pay up - or see its data leaked",
-      "uk_focus": false
     }
   ]
 }
