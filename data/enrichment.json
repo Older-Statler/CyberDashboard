@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:36:36Z",
+  "generated_at": "2026-11-21T14:46:37Z",
   "lookups": {
     "151.245.230.21": {
       "noise": true,
@@ -1638,6 +1638,48 @@
       "name": "unknown",
       "last_seen": "2026-11-19",
       "checked_at": "2026-11-20T15:36:36Z"
+    },
+    "37.221.79.4": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-21",
+      "checked_at": "2026-11-21T14:46:35Z"
+    },
+    "194.147.58.39": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-21",
+      "checked_at": "2026-11-21T14:46:35Z"
+    },
+    "109.160.32.45": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-21",
+      "checked_at": "2026-11-21T14:46:36Z"
+    },
+    "80.94.92.179": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-21",
+      "checked_at": "2026-11-21T14:46:36Z"
+    },
+    "109.160.32.146": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-21",
+      "checked_at": "2026-11-21T14:46:36Z"
+    },
+    "193.32.162.84": {
+      "noise": true,
+      "classification": "malicious",
+      "name": "unknown",
+      "last_seen": "2026-11-21",
+      "checked_at": "2026-11-21T14:46:37Z"
     }
   },
   "usage": {
@@ -1683,7 +1725,14 @@
       "2026-11-20T15:36:35Z",
       "2026-11-20T15:36:36Z",
       "2026-11-20T15:36:36Z",
-      "2026-11-20T15:36:36Z"
+      "2026-11-20T15:36:36Z",
+      "2026-11-21T14:46:34Z",
+      "2026-11-21T14:46:35Z",
+      "2026-11-21T14:46:35Z",
+      "2026-11-21T14:46:36Z",
+      "2026-11-21T14:46:36Z",
+      "2026-11-21T14:46:36Z",
+      "2026-11-21T14:46:37Z"
     ]
   }
 }

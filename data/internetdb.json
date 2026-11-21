@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:38:54Z",
+  "generated_at": "2026-11-21T14:48:33Z",
   "entries": {
     "111.35.36.48": {
       "ports": [
@@ -147456,7 +147456,7 @@
       "hostnames": [],
       "tags": [],
       "no_data": false,
-      "checked_at": "2026-09-24T11:22:41Z"
+      "checked_at": "2026-11-21T14:47:01Z"
     },
     "45.138.12.41": {
       "ports": [
@@ -431707,6 +431707,7863 @@
       "tags": [],
       "no_data": true,
       "checked_at": "2026-11-20T15:38:54Z"
+    },
+    "37.221.79.4": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:01Z"
+    },
+    "194.147.58.39": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "vmi3710801.contaboserver.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:01Z"
+    },
+    "80.94.92.179": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "scanner"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:02Z"
+    },
+    "23.94.82.9": {
+      "ports": [
+        3389
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "23-94-82-9-host.colocrossing.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:02Z"
+    },
+    "27.79.5.137": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:02Z"
+    },
+    "171.243.149.120": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:02Z"
+    },
+    "171.221.160.227": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:03Z"
+    },
+    "193.90.12.62": {
+      "ports": [
+        22,
+        80,
+        443,
+        1111
+      ],
+      "vulns": [
+        "CVE-2016-8743",
+        "CVE-2010-1623",
+        "CVE-2012-3499",
+        "CVE-2022-31813",
+        "CVE-2011-2688",
+        "CVE-2011-3348",
+        "CVE-2026-24072",
+        "CVE-2011-1176",
+        "CVE-2022-28614",
+        "CVE-2016-4975",
+        "CVE-2013-0942",
+        "CVE-2022-22720",
+        "CVE-2017-9798",
+        "CVE-2026-34032",
+        "CVE-2009-3555",
+        "CVE-2013-6438",
+        "CVE-2007-6750",
+        "CVE-2021-32786",
+        "CVE-2013-2765",
+        "CVE-2012-3526",
+        "CVE-2011-3192",
+        "CVE-2018-1303",
+        "CVE-2017-9788",
+        "CVE-2014-0226",
+        "CVE-2013-1862",
+        "CVE-2009-3560",
+        "CVE-2012-4557",
+        "CVE-2021-34798",
+        "CVE-2012-4558",
+        "CVE-2010-0408",
+        "CVE-2022-28615",
+        "CVE-2021-40438",
+        "CVE-2009-3720",
+        "CVE-2026-42535",
+        "CVE-2022-28330",
+        "CVE-2012-2687",
+        "CVE-2015-3183",
+        "CVE-2018-1301",
+        "CVE-2013-1896",
+        "CVE-2021-39275",
+        "CVE-2013-5704",
+        "CVE-2017-3169",
+        "CVE-2026-33857",
+        "CVE-2026-28780",
+        "CVE-2024-40898",
+        "CVE-2010-1452",
+        "CVE-2026-33006",
+        "CVE-2016-5387",
+        "CVE-2006-20001",
+        "CVE-2023-31122",
+        "CVE-2010-0434",
+        "CVE-2018-1302",
+        "CVE-2022-30556",
+        "CVE-2021-32785",
+        "CVE-2013-4365",
+        "CVE-2022-29404",
+        "CVE-2017-3167",
+        "CVE-2011-3639",
+        "CVE-2009-0796",
+        "CVE-2025-49812",
+        "CVE-2021-44790",
+        "CVE-2022-37436",
+        "CVE-2012-0031",
+        "CVE-2022-22719",
+        "CVE-2014-0118",
+        "CVE-2026-29170",
+        "CVE-2012-4001",
+        "CVE-2012-4360",
+        "CVE-2010-2068",
+        "CVE-2013-0941",
+        "CVE-2021-32791",
+        "CVE-2022-22721",
+        "CVE-2023-38709",
+        "CVE-2008-0455",
+        "CVE-2016-8612",
+        "CVE-2025-58098",
+        "CVE-2017-7679",
+        "CVE-2011-4317",
+        "CVE-2011-0419",
+        "CVE-2014-0231",
+        "CVE-2026-29169",
+        "CVE-2011-3607",
+        "CVE-2009-2299",
+        "CVE-2007-4723",
+        "CVE-2021-32792",
+        "CVE-2026-34059",
+        "CVE-2015-0228",
+        "CVE-2012-0883",
+        "CVE-2012-0053",
+        "CVE-2014-0098",
+        "CVE-2011-4415",
+        "CVE-2026-93546",
+        "CVE-2010-0425",
+        "CVE-2011-3368"
+      ],
+      "cpes": [
+        "cpe:/a:apache:http_server:2.2.14",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:5.3p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "multidesk.multinet.no"
+      ],
+      "tags": [
+        "open-dir",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:03Z"
+    },
+    "172.232.34.164": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:03Z"
+    },
+    "221.15.89.191": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:04Z"
+    },
+    "42.224.97.81": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:04Z"
+    },
+    "45.156.87.227": {
+      "ports": [
+        80,
+        135,
+        5357,
+        5985
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:microsoft:windows",
+        "cpe:/a:microsoft:internet_information_services:10.0"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:04Z"
+    },
+    "134.122.162.103": {
+      "ports": [
+        443
+      ],
+      "vulns": [
+        "CVE-2019-9511",
+        "CVE-2023-44487",
+        "CVE-2019-9513",
+        "CVE-2025-23419",
+        "CVE-2019-9516",
+        "CVE-2019-20372",
+        "CVE-2021-3618",
+        "CVE-2018-16845",
+        "CVE-2018-16844",
+        "CVE-2021-23017",
+        "CVE-2018-16843"
+      ],
+      "cpes": [
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx:1.14.0",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:05Z"
+    },
+    "223.26.63.89": {
+      "ports": [
+        80,
+        443,
+        888,
+        7000
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "admin.coinhako.sbs"
+      ],
+      "tags": [
+        "proxy",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:05Z"
+    },
+    "172.111.139.61": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:05Z"
+    },
+    "46.151.182.67": {
+      "ports": [
+        135,
+        443,
+        445,
+        3389
+      ],
+      "vulns": [
+        "CVE-2020-0796"
+      ],
+      "cpes": [],
+      "hostnames": [
+        "api.purecoder.io",
+        "api2.purecoder.io",
+        "api1.purecoder.io"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:06Z"
+    },
+    "209.99.187.220": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:vercel:next.js",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:facebook:react"
+      ],
+      "hostnames": [
+        "daskannb.app"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:06Z"
+    },
+    "102.220.163.109": {
+      "ports": [
+        135,
+        443,
+        445,
+        3389,
+        5357,
+        5986
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "malware",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:06Z"
+    },
+    "155.103.69.244": {
+      "ports": [
+        3389
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "33549-25544.dchost.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:06Z"
+    },
+    "2.27.160.45": {
+      "ports": [
+        443
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "ddusa.ssapi.cc"
+      ],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:07Z"
+    },
+    "185.177.72.50": {
+      "ports": [
+        22,
+        80,
+        443,
+        8787
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "artex.biggyneverstop.com",
+        "antifox.biggyneverstop.com"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:07Z"
+    },
+    "77.239.124.102": {
+      "ports": [
+        22,
+        5201
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:07Z"
+    },
+    "23.226.70.138": {
+      "ports": [
+        22,
+        53,
+        80,
+        443,
+        5555,
+        9443
+      ],
+      "vulns": [
+        "CVE-2023-44487",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/a:autumn-27:artex:independent-prod23-login-proxy",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:isc:bind:9.20.26"
+      ],
+      "hostnames": [
+        "23-226-70-138.sslip.io",
+        "phoenix.wawanode.com"
+      ],
+      "tags": [
+        "scanner",
+        "ai",
+        "eol-product",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:08Z"
+    },
+    "60.204.241.23": {
+      "ports": [
+        80,
+        3001,
+        3306,
+        8081,
+        8724,
+        33060
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2023-44487",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:oracle:mysql:8.0.43",
+        "cpe:/a:f5:nginx:1.20.1"
+      ],
+      "hostnames": [
+        "ecs-60-204-241-23.compute.hwclouds-dns.com"
+      ],
+      "tags": [
+        "database",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:08Z"
+    },
+    "80.87.206.234": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:08Z"
+    },
+    "36.134.81.249": {
+      "ports": [
+        135,
+        445,
+        5985,
+        8000,
+        8091,
+        8888
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:python:python",
+        "cpe:/a:f5:nginx:1.28.0",
+        "cpe:/a:encode:uvicorn"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-os",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:09Z"
+    },
+    "172.86.85.170": {
+      "ports": [
+        80,
+        3389,
+        5985
+      ],
+      "vulns": [
+        "CVE-2012-3526",
+        "CVE-2025-15467",
+        "CVE-2026-44119",
+        "CVE-2025-14180",
+        "CVE-2023-6237",
+        "CVE-2025-58098",
+        "CVE-2026-7261",
+        "CVE-2024-5585",
+        "CVE-2024-8927",
+        "CVE-2013-2220",
+        "CVE-2013-4365",
+        "CVE-2025-55753",
+        "CVE-2023-6129",
+        "CVE-2026-79768",
+        "CVE-2026-33523",
+        "CVE-2026-28780",
+        "CVE-2009-1390",
+        "CVE-2026-34032",
+        "CVE-2024-38476",
+        "CVE-2026-109619",
+        "CVE-2026-29169",
+        "CVE-2026-33007",
+        "CVE-2011-1176",
+        "CVE-2026-44186",
+        "CVE-2026-24072",
+        "CVE-2007-4723",
+        "CVE-2012-4001",
+        "CVE-2025-1735",
+        "CVE-2024-6119",
+        "CVE-2026-73636",
+        "CVE-2024-4741",
+        "CVE-2025-14179",
+        "CVE-2013-0942",
+        "CVE-2024-11236",
+        "CVE-2025-14178",
+        "CVE-2026-63718",
+        "CVE-2026-14355",
+        "CVE-2026-34356",
+        "CVE-2026-44185",
+        "CVE-2026-29168",
+        "CVE-2026-42535",
+        "CVE-2024-38475",
+        "CVE-2024-0727",
+        "CVE-2026-119618",
+        "CVE-2019-11358",
+        "CVE-2025-59775",
+        "CVE-2024-4577",
+        "CVE-2025-1219",
+        "CVE-2026-7258",
+        "CVE-2026-59685",
+        "CVE-2024-8925",
+        "CVE-2024-1874",
+        "CVE-2026-6735",
+        "CVE-2024-9026",
+        "CVE-2024-2511",
+        "CVE-2025-53020",
+        "CVE-2026-63686",
+        "CVE-2025-66200",
+        "CVE-2024-5535",
+        "CVE-2024-4603",
+        "CVE-2024-13176",
+        "CVE-2026-34059",
+        "CVE-2026-34355",
+        "CVE-2025-49812",
+        "CVE-2024-27316",
+        "CVE-2026-63292",
+        "CVE-2026-7568",
+        "CVE-2026-56153",
+        "CVE-2024-36387",
+        "CVE-2025-1736",
+        "CVE-2026-56154",
+        "CVE-2026-48005",
+        "CVE-2024-11234",
+        "CVE-2026-42356",
+        "CVE-2025-49630",
+        "CVE-2024-2408",
+        "CVE-2026-17543",
+        "CVE-2026-6722",
+        "CVE-2025-1220",
+        "CVE-2024-38474",
+        "CVE-2012-4360",
+        "CVE-2025-6491",
+        "CVE-2020-11022",
+        "CVE-2024-5458",
+        "CVE-2026-29170",
+        "CVE-2026-58415",
+        "CVE-2020-11023",
+        "CVE-2026-44631",
+        "CVE-2024-3566",
+        "CVE-2026-42536",
+        "CVE-2024-42516",
+        "CVE-2013-0941",
+        "CVE-2026-46729",
+        "CVE-2009-3765",
+        "CVE-2009-0796",
+        "CVE-2026-93546",
+        "CVE-2009-3766",
+        "CVE-2024-8932",
+        "CVE-2024-39573",
+        "CVE-2026-43951",
+        "CVE-2026-33006",
+        "CVE-2024-38477",
+        "CVE-2023-5678",
+        "CVE-2026-63045",
+        "CVE-2026-73637",
+        "CVE-2013-2765",
+        "CVE-2024-8926",
+        "CVE-2025-14177",
+        "CVE-2026-29167",
+        "CVE-2015-9251",
+        "CVE-2026-7259",
+        "CVE-2025-23048",
+        "CVE-2026-59797",
+        "CVE-2023-38709",
+        "CVE-2024-38472",
+        "CVE-2009-2299",
+        "CVE-2024-47252",
+        "CVE-2025-1217",
+        "CVE-2026-57941",
+        "CVE-2007-3205",
+        "CVE-2024-9143",
+        "CVE-2026-48913",
+        "CVE-2026-7262",
+        "CVE-2024-3096",
+        "CVE-2024-40898",
+        "CVE-2024-11233",
+        "CVE-2025-65082",
+        "CVE-2019-0190",
+        "CVE-2024-38473",
+        "CVE-2011-2688",
+        "CVE-2026-42528",
+        "CVE-2024-43204",
+        "CVE-2025-1734",
+        "CVE-2026-33857",
+        "CVE-2025-1861",
+        "CVE-2024-24795",
+        "CVE-2026-7260",
+        "CVE-2024-8929",
+        "CVE-2026-56449",
+        "CVE-2024-43394",
+        "CVE-2026-49975",
+        "CVE-2026-109618",
+        "CVE-2009-3767",
+        "CVE-2023-5363"
+      ],
+      "cpes": [
+        "cpe:/a:apache:http_server:2.4.58",
+        "cpe:/a:php:php:8.2.12",
+        "cpe:/a:openssl:openssl:3.1.3",
+        "cpe:/a:jquery:jquery:1.10.2"
+      ],
+      "hostnames": [
+        "170.85.86.172.static.cloudzy.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:09Z"
+    },
+    "124.222.90.40": {
+      "ports": [
+        22,
+        9000
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:7.4rn"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:09Z"
+    },
+    "188.191.96.220": {
+      "ports": [
+        3389,
+        8041
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:10Z"
+    },
+    "79.110.49.63": {
+      "ports": [
+        80,
+        135,
+        445,
+        3389,
+        5357,
+        5985
+      ],
+      "vulns": [
+        "CVE-2020-0796"
+      ],
+      "cpes": [
+        "cpe:/o:microsoft:windows",
+        "cpe:/a:microsoft:internet_information_services:10.0"
+      ],
+      "hostnames": [],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:10Z"
+    },
+    "62.60.239.15": {
+      "ports": [
+        22,
+        80,
+        443,
+        9100,
+        9101
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "ashra.cc"
+      ],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:10Z"
+    },
+    "138.124.52.36": {
+      "ports": [
+        22,
+        80,
+        443,
+        9100
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "ashra.cc"
+      ],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:11Z"
+    },
+    "83.136.208.221": {
+      "ports": [
+        22,
+        443,
+        3389,
+        5985,
+        8080,
+        8443,
+        8444,
+        9998,
+        9999
+      ],
+      "vulns": [
+        "CVE-2025-12781",
+        "CVE-2026-3087",
+        "CVE-2024-9287",
+        "CVE-2025-13837",
+        "CVE-2024-6232",
+        "CVE-2026-3644",
+        "CVE-2026-0864",
+        "CVE-2026-7210",
+        "CVE-2024-7592",
+        "CVE-2023-40217",
+        "CVE-2009-3720",
+        "CVE-2023-36632",
+        "CVE-2023-27043",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2020-29396",
+        "CVE-2026-4519",
+        "CVE-2021-3618",
+        "CVE-2025-13462",
+        "CVE-2009-2940",
+        "CVE-2025-13836",
+        "CVE-2021-32052",
+        "CVE-2026-6019",
+        "CVE-2021-23017",
+        "CVE-2026-15308",
+        "CVE-2025-12084"
+      ],
+      "cpes": [
+        "cpe:/a:openjsf:express",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:nodejs:node.js",
+        "cpe:/a:python:python:3.10.12",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:expressjs:express"
+      ],
+      "hostnames": [
+        "www.petrofant.top",
+        "m.vk.ru",
+        "m.vk.com",
+        "api.r.vk.com",
+        "api.vk.ru",
+        "aakwjd.mom",
+        "vk.design",
+        "petrofant.top",
+        "vk.link",
+        "vk.ru",
+        "vkontakte.com",
+        "stats.vk-portal.net",
+        "vkvideo.ru",
+        "api.r.vk.ru",
+        "vk.me",
+        "vk.cc",
+        "api.vk.com",
+        "vkontakte.ru",
+        "vk.com"
+      ],
+      "tags": [
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:11Z"
+    },
+    "163.5.254.98": {
+      "ports": [
+        22,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "api.r.vk.ru",
+        "vkontakte.ru",
+        "stats.vk-portal.net",
+        "vkvideo.ru",
+        "api.r.vk.com",
+        "api.vk.com",
+        "vk.cc",
+        "m.vk.com",
+        "vk.com",
+        "vk.design",
+        "vk.me",
+        "vkontakte.com",
+        "api.vk.ru",
+        "vk.ru",
+        "vk.link",
+        "m.vk.ru"
+      ],
+      "tags": [
+        "mptcp"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:11Z"
+    },
+    "91.219.227.48": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:11Z"
+    },
+    "146.185.208.145": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:12Z"
+    },
+    "138.249.18.192": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:12Z"
+    },
+    "137.22.150.117": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:12Z"
+    },
+    "64.188.62.110": {
+      "ports": [
+        22,
+        9800
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:python:python:3.14",
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:13Z"
+    },
+    "94.228.167.90": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:13Z"
+    },
+    "38.244.145.24": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:13Z"
+    },
+    "185.165.170.178": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:14Z"
+    },
+    "156.238.235.191": {
+      "ports": [
+        22,
+        7878,
+        8085,
+        8865
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:aipentest:cyberstrikeai:1.7.20",
+        "cpe:/a:marked_project:marked",
+        "cpe:/a:openbsd:openssh:8.9p1"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:14Z"
+    },
+    "43.165.133.76": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.20.1"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:14Z"
+    },
+    "210.16.166.153": {
+      "ports": [
+        3000,
+        3030,
+        3050,
+        3055,
+        3058,
+        3080,
+        3200,
+        8765
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:15Z"
+    },
+    "153.52.255.31": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "up.railway.app",
+        "8nlg0bj8.up.railway.app",
+        "xc8tig5t.up.railway.app"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:15Z"
+    },
+    "45.9.149.124": {
+      "ports": [
+        22,
+        80,
+        443,
+        3000
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:openbsd:openssh:8.9p1"
+      ],
+      "hostnames": [
+        "adobecloudfiles.com",
+        "www.adobecloudfiles.com",
+        "www.abcdcloudefiles.com",
+        "abdcloudefiles.com",
+        "abcdcloudefiles.com",
+        "www.abdcloudefiles.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:15Z"
+    },
+    "45.155.54.26": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:caddyserver:caddy"
+      ],
+      "hostnames": [
+        "hip.fr-1.ibcs"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:16Z"
+    },
+    "45.10.20.53": {
+      "ports": [
+        22,
+        1337,
+        8000
+      ],
+      "vulns": [
+        "CVE-2020-29396",
+        "CVE-2021-32052",
+        "CVE-2025-13837",
+        "CVE-2026-7210",
+        "CVE-2026-0864",
+        "CVE-2025-12084",
+        "CVE-2024-7592",
+        "CVE-2026-6019",
+        "CVE-2026-3087",
+        "CVE-2024-6232",
+        "CVE-2009-3720",
+        "CVE-2025-12781",
+        "CVE-2026-15308",
+        "CVE-2025-13836",
+        "CVE-2025-13462",
+        "CVE-2026-3644",
+        "CVE-2009-2940",
+        "CVE-2026-4519",
+        "CVE-2024-9287",
+        "CVE-2023-27043"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:palletsprojects:flask:3.1.8",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:python:python:3.12.3"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:16Z"
+    },
+    "46.21.83.174": {
+      "ports": [
+        22,
+        2222
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:16Z"
+    },
+    "50.114.102.251": {
+      "ports": [
+        22,
+        80,
+        443,
+        7777
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:8.2p1",
+        "cpe:/a:f5:nginx:1.28.3"
+      ],
+      "hostnames": [
+        "www.delanote.ru",
+        "delanote.ru",
+        "129254.koara.live"
+      ],
+      "tags": [
+        "eol-product",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:16Z"
+    },
+    "185.121.15.175": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:17Z"
+    },
+    "39.107.243.187": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:17Z"
+    },
+    "168.110.13.57": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:vxcontrol:pentagi"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "cloud",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:17Z"
+    },
+    "84.200.87.203": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2021-23017"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [
+        "llm.atomgroup.dev"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:18Z"
+    },
+    "134.175.40.200": {
+      "ports": [
+        7000
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:18Z"
+    },
+    "139.224.211.87": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2025-12781",
+        "CVE-2026-3087",
+        "CVE-2024-9287",
+        "CVE-2025-13837",
+        "CVE-2024-6232",
+        "CVE-2026-3644",
+        "CVE-2026-0864",
+        "CVE-2026-7210",
+        "CVE-2024-7592",
+        "CVE-2023-40217",
+        "CVE-2009-3720",
+        "CVE-2023-36632",
+        "CVE-2023-27043",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2020-29396",
+        "CVE-2026-4519",
+        "CVE-2021-3618",
+        "CVE-2025-13462",
+        "CVE-2009-2940",
+        "CVE-2025-13836",
+        "CVE-2021-32052",
+        "CVE-2026-6019",
+        "CVE-2021-23017",
+        "CVE-2026-15308",
+        "CVE-2025-12084"
+      ],
+      "cpes": [
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:python:python:3.10.12"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:18Z"
+    },
+    "85.120.252.249": {
+      "ports": [
+        21,
+        22,
+        25,
+        80,
+        143,
+        443,
+        465,
+        587,
+        887
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:pureftpd:pure-ftpd",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:postfix:postfix",
+        "cpe:/a:caddyserver:caddy",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "mail1.hesabonay.com",
+        "upvewpti159.com"
+      ],
+      "tags": [
+        "self-signed",
+        "starttls"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:19Z"
+    },
+    "91.92.33.128": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.31.6"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:19Z"
+    },
+    "177.5.75.48": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:19Z"
+    },
+    "72.57.79.238": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:20Z"
+    },
+    "103.151.40.87": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:20Z"
+    },
+    "109.205.182.94": {
+      "ports": [
+        22,
+        80,
+        443,
+        3001,
+        3306,
+        8001,
+        8085,
+        8086,
+        8087,
+        9000,
+        9090,
+        18081
+      ],
+      "vulns": [
+        "CVE-2025-12781",
+        "CVE-2026-15308",
+        "CVE-2024-9287",
+        "CVE-2025-12084",
+        "CVE-2026-3644",
+        "CVE-2026-7210",
+        "CVE-2026-4519",
+        "CVE-2009-3720",
+        "CVE-2026-0864",
+        "CVE-2024-6232",
+        "CVE-2026-6019",
+        "CVE-2023-27043",
+        "CVE-2025-13462",
+        "CVE-2020-29396",
+        "CVE-2024-7592",
+        "CVE-2021-32052",
+        "CVE-2025-13837",
+        "CVE-2009-2940",
+        "CVE-2025-13836"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:oracle:mysql:8.0.46",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/a:angularjs:angular.js",
+        "cpe:/a:portainer:portainer:2.45.2",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:python:python",
+        "cpe:/a:python:python:3.12.3"
+      ],
+      "hostnames": [
+        "vmi3126556.contaboserver.net"
+      ],
+      "tags": [
+        "database",
+        "eol-product",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:20Z"
+    },
+    "72.57.79.237": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:20Z"
+    },
+    "15.235.168.65": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:21Z"
+    },
+    "156.254.7.12": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.26.1",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:nodejs:node.js",
+        "cpe:/a:expressjs:express"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:21Z"
+    },
+    "179.255.156.41": {
+      "ports": [
+        22,
+        503,
+        515,
+        541,
+        602,
+        636,
+        1234,
+        1801,
+        2000,
+        2002,
+        2003,
+        2006,
+        2008,
+        2016,
+        2022,
+        2049,
+        2057,
+        2067,
+        2080,
+        2081,
+        2082,
+        2083,
+        2086,
+        2087,
+        2095,
+        2101,
+        2103,
+        2108,
+        2126,
+        2154,
+        2181,
+        2222,
+        2223,
+        2224,
+        2226,
+        2323,
+        2327,
+        2332,
+        2344,
+        2375,
+        2376,
+        2404,
+        2423,
+        2455,
+        2480,
+        2552,
+        2557,
+        2560,
+        2562,
+        2569,
+        2599,
+        2628,
+        4010,
+        4021,
+        4022,
+        4040,
+        4042,
+        4043,
+        4064,
+        4095,
+        9000,
+        9001,
+        9002,
+        9005,
+        9009,
+        9010,
+        9013,
+        9020,
+        9023,
+        9026,
+        9029,
+        9032,
+        9040,
+        9044,
+        9045,
+        9047,
+        9050,
+        9051,
+        9055,
+        9061,
+        9064,
+        9066,
+        9070,
+        9072,
+        9077,
+        9080,
+        9081,
+        9085,
+        9090,
+        9091,
+        9092,
+        9095,
+        9097,
+        9098,
+        9099,
+        9100,
+        9101,
+        9107,
+        9110,
+        9114,
+        9115,
+        9117,
+        9119,
+        9120,
+        9126,
+        9129,
+        9136,
+        9142,
+        9144,
+        9150,
+        9151,
+        9159,
+        9160,
+        9163,
+        9165,
+        9166,
+        9167,
+        9174,
+        9175,
+        9177,
+        9184,
+        9190,
+        9191,
+        9199,
+        9200,
+        9201,
+        9203,
+        9211,
+        9221,
+        9222,
+        9236,
+        9246,
+        9249
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:10.0p2"
+      ],
+      "hostnames": [
+        "Host-By.DMIT.com"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:21Z"
+    },
+    "38.60.176.100": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:22Z"
+    },
+    "84.200.81.72": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:22Z"
+    },
+    "172.236.229.173": {
+      "ports": [
+        22,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:9.2p1"
+      ],
+      "hostnames": [
+        "n.sni-347-default.ssl.fastly.net",
+        "172-236-229-173.ip.linodeusercontent.com"
+      ],
+      "tags": [
+        "cdn",
+        "cloud",
+        "mptcp",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:22Z"
+    },
+    "82.157.58.172": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:9.2p1"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:23Z"
+    },
+    "192.119.82.212": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:23Z"
+    },
+    "3.230.230.97": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.26.3"
+      ],
+      "hostnames": [
+        "county-hub.net",
+        "ec2-3-230-230-97.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "eol-product",
+        "cloud",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:23Z"
+    },
+    "3.17.10.67": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "ec2-3-17-10-67.us-east-2.compute.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:24Z"
+    },
+    "31.57.38.205": {
+      "ports": [
+        135,
+        3389,
+        5357,
+        47001
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:24Z"
+    },
+    "3.107.96.56": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:24Z"
+    },
+    "216.107.138.81": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:24Z"
+    },
+    "84.200.193.199": {
+      "ports": [
+        135,
+        137,
+        139,
+        445,
+        3389,
+        4433,
+        5357,
+        5985,
+        6666,
+        47001
+      ],
+      "vulns": [
+        "CVE-2024-38472",
+        "CVE-2022-2068",
+        "CVE-2026-9076",
+        "CVE-2026-84782",
+        "CVE-2025-69421",
+        "CVE-2025-53020",
+        "CVE-2021-23841",
+        "CVE-2026-49975",
+        "CVE-2022-31813",
+        "CVE-2007-3205",
+        "CVE-2025-9230",
+        "CVE-2021-33193",
+        "CVE-2011-2688",
+        "CVE-2026-44185",
+        "CVE-2024-47252",
+        "CVE-2026-24072",
+        "CVE-2022-36760",
+        "CVE-2011-1176",
+        "CVE-2022-28614",
+        "CVE-2018-19395",
+        "CVE-2022-31629",
+        "CVE-2026-73636",
+        "CVE-2025-9232",
+        "CVE-2019-17567",
+        "CVE-2026-42528",
+        "CVE-2013-0942",
+        "CVE-2022-22720",
+        "CVE-2020-1934",
+        "CVE-2026-44186",
+        "CVE-2017-7963",
+        "CVE-2024-38473",
+        "CVE-2024-13176",
+        "CVE-2026-59797",
+        "CVE-2026-34032",
+        "CVE-2019-0217",
+        "CVE-2024-38476",
+        "CVE-2021-32786",
+        "CVE-2024-0727",
+        "CVE-2019-1552",
+        "CVE-2025-23048",
+        "CVE-2013-2765",
+        "CVE-2012-3526",
+        "CVE-2019-10092",
+        "CVE-2026-54874",
+        "CVE-2026-79768",
+        "CVE-2026-29167",
+        "CVE-2023-0466",
+        "CVE-2019-9639",
+        "CVE-2020-11984",
+        "CVE-2021-36160",
+        "CVE-2022-31628",
+        "CVE-2020-1927",
+        "CVE-2019-0196",
+        "CVE-2019-9641",
+        "CVE-2019-1563",
+        "CVE-2021-34798",
+        "CVE-2024-25117",
+        "CVE-2023-45802",
+        "CVE-2009-3766",
+        "CVE-2026-56449",
+        "CVE-2026-57941",
+        "CVE-2026-35189",
+        "CVE-2024-3566",
+        "CVE-2026-42766",
+        "CVE-2022-1292",
+        "CVE-2026-42535",
+        "CVE-2021-3712",
+        "CVE-2022-28615",
+        "CVE-2021-40438",
+        "CVE-2024-27316",
+        "CVE-2026-34355",
+        "CVE-2019-10082",
+        "CVE-2022-28330",
+        "CVE-2019-1547",
+        "CVE-2019-9637",
+        "CVE-2026-42356",
+        "CVE-2021-39275",
+        "CVE-2022-0778",
+        "CVE-2025-49630",
+        "CVE-2022-23943",
+        "CVE-2021-44224",
+        "CVE-2026-63292",
+        "CVE-2026-63686",
+        "CVE-2026-46729",
+        "CVE-2025-9231",
+        "CVE-2026-33857",
+        "CVE-2019-0211",
+        "CVE-2026-48005",
+        "CVE-2026-42536",
+        "CVE-2026-28780",
+        "CVE-2026-58415",
+        "CVE-2022-26377",
+        "CVE-2020-35452",
+        "CVE-2024-40898",
+        "CVE-2021-23840",
+        "CVE-2026-34356",
+        "CVE-2026-33006",
+        "CVE-2006-20001",
+        "CVE-2009-3767",
+        "CVE-2024-42516",
+        "CVE-2023-31122",
+        "CVE-2026-22796",
+        "CVE-2021-4160",
+        "CVE-2022-30556",
+        "CVE-2021-32785",
+        "CVE-2024-43204",
+        "CVE-2026-34180",
+        "CVE-2009-1390",
+        "CVE-2026-33523",
+        "CVE-2013-4365",
+        "CVE-2020-13938",
+        "CVE-2022-29404",
+        "CVE-2021-26690",
+        "CVE-2023-0464",
+        "CVE-2026-44631",
+        "CVE-2020-9490",
+        "CVE-2015-9253",
+        "CVE-2026-28389",
+        "CVE-2019-0215",
+        "CVE-2023-3817",
+        "CVE-2019-10081",
+        "CVE-2009-0796",
+        "CVE-2024-38474",
+        "CVE-2026-59685",
+        "CVE-2026-63718",
+        "CVE-2025-66200",
+        "CVE-2025-49812",
+        "CVE-2025-55753",
+        "CVE-2019-0220",
+        "CVE-2020-11993",
+        "CVE-2021-44790",
+        "CVE-2022-37436",
+        "CVE-2019-10098",
+        "CVE-2019-1551",
+        "CVE-2026-73637",
+        "CVE-2023-27522",
+        "CVE-2022-22719",
+        "CVE-2026-63045",
+        "CVE-2026-56153",
+        "CVE-2026-28390",
+        "CVE-2025-68160",
+        "CVE-2026-109619",
+        "CVE-2019-9517",
+        "CVE-2026-33007",
+        "CVE-2026-29170",
+        "CVE-2023-0286",
+        "CVE-2012-4001",
+        "CVE-2023-25690",
+        "CVE-2023-5678",
+        "CVE-2025-59775",
+        "CVE-2013-0941",
+        "CVE-2012-4360",
+        "CVE-2021-32791",
+        "CVE-2017-8923",
+        "CVE-2022-22721",
+        "CVE-2024-43394",
+        "CVE-2024-9143",
+        "CVE-2022-4304",
+        "CVE-2026-44119",
+        "CVE-2018-19396",
+        "CVE-2023-38709",
+        "CVE-2019-0197",
+        "CVE-2026-43951",
+        "CVE-2020-1968",
+        "CVE-2025-58098",
+        "CVE-2026-7383",
+        "CVE-2023-0215",
+        "CVE-2022-4900",
+        "CVE-2026-28388",
+        "CVE-2024-24795",
+        "CVE-2020-0796",
+        "CVE-2024-38475",
+        "CVE-2026-45447",
+        "CVE-2019-9638",
+        "CVE-2017-7272",
+        "CVE-2020-11579",
+        "CVE-2026-29168",
+        "CVE-2026-54872",
+        "CVE-2024-39573",
+        "CVE-2025-65082",
+        "CVE-2020-1971",
+        "CVE-2024-38477",
+        "CVE-2026-29169",
+        "CVE-2019-1559",
+        "CVE-2023-2650",
+        "CVE-2009-2299",
+        "CVE-2023-0465",
+        "CVE-2007-4723",
+        "CVE-2013-2220",
+        "CVE-2021-26691",
+        "CVE-2019-10097",
+        "CVE-2021-32792",
+        "CVE-2026-34059",
+        "CVE-2026-56154",
+        "CVE-2009-3765",
+        "CVE-2026-93546"
+      ],
+      "cpes": [
+        "cpe:/a:openssl:openssl:1.0.2q",
+        "cpe:/a:php:php:5.6.40",
+        "cpe:/a:apache:http_server:2.4.38"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:25Z"
+    },
+    "172.81.100.32": {
+      "ports": [
+        80,
+        443,
+        888
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "yd777.vip"
+      ],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:25Z"
+    },
+    "66.42.37.95": {
+      "ports": [
+        135,
+        500,
+        4500
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:microsoft:windows:server2008r2"
+      ],
+      "hostnames": [
+        "66.42.37.95"
+      ],
+      "tags": [
+        "vpn",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:25Z"
+    },
+    "98.92.202.17": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2010-1899",
+        "CVE-2010-3972",
+        "CVE-2010-2730"
+      ],
+      "cpes": [
+        "cpe:/o:microsoft:windows",
+        "cpe:/a:microsoft:internet_information_services:7.5"
+      ],
+      "hostnames": [
+        "ec2-98-92-202-17.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:26Z"
+    },
+    "46.246.6.7": {
+      "ports": [
+        9091
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:transmissionbt:transmission"
+      ],
+      "hostnames": [
+        "c-46-246-6-7.ip4.frootvpn.com"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:26Z"
+    },
+    "140.143.165.115": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:26Z"
+    },
+    "143.109.37.51": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:autumn-27:artex",
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "143-109-37-51.aceips.com",
+        "235564.xyz"
+      ],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:27Z"
+    },
+    "185.173.145.124": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:27Z"
+    },
+    "45.84.222.9": {
+      "ports": [
+        22,
+        80
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:27Z"
+    },
+    "89.245.244.138": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:28Z"
+    },
+    "64.118.128.131": {
+      "ports": [
+        22,
+        80,
+        8082,
+        8083,
+        8787,
+        9000
+      ],
+      "vulns": [
+        "CVE-2026-123158",
+        "CVE-2026-106553",
+        "CVE-2026-73283",
+        "CVE-2026-60000",
+        "CVE-2026-59996",
+        "CVE-2026-106584",
+        "CVE-2026-60002",
+        "CVE-2025-32728",
+        "CVE-2026-106587",
+        "CVE-2026-73282",
+        "CVE-2019-6110",
+        "CVE-2026-106585",
+        "CVE-2020-15778",
+        "CVE-2026-35414",
+        "CVE-2025-23419",
+        "CVE-2026-35388",
+        "CVE-2026-73281",
+        "CVE-2021-36368",
+        "CVE-2018-15919",
+        "CVE-2008-3844",
+        "CVE-2018-20685",
+        "CVE-2021-41617",
+        "CVE-2026-106582",
+        "CVE-2026-59995",
+        "CVE-2017-15906",
+        "CVE-2023-51767",
+        "CVE-2026-60001",
+        "CVE-2019-6109",
+        "CVE-2026-59999",
+        "CVE-2026-59997",
+        "CVE-2026-35387",
+        "CVE-2026-106583",
+        "CVE-2025-26465",
+        "CVE-2007-2768",
+        "CVE-2026-35385",
+        "CVE-2023-38408",
+        "CVE-2026-106586",
+        "CVE-2023-51385",
+        "CVE-2020-14145",
+        "CVE-2018-15473",
+        "CVE-2016-20012",
+        "CVE-2023-44487",
+        "CVE-2026-106555",
+        "CVE-2026-59998",
+        "CVE-2026-106552",
+        "CVE-2023-48795",
+        "CVE-2019-6111"
+      ],
+      "cpes": [
+        "cpe:/a:autumn-27:artex:0.3.15",
+        "cpe:/a:openbsd:openssh:7.4",
+        "cpe:/a:f5:nginx:1.24.0"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:28Z"
+    },
+    "3.231.107.43": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.30.6"
+      ],
+      "hostnames": [
+        "ec2-3-231-107-43.compute-1.amazonaws.com",
+        "up.wuganceshi.eu.cc",
+        "c2api.wuganceshi.eu.cc",
+        "newpanel.wuganceshi.eu.cc",
+        "wuganceshi.eu.cc",
+        "c2.wuganceshi.eu.cc"
+      ],
+      "tags": [
+        "cloud",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:28Z"
+    },
+    "34.156.143.171": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:28Z"
+    },
+    "120.79.64.164": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2024-38472",
+        "CVE-2025-53020",
+        "CVE-2026-49975",
+        "CVE-2022-31813",
+        "CVE-2021-33193",
+        "CVE-2011-2688",
+        "CVE-2026-44185",
+        "CVE-2024-47252",
+        "CVE-2026-24072",
+        "CVE-2022-36760",
+        "CVE-2011-1176",
+        "CVE-2022-28614",
+        "CVE-2026-73636",
+        "CVE-2019-17567",
+        "CVE-2026-42528",
+        "CVE-2013-0942",
+        "CVE-2022-22720",
+        "CVE-2020-1934",
+        "CVE-2026-44186",
+        "CVE-2018-17189",
+        "CVE-2024-38473",
+        "CVE-2026-59797",
+        "CVE-2026-34032",
+        "CVE-2019-0217",
+        "CVE-2024-38476",
+        "CVE-2021-32786",
+        "CVE-2013-2765",
+        "CVE-2012-3526",
+        "CVE-2019-10092",
+        "CVE-2026-79768",
+        "CVE-2026-29167",
+        "CVE-2018-11763",
+        "CVE-2020-1927",
+        "CVE-2019-0196",
+        "CVE-2021-34798",
+        "CVE-2023-45802",
+        "CVE-2026-56449",
+        "CVE-2026-57941",
+        "CVE-2022-28615",
+        "CVE-2021-40438",
+        "CVE-2026-42535",
+        "CVE-2024-27316",
+        "CVE-2026-34355",
+        "CVE-2019-10082",
+        "CVE-2022-28330",
+        "CVE-2018-1301",
+        "CVE-2026-42356",
+        "CVE-2021-39275",
+        "CVE-2021-44224",
+        "CVE-2025-49630",
+        "CVE-2022-23943",
+        "CVE-2026-63292",
+        "CVE-2026-63686",
+        "CVE-2026-46729",
+        "CVE-2026-33857",
+        "CVE-2019-0211",
+        "CVE-2026-48005",
+        "CVE-2026-42536",
+        "CVE-2026-28780",
+        "CVE-2026-58415",
+        "CVE-2022-26377",
+        "CVE-2020-35452",
+        "CVE-2024-40898",
+        "CVE-2026-34356",
+        "CVE-2026-33006",
+        "CVE-2006-20001",
+        "CVE-2024-42516",
+        "CVE-2023-31122",
+        "CVE-2018-1302",
+        "CVE-2022-30556",
+        "CVE-2021-32785",
+        "CVE-2024-43204",
+        "CVE-2018-1283",
+        "CVE-2026-33523",
+        "CVE-2017-15710",
+        "CVE-2020-13938",
+        "CVE-2022-29404",
+        "CVE-2013-4365",
+        "CVE-2021-26690",
+        "CVE-2026-44631",
+        "CVE-2018-17199",
+        "CVE-2020-9490",
+        "CVE-2019-10081",
+        "CVE-2009-0796",
+        "CVE-2024-38474",
+        "CVE-2026-59685",
+        "CVE-2025-66200",
+        "CVE-2025-49812",
+        "CVE-2019-0220",
+        "CVE-2020-11993",
+        "CVE-2021-44790",
+        "CVE-2022-37436",
+        "CVE-2019-10098",
+        "CVE-2026-73637",
+        "CVE-2022-22719",
+        "CVE-2026-63045",
+        "CVE-2026-56153",
+        "CVE-2019-9517",
+        "CVE-2026-33007",
+        "CVE-2026-29170",
+        "CVE-2012-4001",
+        "CVE-2023-25690",
+        "CVE-2025-59775",
+        "CVE-2012-4360",
+        "CVE-2013-0941",
+        "CVE-2021-32791",
+        "CVE-2017-15715",
+        "CVE-2022-22721",
+        "CVE-2024-43394",
+        "CVE-2026-44119",
+        "CVE-2023-38709",
+        "CVE-2026-43951",
+        "CVE-2025-58098",
+        "CVE-2024-24795",
+        "CVE-2024-38475",
+        "CVE-2018-1333",
+        "CVE-2024-39573",
+        "CVE-2025-65082",
+        "CVE-2024-38477",
+        "CVE-2026-29169",
+        "CVE-2009-2299",
+        "CVE-2007-4723",
+        "CVE-2021-26691",
+        "CVE-2021-32792",
+        "CVE-2026-34059",
+        "CVE-2026-56154",
+        "CVE-2026-93546",
+        "CVE-2018-1303",
+        "CVE-2018-1312"
+      ],
+      "cpes": [
+        "cpe:/a:apache:http_server:2.4.29",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:29Z"
+    },
+    "120.26.48.207": {
+      "ports": [
+        21116
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:rustdesk:rustdesk"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:29Z"
+    },
+    "120.27.30.140": {
+      "ports": [
+        500,
+        1701,
+        4500
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "vpn"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:29Z"
+    },
+    "192.229.92.77": {
+      "ports": [
+        443,
+        7000,
+        7001
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/a:python:python",
+        "cpe:/a:nodejs:node.js",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:expressjs:express",
+        "cpe:/a:encode:uvicorn"
+      ],
+      "hostnames": [],
+      "tags": [
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:30Z"
+    },
+    "157.119.103.175": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:9.2p1",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "s66132.vps.hosting",
+        "s63641.vps.hosting",
+        "www.trxonpay.top"
+      ],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:30Z"
+    },
+    "120.79.166.228": {
+      "ports": [
+        7999
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:30Z"
+    },
+    "192.229.92.79": {
+      "ports": [
+        80,
+        443,
+        3001,
+        7000
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openjsf:express",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/a:nodejs:node.js",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [
+        "vip.fiv888.top"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:31Z"
+    },
+    "194.37.97.175": {
+      "ports": [
+        53,
+        2000
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:31Z"
+    },
+    "118.178.130.34": {
+      "ports": [
+        443
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:31Z"
+    },
+    "162.14.74.12": {
+      "ports": [
+        1050,
+        5000,
+        6080
+      ],
+      "vulns": [
+        "CVE-2025-12781",
+        "CVE-2026-15308",
+        "CVE-2024-9287",
+        "CVE-2025-12084",
+        "CVE-2026-3644",
+        "CVE-2026-7210",
+        "CVE-2026-4519",
+        "CVE-2009-3720",
+        "CVE-2026-0864",
+        "CVE-2024-6232",
+        "CVE-2026-6019",
+        "CVE-2023-27043",
+        "CVE-2025-13462",
+        "CVE-2026-3087",
+        "CVE-2020-29396",
+        "CVE-2024-7592",
+        "CVE-2021-32052",
+        "CVE-2025-13837",
+        "CVE-2009-2940",
+        "CVE-2025-13836"
+      ],
+      "cpes": [
+        "cpe:/a:palletsprojects:flask:3.1.7",
+        "cpe:/a:python:python:3.12.3"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:32Z"
+    },
+    "77.191.22.125": {
+      "ports": [
+        8089
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "dynamic-077-191-022-125.77.191.pool.telefonica.de"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:32Z"
+    },
+    "189.24.65.20": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "iosad.zyqm.xyz"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:32Z"
+    },
+    "13.196.197.23": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:32Z"
+    },
+    "158.220.72.95": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:33Z"
+    },
+    "179.148.229.142": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:33Z"
+    },
+    "44.216.38.82": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:amazon:elastic_load_balancing"
+      ],
+      "hostnames": [
+        "ec2-44-216-38-82.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:33Z"
+    },
+    "100.57.190.181": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:gunicorn:gunicorn",
+        "cpe:/a:python:python"
+      ],
+      "hostnames": [
+        "ec2-100-57-190-181.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:34Z"
+    },
+    "43.167.222.169": {
+      "ports": [
+        22,
+        60010
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:openbsd:openssh:8.4p1",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:34Z"
+    },
+    "200.28.196.107": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:34Z"
+    },
+    "36.226.53.89": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:35Z"
+    },
+    "159.112.41.171": {
+      "ports": [
+        22,
+        80,
+        443,
+        500,
+        4500,
+        32400
+      ],
+      "vulns": [
+        "CVE-2026-96656",
+        "CVE-2026-96655",
+        "CVE-2026-96651",
+        "CVE-2020-5742",
+        "CVE-2026-96652",
+        "CVE-2026-96654"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:openresty:openresty",
+        "cpe:/a:f5:nginx",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:getbootstrap:bootstrap:3.4.1",
+        "cpe:/a:plex:media_server:1.43.0.10492"
+      ],
+      "hostnames": [
+        "h159-112-41-171.ashwwi.broadband.dynamic.tds.net"
+      ],
+      "tags": [
+        "vpn"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:35Z"
+    },
+    "47.84.236.121": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:35Z"
+    },
+    "160.250.180.204": {
+      "ports": [
+        135,
+        3389,
+        5985
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "static.eztech.vn"
+      ],
+      "tags": [
+        "self-signed",
+        "eol-os"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:36Z"
+    },
+    "169.58.41.197": {
+      "ports": [
+        22,
+        80
+      ],
+      "vulns": [
+        "CVE-2024-38472",
+        "CVE-2025-53020",
+        "CVE-2026-49975",
+        "CVE-2022-31813",
+        "CVE-2011-2688",
+        "CVE-2026-44185",
+        "CVE-2024-47252",
+        "CVE-2022-36760",
+        "CVE-2011-1176",
+        "CVE-2022-28614",
+        "CVE-2026-73636",
+        "CVE-2026-42528",
+        "CVE-2013-0942",
+        "CVE-2022-22720",
+        "CVE-2026-44186",
+        "CVE-2024-38473",
+        "CVE-2026-59797",
+        "CVE-2024-38476",
+        "CVE-2025-23048",
+        "CVE-2013-2765",
+        "CVE-2012-3526",
+        "CVE-2026-79768",
+        "CVE-2026-29167",
+        "CVE-2023-45802",
+        "CVE-2026-56449",
+        "CVE-2026-57941",
+        "CVE-2022-28615",
+        "CVE-2026-42535",
+        "CVE-2024-27316",
+        "CVE-2026-34355",
+        "CVE-2022-28330",
+        "CVE-2026-42356",
+        "CVE-2022-23943",
+        "CVE-2025-49630",
+        "CVE-2026-63292",
+        "CVE-2026-63686",
+        "CVE-2026-46729",
+        "CVE-2026-48005",
+        "CVE-2026-42536",
+        "CVE-2026-28780",
+        "CVE-2026-58415",
+        "CVE-2022-26377",
+        "CVE-2024-40898",
+        "CVE-2026-34356",
+        "CVE-2006-20001",
+        "CVE-2024-42516",
+        "CVE-2023-31122",
+        "CVE-2022-30556",
+        "CVE-2024-43204",
+        "CVE-2013-4365",
+        "CVE-2022-29404",
+        "CVE-2026-44631",
+        "CVE-2009-0796",
+        "CVE-2024-38474",
+        "CVE-2026-59685",
+        "CVE-2026-63718",
+        "CVE-2025-66200",
+        "CVE-2025-49812",
+        "CVE-2025-55753",
+        "CVE-2022-37436",
+        "CVE-2026-73637",
+        "CVE-2023-27522",
+        "CVE-2022-22719",
+        "CVE-2026-63045",
+        "CVE-2026-56153",
+        "CVE-2026-29170",
+        "CVE-2012-4001",
+        "CVE-2023-25690",
+        "CVE-2025-59775",
+        "CVE-2012-4360",
+        "CVE-2013-0941",
+        "CVE-2022-22721",
+        "CVE-2024-43394",
+        "CVE-2026-44119",
+        "CVE-2023-38709",
+        "CVE-2026-43951",
+        "CVE-2025-58098",
+        "CVE-2024-24795",
+        "CVE-2024-38475",
+        "CVE-2026-29168",
+        "CVE-2024-39573",
+        "CVE-2025-65082",
+        "CVE-2024-38477",
+        "CVE-2026-29169",
+        "CVE-2009-2299",
+        "CVE-2007-4723",
+        "CVE-2026-56154",
+        "CVE-2026-93546"
+      ],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:apache:http_server:2.4.52"
+      ],
+      "hostnames": [
+        "confirme07.laneopem.com"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:36Z"
+    },
+    "45.204.71.227": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:36Z"
+    },
+    "103.72.56.236": {
+      "ports": [
+        22,
+        80,
+        443,
+        47001
+      ],
+      "vulns": [
+        "CVE-2026-59797",
+        "CVE-2026-63718",
+        "CVE-2026-73636",
+        "CVE-2026-56449",
+        "CVE-2026-79768",
+        "CVE-2026-42528",
+        "CVE-2011-1176",
+        "CVE-2026-59685",
+        "CVE-2013-0941",
+        "CVE-2012-3526",
+        "CVE-2026-44185",
+        "CVE-2026-46729",
+        "CVE-2026-42536",
+        "CVE-2012-4360",
+        "CVE-2009-0796",
+        "CVE-2026-63045",
+        "CVE-2026-63292",
+        "CVE-2013-4365",
+        "CVE-2026-29170",
+        "CVE-2013-2765",
+        "CVE-2026-43951",
+        "CVE-2026-44186",
+        "CVE-2013-0942",
+        "CVE-2026-34355",
+        "CVE-2026-48005",
+        "CVE-2009-2299",
+        "CVE-2026-57941",
+        "CVE-2011-2688",
+        "CVE-2012-4001",
+        "CVE-2026-73637",
+        "CVE-2026-34356",
+        "CVE-2026-47360",
+        "CVE-2026-44631",
+        "CVE-2026-63686",
+        "CVE-2026-56153",
+        "CVE-2026-58415",
+        "CVE-2026-44119",
+        "CVE-2007-4723",
+        "CVE-2026-93546",
+        "CVE-2026-49975",
+        "CVE-2026-56154",
+        "CVE-2026-42535",
+        "CVE-2026-48913",
+        "CVE-2026-29167",
+        "CVE-2026-42356"
+      ],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:apache:http_server:2.4.67",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:8.4p1"
+      ],
+      "hostnames": [],
+      "tags": [
+        "open-dir",
+        "self-signed",
+        "scanner"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:36Z"
+    },
+    "152.234.244.64": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.26.3"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:37Z"
+    },
+    "103.149.93.32": {
+      "ports": [
+        22,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:37Z"
+    },
+    "38.60.233.218": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:37Z"
+    },
+    "95.111.216.169": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:38Z"
+    },
+    "213.163.195.94": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:38Z"
+    },
+    "45.204.71.253": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:38Z"
+    },
+    "96.62.224.138": {
+      "ports": [
+        80,
+        443,
+        1337,
+        9600
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:39Z"
+    },
+    "13.233.232.1": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:39Z"
+    },
+    "64.90.6.106": {
+      "ports": [
+        80,
+        443,
+        3000,
+        8080
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2021-23017"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "tzyyuykgs.org"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:39Z"
+    },
+    "110.40.147.249": {
+      "ports": [
+        80,
+        3333,
+        7777,
+        22222
+      ],
+      "vulns": [
+        "CVE-2023-38408",
+        "CVE-2026-59995",
+        "CVE-2026-106583",
+        "CVE-2026-60000",
+        "CVE-2026-106582",
+        "CVE-2025-26465",
+        "CVE-2026-106555",
+        "CVE-2026-60002",
+        "CVE-2026-106585",
+        "CVE-2008-3844",
+        "CVE-2021-23017",
+        "CVE-2024-6387",
+        "CVE-2026-73283",
+        "CVE-2026-73282",
+        "CVE-2023-51384",
+        "CVE-2026-106586",
+        "CVE-2026-73281",
+        "CVE-2023-51385",
+        "CVE-2026-106552",
+        "CVE-2026-35388",
+        "CVE-2023-44487",
+        "CVE-2025-32728",
+        "CVE-2026-59997",
+        "CVE-2026-59996",
+        "CVE-2026-35414",
+        "CVE-2007-2768",
+        "CVE-2026-35385",
+        "CVE-2026-106584",
+        "CVE-2023-51767",
+        "CVE-2026-106553",
+        "CVE-2026-123158",
+        "CVE-2023-48795",
+        "CVE-2026-35387",
+        "CVE-2026-59999",
+        "CVE-2026-60001",
+        "CVE-2025-23419",
+        "CVE-2026-106587",
+        "CVE-2021-3618",
+        "CVE-2026-59998"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.3",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:40Z"
+    },
+    "162.14.82.54": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:40Z"
+    },
+    "43.154.75.234": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:40Z"
+    },
+    "43.110.24.53": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2023-44487",
+        "CVE-2021-23017",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.2p1",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "www.allcdd.name"
+      ],
+      "tags": [
+        "eol-product",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:41Z"
+    },
+    "192.229.87.192": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2023-44487",
+        "CVE-2021-23017",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "8.7kmkm.lat"
+      ],
+      "tags": [
+        "eol-product",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:41Z"
+    },
+    "192.229.111.9": {
+      "ports": [
+        80,
+        7000
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "damage.heroeslot.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:41Z"
+    },
+    "191.124.248.56": {
+      "ports": [
+        80,
+        443,
+        2181,
+        9092
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [
+        "self-signed",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:41Z"
+    },
+    "172.252.224.32": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2021-23017"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [
+        "www.ppdsg.cc",
+        "ppdsg.cc"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:42Z"
+    },
+    "130.94.59.214": {
+      "ports": [
+        22,
+        80,
+        443,
+        7001
+      ],
+      "vulns": [
+        "CVE-2023-38408",
+        "CVE-2026-59995",
+        "CVE-2026-106583",
+        "CVE-2026-60000",
+        "CVE-2026-106582",
+        "CVE-2025-26465",
+        "CVE-2026-106555",
+        "CVE-2020-15778",
+        "CVE-2026-60002",
+        "CVE-2026-106585",
+        "CVE-2008-3844",
+        "CVE-2026-73283",
+        "CVE-2026-73282",
+        "CVE-2026-106586",
+        "CVE-2026-73281",
+        "CVE-2023-51385",
+        "CVE-2026-106552",
+        "CVE-2019-6111",
+        "CVE-2026-35388",
+        "CVE-2025-32728",
+        "CVE-2020-14145",
+        "CVE-2026-59997",
+        "CVE-2026-59996",
+        "CVE-2026-35414",
+        "CVE-2018-20685",
+        "CVE-2018-15919",
+        "CVE-2007-2768",
+        "CVE-2019-6109",
+        "CVE-2026-35385",
+        "CVE-2021-36368",
+        "CVE-2026-106584",
+        "CVE-2016-20012",
+        "CVE-2021-41617",
+        "CVE-2023-51767",
+        "CVE-2026-106553",
+        "CVE-2026-123158",
+        "CVE-2023-48795",
+        "CVE-2026-35387",
+        "CVE-2019-6110",
+        "CVE-2026-59999",
+        "CVE-2026-60001",
+        "CVE-2026-106587",
+        "CVE-2026-59998",
+        "CVE-2017-15906",
+        "CVE-2018-15473"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:7.4",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "yuank.ugwdhavs.club"
+      ],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:42Z"
+    },
+    "18.188.57.201": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:42Z"
+    },
+    "192.3.31.148": {
+      "ports": [
+        22,
+        8443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:openbsd:openssh:10.0p2"
+      ],
+      "hostnames": [
+        "192-3-31-148-host.colocrossing.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:43Z"
+    },
+    "8.156.77.10": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:43Z"
+    },
+    "8.218.216.243": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:43Z"
+    },
+    "70.36.123.14": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:44Z"
+    },
+    "3.218.23.251": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:44Z"
+    },
+    "212.43.147.214": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:44Z"
+    },
+    "209.74.71.244": {
+      "ports": [
+        53
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "enchanting-subgroup.rdns.hosting.spaceship.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:45Z"
+    },
+    "2.88.149.151": {
+      "ports": [
+        7547
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:45Z"
+    },
+    "124.221.182.39": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:golang:go",
+        "cpe:/a:caddyserver:caddy"
+      ],
+      "hostnames": [],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:45Z"
+    },
+    "100.23.130.184": {
+      "ports": [
+        443
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "ec2-100-23-130-184.us-west-2.compute.amazonaws.com"
+      ],
+      "tags": [
+        "cloud",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:45Z"
+    },
+    "162.35.36.118": {
+      "ports": [
+        22,
+        80
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "vps3778212.trouble-free.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:46Z"
+    },
+    "47.112.215.157": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:46Z"
+    },
+    "186.240.199.69": {
+      "ports": [
+        80,
+        8080,
+        8443,
+        8787,
+        8789,
+        9000,
+        9443
+      ],
+      "vulns": [
+        "CVE-2025-12781",
+        "CVE-2026-3087",
+        "CVE-2024-9287",
+        "CVE-2025-13837",
+        "CVE-2024-6232",
+        "CVE-2026-3644",
+        "CVE-2026-7210",
+        "CVE-2026-0864",
+        "CVE-2024-7592",
+        "CVE-2023-40217",
+        "CVE-2009-3720",
+        "CVE-2023-36632",
+        "CVE-2023-27043",
+        "CVE-2020-29396",
+        "CVE-2026-4519",
+        "CVE-2025-13462",
+        "CVE-2009-2940",
+        "CVE-2025-13836",
+        "CVE-2021-32052",
+        "CVE-2026-6019",
+        "CVE-2026-15308",
+        "CVE-2025-12084"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:python:python:3.10.12"
+      ],
+      "hostnames": [],
+      "tags": [
+        "open-dir"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:46Z"
+    },
+    "101.32.75.122": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:47Z"
+    },
+    "13.143.243.147": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:47Z"
+    },
+    "45.61.137.152": {
+      "ports": [
+        22,
+        80
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2021-23017"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:47Z"
+    },
+    "95.179.213.237": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:48Z"
+    },
+    "136.244.98.190": {
+      "ports": [
+        443
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "yandex.ru",
+        "136.244.98.190.vultrusercontent.com"
+      ],
+      "tags": [
+        "mptcp",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:48Z"
+    },
+    "136.244.109.247": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:caddyserver:caddy"
+      ],
+      "hostnames": [
+        "136.244.109.247.vultrusercontent.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:48Z"
+    },
+    "146.190.228.75": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:49Z"
+    },
+    "38.146.27.97": {
+      "ports": [
+        8000
+      ],
+      "vulns": [
+        "CVE-2026-3644",
+        "CVE-2009-2940",
+        "CVE-2025-12781",
+        "CVE-2026-7210",
+        "CVE-2026-0864",
+        "CVE-2026-3087",
+        "CVE-2025-13836",
+        "CVE-2021-32052",
+        "CVE-2025-6075",
+        "CVE-2026-6019",
+        "CVE-2026-4224",
+        "CVE-2026-4519",
+        "CVE-2020-29396",
+        "CVE-2009-3720",
+        "CVE-2026-15308",
+        "CVE-2025-12084",
+        "CVE-2025-13837",
+        "CVE-2025-13462"
+      ],
+      "cpes": [
+        "cpe:/a:python:python:3.13.5"
+      ],
+      "hostnames": [],
+      "tags": [
+        "open-dir"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:49Z"
+    },
+    "186.240.199.73": {
+      "ports": [
+        6379,
+        8001,
+        8787,
+        8789,
+        27017
+      ],
+      "vulns": [
+        "CVE-2026-82074",
+        "CVE-2026-9750",
+        "CVE-2026-1849",
+        "CVE-2026-82054",
+        "CVE-2026-82064",
+        "CVE-2026-35189",
+        "CVE-2019-0190",
+        "CVE-2026-1848",
+        "CVE-2026-34180",
+        "CVE-2026-82063",
+        "CVE-2025-23419",
+        "CVE-2024-0727",
+        "CVE-2026-82053",
+        "CVE-2022-2097",
+        "CVE-2026-18708",
+        "CVE-2026-9746",
+        "CVE-2026-18694",
+        "CVE-2026-18699",
+        "CVE-2026-18698",
+        "CVE-2026-63074",
+        "CVE-2026-13062",
+        "CVE-2026-63076",
+        "CVE-2026-18711",
+        "CVE-2026-18702",
+        "CVE-2026-45445",
+        "CVE-2026-25609",
+        "CVE-2026-6914",
+        "CVE-2026-82068",
+        "CVE-2009-3766",
+        "CVE-2026-22795",
+        "CVE-2026-13066",
+        "CVE-2026-18712",
+        "CVE-2023-44487",
+        "CVE-2026-75806",
+        "CVE-2026-28388",
+        "CVE-2022-3602",
+        "CVE-2026-42767",
+        "CVE-2026-28387",
+        "CVE-2023-5678",
+        "CVE-2026-18705",
+        "CVE-2026-18695",
+        "CVE-2023-0465",
+        "CVE-2026-13065",
+        "CVE-2026-9752",
+        "CVE-2025-69419",
+        "CVE-2023-0466",
+        "CVE-2026-13072",
+        "CVE-2026-42770",
+        "CVE-2023-2650",
+        "CVE-2026-4148",
+        "CVE-2026-82067",
+        "CVE-2023-1255",
+        "CVE-2026-9749",
+        "CVE-2023-0286",
+        "CVE-2026-18690",
+        "CVE-2023-2975",
+        "CVE-2022-4203",
+        "CVE-2026-18701",
+        "CVE-2026-18691",
+        "CVE-2026-11933",
+        "CVE-2009-1390",
+        "CVE-2026-8199",
+        "CVE-2009-3767",
+        "CVE-2022-3996",
+        "CVE-2026-9076",
+        "CVE-2026-34182",
+        "CVE-2026-13068",
+        "CVE-2026-9737",
+        "CVE-2023-5363",
+        "CVE-2026-31789",
+        "CVE-2026-8843",
+        "CVE-2021-3618",
+        "CVE-2026-82059",
+        "CVE-2026-82052",
+        "CVE-2026-54872",
+        "CVE-2026-13074",
+        "CVE-2026-84782",
+        "CVE-2026-13069",
+        "CVE-2026-82065",
+        "CVE-2024-6119",
+        "CVE-2026-54874",
+        "CVE-2026-13071",
+        "CVE-2021-23017",
+        "CVE-2022-2068",
+        "CVE-2026-18693",
+        "CVE-2025-68160",
+        "CVE-2026-8201",
+        "CVE-2026-4147",
+        "CVE-2026-75803",
+        "CVE-2023-0217",
+        "CVE-2026-13061",
+        "CVE-2023-6129",
+        "CVE-2026-18709",
+        "CVE-2023-0216",
+        "CVE-2026-42766",
+        "CVE-2022-3786",
+        "CVE-2026-25613",
+        "CVE-2026-1847",
+        "CVE-2026-13059",
+        "CVE-2026-9747",
+        "CVE-2026-22796",
+        "CVE-2026-13060",
+        "CVE-2026-6915",
+        "CVE-2026-45447",
+        "CVE-2026-9753",
+        "CVE-2026-82070",
+        "CVE-2023-0215",
+        "CVE-2026-82058",
+        "CVE-2026-18688",
+        "CVE-2026-31790",
+        "CVE-2022-1343",
+        "CVE-2025-69418",
+        "CVE-2026-28390",
+        "CVE-2026-89099",
+        "CVE-2022-1292",
+        "CVE-2026-13070",
+        "CVE-2023-0401",
+        "CVE-2023-0464",
+        "CVE-2026-8200",
+        "CVE-2026-82076",
+        "CVE-2026-28389",
+        "CVE-2026-9748",
+        "CVE-2026-77696",
+        "CVE-2026-18697",
+        "CVE-2026-9751",
+        "CVE-2026-63072",
+        "CVE-2026-9740",
+        "CVE-2026-25610",
+        "CVE-2014-8180",
+        "CVE-2026-82075",
+        "CVE-2026-8053",
+        "CVE-2022-4450",
+        "CVE-2026-82056",
+        "CVE-2026-18700",
+        "CVE-2025-69421",
+        "CVE-2026-82060",
+        "CVE-2026-13077",
+        "CVE-2026-8202",
+        "CVE-2022-1473",
+        "CVE-2026-9741",
+        "CVE-2023-3817",
+        "CVE-2026-7383",
+        "CVE-2026-5170",
+        "CVE-2026-45446",
+        "CVE-2026-13078",
+        "CVE-2026-4358",
+        "CVE-2025-69420",
+        "CVE-2026-82066",
+        "CVE-2026-18707",
+        "CVE-2022-1434",
+        "CVE-2026-13055",
+        "CVE-2026-18696",
+        "CVE-2026-75805",
+        "CVE-2025-15467",
+        "CVE-2023-4807",
+        "CVE-2022-3358",
+        "CVE-2009-3765",
+        "CVE-2022-4304"
+      ],
+      "cpes": [
+        "cpe:/a:redislabs:redis",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:mongodb:mongodb:7.0.28",
+        "cpe:/a:openssl:openssl:3.0.2",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:f5:nginx:1.18.0"
+      ],
+      "hostnames": [],
+      "tags": [
+        "database",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:49Z"
+    },
+    "74.125.141.188": {
+      "ports": [
+        443,
+        5236,
+        5237
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "vl-in-f188.1e100.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:49Z"
+    },
+    "34.217.56.3": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2019-9511",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2019-9516",
+        "CVE-2018-16845",
+        "CVE-2019-9513",
+        "CVE-2021-3618",
+        "CVE-2019-20372",
+        "CVE-2021-23017"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.14.1"
+      ],
+      "hostnames": [
+        "ec2-34-217-56-3.us-west-2.compute.amazonaws.com"
+      ],
+      "tags": [
+        "cloud",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:50Z"
+    },
+    "194.180.157.11": {
+      "ports": [
+        135,
+        3389,
+        5986
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "no-rdns.mivocloud.com",
+        "194-180-157-11.mivocloud.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:50Z"
+    },
+    "43.142.103.54": {
+      "ports": [
+        123,
+        7000,
+        7080,
+        7081,
+        7474
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:ntp:ntp:3"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:50Z"
+    },
+    "121.41.121.251": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [
+        "xwalker.org.cn",
+        "www.xwalker.org.cn"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:51Z"
+    },
+    "60.183.90.254": {
+      "ports": [
+        135
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:51Z"
+    },
+    "60.204.173.235": {
+      "ports": [
+        22,
+        8787
+      ],
+      "vulns": [
+        "CVE-2023-38408",
+        "CVE-2026-59995",
+        "CVE-2026-106583",
+        "CVE-2026-60000",
+        "CVE-2026-106582",
+        "CVE-2025-26465",
+        "CVE-2026-106555",
+        "CVE-2020-15778",
+        "CVE-2026-60002",
+        "CVE-2026-106585",
+        "CVE-2008-3844",
+        "CVE-2026-73283",
+        "CVE-2026-73282",
+        "CVE-2026-106586",
+        "CVE-2026-73281",
+        "CVE-2023-51385",
+        "CVE-2026-106552",
+        "CVE-2019-6111",
+        "CVE-2026-35388",
+        "CVE-2025-32728",
+        "CVE-2020-14145",
+        "CVE-2026-59997",
+        "CVE-2026-59996",
+        "CVE-2026-35414",
+        "CVE-2018-20685",
+        "CVE-2018-15919",
+        "CVE-2007-2768",
+        "CVE-2019-6109",
+        "CVE-2026-35385",
+        "CVE-2021-36368",
+        "CVE-2026-106584",
+        "CVE-2016-20012",
+        "CVE-2021-41617",
+        "CVE-2023-51767",
+        "CVE-2026-106553",
+        "CVE-2026-123158",
+        "CVE-2023-48795",
+        "CVE-2026-35387",
+        "CVE-2019-6110",
+        "CVE-2026-59999",
+        "CVE-2026-60001",
+        "CVE-2026-106587",
+        "CVE-2026-59998",
+        "CVE-2017-15906",
+        "CVE-2018-15473"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:7.4",
+        "cpe:/a:autumn-27:artex:0.3.19"
+      ],
+      "hostnames": [
+        "ecs-60-204-173-235.compute.hwclouds-dns.com"
+      ],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:51Z"
+    },
+    "91.92.43.218": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:52Z"
+    },
+    "104.207.89.38": {
+      "ports": [
+        3389
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "alluring-emergent.rdns.hosting.spaceship.net"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:52Z"
+    },
+    "104.168.87.120": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:52Z"
+    },
+    "162.141.78.229": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:52Z"
+    },
+    "23.27.25.166": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:53Z"
+    },
+    "64.112.41.96": {
+      "ports": [
+        22,
+        80,
+        443,
+        993,
+        995
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "pop.nbcb.top",
+        "smtp.nbcb.top",
+        "www.nbcb.top",
+        "pmail.nbcb.top",
+        "imap.nbcb.top"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:53Z"
+    },
+    "13.125.54.149": {
+      "ports": [
+        443
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "ec2-13-125-54-149.ap-northeast-2.compute.amazonaws.com"
+      ],
+      "tags": [
+        "mptcp",
+        "pqc",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:53Z"
+    },
+    "186.241.79.58": {
+      "ports": [
+        443,
+        4000,
+        31337
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "mptcp",
+        "pqc",
+        "c2"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:54Z"
+    },
+    "34.205.141.104": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "ec2-34-205-141-104.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:54Z"
+    },
+    "157.245.169.185": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:54Z"
+    },
+    "56.126.131.116": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:55Z"
+    },
+    "180.43.171.196": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:55Z"
+    },
+    "52.22.70.68": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:55Z"
+    },
+    "52.0.150.146": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:56Z"
+    },
+    "104.168.87.105": {
+      "ports": [
+        21,
+        22,
+        23,
+        80,
+        135,
+        143,
+        161,
+        443,
+        465,
+        587,
+        623,
+        631,
+        993,
+        995,
+        1080,
+        1153,
+        1337,
+        1414,
+        1515,
+        1521,
+        1599,
+        1604,
+        1605,
+        1800,
+        1801,
+        1883,
+        1911,
+        2000,
+        2003,
+        2008,
+        2067,
+        2081,
+        2087,
+        2121,
+        2154,
+        2181,
+        2222,
+        2323,
+        2332,
+        2345,
+        2376,
+        2404,
+        2455,
+        2628,
+        2761,
+        2762,
+        3000,
+        3001,
+        3050,
+        3260,
+        3268,
+        3269,
+        3299,
+        3306,
+        3388,
+        3551,
+        3780,
+        3790,
+        4000,
+        4063,
+        4157,
+        4242,
+        4282,
+        4369,
+        4433,
+        4443,
+        4444,
+        4506,
+        4786,
+        4899,
+        4949,
+        5009,
+        5010,
+        5060,
+        5172,
+        5201,
+        5222,
+        5269,
+        5432,
+        5672,
+        5900,
+        5938,
+        5997,
+        6000,
+        6001,
+        6379,
+        6432,
+        6443,
+        6588,
+        6633,
+        6667,
+        6668,
+        6699,
+        7000,
+        7001,
+        7071,
+        7218,
+        7415,
+        8009,
+        8085,
+        8087,
+        8089,
+        8126,
+        8291,
+        8443,
+        8500,
+        8575,
+        8649,
+        8728,
+        8834,
+        8842,
+        8880,
+        8889,
+        9000,
+        9001,
+        9042,
+        9046,
+        9051,
+        9056,
+        9091,
+        9095,
+        9100,
+        9200,
+        9333,
+        9418,
+        9443,
+        9505,
+        9633,
+        9761,
+        9898,
+        9943,
+        9971,
+        10000,
+        10001,
+        10018,
+        10134,
+        10443,
+        11007,
+        11112,
+        11300,
+        12000,
+        12141,
+        12221,
+        12328,
+        12345,
+        14147,
+        14265,
+        14344,
+        14524,
+        16010,
+        17000,
+        18081,
+        18245,
+        20000,
+        20256,
+        20547,
+        20880,
+        21025,
+        21100,
+        21116,
+        21379,
+        21500,
+        22556,
+        23023,
+        23456,
+        25001,
+        28015,
+        32764,
+        33344,
+        35000,
+        37215,
+        37777,
+        40001,
+        41800,
+        44158,
+        44818,
+        50100,
+        50996,
+        54138,
+        55000,
+        55080,
+        55443,
+        55553,
+        60129,
+        61613,
+        63210,
+        63256,
+        64295
+      ],
+      "vulns": [
+        "CVE-2020-29396",
+        "CVE-2021-32052",
+        "CVE-2026-94057",
+        "CVE-2025-13837",
+        "CVE-2021-22135",
+        "CVE-2019-7614",
+        "CVE-2026-7210",
+        "CVE-2026-45185",
+        "CVE-2026-48840",
+        "CVE-2025-12084",
+        "CVE-2015-9251",
+        "CVE-2026-6019",
+        "CVE-2023-31418",
+        "CVE-2026-3087",
+        "CVE-2026-40684",
+        "CVE-2026-66141",
+        "CVE-2026-94055",
+        "CVE-2020-7021",
+        "CVE-2019-11358",
+        "CVE-2009-3720",
+        "CVE-2025-12781",
+        "CVE-2025-30232",
+        "CVE-2024-52979",
+        "CVE-2026-94056",
+        "CVE-2026-40685",
+        "CVE-2020-1938",
+        "CVE-2015-5377",
+        "CVE-2015-1427",
+        "CVE-2026-40687",
+        "CVE-2026-94054",
+        "CVE-2025-13462",
+        "CVE-2026-40686",
+        "CVE-2026-3644",
+        "CVE-2020-7020",
+        "CVE-2009-2940",
+        "CVE-2025-67896",
+        "CVE-2020-7019",
+        "CVE-2020-11023",
+        "CVE-2026-4519",
+        "CVE-2021-22144",
+        "CVE-2023-51766",
+        "CVE-2024-39929",
+        "CVE-2023-46674",
+        "CVE-2019-7611",
+        "CVE-2026-66140",
+        "CVE-2021-22137"
+      ],
+      "cpes": [
+        "cpe:/a:python:python:3.12",
+        "cpe:/a:exim:exim:4.97",
+        "cpe:/a:rubyonrails:rails",
+        "cpe:/a:openbsd:openssh:10.0p2",
+        "cpe:/a:redislabs:redis",
+        "cpe:/a:redmine:redmine",
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:jquery:jquery:1.11.1",
+        "cpe:/a:famatech:radmin",
+        "cpe:/a:apache:http_server",
+        "cpe:/o:microsoft:windows",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:9.2p1",
+        "cpe:/a:elastic:elasticsearch:1.4.1",
+        "cpe:/a:apache:tomcat",
+        "cpe:/a:ruby-lang:ruby"
+      ],
+      "hostnames": [
+        "104-168-87-105-host.colocrossing.com",
+        "example.com"
+      ],
+      "tags": [
+        "honeypot"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:56Z"
+    },
+    "216.203.20.217": {
+      "ports": [
+        22,
+        80,
+        443,
+        9100,
+        9300
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:openbsd:openssh:10.0p2",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:56Z"
+    },
+    "13.217.174.247": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:56Z"
+    },
+    "83.141.90.189": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:57Z"
+    },
+    "45.140.200.225": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:57Z"
+    },
+    "64.204.80.41": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:57Z"
+    },
+    "184.148.188.133": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:58Z"
+    },
+    "124.220.180.240": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:58Z"
+    },
+    "34.225.128.89": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "ec2-34-225-128-89.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:58Z"
+    },
+    "178.105.250.57": {
+      "ports": [
+        22,
+        80,
+        443,
+        3001
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:nodejs:node.js",
+        "cpe:/a:f5:nginx:1.28.3",
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:expressjs:express"
+      ],
+      "hostnames": [
+        "salahgapr.shop",
+        "www.salahgapr.shop",
+        "static.57.250.105.178.clients.your-server.de"
+      ],
+      "tags": [
+        "pqc",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:59Z"
+    },
+    "204.168.243.201": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:47:59Z"
+    },
+    "204.168.245.9": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:f5:nginx:1.28.3"
+      ],
+      "hostnames": [
+        "static.9.245.168.204.clients.your-server.de"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:47:59Z"
+    },
+    "149.104.27.46": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "exactcloud.info"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:00Z"
+    },
+    "3.12.57.9": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2025-59775",
+        "CVE-2026-63718",
+        "CVE-2024-38477",
+        "CVE-2011-1176",
+        "CVE-2026-59685",
+        "CVE-2009-0796",
+        "CVE-2012-4360",
+        "CVE-2026-63292",
+        "CVE-2024-27316",
+        "CVE-2013-2765",
+        "CVE-2026-43951",
+        "CVE-2026-34355",
+        "CVE-2026-119618",
+        "CVE-2024-38472",
+        "CVE-2026-57941",
+        "CVE-2024-43394",
+        "CVE-2026-73637",
+        "CVE-2026-34356",
+        "CVE-2026-48913",
+        "CVE-2026-42356",
+        "CVE-2026-33006",
+        "CVE-2026-73636",
+        "CVE-2026-56449",
+        "CVE-2026-28780",
+        "CVE-2025-65082",
+        "CVE-2026-63045",
+        "CVE-2025-23048",
+        "CVE-2013-4365",
+        "CVE-2026-44186",
+        "CVE-2026-34059",
+        "CVE-2025-58098",
+        "CVE-2026-56153",
+        "CVE-2025-53020",
+        "CVE-2026-93546",
+        "CVE-2026-49975",
+        "CVE-2024-47252",
+        "CVE-2024-38475",
+        "CVE-2026-24072",
+        "CVE-2026-79768",
+        "CVE-2026-42528",
+        "CVE-2024-36387",
+        "CVE-2026-44185",
+        "CVE-2026-46729",
+        "CVE-2024-38474",
+        "CVE-2025-49630",
+        "CVE-2013-0942",
+        "CVE-2026-48005",
+        "CVE-2025-49812",
+        "CVE-2011-2688",
+        "CVE-2024-38473",
+        "CVE-2012-4001",
+        "CVE-2026-63686",
+        "CVE-2026-44119",
+        "CVE-2024-43204",
+        "CVE-2026-29169",
+        "CVE-2023-38709",
+        "CVE-2026-42535",
+        "CVE-2026-33523",
+        "CVE-2026-59797",
+        "CVE-2026-33007",
+        "CVE-2024-38476",
+        "CVE-2013-0941",
+        "CVE-2012-3526",
+        "CVE-2026-42536",
+        "CVE-2026-34032",
+        "CVE-2026-29170",
+        "CVE-2025-66200",
+        "CVE-2009-2299",
+        "CVE-2024-24795",
+        "CVE-2024-39573",
+        "CVE-2026-44631",
+        "CVE-2026-33857",
+        "CVE-2026-58415",
+        "CVE-2007-4723",
+        "CVE-2025-55753",
+        "CVE-2026-56154",
+        "CVE-2024-42516",
+        "CVE-2026-29167",
+        "CVE-2024-40898",
+        "CVE-2026-29168"
+      ],
+      "cpes": [
+        "cpe:/a:apache:http_server:2.4.58",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "ec2-3-12-57-9.us-east-2.compute.amazonaws.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:00Z"
+    },
+    "139.59.57.176": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:00Z"
+    },
+    "148.66.19.51": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:01Z"
+    },
+    "82.157.178.75": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:01Z"
+    },
+    "140.235.16.223": {
+      "ports": [
+        3389,
+        8040,
+        8041
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "unassigned.140-235-16-223.spryt.net"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:01Z"
+    },
+    "173.211.106.209": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:01Z"
+    },
+    "45.198.224.146": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:02Z"
+    },
+    "104.64.15.245": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:02Z"
+    },
+    "49.235.131.10": {
+      "ports": [
+        22,
+        9998
+      ],
+      "vulns": [
+        "CVE-2026-123158",
+        "CVE-2026-106553",
+        "CVE-2026-73283",
+        "CVE-2026-60000",
+        "CVE-2026-59996",
+        "CVE-2026-106584",
+        "CVE-2026-60002",
+        "CVE-2025-32728",
+        "CVE-2026-106587",
+        "CVE-2026-73282",
+        "CVE-2019-6110",
+        "CVE-2026-106585",
+        "CVE-2020-15778",
+        "CVE-2026-35414",
+        "CVE-2018-15919",
+        "CVE-2026-35388",
+        "CVE-2026-73281",
+        "CVE-2021-36368",
+        "CVE-2008-3844",
+        "CVE-2018-20685",
+        "CVE-2021-41617",
+        "CVE-2026-106582",
+        "CVE-2026-59995",
+        "CVE-2017-15906",
+        "CVE-2023-51767",
+        "CVE-2026-60001",
+        "CVE-2019-6109",
+        "CVE-2026-59999",
+        "CVE-2026-59997",
+        "CVE-2026-35387",
+        "CVE-2026-106583",
+        "CVE-2025-26465",
+        "CVE-2007-2768",
+        "CVE-2026-35385",
+        "CVE-2023-38408",
+        "CVE-2026-106586",
+        "CVE-2023-51385",
+        "CVE-2020-14145",
+        "CVE-2018-15473",
+        "CVE-2016-20012",
+        "CVE-2026-106555",
+        "CVE-2026-59998",
+        "CVE-2026-106552",
+        "CVE-2023-48795",
+        "CVE-2019-6111"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:7.4"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:02Z"
+    },
+    "64.227.166.223": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:03Z"
+    },
+    "95.133.167.210": {
+      "ports": [
+        22,
+        8080
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/a:python:python"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:03Z"
+    },
+    "8.211.173.252": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:03Z"
+    },
+    "54.196.27.211": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "ec2-54-196-27-211.compute-1.amazonaws.com"
+      ],
+      "tags": [
+        "cloud",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:04Z"
+    },
+    "45.141.235.60": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:04Z"
+    },
+    "199.91.221.181": {
+      "ports": [
+        135,
+        445
+      ],
+      "vulns": [
+        "CVE-2020-0796"
+      ],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:04Z"
+    },
+    "193.24.211.228": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:05Z"
+    },
+    "185.220.71.51": {
+      "ports": [
+        5357
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:05Z"
+    },
+    "169.58.39.12": {
+      "ports": [
+        22,
+        80,
+        443,
+        8443
+      ],
+      "vulns": [
+        "CVE-2025-12781",
+        "CVE-2026-3087",
+        "CVE-2024-9287",
+        "CVE-2025-13837",
+        "CVE-2024-6232",
+        "CVE-2026-3644",
+        "CVE-2026-7210",
+        "CVE-2026-0864",
+        "CVE-2024-7592",
+        "CVE-2009-3720",
+        "CVE-2023-27043",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2020-29396",
+        "CVE-2026-4519",
+        "CVE-2025-13462",
+        "CVE-2009-2940",
+        "CVE-2025-13836",
+        "CVE-2021-32052",
+        "CVE-2026-6019",
+        "CVE-2025-12084"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:palletsprojects:flask:3.1.9",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:python:python:3.12.3"
+      ],
+      "hostnames": [
+        "vmi3624157.contaboserver.net",
+        "newfutures.xyz"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:05Z"
+    },
+    "162.35.125.177": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:06Z"
+    },
+    "151.242.170.26": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:06Z"
+    },
+    "151.243.176.118": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:openbsd:openssh:10.0p2"
+      ],
+      "hostnames": [
+        "derzhavnost.ru"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:06Z"
+    },
+    "149.60.21.173": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:07Z"
+    },
+    "149.28.147.172": {
+      "ports": [
+        135,
+        445
+      ],
+      "vulns": [
+        "CVE-2020-0796"
+      ],
+      "cpes": [],
+      "hostnames": [
+        "149.28.147.172.vultrusercontent.com"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:07Z"
+    },
+    "128.90.105.218": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:07Z"
+    },
+    "128.90.102.151": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:08Z"
+    },
+    "107.172.92.146": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:08Z"
+    },
+    "103.85.227.64": {
+      "ports": [
+        22,
+        135
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:openbsd:openssh:9.2p1",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:08Z"
+    },
+    "114.132.204.165": {
+      "ports": [
+        21,
+        22,
+        80,
+        443,
+        888
+      ],
+      "vulns": [
+        "CVE-2026-106555",
+        "CVE-2020-15778",
+        "CVE-2021-36368",
+        "CVE-2026-59996",
+        "CVE-2026-59998",
+        "CVE-2017-15906",
+        "CVE-2018-15919",
+        "CVE-2023-48795",
+        "CVE-2023-38408",
+        "CVE-2026-59997",
+        "CVE-2018-15473",
+        "CVE-2016-20012",
+        "CVE-2026-35385",
+        "CVE-2026-60000",
+        "CVE-2018-20685",
+        "CVE-2025-26465",
+        "CVE-2023-51767",
+        "CVE-2019-6110",
+        "CVE-2026-60001",
+        "CVE-2026-106586",
+        "CVE-2026-73283",
+        "CVE-2021-41617",
+        "CVE-2026-123158",
+        "CVE-2026-35414",
+        "CVE-2026-106587",
+        "CVE-2026-73282",
+        "CVE-2026-106584",
+        "CVE-2019-6111",
+        "CVE-2026-59999",
+        "CVE-2026-106582",
+        "CVE-2026-60002",
+        "CVE-2025-32728",
+        "CVE-2023-51385",
+        "CVE-2026-35388",
+        "CVE-2020-14145",
+        "CVE-2026-106552",
+        "CVE-2008-3844",
+        "CVE-2026-106553",
+        "CVE-2026-59995",
+        "CVE-2026-106583",
+        "CVE-2026-35387",
+        "CVE-2019-6109",
+        "CVE-2026-106585",
+        "CVE-2007-2768",
+        "CVE-2026-73281"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:pureftpd:pure-ftpd",
+        "cpe:/a:openbsd:openssh:7.4",
+        "cpe:/a:autumn-27:artex:3560447"
+      ],
+      "hostnames": [],
+      "tags": [
+        "starttls",
+        "ai",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:08Z"
+    },
+    "139.224.202.214": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:09Z"
+    },
+    "170.64.164.97": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:09Z"
+    },
+    "38.46.15.202": {
+      "ports": [
+        80,
+        4444,
+        4567,
+        8989
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:10Z"
+    },
+    "151.246.186.15": {
+      "ports": [
+        22,
+        5201,
+        8887,
+        8889
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:openbsd:openssh:10.0p2"
+      ],
+      "hostnames": [
+        "n.sni-347-default.ssl.fastly.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:10Z"
+    },
+    "124.222.77.67": {
+      "ports": [
+        80,
+        443,
+        7000,
+        8082,
+        8787
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2021-3618",
+        "CVE-2021-23017",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/a:python:python",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [
+        "yunku.online"
+      ],
+      "tags": [
+        "proxy",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:10Z"
+    },
+    "103.12.149.69": {
+      "ports": [
+        5985
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "eol-os"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:10Z"
+    },
+    "124.222.76.112": {
+      "ports": [
+        22,
+        123
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:ntp:ntp:3",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:8.9p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:11Z"
+    },
+    "42.193.142.119": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:11Z"
+    },
+    "124.220.224.8": {
+      "ports": [
+        22,
+        80,
+        443,
+        5005,
+        50080
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:agent0ai:agent_zero:2.15",
+        "cpe:/a:python:python",
+        "cpe:/a:openbsd:openssh:8.9p1"
+      ],
+      "hostnames": [
+        "changfenai.cn"
+      ],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:11Z"
+    },
+    "124.221.190.118": {
+      "ports": [
+        22,
+        8080
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:10.2p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:12Z"
+    },
+    "149.202.98.84": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:12Z"
+    },
+    "109.248.150.205": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:12Z"
+    },
+    "83.136.211.208": {
+      "ports": [
+        3389,
+        5985,
+        8444
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:13Z"
+    },
+    "106.53.28.109": {
+      "ports": [
+        22,
+        8080
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:marked_project:marked",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:13Z"
+    },
+    "122.114.225.205": {
+      "ports": [
+        22,
+        8787
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:13Z"
+    },
+    "186.240.202.69": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2023-44487",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:f5:nginx:1.24.0"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:14Z"
+    },
+    "122.51.44.181": {
+      "ports": [
+        22,
+        80,
+        443,
+        8080,
+        8787
+      ],
+      "vulns": [
+        "CVE-2026-123158",
+        "CVE-2026-106553",
+        "CVE-2026-73283",
+        "CVE-2026-60000",
+        "CVE-2023-51384",
+        "CVE-2026-59996",
+        "CVE-2026-106584",
+        "CVE-2026-60002",
+        "CVE-2025-32728",
+        "CVE-2026-106587",
+        "CVE-2026-73282",
+        "CVE-2026-106585",
+        "CVE-2026-35414",
+        "CVE-2026-35388",
+        "CVE-2026-73281",
+        "CVE-2008-3844",
+        "CVE-2026-106582",
+        "CVE-2026-59995",
+        "CVE-2023-51767",
+        "CVE-2026-60001",
+        "CVE-2026-59999",
+        "CVE-2026-59997",
+        "CVE-2026-35387",
+        "CVE-2024-6387",
+        "CVE-2026-106583",
+        "CVE-2025-26465",
+        "CVE-2007-2768",
+        "CVE-2026-35385",
+        "CVE-2023-38408",
+        "CVE-2026-106586",
+        "CVE-2023-51385",
+        "CVE-2026-106555",
+        "CVE-2026-59998",
+        "CVE-2026-106552",
+        "CVE-2023-48795"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.3",
+        "cpe:/a:aipentest:cyberstrikeai:1.7.17-src",
+        "cpe:/a:autumn-27:artex",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:marked_project:marked"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "cloud",
+        "self-signed",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:14Z"
+    },
+    "64.83.42.79": {
+      "ports": [
+        22,
+        80,
+        8787
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2021-3618",
+        "CVE-2021-23017",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:14Z"
+    },
+    "192.163.172.90": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2023-44487",
+        "CVE-2021-23017",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:f5:nginx",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:14Z"
+    },
+    "91.107.247.163": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "static.163.247.107.91.clients.your-server.de"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:15Z"
+    },
+    "121.36.22.82": {
+      "ports": [
+        22,
+        1080,
+        8080,
+        8081,
+        8899,
+        31337
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:f5:nginx:1.27.5",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [
+        "ecs-121-36-22-82.compute.hwclouds-dns.com"
+      ],
+      "tags": [
+        "c2",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:15Z"
+    },
+    "13.140.47.174": {
+      "ports": [
+        22,
+        80,
+        443,
+        19132
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:caddyserver:caddy"
+      ],
+      "hostnames": [
+        "vmi3669828.contaboserver.net"
+      ],
+      "tags": [
+        "mptcp",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:15Z"
+    },
+    "103.12.148.18": {
+      "ports": [
+        22,
+        80,
+        111,
+        443,
+        2083,
+        8443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:caddyserver:caddy"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:16Z"
+    },
+    "137.175.102.172": {
+      "ports": [
+        443,
+        8080,
+        9000
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:amazon:elastic_load_balancing",
+        "cpe:/a:gotify:server:3.1.0"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:16Z"
+    },
+    "144.172.95.46": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:16Z"
+    },
+    "144.172.95.47": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:17Z"
+    },
+    "82.27.201.212": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:17Z"
+    },
+    "1.14.200.80": {
+      "ports": [
+        3001,
+        3306,
+        8002,
+        8003,
+        8015,
+        8024,
+        8042,
+        8044,
+        8080,
+        8081,
+        8443,
+        9999,
+        50009
+      ],
+      "vulns": [
+        "CVE-2012-3526",
+        "CVE-2016-8670",
+        "CVE-2026-27205",
+        "CVE-2025-50102",
+        "CVE-2018-10546",
+        "CVE-2019-9637",
+        "CVE-2016-7418",
+        "CVE-2015-8994",
+        "CVE-2016-5387",
+        "CVE-2026-7210",
+        "CVE-2015-9253",
+        "CVE-2019-9021",
+        "CVE-2014-9425",
+        "CVE-2016-5768",
+        "CVE-2016-7413",
+        "CVE-2026-29169",
+        "CVE-2025-50099",
+        "CVE-2016-7129",
+        "CVE-2023-25690",
+        "CVE-2018-17199",
+        "CVE-2019-17567",
+        "CVE-2015-6497",
+        "CVE-2025-50084",
+        "CVE-2015-1351",
+        "CVE-2020-7069",
+        "CVE-2026-42535",
+        "CVE-2026-29168",
+        "CVE-2013-6501",
+        "CVE-2025-59775",
+        "CVE-2016-6297",
+        "CVE-2015-8865",
+        "CVE-2019-9638",
+        "CVE-2025-50091",
+        "CVE-2016-5772",
+        "CVE-2017-12933",
+        "CVE-2026-63686",
+        "CVE-2025-50086",
+        "CVE-2009-2940",
+        "CVE-2019-9517",
+        "CVE-2022-28614",
+        "CVE-2021-32786",
+        "CVE-2014-3583",
+        "CVE-2016-4975",
+        "CVE-2022-26377",
+        "CVE-2018-11763",
+        "CVE-2016-0736",
+        "CVE-2018-19520",
+        "CVE-2021-44790",
+        "CVE-2017-9788",
+        "CVE-2026-3644",
+        "CVE-2017-11628",
+        "CVE-2013-7327",
+        "CVE-2025-50097",
+        "CVE-2018-1333",
+        "CVE-2012-4360",
+        "CVE-2024-5458",
+        "CVE-2026-42536",
+        "CVE-2013-0941",
+        "CVE-2025-13462",
+        "CVE-2017-11143",
+        "CVE-2018-10549",
+        "CVE-2021-21705",
+        "CVE-2016-5095",
+        "CVE-2015-4116",
+        "CVE-2018-1283",
+        "CVE-2026-33006",
+        "CVE-2025-12084",
+        "CVE-2026-3087",
+        "CVE-2016-7126",
+        "CVE-2017-9798",
+        "CVE-2023-38709",
+        "CVE-2024-7592",
+        "CVE-2017-16642",
+        "CVE-2026-57941",
+        "CVE-2025-50080",
+        "CVE-2024-40898",
+        "CVE-2022-48565",
+        "CVE-2026-42528",
+        "CVE-2024-43204",
+        "CVE-2021-26690",
+        "CVE-2020-1927",
+        "CVE-2017-11147",
+        "CVE-2019-0220",
+        "CVE-2017-11145",
+        "CVE-2025-50096",
+        "CVE-2016-7132",
+        "CVE-2016-10397",
+        "CVE-2025-50083",
+        "CVE-2017-7668",
+        "CVE-2015-7804",
+        "CVE-2025-50104",
+        "CVE-2018-14851",
+        "CVE-2015-0228",
+        "CVE-2015-8874",
+        "CVE-2022-28615",
+        "CVE-2025-13837",
+        "CVE-2019-9020",
+        "CVE-2022-48566",
+        "CVE-2021-28667",
+        "CVE-2020-9490",
+        "CVE-2026-4360",
+        "CVE-2016-4343",
+        "CVE-2013-4365",
+        "CVE-2026-79768",
+        "CVE-2026-28780",
+        "CVE-2022-4900",
+        "CVE-2021-44224",
+        "CVE-2016-1903",
+        "CVE-2016-4537",
+        "CVE-2026-33007",
+        "CVE-2016-7412",
+        "CVE-2011-1176",
+        "CVE-2026-44186",
+        "CVE-2026-24072",
+        "CVE-2007-4723",
+        "CVE-2016-10161",
+        "CVE-2016-9935",
+        "CVE-2022-31629",
+        "CVE-2020-11993",
+        "CVE-2015-5652",
+        "CVE-2016-7131",
+        "CVE-2023-45802",
+        "CVE-2025-50101",
+        "CVE-2017-11142",
+        "CVE-2016-7128",
+        "CVE-2017-9224",
+        "CVE-2019-10081",
+        "CVE-2025-50094",
+        "CVE-2022-29404",
+        "CVE-2016-6290",
+        "CVE-2026-34059",
+        "CVE-2026-34355",
+        "CVE-2026-63292",
+        "CVE-2026-56154",
+        "CVE-2026-48005",
+        "CVE-2017-9226",
+        "CVE-2026-42356",
+        "CVE-2022-31628",
+        "CVE-2020-7070",
+        "CVE-2024-6232",
+        "CVE-2025-50085",
+        "CVE-2016-5399",
+        "CVE-2016-5766",
+        "CVE-2019-0196",
+        "CVE-2026-29170",
+        "CVE-2017-3169",
+        "CVE-2021-26691",
+        "CVE-2017-15710",
+        "CVE-2019-6977",
+        "CVE-2016-7127",
+        "CVE-2016-5770",
+        "CVE-2021-21707",
+        "CVE-2021-34798",
+        "CVE-2016-7417",
+        "CVE-2016-5093",
+        "CVE-2024-38477",
+        "CVE-2026-73637",
+        "CVE-2021-39275",
+        "CVE-2025-50077",
+        "CVE-2014-4670",
+        "CVE-2022-28330",
+        "CVE-2024-38472",
+        "CVE-2023-40217",
+        "CVE-2024-47252",
+        "CVE-2009-3720",
+        "CVE-2007-3205",
+        "CVE-2007-4559",
+        "CVE-2023-27043",
+        "CVE-2023-44487",
+        "CVE-2016-4538",
+        "CVE-2022-30556",
+        "CVE-2026-33857",
+        "CVE-2016-9137",
+        "CVE-2024-24795",
+        "CVE-2019-10092",
+        "CVE-2016-9934",
+        "CVE-2026-49975",
+        "CVE-2018-20783",
+        "CVE-2022-37454",
+        "CVE-2025-50087",
+        "CVE-2018-10548",
+        "CVE-2017-7659",
+        "CVE-2020-7071",
+        "CVE-2013-2220",
+        "CVE-2025-55753",
+        "CVE-2006-20001",
+        "CVE-2018-10545",
+        "CVE-2026-34032",
+        "CVE-2018-15132",
+        "CVE-2023-30861",
+        "CVE-2017-7963",
+        "CVE-2012-4001",
+        "CVE-2013-0942",
+        "CVE-2015-3183",
+        "CVE-2026-63718",
+        "CVE-2026-44185",
+        "CVE-2023-31122",
+        "CVE-2015-3185",
+        "CVE-2019-9641",
+        "CVE-2016-5771",
+        "CVE-2014-8109",
+        "CVE-2022-22720",
+        "CVE-2026-59685",
+        "CVE-2022-22721",
+        "CVE-2016-5769",
+        "CVE-2011-4718",
+        "CVE-2016-5773",
+        "CVE-2015-8877",
+        "CVE-2016-6294",
+        "CVE-2018-14883",
+        "CVE-2026-4224",
+        "CVE-2016-8743",
+        "CVE-2021-32791",
+        "CVE-2025-66200",
+        "CVE-2020-11985",
+        "CVE-2016-9138",
+        "CVE-2013-7456",
+        "CVE-2018-10547",
+        "CVE-2025-6075",
+        "CVE-2016-4540",
+        "CVE-2021-23017",
+        "CVE-2025-49812",
+        "CVE-2024-27316",
+        "CVE-2024-25117",
+        "CVE-2016-6291",
+        "CVE-2022-31813",
+        "CVE-2025-49630",
+        "CVE-2017-12868",
+        "CVE-2026-0864",
+        "CVE-2016-6292",
+        "CVE-2017-7890",
+        "CVE-2016-7416",
+        "CVE-2014-9426",
+        "CVE-2018-5711",
+        "CVE-2026-58415",
+        "CVE-2014-2020",
+        "CVE-2026-44631",
+        "CVE-2024-3566",
+        "CVE-2024-42516",
+        "CVE-2023-27522",
+        "CVE-2016-5114",
+        "CVE-2026-4519",
+        "CVE-2016-4543",
+        "CVE-2025-50079",
+        "CVE-2024-39573",
+        "CVE-2018-7584",
+        "CVE-2022-37436",
+        "CVE-2014-9767",
+        "CVE-2016-3142",
+        "CVE-2026-29167",
+        "CVE-2016-6295",
+        "CVE-2020-11579",
+        "CVE-2016-4539",
+        "CVE-2017-15715",
+        "CVE-2022-22719",
+        "CVE-2018-1312",
+        "CVE-2025-65082",
+        "CVE-2021-33193",
+        "CVE-2026-21964",
+        "CVE-2011-2688",
+        "CVE-2021-40438",
+        "CVE-2016-5096",
+        "CVE-2016-10158",
+        "CVE-2026-6019",
+        "CVE-2026-109618",
+        "CVE-2025-50092",
+        "CVE-2018-5712",
+        "CVE-2019-10098",
+        "CVE-2015-8879",
+        "CVE-2025-50078",
+        "CVE-2025-50082",
+        "CVE-2017-11144",
+        "CVE-2016-2554",
+        "CVE-2026-44119",
+        "CVE-2025-58098",
+        "CVE-2017-3167",
+        "CVE-2016-7414",
+        "CVE-2020-13938",
+        "CVE-2026-33523",
+        "CVE-2026-34319",
+        "CVE-2019-10082",
+        "CVE-2022-0391",
+        "CVE-2026-34318",
+        "CVE-2021-3733",
+        "CVE-2025-23419",
+        "CVE-2025-50100",
+        "CVE-2016-6288",
+        "CVE-2024-38476",
+        "CVE-2026-109619",
+        "CVE-2021-21702",
+        "CVE-2014-3581",
+        "CVE-2016-10159",
+        "CVE-2026-73636",
+        "CVE-2026-15308",
+        "CVE-2021-32785",
+        "CVE-2025-12781",
+        "CVE-2017-7679",
+        "CVE-2026-34356",
+        "CVE-2013-5704",
+        "CVE-2024-38475",
+        "CVE-2019-0211",
+        "CVE-2017-8923",
+        "CVE-2015-7803",
+        "CVE-2016-7478",
+        "CVE-2016-4542",
+        "CVE-2018-1302",
+        "CVE-2016-5094",
+        "CVE-2025-53020",
+        "CVE-2019-0217",
+        "CVE-2016-2161",
+        "CVE-2017-7272",
+        "CVE-2016-5767",
+        "CVE-2026-56153",
+        "CVE-2017-18207",
+        "CVE-2014-0236",
+        "CVE-2016-4070",
+        "CVE-2016-6289",
+        "CVE-2018-1301",
+        "CVE-2026-34317",
+        "CVE-2024-9287",
+        "CVE-2025-50081",
+        "CVE-2024-38474",
+        "CVE-2025-50093",
+        "CVE-2021-21704",
+        "CVE-2023-36632",
+        "CVE-2016-9933",
+        "CVE-2025-50098",
+        "CVE-2020-35452",
+        "CVE-2026-46729",
+        "CVE-2016-6296",
+        "CVE-2018-17189",
+        "CVE-2021-3618",
+        "CVE-2009-0796",
+        "CVE-2026-93546",
+        "CVE-2022-48560",
+        "CVE-2016-7124",
+        "CVE-2021-23336",
+        "CVE-2017-17522",
+        "CVE-2019-9639",
+        "CVE-2026-43951",
+        "CVE-2021-32792",
+        "CVE-2016-10712",
+        "CVE-2022-48564",
+        "CVE-2016-3141",
+        "CVE-2019-9023",
+        "CVE-2014-5459",
+        "CVE-2026-63045",
+        "CVE-2013-2765",
+        "CVE-2016-4541",
+        "CVE-2016-7130",
+        "CVE-2022-26488",
+        "CVE-2025-23048",
+        "CVE-2021-21706",
+        "CVE-2018-19395",
+        "CVE-2026-59797",
+        "CVE-2016-7411",
+        "CVE-2015-3184",
+        "CVE-2020-1934",
+        "CVE-2015-4601",
+        "CVE-2009-2299",
+        "CVE-2023-24329",
+        "CVE-2016-7125",
+        "CVE-2024-38473",
+        "CVE-2018-17082",
+        "CVE-2018-1303",
+        "CVE-2019-9024",
+        "CVE-2022-45061",
+        "CVE-2026-56449",
+        "CVE-2025-13836",
+        "CVE-2018-19396",
+        "CVE-2024-43394",
+        "CVE-2016-4342",
+        "CVE-2021-21703",
+        "CVE-2022-36760",
+        "CVE-2016-8612",
+        "CVE-2022-23943"
+      ],
+      "cpes": [
+        "cpe:/a:getbootstrap:bootstrap",
+        "cpe:/a:php:php:5.4.45",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/a:php:php:5.6.40",
+        "cpe:/a:php:php:7.4.33",
+        "cpe:/a:palletsprojects:flask:1.0.1",
+        "cpe:/a:php:php:7.3.22",
+        "cpe:/a:vercel:next.js",
+        "cpe:/a:nuxt:nuxt",
+        "cpe:/a:facebook:react",
+        "cpe:/a:jquery:jquery",
+        "cpe:/a:oracle:mysql:8.4.5",
+        "cpe:/a:apache:http_server:2.4.25",
+        "cpe:/a:apache:http_server:2.4.54",
+        "cpe:/a:f5:nginx:1.22.1",
+        "cpe:/a:palletsprojects:flask:3.1.3",
+        "cpe:/a:python:python:3.9.24",
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:python:python:2.7.18",
+        "cpe:/a:apache:http_server:2.4.10"
+      ],
+      "hostnames": [],
+      "tags": [
+        "database",
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:17Z"
+    },
+    "89.124.109.47": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2023-44487",
+        "CVE-2021-23017",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "v1206801.hosted-by-vdsina.com",
+        "v1018883.hosted-by-vdsina.com",
+        "wakupandfork.xyz"
+      ],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:18Z"
+    },
+    "217.60.21.91": {
+      "ports": [
+        3389,
+        10134
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "lain.217.60.21.91.aluy.net"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:18Z"
+    },
+    "101.34.218.196": {
+      "ports": [
+        9090
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:18Z"
+    },
+    "101.43.36.3": {
+      "ports": [
+        22,
+        3000,
+        8787
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:gitea:gitea",
+        "cpe:/a:autumn-27:artex"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:18Z"
+    },
+    "106.55.23.149": {
+      "ports": [
+        80
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:19Z"
+    },
+    "106.54.203.98": {
+      "ports": [
+        22,
+        80,
+        443,
+        3389,
+        8787
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "ticket.1105093.xyz",
+        "bilibili.1105093.xyz",
+        "cpp.1105093.xyz"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:19Z"
+    },
+    "110.40.199.73": {
+      "ports": [
+        22,
+        80,
+        8443,
+        8787
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:19Z"
+    },
+    "117.72.216.88": {
+      "ports": [
+        22,
+        5432,
+        8081,
+        8787
+      ],
+      "vulns": [
+        "CVE-2020-29396",
+        "CVE-2023-36632",
+        "CVE-2021-32052",
+        "CVE-2025-13837",
+        "CVE-2026-7210",
+        "CVE-2026-0864",
+        "CVE-2025-12084",
+        "CVE-2024-7592",
+        "CVE-2026-6019",
+        "CVE-2026-3087",
+        "CVE-2024-6232",
+        "CVE-2009-3720",
+        "CVE-2025-12781",
+        "CVE-2026-15308",
+        "CVE-2025-13836",
+        "CVE-2025-13462",
+        "CVE-2026-3644",
+        "CVE-2009-2940",
+        "CVE-2023-40217",
+        "CVE-2026-4519",
+        "CVE-2024-9287",
+        "CVE-2023-27043"
+      ],
+      "cpes": [
+        "cpe:/a:autumn-27:artex:0.3.15",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:python:python:3.10.12"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "database"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:20Z"
+    },
+    "124.220.83.49": {
+      "ports": [
+        80,
+        3306,
+        8888
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:oracle:mysql:5.7.44-log",
+        "cpe:/a:f5:nginx"
+      ],
+      "hostnames": [],
+      "tags": [
+        "database",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:20Z"
+    },
+    "124.222.151.203": {
+      "ports": [
+        22,
+        8787
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:autumn-27:artex:0.3.19"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:20Z"
+    },
+    "85.155.180.118": {
+      "ports": [
+        22,
+        80,
+        11434
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:ollama:ollama:0.40.16",
+        "cpe:/a:vxcontrol:pentagi"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:21Z"
+    },
+    "23.95.31.196": {
+      "ports": [
+        80,
+        443,
+        1337,
+        7000,
+        9191,
+        10554,
+        19132,
+        21116,
+        23456,
+        28080,
+        48100
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:minecraft:bedrock_server:26.52"
+      ],
+      "hostnames": [
+        "freefrp.net",
+        "23-95-31-196-host.colocrossing.com"
+      ],
+      "tags": [
+        "videogame"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:21Z"
+    },
+    "108.165.230.239": {
+      "ports": [
+        80,
+        445,
+        3000,
+        3306,
+        3389,
+        5357,
+        5985,
+        8080,
+        33060
+      ],
+      "vulns": [
+        "CVE-2020-0796"
+      ],
+      "cpes": [
+        "cpe:/a:nodejs:node.js",
+        "cpe:/a:oracle:mysql",
+        "cpe:/o:microsoft:windows",
+        "cpe:/a:microsoft:internet_information_services:10.0",
+        "cpe:/a:expressjs:express"
+      ],
+      "hostnames": [],
+      "tags": [
+        "database"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:21Z"
+    },
+    "8.131.74.87": {
+      "ports": [
+        22,
+        80,
+        8888
+      ],
+      "vulns": [
+        "CVE-2026-106555",
+        "CVE-2020-15778",
+        "CVE-2021-36368",
+        "CVE-2026-59996",
+        "CVE-2026-59998",
+        "CVE-2023-48795",
+        "CVE-2023-38408",
+        "CVE-2026-59997",
+        "CVE-2016-20012",
+        "CVE-2026-35385",
+        "CVE-2026-60000",
+        "CVE-2025-26465",
+        "CVE-2023-51767",
+        "CVE-2026-60001",
+        "CVE-2026-106586",
+        "CVE-2026-73283",
+        "CVE-2021-41617",
+        "CVE-2026-123158",
+        "CVE-2026-35414",
+        "CVE-2026-106587",
+        "CVE-2026-73282",
+        "CVE-2026-106584",
+        "CVE-2026-59999",
+        "CVE-2026-106582",
+        "CVE-2026-60002",
+        "CVE-2025-32728",
+        "CVE-2023-51385",
+        "CVE-2026-35388",
+        "CVE-2020-14145",
+        "CVE-2019-16905",
+        "CVE-2026-106552",
+        "CVE-2008-3844",
+        "CVE-2026-106553",
+        "CVE-2026-59995",
+        "CVE-2026-106583",
+        "CVE-2026-35387",
+        "CVE-2026-106585",
+        "CVE-2007-2768",
+        "CVE-2026-73281"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:openbsd:openssh:8.0"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:22Z"
+    },
+    "89.144.32.218": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:22Z"
+    },
+    "107.172.32.149": {
+      "ports": [
+        22,
+        80,
+        443,
+        5433,
+        8000,
+        8001,
+        8089,
+        8443
+      ],
+      "vulns": [
+        "CVE-2023-44487",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:vxcontrol:pentagi",
+        "cpe:/a:oritera:cairn:0.2.1",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:python:python"
+      ],
+      "hostnames": [
+        "107-172-32-149-host.colocrossing.com"
+      ],
+      "tags": [
+        "mptcp",
+        "ai",
+        "eol-product",
+        "self-signed",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:22Z"
+    },
+    "109.199.115.173": {
+      "ports": [
+        443,
+        8200
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:gunicorn:gunicorn",
+        "cpe:/a:python:python"
+      ],
+      "hostnames": [
+        "igotdrunk.dev",
+        "vmi3239490.contaboserver.net"
+      ],
+      "tags": [
+        "mptcp",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:23Z"
+    },
+    "198.44.32.189": {
+      "ports": [
+        22,
+        25,
+        80,
+        110,
+        143,
+        443,
+        465,
+        587,
+        995,
+        8000,
+        9527
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:oritera:cairn:0.2.1",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:python:python"
+      ],
+      "hostnames": [
+        "mail.foohers.com"
+      ],
+      "tags": [
+        "mptcp",
+        "ai",
+        "pqc",
+        "starttls"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:23Z"
+    },
+    "23.95.220.222": {
+      "ports": [
+        443,
+        4433,
+        6379,
+        8443,
+        27017
+      ],
+      "vulns": [
+        "CVE-2026-82074",
+        "CVE-2026-9750",
+        "CVE-2026-1849",
+        "CVE-2026-82054",
+        "CVE-2026-82064",
+        "CVE-2026-35189",
+        "CVE-2019-0190",
+        "CVE-2026-1848",
+        "CVE-2026-34180",
+        "CVE-2026-82063",
+        "CVE-2024-0727",
+        "CVE-2026-82053",
+        "CVE-2022-2097",
+        "CVE-2025-10061",
+        "CVE-2026-18708",
+        "CVE-2025-10059",
+        "CVE-2026-9746",
+        "CVE-2026-18694",
+        "CVE-2026-18699",
+        "CVE-2025-13507",
+        "CVE-2025-3084",
+        "CVE-2026-18698",
+        "CVE-2026-63074",
+        "CVE-2025-3083",
+        "CVE-2026-13062",
+        "CVE-2026-63076",
+        "CVE-2026-18711",
+        "CVE-2026-18702",
+        "CVE-2026-45445",
+        "CVE-2026-25609",
+        "CVE-2023-6237",
+        "CVE-2026-6914",
+        "CVE-2026-82068",
+        "CVE-2009-3766",
+        "CVE-2026-22795",
+        "CVE-2026-13066",
+        "CVE-2026-18712",
+        "CVE-2026-75806",
+        "CVE-2026-28388",
+        "CVE-2025-0755",
+        "CVE-2022-3602",
+        "CVE-2026-42767",
+        "CVE-2026-28387",
+        "CVE-2023-5678",
+        "CVE-2026-18705",
+        "CVE-2026-18695",
+        "CVE-2023-0465",
+        "CVE-2026-13065",
+        "CVE-2026-9752",
+        "CVE-2025-69419",
+        "CVE-2023-0466",
+        "CVE-2026-13072",
+        "CVE-2026-42770",
+        "CVE-2023-2650",
+        "CVE-2026-4148",
+        "CVE-2026-82067",
+        "CVE-2025-9232",
+        "CVE-2023-1255",
+        "CVE-2026-9749",
+        "CVE-2023-0286",
+        "CVE-2026-18690",
+        "CVE-2023-2975",
+        "CVE-2024-13176",
+        "CVE-2025-11979",
+        "CVE-2022-4203",
+        "CVE-2026-18701",
+        "CVE-2026-18691",
+        "CVE-2026-11933",
+        "CVE-2009-1390",
+        "CVE-2026-8199",
+        "CVE-2025-12657",
+        "CVE-2009-3767",
+        "CVE-2024-1351",
+        "CVE-2022-3996",
+        "CVE-2026-9076",
+        "CVE-2026-34182",
+        "CVE-2026-13068",
+        "CVE-2025-6711",
+        "CVE-2026-9737",
+        "CVE-2025-6707",
+        "CVE-2024-3372",
+        "CVE-2023-5363",
+        "CVE-2026-31789",
+        "CVE-2026-8843",
+        "CVE-2024-4741",
+        "CVE-2026-82059",
+        "CVE-2025-6713",
+        "CVE-2025-3082",
+        "CVE-2026-82052",
+        "CVE-2026-54872",
+        "CVE-2026-13074",
+        "CVE-2026-84782",
+        "CVE-2026-13069",
+        "CVE-2025-9230",
+        "CVE-2026-82065",
+        "CVE-2024-6119",
+        "CVE-2025-13644",
+        "CVE-2025-14345",
+        "CVE-2026-54874",
+        "CVE-2024-6384",
+        "CVE-2026-13071",
+        "CVE-2022-2068",
+        "CVE-2026-18693",
+        "CVE-2025-10060",
+        "CVE-2025-68160",
+        "CVE-2026-8201",
+        "CVE-2026-4147",
+        "CVE-2026-75803",
+        "CVE-2023-0217",
+        "CVE-2026-13061",
+        "CVE-2023-6129",
+        "CVE-2026-18709",
+        "CVE-2023-0216",
+        "CVE-2025-6714",
+        "CVE-2024-10921",
+        "CVE-2026-42766",
+        "CVE-2022-3786",
+        "CVE-2024-7553",
+        "CVE-2026-25613",
+        "CVE-2026-1847",
+        "CVE-2026-13059",
+        "CVE-2026-9747",
+        "CVE-2026-22796",
+        "CVE-2026-13060",
+        "CVE-2025-6706",
+        "CVE-2026-6915",
+        "CVE-2026-45447",
+        "CVE-2026-9753",
+        "CVE-2026-82070",
+        "CVE-2023-0215",
+        "CVE-2026-82058",
+        "CVE-2026-18688",
+        "CVE-2026-31790",
+        "CVE-2022-1343",
+        "CVE-2025-69418",
+        "CVE-2026-28390",
+        "CVE-2026-89099",
+        "CVE-2022-1292",
+        "CVE-2026-13070",
+        "CVE-2024-9143",
+        "CVE-2023-0401",
+        "CVE-2023-0464",
+        "CVE-2026-8200",
+        "CVE-2026-82076",
+        "CVE-2026-28389",
+        "CVE-2025-9231",
+        "CVE-2026-9748",
+        "CVE-2026-77696",
+        "CVE-2025-12893",
+        "CVE-2026-18697",
+        "CVE-2024-8305",
+        "CVE-2026-9751",
+        "CVE-2026-63072",
+        "CVE-2026-9740",
+        "CVE-2026-25610",
+        "CVE-2025-6709",
+        "CVE-2014-8180",
+        "CVE-2026-82075",
+        "CVE-2026-8053",
+        "CVE-2025-3085",
+        "CVE-2025-14847",
+        "CVE-2025-13643",
+        "CVE-2022-4450",
+        "CVE-2024-2511",
+        "CVE-2024-4603",
+        "CVE-2026-82056",
+        "CVE-2026-18700",
+        "CVE-2025-69421",
+        "CVE-2026-82060",
+        "CVE-2026-13077",
+        "CVE-2026-8202",
+        "CVE-2022-1473",
+        "CVE-2026-9741",
+        "CVE-2023-3817",
+        "CVE-2026-7383",
+        "CVE-2026-5170",
+        "CVE-2026-45446",
+        "CVE-2026-13078",
+        "CVE-2026-4358",
+        "CVE-2025-69420",
+        "CVE-2026-82066",
+        "CVE-2026-18707",
+        "CVE-2022-1434",
+        "CVE-2026-13055",
+        "CVE-2026-18696",
+        "CVE-2026-75805",
+        "CVE-2025-15467",
+        "CVE-2023-4807",
+        "CVE-2022-3358",
+        "CVE-2025-6710",
+        "CVE-2009-3765",
+        "CVE-2022-4304"
+      ],
+      "cpes": [
+        "cpe:/a:mongodb:mongodb:7.0.4",
+        "cpe:/a:redislabs:redis",
+        "cpe:/a:openssl:openssl:3.0.2"
+      ],
+      "hostnames": [
+        "www.microsoft.com",
+        "staticview.microsoft.com",
+        "microsoft.com",
+        "wwwqa.microsoft.com",
+        "privacy.microsoft.com",
+        "mail.submitnext.com",
+        "c.s-microsoft.com",
+        "sss.godday.top",
+        "i.s-microsoft.com"
+      ],
+      "tags": [
+        "mptcp",
+        "database",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:23Z"
+    },
+    "34.97.208.38": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2013-2765",
+        "CVE-2012-3526",
+        "CVE-2011-1176",
+        "CVE-2012-4360",
+        "CVE-2013-0941",
+        "CVE-2011-2688",
+        "CVE-2013-2220",
+        "CVE-2026-109618",
+        "CVE-2012-4001",
+        "CVE-2009-2299",
+        "CVE-2013-4365",
+        "CVE-2007-4723",
+        "CVE-2007-3205",
+        "CVE-2013-0942",
+        "CVE-2009-0796",
+        "CVE-2026-109619"
+      ],
+      "cpes": [
+        "cpe:/a:apache:http_server:2.4.69",
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:php:php:8.4.26"
+      ],
+      "hostnames": [
+        "38.208.97.34.bc.googleusercontent.com"
+      ],
+      "tags": [
+        "mptcp",
+        "pqc",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:23Z"
+    },
+    "43.155.218.168": {
+      "ports": [
+        22,
+        8000
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:oritera:cairn:0.2.1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:encode:uvicorn",
+        "cpe:/a:openbsd:openssh:8.2p1",
+        "cpe:/a:python:python"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:24Z"
+    },
+    "43.155.6.53": {
+      "ports": [
+        80
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.22.1"
+      ],
+      "hostnames": [],
+      "tags": [
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:24Z"
+    },
+    "106.14.98.248": {
+      "ports": [
+        22
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:24Z"
+    },
+    "121.36.63.40": {
+      "ports": [
+        22,
+        7777,
+        9999
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:autumn-27:artex",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [
+        "ecs-121-36-63-40.compute.hwclouds-dns.com"
+      ],
+      "tags": [
+        "ai"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:25Z"
+    },
+    "45.205.18.57": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2021-3618",
+        "CVE-2023-44487",
+        "CVE-2021-23017",
+        "CVE-2025-23419"
+      ],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.18.0",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:f5:nginx:1.22.1",
+        "cpe:/a:autumn-27:artex:goal-refresh-gateway-switch",
+        "cpe:/a:openbsd:openssh:8.9p1"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "eol-product",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:25Z"
+    },
+    "46.8.78.96": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:caddyserver:caddy",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:golang:go"
+      ],
+      "hostnames": [],
+      "tags": [
+        "mptcp",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:25Z"
+    },
+    "8.216.54.254": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [
+        "CVE-2025-23419",
+        "CVE-2023-44487"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [],
+      "tags": [
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:26Z"
+    },
+    "95.182.95.143": {
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:golang:go",
+        "cpe:/a:caddyserver:caddy"
+      ],
+      "hostnames": [],
+      "tags": [
+        "mptcp",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:26Z"
+    },
+    "147.185.221.216": {
+      "ports": [
+        5995,
+        12290,
+        32001,
+        45677
+      ],
+      "vulns": [
+        "CVE-2012-3526",
+        "CVE-2013-0941",
+        "CVE-2011-1176",
+        "CVE-2009-0796",
+        "CVE-2013-4365",
+        "CVE-2012-4001",
+        "CVE-2007-3205",
+        "CVE-2011-2688",
+        "CVE-2026-119618",
+        "CVE-2009-2299",
+        "CVE-2013-0942",
+        "CVE-2007-4723",
+        "CVE-2013-2220",
+        "CVE-2013-2765",
+        "CVE-2012-4360"
+      ],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:jquery:jquery",
+        "cpe:/a:php:php:8.2.35",
+        "cpe:/a:apache:http_server:2.4.69"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:26Z"
+    },
+    "108.174.56.169": {
+      "ports": [
+        3389
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "108-174-56-169-host.colocrossing.com"
+      ],
+      "tags": [
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:27Z"
+    },
+    "72.167.150.114": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:27Z"
+    },
+    "72.167.47.112": {
+      "ports": [
+        22,
+        80,
+        443,
+        2054,
+        8445,
+        9000
+      ],
+      "vulns": [
+        "CVE-2025-59775",
+        "CVE-2026-63718",
+        "CVE-2024-38477",
+        "CVE-2011-1176",
+        "CVE-2026-59685",
+        "CVE-2009-0796",
+        "CVE-2012-4360",
+        "CVE-2026-63292",
+        "CVE-2024-27316",
+        "CVE-2013-2765",
+        "CVE-2026-43951",
+        "CVE-2026-34355",
+        "CVE-2024-38472",
+        "CVE-2026-57941",
+        "CVE-2024-43394",
+        "CVE-2026-73637",
+        "CVE-2026-34356",
+        "CVE-2026-48913",
+        "CVE-2026-42356",
+        "CVE-2026-33006",
+        "CVE-2026-73636",
+        "CVE-2026-56449",
+        "CVE-2026-28780",
+        "CVE-2025-65082",
+        "CVE-2026-63045",
+        "CVE-2025-23048",
+        "CVE-2013-4365",
+        "CVE-2026-44186",
+        "CVE-2026-34059",
+        "CVE-2025-58098",
+        "CVE-2026-56153",
+        "CVE-2025-53020",
+        "CVE-2026-93546",
+        "CVE-2026-49975",
+        "CVE-2024-47252",
+        "CVE-2024-38475",
+        "CVE-2026-24072",
+        "CVE-2026-79768",
+        "CVE-2026-42528",
+        "CVE-2024-36387",
+        "CVE-2026-44185",
+        "CVE-2026-46729",
+        "CVE-2024-38474",
+        "CVE-2025-49630",
+        "CVE-2013-0942",
+        "CVE-2026-48005",
+        "CVE-2025-49812",
+        "CVE-2011-2688",
+        "CVE-2024-38473",
+        "CVE-2012-4001",
+        "CVE-2026-63686",
+        "CVE-2026-44119",
+        "CVE-2024-43204",
+        "CVE-2026-29169",
+        "CVE-2023-38709",
+        "CVE-2026-42535",
+        "CVE-2026-33523",
+        "CVE-2026-59797",
+        "CVE-2026-33007",
+        "CVE-2024-38476",
+        "CVE-2013-0941",
+        "CVE-2012-3526",
+        "CVE-2026-42536",
+        "CVE-2026-34032",
+        "CVE-2026-29170",
+        "CVE-2025-66200",
+        "CVE-2009-2299",
+        "CVE-2024-24795",
+        "CVE-2024-39573",
+        "CVE-2026-44631",
+        "CVE-2026-33857",
+        "CVE-2026-58415",
+        "CVE-2007-4723",
+        "CVE-2025-55753",
+        "CVE-2026-56154",
+        "CVE-2024-42516",
+        "CVE-2026-29167",
+        "CVE-2024-40898",
+        "CVE-2026-29168"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:apache:http_server:2.4.58",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "remoto.painelst.com",
+        "112.47.167.72.host.secureserver.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:27Z"
+    },
+    "39.107.109.15": {
+      "ports": [
+        443,
+        31337
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [
+        "c2",
+        "mptcp",
+        "pqc"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:27Z"
+    },
+    "3.104.114.248": {
+      "ports": [
+        22,
+        80,
+        443,
+        31337
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:f5:nginx",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:amazon:elastic_load_balancing"
+      ],
+      "hostnames": [
+        "ec2-3-104-114-248.ap-southeast-2.compute.amazonaws.com",
+        "advertisement-form.lb.jobfeed.test.education.nsw.gov.au"
+      ],
+      "tags": [
+        "c2",
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:28Z"
+    },
+    "104.234.50.67": {
+      "ports": [
+        22,
+        31337
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:debian:debian_linux",
+        "cpe:/a:openbsd:openssh:9.2p1",
+        "cpe:/o:linux:linux_kernel"
+      ],
+      "hostnames": [],
+      "tags": [
+        "c2"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:28Z"
+    },
+    "103.213.248.49": {
+      "ports": [
+        22,
+        8443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:28Z"
+    },
+    "154.84.17.148": {
+      "ports": [
+        80,
+        443,
+        3306,
+        4443,
+        6379,
+        8080,
+        8443,
+        8888,
+        17000
+      ],
+      "vulns": [
+        "CVE-2024-20971",
+        "CVE-2026-34317",
+        "CVE-2024-21197",
+        "CVE-2024-21101",
+        "CVE-2024-21231",
+        "CVE-2024-21196",
+        "CVE-2025-23419",
+        "CVE-2024-21199",
+        "CVE-2024-20981",
+        "CVE-2024-21236",
+        "CVE-2024-21207",
+        "CVE-2026-21964",
+        "CVE-2024-20965",
+        "CVE-2024-21166",
+        "CVE-2024-21055",
+        "CVE-2023-44487",
+        "CVE-2024-21203",
+        "CVE-2024-21198",
+        "CVE-2026-34318",
+        "CVE-2024-21237",
+        "CVE-2025-50096",
+        "CVE-2024-21247",
+        "CVE-2024-20961",
+        "CVE-2024-21218",
+        "CVE-2024-21200",
+        "CVE-2024-21193",
+        "CVE-2025-50099",
+        "CVE-2025-50078",
+        "CVE-2024-21157",
+        "CVE-2025-50080",
+        "CVE-2024-21194",
+        "CVE-2025-50088",
+        "CVE-2025-50079",
+        "CVE-2024-21127",
+        "CVE-2024-20969",
+        "CVE-2025-50085",
+        "CVE-2025-50104",
+        "CVE-2024-21069",
+        "CVE-2024-21201",
+        "CVE-2024-21159",
+        "CVE-2024-21230",
+        "CVE-2024-21165",
+        "CVE-2024-21137",
+        "CVE-2025-50091",
+        "CVE-2024-20973",
+        "CVE-2025-50086",
+        "CVE-2024-21238",
+        "CVE-2024-21163",
+        "CVE-2024-21096",
+        "CVE-2024-21134",
+        "CVE-2024-21239",
+        "CVE-2024-21173",
+        "CVE-2024-21129",
+        "CVE-2024-21062",
+        "CVE-2025-50087",
+        "CVE-2024-20985",
+        "CVE-2024-21162",
+        "CVE-2025-50100",
+        "CVE-2024-21130",
+        "CVE-2024-21102",
+        "CVE-2025-50083",
+        "CVE-2024-21047",
+        "CVE-2025-50093",
+        "CVE-2024-20977",
+        "CVE-2025-50084",
+        "CVE-2024-21125",
+        "CVE-2026-34319",
+        "CVE-2025-50102",
+        "CVE-2024-21241",
+        "CVE-2024-21219",
+        "CVE-2024-21061",
+        "CVE-2025-50082",
+        "CVE-2025-50077",
+        "CVE-2024-21213",
+        "CVE-2024-20967",
+        "CVE-2024-20996",
+        "CVE-2024-21212",
+        "CVE-2025-50098",
+        "CVE-2025-50101",
+        "CVE-2025-50097",
+        "CVE-2024-21160",
+        "CVE-2024-21171",
+        "CVE-2024-21142",
+        "CVE-2024-21087",
+        "CVE-2025-50092",
+        "CVE-2025-50081",
+        "CVE-2024-21135",
+        "CVE-2024-20963",
+        "CVE-2025-50076"
+      ],
+      "cpes": [
+        "cpe:/a:marked_project:marked",
+        "cpe:/a:aipentest:cyberstrikeai:1.7.24",
+        "cpe:/a:oracle:mysql:8.0.35",
+        "cpe:/a:f5:nginx:1.24.0"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "database",
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:29Z"
+    },
+    "192.253.229.28": {
+      "ports": [
+        22,
+        80,
+        888,
+        3000,
+        8080,
+        8083,
+        8443,
+        8787,
+        8788,
+        8790
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:10.2p1",
+        "cpe:/a:vxcontrol:pentagi",
+        "cpe:/a:autumn-27:artex",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:f5:nginx:1.27.5",
+        "cpe:/a:marked_project:marked",
+        "cpe:/a:aipentest:cyberstrikeai:1.7.24"
+      ],
+      "hostnames": [],
+      "tags": [
+        "ai",
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:29Z"
+    },
+    "64.83.43.184": {
+      "ports": [
+        22,
+        3389,
+        8787
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:29Z"
+    },
+    "23.97.11.141": {
+      "ports": [
+        22,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.1 PKIX%5b13.5%5d",
+        "cpe:/a:apache:http_server"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:30Z"
+    },
+    "146.56.164.121": {
+      "ports": [
+        22,
+        80,
+        81,
+        111,
+        443,
+        3389,
+        4444,
+        5900,
+        6379,
+        8000,
+        8080,
+        9091,
+        9443,
+        9999,
+        32400
+      ],
+      "vulns": [
+        "CVE-2026-44881",
+        "CVE-2025-23419",
+        "CVE-2021-41182",
+        "CVE-2023-44487",
+        "CVE-2026-44848",
+        "CVE-2022-31160",
+        "CVE-2026-55761",
+        "CVE-2021-41184",
+        "CVE-2021-3618",
+        "CVE-2026-44883",
+        "CVE-2021-41183"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.2p1",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:jqueryui:jquery_ui:1.12.1",
+        "cpe:/a:transmissionbt:transmission",
+        "cpe:/a:getbootstrap:bootstrap:3.4.1",
+        "cpe:/a:openresty:openresty",
+        "cpe:/a:angularjs:angularjs",
+        "cpe:/a:f5:nginx:1.20.1",
+        "cpe:/a:nodejs:node.js",
+        "cpe:/a:plex:media_server:1.41.9.9961",
+        "cpe:/a:f5:nginx",
+        "cpe:/a:portainer:portainer:2.39.1",
+        "cpe:/a:jquery:jquery",
+        "cpe:/a:socket:socket.io:::~~~node.js~~",
+        "cpe:/a:cloudflare:cloudflare",
+        "cpe:/a:getbootstrap:bootstrap:4"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:30Z"
+    },
+    "188.116.36.166": {
+      "ports": [
+        444,
+        587,
+        8008
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:postfix:postfix"
+      ],
+      "hostnames": [
+        "mail.hosttadminssec.sbs"
+      ],
+      "tags": [
+        "starttls"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:30Z"
+    },
+    "188.137.153.54": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:31Z"
+    },
+    "8.152.212.104": {
+      "ports": [
+        22,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:8.9p1",
+        "cpe:/a:apache:http_server",
+        "cpe:/a:helpsystems:cobalt_strike",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [
+        "cloud",
+        "self-signed"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:31Z"
+    },
+    "64.95.12.126": {
+      "ports": [
+        21,
+        22,
+        80
+      ],
+      "vulns": [
+        "CVE-2026-59797",
+        "CVE-2025-59775",
+        "CVE-2026-63718",
+        "CVE-2026-73636",
+        "CVE-2026-56449",
+        "CVE-2026-28780",
+        "CVE-2026-79768",
+        "CVE-2026-42528",
+        "CVE-2024-38477",
+        "CVE-2024-38475",
+        "CVE-2024-36387",
+        "CVE-2012-3526",
+        "CVE-2026-59685",
+        "CVE-2024-38476",
+        "CVE-2013-0941",
+        "CVE-2026-44185",
+        "CVE-2026-46729",
+        "CVE-2026-42536",
+        "CVE-2024-38474",
+        "CVE-2012-4360",
+        "CVE-2025-65082",
+        "CVE-2026-63045",
+        "CVE-2009-0796",
+        "CVE-2026-63292",
+        "CVE-2025-23048",
+        "CVE-2013-4365",
+        "CVE-2026-29170",
+        "CVE-2024-27316",
+        "CVE-2025-66200",
+        "CVE-2025-49630",
+        "CVE-2013-2765",
+        "CVE-2026-43951",
+        "CVE-2026-44186",
+        "CVE-2013-0942",
+        "CVE-2026-34355",
+        "CVE-2026-48005",
+        "CVE-2024-38472",
+        "CVE-2025-49812",
+        "CVE-2009-2299",
+        "CVE-2024-24795",
+        "CVE-2026-57941",
+        "CVE-2024-43394",
+        "CVE-2024-39573",
+        "CVE-2024-38473",
+        "CVE-2012-4001",
+        "CVE-2026-73637",
+        "CVE-2026-34356",
+        "CVE-2011-2688",
+        "CVE-2026-44631",
+        "CVE-2025-58098",
+        "CVE-2026-63686",
+        "CVE-2026-56153",
+        "CVE-2026-58415",
+        "CVE-2026-44119",
+        "CVE-2011-1176",
+        "CVE-2007-4723",
+        "CVE-2025-53020",
+        "CVE-2026-93546",
+        "CVE-2024-43204",
+        "CVE-2026-49975",
+        "CVE-2026-56154",
+        "CVE-2025-55753",
+        "CVE-2026-29169",
+        "CVE-2023-38709",
+        "CVE-2024-42516",
+        "CVE-2026-42535",
+        "CVE-2026-48913",
+        "CVE-2026-29167",
+        "CVE-2024-47252",
+        "CVE-2026-42356",
+        "CVE-2024-40898",
+        "CVE-2026-29168"
+      ],
+      "cpes": [
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:apache:http_server:2.4.58",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:31Z"
+    },
+    "208.109.36.32": {
+      "ports": [
+        21,
+        443
+      ],
+      "vulns": [
+        "CVE-2026-73637",
+        "CVE-2013-2765",
+        "CVE-2012-3526",
+        "CVE-2026-56153",
+        "CVE-2026-56154",
+        "CVE-2026-48005",
+        "CVE-2026-63718",
+        "CVE-2026-29167",
+        "CVE-2026-34356",
+        "CVE-2026-42356",
+        "CVE-2026-44185",
+        "CVE-2026-29168",
+        "CVE-2026-42535",
+        "CVE-2026-44119",
+        "CVE-2013-0942",
+        "CVE-2026-23918",
+        "CVE-2026-59797",
+        "CVE-2012-4360",
+        "CVE-2009-2299",
+        "CVE-2013-4365",
+        "CVE-2026-57941",
+        "CVE-2026-79768",
+        "CVE-2026-48913",
+        "CVE-2026-33523",
+        "CVE-2026-29170",
+        "CVE-2026-59685",
+        "CVE-2026-58415",
+        "CVE-2026-28780",
+        "CVE-2026-47360",
+        "CVE-2026-44631",
+        "CVE-2026-42536",
+        "CVE-2013-0941",
+        "CVE-2011-2688",
+        "CVE-2026-42528",
+        "CVE-2026-34032",
+        "CVE-2026-46729",
+        "CVE-2026-63686",
+        "CVE-2026-33857",
+        "CVE-2009-0796",
+        "CVE-2026-93546",
+        "CVE-2026-33006",
+        "CVE-2026-29169",
+        "CVE-2026-56449",
+        "CVE-2026-33007",
+        "CVE-2011-1176",
+        "CVE-2026-44186",
+        "CVE-2026-24072",
+        "CVE-2026-49975",
+        "CVE-2007-4723",
+        "CVE-2012-4001",
+        "CVE-2026-43951",
+        "CVE-2026-73636",
+        "CVE-2026-34059",
+        "CVE-2026-34355",
+        "CVE-2026-63292",
+        "CVE-2026-63045"
+      ],
+      "cpes": [
+        "cpe:/a:apache:http_server:2.4.66",
+        "cpe:/o:canonical:ubuntu_linux"
+      ],
+      "hostnames": [
+        "32.36.109.208.host.secureserver.net",
+        "123.190.202.64.host.secureserver.net"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:31Z"
+    },
+    "56.10.165.167": {
+      "ports": [
+        80,
+        443
+      ],
+      "vulns": [],
+      "cpes": [
+        "cpe:/a:nodejs:node.js",
+        "cpe:/a:expressjs:express",
+        "cpe:/a:amazon:elastic_load_balancing"
+      ],
+      "hostnames": [
+        "ec2-56-10-165-167.ap-southeast-1.compute.amazonaws.com",
+        "app.caasie.co"
+      ],
+      "tags": [
+        "cloud"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:32Z"
+    },
+    "54.234.120.33": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:32Z"
+    },
+    "5.255.119.202": {
+      "ports": [],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": true,
+      "checked_at": "2026-11-21T14:48:32Z"
+    },
+    "38.246.90.28": {
+      "ports": [
+        445
+      ],
+      "vulns": [
+        "CVE-2020-0796"
+      ],
+      "cpes": [],
+      "hostnames": [],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:33Z"
+    },
+    "223.235.244.225": {
+      "ports": [
+        6008
+      ],
+      "vulns": [],
+      "cpes": [],
+      "hostnames": [
+        "abts-north-dynamic-225.244.235.223.airtelbroadband.in"
+      ],
+      "tags": [],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:33Z"
+    },
+    "196.188.116.63": {
+      "ports": [
+        22,
+        80,
+        443,
+        5432,
+        8000,
+        8080,
+        31337
+      ],
+      "vulns": [
+        "CVE-2026-6790",
+        "CVE-2024-6763",
+        "CVE-2025-5115",
+        "CVE-2025-23419",
+        "CVE-2023-44487",
+        "CVE-2026-2332",
+        "CVE-2026-5795",
+        "CVE-2024-13009",
+        "CVE-2024-8184",
+        "CVE-2026-10050",
+        "CVE-2024-22201",
+        "CVE-2023-36478",
+        "CVE-2024-9823",
+        "CVE-2025-11143"
+      ],
+      "cpes": [
+        "cpe:/a:eclipse:jetty:9.4.52",
+        "cpe:/o:canonical:ubuntu_linux",
+        "cpe:/a:openbsd:openssh:9.6p1",
+        "cpe:/a:f5:nginx:1.24.0",
+        "cpe:/a:oracle:jre",
+        "cpe:/o:linux:linux_kernel",
+        "cpe:/a:postgresql:postgresql:18"
+      ],
+      "hostnames": [
+        "disaster.ssgi.gov.et"
+      ],
+      "tags": [
+        "c2",
+        "database",
+        "self-signed",
+        "eol-product"
+      ],
+      "no_data": false,
+      "checked_at": "2026-11-21T14:48:33Z"
     }
   }
 }
