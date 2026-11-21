@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-21T02:43:49Z",
+  "generated_at": "2026-11-21T10:49:12Z",
   "victims": [
+    {
+      "group": "Inception",
+      "victim": "Lucid Motors",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-21T02:51:53.714936+00:00",
+      "domain": "lucidmotors.com",
+      "url": "https://www.ransomware.live/id/THVjaWQgTW90b3JzQEluY2VwdGlvbg=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "MT5 algo-trading farm (OneFunded funded account, WINSERVER)",
+      "country": "",
+      "sector": "Financial Services",
+      "published": "2026-11-20T22:54:54.318905+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TVQ1IGFsZ28tdHJhZGluZyBmYXJtIChPbmVGdW5kZWQgZnVuZGVkIGFjY291bnQsIFdJTlNFUlZFUilAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "bastion.internal domain controller (GCP, GRATEFUL-V1)",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-20T22:54:34.550842+00:00",
+      "domain": "bastion.internal",
+      "url": "https://www.ransomware.live/id/YmFzdGlvbi5pbnRlcm5hbCBkb21haW4gY29udHJvbGxlciAoR0NQLCBHUkFURUZVTC1WMSlAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Aixia Group AB (Nasdaq-listed AI/IT, Sweden)",
+      "country": "SE",
+      "sector": "Technology",
+      "published": "2026-11-20T22:54:13.528875+00:00",
+      "domain": "aixia.se",
+      "url": "https://www.ransomware.live/id/QWl4aWEgR3JvdXAgQUIgKE5hc2RhcS1saXN0ZWQgQUkvSVQsIFN3ZWRlbilAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Kingsport Cargo (logistics, Laravel intranet)",
+      "country": "",
+      "sector": "Transportation",
+      "published": "2026-11-20T22:53:53.828949+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S2luZ3Nwb3J0IENhcmdvIChsb2dpc3RpY3MsIExhcmF2ZWwgaW50cmFuZXQpQFBpeGVsTGVha3M="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Arab Software Computer / ASCON (Oracle ERP hosting, Alexandria)",
+      "country": "EG",
+      "sector": "Technology",
+      "published": "2026-11-20T22:53:33.817534+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QXJhYiBTb2Z0d2FyZSBDb21wdXRlciAvIEFTQ09OIChPcmFjbGUgRVJQIGhvc3RpbmcsIEFsZXhhbmRyaWEpQFBpeGVsTGVha3M="
+    },
     {
       "group": "medusalocker",
       "victim": "Lee Memorial Health System",
@@ -25,7 +79,7 @@
       "country": "FR",
       "sector": "Other",
       "published": "2026-11-20T22:03:33.625170+00:00",
-      "domain": "",
+      "domain": "allafrance.com",
       "url": "https://www.ransomware.live/id/QWxsYSBGcmFuY2VAZXZlcmVzdA=="
     },
     {
@@ -34,7 +88,7 @@
       "country": "",
       "sector": "Healthcare",
       "published": "2026-11-20T22:02:57.555361+00:00",
-      "domain": "",
+      "domain": "ablbio.com",
       "url": "https://www.ransomware.live/id/QUJMIEJpb0BldmVyZXN0"
     },
     {
@@ -43,7 +97,7 @@
       "country": "NO",
       "sector": "Technology",
       "published": "2026-11-20T22:02:21.373593+00:00",
-      "domain": "",
+      "domain": "vizrt.com",
       "url": "https://www.ransomware.live/id/Vml6cnRAZXZlcmVzdA=="
     },
     {
@@ -70,7 +124,7 @@
       "country": "IN",
       "sector": "Energy & Utilities",
       "published": "2026-11-20T20:31:59.393560+00:00",
-      "domain": "",
+      "domain": "rayspowerinfra.com",
       "url": "https://www.ransomware.live/id/UmF5cyBQb3dlciBJbmZyYUBldmVyZXN0"
     },
     {
@@ -97,7 +151,7 @@
       "country": "",
       "sector": "Technology",
       "published": "2026-11-20T21:35:54.832299+00:00",
-      "domain": "",
+      "domain": "accuver.com",
       "url": "https://www.ransomware.live/id/QWNjdXZlckBldmVyZXN0"
     },
     {
@@ -106,7 +160,7 @@
       "country": "US",
       "sector": "Professional Services",
       "published": "2026-11-20T19:30:55.914976+00:00",
-      "domain": "",
+      "domain": "bk-lawgroup.com",
       "url": "https://www.ransomware.live/id/QksgTGF3IEdyb3VwIExMQ0ByaHlzaWRh"
     },
     {
@@ -142,7 +196,7 @@
       "country": "GA",
       "sector": "Government & Defense",
       "published": "2026-11-20T14:30:00.896327+00:00",
-      "domain": "",
+      "domain": "clarkesvillega.com",
       "url": "https://www.ransomware.live/id/Q2xhcmtlc3ZpbGxlIFBvbGljZSBEZXBhcnRtZW50LCBDaXR5IG9mIENsYXJrZXN2aWxsZUByaHlzaWRh"
     },
     {
@@ -210,6 +264,15 @@
     },
     {
       "group": "Whitearmor",
+      "victim": "DROP 1 — CASANARE, PAJONAL, PUTUMAYO AND URUS — 8,000 PATIENTS, 4,000 INVOICES, 7,733 CRED...",
+      "country": "CO",
+      "sector": "Healthcare",
+      "published": "2026-11-20T23:54:37.944830+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RFJPUCAxIOKAlCBDQVNBTkFSRSwgUEFKT05BTCwgUFVUVU1BWU8gQU5EIFVSVVMg4oCUIDgsMDAwIFBBVElFTlRTLCA0LDAwMCBJTlZPSUNFUywgNyw3MzMgQ1JFRC4uLkBXaGl0ZWFybW9y"
+    },
+    {
+      "group": "Whitearmor",
       "victim": "DROP 1 — ALL FOUR CLINICS — 8,000 PATIENTS, 4,000 INVOICES, 7,733 CREDENTIALS",
       "country": "",
       "sector": "Healthcare",
@@ -259,7 +322,7 @@
       "country": "US",
       "sector": "Professional Services",
       "published": "2026-11-19T22:18:36.758069+00:00",
-      "domain": "",
+      "domain": "rudolphjass.com",
       "url": "https://www.ransomware.live/id/UnVkb2xwaCBGLiBKYXNzLCBKci4sIFBMTENAcmh5c2lkYQ=="
     },
     {
@@ -837,69 +900,6 @@
       "published": "2026-11-18T22:09:59.545128+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM0QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #233",
-      "country": "MX",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:09:17.924125+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjMzQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #232",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:08:40.493365+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjMyQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #231",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:08:00.252653+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjMxQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #230",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:07:23.536233+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjMwQE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #229",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:06:46.914060+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjI5QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #228",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:06:09.536229+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjI4QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #227",
-      "country": "GB",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:05:31.990277+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjI3QE4wbg=="
     }
   ]
 }
