@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-21T10:49:12Z",
+  "generated_at": "2026-11-21T17:55:54Z",
   "victims": [
+    {
+      "group": "lockbit5",
+      "victim": "genica.com.ve",
+      "country": "VE",
+      "sector": "Other",
+      "published": "2026-11-21T11:33:10.619514+00:00",
+      "domain": "genica.com.ve",
+      "url": "https://www.ransomware.live/id/Z2VuaWNhLmNvbS52ZUBsb2NrYml0NQ=="
+    },
+    {
+      "group": "Barracuda",
+      "victim": "Dallas Fort Worth Fertility Associates",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-21T07:55:50.636176+00:00",
+      "domain": "dallasivf.com",
+      "url": "https://www.ransomware.live/id/RGFsbGFzIEZvcnQgV29ydGggRmVydGlsaXR5IEFzc29jaWF0ZXNAQmFycmFjdWRh"
+    },
     {
       "group": "Inception",
       "victim": "Lucid Motors",
@@ -9,6 +27,15 @@
       "published": "2026-11-21T02:51:53.714936+00:00",
       "domain": "lucidmotors.com",
       "url": "https://www.ransomware.live/id/THVjaWQgTW90b3JzQEluY2VwdGlvbg=="
+    },
+    {
+      "group": "Eclipse",
+      "victim": "Realta Technologies",
+      "country": "IE",
+      "sector": "Technology",
+      "published": "2026-11-21T06:51:14.122301+00:00",
+      "domain": "www.realtatechnologies.com",
+      "url": "https://www.ransomware.live/id/UmVhbHRhIFRlY2hub2xvZ2llc0BFY2xpcHNl"
     },
     {
       "group": "PixelLeaks",
@@ -713,6 +740,15 @@
       "url": "https://www.ransomware.live/id/YWx1bWlsLmNvbUBrcnliaXQ="
     },
     {
+      "group": "pear",
+      "victim": "Law Office of Ronald D. Weiss, P.C",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-21T07:26:34.082583+00:00",
+      "domain": "ny-bankruptcy.com",
+      "url": "https://www.ransomware.live/id/TGF3IE9mZmljZSBvZiBSb25hbGQgRC4gV2Vpc3MsIFAuQ0BwZWFy"
+    },
+    {
       "group": "aurora",
       "victim": "William Cook Holdings Limited",
       "country": "GB",
@@ -864,42 +900,6 @@
       "published": "2026-11-18T22:12:27.968467+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM4QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #237",
-      "country": "MX",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:11:51.685721+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM3QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #236",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:11:12.846302+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM2QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #235",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:10:36.141339+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM1QE4wbg=="
-    },
-    {
-      "group": "N0n",
-      "victim": "Company #234",
-      "country": "GB",
-      "sector": "Not Found",
-      "published": "2026-11-18T22:09:59.545128+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjM0QE4wbg=="
     }
   ]
 }

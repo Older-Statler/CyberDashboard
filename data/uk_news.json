@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T10:49:12Z",
+  "generated_at": "2026-11-21T17:55:55Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 11
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 5
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 8
+      "count": 4
     },
     {
       "name": "The Guardian",
@@ -30,12 +30,12 @@
     {
       "name": "ITPro",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -216,102 +216,6 @@
       "published": "2026-11-19T18:52:53Z",
       "summary": "Ransomware group sets a deadline for the chipmaker to pay up - or see its data leaked",
       "uk_focus": false
-    },
-    {
-      "title": "Cold Relic: What you need to know",
-      "link": "https://www.fortra.com/blog/cold-relic-what-you-need-know",
-      "source": "Graham Cluley",
-      "published": "2026-11-19T17:10:29Z",
-      "summary": "A Russian spy group is breaking into organisations by pretending to be people they already trust. Meet Cold Relic, the hackers formerly known as COLDRIVER. Read more in my article on the Fortra blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
-      "link": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126",
-      "source": "The Register",
-      "published": "2026-11-19T16:20:00Z",
-      "summary": "DoJ claims suspect part of 4-month operation to steal secrets, surveil employees",
-      "uk_focus": false
-    },
-    {
-      "title": "CyberPower PowerPanel Exploited to Run Malicious Code on Domain Controller",
-      "link": "https://www.infosecurity-magazine.com/news/ups-software-abused-domain/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-19T15:30:00Z",
-      "summary": "Symantec found an attacker using CyberPower’s UPS software to run scripts on a domain controller",
-      "uk_focus": false
-    },
-    {
-      "title": "PHP Releases Patches to Fix 18 Vulnerabilities",
-      "link": "https://www.infosecurity-magazine.com/news/php-releases-patches-fix-18/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-19T15:28:00Z",
-      "summary": "PHP has released security updates addressing 18 vulnerabilities, including critical remote code execution flaws affecting session handling",
-      "uk_focus": false
-    },
-    {
-      "title": "European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline",
-      "link": "https://www.infosecurity-magazine.com/news/commission-ai-attack-systems/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-19T14:45:00Z",
-      "summary": "The European Commission said the attack targeted “individual systems”, with reports that attackers leveraged ARTEX in the campaign",
-      "uk_focus": false
-    },
-    {
-      "title": "AI red team tool Artex likely behind cyber attack on EU body",
-      "link": "https://www.computerweekly.com/news/366654974/AI-red-team-tool-Artex-likely-behind-cyber-attack-on-EU-body",
-      "source": "Computer Weekly",
-      "published": "2026-11-19T12:42:00Z",
-      "summary": "European Union says an attack on its executive body’s HR systems was likely orchestrated by Artex, an open source AI penetration testing framework that has found favour among threat actors",
-      "uk_focus": false
-    },
-    {
-      "title": "Over 250,000 Londoners affected by latest TfL breach",
-      "link": "https://www.computerweekly.com/news/366654973/Over-250000-Londoners-affected-by-latest-TfL-breach",
-      "source": "Computer Weekly",
-      "published": "2026-11-19T12:14:00Z",
-      "summary": "Users of TfL Oyster photocards have become embroiled in a data breach after the transport operator’s systems were compromised",
-      "uk_focus": false
-    },
-    {
-      "title": "Ukrainian police arrest former members of Conti ransomware group",
-      "link": "https://www.computerweekly.com/news/366654831/Ukrainian-police-arrest-former-members-of-Conti-ransomware-group",
-      "source": "Computer Weekly",
-      "published": "2026-11-19T12:10:00Z",
-      "summary": "Ukrainian police have arrested four cyber criminals, who they claim are previously linked to the activities of the Conti ransomware group. The techniques mentioned refer to two possible further subgroups",
-      "uk_focus": false
-    },
-    {
-      "title": "Financial watchdogs urge banks to bolster cyber resilience",
-      "link": "https://www.itpro.com/security/cyber-attacks/financial-watchdogs-urge-banks-to-bolster-cyber-resilience",
-      "source": "ITPro",
-      "published": "2026-11-19T11:53:43Z",
-      "summary": "Banks and insurers advised to adopt board-level responsibility for cyber",
-      "uk_focus": false
-    },
-    {
-      "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
-      "link": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979",
-      "source": "The Register",
-      "published": "2026-11-19T11:45:00Z",
-      "summary": "Minister calls notification delay 'not acceptable' after October attack on Irish banking player Wellington IT came to light in November",
-      "uk_focus": false
-    },
-    {
-      "title": "TfL Warns 265,000 Photocard Customers May Have Had Personal Data Exposed",
-      "link": "https://www.infosecurity-magazine.com/news/tfl-customers-personal-data-exposed/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-19T11:35:00Z",
-      "summary": "London’s transport body was alerted to the incident after emails were sent from TfL’s system to Oyster Photocard customers",
-      "uk_focus": true
-    },
-    {
-      "title": "TfL takes Oyster photocard website offline after attackers compromise customer accounts",
-      "link": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-attackers-compromise-customer-accounts/5310985",
-      "source": "The Register",
-      "published": "2026-11-19T11:01:00Z",
-      "summary": "Around 265,000 customers potentially affected as London transport operator grapples with another security breach",
-      "uk_focus": true
     }
   ]
 }
