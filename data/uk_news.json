@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T18:22:39Z",
+  "generated_at": "2026-11-22T23:45:30Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 3
+      "count": 0
     },
     {
       "name": "Computer Weekly",
@@ -34,13 +34,14 @@
     },
     {
       "name": "Graham Cluley",
-      "status": "ok",
-      "count": 1
+      "status": "error",
+      "count": 0,
+      "error": "mismatched tag: line 51, column 2"
     },
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Tech Monitor",
@@ -48,46 +49,5 @@
       "count": 0
     }
   ],
-  "items": [
-    {
-      "title": "PHP 8.6: Things are gonna get a lot more strict around here",
-      "link": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486",
-      "source": "The Register",
-      "published": "2026-11-20T23:28:47Z",
-      "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
-      "uk_focus": false
-    },
-    {
-      "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478",
-      "source": "The Register",
-      "published": "2026-11-20T21:27:56Z",
-      "summary": "No financial details, but plenty of other clues",
-      "uk_focus": false
-    },
-    {
-      "title": "Signal slams door on prying AI agents to protect privacy",
-      "link": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466",
-      "source": "The Register",
-      "published": "2026-11-20T20:42:04Z",
-      "summary": "Apple, Google, and Microsoft called out for failing to provide developers with adequate AI agent controls",
-      "uk_focus": false
-    },
-    {
-      "title": "White House removes cyber-security chief after series of tech outages",
-      "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-20T19:03:56Z",
-      "summary": "He has been fired after losing the confidence of new White House chief of staff Stephen Miller, according to reports.",
-      "uk_focus": false
-    },
-    {
-      "title": "n0n extortion gang leaks data of JPMorgan Chase, Visa, and Mastercard customers",
-      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/n0n-extortion-leaks-data-jpmorgan-chase-visa-mastercard",
-      "source": "Graham Cluley",
-      "published": "2026-11-20T18:57:38Z",
-      "summary": "Data belonging to customers of three of the biggest companies in global finance has been leaked online, after hackers breached third-party service providers working for JPMorgan Chase, Visa, and Mastercard. Read more in my article on the Hot for Security blog.",
-      "uk_focus": false
-    }
-  ]
+  "items": []
 }

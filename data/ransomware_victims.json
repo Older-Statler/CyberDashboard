@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-11-22T18:22:38Z",
+  "generated_at": "2026-11-22T23:45:29Z",
   "victims": [
+    {
+      "group": "direwolf",
+      "victim": "EconSys",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-22T15:07:43.161292+00:00",
+      "domain": "econsys.com",
+      "url": "https://www.ransomware.live/id/RWNvblN5c0BkaXJld29sZg=="
+    },
     {
       "group": "HYFLOCK",
       "victim": "Samsung Group: 1TB Data Breach from Ransomware Attack",
@@ -45,6 +54,15 @@
       "published": "2026-11-22T07:22:04.482665+00:00",
       "domain": "udoym.edu.do",
       "url": "https://www.ransomware.live/id/RGF0YSBCcmVhY2ggYXQgTyZNIFVuaXZlcnNpdHkgaW4gdGhlIERvbWluaWNhbiBSZXB1YmxpY0BIWUZMT0NL"
+    },
+    {
+      "group": "qilin",
+      "victim": "Viapan Group",
+      "country": "HU",
+      "sector": "Other",
+      "published": "2026-11-22T19:36:08.022823+00:00",
+      "domain": "www.viapan.hu/hu",
+      "url": "https://www.ransomware.live/id/VmlhcGFuIEdyb3VwQHFpbGlu"
     },
     {
       "group": "qilin",
@@ -882,24 +900,6 @@
       "published": "2026-11-19T03:51:04.582712+00:00",
       "domain": "www.sleepboxbymiracle.com",
       "url": "https://www.ransomware.live/id/d3d3LnNsZWVwYm94YnltaXJhY2xlLmNvbUBrcnliaXQ="
-    },
-    {
-      "group": "incransom",
-      "victim": "eni.it",
-      "country": "IT",
-      "sector": "Energy & Utilities",
-      "published": "2026-11-20T04:42:22.567715+00:00",
-      "domain": "eni.it",
-      "url": "https://www.ransomware.live/id/ZW5pLml0QGluY3JhbnNvbQ=="
-    },
-    {
-      "group": "krybit",
-      "victim": "www.leadersaluminium.ae",
-      "country": "AE",
-      "sector": "Manufacturing",
-      "published": "2026-11-19T01:57:18.197956+00:00",
-      "domain": "www.leadersaluminium.ae",
-      "url": "https://www.ransomware.live/id/d3d3LmxlYWRlcnNhbHVtaW5pdW0uYWVAa3J5Yml0"
     }
   ]
 }
