@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T22:56:56Z",
+  "generated_at": "2026-11-22T02:55:31Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 9
+      "count": 7
     },
     {
       "name": "Computer Weekly",
@@ -40,7 +40,7 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "name": "Tech Monitor",
@@ -176,30 +176,6 @@
       "published": "2026-11-20T09:00:00Z",
       "summary": "Cisco Talos tied a RAT that hides C2 on Solana and survives Windows resets to UAT-12643",
       "uk_focus": false
-    },
-    {
-      "title": "Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else",
-      "link": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193",
-      "source": "The Register",
-      "published": "2026-11-20T00:57:45Z",
-      "summary": "Critical Virtzilla bugs allow authentication bypass, as a nested virtualization issue got Digital Ocean ducking",
-      "uk_focus": false
-    },
-    {
-      "title": "Germ Network infects Android, but in a good way",
-      "link": "https://www.theregister.com/security/2026/11/20/germ-network-infects-android-but-in-a-good-way/5311186",
-      "source": "The Register",
-      "published": "2026-11-20T00:06:35Z",
-      "summary": "Bluesky's preferred encrypted messaging app allows multiple identities without tying you to a phone number",
-      "uk_focus": false
-    },
-    {
-      "title": "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
-      "link": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-20T00:02:07Z",
-      "summary": "Supermarkets, warehouses, restaurants and stadiums have been scrambling to make their devices safe.",
-      "uk_focus": true
     }
   ]
 }

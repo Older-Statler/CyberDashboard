@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-11-21T22:56:56Z",
+  "generated_at": "2026-11-22T02:55:30Z",
   "victims": [
+    {
+      "group": "medusalocker",
+      "victim": "F5A",
+      "country": "MF",
+      "sector": "Technology",
+      "published": "2026-11-21T22:16:49.906231+00:00",
+      "domain": "f5a.mf",
+      "url": "https://www.ransomware.live/id/RjVBQG1lZHVzYWxvY2tlcg=="
+    },
     {
       "group": "safepay",
       "victim": "tiic.com.ph",
@@ -891,15 +900,6 @@
       "published": "2026-11-19T10:37:50.130656+00:00",
       "domain": "Boulart Inc.",
       "url": "https://www.ransomware.live/id/Qm91bGFydCBJbmMuQGF1cm9yYQ=="
-    },
-    {
-      "group": "Vortex",
-      "victim": "TrueBlue",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-19T10:35:47.427972+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VHJ1ZUJsdWVAVm9ydGV4"
     }
   ]
 }
