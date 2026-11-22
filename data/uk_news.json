@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:57:04Z",
+  "generated_at": "2026-11-22T18:22:39Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,22 +10,22 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 7
+      "count": 3
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 0
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 3
+      "count": 0
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "ITPro",
@@ -87,86 +87,6 @@
       "source": "Graham Cluley",
       "published": "2026-11-20T18:57:38Z",
       "summary": "Data belonging to customers of three of the biggest companies in global finance has been leaked online, after hackers breached third-party service providers working for JPMorgan Chase, Visa, and Mastercard. Read more in my article on the Hot for Security blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "UK operation wards off risk of cyber-attack on supermarket fridges and freezers",
-      "link": "https://www.theguardian.com/technology/2026/nov/20/cybersecurity-operation-thwarts-attack-on-uk-supermarket-fridges-and-freezers",
-      "source": "The Guardian",
-      "published": "2026-11-20T18:06:52Z",
-      "summary": "News of vulnerability comes after retailers in at least seven European countries hit by cyber-attacks A secret government cybersecurity operation recently warded off the risk of a cyber-attack on fridges and freezers in UK supermarkets, warehouses, restaurants, petrol stations…",
-      "uk_focus": true
-    },
-    {
-      "title": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
-      "link": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
-      "source": "The Register",
-      "published": "2026-11-20T17:30:00Z",
-      "summary": "'Agents kept adapting for nearly a full day without human direction,' Amazon CISO said",
-      "uk_focus": false
-    },
-    {
-      "title": "Dutch data watchdog highlights safety issues with AI glasses",
-      "link": "https://www.theregister.com/security/2026/11/20/dutch-data-watchdog-highlights-safety-issues-with-ai-glasses/5311345",
-      "source": "The Register",
-      "published": "2026-11-20T16:44:00Z",
-      "summary": "Devices found to misinterpret medication instructions and other scenarios impacting human safety",
-      "uk_focus": false
-    },
-    {
-      "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
-      "link": "https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-20T16:15:00Z",
-      "summary": "Ransomware actor N0n has claimed attacks on JPMorgan, Visa and Mastercard, reportedly leaking customer data on its dark web site",
-      "uk_focus": false
-    },
-    {
-      "title": "Ransomware Recovery Takes 20 Days for the Typical Victim, Report Finds",
-      "link": "https://www.infosecurity-magazine.com/news/ransomware-recovery-20-days/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-20T14:15:00Z",
-      "summary": "A new Rubrik report has shown that ransomware victims face 20-day median recovery time, with 28% of recovery cases taking longer than six weeks",
-      "uk_focus": false
-    },
-    {
-      "title": "FCA lines up new cyber guidance for UK financial services sector",
-      "link": "https://www.computerweekly.com/news/366655173/FCA-lines-up-new-cyber-guidance-for-UK-financial-services-sector",
-      "source": "Computer Weekly",
-      "published": "2026-11-20T12:25:00Z",
-      "summary": "Citing an increasing volume of cyber attacks and the risks associated with AI and quantum, the Financial Conduct Authority embarks on a consultation seeking input into new cyber guidance for the financial services industry in the UK.",
-      "uk_focus": true
-    },
-    {
-      "title": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
-      "link": "https://www.theregister.com/security/2026/11/20/spy-court-blasts-uk-secrecy-forces-government-to-admit-apple-backdoor-demand/5311292",
-      "source": "The Register",
-      "published": "2026-11-20T12:18:19Z",
-      "summary": "Notice's existence can be acknowledged without harming national security, but its precise demands remain under wraps",
-      "uk_focus": true
-    },
-    {
-      "title": "Ransomware: What we know about the arrests of Chaos affiliates",
-      "link": "https://www.computerweekly.com/news/366655193/Ransomware-What-we-know-about-the-arrests-of-Chaos-affiliates",
-      "source": "Computer Weekly",
-      "published": "2026-11-20T12:10:00Z",
-      "summary": "The Ukrainian authorities have shared more details about four arrests of ransomware gang members associated with the defunct Conti crew",
-      "uk_focus": false
-    },
-    {
-      "title": "Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams",
-      "link": "https://www.infosecurity-magazine.com/news/mail-bombing-attacks-it-helpdesk/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-20T11:55:00Z",
-      "summary": "Researchers have uncovered a large-scale campaign in which attackers flood inboxes with emails before impersonating IT helpdesk staff to gain access to user accounts",
-      "uk_focus": false
-    },
-    {
-      "title": "Windows 11 passkey bug cries failure after successful sign-in",
-      "link": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263",
-      "source": "The Register",
-      "published": "2026-11-20T11:09:44Z",
-      "summary": "Optional update fixes misleading Android error for versions 25H2 and 26H2",
       "uk_focus": false
     }
   ]
