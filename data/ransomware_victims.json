@@ -1,6 +1,78 @@
 {
-  "generated_at": "2026-11-22T23:45:29Z",
+  "generated_at": "2026-11-23T06:53:28Z",
   "victims": [
+    {
+      "group": "medusalocker",
+      "victim": "Lee Health (Lee Memorial Health System) - partner clinic",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-22T23:24:10.654635+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TGVlIEhlYWx0aCAoTGVlIE1lbW9yaWFsIEhlYWx0aCBTeXN0ZW0pIC0gcGFydG5lciBjbGluaWNAbWVkdXNhbG9ja2Vy"
+    },
+    {
+      "group": "N0n",
+      "victim": "Company #243",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-22T22:52:59.422318+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjQzQE4wbg=="
+    },
+    {
+      "group": "N0n",
+      "victim": "Company #242",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-22T22:52:21.842257+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjQyQE4wbg=="
+    },
+    {
+      "group": "medusalocker",
+      "victim": "Moreth",
+      "country": "DE",
+      "sector": "Not Found",
+      "published": "2026-11-22T22:41:43.275087+00:00",
+      "domain": "moreth.com",
+      "url": "https://www.ransomware.live/id/TW9yZXRoQG1lZHVzYWxvY2tlcg=="
+    },
+    {
+      "group": "medusalocker",
+      "victim": "BASABAH",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-22T22:41:10.624989+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QkFTQUJBSEBtZWR1c2Fsb2NrZXI="
+    },
+    {
+      "group": "Panzer",
+      "victim": "Agenzia Agorà Società Cooperativa Sociale",
+      "country": "IT",
+      "sector": "Other",
+      "published": "2026-11-22T22:55:38.559384+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QWdlbnppYSBBZ29yw6AgU29jaWV0w6AgQ29vcGVyYXRpdmEgU29jaWFsZUBQYW56ZXI="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "East Jerusalem food distribution firm (AlArabi InterBase accounting estate)",
+      "country": "PS",
+      "sector": "Agriculture and Food Production",
+      "published": "2026-11-22T22:20:00.521765+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RWFzdCBKZXJ1c2FsZW0gZm9vZCBkaXN0cmlidXRpb24gZmlybSAoQWxBcmFiaSBJbnRlckJhc2UgYWNjb3VudGluZyBlc3RhdGUpQFBpeGVsTGVha3M="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Indian railway Tatkal booking agency (licensed booking bot operator)",
+      "country": "IN",
+      "sector": "Transportation",
+      "published": "2026-11-22T22:19:40.528000+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SW5kaWFuIHJhaWx3YXkgVGF0a2FsIGJvb2tpbmcgYWdlbmN5IChsaWNlbnNlZCBib29raW5nIGJvdCBvcGVyYXRvcilAUGl4ZWxMZWFrcw=="
+    },
     {
       "group": "direwolf",
       "victim": "EconSys",
@@ -54,6 +126,15 @@
       "published": "2026-11-22T07:22:04.482665+00:00",
       "domain": "udoym.edu.do",
       "url": "https://www.ransomware.live/id/RGF0YSBCcmVhY2ggYXQgTyZNIFVuaXZlcnNpdHkgaW4gdGhlIERvbWluaWNhbiBSZXB1YmxpY0BIWUZMT0NL"
+    },
+    {
+      "group": "Scarlettgroup",
+      "victim": "chu-bordeaux.fr",
+      "country": "FR",
+      "sector": "Healthcare",
+      "published": "2026-11-22T23:09:04.650903+00:00",
+      "domain": "chu-bordeaux.fr",
+      "url": "https://www.ransomware.live/id/Y2h1LWJvcmRlYXV4LmZyQFNjYXJsZXR0Z3JvdXA="
     },
     {
       "group": "qilin",
@@ -819,87 +900,6 @@
       "published": "2026-11-19T13:57:49.431551+00:00",
       "domain": "credipaz.com",
       "url": "https://www.ransomware.live/id/Q1JFREktUEFaIFMuQS5AU291bEdyb3Vw"
-    },
-    {
-      "group": "SoulGroup",
-      "victim": "Biomed International Products Corp.",
-      "country": "CA",
-      "sector": "Healthcare",
-      "published": "2026-11-19T13:57:04.114676+00:00",
-      "domain": "biomedicine.com",
-      "url": "https://www.ransomware.live/id/QmlvbWVkIEludGVybmF0aW9uYWwgUHJvZHVjdHMgQ29ycC5AU291bEdyb3Vw"
-    },
-    {
-      "group": "SoulGroup",
-      "victim": "Egyptian Steel Company",
-      "country": "EG",
-      "sector": "Manufacturing",
-      "published": "2026-11-19T13:56:19.109164+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RWd5cHRpYW4gU3RlZWwgQ29tcGFueUBTb3VsR3JvdXA="
-    },
-    {
-      "group": "Whitearmor",
-      "victim": "Clinica Pajonal - Clinica Urus - Clinica Putumayo - Clinicia Casanare | MoMentum Holding —...",
-      "country": "CO",
-      "sector": "Healthcare",
-      "published": "2026-11-19T14:04:46.389268+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q2xpbmljYSBQYWpvbmFsIC0gQ2xpbmljYSBVcnVzIC0gQ2xpbmljYSBQdXR1bWF5byAtIENsaW5pY2lhIENhc2FuYXJlIHwgTW9NZW50dW0gSG9sZGluZyDigJQuLi5AV2hpdGVhcm1vcg=="
-    },
-    {
-      "group": "fulcrumsec",
-      "victim": "Ginkgo Bioworks",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-11-19T11:08:48.224566+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/R2lua2dvIEJpb3dvcmtzQGZ1bGNydW1zZWM="
-    },
-    {
-      "group": "HYFLOCK",
-      "victim": "Piz'wich Data Breach",
-      "country": "FR",
-      "sector": "Hospitality",
-      "published": "2026-11-19T11:24:24.424590+00:00",
-      "domain": "pizwich.com",
-      "url": "https://www.ransomware.live/id/UGl6J3dpY2ggRGF0YSBCcmVhY2hASFlGTE9DSw=="
-    },
-    {
-      "group": "HYFLOCK",
-      "victim": "Dong Engineering Consulting Company Data Breach",
-      "country": "VN",
-      "sector": "Professional Services",
-      "published": "2026-11-19T11:25:01.679899+00:00",
-      "domain": "eecinter.com",
-      "url": "https://www.ransomware.live/id/RG9uZyBFbmdpbmVlcmluZyBDb25zdWx0aW5nIENvbXBhbnkgRGF0YSBCcmVhY2hASFlGTE9DSw=="
-    },
-    {
-      "group": "crypto24",
-      "victim": "M.N. Textiles (Pvt) Ltd",
-      "country": "PK",
-      "sector": "Manufacturing",
-      "published": "2026-11-19T10:40:56.326720+00:00",
-      "domain": "www.mntextiles.com",
-      "url": "https://www.ransomware.live/id/TS5OLiBUZXh0aWxlcyAoUHZ0KSBMdGRAY3J5cHRvMjQ="
-    },
-    {
-      "group": "rhysida",
-      "victim": "Smith & Green, Attorneys at Law PLLC",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-19T06:44:34.639183+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/U21pdGggJiBHcmVlbiwgQXR0b3JuZXlzIGF0IExhdyBQTExDQHJoeXNpZGE="
-    },
-    {
-      "group": "krybit",
-      "victim": "www.sleepboxbymiracle.com",
-      "country": "RU",
-      "sector": "Hospitality",
-      "published": "2026-11-19T03:51:04.582712+00:00",
-      "domain": "www.sleepboxbymiracle.com",
-      "url": "https://www.ransomware.live/id/d3d3LnNsZWVwYm94YnltaXJhY2xlLmNvbUBrcnliaXQ="
     }
   ]
 }

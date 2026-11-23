@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:45:30Z",
+  "generated_at": "2026-11-23T06:53:29Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "Computer Weekly",
@@ -34,9 +34,8 @@
     },
     {
       "name": "Graham Cluley",
-      "status": "error",
-      "count": 0,
-      "error": "mismatched tag: line 51, column 2"
+      "status": "ok",
+      "count": 0
     },
     {
       "name": "BBC News",
@@ -49,5 +48,22 @@
       "count": 0
     }
   ],
-  "items": []
+  "items": [
+    {
+      "title": "Google claims last week’s critical VMware bug was under attack in September",
+      "link": "https://www.theregister.com/virtualization/2026/11/23/google-claims-last-weeks-critical-vmware-bug-was-under-attack-in-september/5311547",
+      "source": "The Register",
+      "published": "2026-11-23T04:39:19Z",
+      "summary": "China-linked ARMORY CASTLE knew about it weeks before it unleashed five custom malware tools targeting vCenter",
+      "uk_focus": false
+    },
+    {
+      "title": "$1 of GPT-5.1 tokens finds new ways around China’s Great Firewall",
+      "link": "https://www.theregister.com/security/2026/11/23/1-of-gpt-51-tokens-finds-new-ways-around-chinas-great-firewall/5311532",
+      "source": "The Register",
+      "published": "2026-11-23T00:23:31Z",
+      "summary": "PLUS: Lenovo's infra group finally makes big profit; Indonesia’s glaciers are gone; Australian bank releases its AI bug-finder; and more!",
+      "uk_focus": false
+    }
+  ]
 }
