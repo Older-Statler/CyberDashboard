@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:06:56Z",
+  "generated_at": "2026-11-24T04:16:29Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 8
+      "count": 11
     },
     {
       "name": "Computer Weekly",
@@ -49,6 +49,30 @@
     }
   ],
   "items": [
+    {
+      "title": "Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse",
+      "link": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795",
+      "source": "The Register",
+      "published": "2026-11-24T01:46:56Z",
+      "summary": "‘Shirudo’ project promises to whip up compensating controls in a hurry",
+      "uk_focus": false
+    },
+    {
+      "title": "Inception - possibly a ShinyHunters reboot - claims seven victims in a week",
+      "link": "https://www.theregister.com/security/2026/11/23/inception-possibly-a-shinyhunters-reboot-claims-seven-victims-in-a-week/5311768",
+      "source": "The Register",
+      "published": "2026-11-23T21:52:23Z",
+      "summary": "Whatever they call themselves these days: be on the lookout for voice phishing attempts",
+      "uk_focus": false
+    },
+    {
+      "title": "Bluetooth brakes are broken as researchers find anyone can control them",
+      "link": "https://www.theregister.com/security/2026/11/23/bluetooth-brakes-are-broken-as-researchers-find-anyone-can-control-them/5311748",
+      "source": "The Register",
+      "published": "2026-11-23T19:29:59Z",
+      "summary": "Security fixes are available for two Elecbrakes models, but an older controller remains vulnerable and unpatched",
+      "uk_focus": false
+    },
     {
       "title": "Critical Cisco remote code execution bug under attack",
       "link": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722",

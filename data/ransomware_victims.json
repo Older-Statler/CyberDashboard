@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-23T19:06:56Z",
+  "generated_at": "2026-11-24T04:16:28Z",
   "victims": [
+    {
+      "group": "anubis",
+      "victim": "VHV Company",
+      "country": "DE",
+      "sector": "Not Found",
+      "published": "2026-11-24T00:03:34.846680+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VkhWIENvbXBhbnlAYW51Ymlz"
+    },
+    {
+      "group": "anubis",
+      "victim": "Home Instead",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-24T00:02:29.052243+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SG9tZSBJbnN0ZWFkQGFudWJpcw=="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Nationwide IT Services, Inc.",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-23T23:23:41.837057+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TmF0aW9ud2lkZSBJVCBTZXJ2aWNlcywgSW5jLkByaHlzaWRh"
+    },
+    {
+      "group": "medusalocker",
+      "victim": "Yahoo",
+      "country": "BR",
+      "sector": "Technology",
+      "published": "2026-11-23T23:21:20.950015+00:00",
+      "domain": "yahoo.com.br",
+      "url": "https://www.ransomware.live/id/WWFob29AbWVkdXNhbG9ja2Vy"
+    },
+    {
+      "group": "Dark Project",
+      "victim": "Golden State Baptist College",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-11-23T19:51:14.107311+00:00",
+      "domain": "www.gsbc.edu",
+      "url": "https://www.ransomware.live/id/R29sZGVuIFN0YXRlIEJhcHRpc3QgQ29sbGVnZUBEYXJrIFByb2plY3Q="
+    },
+    {
+      "group": "incransom",
+      "victim": "Lowell Foods",
+      "country": "US",
+      "sector": "Agriculture and Food Production",
+      "published": "2026-11-23T16:11:48.234686+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TG93ZWxsIEZvb2RzQGluY3JhbnNvbQ=="
+    },
     {
       "group": "rhysida",
       "victim": "Demas Schaefer Family Lawyers",
@@ -407,6 +461,42 @@
       "url": "https://www.ransomware.live/id/RmlzaGVyICYgUGF5a2VsIEhlYWx0aGNhcmVARmFsY29u"
     },
     {
+      "group": "qilin",
+      "victim": "Toyota Chihuahua",
+      "country": "MX",
+      "sector": "Manufacturing",
+      "published": "2026-11-23T23:22:35.483911+00:00",
+      "domain": "www.toyotahg.mx",
+      "url": "https://www.ransomware.live/id/VG95b3RhIENoaWh1YWh1YUBxaWxpbg=="
+    },
+    {
+      "group": "aurora",
+      "victim": "Quetico LLC",
+      "country": "",
+      "sector": "Not Found",
+      "published": "2026-11-23T19:00:23.342970+00:00",
+      "domain": "Quetico LLC",
+      "url": "https://www.ransomware.live/id/UXVldGljbyBMTENAYXVyb3Jh"
+    },
+    {
+      "group": "aurora",
+      "victim": "Kopron S.p.A.",
+      "country": "IT",
+      "sector": "Manufacturing",
+      "published": "2026-11-23T17:59:55.988595+00:00",
+      "domain": "Kopron S.p.A.",
+      "url": "https://www.ransomware.live/id/S29wcm9uIFMucC5BLkBhdXJvcmE="
+    },
+    {
+      "group": "aurora",
+      "victim": "Saurer Intelligent Technology Co.",
+      "country": "CN",
+      "sector": "Manufacturing",
+      "published": "2026-11-23T17:04:54.667781+00:00",
+      "domain": "Saurer Intelligent Technology Co.",
+      "url": "https://www.ransomware.live/id/U2F1cmVyIEludGVsbGlnZW50IFRlY2hub2xvZ3kgQ28uQGF1cm9yYQ=="
+    },
+    {
       "group": "Eclipse",
       "victim": "AMI Mechanical Corp",
       "country": "US",
@@ -810,96 +900,6 @@
       "published": "2026-11-20T22:35:47.096012+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TGVlIE1lbW9yaWFsIEhlYWx0aCBTeXN0ZW1AbWVkdXNhbG9ja2Vy"
-    },
-    {
-      "group": "everest",
-      "victim": "FAST ČR",
-      "country": "CZ",
-      "sector": "Government & Defense",
-      "published": "2026-11-20T22:04:10.955887+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RkFTVCDEjFJAZXZlcmVzdA=="
-    },
-    {
-      "group": "everest",
-      "victim": "Alla France",
-      "country": "FR",
-      "sector": "Other",
-      "published": "2026-11-20T22:03:33.625170+00:00",
-      "domain": "allafrance.com",
-      "url": "https://www.ransomware.live/id/QWxsYSBGcmFuY2VAZXZlcmVzdA=="
-    },
-    {
-      "group": "everest",
-      "victim": "ABL Bio",
-      "country": "",
-      "sector": "Healthcare",
-      "published": "2026-11-20T22:02:57.555361+00:00",
-      "domain": "ablbio.com",
-      "url": "https://www.ransomware.live/id/QUJMIEJpb0BldmVyZXN0"
-    },
-    {
-      "group": "everest",
-      "victim": "Vizrt",
-      "country": "NO",
-      "sector": "Technology",
-      "published": "2026-11-20T22:02:21.373593+00:00",
-      "domain": "vizrt.com",
-      "url": "https://www.ransomware.live/id/Vml6cnRAZXZlcmVzdA=="
-    },
-    {
-      "group": "everest",
-      "victim": "ALKF",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-20T22:01:44.629352+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QUxLRkBldmVyZXN0"
-    },
-    {
-      "group": "Dark Project",
-      "victim": "VanMor",
-      "country": "CA",
-      "sector": "Other",
-      "published": "2026-11-20T20:51:19.650070+00:00",
-      "domain": "www.vanmor.com",
-      "url": "https://www.ransomware.live/id/VmFuTW9yQERhcmsgUHJvamVjdA=="
-    },
-    {
-      "group": "everest",
-      "victim": "Rays Power Infra",
-      "country": "IN",
-      "sector": "Energy & Utilities",
-      "published": "2026-11-20T20:31:59.393560+00:00",
-      "domain": "rayspowerinfra.com",
-      "url": "https://www.ransomware.live/id/UmF5cyBQb3dlciBJbmZyYUBldmVyZXN0"
-    },
-    {
-      "group": "everest",
-      "victim": "Geesol",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-20T21:37:08.045741+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/R2Vlc29sQGV2ZXJlc3Q="
-    },
-    {
-      "group": "everest",
-      "victim": "My American Alliance",
-      "country": "",
-      "sector": "Other",
-      "published": "2026-11-20T21:36:31.626246+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TXkgQW1lcmljYW4gQWxsaWFuY2VAZXZlcmVzdA=="
-    },
-    {
-      "group": "everest",
-      "victim": "Accuver",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-20T21:35:54.832299+00:00",
-      "domain": "accuver.com",
-      "url": "https://www.ransomware.live/id/QWNjdXZlckBldmVyZXN0"
     }
   ]
 }
