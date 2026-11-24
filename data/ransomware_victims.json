@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-11-24T04:16:28Z",
+  "generated_at": "2026-11-24T15:11:29Z",
   "victims": [
+    {
+      "group": "Aoqin",
+      "victim": "Coneco Engineers & Scientists",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-24T07:50:30.375719+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q29uZWNvIEVuZ2luZWVycyAmIFNjaWVudGlzdHNAQW9xaW4="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "IIM Raipur perimeter (Indian Institute of Management)",
+      "country": "IN",
+      "sector": "Education",
+      "published": "2026-11-24T06:59:26.632053+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/SUlNIFJhaXB1ciBwZXJpbWV0ZXIgKEluZGlhbiBJbnN0aXR1dGUgb2YgTWFuYWdlbWVudClAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "NKN Delhi PoP (National Knowledge Network / NIC / MeitY, India)",
+      "country": "IN",
+      "sector": "Government & Defense",
+      "published": "2026-11-24T06:59:06.825766+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TktOIERlbGhpIFBvUCAoTmF0aW9uYWwgS25vd2xlZGdlIE5ldHdvcmsgLyBOSUMgLyBNZWl0WSwgSW5kaWEpQFBpeGVsTGVha3M="
+    },
+    {
+      "group": "safepay",
+      "victim": "kneron.com",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-24T06:24:21.274984+00:00",
+      "domain": "kneron.com",
+      "url": "https://www.ransomware.live/id/a25lcm9uLmNvbUBzYWZlcGF5"
+    },
+    {
+      "group": "SoulGroup",
+      "victim": "A government website for a county in a U.S. state",
+      "country": "US",
+      "sector": "Government & Defense",
+      "published": "2026-11-24T02:56:45.833076+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/QSBnb3Zlcm5tZW50IHdlYnNpdGUgZm9yIGEgY291bnR5IGluIGEgVS5TLiBzdGF0ZUBTb3VsR3JvdXA="
+    },
     {
       "group": "anubis",
       "victim": "VHV Company",
@@ -18,6 +63,15 @@
       "published": "2026-11-24T00:02:29.052243+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/SG9tZSBJbnN0ZWFkQGFudWJpcw=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Mayerhofer Hoch-, Tief- und Ingenieurbau GmbH",
+      "country": "DE",
+      "sector": "Manufacturing",
+      "published": "2026-11-24T08:39:50.868094+00:00",
+      "domain": "www.mayerhofer-bau.de",
+      "url": "https://www.ransomware.live/id/TWF5ZXJob2ZlciBIb2NoLSwgVGllZi0gdW5kIEluZ2VuaWV1cmJhdSBHbWJIQHFpbGlu"
     },
     {
       "group": "rhysida",
@@ -189,6 +243,15 @@
       "published": "2026-11-23T06:29:20.178264+00:00",
       "domain": "kinkisharyo.com",
       "url": "https://www.ransomware.live/id/a2lua2lzaGFyeW8uY29tQGV2ZXJzdGFrZQ=="
+    },
+    {
+      "group": "Scarlettgroup",
+      "victim": "knox.edu",
+      "country": "US",
+      "sector": "Education",
+      "published": "2026-11-24T03:59:27.809823+00:00",
+      "domain": "knox.edu",
+      "url": "https://www.ransomware.live/id/a25veC5lZHVAU2NhcmxldHRncm91cA=="
     },
     {
       "group": "spacebears",
@@ -837,69 +900,6 @@
       "published": "2026-11-21T17:23:07.745050+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/S2FuZyBDaGlhbyBJbnRlcm5hdGlvbmFsIFNjaG9vbCAoTGlua291KUBvc2lyaXM="
-    },
-    {
-      "group": "Eclipse",
-      "victim": "Realta Technologies",
-      "country": "IE",
-      "sector": "Technology",
-      "published": "2026-11-21T06:51:14.122301+00:00",
-      "domain": "www.realtatechnologies.com",
-      "url": "https://www.ransomware.live/id/UmVhbHRhIFRlY2hub2xvZ2llc0BFY2xpcHNl"
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "MT5 algo-trading farm (OneFunded funded account, WINSERVER)",
-      "country": "",
-      "sector": "Financial Services",
-      "published": "2026-11-20T22:54:54.318905+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TVQ1IGFsZ28tdHJhZGluZyBmYXJtIChPbmVGdW5kZWQgZnVuZGVkIGFjY291bnQsIFdJTlNFUlZFUilAUGl4ZWxMZWFrcw=="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "bastion.internal domain controller (GCP, GRATEFUL-V1)",
-      "country": "",
-      "sector": "Technology",
-      "published": "2026-11-20T22:54:34.550842+00:00",
-      "domain": "bastion.internal",
-      "url": "https://www.ransomware.live/id/YmFzdGlvbi5pbnRlcm5hbCBkb21haW4gY29udHJvbGxlciAoR0NQLCBHUkFURUZVTC1WMSlAUGl4ZWxMZWFrcw=="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Aixia Group AB (Nasdaq-listed AI/IT, Sweden)",
-      "country": "SE",
-      "sector": "Technology",
-      "published": "2026-11-20T22:54:13.528875+00:00",
-      "domain": "aixia.se",
-      "url": "https://www.ransomware.live/id/QWl4aWEgR3JvdXAgQUIgKE5hc2RhcS1saXN0ZWQgQUkvSVQsIFN3ZWRlbilAUGl4ZWxMZWFrcw=="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Kingsport Cargo (logistics, Laravel intranet)",
-      "country": "",
-      "sector": "Transportation",
-      "published": "2026-11-20T22:53:53.828949+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/S2luZ3Nwb3J0IENhcmdvIChsb2dpc3RpY3MsIExhcmF2ZWwgaW50cmFuZXQpQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "Arab Software Computer / ASCON (Oracle ERP hosting, Alexandria)",
-      "country": "EG",
-      "sector": "Technology",
-      "published": "2026-11-20T22:53:33.817534+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QXJhYiBTb2Z0d2FyZSBDb21wdXRlciAvIEFTQ09OIChPcmFjbGUgRVJQIGhvc3RpbmcsIEFsZXhhbmRyaWEpQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "medusalocker",
-      "victim": "Lee Memorial Health System",
-      "country": "US",
-      "sector": "Healthcare",
-      "published": "2026-11-20T22:35:47.096012+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TGVlIE1lbW9yaWFsIEhlYWx0aCBTeXN0ZW1AbWVkdXNhbG9ja2Vy"
     }
   ]
 }

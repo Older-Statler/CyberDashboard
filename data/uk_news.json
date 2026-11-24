@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-24T04:16:29Z",
+  "generated_at": "2026-11-24T15:11:29Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 0
+      "count": 2
     },
     {
       "name": "The Register",
       "status": "ok",
-      "count": 11
+      "count": 14
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 7
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -29,13 +29,14 @@
     },
     {
       "name": "ITPro",
-      "status": "ok",
-      "count": 0
+      "status": "error",
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://www.itpro.com/security/feed"
     },
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "BBC News",
@@ -45,10 +46,138 @@
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 1
+      "count": 2
     }
   ],
   "items": [
+    {
+      "title": "Signal blocks AI assistants from snooping on your encrypted messages",
+      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages",
+      "source": "Graham Cluley",
+      "published": "2026-11-24T14:17:44Z",
+      "summary": "Signal is blocking Siri and Gemini from reading your encrypted chats off the screen, and warning that AI agents built into operating systems are an \"existential threat\" to privacy. Read more in my article on the Hot for Security blog.",
+      "uk_focus": false
+    },
+    {
+      "title": "Address AI Agent Risks or Face Action, FCA Warns Financial Firms",
+      "link": "https://www.infosecurity-magazine.com/news/ai-agent-risks-face-action-fca/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-24T13:45:00Z",
+      "summary": "The FCA said financial organizations must provide effective oversight and governance controls for AI agents, amid rising deployment in the sector",
+      "uk_focus": true
+    },
+    {
+      "title": "Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test",
+      "link": "https://www.infosecurity-magazine.com/news/chinese-ai-models-top/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-24T13:00:00Z",
+      "summary": "In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run",
+      "uk_focus": false
+    },
+    {
+      "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
+      "link": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877",
+      "source": "The Register",
+      "published": "2026-11-24T12:22:17Z",
+      "summary": "Record-breaking cybersecurity deal promises tighter integration, but sysadmins fear higher prices and vendor lock-in",
+      "uk_focus": false
+    },
+    {
+      "title": "Introducing CORNERSTONE: delivering external services for the NCSC",
+      "link": "https://www.ncsc.gov.uk/blogs/introducing-cornerstone-delivering-external-services-for-the-ncsc",
+      "source": "NCSC",
+      "published": "2026-11-24T12:00:00Z",
+      "summary": "The NCSC is seeking industry feedback on a new delivery model for modernising external cyber security services.",
+      "uk_focus": true
+    },
+    {
+      "title": "Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
+      "link": "https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks",
+      "source": "NCSC",
+      "published": "2026-11-24T12:00:00Z",
+      "summary": "How to protect your organisation from cyber attacks created using ‘agentic offensive frameworks’.",
+      "uk_focus": true
+    },
+    {
+      "title": "OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems",
+      "link": "https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-24T12:00:00Z",
+      "summary": "OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart",
+      "uk_focus": false
+    },
+    {
+      "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834",
+      "source": "The Register",
+      "published": "2026-11-24T11:32:41Z",
+      "summary": "EU Academy names and email addresses exposed, with users warned via website notice rather than contacted directly",
+      "uk_focus": false
+    },
+    {
+      "title": "CrowdStrike to acquire Zscaler in $44bn all-stock deal",
+      "link": "https://www.techmonitor.ai/news/crowdstrike-to-acquire-zscaler-in-44bn-all-stock-deal",
+      "source": "Tech Monitor",
+      "published": "2026-11-24T10:50:18Z",
+      "summary": "CrowdStrike has agreed to acquire Zscaler, a US-based cloud cybersecurity company, in an all-stock transaction worth around $43.9bn.",
+      "uk_focus": false
+    },
+    {
+      "title": "LaLiga Says Football Fans’ Personal Data Stolen",
+      "link": "https://www.infosecurity-magazine.com/news/la-liga-says-football-fans/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-24T10:30:00Z",
+      "summary": "Spanish football league LaLiga has revealed a breach of personally identifiable information",
+      "uk_focus": false
+    },
+    {
+      "title": "Third-party support: Risks and opportunities",
+      "link": "https://www.computerweekly.com/news/366655495/Third-party-support-Risks-and-opportunities",
+      "source": "Computer Weekly",
+      "published": "2026-11-24T10:00:00Z",
+      "summary": "Third-party enterprise software support can dramatically reduce IT maintenance costs, but there’s no access to security patches",
+      "uk_focus": false
+    },
+    {
+      "title": "Amazon CTO Werner Vogels: Computing to converge with biology",
+      "link": "https://www.computerweekly.com/news/366655113/Amazon-CTO-Werner-Vogels-Computing-to-converge-with-biology",
+      "source": "Computer Weekly",
+      "published": "2026-11-24T10:00:00Z",
+      "summary": "Amazon’s chief technology officer set out five predictions for 2027, spanning computing that learns from biology, systems that defend themselves and a mind that becomes readable",
+      "uk_focus": false
+    },
+    {
+      "title": "Researchers Find a New AI Attack Path: Agent Instructions",
+      "link": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-24T09:30:00Z",
+      "summary": "Ox Security warns that agents are being manipulated without the need for executable malware",
+      "uk_focus": false
+    },
+    {
+      "title": "UK cyber legislation fails to tackle real-world resilience",
+      "link": "https://www.computerweekly.com/opinion/UK-cyber-legislation-fails-to-tackle-real-world-resilience",
+      "source": "Computer Weekly",
+      "published": "2026-11-24T06:10:00Z",
+      "summary": "Despite concerns raised in the House of Lords, the government is pressing on with a Cyber Security and Resilience Bill that remains insufficient to address the growing cyber challenges facing the UK",
+      "uk_focus": true
+    },
+    {
+      "title": "Huang’s Trump-backed return raises AI sovereignty concerns",
+      "link": "https://www.computerweekly.com/news/366655453/Huangs-Trump-backed-return-raises-AI-sovereignty-concerns",
+      "source": "Computer Weekly",
+      "published": "2026-11-24T06:10:00Z",
+      "summary": "In spite of the Nvidia board saying his behaviour was ‘inappropriate’, Jensen Huang is back as the AI company’s CEO",
+      "uk_focus": false
+    },
+    {
+      "title": "Orgs that leak data 'prioritize corporate interests over customers' says Have I Been Pwned’s Troy Hunt",
+      "link": "https://www.theregister.com/security/2026/11/24/orgs-that-leak-data-prioritize-corporate-interests-over-customers-says-have-i-been-pwneds-troy-hunt/5311802",
+      "source": "The Register",
+      "published": "2026-11-24T05:13:51Z",
+      "summary": "Leakers move through denial, bargaining, delay, legal threats, then claiming Hunt is the real villain",
+      "uk_focus": false
+    },
     {
       "title": "Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse",
       "link": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795",
