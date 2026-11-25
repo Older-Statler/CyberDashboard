@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T07:57:12Z",
+  "generated_at": "2026-11-25T18:33:49Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 15
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 13
+      "count": 12
     },
     {
       "name": "The Guardian",
@@ -40,15 +40,95 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 2
+      "count": 1
     }
   ],
   "items": [
+    {
+      "title": "Microsoft's NTLM security changes trip up third-party logins",
+      "link": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085",
+      "source": "The Register",
+      "published": "2026-11-25T17:01:00Z",
+      "summary": "It's not our fault if you've implemented it wrong",
+      "uk_focus": false
+    },
+    {
+      "title": "US Treasury financial crimes unit becomes latest fed breach victim",
+      "link": "https://www.theregister.com/security/2026/11/25/us-treasury-financial-crimes-unit-becomes-latest-fed-breach-victim/5312165",
+      "source": "The Register",
+      "published": "2026-11-25T16:40:16Z",
+      "summary": "FinCEN takes systems offline and extends filing deadlines while investigating 'unauthorized access'",
+      "uk_focus": false
+    },
+    {
+      "title": "US Anti-Scam Surge Hits 800 Defendants and 29 Scam Compounds",
+      "link": "https://www.infosecurity-magazine.com/news/doj-anti-scam-surge-800-defendants/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-25T16:00:00Z",
+      "summary": "DOJ's anti-scam surge has targeted over 800 defendants while the FBI has hit over 29 scam compounds",
+      "uk_focus": false
+    },
+    {
+      "title": "Palo Alto Fixes Fragnesia Kernel Bug Chained With PHP2Shell in Firewall Attacks",
+      "link": "https://www.infosecurity-magazine.com/news/palo-alto-fragnesia-php2shell-fix/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-25T15:00:00Z",
+      "summary": "Palo Alto fixed Fragnesia after attackers chained it with PHP2Shell to root firewalls",
+      "uk_focus": false
+    },
+    {
+      "title": "US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches",
+      "link": "https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-25T11:45:00Z",
+      "summary": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline",
+      "uk_focus": false
+    },
+    {
+      "title": "Gatwick drop-off customers' personal data exposed in supplier breach",
+      "link": "https://www.theregister.com/security/2026/11/25/gatwick-drop-off-customers-personal-data-exposed-in-supplier-breach/5312060",
+      "source": "The Register",
+      "published": "2026-11-25T11:16:18Z",
+      "summary": "AutoPay login and vehicle records affected, alongside limited payment information and customer service emails",
+      "uk_focus": false
+    },
+    {
+      "title": "Europe prepares for EU Quantum Act",
+      "link": "https://www.computerweekly.com/news/366655552/Europe-prepares-for-EU-Quantum-Act",
+      "source": "Computer Weekly",
+      "published": "2026-11-25T11:00:00Z",
+      "summary": "The European Commission is getting ready for the progress of quantum computing from labs to commercial products",
+      "uk_focus": false
+    },
+    {
+      "title": "Ransomware Attacks Surge 23% in October Following Record Quarter",
+      "link": "https://www.infosecurity-magazine.com/news/ransomware-surge-october-record/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-25T10:45:00Z",
+      "summary": "The continued rise in ransomware attacks may reflect a new cyber environment, NCC Group researchers have warned",
+      "uk_focus": false
+    },
+    {
+      "title": "NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools",
+      "link": "https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-25T10:00:00Z",
+      "summary": "UK’s National Cyber Security Centre urges “strong operational discipline” to manage agentic offensive frameworks",
+      "uk_focus": true
+    },
+    {
+      "title": "UK Authorized Push Payment Losses Surge 22% as Fraudsters Steal £660m",
+      "link": "https://www.infosecurity-magazine.com/news/uk-app-losses-surge-22-fraudsters/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-25T09:29:00Z",
+      "summary": "Authorized push payment (APP) fraud increased 22% annually in the first half of the year",
+      "uk_focus": true
+    },
     {
       "title": "This could mess with Thanksgiving, says VMware as it drops third critical patch bundle in a week",
       "link": "https://www.theregister.com/virtualization/2026/11/25/this-could-mess-with-thanksgiving-says-vmware-as-it-drops-third-critical-patch-bundle-in-a-week/5312017",
@@ -239,142 +319,6 @@
       "source": "The Register",
       "published": "2026-11-23T19:29:59Z",
       "summary": "Security fixes are available for two Elecbrakes models, but an older controller remains vulnerable and unpatched",
-      "uk_focus": false
-    },
-    {
-      "title": "Critical Cisco remote code execution bug under attack",
-      "link": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722",
-      "source": "The Register",
-      "published": "2026-11-23T17:56:56Z",
-      "summary": "CISA, F6 sound the alarm after PoC exploit made public",
-      "uk_focus": false
-    },
-    {
-      "title": "Bulgaria evicts cyber snoops who lurked inside government networks for 5 years",
-      "link": "https://www.theregister.com/security/2026/11/23/bulgaria-evicts-cyber-snoops-who-lurked-inside-government-networks-for-5-years/5311629",
-      "source": "The Register",
-      "published": "2026-11-23T17:01:00Z",
-      "summary": "Minister says intruders downloaded more than 130 GB of data as political churn left security neglected",
-      "uk_focus": false
-    },
-    {
-      "title": "CrowdStrike explores acquisition of Zscaler – report",
-      "link": "https://www.techmonitor.ai/news/crowdstrike-explores-acquisition-of-zscaler-report",
-      "source": "Tech Monitor",
-      "published": "2026-11-23T16:06:11Z",
-      "summary": "CrowdStrike is considering the acquisition of Zscaler in a deal that could rank among the cybersecurity sector’s “largest” transactions.",
-      "uk_focus": false
-    },
-    {
-      "title": "Bots Hide Behind AI Agent Names to Hunt for Secrets",
-      "link": "https://www.infosecurity-magazine.com/news/secrethunting-trafficai-agent/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T16:00:00Z",
-      "summary": "Cequence found bots using AI agent names to probe for secrets as agents moved from reading to acting",
-      "uk_focus": false
-    },
-    {
-      "title": "CrowdStrike to Acquire Zscaler in Record $44 Billion Deal",
-      "link": "https://www.infosecurity-magazine.com/news/crowdstrike-to-acquire-zscaler/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T15:15:00Z",
-      "summary": "CrowdStrike's proposed $43.9bn acquisition of Zscaler would add network security capabilities to its portfolio and bring together two major cybersecurity platforms",
-      "uk_focus": false
-    },
-    {
-      "title": "Signal Moves to Block iOS and Android AI Agents From Reading Chats",
-      "link": "https://www.infosecurity-magazine.com/news/signal-blocks-ai-agents-reading/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T15:00:00Z",
-      "summary": "Signal moved to shield chats from built-in AI agents and pressed platform makers for an opt-out",
-      "uk_focus": false
-    },
-    {
-      "title": "GTA 6 hacker released on licence with warning 'don't let this happen again'",
-      "link": "https://www.bbc.co.uk/news/articles/cqpv9kr7pxmro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "published": "2026-11-23T14:08:50Z",
-      "summary": "21-year-old Arion Kurtaj pleaded guilty to the Rockstar Games hack and others he carried out when he was a teenager.",
-      "uk_focus": false
-    },
-    {
-      "title": "Everything going down at once wasn't evidence of a conspiracy – but the truth may be scarier",
-      "link": "https://www.theregister.com/off-prem/2026/11/23/everything-going-down-at-once-wasnt-evidence-of-a-conspiracy-but-the-truth-may-be-scarier/5311458",
-      "source": "The Register",
-      "published": "2026-11-23T14:04:00Z",
-      "summary": "Rogue AI or nation-state hackers would be preferable to the amount of technical debt the past week of wobbling services laid bare",
-      "uk_focus": false
-    },
-    {
-      "title": "US Lawmakers Propose CISA Board to Review Major Cyber Incidents",
-      "link": "https://www.infosecurity-magazine.com/news/us-lawmakers-bill-cisa-review/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T13:30:00Z",
-      "summary": "Two Congressmen have proposed to establish a cyber incident review board within the US Cybersecurity and Infrastructure Security Agency",
-      "uk_focus": false
-    },
-    {
-      "title": "Norway links energy firm cyberattacks to critical Azure API Management flaw",
-      "link": "https://www.theregister.com/security/2026/11/23/norway-links-energy-firm-cyberattacks-to-critical-azure-api-management-flaw/5311598",
-      "source": "The Register",
-      "published": "2026-11-23T12:29:00Z",
-      "summary": "Microsoft says mitigation is in place, but admins must investigate possible compromise and rotate secrets",
-      "uk_focus": false
-    },
-    {
-      "title": "Digital sovereignty not smart, says The Hague CIO",
-      "link": "https://www.computerweekly.com/feature/Digital-sovereignty-not-smart-says-The-Hague-CIO",
-      "source": "Computer Weekly",
-      "published": "2026-11-23T12:02:00Z",
-      "summary": "The digital independence Europe wants is not what it gets, says the man struggling with a political order to purge US systems from the Dutch city at the centre of US-EU tensions",
-      "uk_focus": false
-    },
-    {
-      "title": "Nation-state APTs don't need new tricks; the old ones still work",
-      "link": "https://www.computerweekly.com/opinion/Nation-state-APTs-dont-need-new-tricks-the-old-ones-still-work",
-      "source": "Computer Weekly",
-      "published": "2026-11-23T11:51:00Z",
-      "summary": "In October 2026, MI5 revealed it was spending more on countering state threats than it did during the Cold War. The Computer Weekly Security Think Tank explores the changing nature of state-backed cyber threats.",
-      "uk_focus": false
-    },
-    {
-      "title": "Cleverbridge admits attackers stole customers' credit card and CVV numbers. Yep, you read that right",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573",
-      "source": "The Register",
-      "published": "2026-11-23T11:48:00Z",
-      "summary": "Payments platform hasn't disclosed how the data was captured or the scale of the breach",
-      "uk_focus": false
-    },
-    {
-      "title": "Cleverbridge Confirms Customers’ Payment Card Data Breached",
-      "link": "https://www.infosecurity-magazine.com/news/cleverbridge-payment-card-breached/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T10:45:00Z",
-      "summary": "The stolen information reportedly includes card numbers and security codes stored by Cleverbridge, putting affected individuals at immediate risk of fraud",
-      "uk_focus": false
-    },
-    {
-      "title": "Critical Cisco Expressway Flaw Exploited in Attacks",
-      "link": "https://www.infosecurity-magazine.com/news/critical-cisco-expressway-flaw/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T10:00:00Z",
-      "summary": "Researchers warn that CVE-2026-76466, with a CVSS score of 9.8, is being actively exploited",
-      "uk_focus": false
-    },
-    {
-      "title": "Badbox Returns to Spread Ad Fraud and Proxyjacking Payloads",
-      "link": "https://www.infosecurity-magazine.com/news/badbox-spread-ad-fraud/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-23T09:30:00Z",
-      "summary": "Human Satori researchers claim Badbox 3.0 is responsible for 40 billion bid requests a day",
-      "uk_focus": false
-    },
-    {
-      "title": "When Microsoft, Apple, and the FAA can't keep it up, it's a system of a down",
-      "link": "https://www.theregister.com/columnists/2026/11/23/when-microsoft-apple-and-the-faa-cant-keep-it-up-its-a-system-of-a-down/5311363",
-      "source": "The Register",
-      "published": "2026-11-23T08:42:00Z",
-      "summary": "Outage after outage after outage is a syndrome that needs radical treatment",
       "uk_focus": false
     }
   ]
