@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T15:11:29Z",
+  "generated_at": "2026-11-25T00:03:01Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 14
+      "count": 16
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 13
     },
     {
       "name": "The Guardian",
@@ -29,9 +29,8 @@
     },
     {
       "name": "ITPro",
-      "status": "error",
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://www.itpro.com/security/feed"
+      "status": "ok",
+      "count": 0
     },
     {
       "name": "Graham Cluley",
@@ -50,6 +49,38 @@
     }
   ],
   "items": [
+    {
+      "title": "'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters",
+      "link": "https://www.theregister.com/security/2026/11/24/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/5311978",
+      "source": "The Register",
+      "published": "2026-11-24T20:15:36Z",
+      "summary": "Nothing to see here…",
+      "uk_focus": false
+    },
+    {
+      "title": "Authorised payment fraud up 22%, but ‘nobody answers’ why police aren’t resourced to fight it",
+      "link": "https://www.computerweekly.com/news/366655336/Authorised-payment-fraud-up-22-but-nobody-answers-why-police-arent-resourced-to-fight-it",
+      "source": "Computer Weekly",
+      "published": "2026-11-24T19:01:00Z",
+      "summary": "Fraudsters are increasingly making their gains by conning people into authorising payments to them, and if this fails, they just move on to next victim",
+      "uk_focus": false
+    },
+    {
+      "title": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
+      "link": "https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922",
+      "source": "The Register",
+      "published": "2026-11-24T17:00:00Z",
+      "summary": "No sophisticated malware or attack framework required",
+      "uk_focus": false
+    },
+    {
+      "title": "New Inception Extortion Brand Tied to SSO Vishing Campaign",
+      "link": "https://www.infosecurity-magazine.com/news/inception-extortion-sso-vishing/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-24T16:30:00Z",
+      "summary": "Okta and ReversingLabs linked Inception to an SSO vishing campaign targeting employee credentials",
+      "uk_focus": false
+    },
     {
       "title": "Signal blocks AI assistants from snooping on your encrypted messages",
       "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages",
@@ -131,19 +162,19 @@
       "uk_focus": false
     },
     {
-      "title": "Third-party support: Risks and opportunities",
-      "link": "https://www.computerweekly.com/news/366655495/Third-party-support-Risks-and-opportunities",
-      "source": "Computer Weekly",
-      "published": "2026-11-24T10:00:00Z",
-      "summary": "Third-party enterprise software support can dramatically reduce IT maintenance costs, but there’s no access to security patches",
-      "uk_focus": false
-    },
-    {
       "title": "Amazon CTO Werner Vogels: Computing to converge with biology",
       "link": "https://www.computerweekly.com/news/366655113/Amazon-CTO-Werner-Vogels-Computing-to-converge-with-biology",
       "source": "Computer Weekly",
       "published": "2026-11-24T10:00:00Z",
       "summary": "Amazon’s chief technology officer set out five predictions for 2027, spanning computing that learns from biology, systems that defend themselves and a mind that becomes readable",
+      "uk_focus": false
+    },
+    {
+      "title": "Third-party support: Risks and opportunities",
+      "link": "https://www.computerweekly.com/news/366655495/Third-party-support-Risks-and-opportunities",
+      "source": "Computer Weekly",
+      "published": "2026-11-24T10:00:00Z",
+      "summary": "Third-party enterprise software support can dramatically reduce IT maintenance costs, but there’s no access to security patches",
       "uk_focus": false
     },
     {
