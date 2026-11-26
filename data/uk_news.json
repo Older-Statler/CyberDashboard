@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-26T10:39:31Z",
+  "generated_at": "2026-11-26T20:02:42Z",
   "window_hours": 48,
   "sources": [
     {
       "name": "NCSC",
       "status": "ok",
-      "count": 2
+      "count": 0
     },
     {
       "name": "The Register",
       "status": "ok",
-      "count": 10
+      "count": 13
     },
     {
       "name": "Computer Weekly",
@@ -49,6 +49,110 @@
     }
   ],
   "items": [
+    {
+      "title": "Microsoft: Hackers in China, N Korea using ARTEX AI tool to break into global tech systems",
+      "link": "https://www.theregister.com/security/2026/11/26/microsoft-hackers-in-china-n-korea-using-artex-ai-tool-to-break-into-global-tech-systems/5312433",
+      "source": "The Register",
+      "published": "2026-11-26T19:04:00Z",
+      "summary": "Agentic offensive framework automates familiar attack techniques, with weak defenses potentially breached in minutes",
+      "uk_focus": false
+    },
+    {
+      "title": "UK privacy watchdog faces probe into its workplace culture",
+      "link": "https://www.theregister.com/public-sector/2026/11/26/uk-privacy-watchdog-faces-probe-into-its-workplace-culture/5312380",
+      "source": "The Register",
+      "published": "2026-11-26T16:16:00Z",
+      "summary": "Independent review will examine leadership, accountability, and how staff concerns were handled before former commissioner John Edwards resigned",
+      "uk_focus": true
+    },
+    {
+      "title": "'Significant number of customer records' pwned in Flight Centre Travel Group breach",
+      "link": "https://www.theregister.com/security/2026/11/26/significant-number-of-customer-records-pwned-in-flight-centre-travel-group-breach/5312360",
+      "source": "The Register",
+      "published": "2026-11-26T15:29:00Z",
+      "summary": "The latest attack in spate of similar incidents targeting booking systems globally",
+      "uk_focus": false
+    },
+    {
+      "title": "New York bans AI chatbot toys – but not in time for Christmas",
+      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/new-york-bans-ai-chatbot-toys",
+      "source": "Graham Cluley",
+      "published": "2026-11-26T15:28:04Z",
+      "summary": "Talking teddies that describe massacres and help kids break bedtime rules? New York has had enough, and has banned AI chatbot toys for five years. Just not in time for Christmas. Read more in my article on the Hot for Security blog.",
+      "uk_focus": false
+    },
+    {
+      "title": "CISA Issues Alert After Danfoss Reveals Critical Flaw in Fridge Controllers",
+      "link": "https://www.infosecurity-magazine.com/news/cisa-alert-danfoss-critical-flaw/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-26T14:15:00Z",
+      "summary": "Food retailers are in the firing line again after manufacturer Danfoss issued an alert about a critical new flaw",
+      "uk_focus": false
+    },
+    {
+      "title": "Wyoming uranium operation shuts down after cyberattack",
+      "link": "https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323",
+      "source": "The Register",
+      "published": "2026-11-26T14:02:00Z",
+      "summary": "Peninsula Energy says plant and wellfield control systems were affected, with no restart date yet",
+      "uk_focus": false
+    },
+    {
+      "title": "Company was religious about backups but sinned by leaving them exposed",
+      "link": "https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234",
+      "source": "The Register",
+      "published": "2026-11-26T13:22:00Z",
+      "summary": "Never put the backup server in the same Windows domain as production",
+      "uk_focus": false
+    },
+    {
+      "title": "Google Cloud Requires AI Agents to Access Workspace Through Approved Methods",
+      "link": "https://www.infosecurity-magazine.com/news/google-cloud-ai-agents-workspace/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-26T13:15:00Z",
+      "summary": "Google Cloud users will soon be required to use Workspace MCP servers or command line interface to connect AI agents to tools like Gmail, Google Drive or Docs",
+      "uk_focus": false
+    },
+    {
+      "title": "Coforge targets security backlogs with new Nuuron AI agents",
+      "link": "https://www.techmonitor.ai/news/coforge-targets-security-backlogs-with-new-nuuron-ai-agents",
+      "source": "Tech Monitor",
+      "published": "2026-11-26T12:32:38Z",
+      "summary": "Coforge has added agentic remedy capabilities to its Nuuron AI suite, targeting faster vulnerability closure across enterprise infrastructure, cloud and AI estates.",
+      "uk_focus": false
+    },
+    {
+      "title": "Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands",
+      "link": "https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-26T12:30:00Z",
+      "summary": "Aikido found 42 phishing pages on Hugging Face Spaces, two-thirds made with its AI site builder",
+      "uk_focus": false
+    },
+    {
+      "title": "Independent review into ICO amid claims of ‘toxic culture’ at data protection watchdog",
+      "link": "https://www.computerweekly.com/news/366655461/Independent-review-into-ICO-amid-claims-of-toxic-culture-at-data-protection-watchdog",
+      "source": "Computer Weekly",
+      "published": "2026-11-26T11:15:00Z",
+      "summary": "Senior barrister appointed to lead review of the ICO following the departure of disgraced former Information Commissioner John Edwards amid allegations of toxic culture, bullying and discrimination",
+      "uk_focus": true
+    },
+    {
+      "title": "Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework",
+      "link": "https://www.infosecurity-magazine.com/news/chinese-north-korea-artex/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-26T11:05:00Z",
+      "summary": "Microsoft has confirmed nation-state actors’ deployment of the ARTEX in their tooling, while the CSA described the emergence of the tool as part of a “third wave” of AI-driven threats",
+      "uk_focus": false
+    },
+    {
+      "title": "Hackers help themselves to 1Password's source code and customer data",
+      "link": "https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317",
+      "source": "The Register",
+      "published": "2026-11-26T11:02:00Z",
+      "summary": "An intruder planted malicious code in backend services, but the biz insists passwords are safe",
+      "uk_focus": false
+    },
     {
       "title": "Home Office Reprimanded After GDPR Failure at the Border",
       "link": "https://www.infosecurity-magazine.com/news/home-office-reprimanded-gdpr/",
@@ -199,102 +303,6 @@
       "source": "The Register",
       "published": "2026-11-24T20:15:36Z",
       "summary": "Nothing to see here…",
-      "uk_focus": false
-    },
-    {
-      "title": "Authorised payment fraud up 22%, but ‘nobody answers’ why police aren’t resourced to fight it",
-      "link": "https://www.computerweekly.com/news/366655336/Authorised-payment-fraud-up-22-but-nobody-answers-why-police-arent-resourced-to-fight-it",
-      "source": "Computer Weekly",
-      "published": "2026-11-24T19:01:00Z",
-      "summary": "Fraudsters are increasingly making their gains by conning people into authorising payments to them, and if this fails, they just move on to next victim",
-      "uk_focus": false
-    },
-    {
-      "title": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
-      "link": "https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922",
-      "source": "The Register",
-      "published": "2026-11-24T17:00:00Z",
-      "summary": "No sophisticated malware or attack framework required",
-      "uk_focus": false
-    },
-    {
-      "title": "New Inception Extortion Brand Tied to SSO Vishing Campaign",
-      "link": "https://www.infosecurity-magazine.com/news/inception-extortion-sso-vishing/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-24T16:30:00Z",
-      "summary": "Okta and ReversingLabs linked Inception to an SSO vishing campaign targeting employee credentials",
-      "uk_focus": false
-    },
-    {
-      "title": "Signal blocks AI assistants from snooping on your encrypted messages",
-      "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages",
-      "source": "Graham Cluley",
-      "published": "2026-11-24T14:17:44Z",
-      "summary": "Signal is blocking Siri and Gemini from reading your encrypted chats off the screen, and warning that AI agents built into operating systems are an \"existential threat\" to privacy. Read more in my article on the Hot for Security blog.",
-      "uk_focus": false
-    },
-    {
-      "title": "Address AI Agent Risks or Face Action, FCA Warns Financial Firms",
-      "link": "https://www.infosecurity-magazine.com/news/ai-agent-risks-face-action-fca/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-24T13:45:00Z",
-      "summary": "The FCA said financial organizations must provide effective oversight and governance controls for AI agents, amid rising deployment in the sector",
-      "uk_focus": true
-    },
-    {
-      "title": "Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test",
-      "link": "https://www.infosecurity-magazine.com/news/chinese-ai-models-top/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-24T13:00:00Z",
-      "summary": "In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run",
-      "uk_focus": false
-    },
-    {
-      "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
-      "link": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877",
-      "source": "The Register",
-      "published": "2026-11-24T12:22:17Z",
-      "summary": "Record-breaking cybersecurity deal promises tighter integration, but sysadmins fear higher prices and vendor lock-in",
-      "uk_focus": false
-    },
-    {
-      "title": "Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
-      "link": "https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks",
-      "source": "NCSC",
-      "published": "2026-11-24T12:00:00Z",
-      "summary": "How to protect your organisation from cyber attacks created using ‘agentic offensive frameworks’.",
-      "uk_focus": true
-    },
-    {
-      "title": "Introducing CORNERSTONE: delivering external services for the NCSC",
-      "link": "https://www.ncsc.gov.uk/blogs/introducing-cornerstone-delivering-external-services-for-the-ncsc",
-      "source": "NCSC",
-      "published": "2026-11-24T12:00:00Z",
-      "summary": "The NCSC is seeking industry feedback on a new delivery model for modernising external cyber security services.",
-      "uk_focus": true
-    },
-    {
-      "title": "OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems",
-      "link": "https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-24T12:00:00Z",
-      "summary": "OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart",
-      "uk_focus": false
-    },
-    {
-      "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834",
-      "source": "The Register",
-      "published": "2026-11-24T11:32:41Z",
-      "summary": "EU Academy names and email addresses exposed, with users warned via website notice rather than contacted directly",
-      "uk_focus": false
-    },
-    {
-      "title": "CrowdStrike to acquire Zscaler in $44bn all-stock deal",
-      "link": "https://www.techmonitor.ai/news/crowdstrike-to-acquire-zscaler-in-44bn-all-stock-deal",
-      "source": "Tech Monitor",
-      "published": "2026-11-24T10:50:18Z",
-      "summary": "CrowdStrike has agreed to acquire Zscaler, a US-based cloud cybersecurity company, in an all-stock transaction worth around $43.9bn.",
       "uk_focus": false
     }
   ]
