@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T01:55:37Z",
+  "generated_at": "2026-11-26T10:39:31Z",
   "window_hours": 48,
   "sources": [
     {
@@ -15,7 +15,7 @@
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 7
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
@@ -45,10 +45,42 @@
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 1
+      "count": 2
     }
   ],
   "items": [
+    {
+      "title": "Home Office Reprimanded After GDPR Failure at the Border",
+      "link": "https://www.infosecurity-magazine.com/news/home-office-reprimanded-gdpr/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-26T10:30:00Z",
+      "summary": "The ICO has reprimanded the Home Office after data integrity failings caused distress at the border",
+      "uk_focus": true
+    },
+    {
+      "title": "Fujitsu unveils vulnerability assessment service via OpenAI tie-up",
+      "link": "https://www.techmonitor.ai/news/fujitsu-unveils-vulnerability-assessment-service-via-openai-tie-up",
+      "source": "Tech Monitor",
+      "published": "2026-11-26T09:50:39Z",
+      "summary": "Fujitsu has deepened its cybersecurity partnership with OpenAI, signing up to the Daybreak Defense Network and launching a new AI-driven vulnerability assessment service.",
+      "uk_focus": false
+    },
+    {
+      "title": "1Password Hit by Backend Breach via Hijacked Employee GitHub Account",
+      "link": "https://www.infosecurity-magazine.com/news/1password-github-account-backend/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-26T09:32:00Z",
+      "summary": "An attacker used a 1Password employee's GitHub account to take customer data, but not vaults",
+      "uk_focus": false
+    },
+    {
+      "title": "UK Home Office waved through border system without a working fix for bad data",
+      "link": "https://www.theregister.com/security/2026/11/26/uk-home-office-waved-through-border-system-without-a-working-fix-for-bad-data/5312162",
+      "source": "The Register",
+      "published": "2026-11-26T09:30:00Z",
+      "summary": "ICO reprimand follows failings that risked wrongful detention, with a temporary correction process taking more than a year to arrive",
+      "uk_focus": true
+    },
     {
       "title": "Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks",
       "link": "https://grahamcluley.com/smashing-security-podcast-494/",
@@ -102,7 +134,7 @@
       "link": "https://www.computerweekly.com/news/366655399/Threat-actor-use-of-Artex-hacking-framework-surges",
       "source": "Computer Weekly",
       "published": "2026-11-25T12:58:00Z",
-      "summary": "Use of the Artex AI pen-testing tool for malicious purposes is skyrocketing, but defenders still have a window of opportunity to take action.",
+      "summary": "Use of the Artex AI pen-testing tool for malicious purposes is skyrocketing, but defenders still have a window of opportunity to take action",
       "uk_focus": false
     },
     {
@@ -226,19 +258,19 @@
       "uk_focus": false
     },
     {
-      "title": "Introducing CORNERSTONE: delivering external services for the NCSC",
-      "link": "https://www.ncsc.gov.uk/blogs/introducing-cornerstone-delivering-external-services-for-the-ncsc",
-      "source": "NCSC",
-      "published": "2026-11-24T12:00:00Z",
-      "summary": "The NCSC is seeking industry feedback on a new delivery model for modernising external cyber security services.",
-      "uk_focus": true
-    },
-    {
       "title": "Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
       "link": "https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks",
       "source": "NCSC",
       "published": "2026-11-24T12:00:00Z",
       "summary": "How to protect your organisation from cyber attacks created using ‘agentic offensive frameworks’.",
+      "uk_focus": true
+    },
+    {
+      "title": "Introducing CORNERSTONE: delivering external services for the NCSC",
+      "link": "https://www.ncsc.gov.uk/blogs/introducing-cornerstone-delivering-external-services-for-the-ncsc",
+      "source": "NCSC",
+      "published": "2026-11-24T12:00:00Z",
+      "summary": "The NCSC is seeking industry feedback on a new delivery model for modernising external cyber security services.",
       "uk_focus": true
     },
     {
@@ -263,62 +295,6 @@
       "source": "Tech Monitor",
       "published": "2026-11-24T10:50:18Z",
       "summary": "CrowdStrike has agreed to acquire Zscaler, a US-based cloud cybersecurity company, in an all-stock transaction worth around $43.9bn.",
-      "uk_focus": false
-    },
-    {
-      "title": "LaLiga Says Football Fans’ Personal Data Stolen",
-      "link": "https://www.infosecurity-magazine.com/news/la-liga-says-football-fans/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-24T10:30:00Z",
-      "summary": "Spanish football league LaLiga has revealed a breach of personally identifiable information",
-      "uk_focus": false
-    },
-    {
-      "title": "Amazon CTO Werner Vogels: Computing to converge with biology",
-      "link": "https://www.computerweekly.com/news/366655113/Amazon-CTO-Werner-Vogels-Computing-to-converge-with-biology",
-      "source": "Computer Weekly",
-      "published": "2026-11-24T10:00:00Z",
-      "summary": "Amazon’s chief technology officer set out five predictions for 2027, spanning computing that learns from biology, systems that defend themselves and a mind that becomes readable",
-      "uk_focus": false
-    },
-    {
-      "title": "Third-party support: Risks and opportunities",
-      "link": "https://www.computerweekly.com/news/366655495/Third-party-support-Risks-and-opportunities",
-      "source": "Computer Weekly",
-      "published": "2026-11-24T10:00:00Z",
-      "summary": "Third-party enterprise software support can dramatically reduce IT maintenance costs, but there’s no access to security patches",
-      "uk_focus": false
-    },
-    {
-      "title": "Researchers Find a New AI Attack Path: Agent Instructions",
-      "link": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-24T09:30:00Z",
-      "summary": "Ox Security warns that agents are being manipulated without the need for executable malware",
-      "uk_focus": false
-    },
-    {
-      "title": "UK cyber legislation fails to tackle real-world resilience",
-      "link": "https://www.computerweekly.com/opinion/UK-cyber-legislation-fails-to-tackle-real-world-resilience",
-      "source": "Computer Weekly",
-      "published": "2026-11-24T06:10:00Z",
-      "summary": "Despite concerns raised in the House of Lords, the government is pressing on with a Cyber Security and Resilience Bill that remains insufficient to address the growing cyber challenges facing the UK",
-      "uk_focus": true
-    },
-    {
-      "title": "Huang’s Trump-backed return raises AI sovereignty concerns",
-      "link": "https://www.computerweekly.com/news/366655453/Huangs-Trump-backed-return-raises-AI-sovereignty-concerns",
-      "source": "Computer Weekly",
-      "published": "2026-11-24T06:10:00Z",
-      "summary": "In spite of the Nvidia board saying his behaviour was ‘inappropriate’, Jensen Huang is back as the AI company’s CEO",
-      "uk_focus": false
-    },
-    {
-      "title": "Orgs that leak data 'prioritize corporate interests over customers' says Have I Been Pwned’s Troy Hunt",
-      "link": "https://www.theregister.com/security/2026/11/24/orgs-that-leak-data-prioritize-corporate-interests-over-customers-says-have-i-been-pwneds-troy-hunt/5311802",
-      "source": "The Register",
-      "published": "2026-11-24T05:13:51Z",
-      "summary": "Leakers move through denial, bargaining, delay, legal threats, then claiming Hunt is the real villain",
       "uk_focus": false
     }
   ]

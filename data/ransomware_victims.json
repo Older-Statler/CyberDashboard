@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-11-26T01:55:37Z",
+  "generated_at": "2026-11-26T10:39:31Z",
   "victims": [
+    {
+      "group": "Inception",
+      "victim": "Restaurant Brands International, Inc.",
+      "country": "CA",
+      "sector": "Hospitality",
+      "published": "2026-11-26T01:52:28.011805+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UmVzdGF1cmFudCBCcmFuZHMgSW50ZXJuYXRpb25hbCwgSW5jLkBJbmNlcHRpb24="
+    },
+    {
+      "group": "everest",
+      "victim": "Koh Young Technology",
+      "country": "KR",
+      "sector": "Manufacturing",
+      "published": "2026-11-26T02:06:32.189620+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S29oIFlvdW5nIFRlY2hub2xvZ3lAZXZlcmVzdA=="
+    },
+    {
+      "group": "everest",
+      "victim": "Nucleon EDR",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-26T02:05:56.634300+00:00",
+      "domain": "nucleon-security.com",
+      "url": "https://www.ransomware.live/id/TnVjbGVvbiBFRFJAZXZlcmVzdA=="
+    },
+    {
+      "group": "medusalocker",
+      "victim": "Tessilopera",
+      "country": "IT",
+      "sector": "Not Found",
+      "published": "2026-11-25T23:03:35.969840+00:00",
+      "domain": "tessilopera.it",
+      "url": "https://www.ransomware.live/id/VGVzc2lsb3BlcmFAbWVkdXNhbG9ja2Vy"
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Reflex Electromechanical & Trade Co. Ltd. (Nablus pumps and elevators engineering house)",
+      "country": "PS",
+      "sector": "Manufacturing",
+      "published": "2026-11-25T22:46:48.793839+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/UmVmbGV4IEVsZWN0cm9tZWNoYW5pY2FsICYgVHJhZGUgQ28uIEx0ZC4gKE5hYmx1cyBwdW1wcyBhbmQgZWxldmF0b3JzIGVuZ2luZWVyaW5nIGhvdXNlKUBQaXhlbExlYWtz"
+    },
+    {
+      "group": "N0n",
+      "victim": "Signet Pacific Insurance Services",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-11-25T22:36:21.718672+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U2lnbmV0IFBhY2lmaWMgSW5zdXJhbmNlIFNlcnZpY2VzQE4wbg=="
+    },
+    {
+      "group": "N0n",
+      "victim": "ClearPath Wealth Management",
+      "country": "CA",
+      "sector": "Financial Services",
+      "published": "2026-11-25T22:25:52.015032+00:00",
+      "domain": "clearpathwealth.com",
+      "url": "https://www.ransomware.live/id/Q2xlYXJQYXRoIFdlYWx0aCBNYW5hZ2VtZW50QE4wbg=="
+    },
+    {
+      "group": "N0n",
+      "victim": "Atlantis Financial",
+      "country": "CA",
+      "sector": "Financial Services",
+      "published": "2026-11-25T22:24:37.383288+00:00",
+      "domain": "atlantisfinancial.ca",
+      "url": "https://www.ransomware.live/id/QXRsYW50aXMgRmluYW5jaWFsQE4wbg=="
+    },
+    {
+      "group": "BrainCipher",
+      "victim": "pacific-orient.com",
+      "country": "",
+      "sector": "Other",
+      "published": "2026-11-25T22:21:01.526123+00:00",
+      "domain": "pacific-orient.com",
+      "url": "https://www.ransomware.live/id/cGFjaWZpYy1vcmllbnQuY29tQEJyYWluQ2lwaGVy"
+    },
+    {
+      "group": "Dark Project",
+      "victim": "Pumptech",
+      "country": "US",
+      "sector": "Manufacturing",
+      "published": "2026-11-25T22:21:54.438125+00:00",
+      "domain": "pumptechnw.com",
+      "url": "https://www.ransomware.live/id/UHVtcHRlY2hARGFyayBQcm9qZWN0"
+    },
     {
       "group": "interlock",
       "victim": "New Plymouth School District",
@@ -16,7 +106,7 @@
       "country": "US",
       "sector": "Professional Services",
       "published": "2026-11-25T20:33:22.635996+00:00",
-      "domain": "",
+      "domain": "norrismclaughlin.com",
       "url": "https://www.ransomware.live/id/Tm9ycmlzIE1jTGF1Z2hsaW5AU2lsZW50UmFuc29tR3JvdXA="
     },
     {
@@ -34,7 +124,7 @@
       "country": "US",
       "sector": "Healthcare",
       "published": "2026-11-25T18:31:40.176115+00:00",
-      "domain": "",
+      "domain": "hydrocision.com",
       "url": "https://www.ransomware.live/id/SHlkcm9DaXNpb25AYW51Ymlz"
     },
     {
@@ -810,96 +900,6 @@
       "published": "2026-11-24T18:55:46.509760+00:00",
       "domain": "steinecke.de",
       "url": "https://www.ransomware.live/id/U3RlaW5lY2tlQHRoZWdlbnRsZW1lbg=="
-    },
-    {
-      "group": "Dark Project",
-      "victim": "Golden State Baptist College",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-11-23T19:51:14.107311+00:00",
-      "domain": "www.gsbc.edu",
-      "url": "https://www.ransomware.live/id/R29sZGVuIFN0YXRlIEJhcHRpc3QgQ29sbGVnZUBEYXJrIFByb2plY3Q="
-    },
-    {
-      "group": "incransom",
-      "victim": "Lowell Foods",
-      "country": "US",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-11-23T16:11:48.234686+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TG93ZWxsIEZvb2RzQGluY3JhbnNvbQ=="
-    },
-    {
-      "group": "rhysida",
-      "victim": "Demas Schaefer Family Lawyers",
-      "country": "",
-      "sector": "Professional Services",
-      "published": "2026-11-23T12:24:58.573914+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RGVtYXMgU2NoYWVmZXIgRmFtaWx5IExhd3llcnNAcmh5c2lkYQ=="
-    },
-    {
-      "group": "safepay",
-      "victim": "traconelectric.com",
-      "country": "RO",
-      "sector": "Manufacturing",
-      "published": "2026-11-23T11:23:40.395942+00:00",
-      "domain": "traconelectric.com",
-      "url": "https://www.ransomware.live/id/dHJhY29uZWxlY3RyaWMuY29tQHNhZmVwYXk="
-    },
-    {
-      "group": "safepay",
-      "victim": "sinagpawnshop.com",
-      "country": "PH",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-23T11:23:07.278813+00:00",
-      "domain": "sinagpawnshop.com",
-      "url": "https://www.ransomware.live/id/c2luYWdwYXduc2hvcC5jb21Ac2FmZXBheQ=="
-    },
-    {
-      "group": "safepay",
-      "victim": "bienefeld-gmbh.de",
-      "country": "DE",
-      "sector": "Manufacturing",
-      "published": "2026-11-23T11:22:33.909394+00:00",
-      "domain": "bienefeld-gmbh.de",
-      "url": "https://www.ransomware.live/id/YmllbmVmZWxkLWdtYmguZGVAc2FmZXBheQ=="
-    },
-    {
-      "group": "safepay",
-      "victim": "elsanj.org",
-      "country": "US",
-      "sector": "Not Found",
-      "published": "2026-11-23T11:22:01.345875+00:00",
-      "domain": "elsanj.org",
-      "url": "https://www.ransomware.live/id/ZWxzYW5qLm9yZ0BzYWZlcGF5"
-    },
-    {
-      "group": "safepay",
-      "victim": "jcatkinson.co.uk",
-      "country": "GB",
-      "sector": "Professional Services",
-      "published": "2026-11-23T11:21:27.398419+00:00",
-      "domain": "jcatkinson.co.uk",
-      "url": "https://www.ransomware.live/id/amNhdGtpbnNvbi5jby51a0BzYWZlcGF5"
-    },
-    {
-      "group": "safepay",
-      "victim": "hlbtropical.com",
-      "country": "DE",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-11-23T11:20:54.145396+00:00",
-      "domain": "hlbtropical.com",
-      "url": "https://www.ransomware.live/id/aGxidHJvcGljYWwuY29tQHNhZmVwYXk="
-    },
-    {
-      "group": "safepay",
-      "victim": "spiegelberg.com",
-      "country": "DE",
-      "sector": "Professional Services",
-      "published": "2026-11-23T11:20:20.582387+00:00",
-      "domain": "spiegelberg.com",
-      "url": "https://www.ransomware.live/id/c3BpZWdlbGJlcmcuY29tQHNhZmVwYXk="
     }
   ]
 }
