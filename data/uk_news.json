@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T18:33:49Z",
+  "generated_at": "2026-11-26T01:55:37Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 12
+      "count": 10
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Infosecurity Magazine",
@@ -35,7 +35,7 @@
     {
       "name": "Graham Cluley",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "name": "BBC News",
@@ -49,6 +49,22 @@
     }
   ],
   "items": [
+    {
+      "title": "Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks",
+      "link": "https://grahamcluley.com/smashing-security-podcast-494/",
+      "source": "Graham Cluley",
+      "published": "2026-11-26T00:10:12Z",
+      "summary": "A would-be spy is recruited on Telegram for $15,000 and sent halfway around the world to snoop on Palantir. His cover story when he's caught? He wanted to ask a woman out on a date. Meanwhile, Carl Miller investigates a think tank with 300 experts on its books, one of whom is…",
+      "uk_focus": false
+    },
+    {
+      "title": "The security of US water systems is even leakier than we thought",
+      "link": "https://www.theregister.com/security/2026/11/25/the-security-of-us-water-systems-is-even-leakier-than-we-thought/5312243",
+      "source": "The Register",
+      "published": "2026-11-25T19:40:17Z",
+      "summary": "And intruders don't always need to exploit bugs to break in",
+      "uk_focus": false
+    },
     {
       "title": "Microsoft's NTLM security changes trip up third-party logins",
       "link": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085",
@@ -79,6 +95,14 @@
       "source": "Infosecurity Magazine",
       "published": "2026-11-25T15:00:00Z",
       "summary": "Palo Alto fixed Fragnesia after attackers chained it with PHP2Shell to root firewalls",
+      "uk_focus": false
+    },
+    {
+      "title": "Threat actor use of Artex hacking framework surges",
+      "link": "https://www.computerweekly.com/news/366655399/Threat-actor-use-of-Artex-hacking-framework-surges",
+      "source": "Computer Weekly",
+      "published": "2026-11-25T12:58:00Z",
+      "summary": "Use of the Artex AI pen-testing tool for malicious purposes is skyrocketing, but defenders still have a window of opportunity to take action.",
       "uk_focus": false
     },
     {
@@ -295,30 +319,6 @@
       "source": "The Register",
       "published": "2026-11-24T05:13:51Z",
       "summary": "Leakers move through denial, bargaining, delay, legal threats, then claiming Hunt is the real villain",
-      "uk_focus": false
-    },
-    {
-      "title": "Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse",
-      "link": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795",
-      "source": "The Register",
-      "published": "2026-11-24T01:46:56Z",
-      "summary": "‘Shirudo’ project promises to whip up compensating controls in a hurry",
-      "uk_focus": false
-    },
-    {
-      "title": "Inception - possibly a ShinyHunters reboot - claims seven victims in a week",
-      "link": "https://www.theregister.com/security/2026/11/23/inception-possibly-a-shinyhunters-reboot-claims-seven-victims-in-a-week/5311768",
-      "source": "The Register",
-      "published": "2026-11-23T21:52:23Z",
-      "summary": "Whatever they call themselves these days: be on the lookout for voice phishing attempts",
-      "uk_focus": false
-    },
-    {
-      "title": "Bluetooth brakes are broken as researchers find anyone can control them",
-      "link": "https://www.theregister.com/security/2026/11/23/bluetooth-brakes-are-broken-as-researchers-find-anyone-can-control-them/5311748",
-      "source": "The Register",
-      "published": "2026-11-23T19:29:59Z",
-      "summary": "Security fixes are available for two Elecbrakes models, but an older controller remains vulnerable and unpatched",
       "uk_focus": false
     }
   ]
