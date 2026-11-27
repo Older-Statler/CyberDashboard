@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T02:44:10Z",
+  "generated_at": "2026-11-27T11:56:15Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 13
+      "count": 12
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 3
+      "count": 2
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 12
+      "count": 11
     },
     {
       "name": "The Guardian",
@@ -49,6 +49,38 @@
     }
   ],
   "items": [
+    {
+      "title": "UK Welfare and Pension Services Taken Offline Following Cyber Incident",
+      "link": "https://www.infosecurity-magazine.com/news/uk-welfare-services-offline/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-27T11:15:00Z",
+      "summary": "The DWP said that online services had been taken offline as a precaution following a cyber-incident, regular pension and benefit payments have not been affected",
+      "uk_focus": true
+    },
+    {
+      "title": "FIFA Confirms Cyber-Attack, Personal and Business Information Compromised",
+      "link": "https://www.infosecurity-magazine.com/news/fifa-confirms-cyberattack/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-27T10:30:00Z",
+      "summary": "A cyber-attack targeting FIFA has exposed a “limited set of personal and business information”",
+      "uk_focus": false
+    },
+    {
+      "title": "British social security system techies yank services offline following 'cyber incident'",
+      "link": "https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522",
+      "source": "The Register",
+      "published": "2026-11-27T10:01:00Z",
+      "summary": "Pensioners assured their funds will arrive as normal",
+      "uk_focus": true
+    },
+    {
+      "title": "CyberStrikeAI Creator Shuts Down Open-Source AI Offensive Framework",
+      "link": "https://www.infosecurity-magazine.com/news/cyberstrikeai-shut-down-threatbook/",
+      "source": "Infosecurity Magazine",
+      "published": "2026-11-27T09:00:00Z",
+      "summary": "The open source version of CyberStrikeAI has been permanently removed from, but an enterprise version of the AI pentesting tool is still accessible",
+      "uk_focus": false
+    },
     {
       "title": "Free e-government platform that serves two billion people in ten countries has critical SQL injection bug",
       "link": "https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449",
@@ -247,62 +279,6 @@
       "source": "Computer Weekly",
       "published": "2026-11-25T12:58:00Z",
       "summary": "Use of the Artex AI pen-testing tool for malicious purposes is skyrocketing, but defenders still have a window of opportunity to take action",
-      "uk_focus": false
-    },
-    {
-      "title": "US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches",
-      "link": "https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-25T11:45:00Z",
-      "summary": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline",
-      "uk_focus": false
-    },
-    {
-      "title": "Gatwick drop-off customers' personal data exposed in supplier breach",
-      "link": "https://www.theregister.com/security/2026/11/25/gatwick-drop-off-customers-personal-data-exposed-in-supplier-breach/5312060",
-      "source": "The Register",
-      "published": "2026-11-25T11:16:18Z",
-      "summary": "AutoPay login and vehicle records affected, alongside limited payment information and customer service emails",
-      "uk_focus": false
-    },
-    {
-      "title": "Europe prepares for EU Quantum Act",
-      "link": "https://www.computerweekly.com/news/366655552/Europe-prepares-for-EU-Quantum-Act",
-      "source": "Computer Weekly",
-      "published": "2026-11-25T11:00:00Z",
-      "summary": "The European Commission is getting ready for the progress of quantum computing from labs to commercial products",
-      "uk_focus": false
-    },
-    {
-      "title": "Ransomware Attacks Surge 23% in October Following Record Quarter",
-      "link": "https://www.infosecurity-magazine.com/news/ransomware-surge-october-record/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-25T10:45:00Z",
-      "summary": "The continued rise in ransomware attacks may reflect a new cyber environment, NCC Group researchers have warned",
-      "uk_focus": false
-    },
-    {
-      "title": "NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools",
-      "link": "https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-25T10:00:00Z",
-      "summary": "UK’s National Cyber Security Centre urges “strong operational discipline” to manage agentic offensive frameworks",
-      "uk_focus": true
-    },
-    {
-      "title": "UK Authorized Push Payment Losses Surge 22% as Fraudsters Steal £660m",
-      "link": "https://www.infosecurity-magazine.com/news/uk-app-losses-surge-22-fraudsters/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-25T09:29:00Z",
-      "summary": "Authorized push payment (APP) fraud increased 22% annually in the first half of the year",
-      "uk_focus": true
-    },
-    {
-      "title": "This could mess with Thanksgiving, says VMware as it drops third critical patch bundle in a week",
-      "link": "https://www.theregister.com/virtualization/2026/11/25/this-could-mess-with-thanksgiving-says-vmware-as-it-drops-third-critical-patch-bundle-in-a-week/5312017",
-      "source": "The Register",
-      "published": "2026-11-25T05:15:08Z",
-      "summary": "Four more critical vulns, including another unauthorized access flaw in vCenter",
       "uk_focus": false
     }
   ]

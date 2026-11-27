@@ -1,6 +1,105 @@
 {
-  "generated_at": "2026-11-27T02:44:10Z",
+  "generated_at": "2026-11-27T11:56:14Z",
   "victims": [
+    {
+      "group": "spacebears",
+      "victim": "SternKlinik (medi-z Bremen GmbH)",
+      "country": "DE",
+      "sector": "Healthcare",
+      "published": "2026-11-27T03:51:24.060440+00:00",
+      "domain": "www.sternklinik.net",
+      "url": "https://www.ransomware.live/id/U3Rlcm5LbGluaWsgKG1lZGkteiBCcmVtZW4gR21iSClAc3BhY2ViZWFycw=="
+    },
+    {
+      "group": "bravox",
+      "victim": "Elektro-Ruppen",
+      "country": "CH",
+      "sector": "Energy & Utilities",
+      "published": "2026-11-27T00:58:27.884689+00:00",
+      "domain": "elektro-ruppen.ch",
+      "url": "https://www.ransomware.live/id/RWxla3Ryby1SdXBwZW5AYnJhdm94"
+    },
+    {
+      "group": "direwolf",
+      "victim": "Wolters Kluwer",
+      "country": "NL",
+      "sector": "Professional Services",
+      "published": "2026-11-27T01:02:46.848958+00:00",
+      "domain": "wolterskluwer.com",
+      "url": "https://www.ransomware.live/id/V29sdGVycyBLbHV3ZXJAZGlyZXdvbGY="
+    },
+    {
+      "group": "qilin",
+      "victim": "Thomas More University",
+      "country": "BE",
+      "sector": "Education",
+      "published": "2026-11-27T06:44:27.409518+00:00",
+      "domain": "www.thomasmore.edu",
+      "url": "https://www.ransomware.live/id/VGhvbWFzIE1vcmUgVW5pdmVyc2l0eUBxaWxpbg=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Monolithic Power Systems (NASDAQ: MPWR, mps.com)",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-26T23:32:02.466288+00:00",
+      "domain": "mps.com",
+      "url": "https://www.ransomware.live/id/TW9ub2xpdGhpYyBQb3dlciBTeXN0ZW1zIChOQVNEQVE6IE1QV1IsIG1wcy5jb20pQFBpeGVsTGVha3M="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "Keyes Financial Strategies Inc.",
+      "country": "",
+      "sector": "Financial Services",
+      "published": "2026-11-26T23:31:41.412340+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/S2V5ZXMgRmluYW5jaWFsIFN0cmF0ZWdpZXMgSW5jLkBQaXhlbExlYWtz"
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "The Law Firm of Kavesh, Minor & Otis, Inc.",
+      "country": "CA",
+      "sector": "Professional Services",
+      "published": "2026-11-26T23:31:21.528910+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/VGhlIExhdyBGaXJtIG9mIEthdmVzaCwgTWlub3IgJiBPdGlzLCBJbmMuQFBpeGVsTGVha3M="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "MHC Financial Inc",
+      "country": "US",
+      "sector": "Financial Services",
+      "published": "2026-11-26T23:31:01.814011+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TUhDIEZpbmFuY2lhbCBJbmNAUGl4ZWxMZWFrcw=="
+    },
+    {
+      "group": "PixelLeaks",
+      "victim": "LockeBridge Capital Partners",
+      "country": "",
+      "sector": "Financial Services",
+      "published": "2026-11-26T23:30:41.950479+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TG9ja2VCcmlkZ2UgQ2FwaXRhbCBQYXJ0bmVyc0BQaXhlbExlYWtz"
+    },
+    {
+      "group": "medusalocker",
+      "victim": "babaiai",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-26T22:54:41.961970+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/YmFiYWlhaUBtZWR1c2Fsb2NrZXI="
+    },
+    {
+      "group": "Whitearmor",
+      "victim": "Eversource",
+      "country": "US",
+      "sector": "Energy & Utilities",
+      "published": "2026-11-26T23:33:19.069527+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RXZlcnNvdXJjZUBXaGl0ZWFybW9y"
+    },
     {
       "group": "anubis",
       "victim": "FYE",
@@ -227,6 +326,15 @@
       "url": "https://www.ransomware.live/id/QXV0b3JpdMOgIGRpIFNpc3RlbWEgUG9ydHVhbGUgZGVsIE1hciBUaXJyZW5vIFNldHRlbnRyaW9uYWxlIEl0QG1lZHVzYQ=="
     },
     {
+      "group": "Puppeteer",
+      "victim": "dygav.es",
+      "country": "ES",
+      "sector": "Technology",
+      "published": "2026-11-27T07:05:42.140322+00:00",
+      "domain": "dygav.es",
+      "url": "https://www.ransomware.live/id/ZHlnYXYuZXNAUHVwcGV0ZWVy"
+    },
+    {
       "group": "medusalocker",
       "victim": "Tessilopera",
       "country": "IT",
@@ -270,15 +378,6 @@
       "published": "2026-11-25T22:24:37.383288+00:00",
       "domain": "atlantisfinancial.ca",
       "url": "https://www.ransomware.live/id/QXRsYW50aXMgRmluYW5jaWFsQE4wbg=="
-    },
-    {
-      "group": "BrainCipher",
-      "victim": "pacific-orient.com",
-      "country": "",
-      "sector": "Other",
-      "published": "2026-11-25T22:21:01.526123+00:00",
-      "domain": "pacific-orient.com",
-      "url": "https://www.ransomware.live/id/cGFjaWZpYy1vcmllbnQuY29tQEJyYWluQ2lwaGVy"
     },
     {
       "group": "Dark Project",
@@ -351,6 +450,15 @@
       "published": "2026-11-25T17:22:50.326982+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/Q29tcGFueSAjMjg1QE4wbg=="
+    },
+    {
+      "group": "Puppeteer",
+      "victim": "signaturelex.com",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-27T07:05:28.723450+00:00",
+      "domain": "signaturelex.com",
+      "url": "https://www.ransomware.live/id/c2lnbmF0dXJlbGV4LmNvbUBQdXBwZXRlZXI="
     },
     {
       "group": "N0n",
@@ -549,6 +657,15 @@
       "published": "2026-11-25T02:43:21.943236+00:00",
       "domain": "www.adnenergia.com",
       "url": "https://www.ransomware.live/id/QUROIEVuZXJnw61hIFMuIGRlIFIuTC4gZGUgQy5WLiAoYWxzbyByZWZlcnJlZCB0byBhcyBBRE4gRW5lcmfDrWEgb3IgQUROIEVuZXJnaWEpQHNwYWNlYmVhcnM="
+    },
+    {
+      "group": "BrainCipher",
+      "victim": "pacific-orient.com",
+      "country": "MY",
+      "sector": "Other",
+      "published": "2026-11-25T22:21:01.526123+00:00",
+      "domain": "pacific-orient.com",
+      "url": "https://www.ransomware.live/id/cGFjaWZpYy1vcmllbnQuY29tQEJyYWluQ2lwaGVy"
     },
     {
       "group": "aurora",
@@ -783,123 +900,6 @@
       "published": "2026-11-24T20:39:02.991578+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/QXJjaGVyICYgR3JlaW5lckBTaWxlbnRSYW5zb21Hcm91cA=="
-    },
-    {
-      "group": "play",
-      "victim": "UltraBac Software",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-24T19:48:08.828002+00:00",
-      "domain": "www.ultrabac.net",
-      "url": "https://www.ransomware.live/id/VWx0cmFCYWMgU29mdHdhcmVAcGxheQ=="
-    },
-    {
-      "group": "play",
-      "victim": "IRL Group",
-      "country": "CA",
-      "sector": "Other",
-      "published": "2026-11-24T19:47:34.760323+00:00",
-      "domain": "www.irlgroup.ca",
-      "url": "https://www.ransomware.live/id/SVJMIEdyb3VwQHBsYXk="
-    },
-    {
-      "group": "play",
-      "victim": "Valvo Electrical Supply Ltd",
-      "country": "CA",
-      "sector": "Retail & E-Commerce",
-      "published": "2026-11-24T19:47:00.379329+00:00",
-      "domain": "www.valvo.ca",
-      "url": "https://www.ransomware.live/id/VmFsdm8gRWxlY3RyaWNhbCBTdXBwbHkgTHRkQHBsYXk="
-    },
-    {
-      "group": "play",
-      "victim": "Rolf Maier & Co AG",
-      "country": "CH",
-      "sector": "Manufacturing",
-      "published": "2026-11-24T19:46:26.318108+00:00",
-      "domain": "www.beck-maier.ch",
-      "url": "https://www.ransomware.live/id/Um9sZiBNYWllciAmIENvIEFHQHBsYXk="
-    },
-    {
-      "group": "play",
-      "victim": "Stanley Parts and Equipment",
-      "country": "US",
-      "sector": "Manufacturing",
-      "published": "2026-11-24T19:45:52.513244+00:00",
-      "domain": "www.stanleypartsinc.com",
-      "url": "https://www.ransomware.live/id/U3RhbmxleSBQYXJ0cyBhbmQgRXF1aXBtZW50QHBsYXk="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "A... G...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-24T17:00:21.499539+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QS4uLiBHLi4uQFNpbGVudFJhbnNvbUdyb3Vw"
-    },
-    {
-      "group": "incransom",
-      "victim": "WHI Holdings / Works Human Intelligence",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-24T17:10:18.491664+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/V0hJIEhvbGRpbmdzIC8gV29ya3MgSHVtYW4gSW50ZWxsaWdlbmNlQGluY3JhbnNvbQ=="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "G... R... S... D...",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-24T14:57:06.612523+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Ry4uLiBSLi4uIFMuLi4gRC4uLkBTaWxlbnRSYW5zb21Hcm91cA=="
-    },
-    {
-      "group": "secp0",
-      "victim": "Lambert Somec",
-      "country": "IT",
-      "sector": "Manufacturing",
-      "published": "2026-11-24T14:41:05.541595+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TGFtYmVydCBTb21lY0BzZWNwMA=="
-    },
-    {
-      "group": "incransom",
-      "victim": "fiwealth.com",
-      "country": "US",
-      "sector": "Financial Services",
-      "published": "2026-11-24T11:39:16.659191+00:00",
-      "domain": "fiwealth.com",
-      "url": "https://www.ransomware.live/id/Zml3ZWFsdGguY29tQGluY3JhbnNvbQ=="
-    },
-    {
-      "group": "Aoqin",
-      "victim": "Coneco Engineers & Scientists",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-24T07:50:30.375719+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Q29uZWNvIEVuZ2luZWVycyAmIFNjaWVudGlzdHNAQW9xaW4="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "IIM Raipur perimeter (Indian Institute of Management)",
-      "country": "IN",
-      "sector": "Education",
-      "published": "2026-11-24T06:59:26.632053+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/SUlNIFJhaXB1ciBwZXJpbWV0ZXIgKEluZGlhbiBJbnN0aXR1dGUgb2YgTWFuYWdlbWVudClAUGl4ZWxMZWFrcw=="
-    },
-    {
-      "group": "PixelLeaks",
-      "victim": "NKN Delhi PoP (National Knowledge Network / NIC / MeitY, India)",
-      "country": "IN",
-      "sector": "Government & Defense",
-      "published": "2026-11-24T06:59:06.825766+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TktOIERlbGhpIFBvUCAoTmF0aW9uYWwgS25vd2xlZGdlIE5ldHdvcmsgLyBOSUMgLyBNZWl0WSwgSW5kaWEpQFBpeGVsTGVha3M="
     }
   ]
 }
