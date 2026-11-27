@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-26T20:02:41Z",
+  "generated_at": "2026-11-27T02:44:10Z",
   "victims": [
+    {
+      "group": "anubis",
+      "victim": "FYE",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-26T21:22:20.018565+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/RllFQGFudWJpcw=="
+    },
+    {
+      "group": "Inception",
+      "victim": "GoDaddy",
+      "country": "US",
+      "sector": "Technology",
+      "published": "2026-11-26T18:22:01.927878+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R29EYWRkeUBJbmNlcHRpb24="
+    },
     {
       "group": "Inception",
       "victim": "Paramount",
@@ -117,6 +135,15 @@
       "published": "2026-11-26T02:06:32.189620+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/S29oIFlvdW5nIFRlY2hub2xvZ3lAZXZlcmVzdA=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Sweet Darling Sales",
+      "country": "US",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-26T16:20:17.846021+00:00",
+      "domain": "www.sweetdarling.com",
+      "url": "https://www.ransomware.live/id/U3dlZXQgRGFybGluZyBTYWxlc0BxaWxpbg=="
     },
     {
       "group": "aurora",
@@ -873,33 +900,6 @@
       "published": "2026-11-24T06:59:06.825766+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/TktOIERlbGhpIFBvUCAoTmF0aW9uYWwgS25vd2xlZGdlIE5ldHdvcmsgLyBOSUMgLyBNZWl0WSwgSW5kaWEpQFBpeGVsTGVha3M="
-    },
-    {
-      "group": "safepay",
-      "victim": "kneron.com",
-      "country": "US",
-      "sector": "Technology",
-      "published": "2026-11-24T06:24:21.274984+00:00",
-      "domain": "kneron.com",
-      "url": "https://www.ransomware.live/id/a25lcm9uLmNvbUBzYWZlcGF5"
-    },
-    {
-      "group": "SoulGroup",
-      "victim": "A government website for a county in a U.S. state",
-      "country": "US",
-      "sector": "Government & Defense",
-      "published": "2026-11-24T02:56:45.833076+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QSBnb3Zlcm5tZW50IHdlYnNpdGUgZm9yIGEgY291bnR5IGluIGEgVS5TLiBzdGF0ZUBTb3VsR3JvdXA="
-    },
-    {
-      "group": "anubis",
-      "victim": "VHV Company",
-      "country": "DE",
-      "sector": "Not Found",
-      "published": "2026-11-24T00:03:34.846680+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/VkhWIENvbXBhbnlAYW51Ymlz"
     }
   ]
 }

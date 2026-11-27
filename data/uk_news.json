@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:02:42Z",
+  "generated_at": "2026-11-27T02:44:10Z",
   "window_hours": 48,
   "sources": [
     {
@@ -49,6 +49,14 @@
     }
   ],
   "items": [
+    {
+      "title": "Free e-government platform that serves two billion people in ten countries has critical SQL injection bug",
+      "link": "https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449",
+      "source": "The Register",
+      "published": "2026-11-27T01:19:31Z",
+      "summary": "India’s Digital Infrastructure for Governance Impact and Transformation tool can leak data",
+      "uk_focus": false
+    },
     {
       "title": "Microsoft: Hackers in China, N Korea using ARTEX AI tool to break into global tech systems",
       "link": "https://www.theregister.com/security/2026/11/26/microsoft-hackers-in-china-n-korea-using-artex-ai-tool-to-break-into-global-tech-systems/5312433",
@@ -295,14 +303,6 @@
       "source": "The Register",
       "published": "2026-11-25T05:15:08Z",
       "summary": "Four more critical vulns, including another unauthorized access flaw in vCenter",
-      "uk_focus": false
-    },
-    {
-      "title": "'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters",
-      "link": "https://www.theregister.com/security/2026/11/24/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/5311978",
-      "source": "The Register",
-      "published": "2026-11-24T20:15:36Z",
-      "summary": "Nothing to see here…",
       "uk_focus": false
     }
   ]
