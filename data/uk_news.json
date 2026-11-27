@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T11:56:15Z",
+  "generated_at": "2026-11-27T20:57:14Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,22 +10,22 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 12
+      "count": 9
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 2
+      "count": 4
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 11
+      "count": 9
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "ITPro",
@@ -50,11 +50,35 @@
   ],
   "items": [
     {
+      "title": "DWP ‘cyber incident’ knocks almost all pensions and benefits systems offline",
+      "link": "https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline",
+      "source": "The Guardian",
+      "published": "2026-11-27T19:45:51Z",
+      "summary": "Department for Work and Pensions urges people to be alert to scams related to outage and contact helpline with urgent difficulties Tell us: have you been affected by the DWP ‘cyber incident’ Benefits and pensions claimants have faced chaos after the system was hit by a “serious…",
+      "uk_focus": false
+    },
+    {
       "title": "UK Welfare and Pension Services Taken Offline Following Cyber Incident",
       "link": "https://www.infosecurity-magazine.com/news/uk-welfare-services-offline/",
       "source": "Infosecurity Magazine",
       "published": "2026-11-27T11:15:00Z",
       "summary": "The DWP said that online services had been taken offline as a precaution following a cyber-incident, regular pension and benefit payments have not been affected",
+      "uk_focus": true
+    },
+    {
+      "title": "Resilience takes centre stage as applications move to the edge",
+      "link": "https://www.computerweekly.com/opinion/Resilience-takes-centre-stage-as-applications-move-to-the-edge",
+      "source": "Computer Weekly",
+      "published": "2026-11-27T10:41:00Z",
+      "summary": "Edge computing reduces latency for real-time digital services. With AI in mind, organisations would do well to build software-driven, governed, resilient edge infrastructure",
+      "uk_focus": false
+    },
+    {
+      "title": "Young British men lose £11bn in the ‘Moneysphere’",
+      "link": "https://www.computerweekly.com/news/366655520/Young-British-men-lose-11bn-in-the-Moneysphere",
+      "source": "Computer Weekly",
+      "published": "2026-11-27T10:30:00Z",
+      "summary": "Research shows over two million Gen Z men in the UK have fallen for online investment scams",
       "uk_focus": true
     },
     {
@@ -71,6 +95,14 @@
       "source": "The Register",
       "published": "2026-11-27T10:01:00Z",
       "summary": "Pensioners assured their funds will arrive as normal",
+      "uk_focus": true
+    },
+    {
+      "title": "Investigation underway into DWP cyber incident as services taken offline",
+      "link": "https://www.computerweekly.com/news/366655538/Investigation-underway-into-DWP-cyber-security-incident-as-services-taken-offline",
+      "source": "Computer Weekly",
+      "published": "2026-11-27T09:45:00Z",
+      "summary": "The Department for Work and Pensions has taken down online services for people claiming pensions, universal credit and personal independence payments, as Downing Street says it cannot rule out a malicious attacker",
       "uk_focus": true
     },
     {
@@ -231,54 +263,6 @@
       "source": "Graham Cluley",
       "published": "2026-11-26T00:10:12Z",
       "summary": "A would-be spy is recruited on Telegram for $15,000 and sent halfway around the world to snoop on Palantir. His cover story when he's caught? He wanted to ask a woman out on a date. Meanwhile, Carl Miller investigates a think tank with 300 experts on its books, one of whom is…",
-      "uk_focus": false
-    },
-    {
-      "title": "The security of US water systems is even leakier than we thought",
-      "link": "https://www.theregister.com/security/2026/11/25/the-security-of-us-water-systems-is-even-leakier-than-we-thought/5312243",
-      "source": "The Register",
-      "published": "2026-11-25T19:40:17Z",
-      "summary": "And intruders don't always need to exploit bugs to break in",
-      "uk_focus": false
-    },
-    {
-      "title": "Microsoft's NTLM security changes trip up third-party logins",
-      "link": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085",
-      "source": "The Register",
-      "published": "2026-11-25T17:01:00Z",
-      "summary": "It's not our fault if you've implemented it wrong",
-      "uk_focus": false
-    },
-    {
-      "title": "US Treasury financial crimes unit becomes latest fed breach victim",
-      "link": "https://www.theregister.com/security/2026/11/25/us-treasury-financial-crimes-unit-becomes-latest-fed-breach-victim/5312165",
-      "source": "The Register",
-      "published": "2026-11-25T16:40:16Z",
-      "summary": "FinCEN takes systems offline and extends filing deadlines while investigating 'unauthorized access'",
-      "uk_focus": false
-    },
-    {
-      "title": "US Anti-Scam Surge Hits 800 Defendants and 29 Scam Compounds",
-      "link": "https://www.infosecurity-magazine.com/news/doj-anti-scam-surge-800-defendants/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-25T16:00:00Z",
-      "summary": "DOJ's anti-scam surge has targeted over 800 defendants while the FBI has hit over 29 scam compounds",
-      "uk_focus": false
-    },
-    {
-      "title": "Palo Alto Fixes Fragnesia Kernel Bug Chained With PHP2Shell in Firewall Attacks",
-      "link": "https://www.infosecurity-magazine.com/news/palo-alto-fragnesia-php2shell-fix/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-25T15:00:00Z",
-      "summary": "Palo Alto fixed Fragnesia after attackers chained it with PHP2Shell to root firewalls",
-      "uk_focus": false
-    },
-    {
-      "title": "Threat actor use of Artex hacking framework surges",
-      "link": "https://www.computerweekly.com/news/366655399/Threat-actor-use-of-Artex-hacking-framework-surges",
-      "source": "Computer Weekly",
-      "published": "2026-11-25T12:58:00Z",
-      "summary": "Use of the Artex AI pen-testing tool for malicious purposes is skyrocketing, but defenders still have a window of opportunity to take action",
       "uk_focus": false
     }
   ]
