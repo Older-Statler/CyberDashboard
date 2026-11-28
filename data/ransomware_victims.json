@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-28T12:12:32Z",
+  "generated_at": "2026-11-28T20:29:27Z",
   "victims": [
+    {
+      "group": "rhysida",
+      "victim": "Chaparral Software",
+      "country": "",
+      "sector": "Technology",
+      "published": "2026-11-28T16:08:41.354136+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2hhcGFycmFsIFNvZnR3YXJlQHJoeXNpZGE="
+    },
+    {
+      "group": "HYFLOCK",
+      "victim": "Dirjen Imigrasi Hendarsam Marantoko membantah",
+      "country": "ID",
+      "sector": "Government & Defense",
+      "published": "2026-11-28T14:52:10.923809+00:00",
+      "domain": "imigrasi.go.id",
+      "url": "https://www.ransomware.live/id/RGlyamVuIEltaWdyYXNpIEhlbmRhcnNhbSBNYXJhbnRva28gbWVtYmFudGFoQEhZRkxPQ0s="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Servicios Integrales de Salud SiSalud",
+      "country": "MX",
+      "sector": "Healthcare",
+      "published": "2026-11-28T13:44:57.027062+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U2VydmljaW9zIEludGVncmFsZXMgZGUgU2FsdWQgU2lTYWx1ZEByaHlzaWRh"
+    },
+    {
+      "group": "payload",
+      "victim": "GAIA Group Srl",
+      "country": "IT",
+      "sector": "Other",
+      "published": "2026-11-28T12:27:40.008567+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/R0FJQSBHcm91cCBTcmxAcGF5bG9hZA=="
+    },
+    {
+      "group": "rhysida",
+      "victim": "Multotec",
+      "country": "ZA",
+      "sector": "Manufacturing",
+      "published": "2026-11-28T08:41:39.008552+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/TXVsdG90ZWNAcmh5c2lkYQ=="
+    },
+    {
+      "group": "qilin",
+      "victim": "Decor-rest Furniture",
+      "country": "CA",
+      "sector": "Retail & E-Commerce",
+      "published": "2026-11-28T16:07:37.650868+00:00",
+      "domain": "www.decor-rest.com",
+      "url": "https://www.ransomware.live/id/RGVjb3ItcmVzdCBGdXJuaXR1cmVAcWlsaW4="
+    },
     {
       "group": "incransom",
       "victim": "Samlut and Company, P.A.",
@@ -785,6 +839,33 @@
       "url": "https://www.ransomware.live/id/QUROIEVuZXJnw61hIFMuIGRlIFIuTC4gZGUgQy5WLiAoYWxzbyByZWZlcnJlZCB0byBhcyBBRE4gRW5lcmfDrWEgb3IgQUROIEVuZXJnaWEpQHNwYWNlYmVhcnM="
     },
     {
+      "group": "pear",
+      "victim": "Marietta Dermatology Associates, PA",
+      "country": "US",
+      "sector": "Healthcare",
+      "published": "2026-11-28T09:51:37.365281+00:00",
+      "domain": "mariettaderm.com",
+      "url": "https://www.ransomware.live/id/TWFyaWV0dGEgRGVybWF0b2xvZ3kgQXNzb2NpYXRlcywgUEFAcGVhcg=="
+    },
+    {
+      "group": "pear",
+      "victim": "Konicom, Inc.",
+      "country": "US",
+      "sector": "Not Found",
+      "published": "2026-11-28T09:51:04.204030+00:00",
+      "domain": "konicom.com",
+      "url": "https://www.ransomware.live/id/S29uaWNvbSwgSW5jLkBwZWFy"
+    },
+    {
+      "group": "pear",
+      "victim": "McGlynn & McGlynn",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-28T09:50:31.225145+00:00",
+      "domain": "mcglynnandmcglynn.com",
+      "url": "https://www.ransomware.live/id/TWNHbHlubiAmIE1jR2x5bm5AcGVhcg=="
+    },
+    {
       "group": "BrainCipher",
       "victim": "pacific-orient.com",
       "country": "MY",
@@ -819,87 +900,6 @@
       "published": "2026-11-25T15:00:17.630152+00:00",
       "domain": "",
       "url": "https://www.ransomware.live/id/WSoqKmNAU2lsZW50VmF1bHQ="
-    },
-    {
-      "group": "SilentVault",
-      "victim": "B***p",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-25T14:59:43.840127+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QioqKnBAU2lsZW50VmF1bHQ="
-    },
-    {
-      "group": "SilentVault",
-      "victim": "A***.",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-25T14:59:11.307718+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/QSoqKi5AU2lsZW50VmF1bHQ="
-    },
-    {
-      "group": "SilentVault",
-      "victim": "M***s",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-25T14:58:38.782006+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/TSoqKnNAU2lsZW50VmF1bHQ="
-    },
-    {
-      "group": "SilentVault",
-      "victim": "2***s",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-25T14:58:06.502816+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/MioqKnNAU2lsZW50VmF1bHQ="
-    },
-    {
-      "group": "SilentVault",
-      "victim": "E***s",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-25T14:57:34.548310+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/RSoqKnNAU2lsZW50VmF1bHQ="
-    },
-    {
-      "group": "aurora",
-      "victim": "Elpro GmbH",
-      "country": "DE",
-      "sector": "Manufacturing",
-      "published": "2026-11-25T14:01:51.198002+00:00",
-      "domain": "Elpro GmbH",
-      "url": "https://www.ransomware.live/id/RWxwcm8gR21iSEBhdXJvcmE="
-    },
-    {
-      "group": "qilin",
-      "victim": "Jacksonville University",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-11-25T12:22:31.952368+00:00",
-      "domain": "www.ju.edu",
-      "url": "https://www.ransomware.live/id/SmFja3NvbnZpbGxlIFVuaXZlcnNpdHlAcWlsaW4="
-    },
-    {
-      "group": "qilin",
-      "victim": "Bethany Lutheran College",
-      "country": "US",
-      "sector": "Education",
-      "published": "2026-11-25T12:21:51.457429+00:00",
-      "domain": "blc.edu",
-      "url": "https://www.ransomware.live/id/QmV0aGFueSBMdXRoZXJhbiBDb2xsZWdlQHFpbGlu"
-    },
-    {
-      "group": "aurora",
-      "victim": "Fuji Food Products, Inc.",
-      "country": "US",
-      "sector": "Agriculture and Food Production",
-      "published": "2026-11-25T08:58:42.883201+00:00",
-      "domain": "Fuji Food Products, Inc.",
-      "url": "https://www.ransomware.live/id/RnVqaSBGb29kIFByb2R1Y3RzLCBJbmMuQGF1cm9yYQ=="
     }
   ]
 }
