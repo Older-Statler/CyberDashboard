@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-27T20:57:14Z",
+  "generated_at": "2026-11-28T03:11:44Z",
   "victims": [
+    {
+      "group": "incransom",
+      "victim": "Samlut and Company, P.A.",
+      "country": "US",
+      "sector": "Professional Services",
+      "published": "2026-11-27T23:00:19.875313+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/U2FtbHV0IGFuZCBDb21wYW55LCBQLkEuQGluY3JhbnNvbQ=="
+    },
+    {
+      "group": "incransom",
+      "victim": "Cinelandia S.p.A",
+      "country": "IT",
+      "sector": "Hospitality",
+      "published": "2026-11-27T21:46:09.068678+00:00",
+      "domain": "",
+      "url": "https://www.ransomware.live/id/Q2luZWxhbmRpYSBTLnAuQUBpbmNyYW5zb20="
+    },
     {
       "group": "incransom",
       "victim": "Brit Ltd / Brit Insurance (britinsurance.com)",
@@ -882,24 +900,6 @@
       "published": "2026-11-20T22:02:57.555361+00:00",
       "domain": "ablbio.com",
       "url": "https://www.ransomware.live/id/QUJMIEJpb0BldmVyZXN0"
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "Kegler, Brown, Hill & Ritter",
-      "country": "US",
-      "sector": "Professional Services",
-      "published": "2026-11-24T23:57:20.182737+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/S2VnbGVyLCBCcm93biwgSGlsbCAmIFJpdHRlckBTaWxlbnRSYW5zb21Hcm91cA=="
-    },
-    {
-      "group": "SilentRansomGroup",
-      "victim": "Nonigman LLP",
-      "country": "",
-      "sector": "Not Found",
-      "published": "2026-11-24T23:26:44.109983+00:00",
-      "domain": "",
-      "url": "https://www.ransomware.live/id/Tm9uaWdtYW4gTExQQFNpbGVudFJhbnNvbUdyb3Vw"
     }
   ]
 }
