@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T03:11:44Z",
+  "generated_at": "2026-11-28T12:12:32Z",
   "victims": [
     {
       "group": "incransom",
@@ -144,6 +144,15 @@
       "published": "2026-11-27T01:02:46.848958+00:00",
       "domain": "wolterskluwer.com",
       "url": "https://www.ransomware.live/id/V29sdGVycyBLbHV3ZXJAZGlyZXdvbGY="
+    },
+    {
+      "group": "qilin",
+      "victim": "Thomas More University of Applied Sciences",
+      "country": "BE",
+      "sector": "Education",
+      "published": "2026-11-28T03:44:02.468503+00:00",
+      "domain": "www.thomasmore.be",
+      "url": "https://www.ransomware.live/id/VGhvbWFzIE1vcmUgVW5pdmVyc2l0eSBvZiBBcHBsaWVkIFNjaWVuY2VzQHFpbGlu"
     },
     {
       "group": "qilin",
@@ -891,15 +900,6 @@
       "published": "2026-11-25T08:58:42.883201+00:00",
       "domain": "Fuji Food Products, Inc.",
       "url": "https://www.ransomware.live/id/RnVqaSBGb29kIFByb2R1Y3RzLCBJbmMuQGF1cm9yYQ=="
-    },
-    {
-      "group": "everest",
-      "victim": "ABL Bio",
-      "country": "",
-      "sector": "Healthcare",
-      "published": "2026-11-20T22:02:57.555361+00:00",
-      "domain": "ablbio.com",
-      "url": "https://www.ransomware.live/id/QUJMIEJpb0BldmVyZXN0"
     }
   ]
 }

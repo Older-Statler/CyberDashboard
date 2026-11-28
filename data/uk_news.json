@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T03:11:44Z",
+  "generated_at": "2026-11-28T12:12:33Z",
   "window_hours": 48,
   "sources": [
     {
@@ -10,22 +10,22 @@
     {
       "name": "The Register",
       "status": "ok",
-      "count": 9
+      "count": 7
     },
     {
       "name": "Computer Weekly",
       "status": "ok",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Infosecurity Magazine",
       "status": "ok",
-      "count": 9
+      "count": 6
     },
     {
       "name": "The Guardian",
       "status": "ok",
-      "count": 1
+      "count": 3
     },
     {
       "name": "ITPro",
@@ -40,15 +40,39 @@
     {
       "name": "BBC News",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "name": "Tech Monitor",
       "status": "ok",
-      "count": 2
+      "count": 1
     }
   ],
   "items": [
+    {
+      "title": "DWP cyber incident ‘probably an attack’, says former UK chief technology officer",
+      "link": "https://www.theguardian.com/technology/2026/nov/28/dwp-cyber-incident-probably-attack-former-uk-chief-technology-officer-david-knott",
+      "source": "The Guardian",
+      "published": "2026-11-28T10:52:00Z",
+      "summary": "Government took down pensions and benefits portal on Thursday but said regular payments will not be affected A serious cyber incident that forced ministers to take down online benefits and pension services was “probably an attack”, the UK’s former chief technology officer has…",
+      "uk_focus": true
+    },
+    {
+      "title": "Pensions and benefits services still down after 'cyber incident'",
+      "link": "https://www.bbc.co.uk/news/articles/cm1wrgqyq4d8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News",
+      "published": "2026-11-28T09:10:32Z",
+      "summary": "The UK's former chief technology officer says the Department for Work and Pensions may have been hit by hackers, but the government has not confirmed that.",
+      "uk_focus": true
+    },
+    {
+      "title": "Could AI break encryption? What mathematical breakthroughs mean for cybersecurity",
+      "link": "https://www.theguardian.com/technology/2026/nov/28/could-ai-break-encryption-what-mathematical-breakthroughs-mean-for-cybersecurity",
+      "source": "The Guardian",
+      "published": "2026-11-28T05:00:30Z",
+      "summary": "Experts suggest AI companies may be sitting on ‘bombshell’ that could have severe consequences for secret information Leading experts and the governor of the Bank of England have suggested that top AI companies might have something under their hat – a “bombshell” revelation…",
+      "uk_focus": true
+    },
     {
       "title": "DWP ‘cyber incident’ knocks almost all pensions and benefits systems offline",
       "link": "https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline",
@@ -200,62 +224,6 @@
       "published": "2026-11-26T12:30:00Z",
       "summary": "Aikido found 42 phishing pages on Hugging Face Spaces, two-thirds made with its AI site builder",
       "uk_focus": false
-    },
-    {
-      "title": "Independent review into ICO amid claims of ‘toxic culture’ at data protection watchdog",
-      "link": "https://www.computerweekly.com/news/366655461/Independent-review-into-ICO-amid-claims-of-toxic-culture-at-data-protection-watchdog",
-      "source": "Computer Weekly",
-      "published": "2026-11-26T11:15:00Z",
-      "summary": "Senior barrister appointed to lead review of the ICO following the departure of disgraced former Information Commissioner John Edwards amid allegations of toxic culture, bullying and discrimination",
-      "uk_focus": true
-    },
-    {
-      "title": "Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework",
-      "link": "https://www.infosecurity-magazine.com/news/chinese-north-korea-artex/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-26T11:05:00Z",
-      "summary": "Microsoft has confirmed nation-state actors’ deployment of the ARTEX in their tooling, while the CSA described the emergence of the tool as part of a “third wave” of AI-driven threats",
-      "uk_focus": false
-    },
-    {
-      "title": "Hackers help themselves to 1Password's source code and customer data",
-      "link": "https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317",
-      "source": "The Register",
-      "published": "2026-11-26T11:02:00Z",
-      "summary": "An intruder planted malicious code in backend services, but the biz insists passwords are safe",
-      "uk_focus": false
-    },
-    {
-      "title": "Home Office Reprimanded After GDPR Failure at the Border",
-      "link": "https://www.infosecurity-magazine.com/news/home-office-reprimanded-gdpr/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-26T10:30:00Z",
-      "summary": "The ICO has reprimanded the Home Office after data integrity failings caused distress at the border",
-      "uk_focus": true
-    },
-    {
-      "title": "Fujitsu unveils vulnerability assessment service via OpenAI tie-up",
-      "link": "https://www.techmonitor.ai/news/fujitsu-unveils-vulnerability-assessment-service-via-openai-tie-up",
-      "source": "Tech Monitor",
-      "published": "2026-11-26T09:50:39Z",
-      "summary": "Fujitsu has deepened its cybersecurity partnership with OpenAI, signing up to the Daybreak Defense Network and launching a new AI-driven vulnerability assessment service.",
-      "uk_focus": false
-    },
-    {
-      "title": "1Password Hit by Backend Breach via Hijacked Employee GitHub Account",
-      "link": "https://www.infosecurity-magazine.com/news/1password-github-account-backend/",
-      "source": "Infosecurity Magazine",
-      "published": "2026-11-26T09:32:00Z",
-      "summary": "An attacker used a 1Password employee's GitHub account to take customer data, but not vaults",
-      "uk_focus": false
-    },
-    {
-      "title": "UK Home Office waved through border system without a working fix for bad data",
-      "link": "https://www.theregister.com/security/2026/11/26/uk-home-office-waved-through-border-system-without-a-working-fix-for-bad-data/5312162",
-      "source": "The Register",
-      "published": "2026-11-26T09:30:00Z",
-      "summary": "ICO reprimand follows failings that risked wrongful detention, with a temporary correction process taking more than a year to arrive",
-      "uk_focus": true
     }
   ]
 }
