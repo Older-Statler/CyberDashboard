@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:51:53Z",
+  "generated_at": "2026-11-28T15:43:12Z",
   "entries": {
     "124.153.189.92": {
       "abuseConfidenceScore": 100,
@@ -8333,13 +8333,13 @@
     },
     "195.178.110.103": {
       "abuseConfidenceScore": 100,
-      "totalReports": 2129,
+      "totalReports": 2928,
       "countryCode": "NL",
       "isp": "TECHOFF SRV LIMITED",
       "domain": "dmzhost.co",
       "isTor": false,
       "usageType": "Data Center/Web Hosting/Transit",
-      "checked_at": "2026-10-02T12:11:51Z"
+      "checked_at": "2026-11-28T15:42:26Z"
     },
     "216.151.130.29": {
       "abuseConfidenceScore": 0,
@@ -114422,14 +114422,14 @@
       "checked_at": "2026-10-28T12:22:56Z"
     },
     "102.220.160.223": {
-      "abuseConfidenceScore": 0,
-      "totalReports": 0,
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
       "countryCode": "SI",
       "isp": "Internet",
       "domain": "flashwisp.com.ng",
       "isTor": false,
       "usageType": "Data Center/Web Hosting/Transit",
-      "checked_at": "2026-09-22T11:14:46Z"
+      "checked_at": "2026-11-28T15:42:25Z"
     },
     "182.183.189.30": {
       "abuseConfidenceScore": 5,
@@ -228169,7 +228169,7 @@
       "domain": "ovhcloud.com",
       "isTor": false,
       "usageType": "Data Center/Web Hosting/Transit",
-      "checked_at": "2026-10-20T11:13:01Z"
+      "checked_at": "2026-11-28T15:42:33Z"
     },
     "42.232.224.169": {
       "abuseConfidenceScore": 3,
@@ -260322,14 +260322,14 @@
       "checked_at": "2026-11-15T14:08:52Z"
     },
     "119.42.148.189": {
-      "abuseConfidenceScore": 0,
-      "totalReports": 0,
+      "abuseConfidenceScore": 4,
+      "totalReports": 1,
       "countryCode": "HK",
       "isp": "InfoMove Limited",
       "domain": "infomove.com",
       "isTor": false,
       "usageType": "Data Center/Web Hosting/Transit",
-      "checked_at": "2026-10-30T12:23:59Z"
+      "checked_at": "2026-11-28T15:42:35Z"
     },
     "213.136.85.189": {
       "abuseConfidenceScore": 100,
@@ -366850,6 +366850,4966 @@
       "isTor": false,
       "usageType": "Data Center/Web Hosting/Transit",
       "checked_at": "2026-11-27T16:51:53Z"
+    },
+    "222.142.68.134": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:20Z"
+    },
+    "191.101.210.217": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 60,
+      "countryCode": "NL",
+      "isp": "HOSTKEY B.V.",
+      "domain": "ipxo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:20Z"
+    },
+    "45.86.245.39": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 72,
+      "countryCode": "AT",
+      "isp": "RapidSeedbox Ltd",
+      "domain": "netcrafters.host",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:20Z"
+    },
+    "183.151.116.108": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "CHINANET-ZJ Lishui node network",
+      "domain": "lsptt.zj.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:20Z"
+    },
+    "182.122.165.83": {
+      "abuseConfidenceScore": 5,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "China Unicom Henan province network",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:20Z"
+    },
+    "218.16.164.138": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "CHINANET Guangdong province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:20Z"
+    },
+    "77.239.124.16": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 167,
+      "countryCode": "NL",
+      "isp": "ROCKET & MARINICA LTD",
+      "domain": "rocket-cloud.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:21Z"
+    },
+    "93.94.52.137": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "GLOBAL CONNECTIVITY SOLUTIONS LLP",
+      "domain": "globconnex.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:21Z"
+    },
+    "38.60.171.222": {
+      "abuseConfidenceScore": 49,
+      "totalReports": 13,
+      "countryCode": "ID",
+      "isp": "LIGHT NODE LIMITED",
+      "domain": "lightnode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:21Z"
+    },
+    "118.70.144.77": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 99,
+      "countryCode": "VN",
+      "isp": "FPT Telecom",
+      "domain": "fpttoanquoc.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:21Z"
+    },
+    "137.220.181.209": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:21Z"
+    },
+    "93.123.109.247": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2459,
+      "countryCode": "NL",
+      "isp": "TECHOFF SRV LIMITED",
+      "domain": "dmzhost.co",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "109.238.86.95": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "GB",
+      "isp": "UFO TECHNOLOGIES LIMITED",
+      "domain": "ufocorp.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "176.65.144.165": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "DEDIK SERVICES LIMITED",
+      "domain": "dedik.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "62.60.226.103": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "FEMO IT SOLUTIONS LIMITED",
+      "domain": "as214351.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "94.26.0.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "RMP Protection Limited",
+      "domain": "hexagenn.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "94.26.0.107": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "RMP Protection Limited",
+      "domain": "hexagenn.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "93.152.223.169": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "RMP Protection Limited",
+      "domain": "hexagenn.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "158.94.210.148": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "MGN TEKNOLOJI ANONIM SIRKETI",
+      "domain": "mgnteknoloji.com.tr",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "91.215.85.55": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "RU",
+      "isp": "PROSPERO OOO",
+      "domain": "pro-spero.ru",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "176.65.134.52": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 2209,
+      "countryCode": "SI",
+      "isp": "Pfcloud UG",
+      "domain": "pfcloud.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "202.170.75.118": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "EggyWall.org",
+      "domain": "eggywall.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "104.251.181.197": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "SKN Subnet & Telecom Ltd",
+      "domain": "skntelecom.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:22Z"
+    },
+    "27.124.4.112": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "204.194.49.107": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Turing Group Limited",
+      "domain": "turingidc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "27.124.4.115": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "45.139.104.168": {
+      "abuseConfidenceScore": 44,
+      "totalReports": 34,
+      "countryCode": "DE",
+      "isp": "49.3 Networking LLC",
+      "domain": "493networking.cc",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "130.12.181.179": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SI",
+      "isp": "Netiface LLC",
+      "domain": "abusehandler.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "172.111.248.194": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Internet Security - US NY",
+      "domain": "pointtoserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "130.12.181.178": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SI",
+      "isp": "Netiface LLC",
+      "domain": "abusehandler.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "172.94.122.162": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Internet Security - US NY",
+      "domain": "pointtoserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "151.243.11.22": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 97,
+      "countryCode": "DE",
+      "isp": "LLC VASH KREDIT BANK",
+      "domain": "email.ua",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "36.255.97.165": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Cyber Security PH",
+      "domain": "cyber-security-ph-tik.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:23Z"
+    },
+    "45.154.98.49": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "1337 Services GmbH",
+      "domain": "as210558.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:24Z"
+    },
+    "45.74.36.144": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Secure Internet LLC IN",
+      "domain": "pointtoserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:24Z"
+    },
+    "45.80.158.28": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "PL",
+      "isp": "1337 Services GmbH",
+      "domain": "as210558.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:24Z"
+    },
+    "118.107.16.89": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:24Z"
+    },
+    "202.95.9.28": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "RACKIP CONSULTANCY PTE. LTD.",
+      "domain": "rackip.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:24Z"
+    },
+    "101.36.109.248": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "HK",
+      "isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+      "domain": "ucloud.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:25Z"
+    },
+    "102.134.35.93": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Telkom SA Ltd.",
+      "domain": "telkom.co.za",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:25Z"
+    },
+    "118.107.44.22": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:25Z"
+    },
+    "137.220.181.177": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "JP",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "143.92.39.43": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "204.194.54.127": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Turing Group Limited",
+      "domain": "turingidc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "45.83.31.171": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "1337 Services GmbH",
+      "domain": "as210558.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "103.112.175.140": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Rainbow Network Limited",
+      "domain": "rainbownetworkbd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "134.122.134.70": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "91.224.92.17": {
+      "abuseConfidenceScore": 42,
+      "totalReports": 132,
+      "countryCode": "LT",
+      "isp": "Cloud hosting",
+      "domain": "serveroffer.lt",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "93.123.109.150": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "TECHOFF SRV LIMITED",
+      "domain": "dmzhost.co",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "209.99.191.247": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "SKN Subnet & Telecom Ltd",
+      "domain": "skntelecom.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "143.92.57.247": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "101.99.95.177": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BG",
+      "isp": "Shinjiru Technology Sdn Bhd",
+      "domain": "shinjiru.com.my",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:26Z"
+    },
+    "103.112.172.180": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Rainbow Network Limited",
+      "domain": "rainbownetworkbd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "137.220.205.114": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CTG Server Ltd.",
+      "domain": "ctgserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "209.99.187.229": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "SKN Subnet & Telecom Ltd",
+      "domain": "skntelecom.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "85.208.213.244": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KR",
+      "isp": "Navox communications",
+      "domain": "navox.kr",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "103.163.214.228": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "VN",
+      "isp": "DONG HUNG PHU COMPANY LIMITED",
+      "domain": "vnnic.vn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "172.232.46.87": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "188.225.24.152": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "RU",
+      "isp": "JSC TIMEWEB",
+      "domain": "timeweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "47.108.140.10": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "8.152.204.130": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "113.44.201.75": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Huawei Public Cloud Service (Huawei Software Technologies Ltd.Co)",
+      "domain": "huawei.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:27Z"
+    },
+    "172.233.0.253": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "183.60.226.2": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "CHINANET Guangdong province network",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "139.162.23.215": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "139.162.0.0/16",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "192.53.123.23": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CA",
+      "isp": "Linode, LLC",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "31.77.10.173": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "play2go.cloud - Cheap and reliable hosting",
+      "domain": "play2go.cloud",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "185.150.189.48": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ReliableSite.Net LLC",
+      "domain": "reliablesite.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "101.37.167.149": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "172.235.196.12": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "172.232.114.205": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "IN",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "172.235.255.8": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:28Z"
+    },
+    "103.42.182.152": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "HK UNITE TELECOMMUNICATIONS",
+      "domain": "hkcloudx.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "141.11.139.146": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "ByteVirt LLC",
+      "domain": "bytevirt.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "91.98.106.33": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "101.200.130.214": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "103.194.104.217": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Antbox Networks Limited",
+      "domain": "antboxnetworks.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "107.175.183.148": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "RackNerd LLC",
+      "domain": "racknerd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "122.51.231.49": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "129.226.62.96": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "142.86.9.156": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "147.45.141.46": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "RU",
+      "isp": "JSC TIMEWEB",
+      "domain": "timeweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "147.139.198.105": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "Alibaba Cloud - ID",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:29Z"
+    },
+    "16.216.65.136": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "WawaCloud Inc",
+      "domain": "wawanode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "162.62.222.172": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "163.5.187.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "jogcorp",
+      "domain": "jogcorp.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "165.154.199.57": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Scloud Pte Ltd t/a Scloud Pte Ltd",
+      "domain": "scloud.sg",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "167.148.161.8": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Brander Group Inc.",
+      "domain": "brandergroup.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "172.245.20.150": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "HostPapa",
+      "domain": "hostpapa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "185.176.252.4": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "185.243.113.10": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "CrownCloud",
+      "domain": "crowncloud.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "185.82.218.221": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "BG",
+      "isp": "ITLDC EU2.SOF Datacenter Network",
+      "domain": "itldc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "185.92.189.152": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ETCLOUDS LIMITED",
+      "domain": "etclouds.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:30Z"
+    },
+    "189.105.114.100": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "204.77.130.76": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "JIULING",
+      "domain": "qq.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "212.56.46.252": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "216.158.237.126": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Interserver, Inc",
+      "domain": "interserver.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "38.76.213.81": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 2,
+      "countryCode": "HK",
+      "isp": "Cogent Communications, LLC",
+      "domain": "cogentco.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "40.160.52.91": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "OVH US LLC",
+      "domain": "ovhcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "42.193.121.176": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "43.128.212.99": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TH",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "43.133.104.76": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TH",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "43.167.19.201": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "43.167.86.190": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:31Z"
+    },
+    "45.207.207.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Vapeline Technology",
+      "domain": "vapeline-idc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "47.243.97.151": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "ALIBABA CLOUD - HK",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "47.93.113.99": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "52.128.241.51": {
+      "abuseConfidenceScore": 100,
+      "totalReports": 128,
+      "countryCode": "US",
+      "isp": "Netsec Limited",
+      "domain": "netsec.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "68.183.241.100": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "82.152.64.213": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "GB",
+      "isp": "YUNYOO LTD",
+      "domain": "ipxo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "86.107.168.222": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CA",
+      "isp": "RCS Technologies FZE LLC",
+      "domain": "rcstech.ae",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "91.107.138.230": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "91.98.146.154": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "139.224.72.151": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:32Z"
+    },
+    "158.255.213.195": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "EDIS Infrastructure in the USA",
+      "domain": "edis.at",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "151.80.21.203": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "OVH SAS",
+      "domain": "ovhcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "193.178.159.128": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "UFO TECHNOLOGIES LIMITED",
+      "domain": "ufocorp.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "193.178.159.137": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "UFO TECHNOLOGIES LIMITED",
+      "domain": "ufocorp.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "194.165.16.55": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "LV",
+      "isp": "Flyservers S.A.",
+      "domain": "flyservers.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "195.26.224.69": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "Amsterdam, Netherlands",
+      "domain": "vdsina.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "2.26.227.231": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "VPSPay - vpspay.cloud",
+      "domain": "vpspay.cloud",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "195.58.146.233": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "RO",
+      "isp": "ImpCom International",
+      "domain": "impreza.host",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "84.247.156.179": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "JP",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "89.124.110.36": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "SERVERS TECH FZCO",
+      "domain": "vdsina.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:33Z"
+    },
+    "84.32.149.103": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "LT",
+      "isp": "UAB Nacionalinis Telekomunikaciju Tinklas",
+      "domain": "ntt.lt",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "5.104.72.207": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "MHost LLC",
+      "domain": "mhost.ee",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "95.179.159.159": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "JW Lucasweg 35",
+      "domain": "vultr.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "93.152.213.149": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "DEDIK SERVICES LIMITED",
+      "domain": "dedik.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "167.148.195.53": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "DE",
+      "isp": "DEDIK SERVICES LIMITED",
+      "domain": "dedik.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "89.124.118.165": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "SERVERS TECH FZCO",
+      "domain": "vdsina.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "62.182.102.24": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BY",
+      "isp": "Yedinyye Resheniya LLC",
+      "domain": "cloudvps.by",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "104.156.154.8": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "EXTRAVM LLC",
+      "domain": "extravm.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "45.145.12.195": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FI",
+      "isp": "UOWH LLC",
+      "domain": "uowh.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "193.47.43.39": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KZ",
+      "isp": "AdminVPS OOO",
+      "domain": "adminvps.ru",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:34Z"
+    },
+    "167.99.0.202": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "185.215.113.31": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SC",
+      "isp": "1337TEAM LIMITED",
+      "domain": "eliteteam.to",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "179.43.159.210": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "PRIVATE LAYER INC",
+      "domain": "privatelayer.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "212.189.40.6": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "1GSERVERS, LLC",
+      "domain": "1gservers.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "78.153.136.53": {
+      "abuseConfidenceScore": 88,
+      "totalReports": 19,
+      "countryCode": "RU",
+      "isp": "Kubit DC",
+      "domain": "servercheap.ru",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "182.16.98.94": {
+      "abuseConfidenceScore": 11,
+      "totalReports": 2,
+      "countryCode": "HK",
+      "isp": "Netsec Limited",
+      "domain": "netsec.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "60.205.126.208": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "101.55.59.160": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KR",
+      "isp": "KOREA DATA",
+      "domain": "itkdata.kr",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "124.156.157.206": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "129.226.118.151": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:35Z"
+    },
+    "130.94.92.249": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "LIGHT NODE LIMITED",
+      "domain": "lightnode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "142.11.207.182": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Hostwinds Seattle",
+      "domain": "hostwinds.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "142.86.92.100": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "145.79.11.122": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "Hostinger International Limited",
+      "domain": "hostinger.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "148.135.91.226": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Brander Group Inc",
+      "domain": "brandergroup.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "158.179.31.226": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "AU",
+      "isp": "oracle",
+      "domain": "m-oracle.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "161.120.215.120": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "161.120.218.163": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "170.106.178.111": {
+      "abuseConfidenceScore": 26,
+      "totalReports": 15,
+      "countryCode": "US",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "182.92.185.200": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "189.105.114.164": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:36Z"
+    },
+    "206.238.114.55": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tcloudnet, Inc",
+      "domain": "tcloudnet.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "206.238.123.100": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Tcloudnet, Inc",
+      "domain": "tcloudnet.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "212.17.238.218": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "YUNYOO LTD",
+      "domain": "ipxo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "216.150.16.65": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 30,
+      "countryCode": "US",
+      "isp": "Vercel, Inc",
+      "domain": "vercel.com",
+      "isTor": false,
+      "usageType": "Content Delivery Network",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "35.200.208.58": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "IN",
+      "isp": "Google LLC",
+      "domain": "google.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.133.104.20": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TH",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.135.68.149": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.153.19.121": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.155.182.172": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KR",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.157.133.241": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.157.153.73": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:37Z"
+    },
+    "43.157.72.90": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "43.166.141.249": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "43.166.66.143": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "43.167.178.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "43.173.37.111": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "43.173.75.48": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "45.195.56.181": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "HK BAJI CLOUD COMPUTING LIMITED",
+      "domain": "bajicloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "65.8.131.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Amazon.com, Inc.",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Content Delivery Network",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "87.120.93.248": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "H2.NEXUS Frankfurt Network",
+      "domain": "h2.nexus",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "89.34.230.207": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "CloudBlast LLC",
+      "domain": "cloudblast.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "101.96.200.5": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "Beijing Volcano Engine Technology Co., Ltd.",
+      "domain": "bytedance.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:38Z"
+    },
+    "103.101.176.212": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "GNET INC.",
+      "domain": "gnet.cc",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "103.127.98.223": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "PT Biznet Gio Nusantara",
+      "domain": "biznetgio.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "119.45.104.89": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "120.26.92.250": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "129.204.100.142": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "147.124.215.108": {
+      "abuseConfidenceScore": 10,
+      "totalReports": 2,
+      "countryCode": "US",
+      "isp": "Majestic Hosting Solutions, LLC",
+      "domain": "spinservers.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "154.202.121.216": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Fastmos Co Limited",
+      "domain": "fastmos.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "154.36.176.43": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "PSINet, Inc.",
+      "domain": "psi.ca",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "156.233.226.156": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "cognetcloud INC",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:39Z"
+    },
+    "156.233.226.158": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "cognetcloud INC",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "157.173.202.216": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "161.120.218.140": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "168.144.139.197": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "172.81.61.222": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Dynu Systems Incorporated",
+      "domain": "dynu.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "173.208.138.120": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "WholeSale Internet, Inc.",
+      "domain": "wholesaleinternet.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "189.105.113.87": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "20.189.72.101": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Microsoft Corporation",
+      "domain": "microsoft.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "204.10.194.234": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Advin Services LLC",
+      "domain": "advinservers.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "212.64.32.60": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:40Z"
+    },
+    "23.224.250.126": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "CloudRadium L.L.C",
+      "domain": "cloudradium.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "38.14.248.65": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "PEG TECH INC",
+      "domain": "peg-tech.it",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "38.190.222.101": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "SonderCloud Limited",
+      "domain": "sondercloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "38.55.215.117": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "PEG TECH INC",
+      "domain": "peg-tech.it",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "43.133.8.114": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "43.157.89.117": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "43.167.125.183": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "43.251.224.234": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "I LAYER LIMITED",
+      "domain": "tgtserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "47.101.152.161": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "5.175.138.172": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Threatoff",
+      "domain": "threatoff.eu",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:41Z"
+    },
+    "62.50.145.97": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "NL",
+      "isp": "REDSWITCHES",
+      "domain": "redswitches.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "66.154.100.50": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "CYBERCON, INC.",
+      "domain": "cybercon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "82.157.62.47": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "92.5.64.153": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Oracle Svenska AB",
+      "domain": "oracle.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "95.40.16.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "HK",
+      "isp": "Amazon Data Services Hong Kong",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "217.138.221.211": {
+      "abuseConfidenceScore": 10,
+      "totalReports": 17,
+      "countryCode": "BG",
+      "isp": "M247 LTD Sofia Infrastructure",
+      "domain": "m247.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "8.211.150.144": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Alibaba Cloud (Singapore) Private Limited",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "45.61.136.233": {
+      "abuseConfidenceScore": 34,
+      "totalReports": 35,
+      "countryCode": "US",
+      "isp": "BL Networks",
+      "domain": "blnwx.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "31.57.17.217": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "GOLD IP L.L.C-FZ",
+      "domain": "goldipv4.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "23.22.72.35": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Amazon Data Services Northern Virginia",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "38.127.61.130": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Enzu Inc.",
+      "domain": "enzu.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:42Z"
+    },
+    "202.60.232.20": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Superhub Ltd.",
+      "domain": "superhub.com.hk",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "64.204.130.61": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Internet Utilities NA LLC",
+      "domain": "iana.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "154.12.32.12": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "194.180.157.46": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "MivoCloud",
+      "domain": "mivocloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "121.127.241.45": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "MEGA-II IDC",
+      "domain": "worldmailhk.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "154.13.7.218": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "36.226.55.120": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TW",
+      "isp": "Chunghwa Telecom Data Communication Business Group",
+      "domain": "cht.com.tw",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:43Z"
+    },
+    "103.12.149.8": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Photon Link Data Center",
+      "domain": "photonlink.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "23.229.68.234": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CA",
+      "isp": "B2 Net Solutions Inc.",
+      "domain": "servermania.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "85.155.177.106": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "KR",
+      "isp": "Prinode AB",
+      "domain": "prinode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "43.142.175.253": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "112.124.19.234": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "46.246.84.2": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SE",
+      "isp": "Sanco Group LTD",
+      "domain": "frootvpn.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "44.197.223.226": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Amazon Data Services Northern Virginia",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "46.246.6.19": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SE",
+      "isp": "Sanco Group LTD",
+      "domain": "frootvpn.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "206.187.219.149": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Skyvoro Inc",
+      "domain": "22ovz.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "209.145.63.3": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Contabo Inc.",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:44Z"
+    },
+    "46.246.6.8": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SE",
+      "isp": "Sanco Group LTD",
+      "domain": "frootvpn.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "38.87.116.58": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Cogent Communications, LLC",
+      "domain": "cogentco.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "148.224.62.146": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "MASTER DA WEB DATACENTER LTDA",
+      "domain": "masterdaweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "192.238.253.233": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ANTBOX NETWORKS LIMITED",
+      "domain": "antboxnetworks.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "122.10.110.99": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "hk",
+      "domain": "gbpshk.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "45.141.117.118": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "Julian Achter",
+      "domain": "aluy.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "47.97.167.84": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "192.238.253.158": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ANTBOX NETWORKS LIMITED",
+      "domain": "antboxnetworks.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "180.159.100.70": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "CHINANET SHANGHAI PROVINCE NETWORK",
+      "domain": "chinatelecom.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "68.118.145.66": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Charter Communications LLC",
+      "domain": "charter.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "122.10.18.10": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "DXTL Tseung Kwan O Service",
+      "domain": "666666999999999.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:45Z"
+    },
+    "65.21.92.101": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FI",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:46Z"
+    },
+    "8.153.163.254": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:46Z"
+    },
+    "165.227.30.219": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:46Z"
+    },
+    "173.249.3.37": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:46Z"
+    },
+    "120.76.202.116": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:46Z"
+    },
+    "2.31.165.59": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "118.190.204.115": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "101.200.96.137": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "114.215.190.105": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "148.135.181.199": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TR",
+      "isp": "Keyubu",
+      "domain": "keyubu.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "103.106.191.187": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "I LAYER LIMITED",
+      "domain": "tgtserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "208.69.78.15": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "GTHost",
+      "domain": "gthost.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:47Z"
+    },
+    "120.27.245.127": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "104.255.152.102": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CA",
+      "isp": "Netminders Server Hosting",
+      "domain": "net-minders.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "104.255.152.225": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CA",
+      "isp": "Netminders Server Hosting",
+      "domain": "net-minders.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "38.76.161.95": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Cogent Communications, LLC",
+      "domain": "cogentco.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "206.206.77.182": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "IPXO LLC",
+      "domain": "ipxo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "38.76.161.5": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Cogent Communications, LLC",
+      "domain": "cogentco.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "65.109.253.226": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FI",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "200.234.112.252": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "Infomaniak Network SA",
+      "domain": "infomaniak.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "200.234.112.101": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "Infomaniak Network SA",
+      "domain": "infomaniak.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:48Z"
+    },
+    "200.234.120.24": {
+      "abuseConfidenceScore": 35,
+      "totalReports": 6,
+      "countryCode": "CH",
+      "isp": "Infomaniak Network SA",
+      "domain": "infomaniak.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:49Z"
+    },
+    "200.234.120.37": {
+      "abuseConfidenceScore": 63,
+      "totalReports": 13,
+      "countryCode": "CH",
+      "isp": "Infomaniak Network SA",
+      "domain": "infomaniak.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:49Z"
+    },
+    "101.42.119.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:49Z"
+    },
+    "149.88.85.20": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "HK",
+      "isp": "Cogent Communications, LLC",
+      "domain": "cogentco.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:49Z"
+    },
+    "31.76.252.67": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "VPSPay - vpspay.cloud",
+      "domain": "vpspay.cloud",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "78.111.90.227": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CA",
+      "isp": "ITGLOBAL.COM NL B.V.",
+      "domain": "itglobal.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "8.148.81.185": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "101.32.254.241": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "103.114.163.188": {
+      "abuseConfidenceScore": 16,
+      "totalReports": 6,
+      "countryCode": "US",
+      "isp": "Hosteons.com",
+      "domain": "hosteons.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "103.215.78.42": {
+      "abuseConfidenceScore": 92,
+      "totalReports": 21,
+      "countryCode": "HK",
+      "isp": "AROSSCLOUD INC.",
+      "domain": "arosscloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "103.236.87.249": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Sichuan Xiaoteyun Technology Co., Ltd",
+      "domain": "cnnic.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "104.233.154.144": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "PEG TECH INC",
+      "domain": "peg-tech.it",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "107.161.86.90": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "HostPapa",
+      "domain": "hostpapa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "118.194.233.91": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+      "domain": "ucloud.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:50Z"
+    },
+    "119.29.52.25": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "119.91.206.33": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "120.79.75.28": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "13.115.33.112": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Amazon Data Services Japan",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "139.155.144.131": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "140.82.11.206": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Vultr Holdings, LLC",
+      "domain": "vultr.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "142.0.137.93": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Anxin",
+      "domain": "anhuianxin.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "142.86.95.208": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "142.86.97.127": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "143.198.90.43": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "147.124.223.167": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Majestic Hosting Solutions, LLC",
+      "domain": "spinservers.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "147.93.179.144": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 2,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:51Z"
+    },
+    "154.37.213.77": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "NetLab",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "156.245.244.147": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "BINARY NETWORKS SOLUTIONS LLC",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "157.245.166.3": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "161.153.116.69": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Oracle Corporation",
+      "domain": "oracle.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "167.86.125.169": {
+      "abuseConfidenceScore": 24,
+      "totalReports": 30,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "173.249.39.238": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "175.178.239.98": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "178.105.13.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "178.236.46.94": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "YUHONET INTERNATIONAL LIMITED",
+      "domain": "qq.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "182.92.232.174": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:52Z"
+    },
+    "185.61.211.2": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ETCLOUDS LIMITED",
+      "domain": "etclouds.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "186.241.117.247": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "MY",
+      "isp": "Uscloud Inc",
+      "domain": "us-cloud.top",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "189.105.115.118": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "195.160.221.181": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "Virtual Systems LLC",
+      "domain": "vsys.host",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "198.44.123.110": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Hostwinds Seattle",
+      "domain": "hostwinds.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "202.60.229.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Superhub Ltd.",
+      "domain": "superhub.com.hk",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "37.60.255.214": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "38.55.215.32": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "PEG TECH INC",
+      "domain": "peg-tech.it",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "43.130.72.184": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "43.152.241.65": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TH",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:53Z"
+    },
+    "43.157.161.43": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "43.157.172.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "43.157.209.180": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "43.166.19.140": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KR",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "43.166.138.126": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "43.166.208.242": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "43.166.250.249": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "45.119.99.24": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "SonderCloud Limited",
+      "domain": "sondercloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "45.197.149.112": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "158 Cloud Computing",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "45.77.33.136": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Vultr Holdings, LLC",
+      "domain": "vultr.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "47.100.32.50": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:54Z"
+    },
+    "47.107.129.205": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "47.79.39.182": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Alibaba Cloud LLC",
+      "domain": "alibaba-inc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "47.93.209.77": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "49.235.161.33": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "51.83.46.5": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "OVH SAS",
+      "domain": "ovh.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "60.205.187.81": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "62.171.153.231": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "62.50.145.86": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "REDSWITCHES",
+      "domain": "redswitches.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "64.177.62.242": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "The Constant Company, LLC",
+      "domain": "constant.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "70.39.207.110": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "82.156.139.151": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:55Z"
+    },
+    "82.26.72.235": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Internet Utilities Europe and Asia Limited",
+      "domain": "netutils.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "85.137.58.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "Virtual Systems LLC",
+      "domain": "vsys.host",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "85.189.41.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "LucidaCloud Limited",
+      "domain": "yecaoyun.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "85.8.182.33": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Bunny Communications",
+      "domain": "bunnycommunications.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "91.210.146.218": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "net Datagio Systems Ltd",
+      "domain": "datagio.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "94.23.252.50": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "OVH SAS",
+      "domain": "ovh.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "64.94.84.184": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "BL Networks",
+      "domain": "blnwx.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "218.244.152.72": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "182.16.98.89": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Netsec Limited",
+      "domain": "netsec.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "38.190.224.22": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "SonderCloud Limited",
+      "domain": "sondercloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "103.163.214.232": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "VN",
+      "isp": "DONG HUNG PHU COMPANY LIMITED",
+      "domain": "vnnic.vn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:56Z"
+    },
+    "138.197.154.120": {
+      "abuseConfidenceScore": 15,
+      "totalReports": 2,
+      "countryCode": "CA",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "8.130.87.217": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "101.96.221.197": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "Beijing Volcano Engine Technology Co., Ltd.",
+      "domain": "bytedance.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "103.118.243.100": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Sakura Network Limited",
+      "domain": "cloudie.hk",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "103.145.58.190": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "SG",
+      "domain": "giakix.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "103.146.230.86": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "I LAYER LIMITED",
+      "domain": "tgtserver.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "104.156.59.220": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "HIVELOCITY, Inc.",
+      "domain": "hivelocity.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "104.168.134.213": {
+      "abuseConfidenceScore": 18,
+      "totalReports": 6,
+      "countryCode": "US",
+      "isp": "Hostwinds Seattle",
+      "domain": "hostwinds.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:57Z"
+    },
+    "106.15.185.29": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "114.66.21.178": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Beijing Yunlin Network Technology Co.,Ltd",
+      "domain": "yunlin.cc",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "115.191.10.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Beijing Volcano Engine Technology Co., Ltd.",
+      "domain": "gwbn.net.cn",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "119.28.21.44": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "120.26.243.135": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "124.71.163.84": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Huawei Public Cloud Service (Huawei Software Technologies Ltd.Co)",
+      "domain": "huawei.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "129.151.224.178": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Oracle Corporation",
+      "domain": "oracle.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "130.61.176.113": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Oracle Public Cloud",
+      "domain": "oracleemaildelivery.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "133.88.122.30": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "GMO Internet, Inc.",
+      "domain": "gmo.jp",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "144.31.237.60": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "EternityCloud",
+      "domain": "eternitycloud.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:58Z"
+    },
+    "144.91.120.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "150.230.198.89": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Oracle Corporation",
+      "domain": "oracle.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "154.217.234.224": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Fastmos Co Limited",
+      "domain": "fastmos.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "154.44.28.194": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 4,
+      "countryCode": "HK",
+      "isp": "NetLab",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "154.9.245.16": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "NetLab",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "154.91.4.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "CloudFly Net Inc Pending",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "156.252.60.134": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "GNET INC.",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "157.245.196.175": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "158.51.124.122": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Hostodo",
+      "domain": "hostodo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "162.35.162.113": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Interserver, Inc",
+      "domain": "interserver.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:42:59Z"
+    },
+    "162.62.123.186": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "ACEVILLEPTELTD-SG",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "167.86.87.38": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FR",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "170.106.39.237": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "170.231.239.173": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CH",
+      "isp": "GRUPO PANAGLOBAL 15 S.A",
+      "domain": "swiss-gs.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "177.5.76.3": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "JT TELECOM INTERNATIONAL PTE.LTD.",
+      "domain": "jtti.cc",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "178.156.249.170": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "186.192.101.225": {
+      "abuseConfidenceScore": 7,
+      "totalReports": 2,
+      "countryCode": "BR",
+      "isp": "ELETRODATA LTDA",
+      "domain": "eletrodataengenharia.com.br",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "189.105.113.127": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab Global",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "194.102.104.79": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "MD",
+      "isp": "AlexHost SRL",
+      "domain": "alexhost.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "2.29.211.207": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "FI",
+      "isp": "Hetzner Online GmbH",
+      "domain": "hetzner.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:00Z"
+    },
+    "205.209.102.109": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Host Department NJ, LLC",
+      "domain": "interserver.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "206.72.194.134": {
+      "abuseConfidenceScore": 27,
+      "totalReports": 6,
+      "countryCode": "US",
+      "isp": "Interserver, Inc",
+      "domain": "interserver.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "212.95.33.194": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Leaseweb Deutschland GmbH",
+      "domain": "leaseweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "32.195.84.85": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Amazon.com, Inc.",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "38.110.228.10": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "UltaHost",
+      "domain": "ultahost.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "38.147.163.169": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "XNNET LLC",
+      "domain": "xn.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "38.46.13.54": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "GNET INC.",
+      "domain": "g-net.tv",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "38.58.59.195": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "NetLab",
+      "domain": "as979.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:43:01Z"
+    },
+    "38.60.176.220": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "FR",
+      "isp": "LIGHT NODE LIMITED",
+      "domain": "lightnode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "38.76.170.70": {
+      "abuseConfidenceScore": 15,
+      "totalReports": 2,
+      "countryCode": "HK",
+      "isp": "Cogent Communications, LLC",
+      "domain": "cogentco.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "42.192.41.124": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.128.199.97": {
+      "abuseConfidenceScore": 14,
+      "totalReports": 20,
+      "countryCode": "TH",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.129.96.252": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.152.236.94": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TH",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.157.47.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.157.168.212": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "BR",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.159.128.244": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Tencent Building, Kejizhongyi Avenue",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:02Z"
+    },
+    "43.166.203.213": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "43.167.18.211": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "43.173.35.96": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "ACEVILLE PTE.LTD.",
+      "domain": "tencent.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "45.135.148.31": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Mo's Operations GmbH",
+      "domain": "develapp.me",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "45.197.1.143": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Zillion Network Inc",
+      "domain": "zillion.network",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "45.197.63.91": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "GNET INC.",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "45.197.149.73": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "158 Cloud Computing",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "5.175.138.160": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Threatoff",
+      "domain": "threatoff.eu",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "5.231.116.42": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "TMW",
+      "domain": "tmw.global",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "58.22.122.133": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "FJFZ-FJFZ-HengHongBusiness-Corp",
+      "domain": "chinaunicom.cn",
+      "isTor": false,
+      "usageType": "Mobile ISP",
+      "checked_at": "2026-11-28T15:43:03Z"
+    },
+    "60.205.123.54": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "64.118.143.136": {
+      "abuseConfidenceScore": 7,
+      "totalReports": 2,
+      "countryCode": "SG",
+      "isp": "Eons Data Communications Limited",
+      "domain": "edcl.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "64.181.240.127": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Oracle Corporation",
+      "domain": "oracle.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "67.216.204.44": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Cluster Logic Inc",
+      "domain": "it7.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "70.39.183.106": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "GTT Communications Inc.",
+      "domain": "gtt.net",
+      "isTor": false,
+      "usageType": "Commercial",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "72.62.247.32": {
+      "abuseConfidenceScore": 3,
+      "totalReports": 1,
+      "countryCode": "MY",
+      "isp": "Hostinger Operations UAB",
+      "domain": "hostinger.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "8.141.112.132": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "8.210.182.248": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibaba-inc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "8.217.188.9": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibaba-inc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "82.25.46.103": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Internet Utilities Europe and Asia Limited",
+      "domain": "netutils.io",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:04Z"
+    },
+    "89.207.249.52": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KZ",
+      "isp": "Hoster.KZ",
+      "domain": "hoster.kz",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "94.249.179.184": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "DE",
+      "isp": "Threatoff",
+      "domain": "threatoff.eu",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "96.30.193.16": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Vultr Holdings, LLC",
+      "domain": "vultr.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "178.128.119.134": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "165.245.188.251": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "8.140.227.156": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "201.79.111.220": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "DigitalOcean, LLC",
+      "domain": "digitalocean.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "39.97.243.176": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "45.192.105.230": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Vapeline Technology",
+      "domain": "vapeline-idc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "60.205.123.96": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "101.37.150.89": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:05Z"
+    },
+    "101.96.237.195": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Beijing Volcano Engine Technology Co., Ltd.",
+      "domain": "bytedance.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "103.231.172.178": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "MAX CLOUD TECHNOLOGY LIMITED",
+      "domain": "maxcloudtechnology.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "103.231.172.181": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "MAX CLOUD TECHNOLOGY LIMITED",
+      "domain": "maxcloudtechnology.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "103.85.20.214": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Cloudie Limited",
+      "domain": "worria.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "110.42.188.74": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "111.228.12.146": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "eleven street,No. 18 Institute of Jingdong headquarters",
+      "domain": "jd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "111.229.254.171": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "113.44.157.104": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Huawei Public Cloud Service (Huawei Software Technologies Ltd.Co)",
+      "domain": "huawei.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "114.66.17.63": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Beijing Yunlin Network Technology Co.,Ltd",
+      "domain": "yunlin.cc",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "118.89.87.241": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "124.223.200.92": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:06Z"
+    },
+    "124.243.189.69": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Huawei-Cloud-SG",
+      "domain": "huawei.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "147.124.221.69": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Majestic Hosting Solutions, LLC",
+      "domain": "spinservers.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "149.50.143.199": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "AR",
+      "isp": "DATTATEC.COM S.R.L.",
+      "domain": "donweb.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "152.67.194.2": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "KR",
+      "isp": "Oracle Public Cloud",
+      "domain": "oracleemaildelivery.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "154.49.155.126": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "VpsQuan L.L.C.",
+      "domain": "hkcloudx.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "156.225.26.42": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Vapeline Technology",
+      "domain": "larus.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "156.240.236.18": {
+      "abuseConfidenceScore": 25,
+      "totalReports": 8,
+      "countryCode": "HK",
+      "isp": "Cloud Innovation Ltd",
+      "domain": "cloudinnovation.org",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "172.104.189.43": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Linode",
+      "domain": "linode.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "182.160.55.67": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "ID",
+      "isp": "HUAWEI INTERNATIONAL PTE. LTD.",
+      "domain": "huawei.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "185.143.228.53": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Virtarix (FZC)",
+      "domain": "virtarix.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:07Z"
+    },
+    "185.239.70.245": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "NL",
+      "isp": "Cluster Logic Inc",
+      "domain": "sioru.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "193.112.95.125": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "20.197.91.68": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Microsoft Corporation",
+      "domain": "microsoft.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "212.56.46.169": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "217.77.10.142": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "217.77.15.156": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 1,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "217.77.15.157": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Contabo GmbH",
+      "domain": "contabo.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "223.113.41.65": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Corporation",
+      "domain": "chinamobile.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "36.213.0.220": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "China Mobile Communications Group Co., Ltd.",
+      "domain": "10086.cn",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "38.207.161.115": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "VMISS Inc.",
+      "domain": "vmiss.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:08Z"
+    },
+    "39.101.77.81": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "43.138.196.198": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "45.129.8.95": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "365 Group LLC",
+      "domain": "greencloudvps.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "45.76.251.216": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Vultr Holdings, LLC",
+      "domain": "vultr.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "47.120.54.84": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "47.243.80.118": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "ALIBABA CLOUD - HK",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "47.82.104.81": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Alibaba Cloud LLC",
+      "domain": "alibaba-inc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "47.84.13.4": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "Alibaba Cloud LLC",
+      "domain": "alibaba-inc.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "49.232.32.91": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "52.4.162.212": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Amazon Technologies Inc.",
+      "domain": "amazon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "64.177.59.135": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "The Constant Company, LLC",
+      "domain": "constant.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:09Z"
+    },
+    "66.154.113.23": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "CYBERCON, INC.",
+      "domain": "cybercon.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "66.212.59.18": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Xhostserver, LLC",
+      "domain": "bgplink.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "66.212.59.19": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Xhostserver, LLC",
+      "domain": "bgplink.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "72.11.154.143": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "HostPapa",
+      "domain": "hostpapa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "78.17.93.232": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 12,
+      "countryCode": "CA",
+      "isp": "RCS Technologies FZE LLC",
+      "domain": "rcstech.ae",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "8.130.86.123": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "8.155.137.90": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co.LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "8.211.181.202": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "JP",
+      "isp": "Alibaba Cloud (Singapore) Private Limited",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "8.218.140.85": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "Alibaba Cloud (Singapore) Private Limited",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "82.158.192.15": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Virtual Systems LLC",
+      "domain": "virtualsystems.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "82.158.192.124": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "US",
+      "isp": "Virtual Systems LLC",
+      "domain": "virtualsystems.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:10Z"
+    },
+    "82.158.202.245": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "PL",
+      "isp": "Virtual Systems LLC",
+      "domain": "virtualsystems.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "85.122.129.73": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "MD",
+      "isp": "AlexHost SRL",
+      "domain": "alexhost.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "92.63.180.42": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "TH",
+      "isp": "Swift Server Tech Limited",
+      "domain": "serverly.host",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "101.35.239.88": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "103.145.58.191": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "SG",
+      "isp": "SG",
+      "domain": "giakix.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "103.213.248.132": {
+      "abuseConfidenceScore": 2,
+      "totalReports": 1,
+      "countryCode": "JP",
+      "isp": "QY (JAPAN) LTD",
+      "domain": "tokowa.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "103.30.76.197": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "HK",
+      "isp": "VH Global Limited",
+      "domain": "vh-global.net",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "103.88.49.61": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "MM",
+      "isp": "Ocean Wave Communication Co., Ltd",
+      "domain": "mowcn.com",
+      "isTor": false,
+      "usageType": "Fixed Line ISP",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "107.172.217.137": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 4,
+      "countryCode": "US",
+      "isp": "RackNerd LLC",
+      "domain": "racknerd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "111.228.24.133": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "eleven street,No. 18 Institute of Jingdong headquarters",
+      "domain": "jd.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:11Z"
+    },
+    "111.229.144.163": {
+      "abuseConfidenceScore": 1,
+      "totalReports": 1,
+      "countryCode": "CN",
+      "isp": "Tencent cloud computing (Beijing) Co., Ltd.",
+      "domain": "tencentcloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:12Z"
+    },
+    "114.215.171.83": {
+      "abuseConfidenceScore": 0,
+      "totalReports": 0,
+      "countryCode": "CN",
+      "isp": "Aliyun Computing Co., LTD",
+      "domain": "alibabacloud.com",
+      "isTor": false,
+      "usageType": "Data Center/Web Hosting/Transit",
+      "checked_at": "2026-11-28T15:43:12Z"
     }
   }
 }
